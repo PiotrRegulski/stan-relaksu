@@ -1,9 +1,9 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 const Logo = () => {
-    return (
-        <div>
-            <Image
+  return (
+    <div>
+      <Image
         src="/logo.png"
         width={200}
         height={200}
@@ -11,9 +11,8 @@ const Logo = () => {
         alt="Screenshots of the dashboard project showing desktop version"
         priority={true}
       />
-            
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Logo;

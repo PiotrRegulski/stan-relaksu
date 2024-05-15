@@ -6,6 +6,7 @@ import Logo from "./Logo";
 import { useState, useCallback } from "react";
 import HamburgerIcon from "@/components/layout/HamburgerIcon";
 import Link from "next/link";
+import HomepageImage from "../homepage/HomepageImage";
 const MainHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
@@ -20,40 +21,40 @@ const MainHeader = () => {
               <HamburgerIcon />
             </button>
           </div>
-          <div className="fixed top-1  right-1">
-            <button className="border-2 border-amber-300 bg-amber-300 bg-opacity-25 hover:bg-amber-500 hover:bg-opacity-45 text-amber-950 mt-1 px-2 py-3 rounded-full font-bold sm:text-2xl tracking-wide">
+          <div className="fixed bottom-2  right-4">
+            <button className=" shadow-xl border-2 border-lime-500 bg-lime-300 bg-opacity-25 hover:bg-lime-500 hover:bg-opacity-45 text-amber-950 mt-1 px-4 py-3 rounded-full font-bold sm:text-2xl tracking-wide">
               Zarezerwuj Wizytę
             </button>
           </div>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
           <Logo />
         </div>
 
         <div className=" flex  flex-wrap w-full justify-evenly   py-4 px-4">
           <nav className=" sm:flex justify-center  text-xl pt-6 hidden">
             <Link
-              href="#"
-              className="px-2 mx-5 text-gray-900 font-bold hover:border-y-2 hover:border-amber-400"
+              href="/"
+              className="px-2 mx-5  text-gray-900 font-bold border-y-2 hover:border-y-2 hover:border-amber-400 hover:shadow-lg"
             >
               Strona główna
             </Link>
             <Link
               href="# "
-              className="px-2 mx-5 text-gray-900 font-bold hover:border-y-2 hover:border-amber-400"
+              className="px-2 mx-5 text-gray-900 font-bold border-y-2 hover:border-y-2 hover:border-amber-400 hover:shadow-lg"
             >
               O mnie
             </Link>
             <Link
               href="#"
-              className="px-2 mx-5 text-gray-900 font-bold hover:border-y-2 hover:border-amber-400 "
+              className="px-2 mx-5 text-gray-900 font-bold border-y-2 hover:border-y-2 hover:border-amber-400 hover:shadow-lg "
             >
               Oferta
             </Link>
             <Link
               href="#"
-              className="px-2 mx-5 text-gray-900 font-bold hover:border-y-2 hover:border-amber-400"
+              className="px-2 mx-5 text-gray-900 font-bold  border-y-2 hover:border-y-2 hover:border-amber-400 hover:shadow-lg"
             >
               Kontakt
             </Link>
@@ -98,6 +99,9 @@ const MainHeader = () => {
               </li>
             </ul>
           </nav>
+        </div>
+        <div>
+          <HomepageImage />
         </div>
       </header>
     </div>
