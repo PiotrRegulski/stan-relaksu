@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import MainHeader from "@/components/layout/MainHeader";
+import MainFooter from '@/components/layout/MainFooter'
 import { CormorantInfant } from "@/components/fonts";
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={`${CormorantInfant.className} antialiased `}>
         <MainHeader />
         {children}
+        <MainFooter/>
       </body>
     </html>
   );

@@ -28,10 +28,10 @@ const WelcomCard = () => {
         </div>
 
         <div>
-          <button className="flex items-center justify-center text-sm gap-4 text-black bg-white rounded-full px-4 py-3">
+          <button className="flex items-center justify-center text-sm gap-4 text-black bg-amber-500 rounded-full px-4 py-3 focus:outline-none focus:shadow-outline">
             O mnie
           </button>
-          <button className="flex items-center justify-center text-sm gap-4 text-black bg-white rounded-full px-4 py-3">
+          <button className="flex items-center justify-center text-sm gap-4 text-black bg-white rounded-full px-4 py-3 focus:outline-none focus:shadow-outline">
             Oferta
           </button>
         </div>

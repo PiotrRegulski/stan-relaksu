@@ -21,8 +21,8 @@ const MainHeader = () => {
               <HamburgerIcon />
             </button>
           </div>
-          <div className="fixed bottom-2  right-4">
-            <button className=" shadow-xl border-2 border-lime-500 bg-lime-300 bg-opacity-25 hover:bg-lime-500 hover:bg-opacity-45 text-amber-950 mt-1 px-4 py-3 rounded-full font-bold sm:text-2xl tracking-wide">
+          <div className="fixed bottom-24  right-4">
+            <button className=" shadow-xl border-2 border-lime-500 bg-lime-300 bg-opacity-25 hover:bg-lime-500 hover:bg-opacity-45 text-amber-950 mt-1 px-4 py-3 rounded font-bold sm:text-2xl tracking-wide focus:outline-none focus:shadow-outline transition duration-700 ease-in-out">
               Zarezerwuj Wizytę
             </button>
           </div>
@@ -100,9 +100,7 @@ const MainHeader = () => {
             </ul>
           </nav>
         </div>
-        <div>
-          <HomepageImage />
-        </div>
+       
       </header>
     </div>
   );
