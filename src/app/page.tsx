@@ -7,10 +7,10 @@ export default function Home() {
     <main className="flex min-h-screen flex-col ">
 
 
-      <section className="flex flex-col sm:my-2 bg-primary shadow-xl  border-1 border-gray-300 ">
+      <section className="flex flex-col sm:my-2 bg-primary/45 shadow-xl  border-1 border-gray-300 ">
         <div className={`${lato.className}flex justify-center`}>
           <h1 className=" sm: mt-12 md:text-4xl text-xl text-center font-bold uppercase py-3 text-amber-950">
-            Something very important
+            Witaj na stronie Stan Relaksu
           </h1>
           <p className="md:text-xl md:text-justify text-center px-6 font-light md:mx-24 mx-2  text-gray-950 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
