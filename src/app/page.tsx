@@ -26,13 +26,13 @@ export default function Home() {
         </div>
         <div className="flex justify-center gap-12 sm:gap-24 py-3 mt-24 ">
           <Link
-            href={"/"}
+            href="/about"
             className=" hover:shadow-xl shadow-md text-xl  border-2 rounded border-amber-400 bg-white hover:bg-amber-400 px-6 py-2 font-bold  text-amber-70 hover:text-white focus:outline-none focus:shadow-outline"
           >
             O mnie
           </Link>
           <Link
-            href={"/"}
+            href="/offer"
             className=" hover:shadow-xl shadow-md text-xl  border-2 rounded border-amber-400 bg-amber-500 hover:bg-amber-400 px-6 py-2 font-bold  text-amber-70 hover:text-white focus:outline-none focus:shadow-outline"
           >
             Oferta
