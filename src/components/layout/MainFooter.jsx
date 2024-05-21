@@ -3,10 +3,10 @@ import Link from 'next/link';
 const MainFooter = () => {
     return (
         <footer className="bg-primary text-center p-2 w-full">
-      <div className=" mx-auto flex justify-center flex-wrap">
-        <p className="text-secondary text-sm font-semibold">© 2024 Stan Relaksu.  Wszelkie prawa zastrzeżone. </p>
+      <div className=" mx-auto flex justify-center flex-wrap ">
+        <p className="text-secondary text-sm font-semibold mt-1">© 2024 Stan Relaksu.  Wszelkie prawa zastrzeżone. </p>
         <address>
-          <a href="mailto:contact@pathpicstales.com" className="text-red-600 hover:text-red-800 transition duration-300 text-sm font-semibold">
+          <a href="mailto:contact@pathpicstales.com" className="text-red-600 hover:text-red-800 transition duration-300 text-sm font-semibold ">
           &nbsp; kontakt@stanrelaksu.com
           </a>
         </address>
