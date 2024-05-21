@@ -22,14 +22,16 @@ const MainHeader = () => {
             </button>
           </div>
           <div className="fixed bottom-24  right-4">
-            <button className=" shadow-xl border-2 border-lime-500 bg-lime-300 bg-opacity-25 hover:bg-lime-500 hover:bg-opacity-45 text-amber-950 mt-1 px-4 py-3 rounded font-bold sm:text-2xl tracking-wide focus:outline-none focus:shadow-outline transition duration-700 ease-in-out">
-              Zarezerwuj Wizytę
+            <button className="mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-4 font-dm text-xl font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]">
+              <Link href="https://booksy.com/"> Zarezerwuj Wizytę</Link>
             </button>
           </div>
         </div>
 
         <div className="flex justify-center ">
-          <Logo />
+          <Link href="/">
+            <Logo />
+          </Link>
         </div>
 
         <div className=" flex  flex-wrap w-full justify-evenly   py-4 px-4">
@@ -41,19 +43,19 @@ const MainHeader = () => {
               Strona główna
             </Link>
             <Link
-              href="# "
+              href="/about"
               className="px-2 mx-5 text-gray-900 font-bold border-y-2 hover:border-y-2 hover:border-amber-400 hover:shadow-lg"
             >
               O mnie
             </Link>
             <Link
-              href="#"
+              href="/offer"
               className="px-2 mx-5 text-gray-900 font-bold border-y-2 hover:border-y-2 hover:border-amber-400 hover:shadow-lg "
             >
               Oferta
             </Link>
             <Link
-              href="#"
+              href="/contact"
               className="px-2 mx-5 text-gray-900 font-bold  border-y-2 hover:border-y-2 hover:border-amber-400 hover:shadow-lg"
             >
               Kontakt
@@ -67,7 +69,7 @@ const MainHeader = () => {
             >
               <li className=" ">
                 <Link
-                  href="#"
+                  href="/"
                   className=" flex justify-center px-1 py-1 text-xl  text-gray-700 bgw-full hover:border-y-2 hover:border-amber-400"
                 >
                   Strona główna
@@ -75,7 +77,7 @@ const MainHeader = () => {
               </li>
               <li className=" ">
                 <Link
-                  href="#"
+                  href="/about"
                   className=" flex justify-center px-1 py-1 text-xl  text-gray-700 bgw-full hover:border-y-2 hover:border-amber-400"
                 >
                   O mnie
@@ -83,7 +85,7 @@ const MainHeader = () => {
               </li>
               <li className=" ">
                 <Link
-                  href="#"
+                  href="offer"
                   className=" flex justify-center px-1 py-1 text-xl  text-gray-700 bgw-full hover:border-y-2 hover:border-amber-400"
                 >
                   Oferta
@@ -91,7 +93,7 @@ const MainHeader = () => {
               </li>
               <li className=" ">
                 <Link
-                  href="#"
+                  href="/contact"
                   className=" flex justify-center px-1 py-1 text-xl  text-gray-700 bgw-full hover:border-y-2 hover:border-amber-400"
                 >
                   Kontakt
@@ -100,7 +102,6 @@ const MainHeader = () => {
             </ul>
           </nav>
         </div>
-       
       </header>
     </div>
   );
