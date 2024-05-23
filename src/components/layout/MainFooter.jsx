@@ -2,6 +2,11 @@ import React from 'react';
 import Link from 'next/link';
 const MainFooter = () => {
     return (
+      <>
+       <div
+        className=" grid grid-cols-1 gap-2 place-items-center sm:h-32 h-12 bg-cover bg-center "
+        style={{ backgroundImage: "url('/footerbg.png')" }}
+      ></div>
         <footer className="bg-primary text-center p-2 w-full">
       <div className=" mx-auto flex justify-center flex-wrap ">
         <p className="text-secondary text-sm font-semibold mt-1">© 2024 Stan Relaksu.  Wszelkie prawa zastrzeżone. </p>
@@ -20,6 +25,7 @@ const MainFooter = () => {
         </div> */}
       </div>
     </footer>
+    </>
     );
 };
 
