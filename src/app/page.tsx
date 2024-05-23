@@ -5,11 +5,21 @@ import { lato } from "@/components/fonts";
 export default function Home() {
   return (
     <>
-  
+      <div
+        className=" grid grid-cols-1 gap-2 place-items-center  sm:h-32 bg-cover bg-center "
+        style={{ backgroundImage: "url('/ofertabg.png')" }}
+      >
+        <h1 className=" px-4 py-3 md:text-4xl text-xl  text-center font-bold uppercase text-gray-600">
+          Witaj na stronie głównej
+        </h1>
+      </div>
       <main className=" grid grid-cols-1 sm:grid-cols-2 h-full sm:my-10 sm:mx-2">
-      
+    
+        <div className="  sm:px-4 px-1 sm:pb-3  h-64  sm:h-full relative ">
+          <HomepageImage />
+        </div>
         <section className="flex flex-col sm:my-2 bg-primary/45 shadow-xl rounded border-4 border-amber-300 min-h-1/3 sm:min-h-max ">
-          <div className={`${lato.className}flex justify-center`}>
+          <div className={`${lato.className}flex justify-center sm:mt-9`}>
             <h2 className=" sm:mt-12 md:text-4xl text-xl text-center font-bold uppercase py-2 text-amber-950">
               Czym się zajmuje
             </h2>
@@ -39,11 +49,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="  sm:px-4 px-1 sm:py-3 h-64  sm:h-full relative ">
-          <HomepageImage />
-        </div>
       </main>
-     
     </>
   );
 }

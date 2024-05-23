@@ -13,7 +13,7 @@ const MainHeader = () => {
   const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
   const currentPath = usePathname();
   const getLinkClassName = (path:string):string => {
-    return currentPath === path ? 'border-y-2 border-amber-400 shadow-lg text-gray-900 font-bold' : 'px-2 mx-5  text-gray-900 font-bold border-y-2 hover:border-y-2 hover:border-amber-400 hover:shadow-lg';
+    return currentPath === path ? ' px-2 mx-5  border-y-2 border-amber-400 shadow-lg text-gray-900 font-bold' : 'px-2 mx-5  text-gray-900 font-bold border-y-2 hover:border-y-2 hover:border-amber-400 hover:shadow-lg';
   };
   return (
     <div className="relative">
@@ -111,14 +111,7 @@ const MainHeader = () => {
           </nav>
         </div>
       </header>
-      <div
-        className=" grid grid-cols-1 gap-2 place-items-center  sm:h-32 bg-cover bg-center "
-        style={{ backgroundImage: "url('/ofertabg.png')" }}
-      >
-        <h1 className=" px-4 py-3 md:text-4xl text-xl  text-center font-bold uppercase text-gray-600">
-          Witaj na stronie Stan Relaksu
-        </h1>
-      </div>
+    
     </div>
   );
 };
