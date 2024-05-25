@@ -10,7 +10,16 @@ const config: Config = {
     extend: {
       colors: {
         primary: "rgb(254 253 199)",
-        secondary:"rgb(69 26 3)",
+        secondary: "rgb(69 26 3)",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 1s ease-in-out",
       },
     },
   },

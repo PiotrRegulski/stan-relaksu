@@ -6,7 +6,7 @@ const HomepageImage = () => {
       <Image
         src="/mainImage.png"
         fill
-        className="rounded-xl"
+        className="rounded-xl border-4 border-white shadow-xl shadow-gray-400/75"
         alt="Screenshots of the dashboard project showing desktop version"
         priority={true}
         object-fit="contein"

@@ -6,14 +6,15 @@ import Logo from "./Logo";
 import { useState, useCallback } from "react";
 import HamburgerIcon from "@/components/layout/HamburgerIcon";
 import Link from "next/link";
-import HomepageImage from "../homepage/HomepageImage";
+
 import { usePathname } from "next/navigation";
 const MainHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
   const currentPath = usePathname();
+console.log(currentPath);
   const getLinkClassName = (path:string):string => {
-    return currentPath === path ? ' px-2 mx-5  border-y-2 border-amber-400 shadow-lg text-gray-900 font-bold' : 'px-2 mx-5  text-gray-900 font-bold border-y-2 hover:border-y-2 hover:border-amber-400 hover:shadow-lg';
+    return currentPath.startsWith(path) ? ' px-2 mx-5  border-y-2 border-amber-400 shadow-lg text-gray-900 font-bold' : 'px-2 mx-5  text-gray-900 font-bold border-y-2 hover:border-y-2 hover:border-amber-400 hover:shadow-lg';
   };
   return (
     <div className="relative">
