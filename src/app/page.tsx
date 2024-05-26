@@ -1,6 +1,7 @@
 import HomepageImage from "@/components/homepage/HomepageImage";
 import Link from "next/link";
 import { lato } from "@/components/fonts";
+import OffersCard from "@/components/offers/OffersCard";
 
 export default function Home() {
   return (
@@ -49,7 +50,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        
       </main>
+      <OffersCard/>
     </>
   );
 }
