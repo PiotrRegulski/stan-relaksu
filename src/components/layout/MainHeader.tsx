@@ -38,14 +38,14 @@ const MainHeader = () => {
 
           <div className=" fixed sm:bottom-24  bottom-4 right-1 z-20">
             <div className="flex flex-col">
-            <button className=" fixed top-5 right-3 w-max rounded-full bg-green-600 py-2 px-2 font-dm text-xl font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]">
+            <button className=" fixed top-5 right-3 w-max rounded-full bg-green-600 py-2 px-2 font-dm text-xl font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
                 <Link href="tel:885987321 "><BsFillTelephoneForwardFill  className="text-right"/></Link>
               </button>
-              <button className=" fixed top-20 right-3 w-max rounded-full bg-green-600 py-2 px-2 font-dm text-xl font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]">
-                <Link href="https://instagram.com/"><FaSquareInstagram className="text-right"/></Link>
+              <button className=" fixed top-20 right-3 w-max rounded-full bg-green-600 py-2 px-2 font-dm text-xl font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
+                <Link href="https://www.instagram.com/stan_relaksu/" target="_blank" rel="noopener noreferrer"><FaSquareInstagram className="text-right"/></Link>
               </button>
               <button className="mt-8 inline-flex items-center justify-center rounded-full bg-green-600 py-3 px-6 font-dm text-xl font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]">
-                <Link href="https://booksy.com/"> Zarezerwuj Wizytę</Link>
+                <Link href="https://booksy.com/"  target="_blank" rel="noopener noreferrer"> Zarezerwuj Wizytę</Link>
               </button>
             </div>
           </div>
@@ -62,7 +62,7 @@ const MainHeader = () => {
             id="big-Screen-nav"
             className=" sm:flex justify-center  text-xl pt-6 hidden"
           >
-            <Link href="/" className={getLinkClassName("/")}>
+            <Link href="/"  className={getLinkClassName("/")}>
               Strona główna
             </Link>
             <Link href="about" className={getLinkClassName("about")}>
