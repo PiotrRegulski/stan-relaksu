@@ -7,14 +7,21 @@ import { useState, useCallback } from "react";
 import HamburgerIcon from "@/components/layout/HamburgerIcon";
 import Link from "next/link";
 
-import { usePathname } from "next/navigation";
+import { usePathname} from "next/navigation";
+
 const MainHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
   const currentPath = usePathname();
-console.log(currentPath);
-  const getLinkClassName = (path:string):string => {
-    return currentPath.startsWith(path) ? ' px-2 mx-5  border-y-2 border-amber-400 shadow-lg text-gray-900 font-bold' : 'px-2 mx-5  text-gray-900 font-bold border-y-2 hover:border-y-2 hover:border-amber-400 hover:shadow-lg';
+
+  console.log(usePathname);
+  const getLinkClassName = (path: string): string => {
+   
+   const formattedCurrentPath = currentPath.replace(/^\//, '');
+    return (!formattedCurrentPath || !formattedCurrentPath.startsWith(path))
+    
+      ?  "px-2 mx-5  text-gray-900 font-bold border-y-2 hover:border-y-2 hover:border-amber-400 hover:shadow-lg"
+      :" px-2 mx-5  border-y-2 border-amber-400 shadow-lg text-gray-900 font-bold";
   };
   return (
     <div className="relative">
@@ -27,7 +34,7 @@ console.log(currentPath);
               <HamburgerIcon />
             </button>
           </div>
-          <div className="fixed sm:bottom-24  bottom-4 right-4 z-10">
+          <div className="fixed sm:bottom-24  bottom-4 right-4 z-20">
             <button className="mt-8 inline-flex items-center justify-center rounded-full bg-green-600 py-3 px-6 font-dm text-xl font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]">
               <Link href="https://booksy.com/"> Zarezerwuj Wizytę</Link>
             </button>
@@ -45,28 +52,16 @@ console.log(currentPath);
             id="big-Screen-nav"
             className=" sm:flex justify-center  text-xl pt-6 hidden"
           >
-            <Link
-              href="/"
-              className={getLinkClassName('/')}
-            >
+            <Link href="/" className={getLinkClassName('/')}>
               Strona główna
             </Link>
-            <Link
-              href="/about"
-              className={getLinkClassName('/about')}
-            >
+            <Link href="about" className={getLinkClassName("about")}>
               O mnie
             </Link>
-            <Link
-              href="/offer"
-              className={getLinkClassName('/offer')}
-            >
+            <Link href="offer" className={getLinkClassName("offer")}>
               Oferta
             </Link>
-            <Link
-              href="/contact"
-              className={getLinkClassName('/contact')}
-            >
+            <Link href="contact" className={getLinkClassName("contact")}>
               Kontakt
             </Link>
           </nav>
@@ -112,7 +107,6 @@ console.log(currentPath);
           </nav>
         </div>
       </header>
-    
     </div>
   );
 };
