@@ -5,6 +5,7 @@ import { OfferItem } from "@/data/OfferItem";
 const OffersCard = () => {
   return (
     <div className="flex justify-center">
+        
       <section className="grid grid-cols-1 sm:grid-cols-3 sm:gap-12">
         {OfferItem.map((offerItem) => (
           <div key={offerItem.id} className=" mx-2 my-6">
