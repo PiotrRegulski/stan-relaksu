@@ -2,9 +2,28 @@ import React from "react";
 import { PiPhoneDisconnectBold } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
 import { IoIosPin } from "react-icons/io";
+import { lato } from "@/components/fonts";
+import { Resend } from "resend";
+
 const page = () => {
+  async function send(formData: any) {
+    "use server";
+    const mailContent = formData.get("message") as string;
+    // const username = formData.get("username") as string;
+    const email = formData.get("userEmail") as string;
+    const subject = formData.get("subject") as string;
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    const { data } = await resend.emails.send({
+      from: "StanRelaksu<onboarding@resend.dev>",
+      to: email,
+      subject: subject,
+      html: mailContent,
+    });
+    console.log("Email Send successfully", data);
+  }
   return (
-    <div className="h-screen">
+    <div className="mx-auto">
       <header
         id="offer-header"
         className=" grid grid-cols-1 gap-2 place-items-center  sm:h-32 bg-cover bg-center "
@@ -15,46 +34,94 @@ const page = () => {
         </h1>
       </header>
 
-      <div className="grid grid-cols-2 gap-4 place-items-center h-2/3 w-full ml-12  ">
-        <div className="border-2  border-white px-10 py-10 bg-primary  bg-primary/45 shadow-md rounded">
-          <h3 className="text-4xl font-bold mb-2">
-            Skontaktuj sie w dogodny dla Siebie sposób
-          </h3>
+      <div className="grid sm:grid-cols-2 items-center  gap-16 my-24 mx-4 sm:mx-auto max-w-7xl bg-white text-[#333] font-[sans-serif]">
+        <div className="px-2">
+          <h2 className="text-4xl font-bold mb-2">Kontakt</h2>
 
-          <p
-            className="text-xl text-left
-          "
-          >
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
-            consectetur quod, ipsam reprehenderit rerum error nostrum enim
-            recusandae tempora delectus labore qui quam repellendus temporibus
-            maxime? Eaque quidem illum dicta!
+          <p className="text-sm text-gray-400 mt-3">
+            Skontaktuj się z nami w dogodny dla Siebie sposób.
           </p>
-          <ul className="mx-12">
-            <li className="flex text-2xl mt-10 ">
-              <PiPhoneDisconnectBold className="w-16 h-16 mr-2 mt-2 border-2 bg-green-500 px-2 py-2 " />
-              <div className="flex flex-col py-2">
-                <p className="font-bold"> Numer telefonu:</p>{" "}
-                <p>xx-xxx-xxx-xxx</p>
+
+          <ul className="mt-12 font-[sans-serif]">
+            <h3 className="text-lg font-extrabold ">Zadzwoń</h3>
+            <li className="flex items-center mt-2 ">
+              <div className="bg-[#e6e6e6cf] h-16 w-16 rounded-full flex items-center justify-center shrink-0">
+                <PiPhoneDisconnectBold className="w-12 h-12" />
+              </div>
+
+              <div className="flex flex-col px-3">
+                <small className="block"> Numer telefonu:</small>{" "}
+                <strong>000-000-000</strong>
               </div>
             </li>
-            <li className="flex text-2xl my-3 ">
-              <MdEmail className="w-16 h-16 mr-2 mt-2 border-2 bg-green-500 px-2 py-2 " />
-              <div className="flex flex-col py-2">
-                <p className="font-bold"> Adress e-mail:</p>{" "}
-                <p>kontakt@kontakt.pl</p>
+            <h3 className="text-lg font-extrabold mt-3">Napisz:</h3>
+            <li className="flex items-center mt-2 ">
+              <div className="bg-[#e6e6e6cf] h-16 w-16 rounded-full flex items-center justify-center shrink-0">
+                <MdEmail className="w-12 h-12" />
+              </div>
+
+              <div className="flex flex-col px-3">
+                <small className="block"> Mail</small>
+                <strong>adres@example.pl</strong>
               </div>
             </li>
-            <li className="flex text-2xl my-3">
-              <IoIosPin className="w-16 h-16 mr-2 mt-2 border-2 bg-green-500 px-2 py-2 " />
-              <div className="flex flex-col py-2">
-                <p className="font-bold"> Lokalizacja gabinetu:</p>{" "}
-                <address>matejki 4/12 warszawa</address>
+
+            <h3 className="text-lg font-extrabold mt-3">Przyjdź:</h3>
+            <li className="flex items-center mt-2 ">
+              <div className="bg-[#e6e6e6cf] h-16 w-16 rounded-full flex items-center justify-center shrink-0">
+                <IoIosPin className="w-12 h-12" />
+              </div>
+
+              <div className="flex flex-col px-3">
+                <small className="block"> Lokalizacja</small>
+                <address>
+                  <strong>ul. Naukowa 20/2 02-463 Warszawa</strong>
+                </address>
               </div>
             </li>
+            
           </ul>
         </div>
-        <div>45</div>
+        <div>
+          <h3 className="text-4xl font-bold mt-6">Napisz do nas</h3>
+          <p className="text-sm text-gray-400 mt-4">
+            Szybko odpowiemy na Twoje pytania.
+          </p>
+
+          <form action={send} className="flex flex-col mt-8 space-y-4">
+            <input
+              type="text"
+              placeholder="imię"
+              name="username"
+              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500"
+            ></input>
+            <input
+              type="email"
+              placeholder="E-mail"
+              name="userEmail"
+              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500"
+            ></input>
+            <input
+              type="text"
+              placeholder="Temat"
+              name="subject"
+              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500"
+            ></input>
+
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows={5}
+              className="w-full rounded-md px-4 bg-gray-100 text-sm pt-3 outline-blue-500"
+            ></textarea>
+            <button
+              type="submit"
+              className=" hover:shadow-xl shadow-md shadow-gray-400/75 text-xl  border-2 rounded border-gray-200 bg-white hover:bg-gray-200 px-6 py-2 mb-10 font-bold  text-amber-70 hover:text-white focus:outline-none focus:shadow-outline"
+            >
+              Send Email
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
