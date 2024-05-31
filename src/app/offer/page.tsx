@@ -21,16 +21,22 @@ const OfferPage: React.FC<OfferProps> = () => {
       <main className="flex justify-center sm:mt-12">
         <section className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {OfferItem.map((offerItem) => (
-            <div key={offerItem.id} className="mx-4 my-6 ">
-              <Link className="  " href={`/offer/${offerItem.slug} ` }>
+            <div key={offerItem.id} className="mx-4 my-6 bg-white shadow-xl shadow-gray-400/75 animate-fadeIn rounded border-4 border-white transition-transform duration-200 ease-in-out hover:scale-[1.02]">
+              <Link className="  " href={`/offer/${offerItem.slug} `}>
                 <Image
                   src={`/${offerItem.image}`}
                   alt={offerItem.title}
                   width={400}
                   height={400}
-                  className="animate-fadeIn rounded border-4 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
+                  className=""
                 />
-                <p className="text-xl text-center font-bold px-3 py-4">{offerItem.title}</p>
+                <div className="animate-fadeIn rounded border-4 border-white md:w-[400px] w-full">
+                  <p className="md:text-xl text-center font-bold md:px-3 md:py-4 font-[Lato]">
+                    {offerItem.title}
+                  </p>
+                </div>
+                <div className="flex justify-center">  <button>Kliknij i zobacz szczegóły</button></div>
+               
               </Link>
             </div>
           ))}
