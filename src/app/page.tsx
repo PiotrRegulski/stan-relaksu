@@ -2,7 +2,7 @@ import HomepageImage from "@/components/homepage/HomepageImage";
 import Link from "next/link";
 import { lato } from "@/components/fonts";
 import OffersCard from "@/components/offers/OffersCard";
-import CardArticle from "@/components/layout/CardArticle";
+
 
 export default function Home() {
   return (

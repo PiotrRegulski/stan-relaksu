@@ -2,9 +2,11 @@ import React from "react";
 import { PiPhoneDisconnectBold } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
 import { IoIosPin } from "react-icons/io";
-import { lato } from "@/components/fonts";
+import Link from "next/link";
 import { Resend } from "resend";
-
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
+import MapComponent from "@/components/homepage/MapComponent";
 const page = () => {
   async function send(formData: any) {
     "use server";
@@ -34,15 +36,15 @@ const page = () => {
         </h1>
       </header>
 
-      <div className="grid sm:grid-cols-2 items-center  gap-16 my-24 mx-4 sm:mx-auto max-w-7xl bg-white text-[#333] font-[sans-serif]">
-        <div className="px-2">
-          <h2 className="text-4xl font-bold mb-2">Kontakt</h2>
+      <div className="grid sm:grid-cols-2 items-center  gap-16 my-24 mx-4 sm:mx-auto max-w-7xl  text-[#333] font-[sans-serif] s">
+        <div className="px-2  shadow-xl rounded border-4 border-white  shadow-gray-400/75 min-h-1/3 sm:min-h-max   ">
+          <h2 className="text-4xl font-bold sm:mb-2 py-6">Kontakt</h2>
 
           <p className="text-sm text-gray-400 mt-3">
             Skontaktuj się z nami w dogodny dla Siebie sposób.
           </p>
 
-          <ul className="mt-12 font-[sans-serif]">
+          <ul className="mt-8 font-[sans-serif]">
             <h3 className="text-lg font-extrabold ">Zadzwoń</h3>
             <li className="flex items-center mt-2 ">
               <div className="bg-[#e6e6e6cf] h-16 w-16 rounded-full flex items-center justify-center shrink-0">
@@ -65,6 +67,27 @@ const page = () => {
                 <strong>adres@example.pl</strong>
               </div>
             </li>
+            <h3 className="text-lg font-extrabold mt-6">Socials:</h3>
+            <li className="flex items-center mt-2 gap-2">
+              <div className="bg-[#e6e6e6cf] h-9 w-9 rounded-full flex items-center justify-center shrink-0">
+                <Link
+                  href="https://www.instagram.com/stan_relaksu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaSquareInstagram className="text-right w-8 h-8" />
+                </Link>
+              </div>
+              <div className="bg-[#e6e6e6cf] h-9 w-9 rounded-full  flex items-center justify-center shrink-0">
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61560021160720"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook className="text-right w-8 h-8" />
+                </Link>
+              </div>
+            </li>
 
             <h3 className="text-lg font-extrabold mt-3">Przyjdź:</h3>
             <li className="flex items-center mt-2 ">
@@ -79,6 +102,9 @@ const page = () => {
                 </address>
               </div>
             </li>
+            <div className="my-3"><MapComponent /></div>
+            
+            
             
           </ul>
         </div>
@@ -121,6 +147,7 @@ const page = () => {
               Send Email
             </button>
           </form>
+        
         </div>
       </div>
     </div>

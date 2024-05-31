@@ -3,6 +3,7 @@ import "./globals.css";
 import MainHeader from "@/components/layout/MainHeader";
 import MainFooter from '@/components/layout/MainFooter'
 import { CormorantInfant } from "@/components/fonts";
+
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
