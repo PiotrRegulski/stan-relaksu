@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import CardArticle from "@/components/layout/CardArticle";
 import { useRouter } from "next/navigation";
+import PageHeader from "@/components/homepage/PageHeader";
 // Definicja typu dla pojedynczego elementu oferty
 type OfferItemType = {
   slug: string;
@@ -38,18 +39,9 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
 
   return (
     <>
-      <header
-        id="offer-details"
-        className="grid grid-cols-1 gap-2 place-items-center lg:h-32 bg-cover bg-center"
-        style={{ backgroundImage: "url('/ofertabg.png')" }}
-      >
-        {/* Bezpieczne odwołanie do tytułu oferty */}
-        <h1 className="px-4 py-3 md:text-4xl text-xl  text-center font-bold uppercase text-gray-600">
-          {offerDetail.title}
-        </h1>
-      </header>
+     <PageHeader>{offerDetail.title}</PageHeader>
       <article className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4  h-2/3 py-4 px-2   ">
-        <div className=" sm:grid sm:justify-items-center sm:content-center sm:mt-4  ">
+        <div className=" sm:grid sm:justify-items-center sm:content-center sm:mt-4  "> 
           <Image
             src={`/${offerDetail.image}`}
             alt={offerDetail.title}

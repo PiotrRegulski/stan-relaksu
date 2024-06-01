@@ -1,13 +1,11 @@
+import PageHeader from "@/components/homepage/PageHeader";
 import Image from "next/image";
 import React from "react";
 
 const About = () => {
   return (
     <>
-    <div  className=" grid grid-cols-1 gap-2 place-items-center h-min md:h-32 bg-cover bg-center "
-    style={{ backgroundImage: "url('/ofertabg.png')" }}>  <h1 className=" px-4 py-3 md:text-4xl text-xl  text-center font-bold uppercase text-gray-600">
-    O mnie
-  </h1></div>
+    <PageHeader>O mnie</PageHeader>
     <div id="about" className="relative bg-white overflow-hidden mt-16">
       
       <div className="max-w-7xl mx-auto">

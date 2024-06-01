@@ -7,6 +7,7 @@ import { Resend } from "resend";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import MapComponent from "@/components/homepage/MapComponent";
+import PageHeader from "@/components/homepage/PageHeader";
 const page = () => {
   async function send(formData: any) {
     "use server";
@@ -26,27 +27,19 @@ const page = () => {
   }
   return (
     <div className="mx-auto">
-      <header
-        id="offer-header"
-        className=" grid grid-cols-1 gap-2 place-items-center  sm:h-32 bg-cover bg-center "
-        style={{ backgroundImage: "url('/ofertabg.png')" }}
-      >
-        <h1 className=" px-4 py-3 md:text-4xl text-xl  text-center font-bold uppercase text-gray-600">
-          Skontaktuj Się
-        </h1>
-      </header>
+     <PageHeader>Kontakt</PageHeader>
 
-      <div className="grid sm:grid-cols-2 items-center  gap-16 my-24 mx-4 sm:mx-auto max-w-7xl  text-[#333] font-[sans-serif] s">
-        <div className="px-2  shadow-xl rounded border-4 border-white  shadow-gray-400/75 min-h-1/3 sm:min-h-max   ">
-          <h2 className="text-4xl font-bold sm:mb-2 py-6">Kontakt</h2>
+      <div className="grid md:grid-cols-2 items-center  gap-16 my-24 mx-4 md:mx-auto max-w-7xl  text-[#333] font-[sans-serif] s">
+        <div className="px-2  shadow-xl rounded border-4 border-white  shadow-gray-400/75 min-h-1/3 md:min-h-max   ">
+          <h2 className="text-4xl font-bold md:mb-2 py-6 text-center md:text-left">Kontakt</h2>
 
-          <p className="text-sm text-gray-400 mt-3">
+          <p className="text-sm text-gray-400 mt-3  text-center md:text-left">
             Skontaktuj się z nami w dogodny dla Siebie sposób.
           </p>
 
-          <ul className="mt-8 font-[sans-serif]">
-            <h3 className="text-lg font-extrabold ">Zadzwoń</h3>
-            <li className="flex items-center mt-2 ">
+          <ul className="mt-8 font-[sans-serif]  ">
+            <h3 className="text-lg font-extrabold  ml-12">Zadzwoń:</h3>
+            <li className="flex items-center mt-2 ml-12">
               <div className="bg-[#e6e6e6cf] h-16 w-16 rounded-full flex items-center justify-center shrink-0">
                 <PiPhoneDisconnectBold className="w-12 h-12" />
               </div>
@@ -56,8 +49,8 @@ const page = () => {
                 <strong>000-000-000</strong>
               </div>
             </li>
-            <h3 className="text-lg font-extrabold mt-3">Napisz:</h3>
-            <li className="flex items-center mt-2 ">
+            <h3 className="text-lg font-extrabold mt-3 ml-12">Napisz:</h3>
+            <li className="flex items-center mt-2 ml-12 ">
               <div className="bg-[#e6e6e6cf] h-16 w-16 rounded-full flex items-center justify-center shrink-0">
                 <MdEmail className="w-12 h-12" />
               </div>
@@ -67,8 +60,8 @@ const page = () => {
                 <strong>adres@example.pl</strong>
               </div>
             </li>
-            <h3 className="text-lg font-extrabold mt-6">Socials:</h3>
-            <li className="flex items-center mt-2 gap-2">
+            <h3 className="text-lg font-extrabold mt-6 ml-12">Socials:</h3>
+            <li className="flex items-center mt-2 gap-2 ml-12 mb-12">
               <div className="bg-[#e6e6e6cf] h-9 w-9 rounded-full flex items-center justify-center shrink-0">
                 <Link
                   href="https://www.instagram.com/stan_relaksu/"
@@ -89,8 +82,8 @@ const page = () => {
               </div>
             </li>
 
-            <h3 className="text-lg font-extrabold mt-3">Przyjdź:</h3>
-            <li className="flex items-center mt-2 ">
+            <h3 className="text-lg font-extrabold mt-3 mx-auto">Przyjdź:</h3>
+            <li className="flex items-center mt-2 mx-auto">
               <div className="bg-[#e6e6e6cf] h-16 w-16 rounded-full flex items-center justify-center shrink-0">
                 <IoIosPin className="w-12 h-12" />
               </div>
