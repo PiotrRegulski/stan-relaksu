@@ -3,7 +3,13 @@ import React from "react";
 
 const About = () => {
   return (
+    <>
+    <div  className=" grid grid-cols-1 gap-2 place-items-center h-min md:h-32 bg-cover bg-center "
+    style={{ backgroundImage: "url('/ofertabg.png')" }}>  <h1 className=" px-4 py-3 md:text-4xl text-xl  text-center font-bold uppercase text-gray-600">
+    O mnie
+  </h1></div>
     <div id="about" className="relative bg-white overflow-hidden mt-16">
+      
       <div className="max-w-7xl mx-auto">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <svg
@@ -16,15 +22,15 @@ const About = () => {
             <polygon points="50,0 100,0 50,100 0,100"></polygon>
           </svg>
 
-          <div className="pt-1"></div>
-
-          <main className="mt-10 mx-auto max-w-5xl px-12 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+       
+<div className="pt-1"></div>
+          <main className="mt-6 mx-auto max-w-5xl px-2 md:px-12 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h2 className="my-6 text-center text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
-                O mnie
+              <h2 className="my-6 pl-4 text-left text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl ">
+              Kim jestem
               </h2>
 
-              <article className="text-xl font-[Lato] px-10 mr-12  text-justify leading-loose text-pretty text-gray-900/70">
+              <article className="text-xl font-[Lato] md:px-10 md:mr-12 leading-loose text-pretty text-gray-900/70">
                 {" "}
                 <p className="indent-8">
                   Ukończyłam fizjoterapię na Warszawskim Uniwersytecie
@@ -46,16 +52,18 @@ const About = () => {
           </main>
         </div>
       </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <div className="relative w-[95vw] h-96 my-4 mx-2 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full" >
         <Image
-          className="h-56 w-full object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full"
+          className=" absolute lg:static"
           src="/hero.png"
           alt=" hero"
           layout="fill"
           objectFit="cover"
+          objectPosition="top"
+         
         />
       </div>
-    </div>
+    </div></>
   );
 };
 
