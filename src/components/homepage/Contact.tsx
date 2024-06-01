@@ -4,7 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { PiPhoneDisconnectBold } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
 import { IoIosPin } from "react-icons/io";
-import PageHeader from "./PageHeader";
+
 import MapComponent from "./MapComponent";
 import { Resend } from "resend";
 import Link from "next/link";
@@ -40,7 +40,7 @@ const Contact = () => {
             Skontaktuj się z nami w dogodny dla Siebie sposób.
           </p>
 
-          <div className="flex justify-around mt-8 font-[sans-serif]">
+          <div className="flex md:flex-row flex-col justify-around mt-8 font-[sans-serif]">
             <div className="flex flex-col items-center mt-2 mx-auto">
               <h3 className="text-lg font-extrabold  text-center my-2 ">
                 Zadzwoń:
@@ -63,7 +63,7 @@ const Contact = () => {
 
                 <div className="flex flex-col px-3">
                   <small className="block"> Mail</small>
-                  <strong>adres@example.pl</strong>
+                  <strong className="font-xs">adres@example.pl</strong>
                 </div>
               </div>
            
