@@ -34,14 +34,24 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
 
   // Obsługa sytuacji, gdy oferta nie zostanie znaleziona
   if (!offerDetail) {
-    return <div>Oferta nie została znaleziona.</div>;
+    return (
+      <div className="flex flex-col justify-center w-[100vw] h-96">
+        <div className="w-full "><p className="text-center">Oferta nie została znaleziona.</p></div>
+        <button
+          onClick={router.back}
+          className="   text-xl underline decoration-solid underline-offset-8 font-semibold  px-2 py-3  text-lime-400 hover:text-gray-400  text-center w-full"
+        >
+          Zobacz pozostałe oferty
+        </button>
+      </div>
+    );
   }
 
   return (
     <>
-     <PageHeader>{offerDetail.title}</PageHeader>
+      <PageHeader>{offerDetail.title}</PageHeader>
       <article className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4  h-2/3 py-4 px-2   ">
-        <div className=" sm:grid sm:justify-items-center sm:content-center sm:mt-4  "> 
+        <div className=" sm:grid sm:justify-items-center sm:content-center sm:mt-4  ">
           <Image
             src={`/${offerDetail.image}`}
             alt={offerDetail.title}
