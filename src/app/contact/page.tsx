@@ -82,8 +82,8 @@ const page = () => {
               </div>
             </li>
 
-            <h3 className="text-lg font-extrabold mt-3 mx-auto">Przyjdź:</h3>
-            <li className="flex items-center mt-2 mx-auto">
+            <h3 className="text-lg font-extrabold mt-3 mx-auto ml-12">Adres:</h3>
+            <li className="flex items-center mt-2 mx-auto ml-12 mb-12">
               <div className="bg-[#e6e6e6cf] h-16 w-16 rounded-full flex items-center justify-center shrink-0">
                 <IoIosPin className="w-12 h-12" />
               </div>
