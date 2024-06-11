@@ -103,15 +103,55 @@ export const OfferItem = [
     slug: "terapia-manualna-blizn",
     title: "Terapia manualna blizn",
     image: "offer4.png",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae perferendis non, tempora, a saepe ratione architecto deleniti laboriosam quaerat quisquam recusandae ut adipisci iure autem idaliquid cupiditate enim similique.Lorem ipsum dolor sit ametconsectetur adipisicing elit. Molestiae perferendis non, tempora, asaepe ratione architecto deleniti laboriosam quaerat quisquamrecusandae ut adipisci iure autem id alcupiditate enimsimilique.",
+    contentFirst:
+      "Masaż powięziowy to doskonały wybór dla osób, które odczuwają bóle pleców, karku lub stawów obwodowych. Pozwól, że opowiem Ci o tym terapeutycznym zabiegu:",
+      advantages: [
+        {
+          title: "Indywidualne podejście:",
+          description:
+            "Każdy organizm jest inny, dlatego terapia jest dostosowana do Twoich potrzeb. Masaż powięziowy pomaga w rozluźnieniu napięć w ciele.",
+        },
+        {
+          title: "Zwalczanie bólu:",
+          description:
+            "Dzięki masażowi możesz pozbyć się dolegliwości bólowych. To jak reset dla Twojego ciała!",
+        },
+        {
+          title: "Techniki terapeutyczne:",
+          description:
+            "W zależności od Twoich potrzeb, terapeuta może użyć technik terapii manualnej, powięziowej lub masażu tkanek głębokich. Celem jest uzyskanie jak najlepszych efektów.",
+        },
+       
+      ],
+      summary:
+        "Nie czekaj – umów się na masaż powięziowy i poczuj ulgę!",
   },
   {
     id: "DrenażLimfatyczny",
     slug: "drenaz-limfatyczny",
     title: "Drenaż limfatyczny",
     image: "offer5.png",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae perferendis non, tempora, a saepe ratione architecto deleniti laboriosam quaerat quisquam recusandae ut adipisci iure autem idaliquid cupiditate enim similique.Lorem ipsum dolor sit ametconsectetur adipisicing elit. Molestiae perferendis non, tempora, asaepe ratione architecto deleniti laboriosam quaerat quisquamrecusandae ut adipisci iure autem id alcupiditate enimsimilique.",
+    contentFirst:
+      "Masaż powięziowy to doskonały wybór dla osób, które odczuwają bóle pleców, karku lub stawów obwodowych. Pozwól, że opowiem Ci o tym terapeutycznym zabiegu:",
+      advantages: [
+        {
+          title: "Indywidualne podejście:",
+          description:
+            "Każdy organizm jest inny, dlatego terapia jest dostosowana do Twoich potrzeb. Masaż powięziowy pomaga w rozluźnieniu napięć w ciele.",
+        },
+        {
+          title: "Zwalczanie bólu:",
+          description:
+            "Dzięki masażowi możesz pozbyć się dolegliwości bólowych. To jak reset dla Twojego ciała!",
+        },
+        {
+          title: "Techniki terapeutyczne:",
+          description:
+            "W zależności od Twoich potrzeb, terapeuta może użyć technik terapii manualnej, powięziowej lub masażu tkanek głębokich. Celem jest uzyskanie jak najlepszych efektów.",
+        },
+       
+      ],
+      summary:
+        "Nie czekaj – umów się na masaż powięziowy i poczuj ulgę!",
   },
 ];

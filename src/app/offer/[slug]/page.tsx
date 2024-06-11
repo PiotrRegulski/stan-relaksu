@@ -2,15 +2,23 @@
 import { OfferItem } from "@/data/OfferItem";
 import React from "react";
 import Image from "next/image";
-import CardArticle from "@/components/layout/CardArticle";
+
 import { useRouter } from "next/navigation";
 import PageHeader from "@/components/homepage/PageHeader";
+
+type AdvantageType = {
+  title: string;
+  description: string;
+};
 // Definicja typu dla pojedynczego elementu oferty
 type OfferItemType = {
+  id:string
   slug: string;
   title: string;
-  content: string;
+  contentFirst?: string;
   image: string;
+  advantages:AdvantageType[];
+  
   // Dodaj pozostałe pola zgodnie z definicją OfferItem
 };
 
@@ -36,7 +44,9 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
   if (!offerDetail) {
     return (
       <div className="flex flex-col justify-center w-[100vw] h-96">
-        <div className="w-full "><p className="text-center">Oferta nie została znaleziona.</p></div>
+        <div className="w-full ">
+          <p className="text-center">Oferta nie została znaleziona.</p>
+        </div>
         <button
           onClick={router.back}
           className="   text-xl underline decoration-solid underline-offset-8 font-semibold  px-2 py-3  text-lime-400 hover:text-gray-400  text-center w-full"
@@ -50,17 +60,35 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
   return (
     <>
       <PageHeader>{offerDetail.title}</PageHeader>
-      <article className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4  h-2/3 py-4 px-2   ">
+
+      <section
+        id="offerDetail"
+        className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4  h-2/3 py-4 px-2  shadow-xl shadow-gray-400/75 "
+      >
+        <div className="px-12 py-12">
+          <h2 className="my-6 pl-4 text-left text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl ">
+            {offerDetail.title}
+          </h2>
+          <p className="text-xl text-justify font-[lato] indent-8">
+            {offerDetail.contentFirst}
+          </p>
+          <ul>  
+            {offerDetail.advantages?.map((advantage) => (
+            <li key={advantage.title}>
+              <h3 className="font-[lato] text-2xl">{advantage.title}</h3>  <p className="text-xl font-[lato] font-semibold mx-4 my-4">{advantage.description}</p>
+            </li>
+          ))}</ul>
+         
+        </div>
         <div className=" sm:grid sm:justify-items-center sm:content-center sm:mt-4  ">
           <Image
             src={`/${offerDetail.image}`}
             alt={offerDetail.title}
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             className="  z-0 animate-fadeIn rounded border-4 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
           />
           <div className=" flex gap-2 z-10  py-3 overflow-auto ">
-            {" "}
             <Image
               src={`/${offerDetail.image}`}
               alt={offerDetail.title}
@@ -84,8 +112,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             />
           </div>
         </div>
-        <CardArticle>{offerDetail.content}</CardArticle>
-      </article>
+      </section>
       <div className="flex justify-center">
         <button
           onClick={router.back}
