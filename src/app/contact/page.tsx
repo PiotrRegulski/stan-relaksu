@@ -101,9 +101,9 @@ const page = () => {
             
           </ul>
         </div>
-        <div>
+        <div className="bg-gray-200 px-4 py-4 shadow-xl rounded-xl">
           <h3 className="text-4xl font-bold mt-6">Napisz do nas</h3>
-          <p className="text-sm text-gray-400 mt-4">
+          <p className="text-sm text-gray-900 mt-4">
             Szybko odpowiemy na Twoje pytania.
           </p>
 
@@ -112,32 +112,32 @@ const page = () => {
               type="text"
               placeholder="imię"
               name="username"
-              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500"
+              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500 shadow-md text-gray-900"
             ></input>
             <input
               type="email"
               placeholder="E-mail"
               name="userEmail"
-              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500"
+              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500 shadow-md text-gray-900"
             ></input>
             <input
               type="text"
               placeholder="Temat"
               name="subject"
-              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500"
+              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500 shadow-md text-gray-900"
             ></input>
 
             <textarea
               name="message"
-              placeholder="Message"
+              placeholder="Napisz do mnie"
               rows={5}
-              className="w-full rounded-md px-4 bg-gray-100 text-sm pt-3 outline-blue-500"
+              className="w-full rounded-md px-4 bg-gray-100 text-sm pt-3 outline-blue-500 shadow-md text-gray-900"
             ></textarea>
             <button
               type="submit"
               className=" hover:shadow-xl shadow-md shadow-gray-400/75 text-xl  border-2 rounded border-gray-200 bg-white hover:bg-gray-200 px-6 py-2 mb-10 font-bold  text-amber-70 hover:text-white focus:outline-none focus:shadow-outline"
             >
-              Send Email
+              Wyślij
             </button>
           </form>
         
