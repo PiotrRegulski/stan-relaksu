@@ -1,7 +1,7 @@
 import PageHeader from "@/components/homepage/PageHeader";
 import Image from "next/image";
 import React from "react";
-
+import Link from "next/link";
 const About = () => {
   return (
     <>
@@ -30,22 +30,29 @@ const About = () => {
 
               <article className="text-xl font-[Lato] md:px-10 md:mr-12 leading-loose text-pretty text-gray-900/70">
                 {" "}
-                <p className="indent-8">
+                <p className="indent-8 text-justify ">
                   Ukończyłam fizjoterapię na Warszawskim Uniwersytecie
                   Medycznym, jestem naturoterapeutką. W pracy wykorzystuje
                   różnorodne techniki terapeutyczne zdobyte na licznych
                   szkoleniach i kursach specjalistycznych.
                 </p>
-                <p className="indent-8">
+                <p className="indent-8 text-justify">
                   Dzięki swojej szerokiej wiedzy i doświadczeniu pomogę Ci w
                   procesie dbania o swoje zdrowie. Czekam na Ciebie aby
                   przynieść Ci ulgę w bólu i napięciu.
                 </p>
-                <p className="indent-8">
+                <p className="indent-8 text-justify">
                   Zarezerwuj wizytę i daj się sobą zaopiekować w komfortowy
                   zaciszu gabinetu Stan Relaksu.
                 </p>
               </article>
+              <div className=" flex justify-center mx-4 my-4"> <Link
+                href="/offer"
+                className=" hover:shadow-xl shadow-md text-xl  border-2 rounded border-amber-400 bg-amber-500 hover:bg-amber-400 px-6 py-2 font-bold  text-amber-70 hover:text-white focus:outline-none focus:shadow-outline"
+              >
+                Klikni i zapoznaj się ofertą
+              </Link></div>
+             
             </div>
           </main>
         </div>

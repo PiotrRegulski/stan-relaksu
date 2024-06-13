@@ -45,7 +45,7 @@ const MainHeader = () => {
               <button className=" fixed top-20 right-3 w-max rounded-full bg-green-600 py-2 px-2 font-dm text-xl font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
                 <Link href="https://www.instagram.com/stan_relaksu/" target="_blank" rel="noopener noreferrer"><FaSquareInstagram className="text-right"/></Link>
               </button>
-              <button className=" animate-fadeIn mt-8 inline-flex items-center justify-center rounded-full bg-green-600 py-3 px-6 font-dm text-xl font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-400  hover:scale-[1.02]">
+              <button className="  animate-fadeIn mt-8 inline-flex items-center justify-center rounded-full bg-green-600 py-3 px-6 font-dm text-xl font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-400  hover:scale-[1.02]">
                 <Link href="https://booksy.com/"  target="_blank" rel="noopener noreferrer"> Zarezerwuj Wizytę</Link>
               </button>
             </div>

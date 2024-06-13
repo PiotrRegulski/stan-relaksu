@@ -66,16 +66,14 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
         className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4  h-2/3 md:py-4 md:px-2  shadow-xl shadow-gray-400/75 md:mx-36 md:my-8"
       >
         <div className="md:px-12 md:py-12 px-2">
-          <h2 className="my-6 pl-4 text-left text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl  ">
-            {offerDetail.title}
-          </h2>
+        
           <p className={` ${lato.className} text-xl mx-4 my-4  indent-8 font-semibold`}>
             {offerDetail.contentFirst}
           </p>
           <ul>  
             {offerDetail.advantages?.map((advantage) => (
             <li key={advantage.title}>
-                <p className="text-xl font-[lato] font-semibold text-justify md:mx-4 md:my-4 indent-8">{advantage.description}</p>
+                <p className="text-xl font-[lato] font-semibold text-justify my-3 mx-3 md:mx-4 md:my-4 indent-8">{advantage.description}</p>
             </li>
           ))}</ul>
          

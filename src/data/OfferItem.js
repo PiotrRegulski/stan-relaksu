@@ -10,22 +10,17 @@ export const OfferItem = [
       {
         title: "Spłycenie zmarszczek",
         description:
-          "Igłoterapia stymuluje komórki skóry, pobudzając produkcję kolagenu i elastyny. To naturalne białka sprawiają, że skóra jest jędrna i elastyczna. Dzięki temu zmarszczki zostają spłycone, a Twoja twarz wygląda młodziej.",
+          "Igłoterapia estetyczna prowadzi do spłycenia zmarszczek i poprawy wyglądu twarzy poprzez stymulację komórek, produkcję kolagenu i elastyny. Głębokie rozluźnienie mięśni mimicznych pomaga w przywróceniu ich odpowiedniej elastyczności za czym idzie wygładzenie. Jest to zabieg, który poprawia wygląd uwydatniając unikalne cechy twarzy więc to idealne rozwiązanie dla osób, które cenią sobie naturalne podkreślenie urody.",
       },
       {
         title: "Unikalne cechy twarzy",
         description:
-          "Ten zabieg podkreśla Twoje naturalne piękno. Nie chodzi o zmianę Twojego wyglądu, ale o wydobycie tego, co w Tobie najpiękniejsze. To idealne rozwiązanie dla osób, które cenią subtelność i naturalność.",
+          "Przy regularnym stosowaniu igłoterapii estetycznej zauważamy większe odżywienie tkanek, skóra staje się promienna a zmarszczki zostają spłycone. ",
       },
       {
         title: "Efekt odmłodzenia",
         description:
-          "Cieniutkie igiełki akupunkturowe są precyzyjnie wprowadzane w mięśnie mimiczne. To głębokie rozluźnienie pomaga przywrócić im elastyczność i jędrność. Efekt? Twoja twarz wygląda młodziej, a skóra staje się promienna.",
-      },
-      {
-        title: "Regularność to klucz",
-        description:
-          "Przy regularnym stosowaniu igłoterapii estetycznej zauważysz większe odżywienie tkanek. Twoja skóra będzie wdzięczna za tę pielęgnację!",
+          "Zabieg polega na zastosowaniu cieniutkich igieł akupunkturowych, które wprowadzane są w obrębie mięśni mimicznych dla przywrócenia ich elastyczności i jędrności dzięki czemu uzyskujemy efekt odmłodzenia twarzy. ",
       },
     ],
     summary:
@@ -43,23 +38,19 @@ export const OfferItem = [
       {
         title: "Tradycja japońska:",
         description:
-          "Kobido to technika masażu, która wywodzi się z Japonii. To niechirurgiczny lifting twarzy, który od wieków zachwyca swoją skutecznością..",
+          "Tradycyjna japońska technika masażu twarzy, szyi, dekoltu i skóry głowy określana często jako niechirurgiczny lifting twarzy.",
       },
       {
         title: "Głębokie rozluźnienie:",
         description:
-          "Podczas masażu dochodzi do głębokiego rozluźnienia tkanek, nie tylko warstwy podskórnej, ale także mięśni i powięzi twarzy. To jak reset dla Twojej skóry!",
+          "Podczas masażu dochodzi do głębokiego rozluźnienia i pobudzenia tkanek nie tylko warstwy podskórnej, ale także mięśni i powięzi twarzy dzięki czemu uzyskujemy efekt liftingu, wymodelowania rysów oraz odblokowania przepływu krążenia limfy.",
       },
       {
         title: "Efekt liftingu:",
         description:
-          "Dzięki stymulacji tkanek masażem, Twoja skóra nabiera jędrności. Rysy twarzy są wymodelowane, a efekt liftingu jest widoczny.",
+          "Dodatkowo na koniec zabiegu dla przedłużenia efektu zakładamy kinesiotaping estetyczny..",
       },
-      {
-        title: "Odblokowanie przepływu krążenia limfy",
-        description:
-          "To kluczowe dla zdrowej skóry. Kinesiotaping estetyczny na koniec zabiegu pomaga przedłużyć efekt i utrzymać skórę w świetnej kondycji.",
-      },
+
       {
         title: "Regularność:",
         description:
@@ -76,27 +67,19 @@ export const OfferItem = [
     image: "offer3.jpg",
     contentFirst:
       "Masaż powięziowy to doskonały wybór dla osób, które odczuwają bóle pleców, karku lub stawów obwodowych. ",
-      advantages: [
-        {
-          title: "Indywidualne podejście:",
-          description:
-            "Każdy organizm jest inny, dlatego terapia jest dostosowana do Twoich potrzeb. Masaż powięziowy pomaga w rozluźnieniu napięć w ciele.",
-        },
-        {
-          title: "Zwalczanie bólu:",
-          description:
-            "Dzięki masażowi możesz pozbyć się dolegliwości bólowych. To jak reset dla Twojego ciała!",
-        },
-        {
-          title: "Techniki terapeutyczne:",
-          description:
-            "W zależności od Twoich potrzeb, terapeuta może użyć technik terapii manualnej, powięziowej lub masażu tkanek głębokich. Celem jest uzyskanie jak najlepszych efektów.",
-        },
-       
-      ],
-      summary:
-        "Nie czekaj – umów się na masaż powięziowy i poczuj ulgę!",
-    
+    advantages: [
+      {
+        title: "Indywidualne podejście:",
+        description:
+          "Masaż powięziowy to idealny wybór dla osób, które zmagają się z bólami pleców, karku czy bólami w stawach obwodowych. Indywidualnie dobrana terapia pomoże w zniesieniu napięć w ciele i pozbyciu się dolegliwości bólowych.",
+      },
+      {
+        title: "Zwalczanie bólu:",
+        description:
+          "W zależności od potrzeb możliwe jest użycie technik terapii manualnej, powięziowej czy masażu tkanek głebokich dla uzyskania jak najlepszych efektów.",
+      },
+    ],
+    summary: "Nie czekaj – umów się na masaż powięziowy i poczuj ulgę!",
   },
   {
     id: "TerapiaManualnaBlizn ",
@@ -105,26 +88,19 @@ export const OfferItem = [
     image: "offer4.png",
     contentFirst:
       "Ta innowacyjna metoda mobilizacji i manualnego opracowania blizn pozwala na przywrócenie naturalnego ślizgu warstw tkanek, redukcję zrostów i promowanie zdrowego przebudowywania się tkanki. ",
-      advantages: [
-        {
-          title: "Indywidualne podejście:",
-          description:
-            "Każdy organizm jest inny, dlatego terapia jest dostosowana do Twoich potrzeb. Masaż powięziowy pomaga w rozluźnieniu napięć w ciele.",
-        },
-        {
-          title: "Zwalczanie bólu:",
-          description:
-            "Dzięki masażowi możesz pozbyć się dolegliwości bólowych. To jak reset dla Twojego ciała!",
-        },
-        {
-          title: "Techniki terapeutyczne:",
-          description:
-            "W zależności od Twoich potrzeb, terapeuta może użyć technik terapii manualnej, powięziowej lub masażu tkanek głębokich. Celem jest uzyskanie jak najlepszych efektów.",
-        },
-       
-      ],
-      summary:
-        "Nie czekaj – umów się na masaż powięziowy i poczuj ulgę!",
+    advantages: [
+      {
+        title: "Indywidualne podejście:",
+        description:
+          "Mobilizacja i manualne opracowanie blizny pomaga w przywróceniu ślizgu warstw tkanek które zostały przecięte , zmniejszeniu zrostów i lepszemu przebudowywaniu się tkank",
+      },
+      {
+        title: "Zwalczanie bólu:",
+        description:
+          "Zauważalnym efektem po terapii blizny  jest zmiana elastyczności i poprawa jej wyglądu. Terapia ta często łączona jest z suchym iglowaniem blizny dla zwiększenia efektów pracy.",
+      },
+    ],
+    summary: "Nie czekaj – umów się na masaż powięziowy i poczuj ulgę!",
   },
   {
     id: "DrenażLimfatyczny",
@@ -133,25 +109,14 @@ export const OfferItem = [
     image: "offer5.png",
     contentFirst:
       "Odkryj ulgę i lekkość, jaką oferuje drenaż limfatyczny – delikatna, ale potężna metoda, która może przynieść znaczącą poprawę osobom borykającym się z obrzękami i zastojem limfy. ",
-      advantages: [
-        {
-          title: "Indywidualne podejście:",
-          description:
-            "Każdy organizm jest inny, dlatego terapia jest dostosowana do Twoich potrzeb. Masaż powięziowy pomaga w rozluźnieniu napięć w ciele.",
-        },
-        {
-          title: "Zwalczanie bólu:",
-          description:
-            "Dzięki masażowi możesz pozbyć się dolegliwości bólowych. To jak reset dla Twojego ciała!",
-        },
-        {
-          title: "Techniki terapeutyczne:",
-          description:
-            "W zależności od Twoich potrzeb, terapeuta może użyć technik terapii manualnej, powięziowej lub masażu tkanek głębokich. Celem jest uzyskanie jak najlepszych efektów.",
-        },
-       
-      ],
-      summary:
-        "Nie czekaj – umów się na masaż powięziowy i poczuj ulgę!",
+    advantages: [
+      {
+        title: "Indywidualne podejście:",
+        description:
+          "Techniki manualne drenażu pozwalają odblokować zastoje w węzłach chłonnych, usunąć zalegajaca limfę i usprawnić jej przepływ.",
+      },
+     
+    ],
+    summary: "Nie czekaj – umów się na masaż powięziowy i poczuj ulgę!",
   },
 ];
