@@ -3,6 +3,7 @@ import { OfferItem } from "@/data/OfferItem";
 import Link from "next/link";
 import Image from "next/image";
 import PageHeader from "@/components/homepage/PageHeader";
+import { lato } from "@/components/fonts";
 interface OfferProps {
   // Tutaj możesz dodać właściwości, jeśli są potrzebne
 }
@@ -27,7 +28,7 @@ const OfferPage: React.FC<OfferProps> = () => {
                   <p className="md:text-xl text-center font-bold md:px-3 md:py-4 py-2 font-[Lato] md:h-24 h-min">
                     {offerItem.title}
                   </p>
-                  <p className=" h-72 md:h-48 text-justify font-semibold text-xl px-1">
+                  <p className={`${lato.className} h-72 md:h-48 text-justify  text-xl md:px-3 px-1`}>
                     {offerItem.contentFirst}
                   </p>
                 </div>
