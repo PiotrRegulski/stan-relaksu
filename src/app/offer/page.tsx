@@ -24,12 +24,18 @@ const OfferPage: React.FC<OfferProps> = () => {
                   className=""
                 />
                 <div className="animate-fadeIn rounded border-4 border-white md:w-[400px] w-full">
-                  <p className="md:text-xl text-center font-bold md:px-3 md:py-4 font-[Lato]">
+                  <p className="md:text-xl text-center font-bold md:px-3 md:py-4 py-2 font-[Lato] md:h-24 h-min">
                     {offerItem.title}
                   </p>
+                  <p className=" h-72 md:h-48 text-justify font-semibold text-xl px-1">
+                    {offerItem.contentFirst}
+                  </p>
                 </div>
-                <div className="flex justify-center">  <button>Kliknij i zobacz szczegóły</button></div>
-               
+
+                <div className="flex justify-center h-12">
+                  {" "}
+                  <button className=" flex underline decoration-solid underline-offset-8 font-semibold  text-center px-2 py-3  text-black hover:text-gray-400"> Kliknij i zobacz szczegóły</button>
+                </div>
               </Link>
             </div>
           ))}

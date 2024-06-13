@@ -28,7 +28,7 @@ const Contact = () => {
   }
   return (
     <div className="w-[100%] mx-auto">
-       <PageHeader>Kontakt</PageHeader>
+       <PageHeader>Skontaktuj się</PageHeader>
       <div
         className="grid md:grid-cols-1
         gap-4  items-center my-12 md:mx-4 text-[#333] "
@@ -119,7 +119,7 @@ const Contact = () => {
             Szybko odpowiemy na Twoje pytania.
           </p>
 
-          <form action={send} className="flex flex-col mt-8 space-y-4 md:mx-48">
+          <form action={send} className="flex flex-col mt-8 space-y-4 md:mx-96">
             <input
               type="text"
               placeholder="imię"
@@ -130,20 +130,20 @@ const Contact = () => {
               type="email"
               placeholder="E-mail"
               name="userEmail"
-              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500 shadow-md"
+              className="w-full rounded-md py-3 px-4 bg-primary text-sm outline-blue-500 shadow-md"
             ></input>
             <input
               type="text"
               placeholder="Temat"
               name="subject"
-              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500 shadow-md"
+              className="w-full rounded-md py-3 px-4 bg-primary text-sm outline-blue-500 shadow-md"
             ></input>
 
             <textarea
               name="message"
               placeholder="Message"
               rows={5}
-              className="w-full rounded-md px-4 bg-gray-100 text-sm pt-3 outline-blue-500 shadow-md"
+              className="w-full rounded-md px-4 bg-primary bord text-sm pt-3 outline-blue-500 shadow-md"
             ></textarea>
             <button
               type="submit"

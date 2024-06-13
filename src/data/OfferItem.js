@@ -5,7 +5,7 @@ export const OfferItem = [
     title: "Igłoterapia estetyczna twarzy",
     image: "offer1.jpg",
     contentFirst:
-      "Igłoterapia estetyczna twarzy z pinezkowaniem to zaawansowany zabieg, który może odmienić wygląd Twojej skóry. Pozwól mi opowiedzieć Ci o tym fascynującym procesie:",
+      "Igłoterapia estetyczna twarzy z pinezkowaniem to zaawansowany zabieg, który może odmienić wygląd Twojej skóry. Stymuluje jej komórki, pobudzając produkcję kolagenu i elastyny. Dzięki temu zmarszczki zostają spłycone, a Twoja twarz wygląda młodziej.  ",
     advantages: [
       {
         title: "Spłycenie zmarszczek",
@@ -38,7 +38,7 @@ export const OfferItem = [
     title: "Masaż Kobido z kinesiotapingiem estetycznym",
     image: "offer2.jpg",
     contentFirst:
-      "Masaż Kobido z kinesiotapingiem estetycznym to prawdziwa perła w świecie pielęgnacji twarzy. Pozwól, że opowiem Ci o tym wyjątkowym zabiegu:",
+      "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwa perłą w świecie pielęgnacji twarzy. Wywodzący się z Japoni niechirurgiczny lifting twarzy, który od wieków zachwyca swoją skutecznością..",
     advantages: [
       {
         title: "Tradycja japońska:",
@@ -75,7 +75,7 @@ export const OfferItem = [
     title: "Masaż powięziowy ",
     image: "offer3.jpg",
     contentFirst:
-      "Masaż powięziowy to doskonały wybór dla osób, które odczuwają bóle pleców, karku lub stawów obwodowych. Pozwól, że opowiem Ci o tym terapeutycznym zabiegu:",
+      "Masaż powięziowy to doskonały wybór dla osób, które odczuwają bóle pleców, karku lub stawów obwodowych. ",
       advantages: [
         {
           title: "Indywidualne podejście:",
@@ -104,7 +104,7 @@ export const OfferItem = [
     title: "Terapia manualna blizn",
     image: "offer4.png",
     contentFirst:
-      "Masaż powięziowy to doskonały wybór dla osób, które odczuwają bóle pleców, karku lub stawów obwodowych. Pozwól, że opowiem Ci o tym terapeutycznym zabiegu:",
+      "Ta innowacyjna metoda mobilizacji i manualnego opracowania blizn pozwala na przywrócenie naturalnego ślizgu warstw tkanek, redukcję zrostów i promowanie zdrowego przebudowywania się tkanki. ",
       advantages: [
         {
           title: "Indywidualne podejście:",
@@ -132,7 +132,7 @@ export const OfferItem = [
     title: "Drenaż limfatyczny",
     image: "offer5.png",
     contentFirst:
-      "Masaż powięziowy to doskonały wybór dla osób, które odczuwają bóle pleców, karku lub stawów obwodowych. Pozwól, że opowiem Ci o tym terapeutycznym zabiegu:",
+      "Odkryj ulgę i lekkość, jaką oferuje drenaż limfatyczny – delikatna, ale potężna metoda, która może przynieść znaczącą poprawę osobom borykającym się z obrzękami i zastojem limfy. ",
       advantages: [
         {
           title: "Indywidualne podejście:",
