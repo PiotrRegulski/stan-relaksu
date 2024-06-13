@@ -102,6 +102,7 @@ const page = () => {
           </ul>
         </div>
         <div className="bg-gray-200 px-4 py-4 shadow-xl rounded-xl">
+          
           <h3 className="text-4xl font-bold mt-6">Napisz do nas</h3>
           <p className="text-sm text-gray-900 mt-4">
             Szybko odpowiemy na Twoje pytania.

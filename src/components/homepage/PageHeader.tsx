@@ -8,10 +8,10 @@ const PageHeader: React.FC<PageHeaderProps> = ({ children }) => {
   return (
     <header
       id="offer-header"
-      className="grid grid-cols-1 gap-2 place-items-center sm:h-32 bg-cover bg-center backdrop-contrast-200 bg-black/20"
+      className="grid grid-cols-1 gap-2 place-items-center sm:h-32 bg-cover bg-center backdrop-contrast-200"
       style={{ backgroundImage: "url('/ofertabg.png')" }}
     >
-      <h1 className="px-4 py-3 md:text-4xl text-xl text-center font-semibold uppercase bg-white/10 text-gray-950 ">
+      <h1 className="px-4 py-3 md:text-4xl text-xl text-center font-semibold uppercase bg-amber-200/10 text-gray-950 ">
         {children}
       </h1>
     </header>

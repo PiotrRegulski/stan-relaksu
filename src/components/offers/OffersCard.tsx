@@ -2,10 +2,13 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { OfferItem } from "@/data/OfferItem";
+import PageHeader from "../homepage/PageHeader";
 const OffersCard = () => {
   return (
+    <>
+    <PageHeader>Co oferuję</PageHeader>
     <div className="flex justify-center">
-        
+       
       <section className="grid grid-cols-1 sm:grid-cols-3 sm:gap-12">
         {OfferItem.map((offerItem) => (
           <div key={offerItem.id} className="mx-4 my-6 bg-white shadow-xl shadow-gray-400/75 animate-fadeIn rounded border-4 border-white transition-transform duration-200 ease-in-out hover:scale-[1.02]">
@@ -29,6 +32,7 @@ const OffersCard = () => {
         ))}
       </section>
     </div>
+    </>
   );
 };
 

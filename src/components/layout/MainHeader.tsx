@@ -16,7 +16,7 @@ const MainHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
   const currentPath = usePathname();
-  const router =useRouter();
+  const router = useRouter();
  
   const getLinkClassName = (path: string): string => {
     const formattedCurrentPath = currentPath.replace(/^\//, "");
@@ -58,7 +58,7 @@ const MainHeader = () => {
           </Link>
         </div>
         
-        <div className=" flex  flex-wrap w-full justify-evenly   py-4 px-4">
+        <div className={`${CormorantInfant.className} flex  flex-wrap w-full justify-evenly   py-4 px-4`}>
           <nav
             id="big-Screen-nav"
             className=" sm:flex justify-center  text-xl pt-6 hidden"
@@ -78,7 +78,7 @@ const MainHeader = () => {
           </nav>
           <nav id="mobile-nav" className="w-screen sm:hidden">
             <ul
-              className={`  flex flex-col  bg-primary  w-full h-full p-2 space-y-1  sm:flex-row sm:space-y-1 sm:space-x-4 divide-y-4 divide-amber-400/25 divide-solid ${
+              className={`flex flex-col  bg-primary  w-full h-full p-2 space-y-1  sm:flex-row sm:space-y-1 sm:space-x-4 divide-y-4 divide-amber-400/25 divide-solid ${
                 isOpen ? "" : "hidden"
               }`}
             >

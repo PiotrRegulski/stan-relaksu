@@ -8,6 +8,7 @@ import { IoIosPin } from "react-icons/io";
 import MapComponent from "./MapComponent";
 import { Resend } from "resend";
 import Link from "next/link";
+import PageHeader from "./PageHeader";
 const Contact = () => {
   async function send(formData: any) {
     "use server";
@@ -26,19 +27,19 @@ const Contact = () => {
     console.log("Email Send successfully", data);
   }
   return (
-    <div className="">
+    <div className="w-[100%] mx-auto">
+       <PageHeader>Kontakt</PageHeader>
       <div
         className="grid md:grid-cols-1
-       w-[95vw] gap-4  items-center my-24 mx-4   text-[#333] font-[sans-serif] s"
+        gap-4  items-center my-12 md:mx-4 text-[#333] "
       >
-        <div className="px-2  shadow-xl rounded border-4 border-white  shadow-gray-400/75    ">
-          <h2 className="text-4xl font-bold md:mb-2 py-6 text-center">
-            Kontakt
+        <div className="px-2 shadow-xl rounded border-4 border-white  shadow-gray-400/75 w-full">
+       
+          <h2 className="text-xl font-bold md:mb-2 py-2 text-center">
+          Skontaktuj się z nami w dogodny dla Siebie sposób.
           </h2>
 
-          <p className="text-sm text-gray-400 mt-3  text-center ">
-            Skontaktuj się z nami w dogodny dla Siebie sposób.
-          </p>
+          
 
           <div className="flex md:flex-row flex-col justify-around mt-8 font-[sans-serif]">
             <div className="flex flex-col items-center mt-2 mx-auto">
@@ -94,7 +95,7 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-col items-center mt-2 mx-auto">
-              <h3 className="text-lg font-extrabold  text-center my-2">Adress:</h3>
+              <h3 className="text-lg font-extrabold  text-center my-2">Adres:</h3>
               <div className="bg-[#e6e6e6cf] h-16 w-16 rounded-full flex items-center justify-center shrink-0 my-2">
                 <IoIosPin className="w-12 h-12" />
               </div>

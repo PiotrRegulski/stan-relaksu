@@ -16,7 +16,7 @@ export default function Home() {
         </div>
         <section className="flex flex-col sm:my-2 bg-primary/45 shadow-xl rounded border-4 border-white  shadow-gray-400/75 min-h-1/3 sm:min-h-max ">
           <div className={`${lato.className}flex justify-center sm:mt-9`}>
-            <h2 className="  sm:mt-12 md:text-4xl text-xl text-center font-bold uppercase   my-10 sm:py-2 text-amber-950">
+            <h2 className="  sm:mt-12  md:text-4xl text-xl text-center font-bold uppercase   my-10 sm:py-2 text-amber-950">
               Czym się zajmuje
             </h2>
             <article className=" font-[Lato] font-semibold md:text-xl text-justify px-6  md:font-medium md:mx-24 mx-2  text-gray-900/70 sm:text-2xl leading-loose text-pretty">
