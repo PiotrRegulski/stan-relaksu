@@ -9,7 +9,7 @@ const OffersCard = () => {
     <>
       <PageHeader>Co oferuję</PageHeader>
       <div className="flex justify-center">
-        <section className="grid grid-cols-1 sm:grid-cols-3 sm:gap-12">
+        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-12">
           {OfferItem.map((offerItem) => (
             <div
               key={offerItem.id}
@@ -27,7 +27,7 @@ const OffersCard = () => {
                   <p className="md:text-xl text-center font-bold md:px-3 md:py-4 py-2 font-[Lato] md:h-24 h-[6rem] mx-3">
                     {offerItem.title}
                   </p>
-                  <p className={`${lato.className} h-72 md:h-48 text-justify  text-xl md:px-3 px-1`}>
+                  <p className={`${lato.className} h-72 md:h-48 text-justify  text-xl lg:px-3 px-2`}>
                     {offerItem.contentFirst}
                   </p>
                 </div>

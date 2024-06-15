@@ -13,7 +13,7 @@ const OfferPage: React.FC<OfferProps> = () => {
     <>
       <PageHeader>Oferta</PageHeader>
       <main className="flex justify-center sm:mt-12">
-        <section className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {OfferItem.map((offerItem) => (
             <div key={offerItem.id} className="mx-4 my-6 bg-white shadow-xl shadow-gray-400/75 animate-fadeIn rounded border-4 border-white transition-transform duration-200 ease-in-out hover:scale-[1.02]">
               <Link className="  " href={`/offer/${offerItem.slug} `}>
