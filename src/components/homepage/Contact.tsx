@@ -119,7 +119,7 @@ const Contact = () => {
             Szybko odpowiemy na Twoje pytania.
           </p>
 
-          <form action={send} className="flex flex-col mt-8 space-y-4 md:mx-96">
+          <form action={send} className="flex flex-col mt-8 space-y-4 lg:mx-96">
             <input
               type="text"
               placeholder="imię"

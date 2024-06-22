@@ -9,7 +9,7 @@ const OffersCard = () => {
     <>
       <PageHeader>Co oferuję</PageHeader>
       <div className="flex justify-center">
-        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-12">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:gap-12">
           {OfferItem.map((offerItem) => (
             <div
               key={offerItem.id}
@@ -23,11 +23,11 @@ const OffersCard = () => {
                   height={400}
                   className=""
                 />
-                <div className="animate-fadeIn rounded border-4 border-white md:w-[400px] w-full">
-                  <p className="md:text-xl text-center font-bold md:px-3 md:py-4 py-2 font-[Lato] md:h-24 h-[6rem] mx-3">
+                <div className="animate-fadeIn rounded border-4 border-white lg:w-[400px] w-full">
+                  <p className="lg:text-xl text-center font-bold md:px-3 md:py-4 py-2 font-[Lato] md:h-24 h-[6rem] mx-3">
                     {offerItem.title}
                   </p>
-                  <p className={`${lato.className} h-72 md:h-48 text-justify  text-xl lg:px-3 px-2`}>
+                  <p className={`${lato.className} h-72 lg:h-48 text-justify  lg:text-xl lg:px-3 px-2`}>
                     {offerItem.contentFirst}
                   </p>
                 </div>

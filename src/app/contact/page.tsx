@@ -29,11 +29,11 @@ const page = () => {
     <div className="mx-auto">
      <PageHeader>Kontakt</PageHeader>
 
-      <div className="grid md:grid-cols-3 items-center  gap-16 my-24 mx-4 md:mx-auto max-w-7xl  text-[#333] font-[sans-serif] s">
-        <div className=" col-span-2 px-2  shadow-xl rounded border-4 border-white  shadow-gray-400/75 min-h-1/3 md:min-h-max   ">
-          <h2 className="text-4xl font-bold md:mb-2 py-6 text-center md:text-left">Kontakt</h2>
+      <div className="grid lg:grid-cols-3 items-center  gap-16 my-24 mx-4 lg:mx-auto max-w-7xl  text-[#333] font-[sans-serif] s">
+        <div className=" col-span-2 px-2  shadow-xl rounded border-4 border-white  shadow-gray-400/75 min-h-1/3 lg:min-h-max   ">
+          <h2 className="text-4xl font-bold lg:mb-2 py-6 text-center md:text-left">Kontakt</h2>
 
-          <p className="text-sm text-gray-400 mt-3  text-center md:text-left">
+          <p className="text-sm text-gray-400 mt-3  text-center lg:text-left">
             Skontaktuj się z nami w dogodny dla Siebie sposób.
           </p>
 
@@ -101,7 +101,7 @@ const page = () => {
             
           </ul>
         </div>
-        <div className="bg-white px-4 py-4 shadow-xl rounded-xl h-[100%]">
+        <div className="bg-white px-4 py-4 shadow-xl rounded-xl h-[100%] w-[100%]">
           
           <h3 className="text-4xl font-bold mt-6">Napisz do nas</h3>
           <p className="text-sm text-gray-900 mt-4">
@@ -113,7 +113,7 @@ const page = () => {
               type="text"
               placeholder="imię"
               name="username"
-              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500 shadow-md text-gray-900"
+              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500 shadow-md text-gray-900 lg:w-96"
             ></input>
             <input
               type="email"

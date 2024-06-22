@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <PageHeader>Witaj</PageHeader>
 
-      <main className=" animate-fadeIn grid grid-cols-1 md:grid-cols-2 h-full sm:my-10 sm:mx-2">
-        <div className="  md:px-4 px-1 md:pb-3  h-64  md:h-full relative ">
+      <main className=" animate-fadeIn grid grid-cols-1 lg:grid-cols-2 h-full sm:my-10 sm:mx-2">
+        <div className="  lg:px-4 px-1 lg:pb-3  h-64  lg:h-full relative ">
           <HomepageImage />
         </div>
         <section className="flex flex-col sm:my-2 bg-primary/45 shadow-xl rounded border-4 border-white  shadow-gray-400/75 min-h-1/3 sm:min-h-max ">
