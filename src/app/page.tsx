@@ -19,7 +19,7 @@ export default function Home() {
             <h2 className="  sm:mt-12  md:text-4xl text-xl text-center font-bold uppercase   my-10 sm:py-2 text-amber-950">
               Czym się zajmuje
             </h2>
-            <article className=" font-[Lato] font-semibold md:text-xl text-justify px-6  md:font-medium md:mx-24 mx-2  text-gray-900/70 sm:text-2xl leading-loose text-pretty">
+            <article className=" font-[Lato] font-semibold md:text-xl text-justify px-6  md:font-medium md:mx-24 mx-2  text-gray-900/70 sm:text-sm leading-loose text-pretty">
               {" "}
               <p className="indent-8">
                 Cześć, jestem Kinga. Stworzyłam to miejsce z myślą o Tobie,
