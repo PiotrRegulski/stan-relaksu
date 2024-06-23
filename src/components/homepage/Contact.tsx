@@ -155,7 +155,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className=" hover:shadow-xl shadow-md shadow-gray-400 text-xl  border-2 rounded border-gray-200 bg-white hover:border-blue-500 px-6 py-4 mb-24 font-bold  text-amber-70 hover:text-black focus:outline-none focus:shadow-outline"
+              className=" mx-auto lg:mx-1 hover:shadow-xl shadow-md shadow-gray-400 text-xl  border-2 rounded border-gray-200 bg-white hover:border-blue-500 px-6 py-4 mb-24 font-bold   hover:text-black focus:outline-none focus:shadow-outline"
             >
               Wyślij
             </button>
