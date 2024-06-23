@@ -30,7 +30,7 @@ const page = () => {
      <PageHeader>Kontakt</PageHeader>
 
       <div className="grid lg:grid-cols-3 items-center  gap-16 my-24 mx-4 lg:mx-auto max-w-7xl  text-[#333] font-[sans-serif] s">
-        <div className=" col-span-2 px-2  shadow-xl rounded border-4 border-white  shadow-gray-400/75 min-h-1/3 lg:min-h-max   ">
+        <div className=" col-span-2 px-2  shadow-xl rounded border-l-4 border-white  shadow-gray-400/75 min-h-1/3 lg:min-h-max   ">
           <h2 className="text-4xl font-bold lg:mb-2 py-6 text-center md:text-left">Kontakt</h2>
 
           <p className="text-sm text-gray-400 mt-3  text-center lg:text-left">
@@ -113,30 +113,30 @@ const page = () => {
               type="text"
               placeholder="imię"
               name="username"
-              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500 shadow-md text-gray-900 lg:w-96"
+              className="w-full shadow-inner  rounded-md py-3 px-4 bg-gray-200 text-sm outline-blue-500  text-gray-900 focus:bg-white "
             ></input>
             <input
               type="email"
               placeholder="E-mail"
               name="userEmail"
-              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500 shadow-md text-gray-900"
+              className="w-full rounded-md py-3 px-4 bg-gray-200 text-sm outline-blue-500 shadow-inner text-gray-900 focus:bg-white "
             ></input>
             <input
               type="text"
               placeholder="Temat"
               name="subject"
-              className="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500 shadow-md text-gray-900"
+              className="w-full rounded-md py-3 px-4 bg-gray-200 text-sm outline-blue-500 shadow-inner text-gray-900 focus:bg-white "
             ></input>
 
             <textarea
               name="message"
               placeholder="Napisz do mnie"
               rows={5}
-              className="w-full rounded-md px-4 bg-gray-100 text-sm pt-3 outline-blue-500 shadow-md text-gray-900"
+              className="w-full rounded-md px-4 bg-gray-200 text-sm pt-3 outline-blue-500 shadow-inner text-gray-900 focus:bg-white "
             ></textarea>
             <button
               type="submit"
-              className=" hover:shadow-xl shadow-md shadow-gray-400/75 text-xl  border-2 rounded border-gray-200 bg-white hover:bg-gray-200 px-6 py-2 mb-10 font-bold  text-amber-70 hover:text-white focus:outline-none focus:shadow-outline"
+              className=" hover:shadow-xl shadow-md shadow-gray-400/75 text-xl  border-2 rounded border-gray-200 bg-white hover:border-gray-200 px-6 py-2 mb-10 font-bold  text-amber-70 hover:text-white focus:outline-none focus:shadow-outline"
             >
               Wyślij
             </button>
