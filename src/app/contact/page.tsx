@@ -27,11 +27,13 @@ const page = () => {
   }
   return (
     <div className="mx-auto">
-     <PageHeader>Kontakt</PageHeader>
+      <PageHeader>Kontakt</PageHeader>
 
       <div className="grid lg:grid-cols-3 items-center  gap-16 my-24 mx-4 lg:mx-auto max-w-7xl  text-[#333] font-[sans-serif] s">
         <div className=" col-span-2 px-2  shadow-xl rounded border-l-4 border-white  shadow-gray-400/75 min-h-1/3 lg:min-h-max   ">
-          <h2 className="text-4xl font-bold lg:mb-2 py-6 text-center md:text-left">Kontakt</h2>
+          <h2 className="text-4xl font-bold lg:mb-2 py-6 text-center md:text-left">
+            Kontakt
+          </h2>
 
           <p className="text-sm text-gray-400 mt-3  text-center lg:text-left">
             Skontaktuj się z nami w dogodny dla Siebie sposób.
@@ -82,7 +84,9 @@ const page = () => {
               </div>
             </li>
 
-            <h3 className="text-lg font-extrabold mt-3 mx-auto ml-12">Adres:</h3>
+            <h3 className="text-lg font-extrabold mt-3 mx-auto ml-12">
+              Adres:
+            </h3>
             <li className="flex items-center mt-2 mx-auto ml-12 mb-12">
               <div className="bg-[#e6e6e6cf] h-16 w-16 rounded-full flex items-center justify-center shrink-0">
                 <IoIosPin className="w-12 h-12" />
@@ -95,41 +99,54 @@ const page = () => {
                 </address>
               </div>
             </li>
-            <div className="my-3"><MapComponent /></div>
-            
-            
-            
+            <div className="my-3">
+              <MapComponent />
+            </div>
           </ul>
         </div>
         <div className="bg-white px-4 py-4 shadow-xl rounded-xl h-[100%] w-[100%]">
-          
           <h3 className="text-4xl font-bold mt-6">Napisz do nas</h3>
           <p className="text-sm text-gray-900 mt-4">
             Szybko odpowiemy na Twoje pytania.
           </p>
 
           <form action={send} className="flex flex-col mt-8 space-y-4">
+            <label htmlFor="name" className="text-xl font-bold ">
+              Wpisz swoje imie:
+            </label>
             <input
               type="text"
+              id="name"
               placeholder="imię"
               name="username"
               className="w-full shadow-inner  rounded-md py-3 px-4 bg-gray-200 text-sm outline-blue-500  text-gray-900 focus:bg-white "
             ></input>
+            <label htmlFor="email" className="text-xl font-bold ">
+              Wpisz E-mail do kontaktu:
+            </label>
             <input
               type="email"
+              id="email"
               placeholder="E-mail"
               name="userEmail"
               className="w-full rounded-md py-3 px-4 bg-gray-200 text-sm outline-blue-500 shadow-inner text-gray-900 focus:bg-white "
             ></input>
+            <label htmlFor="subject" className="text-xl font-bold ">
+              Temat:
+            </label>
             <input
               type="text"
+              id="subject"
               placeholder="Temat"
               name="subject"
               className="w-full rounded-md py-3 px-4 bg-gray-200 text-sm outline-blue-500 shadow-inner text-gray-900 focus:bg-white "
             ></input>
-
+            <label htmlFor="message" className="text-xl font-bold ">
+              Wpisz swoją wiadomość:
+            </label>
             <textarea
               name="message"
+              id="message"
               placeholder="Napisz do mnie"
               rows={5}
               className="w-full rounded-md px-4 bg-gray-200 text-sm pt-3 outline-blue-500 shadow-inner text-gray-900 focus:bg-white "
@@ -141,7 +158,6 @@ const page = () => {
               Wyślij
             </button>
           </form>
-        
         </div>
       </div>
     </div>
