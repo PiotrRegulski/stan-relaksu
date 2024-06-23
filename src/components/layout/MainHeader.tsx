@@ -27,7 +27,7 @@ const MainHeader = () => {
   return (
     <div className="relative">
       <header
-        className={`${CormorantInfant.className}flex flex-col justify-center bg-primary py-1 px-1`}
+        className={`${CormorantInfant.className}flex flex-col justify-center bg-gradient-to-br from-amber-300/50 via-primary to-amber-300/80  py-1 px-1`}
       >
      
         <div className="flex justify-between">
