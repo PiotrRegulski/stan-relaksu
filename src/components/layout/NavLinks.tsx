@@ -13,7 +13,7 @@ const NavLinks = () => {
   return (
     <>
       {links.map((link) => (
-        <Link href={link.href} key={link.href} className={`text-orange-500 font-bold lg:text-2xl border-y-2 rounded-md border-amber-200 px-2 py-4 ${pathname=== link.href ? "px-2 border-y-2 border-amber-400 shadow-lg text-gray-900 font-bold":" hover:border-y-2 hover:border-amber-400 hover:shadow-lg"}`}>{link.label}</Link>
+        <Link href={link.href} key={link.href} className={` text-white font-bold lg:text-xl border-y-2 rounded-md border-white lg:px-4 lg:py-2 lg:pt-3 px-1 py-1 bg-teal-950/25 h-[2.5em] lg:h-[3em]  ${pathname=== link.href ? "px-2 border-y-2 border-amber-400 shadow-lg text-gray-900 font-bold underline mt-1":" hover:border-y-2 hover:border-black hover:shadow-lg"}`}>{link.label}</Link>
       ))}
     </>
   );

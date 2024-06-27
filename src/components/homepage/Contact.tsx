@@ -125,6 +125,7 @@ const Contact = () => {
             <input
               type="text"
               id="name"
+              required
               placeholder="imię"
               name="username"
               className="w-full rounded-md py-3 px-4 bg-gray-200 text-sm outline-blue-500 shadow-inner focus:bg-white "
@@ -133,6 +134,7 @@ const Contact = () => {
             <input
               type="email"
               id="email"
+              required
               placeholder="E-mail"
               name="userEmail"
               className="w-full rounded-md py-3 px-4 bg-gray-200 text-sm outline-blue-500 shadow-inner focus:bg-white "
@@ -141,6 +143,7 @@ const Contact = () => {
             <input
               type="text"
               id="subject"
+              required
               placeholder="Temat"
               name="subject"
               className="w-full rounded-md py-3 px-4 bg-gray-200 text-sm outline-blue-500 shadow-inner focus:bg-white "
@@ -149,6 +152,7 @@ const Contact = () => {
             <textarea
               name="message"
               id="message"
+              required
               placeholder="Message"
               rows={5}
               className="w-full rounded-md px-4 bg-gray-200 text-sm pt-3 outline-blue-500 shadow-inner focus:bg-white "
