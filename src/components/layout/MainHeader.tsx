@@ -1,81 +1,94 @@
 "use client";
 import React from "react";
-
 import { CormorantInfant } from "@/components/fonts";
-import Logo from "./Logo";
 import { useState, useCallback } from "react";
 import HamburgerIcon from "@/components/layout/HamburgerIcon";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { MdEmail } from "react-icons/md";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
-
-import { usePathname } from "next/navigation";
+import { FaFacebook } from "react-icons/fa";
+import Navbar from "./Navbar";
 
 const MainHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
-  const currentPath = usePathname();
-  const router = useRouter();
- 
-  const getLinkClassName = (path: string): string => {
-    const formattedCurrentPath = currentPath.replace(/^\//, "");
-    return !formattedCurrentPath || !formattedCurrentPath.startsWith(path)
-      ? "px-2 mx-5  text-gray-900 font-bold border-y-2 hover:border-y-2 hover:border-amber-400 hover:shadow-lg"
-      : " px-2 mx-5  border-y-2 border-amber-400 shadow-lg text-gray-900 font-bold";
-  };
+
   return (
     <div className="relative">
       <header
         className={`${CormorantInfant.className}flex flex-col justify-center bg-gradient-to-br from-amber-300/50 via-primary to-amber-300/80  py-1 px-1`}
       >
-     
-        <div className="flex justify-between">
-          <div className="">
+        <div className="flex">
+          <div className="sm:hidden">
             <button onClick={toggleMenu} className="w-15 h-15 mt-3 ml-1 ">
               <HamburgerIcon />
             </button>
           </div>
+          <div className=" hidden lg:flex  w-screen font-semibold text-md justify-end px-4 min-w-max py-2">
+            <ul className="flex gap-4">
+              <li className="pt-1">
+                <MdEmail className="w-4 h-4" />
+              </li>
+              <li> kontat@kontakt.pl</li>
+              <li className="pt-1">
+                <BsFillTelephoneForwardFill className=" w-4 h-4" />
+              </li>
+              <li> 000-000-000</li>
+            </ul>
+          </div>
 
           <div className=" fixed lg:bottom-24  bottom-4 right-1 z-20">
             <div className="flex flex-col">
-            <button className=" fixed top-5 right-3 w-max rounded-full bg-green-600 py-2 px-2 font-dm text-xl font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
-                <Link href="tel:885987321 "><BsFillTelephoneForwardFill  className="text-right"/></Link>
+              <button className=" lg: hidden  fixed top-5 right-3 w-max rounded-full bg-green-600 py-2 px-2 font-dm text-xl font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
+                <Link href="tel:885987321 ">
+                  <BsFillTelephoneForwardFill className="text-right" />
+                </Link>
               </button>
-              <button className=" fixed top-20 right-3 w-max rounded-full bg-green-600 py-2 px-2 font-dm text-xl font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
-                <Link href="https://www.instagram.com/stan_relaksu/" target="_blank" rel="noopener noreferrer"><FaSquareInstagram className="text-right"/></Link>
+              <button className=" fixed top-80 right-2 w-max rounded-full bg-green-600 my-2 py-2 px-2 font-dm text-xl font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
+                <Link
+                  href="https://www.instagram.com/stan_relaksu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaSquareInstagram className="text-right" />
+                </Link>
+              </button>
+              <button className=" fixed top-[18rem] right-2 w-max rounded-full bg-green-600 py-2 px-2 font-dm text-xl font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61560021160720"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook className="text-right" />
+                </Link>
               </button>
               <button className="  animate-fadeIn mt-8 inline-flex items-center justify-center rounded-full bg-green-600 py-3 px-6  font-dm text-sm font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-400  hover:scale-[1.02]">
-                <Link href="https://booksy.com/"  target="_blank" rel="noopener noreferrer"><div>Zarezerwuj<br></br> Wizytę</div> </Link>
+                <Link
+                  href="https://booksy.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div>
+                    Zarezerwuj<br></br> Wizytę
+                  </div>
+                </Link>
               </button>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-center ">
-          <Link href="/">
-            <Logo />
-          </Link>
-        </div>
-        
-        <div className={`${CormorantInfant.className} flex  flex-wrap w-full justify-evenly   py-4 px-4`}>
-          <nav
-            id="big-Screen-nav"
-            className=" sm:flex justify-center  text-xl pt-6 hidden"
+        <div className="flex lg:gap-24 ">
+          <div
+            className={`${CormorantInfant.className} hidden sm:flex w-screen  px-4`}
           >
-            <Link href="/"  className={getLinkClassName("/")}>
-              Strona główna
-            </Link>
-            <Link href="/about" className={getLinkClassName("about")}>
-              O mnie
-            </Link>
-            <Link href="/offer" className={getLinkClassName("offer")}>
-              Oferta
-            </Link>
-            <Link href="/contact" className={getLinkClassName("contact")}>
-              Kontakt
-            </Link>
-          </nav>
+            <Navbar />
+          </div>
+        </div>
+
+        <div
+          className={`${CormorantInfant.className} flex  flex-wrap w-full justify-evenly   py-4 px-4 sm:hidden`}
+        >
           <nav id="mobile-nav" className="w-screen sm:hidden">
             <ul
               className={`flex flex-col  bg-primary  w-full h-full p-2 space-y-1  sm:flex-row sm:space-y-1 sm:space-x-4 divide-y-4 divide-amber-400/25 divide-solid ${
