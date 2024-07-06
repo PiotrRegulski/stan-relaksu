@@ -10,10 +10,9 @@ const Navbar = () => {
         <h1 className=" mx-auto font-semibold lg:text-6xl text-3xl leading-none text-white pt-2 lg:pt-1">
           <Link href={"/"}>Stan Relaksu</Link>{" "}
         </h1>
-        <p className="mx-auto text-center font-semibold lg:text-sm text-sm leading-none text-white p-4 lg:pt-1 ">
+        <p className="mx-auto text-center font-semibold lg:text-xl text-sm leading-none text-white p-4 lg:pt-1 ">
           to miejsce z myślą o Tobie, osobie która chce o siebie zadbać, zwolnić
-          i poczuć się lepiej
-        </p>
+          i poczuć się lepiej.<br></br>Pozwól sobie na Stan Relaksu</p>
       </div>
 
       <div className=" flex  basis-1/2 justify-center  ">

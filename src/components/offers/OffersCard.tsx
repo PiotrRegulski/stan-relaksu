@@ -9,7 +9,7 @@ const OffersCard = () => {
     <>
       <PageHeader>Oferta</PageHeader>
       <div className="flex justify-center w-full">
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-2 lg:gap-6 w-full ">
+        <section id="offer" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-2 lg:gap-6 w-full  ">
           {OfferItem.map((offerItem) => (
             <div
               key={offerItem.id}
@@ -21,7 +21,7 @@ const OffersCard = () => {
                   alt={offerItem.title}
                   width={550}
                   height={400}
-                  className=""
+                  className="mx-auto"
                 />
                 <div className="animate-fadeIn rounded border-4 border-white  w-full">
                   <p className="lg:text-xl text-center font-bold md:px-3 md:py-4 py-2 font-[Lato] md:h-24 h-[6rem] mx-3">

@@ -31,7 +31,7 @@ const page = () => {
 
       <div className="grid lg:grid-cols-3 items-center  gap-16 my-24 mx-4 lg:mx-auto max-w-7xl  text-[#333] font-[sans-serif] s">
         <div className=" col-span-2 px-2  shadow-xl rounded border-l-4 border-white  shadow-gray-400/75 min-h-1/3 lg:min-h-max   ">
-          <h2 className="text-4xl font-bold lg:mb-2 py-6 text-center md:text-left">
+          <h2 id="contact" className="text-4xl font-bold lg:mb-2 py-6 text-center md:text-left">
             Kontakt
           </h2>
 
@@ -104,7 +104,7 @@ const page = () => {
             </div>
           </ul>
         </div>
-        <div className="bg-white px-4 py-4 shadow-xl rounded-xl h-[100%] w-[100%]">
+        <div className=" px-4 py-4 shadow-xl rounded-xl h-[100%] md:w-[100%] bg-white col-span-2 lg:col-span-1">
           <h3 className="text-4xl font-bold mt-6">Napisz do nas</h3>
           <p className="text-sm text-gray-900 mt-4">
             Szybko odpowiemy na Twoje pytania.

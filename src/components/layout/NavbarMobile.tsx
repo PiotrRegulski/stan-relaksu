@@ -100,7 +100,7 @@ const NavbarMobile = () => {
             </li>
             <li className=" ">
               <Link
-                href="/about" 
+                href="/about#about" 
                 className=" flex justify-center px-1 py-1 text-xl  text-white w-full hover:border-y-2 hover:border-whit"
               >
                 O mnie
@@ -108,7 +108,7 @@ const NavbarMobile = () => {
             </li>
             <li className=" ">
               <Link
-                href="offer"
+                href="offer#offer"
                 className=" flex justify-center px-1 py-1 text-xl  text-white w-full hover:border-y-2 hover:border-whit"
               >
                 Oferta
@@ -116,7 +116,7 @@ const NavbarMobile = () => {
             </li>
             <li className=" ">
               <Link
-                href="/contact"
+                href="/contact#contact"
                 className=" flex justify-center px-1 py-1 text-xl  text-white w-full hover:border-y-2 hover:border-whit"
               >
                 Kontakt

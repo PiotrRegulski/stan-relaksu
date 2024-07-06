@@ -4,9 +4,9 @@ import React from "react";
 import { usePathname } from "next/navigation";
 const links = [
   { href: "/", label: "Strona główna" },
-  { href: "/about", label: "O mnie" },
-  { href: "/offer", label: "Oferta" },
-  { href: "/contact", label: "Kontakt" },
+  { href: "/about#about", label: "O mnie" },
+  { href: "/offer#offer", label: "Oferta" },
+  { href: "/contact#contact", label: "Kontakt" },
 ];
 const NavLinks = () => {
     const pathname= usePathname();

@@ -63,8 +63,8 @@ const About = () => {
           src="/hero.png"
           alt=" hero"
           layout="fill"
-          objectFit="cover"
-          objectPosition="top"
+          objectFit="contein"
+          objectPosition="center"
          
         />
       </div>

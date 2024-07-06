@@ -65,7 +65,14 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
         id="offerDetail"
         className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4  h-2/3 md:py-4 md:px-2  shadow-xl shadow-gray-400/75 md:mx-36 md:my-8"
       >
-        <div className="md:px-12 md:py-12 px-2">
+        <div className="md:px-12 md:py-12 px-2 ">
+          <div className="lg:hidden "> <Image
+            src={`/${offerDetail.image}`}
+            alt={offerDetail.title}
+            width={300}
+            height={250}
+            className=" mx-auto   z-0 animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
+          /></div>
         
           <p className={` ${lato.className} text-xl mx-4 my-4  indent-8 font-semibold`}>
             {offerDetail.contentFirst}
@@ -73,18 +80,18 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
           <ul>  
             {offerDetail.advantages?.map((advantage) => (
             <li key={advantage.title}>
-                <p className="text-xl font-[lato] font-semibold text-justify my-3 mx-3 md:mx-4 md:my-4 indent-8">{advantage.description}</p>
+                <p className="text-xl font-[lato]  text-justify my-3 mx-3 md:mx-4 md:my-4 indent-8">{advantage.description}</p>
             </li>
           ))}</ul>
          
         </div>
-        <div className=" sm:grid sm:justify-items-center sm:content-center sm:mt-4  ">
+        <div className=" sm:grid sm:justify-items-center sm:content-center sm:mt-4  size-full h-full min-w-full ">
           <Image
             src={`/${offerDetail.image}`}
             alt={offerDetail.title}
             width={300}
             height={300}
-            className="  z-0 animate-fadeIn rounded border-4 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
+            className=" hidden sm:block  z-0 animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
           />
           <div className=" flex gap-2 z-10  py-3 overflow-auto ">
             <Image
@@ -92,28 +99,36 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
               alt={offerDetail.title}
               width={200}
               height={200}
-              className="  animate-fadeIn rounded border-4 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
+              className="  animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
             />
             <Image
               src={`/${offerDetail.image}`}
               alt={offerDetail.title}
               width={200}
               height={200}
-              className="  animate-fadeIn rounded border-4 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
+              className="  animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
             />
             <Image
               src={`/${offerDetail.image}`}
               alt={offerDetail.title}
               width={200}
               height={200}
-              className="  animate-fadeIn rounded border-4 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
+              className="  animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.01]"
+            />
+              <Image
+              src={`/${offerDetail.image}`}
+              alt={offerDetail.title}
+              width={200}
+              height={200}
+              className="  animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.01]"
             />
           </div>
+          
         </div>
       </section>
       <div className="flex justify-center">
         <button
-          onClick={router.back}
+          onClick={()=>router.push("/offer#offer")}
           className=" flex text-xl underline decoration-solid underline-offset-8 font-semibold  text-center px-2 py-3 mx-3 my-4 text-black hover:text-gray-400 "
         >
           Zobacz pozostałe oferty

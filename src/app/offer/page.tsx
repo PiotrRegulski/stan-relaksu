@@ -7,7 +7,7 @@ interface OfferProps {
 
 const OfferPage: React.FC<OfferProps> = () => {
   return (
-    <>
+    < >
       
       <OffersCard/>
     </>
