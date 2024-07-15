@@ -4,6 +4,7 @@ export const OfferItem = [
     slug: "igloterapia",
     title: "Igłoterapia estetyczna twarzy",
     image: "offer1.jpg",
+    prices: [{ id: "cenaIgłoterapi", priceName: "90 minut", price: "350 zł" }],
     contentFirst:
       "Igłoterapia estetyczna twarzy z pinezkowaniem to zaawansowany zabieg, który może odmienić wygląd Twojej skóry. Stymuluje jej komórki, pobudzając produkcję kolagenu i elastyny. Dzięki temu zmarszczki zostają spłycone, a Twoja twarz wygląda młodziej.  ",
     advantages: [
@@ -32,6 +33,7 @@ export const OfferItem = [
     slug: "masaz-kobido",
     title: "Masaż Kobido z kinesiotapingiem estetycznym",
     image: "offer2.jpg",
+    prices: [{ id: "cenaKobido", priceName: "90 minut", price: "300 zł" }],
     contentFirst:
       "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwa perłą w świecie pielęgnacji twarzy. Wywodzący się z Japoni niechirurgiczny lifting twarzy, który od wieków zachwyca swoją skutecznością..",
     advantages: [
@@ -65,6 +67,11 @@ export const OfferItem = [
     slug: "masaz-powieziowy",
     title: "Masaż powięziowy ",
     image: "offer3.jpg",
+    prices: [
+      { id: "cenamaspow60", priceName: "60 minut", price: "200 zł" },
+      { id: "cenamaspow45", priceName: "45 minut", price: "170 zł" },
+      { id: "cenamaspow30", priceName: "30 minut", price: "120 zł" },
+    ],
     contentFirst:
       "Masaż powięziowy to doskonały wybór dla osób, które odczuwają bóle pleców, karku lub stawów obwodowych. ",
     advantages: [
@@ -86,6 +93,9 @@ export const OfferItem = [
     slug: "terapia-manualna-blizn",
     title: "Terapia manualna blizn",
     image: "offer4.png",
+    prices: [
+      { id: "teramanublizna", priceName: "90 minut", price: "brak danych!" },
+    ],
     contentFirst:
       "Ta innowacyjna metoda mobilizacji i manualnego opracowania blizn pozwala na przywrócenie naturalnego ślizgu warstw tkanek, redukcję zrostów i promowanie zdrowego przebudowywania się tkanki. ",
     advantages: [
@@ -107,6 +117,11 @@ export const OfferItem = [
     slug: "drenaz-limfatyczny",
     title: "Drenaż limfatyczny",
     image: "offer5.png",
+    prices: [
+      { id: "drelim60", priceName: "60 minut", price: "200 zł" },
+      { id: "drelim60", priceName: "45 minut", price: "170 zł" },
+      { id: "drelim60", priceName: "30 minut", price: "120 zł" },
+    ],
     contentFirst:
       "Odkryj ulgę i lekkość, jaką oferuje drenaż limfatyczny – delikatna, ale potężna metoda, która może przynieść znaczącą poprawę osobom borykającym się z obrzękami i zastojem limfy. ",
     advantages: [
@@ -115,7 +130,6 @@ export const OfferItem = [
         description:
           "Techniki manualne drenażu pozwalają odblokować zastoje w węzłach chłonnych, usunąć zalegajaca limfę i usprawnić jej przepływ.",
       },
-     
     ],
     summary: "Nie czekaj – umów się na masaż powięziowy i poczuj ulgę!",
   },

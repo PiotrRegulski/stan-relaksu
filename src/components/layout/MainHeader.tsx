@@ -26,9 +26,12 @@ const MainHeader = () => {
             className={`${CormorantInfant.className} hidden sm:flex w-screen  px-4`}
           >
             <Navbar />
+            
           </div>
         </div>
+        
       </header>
+      
     </div>
   );
 };

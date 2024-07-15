@@ -2,23 +2,30 @@
 import { OfferItem } from "@/data/OfferItem";
 import React from "react";
 import Image from "next/image";
-import { lato} from "@/components/fonts";
-import { useRouter } from "next/navigation";
+import { lato } from "@/components/fonts";
+
 import PageHeader from "@/components/homepage/PageHeader";
+import BackLink from "@/components/layout/BackLink";
 
 type AdvantageType = {
   title: string;
   description: string;
 };
+type PricesType = {
+  id: string;
+  priceName: string;
+  price: string;
+};
 // Definicja typu dla pojedynczego elementu oferty
 type OfferItemType = {
-  id:string
+  id: string;
   slug: string;
   title: string;
   contentFirst?: string;
   image: string;
-  advantages:AdvantageType[];
-  
+  prices: PricesType[];
+  advantages: AdvantageType[];
+
   // Dodaj pozostałe pola zgodnie z definicją OfferItem
 };
 
@@ -33,7 +40,6 @@ interface OfferDetailsPageProps {
 const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
   const offerSlug: string = params.slug;
   //navigation programatically
-  const router = useRouter();
 
   // Zastosowanie asercji typu, aby poinformować TypeScript o oczekiwanym typie zwracanym przez find
   const offerDetail: OfferItemType | undefined = OfferItem.find(
@@ -47,43 +53,42 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
         <div className="w-full ">
           <p className="text-center">Oferta nie została znaleziona.</p>
         </div>
-        <button
-          onClick={router.back}
-          className="   text-xl underline decoration-solid underline-offset-8 font-semibold  px-2 py-3  text-lime-400 hover:text-gray-400  text-center w-full"
-        >
-          Zobacz pozostałe oferty
-        </button>
+        <BackLink>Zobacz inne oferty</BackLink>
       </div>
     );
   }
 
   return (
     <>
-      <PageHeader>{offerDetail.title}</PageHeader>
+      <PageHeader id={"offerDetail"}>{offerDetail.title}</PageHeader>
 
-      <section
-        id="offerDetail"
-        className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4  h-2/3 md:py-4 md:px-2  shadow-xl shadow-gray-400/75 md:mx-36 md:my-8"
-      >
+      <section className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4  h-2/3 md:py-4 md:px-2  shadow-xl shadow-gray-400/75 md:mx-36 md:my-8">
         <div className="md:px-12 md:py-12 px-2 ">
-          <div className="lg:hidden "> <Image
-            src={`/${offerDetail.image}`}
-            alt={offerDetail.title}
-            width={300}
-            height={250}
-            className=" mx-auto   z-0 animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
-          /></div>
-        
-          <p className={` ${lato.className} text-xl mx-4 my-4  indent-8 font-semibold`}>
+          <div className="lg:hidden ">
+            {" "}
+            <Image
+              src={`/${offerDetail.image}`}
+              alt={offerDetail.title}
+              width={300}
+              height={250}
+              className=" mx-auto   z-0 animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
+            />
+          </div>
+
+          <p
+            className={` ${lato.className} text-xl mx-4 my-4  indent-8 font-semibold`}
+          >
             {offerDetail.contentFirst}
           </p>
-          <ul>  
+          <ul>
             {offerDetail.advantages?.map((advantage) => (
-            <li key={advantage.title}>
-                <p className="text-xl font-[lato]  text-justify my-3 mx-3 md:mx-4 md:my-4 indent-8">{advantage.description}</p>
-            </li>
-          ))}</ul>
-         
+              <li key={advantage.title}>
+                <p className="text-xl font-[lato]  text-justify my-3 mx-3 md:mx-4 md:my-4 indent-8">
+                  {advantage.description}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
         <div className=" sm:grid sm:justify-items-center sm:content-center sm:mt-4  size-full h-full min-w-full ">
           <Image
@@ -115,7 +120,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
               height={200}
               className="  animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.01]"
             />
-              <Image
+            <Image
               src={`/${offerDetail.image}`}
               alt={offerDetail.title}
               width={200}
@@ -123,17 +128,30 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
               className="  animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.01]"
             />
           </div>
-          
         </div>
       </section>
-      <div className="flex justify-center">
-        <button
-          onClick={()=>router.push("/offer#offer")}
-          className=" flex text-xl underline decoration-solid underline-offset-8 font-semibold  text-center px-2 py-3 mx-3 my-4 text-black hover:text-gray-400 "
-        >
-          Zobacz pozostałe oferty
-        </button>
-      </div>
+      <section className=" flex justify-center shadow-xl shadow-gray-400/75  md:py-4 md:px-2 md:mx-36 md:my-8">
+        <div className="w-2/3 ">
+          <ul className="divide-y divide-blue-200 mx-3">
+            <h3 className="flex justify-center text-3xl font-semibold">
+              Cennik
+            </h3>
+            {offerDetail.prices?.map((price) => (
+              <li key={price.id}>
+                <div className=" flex-col mx-12 ">
+                  <div className="flex justify-between">
+                    <div className="text-xl font-semibold">
+                      {price.priceName}
+                    </div>
+                    <div className="text-xl font-semibold">{price.price}</div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+      <BackLink>Zobacz pozostałe oferty</BackLink>
     </>
   );
 };

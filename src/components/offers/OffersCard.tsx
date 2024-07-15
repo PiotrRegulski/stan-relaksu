@@ -7,9 +7,9 @@ import { lato } from "@/components/fonts";
 const OffersCard = () => {
   return (
     <>
-      <PageHeader>Oferta</PageHeader>
+      <PageHeader id={'offer'}>Oferta</PageHeader>
       <div className="flex justify-center w-full">
-        <section id="offer" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-2 lg:gap-6 w-full  ">
+        <section  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-2 lg:gap-4 w-full lg:mx-9  ">
           {OfferItem.map((offerItem) => (
             <div
               key={offerItem.id}

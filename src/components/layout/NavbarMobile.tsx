@@ -8,6 +8,7 @@ import { MdEmail } from "react-icons/md";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
+import MobileNavLinks from "./MobileNavLinks";
 const NavbarMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
@@ -42,45 +43,46 @@ const NavbarMobile = () => {
           </ul>
         </div>
 
-        <div className=" fixed lg:bottom-24 bottom-12 right-2 z-20">
-          <div className=" fixed top-2 sm:top-20 right-2 ">
-            <button className=" lg:hidden   rounded-full bg-green-600 py-3 px-3 text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
-              <Link href="tel:885987321 ">
-                <BsFillTelephoneForwardFill className="text-right" />
-              </Link>
-            </button>
-            <button className=" rounded-full bg-green-600 my-2 py-3 px-3 mx-2 text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
-              <Link
-                href="https://www.instagram.com/stan_relaksu/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaSquareInstagram className="text-right" />
-              </Link>
-            </button>
-            <button className=" rounded-full bg-green-600 py-3 px-3  text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
-              <Link
-                href="https://www.facebook.com/profile.php?id=61560021160720"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaFacebook className="text-right" />
-              </Link>
-            </button>
-            {/* <button className="animate-fadeIn bottom-1 left-4 mt-8 inline-flex items-center justify-center rounded-full bg-green-600 py-3 px-6  font-dm text-sm font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-400  hover:scale-[1.02]">
-              <Link
-                href="https://booksy.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div>
-                  Zarezerwuj<br></br> Wizytę
-                </div>
-              </Link>
-            </button> */}
-          </div>
+        <div className=" fixed top-2 sm:top-10 right-2 z-20 ">
+          <button className=" lg:hidden   rounded-full bg-green-600 py-3 px-3 text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
+            <Link href="tel:885987321 ">
+              <BsFillTelephoneForwardFill className="text-right" />
+            </Link>
+          </button>
+          <button className=" rounded-full bg-green-600 my-2 py-3 px-3 mx-2 text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
+            <Link
+              href="https://www.instagram.com/stan_relaksu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaSquareInstagram className="text-right" />
+            </Link>
+          </button>
+          <button className=" rounded-full bg-green-600 py-3 px-3  text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
+            <Link
+              href="https://www.facebook.com/profile.php?id=61560021160720"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook className="text-right" />
+            </Link>
+          </button>
+        </div>
+        <div className="fixed bottom-20 right-2 z-20">
+          <button className="animate-fadeIn mt-8 inline-flex items-center justify-center rounded-full bg-green-600 py-3 px-6  font-dm text-sm font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-400  hover:scale-[1.02]">
+            <Link
+              href="https://booksy.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                Zarezerwuj<br></br> Wizytę
+              </div>
+            </Link>
+          </button>
         </div>
       </div>
+
       <div
         className={`${CormorantInfant.className} flex  flex-wrap w-full justify-evenly   py-4 px-4 sm:hidden`}
       >
@@ -90,7 +92,8 @@ const NavbarMobile = () => {
               isOpen ? "" : "hidden"
             }`}
           >
-            <li className=" ">
+            <MobileNavLinks />
+            {/* <li className=" ">
               <Link
                 href="/#welcome-card"
                 className=" flex justify-center px-1 py-1 text-xl  text-white w-full hover:border-y-2 hover:border-white"
@@ -116,12 +119,20 @@ const NavbarMobile = () => {
             </li>
             <li className=" ">
               <Link
+                href="/prices"
+                className=" flex justify-center px-1 py-1 text-xl  text-white w-full hover:border-y-2 hover:border-whit"
+              >
+                Cennik
+              </Link>
+            </li>
+            <li className=" ">
+              <Link
                 href="/contact#contact"
                 className=" flex justify-center px-1 py-1 text-xl  text-white w-full hover:border-y-2 hover:border-whit"
               >
                 Kontakt
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>
