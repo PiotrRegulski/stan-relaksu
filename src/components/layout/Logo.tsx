@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 const Logo = () => {
   return (
-    <div>
+    <div className=" flex w-full justify-center">
       {" "}
       <Image
-        src="/logo.png"
+        src="/logo-stan-relaksu-kolo.png"
         width={150}
-        height={150}
+        height={125}
         className=""
         alt="Screenshots of the dashboard project showing desktop version"
         priority={true}
