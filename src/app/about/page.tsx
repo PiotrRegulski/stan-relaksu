@@ -32,10 +32,9 @@ const About = () => {
                     Cześć, jestem Kinga. Stworzyłam to miejsce z myślą o Tobie,
                     osobie która chce o siebie zadbać, zwolnić i poczuć się
                     lepiej. Przyniosę Ci ulgę w bólu oraz napięciu stosując
-                    <strong>
-                      techniki masażu powięziowego i terapii manualnej
-                    </strong>{" "}
-                    , podpowiem Ci jak możesz pracować ze swoim ciałem poprzez
+                    techniki
+                    <strong> masażu powięziowego i terapii manualnej</strong> ,
+                    podpowiem Ci jak możesz pracować ze swoim ciałem poprzez
                     ćwiczenia czy oddech dla poprawy Twojego dobrostanu. Moją
                     pasją jest fizjoterapia estetyczna twarzy. Zajmę się też
                     zdrowiem i pięknym wyglądem Twojej twarzy poprzez
@@ -51,8 +50,17 @@ const About = () => {
                     bólu i napięciu
                   </p>
                   <p className="indent-8 text-justify">
-                    <strong>Zarezerwuj wizytę</strong> i daj się sobą
-                    zaopiekować w komfortowy zaciszu gabinetu Stan Relaksu.
+                    <strong>
+                      <Link
+                        href="https://booksy.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Zarezerwuj wizytę
+                      </Link>
+                    </strong>{" "}
+                    i daj się sobą zaopiekować w komfortowy zaciszu gabinetu
+                    Stan Relaksu.
                   </p>
                 </article>
                 <div className=" flex justify-center mx-4 my-4">
