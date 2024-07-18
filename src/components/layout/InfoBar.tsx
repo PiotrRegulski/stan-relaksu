@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { BsArrowUpRightSquare } from "react-icons/bs";
@@ -27,6 +29,7 @@ const InfoBar = () => {
         </div>
         <div>
           <ul className=" flex flex-row">
+            <li></li>
             <li>
               <Link
                 href={"mailto:contact@pathpicstales.com"}
@@ -53,6 +56,27 @@ const InfoBar = () => {
                 <span className="pt-1">000-000-000</span>
               </Link>
             </li>
+            <li>
+              <Link
+                href="https://www.instagram.com/stan_relaksu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row px-1   "
+              >
+                <FaSquareInstagram className="text-right w-8 h-8" />
+              </Link>
+            </li>
+            <li>
+              {" "}
+              <Link
+                href="https://www.facebook.com/profile.php?id=61560021160720"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row px-1 "
+              >
+                <FaFacebook className="text-right w-8 h-8" />
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -61,3 +85,4 @@ const InfoBar = () => {
 };
 
 export default InfoBar;
+
