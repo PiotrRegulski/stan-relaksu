@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import logo  from"./public/logo-stan-relaksu-kolo.png"
 const Logo = () => {
   return (
-    <div className=" flex w-full justify-center">
+    <div className="grid-element">
       {" "}
       <Image
         src="/logo-stan-relaksu-kolo.png"
-        width={150}
-        height={125}
-        className=""
+        width={93}
+        height={93}
+        className="bg-white rounded-full shadow-xl"
         alt="Screenshots of the dashboard project showing desktop version"
         priority={true}
       />

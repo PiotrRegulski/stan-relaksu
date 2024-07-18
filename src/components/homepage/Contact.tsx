@@ -28,7 +28,7 @@ const Contact = () => {
   }
   return (
     <div className="w-[100%] mx-auto">
-      <PageHeader>Skontaktuj się</PageHeader>
+      <PageHeader id={"kontakt"}>Skontaktuj się</PageHeader>
       <div
         className="grid md:grid-cols-1
         gap-4  items-center my-12 md:mx-4 text-[#333] "

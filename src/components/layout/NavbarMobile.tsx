@@ -4,11 +4,11 @@ import { CormorantInfant } from "@/components/fonts";
 import Link from "next/link";
 import { useState, useCallback } from "react";
 import HamburgerIcon from "@/components/layout/HamburgerIcon";
-import { MdEmail } from "react-icons/md";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 import MobileNavLinks from "./MobileNavLinks";
+import Logo from "./Logo";
 const NavbarMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
@@ -20,30 +20,22 @@ const NavbarMobile = () => {
             <HamburgerIcon />
           </button>
           <div className="w-screen">
-            {" "}
-            <h1 className=" mx-auto font-semibold lg:text-4xl text-3xl leading-none text-white pt-4 lg:pt-1 text-center ">
-              <Link href={"/"}>Stan Relaksu</Link>{" "}
+            <div>
+              <Link href={"/"}>
+                <div className="flex justify-center">
+                  <Logo />
+                </div>
+              </Link>
+            </div>
+            <h1 className=" mx-4  lg:mx-auto font-semibold text-sm leading-none text-center text-white pt-3 ">
+              miejsce z myślą o Tobie,<br></br>
+              osobie która, chce o siebie zadbać, zwolnić i poczuć się lepiej.
+              <br></br>Pozwól sobie na <strong>Stan Relaksu</strong>
             </h1>
-            <p className=" mx-4  lg:mx-auto font-semibold lg:text-sm text-sm leading-none text-center text-white pt-1 ">
-              to miejsce z myślą o Tobie, osobie która chce o siebie zadbać,
-              zwolnić i poczuć się lepiej
-            </p>
           </div>
         </div>
-        <div className=" hidden lg:flex  w-screen font-semibold text-md justify-end px-4 min-w-max py-2">
-          <ul className="flex gap-4 text-teal-900">
-            <li className="pt-1">
-              <MdEmail className="w-4 h-4" />
-            </li>
-            <li> kontat@kontakt.pl</li>
-            <li className="pt-1">
-              <BsFillTelephoneForwardFill className=" w-4 h-4" />
-            </li>
-            <li> 000-000-000</li>
-          </ul>
-        </div>
 
-        <div className=" fixed top-2 sm:top-10 right-2 z-20 ">
+        <div className="md:hidden fixed top-2 sm:top-10 right-2 z-20 ">
           <button className=" lg:hidden   rounded-full bg-green-600 py-3 px-3 text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
             <Link href="tel:885987321 ">
               <BsFillTelephoneForwardFill className="text-right" />
@@ -68,7 +60,7 @@ const NavbarMobile = () => {
             </Link>
           </button>
         </div>
-        <div className="fixed bottom-20 right-2 z-20">
+        <div className="md:hidden fixed bottom-20 right-2 z-20">
           <button className="animate-fadeIn mt-8 inline-flex items-center justify-center rounded-full bg-green-600 py-3 px-6  font-dm text-sm font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-400  hover:scale-[1.02]">
             <Link
               href="https://booksy.com/"
