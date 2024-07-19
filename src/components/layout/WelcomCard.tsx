@@ -29,15 +29,15 @@ const WelcomCard = () => {
             <div className="flex justify-center gap-12 md:gap-24 py-3 mt-6 md:mt-2 ">
               <Link
                 href="/about"
-                className=" hover:shadow-xl shadow-md shadow-gray-400/75 text-xl  border-2 rounded border-black hover:border-white bg-white hover:bg-amber-400 px-6 py-2 font-bold  text-amber-700 hover:text-white focus:outline-none focus:shadow-outline"
+                className=" hover:shadow-xl shadow-md shadow-gray-400/75 text-3xl  border-2 rounded border-black hover:border-white bg-white hover:bg-amber-400 px-6 py-2 font-bold  text-amber-700 hover:text-white  focus:outline-none focus:shadow-outline"
               >
                 O mnie
               </Link>
               <Link
                 href="/offer"
-                className=" shadow-xl hover:shadow-md text-xl  border-2 rounded hover:border-amber-400 hover:bg-amber-500 bg-amber-400 px-6 py-2 font-bold  hover:text-white text-black focus:outline-none focus:shadow-outline"
+                className=" shadow-xl hover:shadow-md text-3xl  border-2 rounded hover:border-amber-400 hover:bg-amber-500 bg-amber-400 px-6 py-2 font-bold  hover:text-white text-black focus:outline-none focus:shadow-outline"
               >
-                Usługi
+                Oferta
               </Link>
             </div>
           </div>
