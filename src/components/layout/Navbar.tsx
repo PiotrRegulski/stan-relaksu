@@ -18,13 +18,17 @@ const Navbar = () => {
         </h1>
       </div>
 
-      <div className=" flex  basis-1/2 justify-center  ">
-        
-          <ul className="flex gap-4 pt-12 ">
-            <NavLinks />
-          </ul>
+      <div className=" flex flex-col  basis-1/2 justify-center  ">
+        <div className="flex justify-center ">
+          <p className=" font-semibold lg:text-xl text-sm leading-none px-4 py-3 text-white  bg-gradient-to-r from-teal-400/80 via-teal-400 to-teal-400/80 rounded-full shadow-t-md ">
+            Daj się sobą zaopiekować w komfortowym zaciszu
+            gabinetu Stan Relaksu.
+          </p>
         </div>
-     
+        <div className="flex gap-4 pt-5 justify-center w-full">
+          <NavLinks />
+        </div>
+      </div>
     </nav>
   );
 };
