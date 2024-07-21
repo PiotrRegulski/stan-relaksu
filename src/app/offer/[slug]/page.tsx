@@ -16,6 +16,10 @@ type PricesType = {
   priceName: string;
   price: string;
 };
+type ContraindicationsType={
+  id:string;
+  contraindication:string;
+} 
 // Definicja typu dla pojedynczego elementu oferty
 type OfferItemType = {
   id: string;
@@ -25,6 +29,7 @@ type OfferItemType = {
   image: string;
   prices: PricesType[];
   advantages: AdvantageType[];
+  contraindications:ContraindicationsType[];
 
   // Dodaj pozostałe pola zgodnie z definicją OfferItem
 };
@@ -131,6 +136,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
         </div>
       </section>
       <section className=" flex justify-center shadow-xl shadow-gray-400/75  md:py-4 md:px-2 md:mx-36 md:my-8">
+      <div><ul>{offerDetail.contraindications?.map((contraindication)=>(<li key={contraindication.id}>{contraindication.contraindication}</li>))}</ul></div>
         <div className="w-2/3 ">
           <ul className="divide-y divide-blue-200 mx-3">
             <h3 className="flex justify-center text-3xl font-semibold">
@@ -150,6 +156,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             ))}
           </ul>
         </div>
+        
       </section>
       <BackLink>Zobacz pozostałe oferty</BackLink>
     </>
