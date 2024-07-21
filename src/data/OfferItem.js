@@ -2,6 +2,8 @@ export const OfferItem = [
   {
     id: "Igłoterapia",
     slug: "igloterapia",
+    active: true,
+    category: "face",
     title: "Igłoterapia estetyczna twarzy",
     image: "offer1.jpg",
     prices: [{ id: "cenaIgłoterapi", priceName: "90 minut", price: "350 zł" }],
@@ -24,13 +26,29 @@ export const OfferItem = [
           "Zabieg polega na zastosowaniu cieniutkich igieł akupunkturowych, które wprowadzane są w obrębie mięśni mimicznych dla przywrócenia ich elastyczności i jędrności dzięki czemu uzyskujemy efekt odmłodzenia twarzy. ",
       },
     ],
-    summary:
-      "Nie wahaj się – umów się na konsultację i dowiedz się więcej o tym fascynującym zabiegu!",
+    contraindications: [
+      { id: "1", contraindication: "przeciwskazania" },
+      {
+        id: "2",
+        contraindication:
+          "Zakażenia skóry i otwarte rany w miejscu wykonywania zabiegu",
+      },
+      { id: "3", contraindication: "przeciwskazania" },
+      { id: "4", contraindication: "przeciwskazania" },
+      { id: "5", contraindication: "przeciwskazania" },
+      { id: "6", contraindication: "przeciwskazania" },
+    ],
+    indications: [
+      { id: "1", indication: "wskazanie 1" },
+      { id: "2", indication: "wskazanie 2" },
+    ],
   },
 
   {
     id: "MasażKobido",
     slug: "masaz-kobido",
+    active: true,
+    category: "face",
     title: "Masaż Kobido z kinesiotapingiem estetycznym",
     image: "offer2.jpg",
     prices: [{ id: "cenaKobido", priceName: "90 minut", price: "300 zł" }],
@@ -50,7 +68,7 @@ export const OfferItem = [
       {
         title: "Efekt liftingu:",
         description:
-          "Dodatkowo na koniec zabiegu dla przedłużenia efektu zakładamy kinesiotaping estetyczny..",
+          "Zdrowszy i promienny wygląd twarzy, spłycenie zmarszczek i bruzd mimicznych to jedne z wielu korzyści płynących z rytuału Kobido. Dla przedłużenie efektów na koniec zabiegu zakładamy kinesiotaping estetyczny. Odprężenie płynące masażu twarzy Kobido przynosi zrelaksowanie, zmniejszenie napięcia i stresu w całym ciele.  ",
       },
 
       {
@@ -59,12 +77,33 @@ export const OfferItem = [
           "Zabieg można powtarzać co 2 tygodnie na początku, a po kilku sesjach przejść do 1 zabiegu miesięcznie. To doskonałe przygotowanie tkanek przed innymi zabiegami medycyny estetycznej",
       },
     ],
-    summary:
-      "Nie czekaj – umów się na Masaż Kobido i poczuj magię tej tradycyjnej metody! ",
+    contraindications: [
+      { id: "1", contraindication: "ostre stany zapalne skóry " },
+      {
+        id: "2",
+        contraindication: "opryszczka",
+      },
+      { id: "3", contraindication: "przerwanie ciągłości skóry" },
+      { id: "4", contraindication: "nieuregulowane nadciśnienie tętnicze" },
+      { id: "5", contraindication: "trądzik różowaty w aktywnym stanie" },
+      { id: "6", contraindication: "do 2 tygodni po intensywnych peelingach, fali radiacyjnej, laserze niedawno przebyte zabiegi medycyny estetycznej:" },
+      { id: "7", contraindication: "do 4 tygodni po toksynie botulinowej" },
+      { id: "8", contraindication: "do 6 tygodni po wypełniaczach " },
+      { id: "9", contraindication: "do 6 miesięcy po niciach liftingujących (bezhaczykowych) " },
+    ],
+    indications: [
+      { id: "1", indication: "Wiotka skóra potrzebująca pobudzenia, liftingu i ujędrnienia" },
+      { id: "2", indication: "Napięcia w obrębi głowy, twarzy, szyi, karku " },
+      { id: "3", indication: "Szczękościsk i bruksizm (zgrzytanie zębami)" },
+      { id: "4", indication: "Bóle głowy i zatok" },
+      { id: "5", indication: "Spowalnianie procesów starzenia" },
+    ],
   },
   {
     id: "MasazPowieziowy ",
     slug: "masaz-powieziowy",
+    active: true,
+    category: "body",
     title: "Masaż powięziowy ",
     image: "offer3.jpg",
     prices: [
@@ -78,19 +117,40 @@ export const OfferItem = [
       {
         title: "Indywidualne podejście:",
         description:
-          "Masaż powięziowy to idealny wybór dla osób, które zmagają się z bólami pleców, karku czy bólami w stawach obwodowych. Indywidualnie dobrana terapia pomoże w zniesieniu napięć w ciele i pozbyciu się dolegliwości bólowych.",
+          "Masaż powięziowy to idealny wybór dla osób, które zmagają się z bólami pleców, karku czy bólami w stawach obwodowych. Indywidualnie dobrana terapia pomoże w zniesieniu napięć w ciele i pozbyciu się dolegliwości bólowych. Praca na przywróceniu ślizgu tkanki powięziowej pozwala na zwiększenie prawidłowych zakresów ruchomości w stawach oraz ogólnej mobilności całego ciała. ",
       },
       {
         title: "Zwalczanie bólu:",
         description:
-          "W zależności od potrzeb możliwe jest użycie technik terapii manualnej, powięziowej czy masażu tkanek głebokich dla uzyskania jak najlepszych efektów.",
+          "Ta holistyczna metoda pracy poprzez znoszenie napięcia z tkanki mięśniowej i powięziowej prowadzi do zmniejszenia uczucia stresu, uwolnienia emocji co prowadzi do głębokiego Stanu Relaksu. Korzyści jakie niesie terapia mięśniowo-powięziowa są wielopłaszczyznowe. Uwalniając napięcie z ciała wpływamy na wcześniej zamrożone i zatrzymane emocje w nim. Uczucie ulgi jakie przenoszą techniki powięziowe wynika z rozluźnienia mięśni, powięzi oraz uwolnienia emocji zawieszonych w tych ciele i tkankach. ",
+      },
+      {
+        title: "Summary",
+        description:
+          "Jeśli szukasz ulgi w bólu, zmniejszeniu uczucia stresu i napięcia w ciele to masaż powięziowy będzie dla Ciebie świetnym wyborem.",
       },
     ],
-    summary: "Nie czekaj – umów się na masaż powięziowy i poczuj ulgę!",
+    contraindications: [
+      { id: "1", contraindication: "przciwskazania" },
+      {
+        id: "2",
+        contraindication: "przciwskazania",
+      },
+      { id: "3", contraindication: "przciwskazania" },
+      { id: "4", contraindication: "przciwskazania" },
+      { id: "5", contraindication: "przciwskazania" },
+      { id: "6", contraindication: "przciwskazania" },
+    ],
+    indications: [
+      { id: "1", indication: "wskazanie 1" },
+      { id: "2", indication: "wskazanie 2" },
+    ],
   },
   {
     id: "TerapiaManualnaBlizn ",
     slug: "terapia-manualna-blizn",
+    active: true,
+    category: "body",
     title: "Terapia manualna blizn",
     image: "offer4.png",
     prices: [
@@ -107,14 +167,47 @@ export const OfferItem = [
       {
         title: "Zwalczanie bólu:",
         description:
-          "Zauważalnym efektem po terapii blizny  jest zmiana elastyczności i poprawa jej wyglądu. Terapia ta często łączona jest z suchym iglowaniem blizny dla zwiększenia efektów pracy.",
+          "Zauważalnym efektem po terapii blizny  jest zmiana elastyczności i poprawa jej wyglądu. Terapię manualną blizny często łączymy z niezwykle skuteczną metodą suchego igłowania (Dry Needling).",
+      },
+      {
+        title: "Dry Needling:",
+        description:
+          "Dzięki zastosowaniu tych metod możemy uzyskać  jeszcze lepsze rozmiękczenie i uelastycznienie blizny. Blizna zazwyczaj widoczna powierzchownie ma też swój korzeń w głębszych warstwach tkanek, brak mobilność może prowadzić do zrostów i efektu zaciągnięcia blizny w głąb do środka tkanek ( efekt “zaciągnięcia w tapicerce”). Często dochodzi do zaburzenia czucia w obrębie okolicy blizny, a także błędnego odczytywania informacji przez układ nerwowy o położeniu ciała w przestrzeni, co może prowadzić do dysfunkcji w pracy nawet odległych mięśni czy stawów.",
+      },
+      {
+        title: "summary",
+        description:
+          "Terapia blizny niweluje te problemy, prowadząc do przywrócenia elastyczności warstw tkanek, wygładzenia powierzchni blizny, poprawy czucia w jej obrębie",
       },
     ],
-    summary: "Nie czekaj – umów się na masaż powięziowy i poczuj ulgę!",
+    contraindications: [
+      { id: "1", contraindication: "brak wygojenia się blizny" },
+      {
+        id: "2",
+        contraindication: "stan zapalny blizny",
+      },
+      { id: "3", contraindication: "zakażenie w obrębie blizny" },
+      { id: "4", contraindication: "bliznowiec" },
+      { id: "5", contraindication: "infekcja " },
+      { id: "6", contraindication: "Gorączka" },
+    ],
+    indications: [
+      {
+        id: "1",
+        indication:
+          "Blizny pooperacyjne (np. endoplastyka stawu kolanowego, rekonstrukcja ACL, blizna po usunięciu tarczycy).",
+      },
+      { id: "2", indication: "blizny po laparoskopii" },
+      { id: "3", indication: "blizna po cesarskim cięciu " },
+      { id: "4", indication: "blizny po operacjach plastycznych" },
+      { id: "5", indication: "blizny powypadkowe" },
+    ],
   },
   {
     id: "DrenażLimfatyczny",
     slug: "drenaz-limfatyczny",
+    active: true,
+    category: "body",
     title: "Drenaż limfatyczny",
     image: "offer5.png",
     prices: [
@@ -123,14 +216,39 @@ export const OfferItem = [
       { id: "drelim60", priceName: "30 minut", price: "120 zł" },
     ],
     contentFirst:
-      "Odkryj ulgę i lekkość, jaką oferuje drenaż limfatyczny – delikatna, ale potężna metoda, która może przynieść znaczącą poprawę osobom borykającym się z obrzękami i zastojem limfy. ",
+      "Odkryj ulgę i lekkość, jaką oferuje drenaż limfatyczny – delikatna, ale potężna metoda, która może przynieść znaczącą poprawę osobom borykającym się z obrzękami i zastojem limfy w ciele. ",
     advantages: [
       {
-        title: "Indywidualne podejście:",
+        title: "Zatrzymywanie wody w ciele:",
         description:
-          "Techniki manualne drenażu pozwalają odblokować zastoje w węzłach chłonnych, usunąć zalegajaca limfę i usprawnić jej przepływ.",
+          "Drenaż limfatyczny to idealne rozwiązanie dla osób mających problemy z zatrzymywaniem się wody w ciele, walczącym z obrzękiem i zastojem limfy. Techniki manualne drenażu pozwalają odblokować zastoje w węzłach chłonnych, usunąć zalegajaca limfę i usprawnić jej przepływ",
+      },
+      {
+        title: "Ulga w obrzękach pooperacyjnych:",
+        description:
+          "Masaż limfatyczny przynosi ulgę w obrzękach pooperacyjnych i pourazowych, zaburzeniach przepływu limfy w przebiegu stanów zapalnych, chorób reumatycznych, chorób nerek a także sprawdza się w obrzękach ciążowych, redukcji cellulitu wodno tłuszczowego czy lipodemy. Usunięcie zastoju i zalegającej limfy jest niezwykle ważnym etapem w rekonwalescencji po zabiegach medycyny plastycznej (np. takich jak liposukcja, abdominoplastyka, powiększanie piersi).",
+      },
+      {
+        title: "summary",
+        description:
+          " Efekty drenażu niosą pozytywne skutki estetyczne zmniejszając obwody naszego ciała dzięki pozbycia się nadmiaru obrzęku z naszego ciała",
       },
     ],
-    summary: "Nie czekaj – umów się na masaż powięziowy i poczuj ulgę!",
+    contraindications: [
+      { id: "1", contraindication: "choroby nowotworowe" },
+      {
+        id: "2",
+        contraindication:
+          "Zakażenia skóry i otwarte rany w miejscu wykonywania zabiegu",
+      },
+      { id: "3", contraindication: "Zakrzepica żył głębokich" },
+      { id: "4", contraindication: "Niewyrównana niewydolność serca" },
+      { id: "5", contraindication: "Ciężka niewydolność nerek" },
+      { id: "6", contraindication: "Gorączka" },
+    ],
+    indications: [
+      { id: "1", indication: "wskazanie 1" },
+      { id: "2", indication: "wskazanie 2" },
+    ],
   },
 ];

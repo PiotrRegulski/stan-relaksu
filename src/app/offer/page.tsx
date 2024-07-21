@@ -1,14 +1,16 @@
 import React from "react";
 
-import OffersCard from "@/components/offers/OffersCard";
+import OffersCardBody from "@/components/offers/OffersCardBody";
+import OffersCardFace from "@/components/offers/OffersCardFace";
 interface OfferProps {
   // Tutaj możesz dodać właściwości, jeśli są potrzebne
 }
 
 const OfferPage: React.FC<OfferProps> = () => {
   return (
-    < >
-      <OffersCard/>
+    <>
+      <OffersCardBody />
+      <OffersCardFace/>
     </>
   );
 };
