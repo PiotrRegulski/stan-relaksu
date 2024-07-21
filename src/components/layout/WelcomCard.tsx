@@ -6,9 +6,9 @@ const WelcomCard = () => {
   return (
     <section
       id="welcome-card"
-      className="relative  max-w-screen min-h-[70vh] bg-gradient-to-t from-teal-300/50 via-teal-400/75 to-teal-300/50 overflow-hidden flex justify-end shadow-xl"
+      className="relative  max-w-screen min-h-[70vh] bg-gradient-to-t from-teal-300/50 via-teal-400/75 to-teal-300/50 overflow-hidden flex justify-end "
     >
-      <div className="  grid md:place-items-center  bg-cover md:bg-left bg-center  bg-my-bg-image h-[75vh] md:h-[60] w-screen md:w-2/3 rounded-md shadow-xl ">
+      <div className="  grid md:place-items-center  bg-cover md:bg-left bg-center  bg-my-bg-image h-[75vh] md:h-[60] w-screen md:w-2/3 rounded-md ">
         <section className=" md:absolute md:top-3 md:left-20 flex flex-col shadow-xl rounded border-4 border-white shadow-gray-400/75  md:w-1/2 md:h-min ">
           <div className="flex flex-col  justify-center  w-full mt-8 md:mt-20 ">
             <article className={`${lato.className}  `}>
