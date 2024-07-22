@@ -40,7 +40,7 @@ const InfoBar = () => {
                 <span className="bg-gray-300 rounded-full p-2">
                   <MdEmail className="w-4 h-4" />
                 </span>
-                <span className="pt-1">kontat@kontakt.pl</span>
+                <span className="pt-1">kontat@stanrelaksu.pl</span>
               </Link>
             </li>
             <li>

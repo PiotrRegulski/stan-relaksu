@@ -60,7 +60,7 @@ const NavbarMobile = () => {
             </Link>
           </button>
         </div>
-        <div className="md:hidden fixed bottom-[2em] right-[1em] z-20">
+        <div className="md:hidden fixed bottom-[2chem] right-[1em] z-20">
           <button className="animate-fadeIn mt-8 inline-flex items-center justify-center rounded-full bg-green-600 py-3 px-6  font-dm text-sm font-medium text-white shadow-md shadow-gray-400/75 transition-transform duration-400  hover:scale-[1.02]">
             <Link
               href="https://booksy.com/"
