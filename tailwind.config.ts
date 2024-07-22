@@ -8,10 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: { "my-bg-image": "url('/mirror.png')" },
+      backgroundImage: { "my-bg-image": "url('/mirror.png')","my-hero-image": "url('/hero.png')" },
+      
       colors: {
         primary: "rgb(254 253 199)",
         secondary: "rgb(69 26 3)",
+        mainthemelogo: "rgb(241 234 214)",
       },
       keyframes: {
         fadeIn: {
