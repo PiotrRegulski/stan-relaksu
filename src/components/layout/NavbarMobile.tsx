@@ -60,7 +60,7 @@ const NavbarMobile = () => {
             </Link>
           </button>
         </div>
-        <div className="md:hidden fixed bottom-[2chem] right-[1em] z-20">
+        <div className="md:hidden fixed bottom-[2em] right-[1em] z-20">
           <button className="animate-fadeIn mt-8 inline-flex items-center justify-center rounded-full bg-green-600 py-3 px-6  font-dm text-sm font-medium text-white shadow-md shadow-gray-400/75 transition-transform duration-400  hover:scale-[1.02]">
             <Link
               href="https://booksy.com/"
@@ -85,46 +85,7 @@ const NavbarMobile = () => {
             }`}
           >
             <MobileNavLinks />
-            {/* <li className=" ">
-              <Link
-                href="/#welcome-card"
-                className=" flex justify-center px-1 py-1 text-xl  text-white w-full hover:border-y-2 hover:border-white"
-              >
-                Strona główna
-              </Link>
-            </li>
-            <li className=" ">
-              <Link
-                href="/about#about" 
-                className=" flex justify-center px-1 py-1 text-xl  text-white w-full hover:border-y-2 hover:border-whit"
-              >
-                O mnie
-              </Link>
-            </li>
-            <li className=" ">
-              <Link
-                href="offer#offer"
-                className=" flex justify-center px-1 py-1 text-xl  text-white w-full hover:border-y-2 hover:border-whit"
-              >
-                Oferta
-              </Link>
-            </li>
-            <li className=" ">
-              <Link
-                href="/prices"
-                className=" flex justify-center px-1 py-1 text-xl  text-white w-full hover:border-y-2 hover:border-whit"
-              >
-                Cennik
-              </Link>
-            </li>
-            <li className=" ">
-              <Link
-                href="/contact#contact"
-                className=" flex justify-center px-1 py-1 text-xl  text-white w-full hover:border-y-2 hover:border-whit"
-              >
-                Kontakt
-              </Link>
-            </li> */}
+          
           </ul>
         </nav>
       </div>
