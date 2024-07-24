@@ -52,7 +52,7 @@ const OffersCardFace = () => {
                 <Image
                   src={`/${offerItem.image}`}
                   alt={offerItem.title}
-                  width={550}
+                  width={400}
                   height={400}
                   className="mx-auto"
                 />
