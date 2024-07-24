@@ -35,13 +35,13 @@ const NavbarMobile = () => {
           </div>
         </div>
 
-        <div className="md:hidden fixed top-2 sm:top-10 right-2 z-20 ">
-          <button className=" lg:hidden   rounded-full bg-green-600 py-3 px-3 text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
+        <div className="md:hidden fixed flex flex-col top-[2em] sm:top-10 right-[1em] z-20  ">
+          <button className=" lg:hidden   rounded-full bg-green-600 py-3 px-3 text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09] w-min">
             <Link href="tel:885987321 ">
               <BsFillTelephoneForwardFill className="text-right" />
             </Link>
           </button>
-          <button className=" rounded-full bg-green-600 my-2 py-3 px-3 mx-2 text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
+          <button className=" rounded-full bg-green-600  py-3 px-3 my-2 text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09] w-min">
             <Link
               href="https://www.instagram.com/stan_relaksu/"
               target="_blank"
@@ -50,7 +50,7 @@ const NavbarMobile = () => {
               <FaSquareInstagram className="text-right" />
             </Link>
           </button>
-          <button className=" rounded-full bg-green-600 py-3 px-3  text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09]">
+          <button className=" rounded-full bg-green-600  py-3 px-3  text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09] w-min">
             <Link
               href="https://www.facebook.com/profile.php?id=61560021160720"
               target="_blank"
