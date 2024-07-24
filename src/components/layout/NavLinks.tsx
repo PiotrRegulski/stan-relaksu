@@ -4,7 +4,7 @@ import React from "react";
 import { usePathname } from "next/navigation";
 const links = [
   { href: "/", label: "Strona główna" },
-  { href: "/about#about", label: "O mnie" },
+  { href: "/about", label: "O mnie" },
   { href: "/offer", label: "Oferta" },
   { href: "/prices", label: "Cennik" },
   { href: "/contact", label: "Kontakt" },
