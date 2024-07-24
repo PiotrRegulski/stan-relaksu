@@ -1,4 +1,3 @@
-"use client";
 import { OfferItem } from "@/data/OfferItem";
 import React from "react";
 import Image from "next/image";
@@ -16,10 +15,14 @@ type PricesType = {
   priceName: string;
   price: string;
 };
-type ContraindicationsType={
-  id:string;
-  contraindication:string;
-} 
+type ContraindicationsType = {
+  id: string;
+  contraindication: string;
+};
+type IndicationsType = {
+  id: string;
+  indication: string;
+};
 // Definicja typu dla pojedynczego elementu oferty
 type OfferItemType = {
   id: string;
@@ -29,7 +32,8 @@ type OfferItemType = {
   image: string;
   prices: PricesType[];
   advantages: AdvantageType[];
-  contraindications:ContraindicationsType[];
+  contraindications: ContraindicationsType[];
+  indications: IndicationsType[];
 
   // Dodaj pozostałe pola zgodnie z definicją OfferItem
 };
@@ -67,19 +71,8 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     <>
       <PageHeader id={"offerDetail"}>{offerDetail.title}</PageHeader>
 
-      <section className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4  h-2/3 md:py-4 md:px-2  shadow-xl shadow-gray-400/75 md:mx-36 md:my-8">
-        <div className="md:px-12 md:py-12 px-2 ">
-          <div className="lg:hidden ">
-            {" "}
-            <Image
-              src={`/${offerDetail.image}`}
-              alt={offerDetail.title}
-              width={300}
-              height={250}
-              className=" mx-auto   z-0 animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
-            />
-          </div>
-
+      <section className="flex flex-cols lg:flex-row   lg:gap-4 h-2/3  shadow-md shadow-teal-400/75 md:mx-36 md:my-8" >
+        <div className=" w-screen md:w-1/2">
           <p
             className={` ${lato.className} text-xl mx-4 my-4  indent-8 font-semibold`}
           >
@@ -95,48 +88,68 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             ))}
           </ul>
         </div>
-        <div className=" sm:grid sm:justify-items-center sm:content-center sm:mt-4  size-full h-full min-w-full ">
+        <div className=" flex justify-center w-screen md:w-1/2 px-10 py-10 ">
           <Image
             src={`/${offerDetail.image}`}
             alt={offerDetail.title}
-            width={300}
-            height={300}
-            className=" hidden sm:block  z-0 animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
+            width={500}
+            height={500}
+            className="   animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out  "
           />
-          <div className=" flex gap-2 z-10  py-3 overflow-auto ">
-            <Image
-              src={`/${offerDetail.image}`}
-              alt={offerDetail.title}
-              width={200}
-              height={200}
-              className="  animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
-            />
-            <Image
-              src={`/${offerDetail.image}`}
-              alt={offerDetail.title}
-              width={200}
-              height={200}
-              className="  animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
-            />
-            <Image
-              src={`/${offerDetail.image}`}
-              alt={offerDetail.title}
-              width={200}
-              height={200}
-              className="  animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.01]"
-            />
-            <Image
-              src={`/${offerDetail.image}`}
-              alt={offerDetail.title}
-              width={200}
-              height={200}
-              className="  animate-fadeIn rounded border-1 border-white shadow-xl shadow-gray-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.01]"
-            />
-          </div>
         </div>
       </section>
+
+      <section
+        id="wskazania"
+        className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4  h-2/3 md:py-4 md:px-2  shadow-md shadow-teal-400/75 md:mx-36 md:my-8"
+      >
+        <div className="grid grid-cols-1 gap-4 place-items-center">
+          <Image
+            src={`/${offerDetail.image}`}
+            alt={offerDetail.title}
+            width={500}
+            height={500}
+            className=" shadow-md shadow-gray-400    animate-fadeIn rounded border-1 border-white  duration-200 ease-in-out hover:scale-[1.02] mt-2"
+          />
+        </div>
+        <div className={`${lato.className}`}>
+          <h3 className="text-2xl">Głowne wskazania:</h3>
+          <ul className="list-disc text-xl py-8 ml-16">
+            {offerDetail.indications?.map((indication) => (
+              <li className="py-3" key={indication.id}>
+                {indication.indication}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="przeciwskazania"
+        className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4  h-2/3 md:py-4 md:px-2  shadow-md shadow-teal-400/75 md:mx-36 md:my-8"
+      >
+        <div className={`${lato.className} mx-12 my-12`}>
+          <h3 className="text-2xl">Przeciwskazania:</h3>
+          <ul className="list-disc text-xl mx-12 mt-10 ml-12">
+            {offerDetail.contraindications?.map((contraindication) => (
+              <li className="py-3" key={contraindication.id}>
+                {contraindication.contraindication}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="grid grid-cols-1 gap-4 place-items-center">
+          <Image
+            src={`/${offerDetail.image}`}
+            alt={offerDetail.title}
+            width={500}
+            height={500}
+            className="k shadow-md shadow-gray-400    animate-fadeIn rounded border-1 border-white  duration-200 ease-in-out hover:scale-[1.02] mt-2"
+          />
+        </div>
+      </section>
+
       <section className=" flex justify-center shadow-xl shadow-gray-400/75  md:py-4 md:px-2 md:mx-36 md:my-8">
-      <div><ul>{offerDetail.contraindications?.map((contraindication)=>(<li key={contraindication.id}>{contraindication.contraindication}</li>))}</ul></div>
         <div className="w-2/3 ">
           <ul className="divide-y divide-blue-200 mx-3">
             <h3 className="flex justify-center text-3xl font-semibold">
@@ -156,7 +169,6 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             ))}
           </ul>
         </div>
-        
       </section>
       <BackLink>Zobacz pozostałe oferty</BackLink>
     </>

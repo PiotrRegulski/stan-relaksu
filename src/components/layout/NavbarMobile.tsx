@@ -15,8 +15,8 @@ const NavbarMobile = () => {
   return (
     <>
       <div className="flex">
-        <div className="sm:hidden">
-          <button onClick={toggleMenu} className="w-15 h-15 mt-3 ml-1 ">
+        <div className="block xl:hidden">
+          <button onClick={toggleMenu} className="w-12 h-12 mt-3 ml-3">
             <HamburgerIcon />
           </button>
           <div className="w-screen">
@@ -35,7 +35,7 @@ const NavbarMobile = () => {
           </div>
         </div>
 
-        <div className="md:hidden fixed flex flex-col top-[2em] sm:top-10 right-[1em] z-20  ">
+        <div className="lg:hidden fixed flex flex-col top-[2em] sm:top-10 right-[1em] z-20  ">
           <button className=" lg:hidden   rounded-full bg-green-600 py-3 px-3 text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09] w-min">
             <Link href="tel:885987321 ">
               <BsFillTelephoneForwardFill className="text-right" />
@@ -60,8 +60,8 @@ const NavbarMobile = () => {
             </Link>
           </button>
         </div>
-        <div className="md:hidden fixed bottom-[2em] right-[1em] z-20">
-          <button className="animate-fadeIn mt-8 inline-flex items-center justify-center rounded-full bg-green-600 py-3 px-6  font-dm text-sm font-medium text-white shadow-md shadow-gray-400/75 transition-transform duration-400  hover:scale-[1.02]">
+        <div className="lg:hidden fixed bottom-[2em] right-[1em] z-20">
+          <button className="animate-fadeIn mt-8 inline-flex items-center justify-center rounded-full bg-green-600 py-3 px-6  font-dm text-sm font-medium text-white shadow-lg shadow-gray-400/75 transition-transform duration-400  hover:scale-[1.02]">
             <Link
               href="https://booksy.com/"
               target="_blank"
@@ -76,11 +76,11 @@ const NavbarMobile = () => {
       </div>
 
       <div
-        className={`${CormorantInfant.className} flex  flex-wrap w-full justify-evenly   py-4 px-4 sm:hidden`}
+        className={`${CormorantInfant.className} flex  flex-wrap w-full justify-evenly   py-4 px-4 xl:hidden`}
       >
-        <nav id="mobile-nav" className="w-screen sm:hidden">
+        <nav id="mobile-nav" className="w-screen xl:hidden">
           <ul
-            className={`flex flex-col  bg-teal-950/25   h-full p-2 space-y-1  sm:flex-row sm:space-y-1 sm:space-x-4 divide-y-4 divide-teal-900/50 divide-solid ${
+            className={`flex flex-col  bg-teal-950/25   h-full p-2 space-y-1  lg:flex-row sm:space-y-1 lg:space-x-4 divide-y-4 divide-teal-900/50 divide-solid ${
               isOpen ? "" : "hidden"
             }`}
           >

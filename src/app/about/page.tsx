@@ -7,16 +7,15 @@ import BackLink from "@/components/layout/BackLink";
 
 const About = () => {
   return (
-    <>
-      <PageHeader id={"about"}>O mnie</PageHeader>
-      <div className="relative bg-no-repeat md:bg-right bg-center bg-cover md:bg-contain bg-my-hero-image  md:h-[90vh]  md:w-[90vw] rounded-md md:mx-12 md:my-5 bg-mainthemelogo ">
-        <div className=" md:absolute md:top-0 md:right-1/4  md:border-8 border-white  md:mx-12 md:my-6 bg-gradient-to-r from-teal-700/50 via-teal-400/75 to-teal-700/90  bg-opacity-95 text-white">
-          <article className={`${lato.className}  `}>
-            {" "}
-            <h2 className="text-xl md:text-3xl px-3 py-3 text-white bg">
+    <div className="">
+      <PageHeader id={"about"} >O mnie</PageHeader>
+      <div className="relative bg-no-repeat lg:bg-right bg-center bg-cover lg:bg-contain bg-my-hero-image  lg:h-[100vh] lg:w-[90vw] rounded-lg lg:mx-12 lg:my-5 bg-mainthemelogo ">
+        <div className=" lg:absolute lg:top-[6em] lg:left-[1em] lg:h-[46em] lg:w-[68em]   lg:border-8 border-white  lg:mx-12 lg:my-6 bg-gradient-to-r from-teal-700/50 via-teal-400/75 to-teal-700/90  bg-opacity-98 text-white">
+          <article className={`${lato.className} border-4 lg:border-0 border-mainthemelogo `}>
+            <h2 className="text-xl lg:text-2xl px-3 py-3 text-white bg">
               Cześć, jestem Kinga
             </h2>
-            <p className=" text-xl md:text-3xl text-justify px-2 md:px-12 indent-8 ">
+            <p className=" text-xl lg:text-2xl text-justify mt-2 px-12 indent-8 ">
               Ukończyłam fizjoterapię na Warszawskim Uniwersytecie Medycznym,
               jestem naturoterapeutką, w pracy wykorzystuje różnorodne techniki
               terapeutyczne zdobyte na licznych szkoleniach i kursach
@@ -37,7 +36,7 @@ const About = () => {
               Relaksu.
             </p>
           
-            <p className="text-xl md:text-3xl text-justify px-2 md:px-12 py-3 indent-8">
+            <p className="text-xl lg:text-2xl text-justify px-12 py-3 indent-8">
               Przyniosę Ci ulgę w bólu oraz napięciu stosując techniki masażu
               powięziowego i terapii manualnej, podpowiem Ci jak możesz pracować
               ze swoim ciałem poprzez ćwiczenia czy oddech dla poprawy Twojego
@@ -46,7 +45,7 @@ const About = () => {
               bolesnymi miesiączkami czy współżyciem.{" "}
             </p>
             
-            <p className="text-xl md:text-3xl text-justify px-2 md:px-12 py-3 indent-8">
+            <p className="text-xl lg:text-2xl text-justify px-12  indent-8">
               Moją pasją jest terapia manualna twarzy. Dzięki pracy w obrębie
               twarzy, głowy i szyi możesz uzyskać ulgę w bólach stawów
               skroniowo-żuchwowych, bólach głowy, migrenach, problemach z
@@ -59,7 +58,7 @@ const About = () => {
           </article>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

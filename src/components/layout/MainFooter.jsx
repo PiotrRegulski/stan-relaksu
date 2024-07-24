@@ -4,7 +4,7 @@ const MainFooter = () => {
     return (
       <>
        <div
-        className=" grid grid-cols-1 gap-2 place-items-center sm:h-32 h-12 bg-cover bg-center "
+        className=" grid grid-cols-1 gap-2 place-items-center lg:h-32 h-12 bg-cover bg-center "
         style={{ backgroundImage: "url('/footerbg.png')" }}
       ></div>
         <footer className="bg-mainthemelogo text-center p-2 w-full">
