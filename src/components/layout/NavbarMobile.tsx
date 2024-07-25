@@ -27,11 +27,10 @@ const NavbarMobile = () => {
                 </div>
               </Link>
             </div>
-            <h1 className=" mx-4  lg:mx-auto font-semibold text-sm leading-none text-center text-white pt-3 ">
-              miejsce z myślą o Tobie,<br></br>
-              osobie która, chce o siebie zadbać, zwolnić i poczuć się lepiej.
-              <br></br>Pozwól sobie na <strong>Stan Relaksu</strong>
-            </h1>
+            <p className=" mx-4 lg:mx-auto font-semibold text-xl leading-none text-center text-white pt-3 ">
+              Gabinet terapii manualnej ciała i twarzy,<br></br> odprężenie ciała i
+              ukojenie duszy.<br></br> Pozwól sobie na<strong>Stan Relaksu</strong> 
+            </p>
           </div>
         </div>
 
@@ -85,7 +84,6 @@ const NavbarMobile = () => {
             }`}
           >
             <MobileNavLinks />
-          
           </ul>
         </nav>
       </div>

@@ -7,8 +7,8 @@ const Logo = () => {
       {" "}
       <Image
         src="/logo-stan-relaksu-kolo.png"
-        width={93}
-        height={93}
+        width={123}
+        height={123}
         className="bg-mainthemelogo rounded-full shadow-xl"
         alt="Screenshots of the dashboard project showing desktop version"
         priority={true}
