@@ -69,9 +69,9 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     );
   }
 //
-  const firstAdventage = offerDetail?.advantages[0];
-  const firstAdventagesDescription = firstAdventage?.description;
-  const remainingAdvantages = offerDetail?.advantages.slice(1);
+const [firstAdventage, ...remainingAdvantages] = offerDetail?.advantages || [];
+const firstAdventagesDescription = firstAdventage?.description;
+
 
 
 //

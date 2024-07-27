@@ -11,15 +11,15 @@ const Recommendation = (props:any) => {
         <div className="grid grid-rows-3 xl:grid-cols-3   divide-gray-400 xl:px-36 text-lg xl:text-2xl font-bold ">
           <div className="flex my-1 h-[4em]">
             <div className='pr-2'><TbCircleNumber1 className='w-8 h-8 '/></div>
-            <p className=" border-l-2 border-gray-400  text-center pl-6 pt-6 ">{props.fRecommendation}</p>
+            <p className=" border-l-2 border-gray-400  text-center pl-6 pt-6 w-full h-[4em] ">{props.fRecommendation}</p>
           </div>
           <div className="flex my-1">
           <div className='pr-2 '><TbCircleNumber2 className='w-8 h-8'/></div>
-            <p className="border-l-2 border-gray-400 text-center pl-6 pt-6">{props.sRecommendation}</p>
+            <p className="border-l-2 border-gray-400 text-center pl-6 pt-6 w-full h-[4em]">{props.sRecommendation}</p>
           </div>
           <div className="flex my-1">
           <div className='pr-2'><TbCircleNumber3 className='w-8 h-8'/></div>
-            <p className="border-l-2 border-gray-400 text-center pl-8 pt-6">
+            <p className="border-l-2 border-gray-400 text-center pl-6 pt-6 w-full h-[4em]">
               {props.tRecommendation}
             </p>
           </div>
