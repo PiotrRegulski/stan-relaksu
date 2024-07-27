@@ -4,7 +4,7 @@ export const OfferItem = [
     slug: "igloterapia",
     active: true,
     category: "face",
-    title: "Igłoterapia estetyczna twarzy",
+    title: "Igłoterapia Estetyczna Twarzy",
     image: "offer1.jpg",
     prices: [{ id: "cenaIgłoterapi", priceName: "90 minut", price: "350 zł" }],
     contentFirst:
@@ -42,6 +42,11 @@ export const OfferItem = [
       { id: "1", indication: "wskazanie 1" },
       { id: "2", indication: "wskazanie 2" },
     ],
+    recommendations: [
+      { id: "1", recommendation: "Chcesz spłycić zmarszczki " },
+      { id: "2", recommendation: "Uzuskać efekt odmłodzeni twarzy" },
+      { id: "3", recommendation: "Uwydatnić unikalne cechy twarzy" },
+    ],
   },
 
   {
@@ -49,7 +54,7 @@ export const OfferItem = [
     slug: "masaz-kobido",
     active: true,
     category: "face",
-    title: "Masaż Kobido z kinesiotapingiem estetycznym",
+    title: "Masaż Kobido z Kinesiotapingiem Estetycznym",
     image: "offer2.jpg",
     prices: [{ id: "cenaKobido", priceName: "90 minut", price: "300 zł" }],
     contentFirst:
@@ -86,17 +91,37 @@ export const OfferItem = [
       { id: "3", contraindication: "przerwanie ciągłości skóry" },
       { id: "4", contraindication: "nieuregulowane nadciśnienie tętnicze" },
       { id: "5", contraindication: "trądzik różowaty w aktywnym stanie" },
-      { id: "6", contraindication: "do 2 tygodni po intensywnych peelingach, fali radiacyjnej, laserze niedawno przebyte zabiegi medycyny estetycznej:" },
+      {
+        id: "6",
+        contraindication:
+          "do 2 tygodni po intensywnych peelingach, fali radiacyjnej, laserze niedawno przebyte zabiegi medycyny estetycznej:",
+      },
       { id: "7", contraindication: "do 4 tygodni po toksynie botulinowej" },
       { id: "8", contraindication: "do 6 tygodni po wypełniaczach " },
-      { id: "9", contraindication: "do 6 miesięcy po niciach liftingujących (bezhaczykowych) " },
+      {
+        id: "9",
+        contraindication:
+          "do 6 miesięcy po niciach liftingujących (bezhaczykowych) ",
+      },
     ],
     indications: [
-      { id: "1", indication: "Wiotka skóra potrzebująca pobudzenia, liftingu i ujędrnienia" },
+      {
+        id: "1",
+        indication:
+          "Wiotka skóra potrzebująca pobudzenia, liftingu i ujędrnienia",
+      },
       { id: "2", indication: "Napięcia w obrębi głowy, twarzy, szyi, karku " },
       { id: "3", indication: "Szczękościsk i bruksizm (zgrzytanie zębami)" },
       { id: "4", indication: "Bóle głowy i zatok" },
       { id: "5", indication: "Spowalnianie procesów starzenia" },
+    ],
+    recommendations: [
+      { id: "1", recommendation: "Zmniejszyć napięcie i stres w całym ciele." },
+      { id: "2", recommendation: "Uzyskać efekt liftingu twarzy." },
+      {
+        id: "3",
+        recommendation: "Przygotować się do zabiegu medycyny estetycznej",
+      },
     ],
   },
   {
@@ -104,7 +129,7 @@ export const OfferItem = [
     slug: "masaz-powieziowy",
     active: true,
     category: "body",
-    title: "Masaż powięziowy ",
+    title: "Masaż Powięziowy ",
     image: "offer3.jpg",
     prices: [
       { id: "cenamaspow60", priceName: "60 minut", price: "200 zł" },
@@ -122,7 +147,7 @@ export const OfferItem = [
       {
         title: "Zwalczanie bólu:",
         description:
-          "Ta holistyczna metoda pracy poprzez znoszenie napięcia z tkanki mięśniowej i powięziowej prowadzi do zmniejszenia uczucia stresu, uwolnienia emocji co prowadzi do głębokiego Stanu Relaksu. Korzyści jakie niesie terapia mięśniowo-powięziowa są wielopłaszczyznowe. Uwalniając napięcie z ciała wpływamy na wcześniej zamrożone i zatrzymane emocje w nim. Uczucie ulgi jakie przenoszą techniki powięziowe wynika z rozluźnienia mięśni, powięzi oraz uwolnienia emocji zawieszonych w tych ciele i tkankach. ",
+          "Ta holistyczna metoda pracy poprzez znoszenie napięcia z tkanki mięśniowej i powięziowej prowadzi do zmniejszenia uczucia stresu, uwolnienia emocji co prowadzi do głębokiego Stanu Relaksu. Korzyści jakie niesie terapia mięśniowo-powięziowa są wielopłaszczyznowe. Uwalniając napięcie z ciała wpływamy na wcześniej zamrożone i zatrzymane emocje w nim. Uczucie ulgi jakie przenoszą techniki powięziowe wynika z rozluźnienia mięśni, powięzi oraz uwolnienia emocji zawieszonych w  ciele i tkankach. ",
       },
       {
         title: "Summary",
@@ -145,13 +170,21 @@ export const OfferItem = [
       { id: "1", indication: "wskazanie 1" },
       { id: "2", indication: "wskazanie 2" },
     ],
+    recommendations: [
+      { id: "1", recommendation: "Zmagasz się z bólami pleców i stawów" },
+      { id: "2", recommendation: "Chcesz zwiększyć mobilność całego ciała" },
+      {
+        id: "3",
+        recommendation: "Chcesz zmniejszyć uczucię stresu i napięcia w ciele",
+      },
+    ],
   },
   {
     id: "TerapiaManualnaBlizn ",
     slug: "terapia-manualna-blizn",
     active: true,
     category: "body",
-    title: "Terapia manualna blizn",
+    title: "Terapia Manualna Blizn",
     image: "offer4.png",
     prices: [
       { id: "teramanublizna", priceName: "90 minut", price: "brak danych!" },
@@ -202,13 +235,26 @@ export const OfferItem = [
       { id: "4", indication: "blizny po operacjach plastycznych" },
       { id: "5", indication: "blizny powypadkowe" },
     ],
+    recommendations: [
+      {
+        id: "1",
+        recommendation:
+          "Chcesz zapobiec zaburzeniu czucia w obrębie okolicy blizny",
+      },
+      {
+        id: "2",
+        recommendation:
+          " Wygładzić powierzchnie blizny i poprawić czucie w jej obrębie",
+      },
+      { id: "3", recommendation: "Poprawić wygląd blizn" },
+    ],
   },
   {
     id: "DrenażLimfatyczny",
     slug: "drenaz-limfatyczny",
     active: true,
     category: "body",
-    title: "Drenaż limfatyczny",
+    title: "Drenaż Limfatyczny",
     image: "offer5.png",
     prices: [
       { id: "drelim60", priceName: "60 minut", price: "200 zł" },
@@ -226,12 +272,17 @@ export const OfferItem = [
       {
         title: "Ulga w obrzękach pooperacyjnych:",
         description:
-          "Masaż limfatyczny przynosi ulgę w obrzękach pooperacyjnych i pourazowych, zaburzeniach przepływu limfy w przebiegu stanów zapalnych, chorób reumatycznych, chorób nerek a także sprawdza się w obrzękach ciążowych, redukcji cellulitu wodno tłuszczowego czy lipodemy. Usunięcie zastoju i zalegającej limfy jest niezwykle ważnym etapem w rekonwalescencji po zabiegach medycyny plastycznej (np. takich jak liposukcja, abdominoplastyka, powiększanie piersi).",
+          "Masaż limfatyczny przynosi ulgę w obrzękach pooperacyjnych i pourazowych, zaburzeniach przepływu limfy w przebiegu stanów zapalnych, chorób reumatycznych, chorób nerek a także sprawdza się w obrzękach ciążowych, redukcji cellulitu wodno tłuszczowego czy lipodemy.",
+      },
+      {
+        title: "Zabiegi medycyny plastycznej:",
+        description:
+          " Usunięcie zastoju i zalegającej limfy jest niezwykle ważnym etapem w rekonwalescencji po zabiegach medycyny plastycznej (np. takich jak liposukcja, abdominoplastyka, powiększanie piersi).",
       },
       {
         title: "summary",
         description:
-          " Efekty drenażu niosą pozytywne skutki estetyczne zmniejszając obwody naszego ciała dzięki pozbycia się nadmiaru obrzęku z naszego ciała",
+          " Efekty drenażu niosą pozytywne skutki estetyczne zmniejszając obwody naszego ciała dzięki pozbyciu się nadmiaru obrzęku z naszego ciała",
       },
     ],
     contraindications: [
@@ -249,6 +300,21 @@ export const OfferItem = [
     indications: [
       { id: "1", indication: "wskazanie 1" },
       { id: "2", indication: "wskazanie 2" },
+    ],
+    recommendations: [
+      {
+        id: "1",
+        recommendation:
+          "Masz problemy z zatrzymwaniem się wody w ciele, walczącym z obrzękiem i zastojem limfy",
+      },
+      {
+        id: "2",
+        recommendation: " Przebyłaś/eś zabieg medycyny plastycznej",
+      },
+      {
+        id: "3",
+        recommendation: "Zredukować cellulit wodno tłuszczowy czy lipodemy",
+      },
     ],
   },
 ];
