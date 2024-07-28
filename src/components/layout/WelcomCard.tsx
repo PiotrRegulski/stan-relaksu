@@ -13,7 +13,7 @@ const WelcomCard = () => {
         <section className=" lg:absolute lg:top-[3em]  lg:left-20 flex flex-col shadow-xl rounded border-4 border-white shadow-gray-400/75  lg:w-1/2 lg:h-min ">
           <div className="flex flex-col  justify-center  w-full mt-8 lg:mt-20 ">
             <article className={`${lato.className}  `}>
-              {" "}
+              
               <h2 className="font-bold text-xl   xl:text-5xl text-white  text-center lg:text-left  bg-gradient-to-r from-teal-300/50 via-teal-400/75 to-teal-700/50  bg-opacity-95 lg:bg-opacity-25 leading-relaxed px-2 py-2 ">
                 Stan Relaksu to terapeutyczne miejsce dla ciała stworzone z
                 myślą o Tobie, osobie która chce o zadbać o swoje zdrowie,
