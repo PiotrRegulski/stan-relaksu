@@ -47,6 +47,28 @@ export const OfferItem = [
       { id: "2", recommendation: "Uzuskać efekt odmłodzeni twarzy" },
       { id: "3", recommendation: "Uwydatnić unikalne cechy twarzy" },
     ],
+    procedures: [
+      { title: "Przygotowanie:" },
+      {
+        procedure:
+          "Pacjent kładzie się na stole do zabiegów, często w luźnej odzieży, aby zapewnić łatwy dostęp do punktów akupunkturowych.",
+      },
+      { title: "Techniki igłoterapii:" },
+      {
+        procedure:
+          "Terapeuta wprowadza cienkie igły w wybrane punkty na ciele, zgodnie z diagnozą i potrzebami pacjenta.",
+      },
+      { title: "Czas trwania:" },
+      {
+        procedure:
+          "Zabieg trwa zazwyczaj od 20 do 40 minut, w zależności od indywidualnych potrzeb pacjenta.",
+      },
+      { title: "Efekty:" },
+      {
+        procedure:
+          "Po zabiegu pacjent może odczuwać ulgę w bólu, poprawę krążenia oraz ogólne wzmocnienie organizmu.",
+      },
+    ],
   },
 
   {
@@ -123,6 +145,28 @@ export const OfferItem = [
         recommendation: "Przygotować się do zabiegu medycyny estetycznej",
       },
     ],
+    procedures: [
+      { title: "Przygotowanie:" },
+      {
+        procedure:
+          "Pacjent kładzie się na stole do masażu, często w luźnej odzieży, aby zapewnić łatwy dostęp do twarzy i karku.",
+      },
+      { title: "Techniki masażu:" },
+      {
+        procedure:
+          "Najpierw terapeuta wykonuje masaż głębokich tkanek, aby rozluźnić mięśnie. Następnie przechodzi do relaksacji, która pomaga w odprężeniu. Kolejnym etapem jest drenaż limfatyczny, który wspomaga usuwanie toksyn z organizmu. Następnie wykonywana jest część liftingująca, która ma na celu ujędrnienie skóry. Na koniec stosowana jest akupresura, która polega na uciskaniu określonych punktów na twarzy.",
+      },
+      { title: "Czas trwania:" },
+      {
+        procedure:
+          "Zabieg trwa zazwyczaj od 60 do 90 minut, w zależności od indywidualnych potrzeb pacjenta",
+      },
+      { title: "Efekty:" },
+      {
+        procedure:
+          "Zdrowszy i promienny wygląd twarzy, spłycenie zmarszczek i bruzd mimicznych to jedne z wielu korzyści płynących z rytuału Kobido",
+      },
+    ],
   },
   {
     id: "MasazPowieziowy ",
@@ -176,6 +220,28 @@ export const OfferItem = [
       {
         id: "3",
         recommendation: "Chcesz zmniejszyć uczucię stresu i napięcia w ciele",
+      },
+    ],
+    procedures: [
+      { title: "Przygotowanie:" },
+      {
+        procedure:
+          "Pacjent kładzie się na stole do masażu, często w luźnej odzieży, aby zapewnić łatwy dostęp do obszarów ciała wymagających terapii.",
+      },
+      { title: "Techniki masażu:" },
+      {
+        procedure:
+          "Masaż powięziowy wykorzystuje różne metody, takie jak delikatne naciskanie, rozciąganie i manipulowanie powięzią, aż terapeuta wyczuje, że napięcie w tkance się zmienia.",
+      },
+      { title: "Czas trwania:" },
+      {
+        procedure:
+          "Zabieg trwa zazwyczaj od 30 do 60 minut, w zależności od indywidualnych potrzeb pacjenta",
+      },
+      { title: "Efekty:" },
+      {
+        procedure:
+          "Po masażu pacjent może zauważyć ulgę w bólu, lepszą ruchomość oraz ogólną poprawę samopoczucia",
       },
     ],
   },
@@ -248,6 +314,28 @@ export const OfferItem = [
       },
       { id: "3", recommendation: "Poprawić wygląd blizn" },
     ],
+    procedures: [
+      { title: "Przygotowanie:" },
+      {
+        procedure:
+          "Pacjent kładzie się na stole do masażu, często w luźnej odzieży, aby zapewnić łatwy dostęp do obszaru blizny.",
+      },
+      { title: "Techniki masażu:" },
+      {
+        procedure:
+          "Terapeuta stosuje różne techniki, takie jak delikatne naciskanie, rozciąganie i manipulowanie tkankami wokół blizny, aż do momentu, gdy poczuje zmianę napięcia.",
+      },
+      { title: "Czas trwania:" },
+      {
+        procedure:
+          "Zabieg trwa zazwyczaj od 30 do 90 minut, w zależności od indywidualnych potrzeb pacjenta.",
+      },
+      { title: "Efekty:" },
+      {
+        procedure:
+          "Po terapii pacjent może zauważyć ulgę w bólu, lepszą ruchomość oraz ogólną poprawę samopoczucia.",
+      },
+    ],
   },
   {
     id: "DrenażLimfatyczny",
@@ -314,6 +402,28 @@ export const OfferItem = [
       {
         id: "3",
         recommendation: "Zredukować cellulit wodno tłuszczowy czy lipodemy",
+      },
+    ],
+    procedures: [
+      { title: "Przygotowanie:" },
+      {
+        procedure:
+          "Pacjent kładzie się na stole do masażu, często w luźnej odzieży lub specjalnej bieliźnie.",
+      },
+      { title: "Techniki masażu:" },
+      {
+        procedure:
+          "Terapeuta stosuje delikatne głaskanie i uciskanie, aby pobudzić przepływ limfy w kierunku węzłów chłonnych.",
+      },
+      { title: "Czas trwania:" },
+      {
+        procedure:
+          "Zabieg trwa od 30 minut do godziny, w zależności od potrzeb pacjenta i obszaru ciała",
+      },
+      { title: "Efekty:" },
+      {
+        procedure:
+          "Po masażu pacjent może odczuwać ulgę, zmniejszenie obrzęków oraz poprawę ogólnego samopoczucia.",
       },
     ],
   },
