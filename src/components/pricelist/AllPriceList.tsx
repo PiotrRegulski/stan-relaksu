@@ -7,9 +7,9 @@ const AllPriceList = () => {
   return (
     <div>
       {OfferItem.map((item) => (
-        <div key={item.id}>
+        <div key={item.id} >
           <Link href={`/offer/${item.slug}`}>
-            <h2 className="bg-teal-500 text-white  text-xl lg:text-4xl border rounded-full mx-auto px-4 py-2 font-bold">
+            <h2 className="bg-teal-500 text-black text-center  text-xl lg:text-3xl border rounded-full mx-auto px-8 py-2 font-bold mt-4">
               {item.title}
             </h2>
           </Link>
@@ -17,7 +17,7 @@ const AllPriceList = () => {
           <ul className="divide-y divide-blue-200 my-3 ">
             {item.prices?.map((price) => (
               <li key={price.id} className="text-xl lg:text-2xl mx-12 ">
-                <div className="flex justify-between ">
+                <div className="flex justify-between font-bold">
                   <div>{price.priceName}</div>
                   <div>{price.price}</div>
                 </div>

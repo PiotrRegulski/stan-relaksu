@@ -5,11 +5,11 @@ import PageHeader from "@/components/homepage/PageHeader";
 import BackLink from "@/components/layout/BackLink";
 const page = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-gradient-to-r from-teal-700/80 via-teal-500/75 to-teal-400/80">
       <PageHeader id={"prices"}>Cennik</PageHeader>
-      <div className=" flex justify-center h-2/3 md:py-4 md:px-2  shadow-xl shadow-gray-400/75 md:mx-36 md:my-8 ">
+      <div className=" flex justify-center h-2/3 md:py-4 md:px-2  shadow-xl shadow-gray-400/75 md:mx-36 md:my-8  ">
         <AllPriceList />
-      </div>{" "}
+      </div>
       <BackLink>Zobacz szczegóły oferty</BackLink>
     </div>
   );
