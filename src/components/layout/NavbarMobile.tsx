@@ -15,7 +15,7 @@ const NavbarMobile = () => {
   return (
     <>
       <div className="flex">
-        <div className="block xl:hidden">
+        <div className="block md:hidden">
           <button onClick={toggleMenu} className="w-12 h-12 mt-3 ml-3">
             <HamburgerIcon />
           </button>
@@ -27,7 +27,7 @@ const NavbarMobile = () => {
                 </div>
               </Link>
             </div>
-            <p className=" mx-4 lg:mx-auto font-semibold text-xl leading-none text-center text-white pt-3 ">
+            <p className=" mx-3 font-semibold text-xl leading-none text-center text-white pt-3 ">
               Gabinet terapii manualnej ciała i twarzy,<br></br> odprężenie ciała i
               ukojenie duszy.<br></br> Pozwól sobie na<strong>Stan Relaksu</strong> 
             </p>

@@ -20,7 +20,7 @@ const MainHeader = () => {
         <NavbarMobile />
         <div className="flex lg:gap-24 ">
           <div
-            className={`${CormorantInfant.className} hidden lg:flex w-screen  px-4`}
+            className={`${CormorantInfant.className} hidden md:flex w-screen  px-4`}
           >
             <Navbar />
           </div>
