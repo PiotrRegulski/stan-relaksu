@@ -26,7 +26,7 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
         </h1>
       </div>
 
-      <div className="flex justify-center items-stretch mx-36 my-12">
+      <div className="flex justify-center items-stretch mx-auto xl:mx-36 my-12">
         <div className="relative  mx-auto w-36  xl:mx-6 xl:my-6 flex items-center">
           <Image
             src={src}
@@ -41,8 +41,8 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
           <ul className={` ${lato.className} text-xl space-y-8 `}>
             {procedures.map((procedure, index) => (
               <li key={index}>
-                <p className="font-bold">{procedure.title}</p>
-                <p>{procedure.procedure}</p>
+                <p className="font-bold px-2">{procedure.title}</p>
+                <p className="px-3">{procedure.procedure}</p>
               </li>
             ))}
             {/* <li>
