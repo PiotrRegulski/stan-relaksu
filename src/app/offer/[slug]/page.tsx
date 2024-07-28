@@ -6,6 +6,7 @@ import { lato } from "@/components/fonts";
 import PageHeader from "@/components/homepage/PageHeader";
 import BackLink from "@/components/layout/BackLink";
 import Recommendation from "@/components/offers/Recommendation";
+import OfferProcedure from "@/components/offers/OfferProcedure";
 
 type AdvantageType = {
   title: string;
@@ -28,6 +29,10 @@ type RecommendationsType = {
   id: string;
   recommendation: string;
 };
+type ProceduresType = {
+  title?: string;
+  procedure?: string;
+};
 // Definicja typu dla pojedynczego elementu oferty
 type OfferItemType = {
   id: string;
@@ -40,6 +45,7 @@ type OfferItemType = {
   contraindications: ContraindicationsType[];
   indications: IndicationsType[];
   recommendations: RecommendationsType[];
+  procedures: ProceduresType[];
   // Dodaj pozostałe pola zgodnie z definicją OfferItem
 };
 
@@ -57,7 +63,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
   const offerDetail: OfferItemType | undefined = OfferItem.find(
     (offerDetail) => offerDetail.slug === offerSlug
   );
-  
+
   if (!offerDetail) {
     return (
       <div className="flex flex-col justify-center w-[100vw] h-96">
@@ -68,16 +74,15 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
       </div>
     );
   }
-//
-const [firstAdventage, ...remainingAdvantages] = offerDetail?.advantages || [];
-const firstAdventagesDescription = firstAdventage?.description;
+  //
+  const [firstAdventage, ...remainingAdvantages] =
+    offerDetail?.advantages || [];
+  const firstAdventagesDescription = firstAdventage?.description;
 
-
-
-//
+  //
   const recommendationsTable = offerDetail?.recommendations;
   const recommendationsContent = recommendationsTable.map((rec, id) => {
-    return { [`recommendation${id + 1}`]: rec.recommendation }; 
+    return { [`recommendation${id + 1}`]: rec.recommendation };
   });
   const { recommendation1, recommendation2, recommendation3 } = Object.assign(
     {},
@@ -87,7 +92,26 @@ const firstAdventagesDescription = firstAdventage?.description;
     (adventage) => adventage.description
   );
   //
-
+  const proceduresTable= offerDetail?.procedures;
+  
+  // const [
+  //   { title: preparationTitle },
+  //   { procedure: preparationProcedure },
+  //   { title: techniquesTitle },
+  //   { procedure: techniquesProcedure1 },
+  //   { title: timeTitle },
+  //   { procedure: timeProcedure3 },
+  //   { title: effectsTitle },
+  //   { procedure: effectsProcedure }
+  // ]= proceduresTable;
+  // const proceduresTable = [
+  //   { title: "Przygotowanie", procedure: "Opis przygotowania" },
+  //   { title: "Techniki", procedure: "Opis technik" },
+  //   { title: "Czas", procedure: "Opis czasu" },
+  //   { title: "Efekty", procedure: "Opis efektów" },
+  // ];
+ 
+  
   return (
     <>
       <PageHeader id={"offerDetail"}>{offerDetail.title}</PageHeader>
@@ -110,6 +134,7 @@ const firstAdventagesDescription = firstAdventage?.description;
                 fill
                 className="object-contain"
                 priority={true}
+                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
           </div>
@@ -132,7 +157,7 @@ const firstAdventagesDescription = firstAdventage?.description;
         sRecommendation={recommendation2}
         tRecommendation={recommendation3}
       />
-
+      <OfferProcedure src={`/${offerDetail.image}`} alt={offerDetail.title} procedures={proceduresTable}/>
       <BackLink>Zobacz pozostałe oferty</BackLink>
     </>
   );
