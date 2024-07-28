@@ -1,14 +1,16 @@
 import React from "react";
 import Link from "next/link";
 import { lato } from "../fonts";
+import WelcomeCardImage from "./WelcomeCardImage";
 const WelcomCard = () => {
   return (
     <section
       id="welcome-card"
       className="relative  max-w-screen min-h-[70vh] bg-gradient-to-t from-teal-300/50 via-teal-400/75 to-teal-300/50 overflow-hidden flex justify-end border-4 border-gray-400 "
     >
-      <div className="  grid lg:place-items-center  bg-cover lg:bg-left bg-center  bg-my-bg-image  lg:h-[60] w-screen lg:w-2/3 rounded-lg ">
-        <section className=" lg:absolute lg:top-[3em] lg:left-20 flex flex-col shadow-xl rounded border-4 border-white shadow-gray-400/75  lg:w-1/2 lg:h-min ">
+      <div className="  grid lg:place-items-center  lg:h-[60] w-screen lg:w-2/3 rounded-lg ">
+      <WelcomeCardImage/>
+        <section className=" lg:absolute lg:top-[3em]  lg:left-20 flex flex-col shadow-xl rounded border-4 border-white shadow-gray-400/75  lg:w-1/2 lg:h-min ">
           <div className="flex flex-col  justify-center  w-full mt-8 lg:mt-20 ">
             <article className={`${lato.className}  `}>
               {" "}
