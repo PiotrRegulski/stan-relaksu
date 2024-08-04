@@ -7,9 +7,29 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "1200px",
+      // => @media (min-width: 1200px) { ... }
+
+      lg: "1400px",
+      // => @media (min-width: 1400px) { ... }
+
+      xl: "1600px",
+      // => @media (min-width: 1600px) { ... }
+
+      "2xl": "2000px",
+      // => @media (min-width: 2000px) { ... }
+    },
+
     extend: {
-      backgroundImage: { "my-bg-image": "url('/mirror.png')","my-hero-image": "url('/hero.png')" },
-      
+      backgroundImage: {
+        "my-bg-image": "url('/mirror.png')",
+        "my-hero-image": "url('/hero.jpg')",
+      },
+
       colors: {
         primary: "rgb(254 253 199)",
         secondary: "rgb(69 26 3)",

@@ -42,7 +42,7 @@ const OffersCardFace = () => {
     <>
       <PageHeader id={"offer"}>Pielęgnacja i odmładzanie twarzy</PageHeader>
       <div className="flex justify-center w-full">
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-2 lg:gap-4 w-full lg:mx-9  ">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-2 lg:gap-4 w-full lg:mx-9  ">
           {categoryFace.map((offerItem) => (
             <div
               key={offerItem.id}

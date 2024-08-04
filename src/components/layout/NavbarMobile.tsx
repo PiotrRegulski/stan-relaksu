@@ -29,12 +29,12 @@ const NavbarMobile = () => {
             </div>
             <p className=" mx-3 font-semibold text-xl leading-none text-center text-white pt-3 ">
               Gabinet terapii manualnej ciała i twarzy,<br></br> odprężenie ciała i
-              ukojenie duszy.<br></br> Pozwól sobie na<strong>Stan Relaksu</strong> 
+              ukojenie duszy.<br></br> Pozwól sobie na &nbsp;<strong>Stan Relaksu</strong> 
             </p>
           </div>
         </div>
 
-        <div className="lg:hidden fixed flex flex-col top-[2em] sm:top-10 right-[1em] z-20  ">
+        <div className="lg:hidden fixed flex flex-col top-[2em] sm:top-10 right-[1em] z-40  ">
           <button className=" lg:hidden   rounded-full bg-green-600 py-3 px-3 text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09] w-min">
             <Link href="tel:885987321 ">
               <BsFillTelephoneForwardFill className="text-right" />

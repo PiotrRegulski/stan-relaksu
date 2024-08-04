@@ -16,7 +16,7 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
   procedures,
 }) => {
   return (
-    <section
+    <div
       id="main-adventages"
       className="flex flex-col min-h-max border-2 border-x-teal-400/75 md:mx-36 md:my-4 mt-12"
     >
@@ -73,7 +73,7 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
           </ul>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

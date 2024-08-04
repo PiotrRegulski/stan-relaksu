@@ -29,7 +29,7 @@ const page = () => {
     <div className="mx-auto">
       <PageHeader id={'contact'}>Kontakt</PageHeader>
 
-      <div className="grid lg:grid-cols-3 items-center  gap-16 my-24 mx-4 lg:mx-auto max-w-7xl  text-[#333] font-[sans-serif] s">
+      <div className="grid lg:grid-cols-3 items-center  gap-16 my-24 mx-4 lg:mx-auto max-w-7xl  text-[#333] font-[sans-serif] animate-fadeIn rounded border-4 border-white transition-transform duration-200 ease-in-out hover:scale-[1.02] ">
         <div className=" col-span-2 px-2  shadow-xl rounded border-l-4 border-white  shadow-gray-400/75 min-h-1/3 lg:min-h-max   ">
           <h2  className="text-4xl font-bold lg:mb-2 py-6 text-center md:text-left">
             Kontakt

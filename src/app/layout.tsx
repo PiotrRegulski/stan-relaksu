@@ -18,9 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={`${CormorantInfant.className} antialiased w-full overflow-y-scroll overflow-x-hidden mx-auto my-auto `}>
+      <body className={`${CormorantInfant.className} antialiased  overflow-y-scroll overflow-x-hidden `}>
         <MainHeader />
-        <main className="mx-auto overflow-hidden"> {children}</main>
+        <main className="overflow-hidden"> {children}</main>
        
         <MainFooter/>
       </body>
