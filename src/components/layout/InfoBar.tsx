@@ -8,8 +8,8 @@ import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { BsArrowUpRightSquare } from "react-icons/bs";
 const InfoBar = () => {
   return (
-    <div className=" hidden lg:flex   font-semibold text-md  px-4 min-w-max py-2 ">
-      <div className="flex justify-between w-full text-lg ">
+    <div className=" hidden lg:flex    font-semibold text-md  px-4 min-w-max py-1 bg-secondary  border-b-2 border-amber-900 ">
+      <div className="flex justify-between w-full text-sm ">
         <div>
           <ul>
             <li>
@@ -21,7 +21,7 @@ const InfoBar = () => {
               >
                 <span className="pt-1 ">Zarezerwuj Wizyte </span>
                 <span className=" p-2">
-                  <BsArrowUpRightSquare className="w-4 h-4" />
+                  <BsArrowUpRightSquare className="w-3 h-3" />
                 </span>
               </Link>
             </li>
@@ -38,7 +38,7 @@ const InfoBar = () => {
                 className=" flex flex-row px-3  gap-2 "
               >
                 <span className="bg-gray-300 rounded-full p-2">
-                  <MdEmail className="w-4 h-4" />
+                  <MdEmail className="w-3 h-3" />
                 </span>
                 <span className="pt-1">kontat@stanrelaksu.pl</span>
               </Link>
@@ -51,7 +51,7 @@ const InfoBar = () => {
                 className=" flex flex-row px-3  gap-2 "
               >
                 <span className="bg-gray-300 rounded-full p-2">
-                  <BsFillTelephoneForwardFill className=" w-4 h-4" />
+                  <BsFillTelephoneForwardFill className=" w-3 h-3" />
                 </span>
                 <span className="pt-1">000-000-000</span>
               </Link>
@@ -63,7 +63,7 @@ const InfoBar = () => {
                 rel="noopener noreferrer"
                 className="flex flex-row px-1   "
               >
-                <FaSquareInstagram className="text-right w-8 h-8" />
+                <FaSquareInstagram className="text-right w-6 h-6" />
               </Link>
             </li>
             <li>
@@ -74,7 +74,7 @@ const InfoBar = () => {
                 rel="noopener noreferrer"
                 className="flex flex-row px-1 "
               >
-                <FaFacebook className="text-right w-8 h-8" />
+                <FaFacebook className="text-right w-6 h-6" />
               </Link>
             </li>
           </ul>

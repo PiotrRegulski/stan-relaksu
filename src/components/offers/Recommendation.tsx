@@ -4,7 +4,7 @@ import { TbCircleNumber2} from "react-icons/tb";
 import { TbCircleNumber3 } from "react-icons/tb";
 const Recommendation = (props:any) => {
     return (
-        <section className="mt-8 bg-mainthemelogo ">
+        <section className="mt-8 bg-triadgray ">
         <h3 className="text-black  text-2xl xl:text-4xl font-bold text-center py-10 ">
         <span className=''>{props.title}</span><br></br>umów się jeżeli:
         </h3>

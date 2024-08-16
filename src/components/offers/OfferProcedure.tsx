@@ -8,6 +8,9 @@ interface OfferProcedureProps {
   procedures: {
     title?: string;
     procedure?: string;
+    procedurefirst?: string;
+    proceduresec?: string;
+    procedurethi?: string;
   }[];
 }
 const OfferProcedure: React.FC<OfferProcedureProps> = ({
@@ -18,7 +21,7 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
   return (
     <div
       id="main-adventages"
-      className="flex flex-col min-h-max border-2 border-x-teal-400/75 md:mx-36 md:my-4 mt-12"
+      className="flex flex-col min-h-max border-2 shadow-gray-400 bg-triadblue md:mx-36 md:my-4 mt-12"
     >
       <div className="w-full py-[3em] px-[1em]">
         <h1 className={` text-center text-4xl font-bold`}>
@@ -27,7 +30,7 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
       </div>
 
       <div className="flex justify-center items-stretch mx-auto xl:mx-36 my-12">
-        <div className="relative  mx-auto w-36  xl:mx-6 xl:my-6 flex items-center">
+        <div className=" hidden relative  mx-auto w-48  xl:mx-6 xl:my-6 md:flex items-center">
           <Image
             src={src}
             alt={alt}
@@ -43,6 +46,9 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
               <li key={index}>
                 <p className="font-bold px-2">{procedure.title}</p>
                 <p className="px-3">{procedure.procedure}</p>
+                <p className="px-3 ">{procedure.procedurefirst}</p>
+                <p className="px-3 my-12">{procedure.proceduresec}</p>
+                <p className="px-3">{procedure.procedurethi}</p>
               </li>
             ))}
             {/* <li>

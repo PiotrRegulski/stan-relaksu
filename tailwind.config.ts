@@ -20,19 +20,23 @@ const config: Config = {
       xl: "1600px",
       // => @media (min-width: 1600px) { ... }
 
-      "2xl": "2000px",
-      // => @media (min-width: 2000px) { ... }
+      "2xl": "2400px",
+      // => @media (min-width: 2400px) { ... }
     },
 
     extend: {
       backgroundImage: {
         "my-bg-image": "url('/mirror.png')",
         "my-hero-image": "url('/hero.jpg')",
+        "my-ozdoba-image": "url('/do-ozdoby-stopka.jpg')",
       },
 
       colors: {
-        primary: "rgb(254 253 199)",
-        secondary: "rgb(69 26 3)",
+        primary: "rgb(167 199 231)",
+        secondary: "rgb(242 237 228)",
+        triadblue:"rgb(228 246 237)",
+        triadgray:"rgb(237 228 246)",
+        headercolor:"rgb(167 231 215)",
         mainthemelogo: "rgb(241 234 214)",
       },
       keyframes: {

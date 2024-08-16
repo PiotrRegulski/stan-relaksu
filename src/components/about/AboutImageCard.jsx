@@ -1,18 +1,15 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 const AboutImageCard = () => {
-    return (
-        <div className="relative  h-full w-full ">
-        <Image
-          src="/hero.jpg"
-          alt="Kinga Wołoszka- fizjoterapeutka"
-          fill
-          className=" object-cover   h-full w-full"
-          priority={true}
-         
-        />
-      </div>
-    );
+  return (
+    <Image
+      src="/hero.jpg"
+      alt="Kinga Wołoszka- fizjoterapeutka"
+      fill
+      className="  object-cover objet-top md:object-fill rounded-full  md:rounded-xl"
+      priority={true}
+    />
+  );
 };
 
 export default AboutImageCard;

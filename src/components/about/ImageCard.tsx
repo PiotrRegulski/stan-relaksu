@@ -1,24 +1,13 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 interface ImageCardProps {
   src: string;
-  alt: string;
-  className: string;
+  alt: any;
 }
 
-const ImageCard: React.FC<ImageCardProps> = ({ src, alt,className }) => {
-  return (
-
-      <Image
-        src={src}
-        alt={alt}
-        fill
-        className={className}
-        priority={true}
-      />
-   
-  );
+const ImageCard: React.FC<ImageCardProps> = ({ src, alt }) => {
+  return <Image src={src} alt={alt}  fill priority={true} className=" w-full h-full rounded" />;
 };
 
-export default ImageCard; 
+export default ImageCard;

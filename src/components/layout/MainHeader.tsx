@@ -11,16 +11,16 @@ const MainHeader = () => {
   // const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
 
   return (
-    <div className="relative">
+    <div className="relative border-b-4 ">
       <InfoBar/>
       <header
-        className={`${CormorantInfant.className}flex flex-col justify-center bg-gradient-to-r from-teal-700/80 via-teal-500/75 to-teal-400/80  py-1 px-1`}
+        className={`${CormorantInfant.className}fixed flex flex-col justify-center bg-secondary `}
       >
        
         <NavbarMobile />
-        <div className="flex lg:gap-24 ">
+        <div className="  flex lg:gap-24 ">
           <div
-            className={`${CormorantInfant.className} hidden md:flex w-screen  px-4`}
+            className={`${CormorantInfant.className} hidden md:flex w-screen `}
           >
             <Navbar />
           </div>

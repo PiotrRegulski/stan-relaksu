@@ -2,77 +2,80 @@ import React from "react";
 import FaceImage from "./img-component/FaceImage";
 import BackImage from "./img-component/BackImage";
 import AboutImageCard from "../about/AboutImageCard";
+import ImageCard from "../about/ImageCard";
 import { lato } from "../fonts";
 import Link from "next/link";
 
 const WelcomeAboutMe = () => {
   return (
-    <div className="flex relative  md:mx-12 py-10 bg-gradient-to-t from-teal-300/50 via-teal-400/75 to-teal-300/50">
-      <div className="hidden sm:block w-[70vw] ">
-        <AboutImageCard />
-      </div>
-      <div className="flex flex-col  sm:gap-10 bg-white mx-2 ">
-        <div className=" flex flex-col sm:flex-row w-full justify-center items-center  ">
-          <p className="  font-bold text-xl md:text-3xl text-justify text-black  px-2 py-2 sm:px-4 sm:py-4   md:w-2/3 animate-fadeIn rounded-xl   transition-transform duration-1000 ease-in-out  ">
-            Cześć Jestem Kinga Wołoszka!<br></br> Przyniosę Ci ulgę w bólu oraz napięciu
-            stosując techniki masażu powięziowego i terapii manualnej, podpowiem
-            Ci jak możesz pracować ze swoim ciałem poprzez dobrane ćwiczenia czy
-            oddech dla poprawy Twojego zdrowia i samopoczucia.<br></br>
-            <span className="flex justify-end mt-10 text-sm ">
-              <Link
-                href="/about"
-                className="  px-2 py-3  hover:shadow-xl shadow-lg shadow-gray-400/75 text-sm lg:text-3xl    bg-white hover:bg-amber-400 font-bold  text-black hover:text-white  focus:outline-none focus:shadow-outline"
-              >
-                Dowiedz się więcej...
-              </Link>
-            </span>
-          </p>
+    <>
+      <div className=" relative flex w-full bg-triadgray ">
+        <div className="hidden md:flex  basis-1/6 ">
+          <div className=" relative  md:max-w-[32rem] w-[30rem] h-[20rem] md:h-[40rem] shadow-gray-400 shadow-lg  my-12  mx-1 rounded-xl">
+            <AboutImageCard />
+          </div>
+        </div>
+        <div className="flex flex-col  md:basis-5/6  ">
+          <div className="flex-row  my-4 ">
+            <div className=" flex flex-col md:flex-row  justify-center bg-triadblue  mx-4 rounded-xl  shadow-primary shadow-lg">
+              <div className="w-full md:w-full mx-auto mt-12 ">
+                <p
+                  className={`${lato.className} text-lg font-bold  md:text-xl text-center text-black animate-fadeIn transition-transform duration-1000 ease-in-out pt-8 px-4 md:px-1`}
+                >
+                  <strong>Stan Relaksu</strong> <br></br>to terapeutyczne miejsce dla
+                  ciała stworzone z myślą o Tobie, osobie która chce o
+                  zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.
+                  <span className="flex justify-center md:justify-end my-4 md:my-5 text-sm mx-auto ">
+                    <Link
+                      href="/about"
+                      className=" px-1 py-1 md:px-4 my-4 md:py-2  rounded-xl hover:shadow-xl shadow-lg shadow-gray-400/75 text-sm lg:text-xl bg-gradient-to-r from-teal-500 via-teal-400/75 to-teal-500/75 bg-opacity-95 hover:bg-teal-400 font-bold hover:underline text-white hover:text-white  focus:outline-none focus:shadow-outline"
+                    >
+                      Dowiedz się więcej...
+                    </Link>
+                  </span>
+                </p>
+              </div>
+              <div className="relative w-72 h-64 md:w-[25rem] md:h-48  rounded-xl  mx-auto md:ml-24 shadow-xl shadow-gray-500 my-3">
+                <FaceImage />
+              </div>
+            </div>
 
-          <div className="sm:ml-10 w-96 h-96 my-4">
-            <FaceImage />
+            <div className=" bg-triadblue  px-12 mx-4 mt-12 shadow-primary shadow-lg  rounded-xl">
+              <p className="font-bold  text-xl md:text-3xl mx-auto md:px-10 py-10 ">
+                Cześć, jestem Kinga.
+              </p>
+              <div className="flex md:hidden mx-auto w-full ">
+                <div className=" relative mx-auto h-48 w-48">
+                  <ImageCard
+                    src={"/hero-circle.png"}
+                    alt={"Twórca gabientu Stan Relaksu Kinga Wołoszka"}
+                  />
+                </div>
+              </div>
+              <p className="  text-lg  md:text-xl  text-black animate-fadeIn transition-transform duration-1000 ease-in-out  ">
+                <br></br> Przyniosę Ci ulgę w bólu oraz napięciu stosując
+                techniki
+                <strong> masażu powięziowego</strong> i{" "}
+                <strong>terapii manualnej</strong>. Podpowiem Ci jak możesz
+                <strong> pracować ze swoim ciałem</strong> poprzez dobrane
+                ćwiczenia czy oddech. Dla poprawy Twojego zdrowia i
+                samopoczucia.
+                <span className="flex justify-end py-10 text-sm ">
+                  <Link
+                    href="https://www.instagram.com/stan_relaksu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-2 py-3  rounded-xl hover:shadow-xl shadow-lg shadow-gray-400/75 text-sm lg:text-xl bg-gradient-to-r from-teal-500 via-teal-400/75 to-teal-500/75 bg-opacity-95 hover:bg-gray-400 font-bold  text-white hover:text-white hover:underline  focus:outline-none focus:shadow-outline"
+                  >
+                    Sprawdź mój Instagramie
+                  </Link>
+                </span>
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col sm:flex-row justify-center items-center  rounded-md ">
-          <div className="sm:ml-10 w-96 h-96 my-4 sm:mr-10">
-            <BackImage />
-          </div>
-          <p className=" font-bold text-xl md:text-3xl text-justify text-gray-900 px-2 py-2 sm:px-4 sm:py-4  sm:w-2/3     animate-fadeIn rounded-xl   transition-transform duration-1000 ease-in-out  ">
-            Czekam na Ciebie z terapią manualną, masażem powięziowym, masażem
-            tkanek głębokich, głęboko odprężającymi technikami masażu twarzy
-            Kobido, masażu relaksacyjnego, które pozwolą Ci osiągnąć Stan
-            Relaksu
-          </p>
         </div>
       </div>
-    </div>
-    // <div className="lg:mx-12 my-2 bg-gradient-to-t from-teal-300/50 via-teal-400/75 to-teal-300/50">
-    //   <div className="flex h-[70vh] border-4 border-white">
-    //     <div className="basis-1/3 mt-1">
-    //       <FaceImage />
-    //     </div>
-    //     <div className=" basis-2/3   flex flex-col justify-center items-center">
-    //       <p className="text-3xl px-10 py-10 ">
-    //         Cześć Jestem Kinga Wołoszka! Przyniosę Ci ulgę w bólu oraz napięciu
-    //         stosując techniki masażu powięziowego i terapii manualnej, podpowiem
-    //         Ci jak możesz pracować ze swoim ciałem poprzez dobrane ćwiczenia czy
-    //         oddech dla poprawy Twojego zdrowia i samopoczucia.
-    //       </p>
-    //     </div>
-    //   </div>
-    //   <div className="flex h-[70vh] my-2 border-4 border-white">
-    //     <div className=" basis-2/3   flex flex-col justify-center items-center">
-    //       <p className="text-3xl px-10 py-10 ">
-    //         Czekam na Ciebie z terapią manualną, masażem powięziowym, masażem
-    //         tkanek głębokich, głęboko odprężającymi technikami masażu twarzy
-    //         Kobido, masażu relaksacyjnego, które pozwolą Ci osiągnąć Stan
-    //         Relaksu
-    //       </p>
-    //     </div>
-    //     <div className="basis-1/3 mt-1">
-    //       <BackImage />
-    //     </div>
-    //   </div>
-    // </div>
+    </>
   );
 };
 

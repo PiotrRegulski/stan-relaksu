@@ -7,6 +7,7 @@ import PageHeader from "@/components/homepage/PageHeader";
 import BackLink from "@/components/layout/BackLink";
 import Recommendation from "@/components/offers/Recommendation";
 import OfferProcedure from "@/components/offers/OfferProcedure";
+import ButtonReservation from "@/components/about/ButtonReservation";
 
 type AdvantageType = {
   title: string;
@@ -78,6 +79,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
   const [firstAdventage, ...remainingAdvantages] =
     offerDetail?.advantages || [];
   const firstAdventagesDescription = firstAdventage?.description;
+  
 
   //
   const recommendationsTable = offerDetail?.recommendations;
@@ -91,9 +93,9 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
   const remainingAdvantagesDesription = remainingAdvantages?.map(
     (adventage) => adventage.description
   );
-  //
-  const proceduresTable= offerDetail?.procedures;
   
+  const proceduresTable = offerDetail?.procedures;
+
   // const [
   //   { title: preparationTitle },
   //   { procedure: preparationProcedure },
@@ -110,15 +112,14 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
   //   { title: "Czas", procedure: "Opis czasu" },
   //   { title: "Efekty", procedure: "Opis efektów" },
   // ];
- 
-  
+
   return (
     <>
       <PageHeader id={"offerDetail"}>{offerDetail.title}</PageHeader>
 
       <section
         id="main-adventages"
-        className="flex flex-col min-h-max border-2 border-x-teal-400/75 md:mx-36 md:my-4 mt-12"
+        className="flex flex-col min-h-max border-2 border-x-teal-400/75 bg-triadblue md:mx-36 md:my-4 mt-12"
       >
         <div className="w-full py-[3em] px-[1em]">
           <h1 className={`${lato.className} text-center text-xl font-bold`}>
@@ -126,8 +127,8 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
           </h1>
         </div>
         <div className="flex flex-col xl:flex-row xl:mx-[10em]">
-          <div className="basis 1 xl:basis-1/4  ">
-            <div className="relative h-[20em] w-[20em]  mx-auto  ">
+          <div className="basis 1 xl:basis-1/4 md:mt-4 ">
+            <div className="relative h-[30rem] md:w-[30rem]  mx-auto  ">
               <Image
                 src={`/${offerDetail.image}`}
                 alt={offerDetail.title}
@@ -141,8 +142,9 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
 
           <div className="basis 1 xl:basis-3/4 ">
             <ul className={`${lato.className}   text-xl`}>
-              {remainingAdvantagesDesription?.map((advantage, index) => (
+              {remainingAdvantagesDesription?.map((advantage, index,) => (
                 <li key={index}>
+                 
                   <p className="mx-[1em] my-[1em]">{advantage}</p>
                 </li>
               ))}
@@ -150,6 +152,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
           </div>
         </div>
       </section>
+      <ButtonReservation />
 
       <Recommendation
         title={offerDetail.title}
@@ -157,7 +160,14 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
         sRecommendation={recommendation2}
         tRecommendation={recommendation3}
       />
-      <OfferProcedure src={`/${offerDetail.image}`} alt={offerDetail.title} procedures={proceduresTable}/>
+     
+        <OfferProcedure
+          src={`/${offerDetail.image}`}
+          alt={offerDetail.title}
+          procedures={proceduresTable}
+        />
+     
+
       <BackLink>Zobacz pozostałe oferty</BackLink>
     </>
   );

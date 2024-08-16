@@ -26,18 +26,16 @@ const page = () => {
     console.log("Email Send successfully", data);
   }
   return (
-    <div className="mx-auto">
-      <PageHeader id={'contact'}>Kontakt</PageHeader>
+    <div className="">
+      <PageHeader id={"contact"}>Kontakt</PageHeader>
 
-      <div className="grid lg:grid-cols-3 items-center  gap-16 my-24 mx-4 lg:mx-auto max-w-7xl  text-[#333] font-[sans-serif] animate-fadeIn rounded border-4 border-white transition-transform duration-200 ease-in-out hover:scale-[1.02] ">
+      <div className="grid lg:grid-cols-3 items-center  gap-16 my-2 mx-4 lg:mx-auto max-w-7xl  text-[#333] font-[Lato] rounded border-4 bg-secondary border-white transition-transform duration-200 ease-in-out  ">
         <div className=" col-span-2 px-2  shadow-xl rounded border-l-4 border-white  shadow-gray-400/75 min-h-1/3 lg:min-h-max   ">
-          <h2  className="text-4xl font-bold lg:mb-2 py-6 text-center md:text-left">
-            Kontakt
+          <h2 className="text-3xl font-bold lg:mb-2 py-6 text-center md:text-left">
+          Skontaktuj w dogodny dla Siebie sposób.
           </h2>
 
-          <p className="text-sm text-gray-400 mt-3  text-center lg:text-left">
-            Skontaktuj się z nami w dogodny dla Siebie sposób.
-          </p>
+         
 
           <ul className="mt-8 font-[sans-serif]  ">
             <h3 className="text-lg font-extrabold  ml-12">Zadzwoń:</h3>
@@ -104,10 +102,10 @@ const page = () => {
             </div>
           </ul>
         </div>
-        <div className=" px-4 py-4 shadow-xl rounded-xl h-[100%] md:w-[100%] bg-white col-span-2 lg:col-span-1">
+        <div className=" px-4 py-4 shadow-xl rounded-xl h-[100%] md:w-[100%] bg-secondary col-span-2 lg:col-span-1">
           <h3 className="text-4xl font-bold mt-6">Napisz do nas</h3>
           <p className="text-sm text-gray-900 mt-4">
-            Szybko odpowiemy na Twoje pytania.
+            Szybko odpowiem na Twoje pytania.
           </p>
 
           <form action={send} className="flex flex-col mt-8 space-y-4">
@@ -153,7 +151,7 @@ const page = () => {
             ></textarea>
             <button
               type="submit"
-              className=" hover:shadow-xl shadow-md shadow-gray-400/75 text-xl  border-2 rounded border-gray-200 bg-white hover:border-gray-200 px-6 py-2 mb-10 font-bold  text-amber-70 hover:text-white focus:outline-none focus:shadow-outline"
+              className=" hover:shadow-xl shadow-md shadow-gray-400/75 text-xl  border-2 rounded border-gray-200 bg-white hover:border-gray-200 px-6 py-2 mb-10 font-bold  text-amber-70 hover:text-gray-600 hover:underline focus:outline-none focus:shadow-outline"
             >
               Wyślij
             </button>

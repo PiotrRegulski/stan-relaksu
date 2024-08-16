@@ -27,15 +27,15 @@ const Contact = () => {
     console.log("Email Send successfully", data);
   }
   return (
-    <div className="w-[100%] mx-auto">
+    <div className="w-[100%] ">
       <PageHeader id={"kontakt"}>Skontaktuj się</PageHeader>
       <div
         className="grid md:grid-cols-1
-        gap-4  items-center my-12 md:mx-4 text-[#333] "
+        gap-4  items-center  md:my-12 md:mx-[10%] text-[#333]   "
       >
-        <div className="px-2 shadow-xl rounded border-4 border-white  shadow-gray-400/75 w-full">
+        <div className="px-2 shadow-xl rounded border-4 bg-triadblue border-white  shadow-gray-400/75 w-full">
           <h2 className="text-xl font-bold md:mb-2 py-2 text-center">
-            Skontaktuj się z nami w dogodny dla Siebie sposób.
+            Skontaktuj się ze mną w dogodny dla Siebie sposób.
           </h2>
 
           <div className="flex md:flex-row flex-col justify-around mt-8 font-[sans-serif]">
@@ -98,7 +98,7 @@ const Contact = () => {
               <h3 className="text-lg font-extrabold  text-center my-2">
                 Adres:
               </h3>
-              <div className="bg-[#e6e6e6cf] h-16 w-16 rounded-full flex items-center justify-center shrink-0 my-2">
+              <div className="bg-triadblue h-16 w-16 rounded-full flex items-center justify-center shrink-0 my-2">
                 <IoIosPin className="w-12 h-12" />
               </div>
 
@@ -114,7 +114,7 @@ const Contact = () => {
             <MapComponent />
           </div>
         </div>
-        <div className="  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 ">
+        <div className="  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 bg-triadgray ">
           <h3 className="text-4xl font-bold mt-6 text-center">Napisz do nas</h3>
           <p className="text-sm text-gray-400 mt-4 text-center">
             Szybko odpowiemy na Twoje pytania.
@@ -128,7 +128,7 @@ const Contact = () => {
               required
               placeholder="imię"
               name="username"
-              className="w-full rounded-md py-3 px-4 bg-gray-200 text-sm outline-blue-500 shadow-inner focus:bg-white "
+              className="w-full rounded-md py-3 px-4 bg-white text-sm outline-blue-500 shadow-inner focus:bg-white "
             ></input>
             <label htmlFor="email" className="text-xl font-bold ">Wpisz E-mail do kontaktu:</label>
             <input
@@ -137,7 +137,7 @@ const Contact = () => {
               required
               placeholder="E-mail"
               name="userEmail"
-              className="w-full rounded-md py-3 px-4 bg-gray-200 text-sm outline-blue-500 shadow-inner focus:bg-white "
+              className="w-full rounded-md py-3 px-4 bg-bg-white text-sm outline-blue-500 shadow-inner focus:bg-white "
             ></input>
             <label htmlFor="subject" className="text-xl font-bold ">Temat:</label>
             <input
@@ -146,7 +146,7 @@ const Contact = () => {
               required
               placeholder="Temat"
               name="subject"
-              className="w-full rounded-md py-3 px-4 bg-gray-200 text-sm outline-blue-500 shadow-inner focus:bg-white "
+              className="w-full rounded-md py-3 px-4 bg-white text-sm outline-blue-500 shadow-inner focus:bg-white "
             ></input>
             <label htmlFor="message" className="text-xl font-bold ">Wpisz swoją wiadomość:</label>
             <textarea
@@ -155,7 +155,7 @@ const Contact = () => {
               required
               placeholder="Message"
               rows={5}
-              className="w-full rounded-md px-4 bg-gray-200 text-sm pt-3 outline-blue-500 shadow-inner focus:bg-white "
+              className="w-full rounded-md px-4 bg-white text-sm pt-3 outline-blue-500 shadow-inner focus:bg-white "
             ></textarea>
             <button
               type="submit"

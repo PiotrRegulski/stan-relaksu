@@ -14,33 +14,43 @@ const NavbarMobile = () => {
   const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
   return (
     <>
-      <div className="flex">
-        <div className="block md:hidden">
-          <button onClick={toggleMenu} className="w-12 h-12 mt-3 ml-3">
-            <HamburgerIcon />
-          </button>
-          <div className="w-screen">
-            <div>
-              <Link href={"/"}>
-                <div className="flex justify-center">
-                  <Logo />
-                </div>
-              </Link>
-            </div>
-            <p className=" mx-3 font-semibold text-xl leading-none text-center text-white pt-3 ">
-              Gabinet terapii manualnej ciała i twarzy,<br></br> odprężenie ciała i
-              ukojenie duszy.<br></br> Pozwól sobie na &nbsp;<strong>Stan Relaksu</strong> 
-            </p>
-          </div>
+      <div className=" flex justify-between  md:hidden ">
+        <div className="my-4 ml-3 ">
+          <Link href={"/"}>
+            <Logo />
+          </Link>
         </div>
+        <div className={`${CormorantInfant.className} my-4  text-center flex items-center`}>
+          <p>Gabinet terapii manualnej ciała i twarzy.</p>
+        </div>
+        <button onClick={toggleMenu} className="w-12 h-12 my-4 ml-3">
+          <HamburgerIcon />
+        </button>
+      </div>
 
-        <div className="lg:hidden fixed flex flex-col top-[2em] sm:top-10 right-[1em] z-40  ">
-          <button className=" lg:hidden   rounded-full bg-green-600 py-3 px-3 text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09] w-min">
+      <div className="lg:hidden fixed grid grid-cols-4 gap-1 bottom-[0] z-40 bg-primary w-screen h-[4rem]  ">
+        <button className="animate-fadeIn   text-sm font-medium text-white shadow-lg shadow-gray-400/75 transition-transform duration-400  hover:scale-[1.02]">
+          <Link
+            href="https://booksy.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div>
+              Zarezerwuj<br></br> Wizytę
+            </div>
+          </Link>
+        </button>
+        <button className=" lg:hidden   w-full  text-white shadow-xl  transition-transform duration-200 ease-in-out hover:scale-[1.09] ">
+          <div className="flex justify-center">
+            {" "}
             <Link href="tel:885987321 ">
-              <BsFillTelephoneForwardFill className="text-right" />
+              <BsFillTelephoneForwardFill className="text-center " />
             </Link>
-          </button>
-          <button className=" rounded-full bg-green-600  py-3 px-3 my-2 text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09] w-min">
+          </div>
+        </button>
+        <button className="  text-white shadow-xl  transition-transform duration-200 ease-in-out hover:scale-[1.09] w-full">
+          <div className="flex justify-center">
+            {" "}
             <Link
               href="https://www.instagram.com/stan_relaksu/"
               target="_blank"
@@ -48,8 +58,11 @@ const NavbarMobile = () => {
             >
               <FaSquareInstagram className="text-right" />
             </Link>
-          </button>
-          <button className=" rounded-full bg-green-600  py-3 px-3  text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.09] w-min">
+          </div>
+        </button>
+        <button className="    text-white shadow-xl  transition-transform duration-200 ease-in-out hover:scale-[1.09] w-full">
+          <div className="flex justify-center">
+            {" "}
             <Link
               href="https://www.facebook.com/profile.php?id=61560021160720"
               target="_blank"
@@ -57,25 +70,12 @@ const NavbarMobile = () => {
             >
               <FaFacebook className="text-right" />
             </Link>
-          </button>
-        </div>
-        <div className="lg:hidden fixed bottom-[2em] right-[1em] z-20">
-          <button className="animate-fadeIn mt-8 inline-flex items-center justify-center rounded-full bg-green-600 py-3 px-6  font-dm text-sm font-medium text-white shadow-lg shadow-gray-400/75 transition-transform duration-400  hover:scale-[1.02]">
-            <Link
-              href="https://booksy.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div>
-                Zarezerwuj<br></br> Wizytę
-              </div>
-            </Link>
-          </button>
-        </div>
+          </div>
+        </button>
       </div>
 
       <div
-        className={`${CormorantInfant.className} flex  flex-wrap w-full justify-evenly   py-4 px-4 xl:hidden`}
+        className={`${CormorantInfant.className} flex flex-wrap w-full justify-evenly xl:hidden`}
       >
         <nav id="mobile-nav" className="w-screen xl:hidden">
           <ul
