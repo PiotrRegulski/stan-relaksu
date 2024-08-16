@@ -6,6 +6,7 @@ export const OfferItem = [
     category: "face",
     title: "Masaż twarzy Kobido z kinesiotapingiem estetycznym",
     image: " kobido-omnie.jpg",
+
     prices: [{ id: "cenaKobido", priceName: "90 minut", price: "300 zł" }],
     contentFirst:
       "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwa perłą w świecie pielęgnacji twarzy. Wywodzący się z Japoni niechirurgiczny lifting twarzy, który od wieków zachwyca swoją skutecznością..",
@@ -13,13 +14,9 @@ export const OfferItem = [
       {
         title: "Tradycja japońska:",
         description:
-          "Tradycyjna japońska technika masażu twarzy, szyi, dekoltu i skóry głowy określana często jako niechirurgiczny lifting twarzy.",
+          "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwa perłą w świecie pielęgnacji twarzy. Wywodzący się z Japoni niechirurgiczny lifting twarzy, który od wieków zachwyca swoją skutecznością.Podczas masażu dochodzi do głębokiego rozluźnienia i pobudzenia tkanek nie tylko warstwy podskórnej, ale także mięśni i powięzi twarzy dzięki czemu uzyskujemy efekt liftingu, wymodelowania rysów oraz odblokowania przepływu krążenia limfy.",
       },
-      {
-        title: "Głębokie rozluźnienie:",
-        description:
-          "Podczas masażu dochodzi do głębokiego rozluźnienia i pobudzenia tkanek nie tylko warstwy podskórnej, ale także mięśni i powięzi twarzy dzięki czemu uzyskujemy efekt liftingu, wymodelowania rysów oraz odblokowania przepływu krążenia limfy.",
-      },
+
       {
         title: "Efekt liftingu:",
         description:
@@ -29,7 +26,7 @@ export const OfferItem = [
       {
         title: "Regularność:",
         description:
-          "Zabieg można powtarzać co 2 tygodnie na początku, a po kilku sesjach przejść do 1 zabiegu miesięcznie. To doskonałe przygotowanie tkanek przed innymi zabiegami medycyny estetycznej",
+          "Zabieg można powtarzać co 2 tygodnie na początku, a po kilku sesjach przejść do jednego zabiegu miesięcznie. To doskonałe przygotowanie tkanek przed innymi zabiegami medycyny estetycznej",
       },
     ],
     contraindications: [
@@ -65,7 +62,6 @@ export const OfferItem = [
       { id: "4", indication: "Bóle głowy i zatok" },
       { id: "5", indication: "Spowalnianie procesów starzenia" },
       { id: "6", indication: "Wdoczne zmarszczki mimiczne " },
-
     ],
     recommendations: [
       { id: "1", recommendation: "Zmniejszyć napięcie i stres w całym ciele." },
@@ -83,9 +79,12 @@ export const OfferItem = [
       },
       { title: "Techniki masażu:" },
       {
-        procedurefirst:" Masaż twarzy Kobido to rytuał złożony z kilku etapów. Pierwsza część to intensywny masaż tkanek głębokich w obrębie szyi i twarzy. Relaksacja mięśniowo-powięziowa twarzy, szyi i dekoltu pozwala na rozluźnienie napięć które mają bezpośredni wpływ na powstawanie ciężkiego wyrazu twarzy, zmarszczek, zastojów limfatycznych. Zbyt duże napięcie w mięśniach mimicznych przyczynia się do powstawania zmarszczek statycznych i dynamicznych zgodnie z mięśniową teorią starzenia się twarzy. Techniki pierwszego etapu masażu Kobido przywracają elastyczność mięśniom okolicy twarzy, dekoltu i szyi dzięki czemu uzyskujemy już na tym etapie efekt spłycenia zmarszczek.",
-        proceduresec:"Następnym etapem jest głęboka relaksacja mięśni szyi, klatki piersiowej i karku. Uwolnienie napięć z tych okolic bezpośrednio wpływa na naszą postawę i wygląd twarzy. Napięcia skumulowane w odcinku szyjnym i karku przenoszą się na okolice twarzy poprzez połączenie taśm mięśniowo-powięziowych. Jest to niezwykle ważny etap dzięki któremu możemy uzyskać poprawę wyglądu naszej twarzy i postawy",
-        procedurethi:" Trzecim etapem jest drenaż limfatyczny który ma za zadanie pozbyć się zastojów limfy w obrębie twarzy szyi i dekoltu. Ta część poprawia wygląd twarzy, dodaje jej rozświetlenia, oczyszcza z toksyn i zastojów, zmniejsza obrzęk twarzy. Ostatnią częścią jest etap liftingująco-modelujący który poprzez szybkie i intensywne ruchy pobudza krążenie, stymuluje produkcję kolagenu i elastyny, modeluje owal twarzy dzięki czemu możemy zauważyć uniesienie policzków, kącików ust i poprawę w wyglądzie opadających powiek. Znikają oznaki zmęczenia a twarz nabiera blasku, witalności.",
+        procedurefirst:
+          " Masaż twarzy Kobido to rytuał złożony z kilku etapów. Pierwsza część to intensywny masaż tkanek głębokich w obrębie szyi i twarzy. Relaksacja mięśniowo-powięziowa twarzy, szyi i dekoltu pozwala na rozluźnienie napięć które mają bezpośredni wpływ na powstawanie ciężkiego wyrazu twarzy, zmarszczek, zastojów limfatycznych. Zbyt duże napięcie w mięśniach mimicznych przyczynia się do powstawania zmarszczek statycznych i dynamicznych zgodnie z mięśniową teorią starzenia się twarzy. Techniki pierwszego etapu masażu Kobido przywracają elastyczność mięśniom okolicy twarzy, dekoltu i szyi dzięki czemu uzyskujemy już na tym etapie efekt spłycenia zmarszczek.",
+        proceduresec:
+          "Następnym etapem jest głęboka relaksacja mięśni szyi, klatki piersiowej i karku. Uwolnienie napięć z tych okolic bezpośrednio wpływa na naszą postawę i wygląd twarzy. Napięcia skumulowane w odcinku szyjnym i karku przenoszą się na okolice twarzy poprzez połączenie taśm mięśniowo-powięziowych. Jest to niezwykle ważny etap dzięki któremu możemy uzyskać poprawę wyglądu naszej twarzy i postawy",
+        procedurethi:
+          " Trzecim etapem jest drenaż limfatyczny który ma za zadanie pozbyć się zastojów limfy w obrębie twarzy szyi i dekoltu. Ta część poprawia wygląd twarzy, dodaje jej rozświetlenia, oczyszcza z toksyn i zastojów, zmniejsza obrzęk twarzy. Ostatnią częścią jest etap liftingująco-modelujący który poprzez szybkie i intensywne ruchy pobudza krążenie, stymuluje produkcję kolagenu i elastyny, modeluje owal twarzy dzięki czemu możemy zauważyć uniesienie policzków, kącików ust i poprawę w wyglądzie opadających powiek. Znikają oznaki zmęczenia a twarz nabiera blasku, witalności.",
       },
       { title: "Czas trwania:" },
       {
@@ -171,7 +170,6 @@ export const OfferItem = [
     ],
   },
 
-  
   {
     id: "MasazPowieziowy ",
     slug: "masaz-powieziowy",
@@ -179,6 +177,10 @@ export const OfferItem = [
     category: "body",
     title: "Masaż Powięziowy ",
     image: "offers-photo/masaż-powięziowy-main.jpg",
+    imagedetailf: "masaz-powieziowy/masaż-powięziowy-t.jpg",
+    imagedetails: "masaz-powieziowy/masaz-powięziowy-terapia-manualna.jpg",
+    imagedetailt: "masaz-powieziowy/masaz-powięziowy.-d.jpg",
+    imagedetailfo: "masaz-powieziowy/masaz-powięziowy.jpg",
     prices: [
       { id: "maspow30", priceName: "30 minut", price: "110 zł" },
       { id: "maspow45", priceName: "45 minut", price: "160 zł" },
@@ -220,7 +222,11 @@ export const OfferItem = [
       { id: "2", indication: "wskazanie 2" },
     ],
     recommendations: [
-      { id: "1", recommendation: "Zmagasz się z napięciem czy bólami pleców, karku lub stawów" },
+      {
+        id: "1",
+        recommendation:
+          "Zmagasz się z napięciem czy bólami pleców, karku lub stawów",
+      },
       { id: "2", recommendation: "Chcesz zwiększyć mobilność całego ciała" },
       {
         id: "3",
@@ -233,7 +239,7 @@ export const OfferItem = [
         procedure:
           "Każdy zabieg zaczynamy od wywiadu, który pozwoli nam na podstawie zebranych informacji na dobranie indywidualnie dostosowanej terapii powięziowej. Najlepiej ubrać wygodny strój tak aby obszary poddawane terapii były łatwo dostępne.",
       },
-     
+
       { title: "Czas trwania:" },
       {
         procedure:
@@ -440,7 +446,6 @@ export const OfferItem = [
       { id: "sport45", priceName: "45 minut", price: "160 zł" },
       { id: "sport60", priceName: "60 minut", price: "200 zł" },
       { id: "sport90", priceName: "90 minut", price: "250 zł" },
-
     ],
     contentFirst:
       "Niezwykle skuteczna technika pracy z ciałem koncentrująca się na rozluźnieniu głębokich warstwach mięśni i tkanki łącznej. Świetnie sprawdzi się u osób odczuwających napięcie i sztywność mięśniową, ale także u sportowców i osób rekreacyjnie trenujących. ",
@@ -455,7 +460,6 @@ export const OfferItem = [
         description:
           "Masaż tkanek głębokich jest pomocy w przewlekłych bólach pleców, szyi, karku, ramion, barków czy innych obszarów ciała które są narażone na przeciążenia. Sprawdzi się u osób które mają siedzący tryb życia i zmagają się z napięciami z tego powodu jak i u osób trenujących rekreacyjnie czy wyczynowo. W trakcie zabiegu odczuwalne jest przyjemne rozluźnianie tkanek i uwolnienie napięcia. ",
       },
-     
     ],
     contraindications: [
       { id: "1", contraindication: "choroby nowotworowe" },
@@ -476,16 +480,17 @@ export const OfferItem = [
     recommendations: [
       {
         id: "1",
-        recommendation:
-          "Zmagasz się z napięciem mięśniowym",
+        recommendation: "Zmagasz się z napięciem mięśniowym",
       },
       {
         id: "2",
-        recommendation: "Trenujesz rekreacyjnie lub uprawiasz sport i chcesz zapobiec przeciążeniom",
+        recommendation:
+          "Trenujesz rekreacyjnie lub uprawiasz sport i chcesz zapobiec przeciążeniom",
       },
       {
         id: "3",
-        recommendation: " Chcesz zadbać profilaktycznie o dobrą kondycję swojego ciała",
+        recommendation:
+          " Chcesz zadbać profilaktycznie o dobrą kondycję swojego ciała",
       },
     ],
     procedures: [
@@ -494,7 +499,7 @@ export const OfferItem = [
         procedure:
           "Każdy zabieg zaczynamy od wywiadu, oceny postawy i napięcia mięśniowego co pozwoli nam na podstawie zebranych informacji na dobranie indywidualnie dostosowanej terapii. Najlepiej ubrać wygodny strój tak aby obszary poddawane terapii były łatwo dostępne. ",
       },
-      
+
       { title: "Czas trwania:" },
       {
         procedure:
@@ -519,7 +524,6 @@ export const OfferItem = [
       { id: "terapman45", priceName: "45 minut", price: "160 zł" },
       { id: "terapman60", priceName: "60 minut", price: "200 zł" },
       { id: "terapman90", priceName: "90 minut", price: "250 zł" },
-
     ],
     contentFirst:
       "To specjalistyczne techniki pracy z ciałem i stawami  polegające na uciskach, mobilizacjach stawowych i tkankowych mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenia sztywności i ograniczeń w zakresie ruchomości oraz redukcji bólu. ",
@@ -539,7 +543,6 @@ export const OfferItem = [
         description:
           "Sprawdza się ona również u osób z problemami ortopedycznymi, urazami w obrębie stóp, kolan, bioder, barków, łokci czy nadgarstków. Znajduje także zastosowanie w pracy z problemami drętwienia dłoni czy nóg, bólami ostrymi i tymi przewlekłymi.  ",
       },
-     
     ],
     contraindications: [
       { id: "1", contraindication: "choroby nowotworowe" },
@@ -569,7 +572,8 @@ export const OfferItem = [
       },
       {
         id: "3",
-        recommendation: "Jesteś po urazach takich jak skręcenie kostki, naderwanie czy przeciążenie ścięgien",
+        recommendation:
+          "Jesteś po urazach takich jak skręcenie kostki, naderwanie czy przeciążenie ścięgien",
       },
     ],
     procedures: [
@@ -578,7 +582,7 @@ export const OfferItem = [
         procedure:
           "Każdy zabieg zaczynamy od wnikliwego wywiadu, badania funkcjonalnego, oceny postawy, zakresu ruchomości stawów i napięcia mięśniowego. Wszystkie te informacje pozwolą na dobranie indywidualnej terapii manualnej dostosowanej do Twojego problemu. Najlepiej ubrać wygodny strój tak aby obszary poddawane terapii były łatwo dostępne. ",
       },
-     
+
       { title: "Czas trwania:" },
       {
         procedure:
@@ -591,5 +595,4 @@ export const OfferItem = [
       },
     ],
   },
-  
 ];

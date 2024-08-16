@@ -22,7 +22,7 @@ import ImageCard from "./ImageCard";
 
 const ImagesToAboutMeArticle = () => {
   return (
-    <div className="flex overflow-x-auto  mx-auto py-6 md:py-12 bg-triadgray border-headercolor border-4 md:px-48">
+    <div className="flex overflow-x-auto  mx-auto py-6 md:py-12 bg-triadgray border-headercolor border-4 md:px-48 max-md:w-full">
      
         {imgURLs.map((imgUrl) => (
           <div key={imgUrl.label} className="relative  flex-shrink-0 w-72 h-72 md:w-72 md:h-96 mx-2 md:mx-2  shadow-lg shadow-black  ">

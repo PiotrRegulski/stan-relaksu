@@ -41,6 +41,10 @@ type OfferItemType = {
   title: string;
   contentFirst?: string;
   image: string;
+  imagedetailf?:string;
+  imagedetails?:string;
+  imagedetailt?:string;
+  imagedetailfo?:string;
   prices: PricesType[];
   advantages: AdvantageType[];
   contraindications: ContraindicationsType[];
@@ -64,7 +68,6 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
   const offerDetail: OfferItemType | undefined = OfferItem.find(
     (offerDetail) => offerDetail.slug === offerSlug
   );
-
   if (!offerDetail) {
     return (
       <div className="flex flex-col justify-center w-[100vw] h-96">
@@ -96,22 +99,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
   
   const proceduresTable = offerDetail?.procedures;
 
-  // const [
-  //   { title: preparationTitle },
-  //   { procedure: preparationProcedure },
-  //   { title: techniquesTitle },
-  //   { procedure: techniquesProcedure1 },
-  //   { title: timeTitle },
-  //   { procedure: timeProcedure3 },
-  //   { title: effectsTitle },
-  //   { procedure: effectsProcedure }
-  // ]= proceduresTable;
-  // const proceduresTable = [
-  //   { title: "Przygotowanie", procedure: "Opis przygotowania" },
-  //   { title: "Techniki", procedure: "Opis technik" },
-  //   { title: "Czas", procedure: "Opis czasu" },
-  //   { title: "Efekty", procedure: "Opis efektów" },
-  // ];
+ 
 
   return (
     <>
@@ -126,11 +114,12 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             {firstAdventagesDescription}
           </h1>
         </div>
+      
         <div className="flex flex-col xl:flex-row xl:mx-[10em]">
           <div className="basis 1 xl:basis-1/4 md:mt-4 ">
-            <div className="relative h-[30rem] md:w-[30rem]  mx-auto  ">
+          <div className="relative h-[20rem] md:w-[30rem]  mx-auto  ">
               <Image
-                src={`/${offerDetail.image}`}
+                src={`/${offerDetail.imagedetailf}`}
                 alt={offerDetail.title}
                 fill
                 className="object-contain"
@@ -138,6 +127,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
+           
           </div>
 
           <div className="basis 1 xl:basis-3/4 ">
@@ -162,8 +152,10 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
       />
      
         <OfferProcedure
-          src={`/${offerDetail.image}`}
+          src={`/${offerDetail.imagedetailt}`}
+          srcdetails={`/${offerDetail.imagedetails}`}
           alt={offerDetail.title}
+         
           procedures={proceduresTable}
         />
      

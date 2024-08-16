@@ -10,9 +10,9 @@ const AboutMeMainCard = () => {
     <div
       className={`flex flex-col  items-center  shadow-xl   rounded mt-1`}
     >
-      <div className="flex flex-col md:flex-row  bg-headercolor   ">
-        <div className=" mx-auto  h-full rounded-xl shadow-md shadow-gray-400 md:mx-4 my-2 ">
-          <div className="relative   w-72 h-96 mx-2 md:my-6  ">
+      <div className="flex flex-col md:flex-row  bg-triadgray   ">
+        <div className=" mx-auto  h-full rounded-xl  md:mx-4 my-2 ">
+          <div className="relative   w-72 h-96 mx-2 md:my-6 shadow-md shadow-gray-400 ">
             <ImageCard src={"/aboutme-image001.jpg"} alt={"terapia manualna"} />
           </div>
         </div>
