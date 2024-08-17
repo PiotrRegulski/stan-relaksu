@@ -16,7 +16,7 @@ const WelcomCard = () => {
         </div>
       </div>
 
-      <div className=" absolute top-1 lg:top-[4rem] left-0 lg:left-[25%]   flex flex-col justify-center items-center h-full md:h-[80%] lg:shadow-xl lg:border-4 lg:border-white shadow-gray-400/75 w-screen lg:w-1/2  animate-fadeIn rounded-xl   transition-transform duration-1000 ease-in-out bg-primary bg-opacity-40 ">
+      <div className=" absolute top-1 lg:top-[4rem] left-0 lg:left-[25%]   flex flex-col justify-center items-center h-full md:h-[80%] lg:shadow-xl lg:border-4 lg:border-white shadow-gray-400/75 w-screen lg:w-1/2  animate-fadeIn rounded-xl   transition-transform duration-400 ease-in-out bg-primary bg-opacity-40 ">
         <div className="flex flex-col lg:px-6 py-6 ">
           <div className={`${lato.className}   `}>
             <div className="relative w-full flex justify-center mt-5">
