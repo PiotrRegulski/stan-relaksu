@@ -538,8 +538,7 @@ export const OfferItem = [
     imagedetailf: "terapia-manualna/terapia-manualna-kolano-last.jpg",
     imagedetails: "terapia-manualna/terapia-manualna-kolano-proceduref.jpg",
     imagedetailt: "terapia-manualna/terapia-manualna-procedureb.jpg",
-    imagedetailfo:
-      "terapia-manualna/terapia-manualna-kolano-klawiki-second.jpg",
+    imagedetailfo: "terapia-manualna/terapia-manualna-kolano-klawiki-second.jpg",
     prices: [
       { id: "terapman30", priceName: "30 minut", price: "110 zł" },
       { id: "terapman45", priceName: "45 minut", price: "160 zł" },

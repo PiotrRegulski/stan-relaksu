@@ -11,7 +11,7 @@ const WelcomCard = () => {
       className=" relative flex h-[40rem] md:h-[40rem]  bg-headercolor overflow-hidden rounded  "
     >
       <div className=" flex justify-end w-full ">
-        <div className=" relative flex w-screen shadow-xl shadow-white md:py-3 ">
+        <div className=" relative flex  w-screen shadow-xl shadow-white md:py-3 ">
           <WelcomeCardImage />
         </div>
       </div>

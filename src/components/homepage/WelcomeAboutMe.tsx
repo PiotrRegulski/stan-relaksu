@@ -9,16 +9,16 @@ import Link from "next/link";
 const WelcomeAboutMe = () => {
   return (
     <>
-      <div className=" relative flex w-full bg-triadgray ">
+      <div className=" relative flex w-full bg-secondary ">
         <div className="hidden md:flex  basis-1/6 ">
           <div className=" relative  md:max-w-[32rem] w-[30rem] h-[20rem] md:h-[40rem] shadow-gray-400 shadow-lg  my-12  mx-1 rounded-xl">
             <AboutImageCard />
           </div>
         </div>
         <div className="flex flex-col  md:basis-5/6  ">
-          <div className="flex-row  my-4 ">
-            <div className=" flex flex-col md:flex-row  justify-center bg-triadblue  mx-4 rounded-xl  shadow-primary shadow-lg">
-              <div className="w-full md:w-full mx-auto mt-12 ">
+          <div className="flex-row   md:my-4 ">
+            <div className=" flex flex-col md:flex-row  justify-center bg-triadblue  md:mx-4 rounded-xl  shadow-primary shadow-lg">
+              <div className="w-full md:w-full  md:mt-12 ">
                 <p
                   className={`${lato.className} text-lg font-bold  md:text-xl text-center text-black animate-fadeIn transition-transform duration-1000 ease-in-out pt-8 px-4 md:px-1`}
                 >
@@ -35,12 +35,12 @@ const WelcomeAboutMe = () => {
                   </span>
                 </p>
               </div>
-              <div className="relative w-72 h-64 md:w-[25rem] md:h-48  rounded-xl  mx-auto md:ml-24 shadow-xl shadow-gray-500 my-3">
+              <div className="relative w-72 h-64 md:w-[25rem] md:h-48  rounded-xl  mx-auto md:ml-24 shadow-xl shadow-gray-500 my-6 md:my-3 ">
                 <FaceImage />
               </div>
             </div>
 
-            <div className=" bg-triadblue  px-12 mx-4 mt-12 shadow-primary shadow-lg  rounded-xl">
+            <div className=" bg-triadblue mx-auto my-4 px-4 md:px-12 md:mx-4 md:mt-12 shadow-primary shadow-lg  rounded-xl">
               <p className="font-bold  text-xl md:text-3xl mx-auto md:px-10 py-10 ">
                 Cześć, jestem Kinga.
               </p>

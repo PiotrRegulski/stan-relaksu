@@ -7,7 +7,7 @@ interface ImageCardProps {
 }
 
 const ImageCard: React.FC<ImageCardProps> = ({ src, alt }) => {
-  return <Image src={src} alt={alt}  fill priority={true} className=" w-full h-full rounded" />;
+  return <Image src={src} alt={alt}  fill priority={true} className=" object-cover object-top   w-full h-full rounded " />;
 };
 
 export default ImageCard;

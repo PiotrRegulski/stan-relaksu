@@ -22,15 +22,18 @@ import ImageCard from "./ImageCard";
 
 const ImagesToAboutMeArticle = () => {
   return (
-    <div className="flex overflow-x-auto  mx-auto py-6 md:py-12 bg-triadgray border-headercolor border-4 md:px-48 max-md:w-full">
-     
-        {imgURLs.map((imgUrl) => (
-          <div key={imgUrl.label} className="relative  flex-shrink-0 w-72 h-72 md:w-72 md:h-96 mx-2 md:mx-2  shadow-lg shadow-black  ">
-           
+    <div className="flex overflow-x-auto w-full py-12 bg-secondary border-2  shadow-lg shadow-primary  ">
+      {imgURLs.map((imgUrl) => (
+        <div
+          key={imgUrl.label}
+          className="relative  flex-shrink-0 w-96 md:w-[22rem] h-[34rem] md:h-[34rem] md:ml-5 items-center shadow-lg shadow-gray-400 border-white border-4 "
+        >
+          
+            {" "}
             <ImageCard key={imgUrl.label} src={imgUrl.src} alt={imgUrl.label} />
-          </div>
-        ))}
-     
+         
+        </div>
+      ))}
     </div>
   );
 };

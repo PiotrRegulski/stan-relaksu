@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { OfferItem } from "@/data/OfferItem";
 import PageHeader from "../homepage/PageHeader";
-import { lato, lora } from "@/components/fonts";
+import {  lora } from "@/components/fonts";
 
 type AdvantageType = {
   title?: string;
@@ -40,7 +40,7 @@ const OffersCardBody = () => {
 
   return (
     <>
-      <PageHeader id={"offer"}>Zabiegi na Ciało</PageHeader>
+      <PageHeader id={"offer-title"}>Zabiegi na Ciało</PageHeader>
       <div className="flex justify-center w-full my-12 ">
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-2 lg:gap-2 w-full ">
           {categoryBody.map((offerItem) => (
