@@ -6,8 +6,8 @@ import PageHeader from "../homepage/PageHeader";
 import { lato, lora } from "@/components/fonts";
 
 type AdvantageType = {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 };
 type PricesType = {
   id: string;
