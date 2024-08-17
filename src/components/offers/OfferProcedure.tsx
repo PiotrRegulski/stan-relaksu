@@ -42,7 +42,6 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
               alt={alt}
               fill
               className="object-cover h-full w-full shadow-lg shadow-gray-400 rounded-lg"
-              priority={true}
               sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
@@ -52,7 +51,6 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
               alt={alt}
               fill
               className="object-cover h-full w-full shadow-lg shadow-gray-400 rounded-lg"
-              priority={true}
               sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
@@ -61,7 +59,7 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
         <div className=" flex flex-col  justify-center items-center">
           <ul className={` ${lato.className} text-xl space-y-8   `}>
             {procedures.map((procedure, index) => (
-              <ProcedureItem key={index} procedure={procedure}  index={index}/>
+              <ProcedureItem key={index} procedure={procedure} index={index} />
             ))}
           </ul>
           <div className=" flex  relative  mx-auto w-80 h-96  md:mx-6 my-2 md:my-6 md:hidden items-center">
@@ -70,7 +68,6 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
               alt={alt}
               fill
               className="object-cover h-full w-full shadow-lg shadow-gray-400 rounded-lg"
-              priority={true}
               sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>

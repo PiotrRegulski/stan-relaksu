@@ -130,7 +130,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                   alt={offerDetail.title}
                   fill
                   className="object-fill rounded-full  border-4"
-                  priority={true}
+                  
                   sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
@@ -144,7 +144,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                   alt={offerDetail.title}
                   fill
                   className="object-contain shadow-lg md:shadow-gray-400 px-2 "
-                  priority={true}
+                 
                   sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
@@ -165,7 +165,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                     alt={offerDetail.title}
                     fill
                     className="object-contain "
-                    priority={true}
+                  
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
