@@ -6,8 +6,8 @@ import PageHeader from "../homepage/PageHeader";
 import { lato,lora } from "@/components/fonts";
 
 type AdvantageType = {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 };
 type PricesType = {
   id: string;
@@ -27,6 +27,10 @@ type OfferItemType = {
   title: string;
   contentFirst?: string;
   image: string;
+  imagedetailf?: string;
+  imagedetails?: string;
+  imagedetailt?: string;
+  imagedetailfo?: string;
   prices: PricesType[];
   advantages: AdvantageType[];
   contraindications: ContraindicationsType[];

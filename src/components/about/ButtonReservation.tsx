@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 const ButtonReservation = () => {
   return (
-    <div className=" flex justify-center w-full my-12  ">
+    <div className=" flex justify-center w-full my-2  ">
       <Link
         href="https://booksy.com/"
         target="_blank"

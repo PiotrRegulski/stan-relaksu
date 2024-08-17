@@ -20,7 +20,7 @@ const ImagesToAboutMeLast = () => {
       {imageURLs.map((imgUrl) => (
         <div
           key={imgUrl.label}
-          className="relative  flex-shrink-0 w-96 md:w-[34rem] h-96 mx-2 items-center shadow-xl shadow-black"
+          className="relative  flex-shrink-0 w-96 md:w-[34rem] h-72 md:h-96 mx-2 items-center shadow-xl shadow-black"
         >
          
           <ImageCard key={imgUrl.label} src={imgUrl.src} alt={imgUrl.label} />

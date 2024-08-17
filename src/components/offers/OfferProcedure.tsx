@@ -1,6 +1,8 @@
 import React from "react";
 import { lato } from "../fonts";
 import Image from "next/image";
+import ExpandableText from "./ExpandableText";
+import ProcedureItem from "./ProcedureItem";
 
 interface OfferProcedureProps {
   src: string;
@@ -14,6 +16,7 @@ interface OfferProcedureProps {
     procedurethi?: string;
   }[];
 }
+
 const OfferProcedure: React.FC<OfferProcedureProps> = ({
   src,
   srcdetails,
@@ -31,44 +34,46 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
         </h1>
       </div>
 
-      <div className="flex justify-center items-stretch mx-auto xl:mx-36 my-12">
-        <div className="flex flex-col ">
-          <div className="hidden  relative  mx-auto w-80 h-96  xl:mx-6 xl:my-6 md:flex items-center">
+      <div className="flex flex-col md:flex-row justify-center items-stretch mx-auto xl:mx-36 my-12">
+        <div className="flex flex-row md:flex-col   md:justify-between ">
+          <div className="  relative  mx-auto w-80 h-96  md:mx-6 my-2 md:my-6 md:flex items-center">
             <Image
               src={src}
               alt={alt}
               fill
-              className="object-cover h-full w-full"
+              className="object-cover h-full w-full shadow-lg shadow-gray-400 rounded-lg"
               priority={true}
               sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
-          <div className=" hidden relative  mx-auto w-80 h-96  xl:mx-6 xl:my-6 md:flex items-center">
+          <div className=" hidden relative  mx-auto w-80 h-96  md:mx-6 md:my-6 md:flex items-center">
             <Image
               src={srcdetails}
               alt={alt}
               fill
-              className="object-cover h-full w-full"
+              className="object-cover h-full w-full shadow-lg shadow-gray-400 rounded-lg"
               priority={true}
               sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         </div>
 
-        <div className="flex-1 ">
-          <ul className={` ${lato.className} text-xl space-y-8 `}>
+        <div className=" flex flex-col  justify-center items-center">
+          <ul className={` ${lato.className} text-xl space-y-8   `}>
             {procedures.map((procedure, index) => (
-              <li key={index}>
-                <p className="font-bold px-2">{procedure.title}</p>
-                
-                <p className="px-3">{procedure.procedure}</p>
-                
-                <p className="px-3 ">{procedure.procedurefirst}</p>
-                <p className="px-3 my-12">{procedure.proceduresec}</p>
-                <p className="px-3">{procedure.procedurethi}</p>
-              </li>
+              <ProcedureItem key={index} procedure={procedure}  index={index}/>
             ))}
           </ul>
+          <div className=" flex  relative  mx-auto w-80 h-96  md:mx-6 my-2 md:my-6 md:hidden items-center">
+            <Image
+              src={srcdetails}
+              alt={alt}
+              fill
+              className="object-cover h-full w-full shadow-lg shadow-gray-400 rounded-lg"
+              priority={true}
+              sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
         </div>
       </div>
     </div>

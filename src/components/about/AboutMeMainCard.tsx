@@ -1,6 +1,5 @@
 import React from "react";
 import ImageCard from "./ImageCard";
-import { lora } from "../fonts";
 import ButtonReservation from "./ButtonReservation";
 import ImagesToAboutMeArticle from "./ImagesToAboutMeArticle";
 import ButtonOffers from "./ButtonOffers";
@@ -10,7 +9,7 @@ const AboutMeMainCard = () => {
     <div
       className={`flex flex-col  items-center  shadow-xl   rounded mt-1`}
     >
-      <div className="flex flex-col md:flex-row  bg-triadgray   ">
+      <div className="flex flex-col md:flex-row  bg-secondary  ">
         <div className=" mx-auto  h-full rounded-xl  md:mx-4 my-2 ">
           <div className="relative   w-72 h-96 mx-2 md:my-6 shadow-md shadow-gray-400 ">
             <ImageCard src={"/aboutme-image001.jpg"} alt={"terapia manualna"} />
@@ -21,7 +20,7 @@ const AboutMeMainCard = () => {
             Cześć, jestem Kinga
           </h1>
           <div className="flex flex-col items-center justify-center  md:mx-6 my-2 px-4 py-12 shadow-md shadow-gray-400 bg-triadblue md:pr-48">
-            <article className=" text-lg md:text-xl text-justify md:text-left  text-pretty text-amber-950">
+            <article className=" text-lg md:text-xl  md:text-left  text-pretty text-amber-950">
               <p className="  text-pretty ">
                 Ukończyłam<strong> fizjoterapię </strong>na Warszawskim
                 Uniwersytecie Medycznym.<br></br> Jestem
@@ -33,7 +32,7 @@ const AboutMeMainCard = () => {
               <p className=" w-full my-4">
                 Dzięki swojej szerokiej wiedzy i doświadczeniu pomogę Ci w
                 procesie
-                <strong> dbania o swoje zdrowie</strong>.<br></br> Czekam na Ciebie aby
+                 dbania o swoje zdrowie. Czekam na Ciebie, aby
                 przynieść Ci <strong> ulgę w bólu i napięciu</strong>.{" "}
               </p>
               <p className=" w-full">
@@ -42,15 +41,15 @@ const AboutMeMainCard = () => {
               </p>
             </article>
           </div>
-          <div className="w-full flex gap-1 mx-1"><ButtonReservation /><ButtonOffers/></div>
+          <div className="w-full flex flex-col mb-4 md:mx-1"><ButtonReservation /><ButtonOffers/></div>
           
         </div>
       </div>
 
       <ImagesToAboutMeArticle />
       <div className="flex flex-col items-center justify-center  md:mx-6 md:my-2 px-4 py-3 md:py-12 shadow-md shadow-gray-400 bg-headercolor ">
-        <article className="text-center text-lg md:text-2xl mx-auto md:mx-12 text-amber-950">
-          <h2 className="text-pretty">
+        <article className="text-center text-lg md:text-2xl mx-auto md:mx-12 text-amber-950 leading-loose">
+          <h2 className="text-pretty ">
             Przyniosę Ci ulgę w bólu oraz napięciu stosując techniki
             <strong> masażu powięziowego</strong> i{" "}
             <strong>terapii manualnej</strong>, podpowiem Ci jak możesz pracować

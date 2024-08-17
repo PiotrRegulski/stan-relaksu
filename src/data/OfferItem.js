@@ -5,26 +5,27 @@ export const OfferItem = [
     active: true,
     category: "face",
     title: "Masaż twarzy Kobido z kinesiotapingiem estetycznym",
-    image: " kobido-omnie.jpg",
-
+    image: "offers-photo/kobido-omnie.jpg",
+    imagedetailf: "kobido/kobido-kinesiotaping.jpg",
+    imagedetails: "kobido/kobido-procedure-buttom.jpg",
+    imagedetailt: "kobido/kobido-procedure-top.jpg",
+    imagedetailfo: "kobido/kobido-secondP.jpg",
     prices: [{ id: "cenaKobido", priceName: "90 minut", price: "300 zł" }],
     contentFirst:
       "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwa perłą w świecie pielęgnacji twarzy. Wywodzący się z Japoni niechirurgiczny lifting twarzy, który od wieków zachwyca swoją skutecznością..",
     advantages: [
+      { title: "Prawdziwa perła w świecie pielęgnacji twarzy" },
       {
-        title: "Tradycja japońska:",
         description:
           "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwa perłą w świecie pielęgnacji twarzy. Wywodzący się z Japoni niechirurgiczny lifting twarzy, który od wieków zachwyca swoją skutecznością.Podczas masażu dochodzi do głębokiego rozluźnienia i pobudzenia tkanek nie tylko warstwy podskórnej, ale także mięśni i powięzi twarzy dzięki czemu uzyskujemy efekt liftingu, wymodelowania rysów oraz odblokowania przepływu krążenia limfy.",
       },
-
+      { title: "Zmniejszenie napięcia i stresu w całym ciele" },
       {
-        title: "Efekt liftingu:",
         description:
           "Zdrowszy i promienny wygląd twarzy, spłycenie zmarszczek i bruzd mimicznych to jedne z wielu korzyści płynących z rytuału Kobido. Dla przedłużenie efektów na koniec zabiegu zakładamy kinesiotaping estetyczny. Odprężenie płynące masażu twarzy Kobido przynosi zrelaksowanie, zmniejszenie napięcia i stresu w całym ciele.  ",
       },
-
+      { title: "To doskonałe przygotowanie tkanek przed innymi zabiegami" },
       {
-        title: "Regularność:",
         description:
           "Zabieg można powtarzać co 2 tygodnie na początku, a po kilku sesjach przejść do jednego zabiegu miesięcznie. To doskonałe przygotowanie tkanek przed innymi zabiegami medycyny estetycznej",
       },
@@ -105,24 +106,28 @@ export const OfferItem = [
     category: "face",
     title: "Igłoterapia estetyczna i pinezkowanie",
     image: "offers-photo/igłoterapia-estetyczna.jpg",
+    imagedetailf: "igłoterapia/igłoterapia-estetyczna-last.jpg",
+    imagedetails: "igłoterapia/igłoterapia-estetyczna-procedureb.jpg",
+    imagedetailt: "igłoterapia/igłoterapia-estetyczna-proceduref.jpg",
+    imagedetailfo: "igłoterapia/igłoterapia-estetyczna-second.jpg",
     prices: [{ id: "cenaIgłoterapi", priceName: "90 minut", price: "350 zł" }],
     contentFirst:
       "Igłoterapia estetyczna twarzy z pinezkowaniem to zaawansowany zabieg, który może odmienić bezinwazyjnie wygląd Twojej twarzy. Zmniejszenie napięcia mięśni mimicznych, pobudzenie produkcji kolagenu i elastyny przynosi efekt odmłodzenia..  ",
     advantages: [
+      { title: "Spłycenie zmarszczek" },
       {
-        title: "Spłycenie zmarszczek",
         description:
           "Igłoterapia estetyczna prowadzi do spłycenia zmarszczek i poprawy wyglądu twarzy poprzez stymulację komórek, produkcję kolagenu i elastyny. Głębokie rozluźnienie mięśni mimicznych pomaga w przywróceniu ich odpowiedniej elastyczności za czym idzie wygładzenie. Jest to zabieg, który poprawia wygląd uwydatniając unikalne cechy twarzy więc to idealne rozwiązanie dla osób, które cenią sobie naturalne podkreślenie urody.",
       },
+      { title: "Efekt odmłodzenia" },
       {
-        title: "Unikalne cechy twarzy",
-        description:
-          "Przy regularnym stosowaniu igłoterapii estetycznej zauważamy większe odżywienie tkanek, skóra staje się promienna a zmarszczki zostają spłycone. ",
-      },
-      {
-        title: "Efekt odmłodzenia",
         description:
           "Zabieg polega na zastosowaniu cieniutkich igieł akupunkturowych, które wprowadzane są w obrębie mięśni mimicznych dla przywrócenia ich elastyczności i jędrności dzięki czemu uzyskujemy efekt odmłodzenia twarzy. ",
+      },
+      { title: "Unikalne cechy twarzy" },
+      {
+        description:
+          "Przy regularnym stosowaniu igłoterapii estetycznej zauważamy większe odżywienie tkanek, skóra staje się promienna a zmarszczki zostają spłycone. ",
       },
     ],
     contraindications: [
@@ -188,20 +193,20 @@ export const OfferItem = [
       { id: "maspow90", priceName: "90 minut", price: "250 zł" },
     ],
     contentFirst:
-      "To idealny wybór dla osób, które zmagają się z nawet silnymi bólami i napięciami w obrębie ciała. Uwolnienie powięziowe i zniesienie napięć w ciele pomaga w zmniejszeniu dolegliwości bólowych, uczucia stresu oraz ogólnej relaksacji. ",
+      "To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała. Uwolnienie powięziowe i zniesienie napięć w ciele pomaga w zmniejszeniu dolegliwości bólowych, uczucia stresu oraz ogólnej relaksacji. ",
     advantages: [
+      { title: "Zwiększa ogólą mobilność całego ciała" },
       {
-        title: "Indywidualne podejście:",
         description:
           "Masaż powięziowy to idealny wybór dla osób, które zmagają się z bólami pleców, karku czy bólami w stawach obwodowych. Indywidualnie dobrana terapia pomoże w zniesieniu napięć w ciele i pozbyciu się dolegliwości bólowych. Praca na przywróceniu ślizgu tkanki powięziowej pozwala na zwiększenie prawidłowych zakresów ruchomości w stawach oraz ogólnej mobilności całego ciała. ",
       },
+      { title: "Techniki powięziowe zmniejszają uczucie stresu  " },
       {
-        title: "Zwalczanie bólu:",
         description:
           "Ta holistyczna metoda pracy poprzez znoszenie napięcia z tkanki mięśniowej i powięziowej prowadzi do zmniejszenia uczucia stresu, uwolnienia emocji co prowadzi do głębokiego Stanu Relaksu. Korzyści jakie niesie terapia mięśniowo-powięziowa są wielopłaszczyznowe. Uwalniając napięcie z ciała wpływamy na wcześniej zamrożone i zatrzymane emocje w nim. Uczucie ulgi jakie przenoszą techniki powięziowe wynika z rozluźnienia mięśni, powięzi oraz uwolnienia emocji zawieszonych w  ciele i tkankach. ",
       },
+      { title: "Zarezerwuj wizytę:" },
       {
-        title: "Summary",
         description:
           "Jeśli szukasz ulgi w bólu, zmniejszeniu uczucia stresu i napięcia w ciele to masaż powięziowy będzie dla Ciebie świetnym wyborem.",
       },
@@ -441,6 +446,10 @@ export const OfferItem = [
     category: "body",
     title: "Masaż tkanek głębokich/masaż sportowy",
     image: "offers-photo/masaż-tkanek-głebokich-main.jpg",
+    imagedetailf: "masaz-sportowy/masaż-tkanek-głebokich-last.jpg",
+    imagedetails: "masaz-sportowy/masaż-tkanek-głebokich-procedureb.jpg",
+    imagedetailt: "masaz-sportowy/masaż-tkanek-głebokich-proceduref.jpg",
+    imagedetailfo: "masaz-sportowy/masaż-tkanek-głebokich-second.jpg",
     prices: [
       { id: "sport30", priceName: "30 minut", price: "110 zł" },
       { id: "sport45", priceName: "45 minut", price: "160 zł" },
@@ -450,15 +459,22 @@ export const OfferItem = [
     contentFirst:
       "Niezwykle skuteczna technika pracy z ciałem koncentrująca się na rozluźnieniu głębokich warstwach mięśni i tkanki łącznej. Świetnie sprawdzi się u osób odczuwających napięcie i sztywność mięśniową, ale także u sportowców i osób rekreacyjnie trenujących. ",
     advantages: [
+      { title: "Łagodzenie bólu mięśniowego i stawowego" },
       {
-        title: "złagodzenie bólu mięśniowego i stawowego",
         description:
           "Masaż tkanek głębokich (MTG) to precyzyjna i głęboka praca z mięśniami w celu przywrócenia ich elastyczności i prawidłowej pracy. Terapeuta pracując różnorodnymi chwytami manualnymi chce dotrzeć do głęboko położonych struktur tkanki mięśniowej i łącznej. Dzięki dokładnej pracy na napiętych strukturach w ciele uzyskujemy złagodzenie bólu mięśniowego i stawowego.",
       },
+      { title: "Sprawdzi się w przewlekłych bólach pleców" },
+
       {
-        title: "Sprawdzi się w przewlekłych bólach pleców",
         description:
-          "Masaż tkanek głębokich jest pomocy w przewlekłych bólach pleców, szyi, karku, ramion, barków czy innych obszarów ciała które są narażone na przeciążenia. Sprawdzi się u osób które mają siedzący tryb życia i zmagają się z napięciami z tego powodu jak i u osób trenujących rekreacyjnie czy wyczynowo. W trakcie zabiegu odczuwalne jest przyjemne rozluźnianie tkanek i uwolnienie napięcia. ",
+          "Masaż tkanek głębokich jest pomocy w przewlekłych bólach pleców, szyi, karku, ramion, barków czy innych obszarów ciała które są narażone na przeciążenia. Sprawdzi się u osób które mają siedzący tryb życia i zmagają się z napięciami z tego powodu jak i u osób trenujących rekreacyjnie czy wyczynowo.  ",
+      },
+      { title: "Rozlużnianie tkanet" },
+
+      {
+        description:
+          "W trakcie zabiegu odczuwalne jest przyjemne rozluźnianie tkanek i uwolnienie napięcia. ",
       },
     ],
     contraindications: [
@@ -519,6 +535,11 @@ export const OfferItem = [
     category: "body",
     title: "Terapia manualna",
     image: "offers-photo/terapia-manualna-kolano.jpg",
+    imagedetailf: "terapia-manualna/terapia-manualna-kolano-last.jpg",
+    imagedetails: "terapia-manualna/terapia-manualna-kolano-proceduref.jpg",
+    imagedetailt: "terapia-manualna/terapia-manualna-procedureb.jpg",
+    imagedetailfo:
+      "terapia-manualna/terapia-manualna-kolano-klawiki-second.jpg",
     prices: [
       { id: "terapman30", priceName: "30 minut", price: "110 zł" },
       { id: "terapman45", priceName: "45 minut", price: "160 zł" },
@@ -528,20 +549,21 @@ export const OfferItem = [
     contentFirst:
       "To specjalistyczne techniki pracy z ciałem i stawami  polegające na uciskach, mobilizacjach stawowych i tkankowych mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenia sztywności i ograniczeń w zakresie ruchomości oraz redukcji bólu. ",
     advantages: [
+      { title: "Indywidualne podejście do Twojego problemu" },
       {
-        title: "iwidualne podejście",
         description:
           "Ogromnymi zaletami terapii manualnej jest indywidualne podejście do Twojego problemu oraz możliwość wyboru odpowiedniej terapii z szerokiego zakresu technik takich jak mobilizacje stawowe, terapia tkanek miękkich, terapia neuro-mięśniowa, terapie płynowe z  jamami ciała.",
       },
+
+      { title: "Sprawdzi się na problem drętwienia dłoni" },
       {
-        title: "bezpieczeństwo terapii manualnej:",
-        description:
-          "Możliwość i duże bezpieczeństwo terapii manualnej  pomagają w uśmierzaniu bólu i schorzeń kręgosłupa takie jak zwyrodnienia, dyskopatia, przepuklina, rwa kulszowa czy rwa udowa. ",
-      },
-      {
-        title: "problemy ortopedycznyne:",
         description:
           "Sprawdza się ona również u osób z problemami ortopedycznymi, urazami w obrębie stóp, kolan, bioder, barków, łokci czy nadgarstków. Znajduje także zastosowanie w pracy z problemami drętwienia dłoni czy nóg, bólami ostrymi i tymi przewlekłymi.  ",
+      },
+      { title: "Pomaga w schorzenich kęgosłupa" },
+      {
+        description:
+          "Możliwość i duże bezpieczeństwo terapii manualnej  pomagają w uśmierzaniu bólu i schorzeń kręgosłupa takie jak zwyrodnienia, dyskopatia, przepuklina, rwa kulszowa czy rwa udowa. ",
       },
     ],
     contraindications: [
