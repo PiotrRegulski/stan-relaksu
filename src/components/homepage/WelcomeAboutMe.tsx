@@ -20,7 +20,7 @@ const WelcomeAboutMe = () => {
             <div className=" flex flex-col md:flex-row  justify-center bg-triadblue  md:mx-4 rounded-xl  shadow-primary shadow-lg">
               <div className="w-full md:w-full  md:mt-12 ">
                 <p
-                  className={`${lato.className} text-lg font-bold  md:text-xl text-center text-black animate-fadeIn transition-transform duration-1000 ease-in-out pt-8 px-4 md:px-1`}
+                  className={`${lato.className} text-lg font-bold  md:text-xl text-center text-amber-950 animate-fadeIn transition-transform duration-1000 ease-in-out pt-8 px-4 md:px-1`}
                 >
                   <strong>Stan Relaksu</strong> <br></br>to terapeutyczne miejsce dla
                   ciała stworzone z myślą o Tobie, osobie która chce o
@@ -41,7 +41,7 @@ const WelcomeAboutMe = () => {
             </div>
 
             <div className=" bg-triadblue mx-auto my-4 px-4 md:px-12 md:mx-4 md:mt-12 shadow-primary shadow-lg  rounded-xl">
-              <p className="font-bold  text-xl md:text-3xl mx-auto md:px-10 py-10 ">
+              <p className="font-bold text-amber-950 text-xl md:text-3xl mx-auto md:px-10 py-10 ">
                 Cześć, jestem Kinga.
               </p>
               <div className="flex md:hidden mx-auto w-full ">
@@ -52,7 +52,7 @@ const WelcomeAboutMe = () => {
                   />
                 </div>
               </div>
-              <p className="  text-lg  md:text-xl  text-black animate-fadeIn transition-transform duration-1000 ease-in-out  ">
+              <p className="  text-lg  md:text-xl  text-amber-950 animate-fadeIn transition-transform duration-1000 ease-in-out  ">
                 <br></br> Przyniosę Ci ulgę w bólu oraz napięciu stosując
                 techniki
                 <strong> masażu powięziowego</strong> i{" "}
@@ -65,7 +65,7 @@ const WelcomeAboutMe = () => {
                     href="https://www.instagram.com/stan_relaksu/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-2 py-3  rounded-xl hover:shadow-xl shadow-lg shadow-gray-400/75 text-sm lg:text-xl bg-gradient-to-r from-teal-500 via-teal-400/75 to-teal-500/75 bg-opacity-95 hover:bg-gray-400 font-bold  text-white hover:text-white hover:underline  focus:outline-none focus:shadow-outline"
+                    className="px-2 py-3  rounded-xl hover:shadow-xl shadow-lg shadow-gray-400/ text-sm lg:text-xl bg-primary hover:bg-primary/75  font-bold  text-white hover:text-white hover:underline  focus:outline-none focus:shadow-outline"
                   >
                     Sprawdź mój Instagramie
                   </Link>

@@ -1,6 +1,6 @@
 import OffersCardBody from "@/components/offers/OffersCardBody";
 
-import Contact from "@/components/homepage/Contact";
+import Contact from "@/components/contact/Contact";
 import WelcomCard from "@/components/layout/WelcomCard";
 import OffersCardFace from "@/components/offers/OffersCardFace";
 import WelcomeAboutMe from "@/components/homepage/WelcomeAboutMe";

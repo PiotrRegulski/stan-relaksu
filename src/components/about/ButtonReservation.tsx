@@ -7,7 +7,7 @@ const ButtonReservation = () => {
         href="https://booksy.com/"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:shadow-xl shadow-lg shadow-gray-400/75 text-lg text-center lg:text-xl text-white   rounded  hover:border-white  bg-teal-400 hover:bg-teal-400/75 px-6 py-2 font-bold   hover:text-gray-700   focus:outline-none focus:shadow-outline hover:underline "
+        className="hover:shadow-xl shadow-lg shadow-gray-400/75 text-lg text-center lg:text-xl text-white   rounded  hover:border-white  bg-primary hover:bg-primary/75 px-6 py-2 font-bold   hover:text-gray-700   focus:outline-none focus:shadow-outline hover:underline "
       >
         Zarezerwuj Wizytę
       </Link>
