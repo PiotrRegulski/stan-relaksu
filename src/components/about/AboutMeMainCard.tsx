@@ -16,10 +16,10 @@ const AboutMeMainCard = () => {
           </div>
         </div>
         <div className="flex flex-col ">
-          <h1 className=" text-xl text-left md:text-2xl font-semibold w-full py-6 px-2 text-amber-950">
+          <h1 className=" text-xl text-left md:text-2xl font-semibold w-full py-2 md:py-6 px-2 text-amber-950">
             Cześć, jestem Kinga
           </h1>
-          <div className="flex flex-col items-center justify-center  md:mx-6 my-2 px-4 py-12 shadow-md shadow-primary bg-secondary md:pr-48 md:rounded-r-full">
+          <div className="flex flex-col items-center justify-center  md:mx-6 my-2 px-4 py-4 lg:py-12 shadow-md shadow-gray-400 bg-secondary md:pr-48 md:rounded-r-full">
             <article className=" text-lg md:text-xl  md:text-left  text-pretty text-amber-950">
               <p className="  text-pretty ">
                 Ukończyłam<strong> fizjoterapię </strong>na Warszawskim
