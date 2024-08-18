@@ -27,7 +27,7 @@ const Contact = () => {
       <PageHeader id={"kontakt"}>Skontaktuj się</PageHeader>
       <div
         className="grid md:grid-cols-1
-        gap-4  items-center  md:my-12 mx-auto md:mx-12 "
+        gap-4  items-center my-4 lg:my-12 mx-auto md:mx-12 "
       >
         <div className="px-2 shadow-xl rounded border-4 bg-triadblue border-white  shadow-gray-400/75 w-full">
           <div className="text-xl font-bold md:mb-2 py-8 text-center text-amber-950 ">
@@ -59,8 +59,8 @@ const Contact = () => {
               logoSrc={"/logo-stan-relaksu-kolo.png"}
             />
           </div>
-          <div className="flex flex-col-reverse md:flex-row ">
-            <div className=" flex md:basis-1/2 justify-center items-center border-2 border-white shadow-lg shadow-gray-400 md:mx-12 md:my-6">
+          <div className="flex flex-col-reverse sm:flex-row ">
+            <div className=" flex sm:basis 1/3 md:basis-1/2 justify-center items-center border-2 border-white shadow-lg shadow-gray-400 sm:my-4 md:mx-12 lg:my-6">
               <MapComponent />
             </div>
             <div className="md:basis-1/2  mx-12 my-6 py-6">
@@ -68,7 +68,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 bg-secondary ">
+        <div className="  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 bg-secondary sm:mx-2 lg:my-6 md:mx-0 ">
           <h3 className="text-4xl font-bold mt-6 text-center">Napisz do nas</h3>
           <p className="text-sm text-gray-400 mt-4 text-center">
             Szybko odpowiemy na Twoje pytania.

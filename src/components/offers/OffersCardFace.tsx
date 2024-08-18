@@ -50,7 +50,7 @@ const OffersCardFace = () => {
           {categoryFace.map((offerItem) => (
             <div
               key={offerItem.id}
-              className="lg:mx-6 my-6 lg:w-auto  bg-white shadow-lg shadow-gray-500 animate-fadeIn rounded border-4 border-white transition-transform duration-200 ease-in-out hover:scale-[1.02] min-h-[50rem]"
+              className="mx-auto sm:mx-6  lg:mx-6 my-6 lg:w-auto  bg-white shadow-lg shadow-gray-500 animate-fadeIn rounded border-4 border-white transition-transform duration-200 ease-in-out hover:scale-[1.02] h-max"
             >
               <Link className="" href={`/offer/${offerItem.slug} `}>
               <div className="relative w-full h-96 mx-auto ">
@@ -63,19 +63,19 @@ const OffersCardFace = () => {
                   className="object-cover w-full h-full"
                 /></div>
                 
-                <div className="animate-fadeIn rounded border-4 border-white  w-full  ">
-                  <p className="lg:text-xl text-center font-bold md:my-4 md:px-3 md:py-4 py-2 font-[Lato] md:h-24 h-[6rem]   mx-3">
+                <div className="animate-fadeIn rounded px-4  w-full ">
+                  <p className="sm:text-xl text-center font-bold md:my-4 md:px-3 md:py-4 py-2 font-[Lato] md:h-24 h-[6rem]   mx-3">
                     {offerItem.title}
                   </p>
                   <p
-                    className={`${lora.className} h-48 text-justify  lg:text-xl lg:px-3 px-2 `}
+                    className={`${lora.className} h-48 text-justify  sm:text-xl lg:px-3 px-2 `}
                   >
                     {offerItem.contentFirst}
                   </p>
                 </div>
 
                 <div className="flex justify-center ">
-                  <button className=" flex underline decoration-solid underline-offset-8 font-semibold  text-center px-2 my-12  text-black hover:text-gray-400">
+                  <button className=" flex underline decoration-solid underline-offset-8 font-semibold  text-center my-4 md:my-14  text-black hover:text-gray-400">
                     {" "}
                     Kliknij i zobacz szczegóły
                   </button>
