@@ -7,7 +7,7 @@ const FaceImage = () => {
           src="/mainpagemasaztwaz.jpg"
           alt="Kinga Wołoszka- fizjoterapeutka"
           fill
-          className=" object-fill w-full h-full rounded-xl"
+          className=" object-cover w-full h-full rounded border-2 border-white"
           priority={true}
         />
    

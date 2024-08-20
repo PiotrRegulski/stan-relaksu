@@ -26,7 +26,7 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
   return (
     <div
       id="main-adventages"
-      className="flex flex-col min-h-max border-2 shadow-gray-400 bg-triadblue md:mx-36 md:my-4 mt-12"
+      className="flex flex-col min-h-max border-2 shadow-gray-400 bg-triadblue xl:mx-36 md:my-4 mt-12"
     >
       <div className="w-full py-[3em] px-[1em]">
         <h1 className={` text-center text-4xl font-bold`}>
@@ -35,14 +35,15 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
       </div>
 
       <div className="flex flex-col md:flex-row justify-center items-stretch mx-auto xl:mx-36 my-12">
-        <div className="flex flex-row md:flex-col   md:justify-between ">
+        <div className="flex flex-row md:flex-col   lg:justify-between ">
           <div className="  relative  mx-auto w-80 h-96  md:mx-6 my-2 md:my-6 md:flex items-center">
             <Image
               src={src}
               alt={alt}
               fill
-              className="object-cover h-full w-full shadow-lg shadow-gray-400 rounded-lg"
-              sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover h-80 w-90 shadow-lg shadow-gray-400 rounded-lg"
+              sizes="(max-width: 600px) 100vw,(max-width: 900px) 50vw, (max-width: 1200px) 50vw, 33vw"
+
             />
           </div>
           <div className=" hidden relative  mx-auto w-80 h-96  md:mx-6 md:my-6 md:flex items-center">
@@ -50,8 +51,9 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
               src={srcdetails}
               alt={alt}
               fill
-              className="object-cover h-full w-full shadow-lg shadow-gray-400 rounded-lg"
-              sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover h-80 w-90 shadow-lg shadow-gray-400 rounded-lg"
+              sizes="(max-width: 600px) 100vw,(max-width: 900px) 50vw, (max-width: 1200px) 50vw, 33vw"
+
             />
           </div>
         </div>
@@ -68,7 +70,8 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
               alt={alt}
               fill
               className="object-cover h-full w-full shadow-lg shadow-gray-400 rounded-lg"
-              sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 600px) 100vw,(max-width: 900px) 50vw, (max-width: 1200px) 50vw, 25vw"
+
             />
           </div>
         </div>

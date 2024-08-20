@@ -21,14 +21,14 @@ const NavbarMobile = () => {
           </Link>
         </div>
         <div className={`${CormorantInfant.className} my-4  text-center flex items-center`}>
-          <p>Gabinet terapii manualnej ciała i twarzy.</p>
+          <p className="font-semibold sm:text-xl md:text-2xl">Gabinet terapii manualnej ciała i twarzy.</p>
         </div>
         <button onClick={toggleMenu} className="w-12 h-12 my-4 ml-3">
           <HamburgerIcon />
         </button>
       </div>
 
-      <div className="lg:hidden fixed grid grid-cols-4 gap-1 bottom-[0] z-40 bg-primary w-screen h-[4rem]  ">
+      <div className="md:hidden fixed grid grid-cols-4 gap-1 bottom-[0] z-40 bg-primary w-screen h-[4rem]  ">
         <button className="animate-fadeIn   text-sm font-medium text-white shadow-lg shadow-gray-400/75 transition-transform duration-400  hover:scale-[1.02]">
           <Link
             href="https://booksy.com/"

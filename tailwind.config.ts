@@ -11,8 +11,8 @@ const config: Config = {
       sm: "640px",
       // => @media (min-width: 640px) { ... }
 
-      md: "1200px",
-      // => @media (min-width: 1200px) { ... }
+      md: "1048px",
+      // => @media (min-width: 1048px) { ... }
 
       lg: "1400px",
       // => @media (min-width: 1400px) { ... }

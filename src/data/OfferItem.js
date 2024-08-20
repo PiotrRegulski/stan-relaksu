@@ -536,8 +536,8 @@ export const OfferItem = [
     title: "Terapia manualna",
     image: "offers-photo/terapia-manualna-kolano.jpg",
     imagedetailf: "terapia-manualna/terapia-manualna-kolano-last.jpg",
-    imagedetails: "terapia-manualna/terapia-manualna-kolano-proceduref.jpg",
-    imagedetailt: "terapia-manualna/terapia-manualna-procedureb.jpg",
+    imagedetails: "terapia-manualna/terapia-manualna-kolano-procedureb.jpg",
+    imagedetailt: "terapia-manualna/terapia-manualna-proceduref.jpg",
     imagedetailfo: "terapia-manualna/terapia-manualna-kolano-klawiki-second.jpg",
     prices: [
       { id: "terapman30", priceName: "30 minut", price: "110 zł" },

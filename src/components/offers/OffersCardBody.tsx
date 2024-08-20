@@ -72,7 +72,7 @@ const OffersCardBody = () => {
                 </div>
 
                 <div className="flex justify-center  bg-white ">
-                  <button className=" flex underline decoration-solid underline-offset-8 font-semibold  text-center  my-4 md:my-12  text-black hover:text-gray-400">
+                  <button className=" flex underline decoration-solid underline-offset-8 font-semibold  text-center  my-4 md:my-20  text-black hover:text-gray-400">
                     {" "}
                     Kliknij i zobacz szczegóły
                   </button>
