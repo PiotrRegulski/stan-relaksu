@@ -18,7 +18,7 @@ const MobileNavLinks = () => {
         <li className="" key={link.href}>
           <Link
             href={link.href}
-            className=" flex justify-center px-1 py-1 text-xl  text-amber-950 w-full  hover:underline hover:underline-offset-8"
+            className=" flex justify-center px-1 py-1 text-xl  text-black w-full  hover:underline hover:underline-offset-8"
           >
             {link.label}
           </Link>

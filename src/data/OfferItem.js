@@ -17,7 +17,7 @@ export const OfferItem = [
       { title: "Prawdziwa perła w świecie pielęgnacji twarzy" },
       {
         description:
-          "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwa perłą w świecie pielęgnacji twarzy. Wywodzący się z Japoni niechirurgiczny lifting twarzy, który od wieków zachwyca swoją skutecznością.Podczas masażu dochodzi do głębokiego rozluźnienia i pobudzenia tkanek nie tylko warstwy podskórnej, ale także mięśni i powięzi twarzy dzięki czemu uzyskujemy efekt liftingu, wymodelowania rysów oraz odblokowania przepływu krążenia limfy.",
+          "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwa perłą w świecie pielęgnacji twarzy. Wywodzący się z Japoni niechirurgiczny lifting twarzy, który od wieków zachwyca swoją skutecznością. Podczas masażu dochodzi do głębokiego rozluźnienia i pobudzenia tkanek nie tylko warstwy podskórnej, ale także mięśni i powięzi twarzy dzięki czemu uzyskujemy efekt liftingu, wymodelowania rysów oraz odblokowania przepływu krążenia limfy.",
       },
       { title: "Zmniejszenie napięcia i stresu w całym ciele" },
       {

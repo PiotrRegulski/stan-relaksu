@@ -8,6 +8,7 @@ import BackLink from "@/components/layout/BackLink";
 import Recommendation from "@/components/offers/Recommendation";
 import OfferProcedure from "@/components/offers/OfferProcedure";
 import ButtonReservation from "@/components/about/ButtonReservation";
+import HighlightedParagraph from "@/components/layout/HighlightedParagraph";
 
 type AdvantageType = {
   title?: string;
@@ -101,7 +102,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     if (item.title) return item.title;
     if (item.description) return item.description;
   }) as [string, string, string, string, string, string];
-
+  const wordsToHighlight = ["kobido","kinesiotapingiem", "kinesiotaping ", "estetycznym","estetyczny","powięziowy" ,"stan", "stanu", "relaksu",];
   return (
     <>
       <PageHeader id={"offerDetail"}>{offerDetail.title}</PageHeader>
@@ -120,7 +121,8 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
           <div className="flex flex-col-reverse md:flex-row  bg-triadblue sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 lg:mx-24  rounded-lg">
             <div className="flex flex-col md:w-2/3 my-12 px-4 text-amber-950">
               <h3 className="font-bold text-2xl py-2 px-2 w-full">{title1}</h3>
-              <p className="text-lg">{description1}</p>
+
+              <HighlightedParagraph className="text-xl xl:ml-4" text={description1} wordsToHighlight={wordsToHighlight}/>
             </div>
 
             <div className="flex justify-center w-full md:w-1/2 items-center my-4 ">
@@ -152,7 +154,8 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             <div className="flex flex-col w-full justify-center items-center my-4">
               <div className="flex flex-col px-4 md:px-8 text-amber-950 ">
                 <h3 className="font-bold text-2xl py-2 w-full px-2">{title2}</h3>
-                <p className="text-xl py-2 mx-auto">{description2}</p>
+                <HighlightedParagraph className="text-xl py-2 mx-auto" text={description2} wordsToHighlight={wordsToHighlight}/>
+
               </div>
             </div>
           </div>

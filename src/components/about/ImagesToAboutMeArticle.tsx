@@ -26,7 +26,7 @@ const ImagesToAboutMeArticle = () => {
       {imgURLs.map((imgUrl) => (
         <div
           key={imgUrl.label}
-          className="relative  flex-shrink-0 w-96 md:w-[22rem] h-[34rem] md:h-[34rem] md:ml-5 items-center shadow-lg shadow-gray-400 border-white border-4 "
+          className="relative  flex-shrink-0 w-96 md:w-[22rem] h-[34rem] md:h-[34rem] lg:w-[21rem] md:ml-5 items-center shadow-lg shadow-gray-400 border-white border-4 "
         >
           
             {" "}

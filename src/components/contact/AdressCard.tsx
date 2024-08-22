@@ -22,7 +22,7 @@ const AdressCard = (props: any) => {
       </div>
 
       <div className="flex justify-center">
-        <p className="text-center text-amber-950 text-2xl font-semibold">
+        <p className="text-center  text-2xl font-semibold">
           {props.title}
         </p>
       </div>

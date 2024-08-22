@@ -17,10 +17,10 @@ const NavLinks = () => {
         <Link
           href={link.href}
           key={link.href}
-          className={` text-amber-950 md:text-md lg:text-lg  rounded-md  px-2 font-bold  bg-teal-950 bg-transparent lg:mt-4  ${
+          className={` text-black md:text-md lg:text-lg  rounded-md  px-2 font-bold  bg-teal-950 bg-transparent lg:mt-4  ${
             pathname === link.href
-              ? "px-2  shadow-lg text-amber-900  underline mt-1"
-              : "  hover:border-black hover:text-amber-700 hover:shadow-lg hover:underline"
+              ? "px-2  shadow-lg text-black  underline mt-1"
+              : "  hover:border-black hover:opacity-40 hover:shadow-lg hover:underline"
           }`}
         >
           {link.label}
