@@ -7,14 +7,14 @@ import { FaFacebook } from "react-icons/fa";
 
 const AdressCard = (props: any) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       <div className="flex justify-center my-4">
         <div className="grid-element">
           <Image
             src={props.logoSrc}
-            width={100}
-            height={100}
-            className="bg-mainthemelogo rounded-full shadow-gray-400 shadow-lg"
+            width={200}
+            height={300}
+            className=" rounded-full shadow-gray-400 shadow-md bg-white "
             alt="Screenshots of the dashboard project showing desktop version"
             priority={true}
           />

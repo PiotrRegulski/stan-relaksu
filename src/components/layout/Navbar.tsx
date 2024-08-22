@@ -11,7 +11,7 @@ const Navbar = () => {
           <Logo />
         </Link>
 
-        <p className=" font-[lato] font-bold lg:text-2xl   px-4 md:pt-3  mt-2    w-full  ">
+        <p className=" font-[lato] font-bold lg:text-xl  tracking-wide  px-4 md:pt-3  mt-2    w-full  ">
           Gabinet terapii manualnej ciała i twarzy.
         </p>
       </div>

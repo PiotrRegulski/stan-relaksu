@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { CormorantInfant } from "@/components/fonts";
 import Link from "next/link";
 import { useState, useCallback } from "react";
@@ -14,19 +15,34 @@ const NavbarMobile = () => {
   const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
   return (
     <>
-      <div className=" flex justify-between  md:hidden ">
-        <div className="my-4 ml-3 ">
+      <div className=" flex  justify-end  md:hidden ">
+        
+        {/* <div className="my-4 ml-3 flex flex-row ">
           <Link href={"/"}>
             <Logo />
           </Link>
-        </div>
-        <div className={`${CormorantInfant.className} my-4  text-center flex items-center`}>
-          <p className="font-semibold sm:text-xl md:text-2xl">Gabinet terapii manualnej ciała i twarzy.</p>
-        </div>
-        <button onClick={toggleMenu} className="w-12 h-12 my-4 ml-3">
+        </div> */}
+      
+        <button onClick={toggleMenu} className="w-12 h-12  ml-3">
           <HamburgerIcon />
         </button>
       </div>
+      <div className=" md:hidden relative w-full flex justify-center ">
+          <Image
+            src="/logo.png"
+            alt="Logo stan relaksu"
+            width={200}
+            height={200}
+            className="px-2"
+          />
+        </div>
+        <div
+          className={`${CormorantInfant.className} my-4  text-center flex justify-center w-full md:hidden`}
+        >
+          <p className="font-semibold sm:text-xl md:text-2xl">
+            Gabinet terapii manualnej ciała i twarzy.
+          </p>
+        </div>
 
       <div className="md:hidden fixed grid grid-cols-4 gap-1 bottom-[0] z-40 bg-primary w-screen h-[4rem]  ">
         <button className="animate-fadeIn   text-sm font-medium text-white shadow-lg shadow-gray-400/75 transition-transform duration-400  hover:scale-[1.02]">

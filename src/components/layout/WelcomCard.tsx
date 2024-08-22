@@ -19,7 +19,7 @@ const WelcomCard = () => {
       <div className=" absolute top-1 md:top-[4rem] left-0 md:left-[16%]   flex flex-col justify-center items-center h-full md:h-[80%] md:shadow-xl md:border-4 md:border-white shadow-gray-400/75 w-screen md:w-2/3  animate-fadeIn rounded-xl   transition-transform duration-400 ease-in-out bg-primary bg-opacity-40 ">
         <div className="flex flex-col lg:px-6 py-6 ">
           <div className={`${lato.className}   `}>
-            <div className="relative w-full flex justify-center mt-5 ">
+            <div className="hidden relative w-full md:flex justify-center mt-5 ">
               <Image
                 src="/logo.png"
                 alt="Logo stan relaksu"
@@ -29,7 +29,7 @@ const WelcomCard = () => {
               />
             </div>
 
-            <h2 className="font-bold text-xl lg:text-3xl text-white text-center bg-opacity-95 lg:bg-opacity-25 px-2 py-4 ">
+            <h2 className="font-bold text-xl lg:text-3xl text-white text-center bg-opacity-95 lg:bg-opacity-25 px-2 py-4 italic">
               Odprężenie ciała i ukojenie Duszy <br></br>  pozwól sobie na Stan Relaksu.
             </h2>
           </div>

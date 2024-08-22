@@ -29,7 +29,7 @@ const Contact = () => {
         className="grid md:grid-cols-1
         gap-4  items-center my-4 lg:my-12 mx-auto md:mx-12 "
       >
-        <div className="px-2 shadow-xl rounded border-4 bg-triadblue border-white  shadow-gray-400/75 w-full">
+        <div className="px-2 shadow-xl rounded border-4 bg-white border-white  shadow-gray-400/75 w-full">
           <div className="text-xl font-bold md:mb-2 py-8 text-center text-amber-950 ">
             <p className="text-2xl my-8">
               Gabinet mieści się przy <strong>studio jogi Jasna Asana. </strong>
@@ -56,7 +56,7 @@ const Contact = () => {
               linkTitle={"Zarezerwuj wizytę"}
               instaHref={"https://www.instagram.com/stan_relaksu/"}
               fbHref={"https://www.facebook.com/profile.php?id=61560021160720"}
-              logoSrc={"/logo-stan-relaksu-kolo.png"}
+              logoSrc={"/logo-stan-relaksu-kolo-tlo.png"}
             />
           </div>
           <div className="flex flex-col-reverse sm:flex-row ">
