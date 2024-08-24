@@ -5,6 +5,7 @@ import { Resend } from "resend";
 import PageHeader from "../homepage/PageHeader";
 import AdressCard from "./AdressCard";
 import DetailedAddress from "./DetailedAddress";
+import ContactForm from "./ContactForm";
 const Contact = () => {
   async function send(formData: any) {
     "use server";
@@ -41,7 +42,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="flex md:flex-row flex-col justify-around my-8 py-2 w-full bg-secondary ">
+          <div className="flex md:flex-row flex-col justify-around my-8 py-2 w-full bg-gray-200 ">
             <AdressCard
               title={"Jasna Asana Studio Jogi"}
               href={"https://www.jasnaasana.pl/grafik"}
@@ -68,7 +69,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 bg-secondary sm:mx-2 lg:my-6 md:mx-0 ">
+        <ContactForm/>
+        {/* <div className="  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 bg-secondary sm:mx-2 lg:my-6 md:mx-0 ">
           <h3 className="text-4xl font-bold mt-6 text-center">Napisz do nas</h3>
           <p className="text-sm text-gray-400 mt-4 text-center">
             Szybko odpowiemy na Twoje pytania.
@@ -126,7 +128,7 @@ const Contact = () => {
               Wyślij
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
     </div>
   );

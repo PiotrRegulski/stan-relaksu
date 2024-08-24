@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const AllPriceList = () => {
   return (
-    <div>
+    <div className="">
       {OfferItem.map((item) => (
         <div key={item.id} >
-          <Link href={`/offer/${item.slug}`}>
-            <h2 className="bg-teal-500 text-black text-center   text-sm lg:text-xl border rounded-full mx-auto px-8 py-2 font-bold mt-4">
+          <Link href={`/offer/${item.slug} `} className="hover:opacity-80">
+            <h2 className="bg-primary text-black text-center   text-sm lg:text-xl border rounded-full mx-auto px-8 py-2 font-bold mt-4">
               {item.title}
             </h2>
           </Link>
@@ -18,8 +18,8 @@ const AllPriceList = () => {
             {item.prices?.map((price) => (
               <li key={price.id} className="text-sm lg:text-xl mx-12 ">
                 <div className="flex justify-between font-semibold">
-                  <div>{price.priceName}</div>
-                  <div>{price.price}</div>
+                  <div className=""><p className="">{price.priceName}</p></div>
+                  <div className=""><p>{price.price}</p></div>
                 </div>
               </li>
             ))}

@@ -26,10 +26,10 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
   return (
     <div
       id="main-adventages"
-      className="flex flex-col min-h-max border-2 shadow-gray-400 bg-triadblue xl:mx-36 md:my-4 mt-12"
+      className="flex flex-col min-h-max border-2 shadow-gray-400 bg-white xl:mx-36 md:my-4 mt-12"
     >
       <div className="w-full py-[3em] px-[1em]">
-        <h1 className={` text-center text-4xl font-bold`}>
+        <h1 className={` text-center text-xl md:text-4xl font-bold`}>
           Jak przebiega zabieg?
         </h1>
       </div>

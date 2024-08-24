@@ -53,7 +53,7 @@ const WelcomeAboutMe = () => {
                   />
                 </div>
               </div>
-              <p className="  text-lg  sm:text-xl  0 animate-fadeIn transition-transform duration-1000 ease-in-out  ">
+              <p className="  text-lg  sm:text-xl   animate-fadeIn transition-transform duration-1000 ease-in-out  ">
                 <br></br> Przyniosę Ci ulgę w bólu oraz napięciu stosując
                 techniki
                 <strong> masażu powięziowego</strong> i{" "}

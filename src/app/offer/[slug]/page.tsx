@@ -97,42 +97,64 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
   const proceduresTable = offerDetail?.procedures;
   const descriptionTable = offerDetail?.advantages;
 
-  const [title1, description1, title2, description2, title3, description3] = 
-  descriptionTable?.map((item: { title?: string; description?: string }, index: number) => {
-    if (item.title) return item.title;
-    if (item.description) return item.description;
-  }) as [string, string, string, string, string, string];
-  const wordsToHighlight = ["kobido","kinesiotapingiem", "kinesiotaping ", "estetycznym","estetyczny","powięziowy" ,"stan", "stanu", "relaksu",];
+  const [title1, description1, title2, description2, title3, description3] =
+    descriptionTable?.map(
+      (item: { title?: string; description?: string }, index: number) => {
+        if (item.title) return item.title;
+        if (item.description) return item.description;
+      }
+    ) as [string, string, string, string, string, string];
+  const wordsToHighlight = [
+    "kobido",
+    "kinesiotapingiem",
+    "kinesiotaping ",
+    "estetycznym",
+    "estetyczny",
+    "powięziowy",
+    "stanu",
+    "relaksu",
+    "masaż",
+    "igłoterapia",
+    "estetyczna",
+    "odmłodzenia",
+    "tkanek",
+    "głębokich",
+    "złagodzenie",
+    "rozluźnianie"
+  ];
   return (
     <>
       <PageHeader id={"offerDetail"}>{offerDetail.title}</PageHeader>
 
       <section
         id="main-adventages"
-        className="flex flex-col min-h-max   xl:mx-36 md:my-4 md:mt-12 animate-fadeIn  transition-transform duration-200 ease-in-out"
+        className="flex flex-col min-h-max   xl:mx-36 my-4 md:my-4 md:mt-12 animate-fadeIn  transition-transform duration-200 ease-in-out"
       >
-        <div className="w-full py-[3rem] px-[2rem] shadow-md shadow-gray-400 ">
+        <div className="w-full py-[3rem] px-[2rem] shadow-md shadow-gray-400 bg-white ">
           <h1 className={`${lato.className} text-center text-xl font-bold`}>
             {firstAdventagesDescription}
           </h1>
         </div>
 
         <div className="flex flex-col ">
-          <div className="flex flex-col-reverse md:flex-row  bg-triadblue sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 lg:mx-24  rounded-lg">
-            <div className="flex flex-col md:w-2/3 my-12 px-4 text-amber-950">
+          <div className="flex flex-col-reverse md:flex-row  bg-white sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 lg:mx-24  rounded-lg">
+            <div className="flex flex-col md:w-2/3 my-12 px-4 ">
               <h3 className="font-bold text-2xl py-2 px-2 w-full">{title1}</h3>
 
-              <HighlightedParagraph className="text-xl xl:ml-4" text={description1} wordsToHighlight={wordsToHighlight}/>
+              <HighlightedParagraph
+                className="text-xl xl:ml-4"
+                text={description1}
+                wordsToHighlight={wordsToHighlight}
+              />
             </div>
 
-            <div className="flex justify-center w-full md:w-1/2 items-center my-4 ">
+            <div className="flex justify-center w-full md:w-1/2 items-center my-2 ">
               <div className="relative h-[20rem] w-full sm:h-[22rem] sm:w-[22rem]  lg:w-[20rem] lg:h-[20rem] ">
                 <Image
                   src={`/${offerDetail.image}`}
                   alt={offerDetail.title}
                   fill
                   className="object-fill sm:object-fill md:object-fill sm:rounded-full  sm:px-2 md:px-0 "
-                  
                   sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
@@ -146,42 +168,49 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                   alt={offerDetail.title}
                   fill
                   className="object-contain md:object-contain  px-2 rounded-lg "
-                 
                   sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
             </div>
             <div className="flex flex-col w-full justify-center items-center my-4">
               <div className="flex flex-col px-4 md:px-8 text-amber-950 ">
-                <h3 className="font-bold text-2xl py-2 w-full px-2">{title2}</h3>
-                <HighlightedParagraph className="text-xl py-2 mx-auto" text={description2} wordsToHighlight={wordsToHighlight}/>
-
+                <h3 className="font-bold text-2xl py-2 w-full px-2">
+                  {title2}
+                </h3>
+                <HighlightedParagraph
+                  className="text-xl py-2 mx-auto"
+                  text={description2}
+                  wordsToHighlight={wordsToHighlight}
+                />
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center mx-auto  sm:mx-6  lg:mx-24 shadow-lg bg-triadblue shadow-gray-400 my-4 rounded-lg">
-            <div className="flex flex-col md:flex-row">
-              <div className="lg:w-2/3 h-64 md:h-[20rem] lg:h-[20rem] md:my-4">
-                <div className="relative h-full w-full  md:mx-2  md:h-[20rem] md:w-[20rem] ">
+          <div className="flex flex-col justify-center items-center mx-auto  sm:mx-6  lg:mx-28 shadow-lg bg-white shadow-gray-400 my-4 rounded-lg">
+            <div className="flex flex-col md:flex-row lg:mx-6">
+              <div className="lg:w-1/2 h-64 md:h-[20rem] lg:h-[15rem] md:my-4">
+                <div className="relative h-full w-full  md:mx-2  md:h-full md:w-full ">
                   <Image
                     src={`/${offerDetail.imagedetailf}`}
                     alt={offerDetail.title}
                     fill
-                    className="object-cover sm:rounded-full sm:px-2 sm:object-cover md:object-fill md:rounded-full "
-                  
+                    className="object-cover sm:px-2 sm:object-contain sm:rounded-xl md:object-contain md:rounded-xl my-2 "
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
               </div>
-              <div className="flex flex-col justify-center items-center text-amber-950 my-8 sm:mx-4">
-                <div className="px-2"><h3 className="font-bold text-xl lg:text-center px-2 py-2 w-full">{title3}</h3>
-                <p className="text-lg lg:text-center py-2 px-2">{description3}</p></div>
-                
-
+              <div className="flex flex-col lg:w-full justify-center items-center  my-8 sm:mx-4 ">
+                <div className="px-2">
+                  <h3 className="font-bold text-xl lg:text-left px-2 py-2 w-full">
+                    {title3}
+                  </h3>
+                  <HighlightedParagraph
+                    className="text-lg lg:text-center py-2 px-2"
+                    text={description3}
+                    wordsToHighlight={wordsToHighlight}
+                  />
+                </div>
               </div>
-             
             </div>
-            
           </div>
 
           {/* <div className="  md:mt-4 ">

@@ -10,15 +10,15 @@ const AboutMeLastCard = () => {
       <div className="flex items-center">
         <ImagesToAboutMeLast />
       </div>
-      <div className="w-full flex flex-col justify-center lg:mb-12">
+      <div className="w-full flex flex-col justify-center lg:mb-12 mb-4">
         <article className="text-lg text-center md:text-2xl   mx-auto py-3 px-4 md:px-12  animate-fadeIn    transition-transform duration-1000 ease-in-out bg-white">
-          <p className="indent-8">
+          <p className="">
             Dzięki pracy w obrębie<strong> twarzy, głowy i szyi</strong> możesz
             uzyskać ulgę w bólach stawów skroniowo-żuchwowych, bólach głowy,
             migrenach, problemach z zatokami oraz uczuciem napięcia i zmęczenia.
             <br></br>
           </p>
-          <p className="indent-8 mt-4">
+          <p className=" my-4">
             Zajmę się zdrowiem i pięknym wyglądem Twojej twarzy poprzez{" "}
             <strong>masaż Kobido</strong> czy
             <strong>igłoterapię estetyczna</strong> oraz techniki manualne z
