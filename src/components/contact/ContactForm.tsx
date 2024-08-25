@@ -81,7 +81,7 @@ const ContactForm = () => {
       <h3 className=" text-2xl lg:text-4xl font-bold mt-6 text-center">
         Potrzebujesz więcej informacji
       </h3>
-      <p className="text-sm text-gray-800 mt-4 text-center">Napisz do mnie.</p>
+      <p className="text-sm text-gray-800 mt-4 text-center">Formularz kontaktowy.</p>
 
       <form
         onSubmit={onSubmit}
