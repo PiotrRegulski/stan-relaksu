@@ -78,7 +78,7 @@ const ContactForm = () => {
   return (
     <div className="  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 bg-secondary sm:mx-2 lg:my-6 md:mx-0 ">
       <h3 className="text-4xl font-bold mt-6 text-center">
-        Potzrebujesz więcej informacji
+        Potrzebujesz więcej informacji
       </h3>
       <p className="text-sm text-gray-800 mt-4 text-center">Napisz do mnie.</p>
 
