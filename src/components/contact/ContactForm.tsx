@@ -31,6 +31,27 @@ const ContactForm = () => {
       return;
     }
 
+    const name = formData.get("name")?.toString().trim();
+    const nameRegex = /^[a-zA-ZÀ-ÿ\s'-]+$/;
+  if (!name || !nameRegex.test(name) || name.length < 2) {
+    alert("Proszę wpisać poprawne imię.");
+    return;
+  }
+    // Sprawdź, czy pole textarea nie jest puste
+    const message = formData.get("message")?.toString().trim();
+    const messageRegex = /^[a-zA-ZÀ-ÿ\s'-]+$/;
+    if (!message || !messageRegex.test(message)) {
+      alert("Proszę wpisać sensowną wiadomość.");
+      return;
+    }
+
+    // Sprawdź, czy email jest poprawny
+  const email = formData.get("email")?.toString().trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!email || !emailRegex.test(email)) {
+    alert("Proszę wpisać poprawny adres email.");
+    return;
+  }
     const formValues: FormValues = Object.fromEntries(
       formData.entries()
     ) as unknown as FormValues;
@@ -78,10 +99,12 @@ const ContactForm = () => {
 
   return (
     <div className="  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 bg-secondary sm:mx-2 lg:my-6 md:mx-0 ">
-      <h3 className=" text-2xl lg:text-4xl font-bold mt-6 text-center">
+      <h3 className=" text-2xl lg:text-4xl font-bold mt-6 text-center text-black ">
         Potrzebujesz więcej informacji
       </h3>
-      <p className="text-sm text-gray-800 mt-4 text-center">Formularz kontaktowy.</p>
+      <p className="text-sm text-gray-800 mt-4 text-center">
+        Formularz kontaktowy.
+      </p>
 
       <form
         onSubmit={onSubmit}

@@ -14,7 +14,7 @@ const MainHeader = () => {
     <div className="relative border-b-4 ">
       <InfoBar/>
       <header
-        className={`${CormorantInfant.className}fixed flex flex-col justify-center bg-secondary `}
+        className={`${CormorantInfant.className}fixed flex flex-col justify-center bg-secondary md:bg-white `}
       >
        
         <NavbarMobile />

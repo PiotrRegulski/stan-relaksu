@@ -8,10 +8,10 @@ const WelcomCard = () => {
   return (
     <div
       id="welcome-card"
-      className=" relative flex h-[40rem] md:h-[40rem]  bg-white overflow-hidden rounded  "
+      className=" relative flex h-[35rem] md:h-[40rem]  bg-white overflow-hidden rounded  "
     >
       <div className=" flex justify-end w-full ">
-        <div className=" relative flex  w-screen shadow-xl shadow-white md:py-3 ">
+        <div className=" relative flex h-[70vh] w-full  sm:w-screen shadow-xl shadow-white md:py-3 ">
           <WelcomeCardImage />
         </div>
       </div>
@@ -29,7 +29,7 @@ const WelcomCard = () => {
               />
             </div>
 
-            <h2 className="font-bold text-xl lg:text-3xl text-white text-center bg-opacity-95 lg:bg-opacity-25 px-2 py-4 italic">
+            <h2 className="font-bold text-xl sm:text-2xl lg:text-3xl text-white text-center bg-opacity-95 lg:bg-opacity-25 px-2 py-4 italic">
               Odprężenie ciała i ukojenie Duszy <br></br> pozwól sobie na Stan
               Relaksu.
             </h2>

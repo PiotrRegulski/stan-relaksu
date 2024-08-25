@@ -19,7 +19,7 @@ const WelcomeAboutMe = () => {
             <div className=" flex flex-col md:flex-row md:h-[20rem]  justify-center bg-white  md:mx-4 rounded-xl  shadow-primary shadow-lg ">
               <div className="w-full md:w-full  md:mt-12 ">
                 <p
-                  className={`${lato.className} text-lg font-bold  sm:text-xl text-center tracking-wide leading-10 animate-fadeIn transition-transform duration-1000 ease-in-out pt-8 px-4 md:px-1`}
+                  className={`${lato.className} text-lg font-bold  sm:text-xl text-center tracking-wide leading-10 animate-fadeIn transition-transform duration-1000 ease-in-out sm:pt-6 md:pt-8 px-3 md:px-1`}
                 >
                   <strong>Stan Relaksu</strong> <br></br>to terapeutyczne
                   miejsce dla ciała stworzone z myślą o Tobie, osobie która chce

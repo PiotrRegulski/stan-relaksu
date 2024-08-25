@@ -16,7 +16,7 @@ const Contact = () => {
         gap-4  items-center my-4 lg:my-12 mx-auto md:mx-12 "
       >
         <div className="px-2 shadow-xl rounded border-4 bg-white border-white  shadow-gray-400/75 w-full">
-          <div className="text-xl font-bold md:mb-2 py-8 text-center text-amber-950 ">
+          <div className="text-xl font-bold md:mb-2 py-8 text-center ">
             <p className="text-2xl my-8">
               Gabinet mieści się przy <strong>studio jogi Jasna Asana. </strong>
             </p>{" "}
@@ -27,7 +27,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="flex md:flex-row flex-col justify-around my-8 py-2 w-full bg-gray-200 ">
+          <div className="flex md:flex-row flex-col justify-around my-8 py-2 w-full bg-secondary ">
             <AdressCard
               title={"Jasna Asana Studio Jogi"}
               href={"https://www.jasnaasana.pl/grafik"}
