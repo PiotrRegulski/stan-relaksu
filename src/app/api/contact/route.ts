@@ -24,6 +24,7 @@ export async function POST(req: NextRequest) {
     tls: {
       minVersion: 'TLSv1.2', // Wymuś użycie TLS 1.2 lub nowszego
     },
+    connectionTimeout: 30000, // 30 sekund
   });
 
   const mailOptions = {

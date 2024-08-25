@@ -42,6 +42,7 @@ const ContactForm = () => {
     const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 sekund
 
     try {
+      console.log("Wysyłanie żądania do /api/contact z danymi:", formValues);
       const response = await fetch("/api/contact/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -49,6 +50,7 @@ const ContactForm = () => {
         signal: controller.signal, // Dodaj signal do
       });
       clearTimeout(timeoutId); // Wyczyść timeout po zakończeniu żądania
+      console.log("Otrzymano odpowiedź z /api/contact:", response);
       if (!response.ok) {
         throw new Error(`HTTP error! Status:${response.status} `);
       }
