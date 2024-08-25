@@ -139,10 +139,10 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
         <div className="flex flex-col ">
           <div className="flex flex-col-reverse md:flex-row  bg-white sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 lg:mx-24  rounded-lg">
             <div className="flex flex-col md:w-2/3 my-12 px-4 ">
-              <h3 className="font-bold text-2xl py-2 px-2 w-full">{title1}</h3>
+              <h3 className="font-bold text-2xl py-2 w-full">{title1}</h3>
 
               <HighlightedParagraph
-                className="text-xl xl:ml-4"
+                className="text-xl xl:ml-4 pl-2"
                 text={description1}
                 wordsToHighlight={wordsToHighlight}
               />
@@ -174,18 +174,18 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             </div>
             <div className="flex flex-col w-full justify-center items-center my-4">
               <div className="flex flex-col px-4 md:px-8 text-amber-950 ">
-                <h3 className="font-bold text-2xl py-2 w-full px-2">
+                <h3 className="font-bold text-2xl py-2 w-full ">
                   {title2}
                 </h3>
                 <HighlightedParagraph
-                  className="text-xl py-2 mx-auto"
+                  className="text-xl py-2 pl-2 mx-auto"
                   text={description2}
                   wordsToHighlight={wordsToHighlight}
                 />
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center mx-auto  sm:mx-6  lg:mx-28 shadow-lg bg-white shadow-gray-400 my-4 rounded-lg">
+          <div className="flex flex-col justify-center items-center mx-auto  sm:mx-6  lg:mx-24 shadow-lg bg-white shadow-gray-400 my-4 rounded-lg">
             <div className="flex flex-col md:flex-row lg:mx-6">
               <div className="lg:w-1/2 h-64 md:h-[20rem] lg:h-[15rem] md:my-4">
                 <div className="relative h-full w-full  md:mx-2  md:h-full md:w-full ">
@@ -204,7 +204,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                     {title3}
                   </h3>
                   <HighlightedParagraph
-                    className="text-lg lg:text-center py-2 px-2"
+                    className="text-lg lg:text-center py-2  pl-2"
                     text={description3}
                     wordsToHighlight={wordsToHighlight}
                   />

@@ -32,7 +32,7 @@ const InfoBar = () => {
             
             <li>
               <Link
-                href={"mailto:contact@pathpicstales.com"}
+                href={"mailto:kontakt@stanrelaksu.pl"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" flex flex-row px-3  gap-2 hover:opacity-70 "
