@@ -7,22 +7,7 @@ import AdressCard from "./AdressCard";
 import DetailedAddress from "./DetailedAddress";
 import ContactForm from "./ContactForm";
 const Contact = () => {
-  async function send(formData: any) {
-    "use server";
-    const mailContent = formData.get("message") as string;
-    // const username = formData.get("username") as string;
-    const email = formData.get("userEmail") as string;
-    const subject = formData.get("subject") as string;
-
-    const resend = new Resend(process.env.RESEND_API_KEY);
-    const { data } = await resend.emails.send({
-      from: "StanRelaksu<onboarding@resend.dev>",
-      to: email,
-      subject: subject,
-      html: mailContent,
-    });
-    console.log("Email Send successfully", data);
-  }
+ 
   return (
     <div className="w-[100%] ">
       <PageHeader id={"kontakt"}>Skontaktuj się</PageHeader>
