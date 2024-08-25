@@ -13,7 +13,7 @@ const AdressCard = (props: any) => {
           <Image
             src={props.logoSrc}
             width={200}
-            height={300}
+            height={200}
             className=" rounded-full shadow-gray-400 shadow-md bg-white "
             alt="Screenshots of the dashboard project showing desktop version"
             priority={true}

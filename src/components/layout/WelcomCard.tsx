@@ -8,7 +8,7 @@ const WelcomCard = () => {
   return (
     <div
       id="welcome-card"
-      className=" relative flex h-[40rem] md:h-[40rem]  bg-headercolor overflow-hidden rounded  "
+      className=" relative flex h-[40rem] md:h-[40rem]  bg-white overflow-hidden rounded transition-transform duration-400 ease-in-out "
     >
       <div className=" flex justify-end w-full ">
         <div className=" relative flex  w-screen shadow-xl shadow-white md:py-3 ">
@@ -16,7 +16,7 @@ const WelcomCard = () => {
         </div>
       </div>
 
-      <div className=" absolute top-1 md:top-[4rem] left-0 md:left-[16%]   flex flex-col justify-center items-center h-full md:h-[80%] md:shadow-xl md:border-4 md:border-white shadow-gray-400/75 w-screen md:w-2/3  animate-fadeIn rounded-xl   transition-transform duration-400 ease-in-out bg-primary bg-opacity-40 ">
+      <div className=" absolute top-1 md:top-[4rem] left-0 md:left-[16%]   flex flex-col justify-center items-center h-full md:h-[80%] md:shadow-xl md:border-4 md:border-white shadow-gray-400/75 w-screen md:w-2/3   rounded-xl    bg-primary bg-opacity-40 ">
         <div className="flex flex-col lg:px-6 py-6 ">
           <div className={`${lato.className}   `}>
             <div className="hidden relative w-full md:flex justify-center mt-5 ">

@@ -2,6 +2,9 @@
 
 import React, { useState, FormEvent } from "react";
 import SuccessModal from "./SuccessModal";
+interface CustomError extends Error {
+  message: string;
+}
 interface FormValues {
   name: string;
   email: string;
@@ -35,13 +38,17 @@ const ContactForm = () => {
     setLoading(true);
     setSuccessMessage("");
     document.body.classList.add("loading");
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 sekund
 
     try {
       const response = await fetch("/api/contact/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formValues),
+        signal: controller.signal, // Dodaj signal do
       });
+      clearTimeout(timeoutId); // Wyczyść timeout po zakończeniu żądania
       if (!response.ok) {
         throw new Error(`HTTP error! Status:${response.status} `);
       }
@@ -49,9 +56,17 @@ const ContactForm = () => {
       setSuccessMessage("Dziękujemy. Twoja wiadomość została wysłana");
       setShowModal(true);
       form.reset();
-    } catch (err) {
-      console.error(err);
-      alert("Wystąpił błąd w wysyłaniu wiadomości...");
+    } catch (error) {
+      const customError = error as CustomError;
+      if (customError.name === "AbortError") {
+        console.error(
+          "Żądanie zostało anulowane z powodu przekroczenia limitu czasu."
+        );
+        alert("Żądanie zostało anulowane z powodu przekroczenia limitu czasu.");
+      } else {
+        console.error(customError);
+        alert("Wystąpił błąd w wysyłaniu wiadomości...");
+      }
       setLoading(false);
     } finally {
       document.body.classList.remove("loading"); // Usuń klasę loading z body
@@ -60,10 +75,10 @@ const ContactForm = () => {
 
   return (
     <div className="  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 bg-secondary sm:mx-2 lg:my-6 md:mx-0 ">
-      <h3 className="text-4xl font-bold mt-6 text-center">Potzrebujesz więcej informacji</h3>
-      <p className="text-sm text-gray-800 mt-4 text-center">
-      Napisz do mnie.
-      </p>
+      <h3 className="text-4xl font-bold mt-6 text-center">
+        Potzrebujesz więcej informacji
+      </h3>
+      <p className="text-sm text-gray-800 mt-4 text-center">Napisz do mnie.</p>
 
       <form
         onSubmit={onSubmit}
@@ -127,7 +142,11 @@ const ContactForm = () => {
         >
           Wyślij
         </button>
-        <SuccessModal show={showModal} onClose={() =>setShowModal(false)} message={successMessage}/>
+        <SuccessModal
+          show={showModal}
+          onClose={() => setShowModal(false)}
+          message={successMessage}
+        />
       </form>
     </div>
   );
