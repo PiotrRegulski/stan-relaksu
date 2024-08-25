@@ -20,7 +20,7 @@ const MainFooter = () => {
               <div className="">
                 <address className="text-white font-semibold ">
                   <Link
-                    href="mailto:contact@pathpicstales.com"
+                    href="mailto:kontakt@stanrelaksu.pl"
                     className="text-white text-sm   hover:text-red-800 transition duration-300  font-semibold "
                   >
                    kontakt@stanrelaksu.pl

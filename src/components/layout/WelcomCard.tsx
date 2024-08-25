@@ -8,7 +8,7 @@ const WelcomCard = () => {
   return (
     <div
       id="welcome-card"
-      className=" relative flex h-[40rem] md:h-[40rem]  bg-white overflow-hidden rounded transition-transform duration-400 ease-in-out "
+      className=" relative flex h-[40rem] md:h-[40rem]  bg-white overflow-hidden rounded  "
     >
       <div className=" flex justify-end w-full ">
         <div className=" relative flex  w-screen shadow-xl shadow-white md:py-3 ">
@@ -30,7 +30,8 @@ const WelcomCard = () => {
             </div>
 
             <h2 className="font-bold text-xl lg:text-3xl text-white text-center bg-opacity-95 lg:bg-opacity-25 px-2 py-4 italic">
-              Odprężenie ciała i ukojenie Duszy <br></br>  pozwól sobie na Stan Relaksu.
+              Odprężenie ciała i ukojenie Duszy <br></br> pozwól sobie na Stan
+              Relaksu.
             </h2>
           </div>
 
@@ -43,7 +44,6 @@ const WelcomCard = () => {
             >
               Zarezerwuj Wizytę
             </Link>
-           
           </div>
         </div>
       </div>
