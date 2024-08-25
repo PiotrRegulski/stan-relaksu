@@ -161,10 +161,11 @@ const ContactForm = () => {
           rows={5}
           className="w-[80vw] lg:w-full ml-6  rounded-md px-4 bg-white text-sm pt-3 outline-blue-500 shadow-inner focus:bg-white "
         ></textarea>
+        <div className="flex w-full"></div>
         <button
           type="submit"
           disabled={loading}
-          className=" mx-auto lg:mx-1 hover:shadow-xl shadow-md shadow-gray-400 lg:text-xl  border-2 rounded border-gray-200 bg-white hover:border-blue-500 px-4 py-2 lg:px-6 lg:py-4 mb-24 font-bold   hover:text-black focus:outline-none focus:shadow-outline"
+          className=" mx-auto lg:mx-1 hover:shadow-xl w-48 shadow-md shadow-gray-400 lg:text-xl  border-2 rounded border-gray-200 bg-white hover:border-blue-500 px-4 py-2 lg:px-6 lg:py-4 mb-24 font-bold   hover:text-black focus:outline-none focus:shadow-outline"
         >
           Wyślij
         </button>

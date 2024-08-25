@@ -42,7 +42,7 @@ const OffersCardBody = () => {
     <>
       <PageHeader id={"offer-title"}>Zabiegi na Ciało</PageHeader>
       <div className="flex justify-center w-full my-12 ">
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-2 lg:gap-2 w-full ">
+        <section className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-2 lg:gap-1 w-full ">
           {categoryBody.map((offerItem) => (
             <div
               key={offerItem.id}

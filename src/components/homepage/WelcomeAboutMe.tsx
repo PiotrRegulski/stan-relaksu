@@ -9,8 +9,8 @@ const WelcomeAboutMe = () => {
   return (
     <>
       <div className=" relative flex w-full bg-secondary ">
-        <div className="hidden lg:flex  basis-1/6 ">
-          <div className=" relative  md:max-w-[32rem] w-[30rem] h-[20rem] md:h-[40rem] shadow-gray-400 shadow-lg  my-12  mx-1 rounded-xl bg-white">
+        <div className="hidden md:flex  basis-1/6 ">
+          <div className=" relative  md:max-w-[26rem] w-[30rem] h-[20rem] md:h-[40rem] shadow-gray-400 shadow-lg  my-12  mx-1 rounded-xl bg-white">
             <AboutImageCard />
           </div>
         </div>
@@ -24,7 +24,7 @@ const WelcomeAboutMe = () => {
                   <strong>Stan Relaksu</strong> <br></br>to terapeutyczne
                   miejsce dla ciała stworzone z myślą o Tobie, osobie która chce
                   o zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.
-                  <span className="flex justify-center md:justify-end my-4 md:my-5 text-sm mx-auto ">
+                  <span className="flex justify-center md:justify-end my-4 md:mr-5 text-sm mx-auto ">
                     <Link
                       href="/about"
                       className=" px-2 py-2 md:px-4 my-4 md:py-2  rounded-xl hover:shadow-xl shadow-lg shadow-gray-400/75 text-sm lg:text-xl bg-primary hover:bg-opacity-70  font-bold hover:underline text-white hover:text-white  focus:outline-none focus:shadow-outline"
@@ -42,17 +42,20 @@ const WelcomeAboutMe = () => {
             </div>
 
             <div className=" bg-white mx-auto my-4 px-4 md:px-12 md:mx-4 md:mt-12 shadow-primary shadow-lg  rounded-xl">
-              <p className="font-bold  text-xl sm:text-2xl md:text-3xl mx-auto md:px-10 py-10 ">
-                Cześć, jestem Kinga.
-              </p>
-              <div className="flex lg:hidden mx-auto w-full ">
-                <div className=" relative mx-auto h-48 w-48 sm:w-72 sm:h-72">
+              <div className="flex md:hidden mx-auto w-full ">
+                <div className=" relative mx-auto h-48 w-48 sm:w-72 sm:h-72 my-2">
                   <ImageCard
                     src={"/hero-circle.png"}
                     alt={"Twórca gabientu Stan Relaksu Kinga Wołoszka"}
                   />
                 </div>
+              
               </div>
+              <div>
+                  <p className="font-bold  text-xl sm:text-2xl md:text-2xl mx-auto pt-2 ">
+                    Cześć, jestem Kinga.
+                  </p>
+                </div>
               <p className="  text-lg  sm:text-xl   animate-fadeIn transition-transform duration-1000 ease-in-out  ">
                 <br></br> Przyniosę Ci ulgę w bólu oraz napięciu stosując
                 techniki

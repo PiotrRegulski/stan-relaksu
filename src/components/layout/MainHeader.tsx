@@ -14,13 +14,13 @@ const MainHeader = () => {
     <div className="relative border-b-4 ">
       <InfoBar/>
       <header
-        className={`${CormorantInfant.className}fixed flex flex-col justify-center bg-secondary md:bg-white `}
+        className={`${CormorantInfant.className}fixed flex flex-col justify-center bg-secondary sm:bg-white `}
       >
        
         <NavbarMobile />
         <div className="  flex lg:gap-24 ">
           <div
-            className={`${CormorantInfant.className} hidden md:flex w-screen `}
+            className={`${CormorantInfant.className} hidden sm:flex w-screen `}
           >
             <Navbar />
           </div>

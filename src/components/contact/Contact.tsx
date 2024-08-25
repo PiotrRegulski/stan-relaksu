@@ -49,7 +49,7 @@ const Contact = () => {
             <div className=" flex sm:basis 1/3 md:basis-1/2 justify-center items-center border-2 border-white shadow-lg shadow-gray-400 sm:my-4 md:mx-12 lg:my-6">
               <MapComponent />
             </div>
-            <div className="md:basis-1/2  lg:mx-12 my-6 py-6">
+            <div className="md:basis-1/2 ml-3  lg:mx-12 my-6 py-6">
               <DetailedAddress />
             </div>
           </div>

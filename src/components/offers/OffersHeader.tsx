@@ -9,11 +9,11 @@ const OffersHeader = () => {
       <PageHeader id={"offer"}>Oferta</PageHeader>
       <div className=" relative flex flex-col md:flex-row  bg-secondary  mb-4 lg:mx-[5rem] my-5 rounded">
         <div className="absolute  flex flex-col  z-30 md:left-[10rem] md:right-[10rem] md:top-[25%] bg-secondary bg-opacity-90 border-white border-4 rounded-xl h-full md:h-[20rem] justify-center">
-          <p className="w-full tracking-wide text-center  text-xl font-[Lato] font-bold md:text-4xl  indent-4 animate-fadeIn rounded-xl transition-transform duration-1000 ease-in-out  ">
+          <p className="w-full tracking-wide text-center  text-xl font-[Lato] font-bold md:3xl lg:text-4xl  indent-4 animate-fadeIn rounded-xl transition-transform duration-1000 ease-in-out  ">
             Czekam na Ciebie z terapią manualną, masażem powięziowym, masażem
             tkanek głębokich.
           </p>
-          <p className=" w-full tracking-wide text-center text-xl font-[Lato] md:text-2xl   mx-2  sm:px-1 sm:py-1 indent-4 animate-fadeIn rounded-xl transition-transform duration-1000 ease-in-out  ">
+          <p className=" w-full tracking-wide text-center text-xl font-[Lato] md:text-xl   mx-2  sm:px-1 sm:py-1 indent-4 animate-fadeIn rounded-xl transition-transform duration-1000 ease-in-out  ">
             Głęboko odprężającymi technikami masażu twarzy Kobido, masażu
             relaksacyjnego, które pozwolą Ci osiągnąć<strong> Stan Relaksu</strong>.</p> 
         </div>

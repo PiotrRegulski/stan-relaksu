@@ -11,20 +11,20 @@ const WelcomCard = () => {
       className=" relative flex h-[35rem] md:h-[40rem]  bg-white overflow-hidden rounded  "
     >
       <div className=" flex justify-end w-full ">
-        <div className=" relative flex h-[70vh] w-full  sm:w-screen shadow-xl shadow-white md:py-3 ">
+        <div className=" relative flex h-[70vh] sm:h-[100vh] w-full  sm:w-screen shadow-xl shadow-white md:py-3 ">
           <WelcomeCardImage />
         </div>
       </div>
 
-      <div className=" absolute top-1 md:top-[4rem] left-0 md:left-[16%]   flex flex-col justify-center items-center h-full md:h-[80%] md:shadow-xl md:border-4 md:border-white shadow-gray-400/75 w-screen md:w-2/3   rounded-xl    bg-primary bg-opacity-40 ">
+      <div className=" absolute top-1 md:top-[4rem] left-0 md:left-[16%]   flex flex-col justify-center items-center h-full md:h-[70%] md:shadow-xl md:border-4 md:border-white shadow-gray-400/75 w-screen md:w-2/3   rounded-xl    bg-primary bg-opacity-40 ">
         <div className="flex flex-col lg:px-6 py-6 ">
           <div className={`${lato.className}   `}>
-            <div className="hidden relative w-full md:flex justify-center mt-5 ">
+            <div className="hidden relative w-full sm:flex justify-center mt-5  ">
               <Image
                 src="/logo.png"
                 alt="Logo stan relaksu"
-                width={500}
-                height={500}
+                width={300}
+                height={300}
                 className="px-2"
               />
             </div>
