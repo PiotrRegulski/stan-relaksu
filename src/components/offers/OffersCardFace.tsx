@@ -60,6 +60,7 @@ const OffersCardFace = () => {
                   fill
                   // width={700}
                   // height={467}
+                  sizes="(max-width: 600px) 100vw, 50vw"
                   className="object-cover w-full h-full"
                 /></div>
                 

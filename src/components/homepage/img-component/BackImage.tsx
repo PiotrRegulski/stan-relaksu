@@ -6,6 +6,7 @@ const BackImage = () => {
       src="/mainpagemasazplecy.jpg"
       alt="Kinga Wołoszka- fizjoterapeutka"
       fill
+      sizes="(max-width: 600px) 100vw, 50vw"
       className=" object-fill h-full w-full"
       priority={true}
     />

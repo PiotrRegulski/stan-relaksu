@@ -39,7 +39,7 @@ const ContactForm = () => {
     setSuccessMessage("");
     document.body.classList.add("loading");
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 sekund
+    const timeoutId = setTimeout(() => controller.abort(), 40000); // 10 sekund
 
     try {
       console.log("Wysyłanie żądania do /api/contact z danymi:", formValues);

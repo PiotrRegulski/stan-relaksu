@@ -6,6 +6,7 @@ const AboutImageCard = () => {
       src="/hero.jpg"
       alt="Kinga Wołoszka- fizjoterapeutka"
       fill
+      sizes="(max-width: 600px) 100vw, 50vw"
       className="  object-cover objet-top md:object-fill rounded-full  md:rounded-xl"
       priority={true}
     />

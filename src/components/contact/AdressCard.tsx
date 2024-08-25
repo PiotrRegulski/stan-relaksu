@@ -9,14 +9,17 @@ const AdressCard = (props: any) => {
   return (
     <div className="flex flex-col ">
       <div className="flex justify-center my-4">
-        <div className="grid-element">
+        <div className="relative w-auto h-auto">
           <Image
             src={props.logoSrc}
             width={200}
             height={200}
+            
+            
             className=" rounded-full shadow-gray-400 shadow-md bg-white "
             alt="Screenshots of the dashboard project showing desktop version"
             priority={true}
+             style={{ width: 'auto', height: 'auto' }}
           />
         </div>
       </div>

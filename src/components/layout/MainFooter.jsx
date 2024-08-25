@@ -4,7 +4,7 @@ import ImageCard from "../about/ImageCard";
 const MainFooter = () => {
   return (
     <>
-      <div className="relative h-[9rem] lg:h-[6rem]">
+      <div className="relative h-[9rem] md:h-[5rem] lg:h-[6rem]">
         <ImageCard
           src={"/do-ozdoby-stopka.jpg"}
           alt={"wystrój gabinetu masażu "}
