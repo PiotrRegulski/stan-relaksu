@@ -7,7 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 
 const AdressCard = (props: any) => {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col gap-4 ">
       <div className="flex justify-center my-4">
         <div className="relative w-auto h-auto">
           <Image

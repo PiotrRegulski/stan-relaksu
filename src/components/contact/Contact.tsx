@@ -9,11 +9,11 @@ import ContactForm from "./ContactForm";
 const Contact = () => {
  
   return (
-    <div className="w-[100%] ">
+    <div className="w-full">
       <PageHeader id={"kontakt"}>Skontaktuj się</PageHeader>
       <div
         className="grid md:grid-cols-1
-        gap-4  items-center my-4 lg:my-12 mx-auto md:mx-12 "
+        gap-4  items-center my-4 lg:my-4 mx-auto lg:mx-6 "
       >
         <div className="px-2 shadow-xl rounded border-4 bg-white border-white  shadow-gray-400/75 w-full">
           <div className="text-xl font-bold md:mb-2 py-8 text-center ">
@@ -46,10 +46,10 @@ const Contact = () => {
             />
           </div>
           <div className="flex flex-col-reverse sm:flex-row ">
-            <div className=" flex sm:basis 1/3 md:basis-1/2 justify-center items-center border-2 border-white shadow-lg shadow-gray-400 sm:my-4 md:mx-12 lg:my-6">
+            <div className=" flex sm:basis 1/3 md:basis-1/2 justify-center items-center border-2 border-white shadow-lg shadow-gray-400 sm:my-4 md:mx-6 lg:my-6">
               <MapComponent />
             </div>
-            <div className="md:basis-1/2 ml-3  lg:mx-12 my-6 py-6">
+            <div className="md:basis-1/2 ml-3 md:ml-0  lg:mx-12 my-6 md:my-2 py-6">
               <DetailedAddress />
             </div>
           </div>

@@ -8,7 +8,7 @@ import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { BsArrowUpRightSquare } from "react-icons/bs";
 const InfoBar = () => {
   return (
-    <div className=" hidden sm:flex    font-semibold text-md  px-4 min-w-max  bg-white  ">
+    <div className=" hidden md:flex    font-semibold text-md  px-4 min-w-max  bg-white  ">
       <div className="flex justify-between w-full text-sm">
         <div>
           <ul className="">

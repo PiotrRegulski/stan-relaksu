@@ -98,18 +98,19 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 bg-secondary sm:mx-2 lg:my-6 md:mx-0 ">
+    <div className=" flex flex-col justify-center  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 bg-secondary sm:mx-2 lg:my-6 md:mx-0 ">
       <h3 className=" text-2xl lg:text-4xl font-bold mt-6 text-center text-black ">
-        Potrzebujesz więcej informacji
+        Potrzebujesz więcej informacji.
       </h3>
       <p className="text-sm text-gray-800 mt-4 text-center">
-        Formularz kontaktowy.
+        Skontaktuj się ze mną przez social-media lub formularz kontaktowy.
       </p>
 
       <form
         onSubmit={onSubmit}
-        className="flex flex-col mt-8 space-y-4 lg:mx-96"
+        className="flex flex-col mt-8 space-y-4 mx-auto   "
       >
+        
         <input
           type="text"
           name="honeypot"
@@ -126,7 +127,7 @@ const ContactForm = () => {
           required
           placeholder="imię"
           name="name"
-          className="w-2/3 lg:w-full ml-6 rounded-md py-3 px-4 bg-white text-sm outline-primary shadow-inner focus:bg-white "
+          className="w-[80vw] lg:w-[60vw] ml-2 rounded-md py-3 px-4 bg-white text-sm outline-primary shadow-inner focus:bg-white "
         ></input>
         <label htmlFor="email" className="  lg:text-xl font-bold ">
           Wpisz E-mail do kontaktu:
@@ -137,7 +138,7 @@ const ContactForm = () => {
           required
           placeholder="E-mail"
           name="email"
-          className="w-2/3 lg:w-full ml-6  rounded-md py-3 px-4 bg-bg-white text-sm outline-primary shadow-inner focus:bg-white "
+          className="w-[80vw]  lg:w-full ml-2  rounded-md py-3 px-4 bg-bg-white text-sm outline-primary shadow-inner focus:bg-white "
         ></input>
         <label htmlFor="subject" className="lg:text-xl font-bold ">
           Temat:
@@ -148,7 +149,7 @@ const ContactForm = () => {
           required
           placeholder="Temat"
           name="subject"
-          className="w-2/3 lg:w-full ml-6  rounded-md py-3 px-4 bg-white text-sm outline-primary shadow-inner focus:bg-white "
+          className="w-[80vw]  lg:w-full ml-2  rounded-md py-3 px-4 bg-white text-sm outline-primary shadow-inner focus:bg-white "
         ></input>
         <label htmlFor="message" className="lg:text-xl font-bold ">
           Treść wiadomości:
@@ -159,13 +160,13 @@ const ContactForm = () => {
           required
           placeholder="Message"
           rows={5}
-          className="w-[80vw] lg:w-full ml-6  rounded-md px-4 bg-white text-sm pt-3 outline-blue-500 shadow-inner focus:bg-white "
+          className="w-[80vw] lg:w-full ml-2  rounded-md px-4 bg-white text-sm pt-3 outline-blue-500 shadow-inner focus:bg-white "
         ></textarea>
         <div className="flex w-full"></div>
         <button
           type="submit"
           disabled={loading}
-          className=" mx-auto lg:mx-1 hover:shadow-xl w-48 shadow-md shadow-gray-400 lg:text-xl  border-2 rounded border-gray-200 bg-white hover:border-blue-500 px-4 py-2 lg:px-6 lg:py-4 mb-24 font-bold   hover:text-black focus:outline-none focus:shadow-outline"
+          className=" mx-auto  hover:shadow-xl w-48 shadow-md shadow-gray-400 lg:text-lg  border-2 rounded border-gray-200 bg-white hover:border-blue-500 px-4 py-2 lg:px-4 lg:py-2 mb-24 font-bold   hover:text-black focus:outline-none focus:shadow-outline"
         >
           Wyślij
         </button>

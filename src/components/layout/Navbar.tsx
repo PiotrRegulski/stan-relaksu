@@ -11,14 +11,14 @@ const Navbar = () => {
           <Logo />
         </Link>
 
-        <p className=" font-[lato] font-bold sm:text-sm md:text-md lg:text-xl  tracking-wide  px-4 md:pt-3  mt-2    w-full  ">
+        <p className=" font-[lato] font-bold sm:text-sm md:text-sm lg:text-lg tracking-tight  lg:tracking-wide  px-4 md:pt-3  mt-2    w-full  ">
           Gabinet terapii manualnej ciała i twarzy.
         </p>
       </div>
 
-      <div className=" flex flex-col  basis-1/2 justify-center  ">
+      <div className=" flex flex-col  basis-1/2 justify-center items-center ">
         
-        <div className="flex sm:gap-2 md:gap-4  justify-center w-full">
+        <div className="flex sm:gap-2 md:gap-2  justify-center w-full">
           <NavLinks />
         </div>
       </div>

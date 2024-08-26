@@ -15,7 +15,7 @@ const NavbarMobile = () => {
   const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
   return (
     <>
-      <div className=" flex  justify-end  sm:hidden ">
+      <div className=" flex  justify-end  md:hidden ">
         
         {/* <div className="my-4 ml-3 flex flex-row ">
           <Link href={"/"}>
@@ -27,7 +27,7 @@ const NavbarMobile = () => {
           <HamburgerIcon />
         </button>
       </div>
-      <div className=" sm:hidden relative w-full flex justify-center ">
+      <div className=" md:hidden relative w-full flex justify-center ">
           <Image
             src="/logo.png"
             alt="Logo stan relaksu"
@@ -37,14 +37,14 @@ const NavbarMobile = () => {
           />
         </div>
         <div
-          className={`${CormorantInfant.className} my-4  text-center flex justify-center w-full sm:hidden`}
+          className={`${CormorantInfant.className} my-4  text-center flex justify-center w-full md:hidden`}
         >
           <p className="font-semibold sm:text-xl md:text-2xl">
             Gabinet terapii manualnej ciała i twarzy.
           </p>
         </div>
 
-      <div className="sm:hidden fixed grid grid-cols-4 gap-1 bottom-[0] z-40 bg-primary w-screen h-[4rem]  ">
+      <div className="md:hidden fixed grid grid-cols-4 gap-1 bottom-[0] z-40 bg-primary w-screen h-[4rem]  ">
         <button className="animate-fadeIn   text-sm font-medium text-white shadow-lg shadow-gray-400/75 transition-transform duration-400  hover:scale-[1.02]">
           <Link
             href="https://booksy.com/"
@@ -56,7 +56,7 @@ const NavbarMobile = () => {
             </div>
           </Link>
         </button>
-        <button className=" sm:hidden   w-full  text-white shadow-xl  transition-transform duration-200 ease-in-out hover:scale-[1.09] ">
+        <button className=" md:hidden   w-full  text-white shadow-xl  transition-transform duration-200 ease-in-out hover:scale-[1.09] ">
           <div className="flex justify-center">
             {" "}
             <Link href="tel:885987321 ">
@@ -91,7 +91,7 @@ const NavbarMobile = () => {
       </div>
 
       <div
-        className={`${CormorantInfant.className} flex flex-wrap w-full justify-evenly sm:hidden`}
+        className={`${CormorantInfant.className} flex flex-wrap w-full justify-evenly md:hidden`}
       >
         <nav id="mobile-nav" className="w-screen sm:hidden">
           <ul
