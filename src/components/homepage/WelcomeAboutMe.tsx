@@ -5,6 +5,8 @@ import ImageCard from "../about/ImageCard";
 import { lato } from "../fonts";
 import Link from "next/link";
 
+
+
 const WelcomeAboutMe = () => {
   return (
     <>
@@ -77,6 +79,8 @@ const WelcomeAboutMe = () => {
               </p>
               </div>
             </div>
+           
+            
           </div>
         </div>
       </div>

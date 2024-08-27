@@ -137,8 +137,8 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
         </div>
 
         <div className="flex flex-col ">
-          <div className="flex flex-col-reverse md:flex-row  bg-white sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 lg:mx-24  rounded-lg">
-            <div className="flex flex-col md:w-2/3 my-12 px-4 ">
+          <div className="flex flex-col-reverse lg:flex-row  bg-white sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 lg:mx-24  rounded-lg">
+            <div className="flex flex-col lg:w-2/3 my-6 px-4 ">
               <h3 className="font-bold text-2xl py-2 w-full">{title1}</h3>
 
               <HighlightedParagraph
@@ -148,8 +148,8 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
               />
             </div>
 
-            <div className="flex justify-center w-full md:w-1/2 items-center my-2 ">
-              <div className="relative h-[20rem] w-full sm:h-[22rem] sm:w-[22rem]  lg:w-[20rem] lg:h-[20rem] ">
+            <div className="flex justify-center w-full lg:w-1/2 items-center  ">
+              <div className="relative h-[20rem] w-full sm:h-[22rem] sm:w-[22rem] md:h-[18rem] md:w-[18rem] lg:w-[20rem] lg:h-[20rem] md:my-3">
                 <Image
                   src={`/${offerDetail.image}`}
                   alt={offerDetail.title}
@@ -162,7 +162,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
           </div>
           <div className="flex flex-col md:flex-row    bg-primary  md:my-4 ">
             <div className=" ">
-              <div className="relative h-[16rem] md:h-[22rem] sm:w-auto md:min-w-[28rem]  mx-auto my-2 md:my-2 md:mx-2  ">
+              <div className="relative h-[16rem] md:h-[22rem] sm:w-auto md:min-w-[21rem]  mx-auto my-2 md:my-2 md:mx-2  ">
                 <Image
                   src={`/${offerDetail.imagedetailfo}`}
                   alt={offerDetail.title}
@@ -185,30 +185,27 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center mx-auto  sm:mx-6  lg:mx-24 shadow-lg bg-white shadow-gray-400 my-4 rounded-lg">
-            <div className="flex flex-col md:flex-row lg:mx-6">
-              <div className="lg:w-1/2 h-64 md:h-[20rem] lg:h-[15rem] md:my-4">
-                <div className="relative h-full w-full  md:mx-2  md:h-full md:w-full ">
-                  <Image
-                    src={`/${offerDetail.imagedetailf}`}
-                    alt={offerDetail.title}
-                    fill
-                    className="object-cover sm:px-2 sm:object-contain sm:rounded-xl md:object-contain md:rounded-xl my-2 "
-                    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col lg:w-full justify-center items-center  my-8 sm:mx-4 ">
-                <div className="px-2">
-                  <h3 className="font-bold text-xl lg:text-left px-2 py-2 w-full">
-                    {title3}
-                  </h3>
-                  <HighlightedParagraph
-                    className="text-lg lg:text-center py-2  pl-2"
-                    text={description3}
-                    wordsToHighlight={wordsToHighlight}
-                  />
-                </div>
+          
+          <div className="flex flex-col lg:flex-row  bg-white sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 lg:mx-24  rounded-lg">
+            <div className="flex flex-col lg:w-2/3 my-6 px-4 ">
+              <h3 className="font-bold text-2xl py-2 w-full">{title3}</h3>
+
+              <HighlightedParagraph
+                className="text-xl xl:ml-4 pl-2"
+                text={description3}
+                wordsToHighlight={wordsToHighlight}
+              />
+            </div>
+
+            <div className="flex justify-center w-full lg:w-1/2 items-center  ">
+              <div className="relative h-[20rem] w-full sm:h-[22rem] sm:w-[22rem] md:h-[20rem] md:w-[30rem] lg:w-[20rem] lg:h-[20rem] md:my-3">
+                <Image
+                  src={`/${offerDetail.imagedetailf}`}
+                  alt={offerDetail.title}
+                  fill
+                  className="object-fill sm:object-fill md:object-cover  sm:px-2 md:px-0 "
+                  sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
               </div>
             </div>
           </div>

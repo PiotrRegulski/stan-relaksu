@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import MainHeader from "@/components/layout/MainHeader";
-import MainFooter from '@/components/layout/MainFooter'
-import {lato } from "@/components/fonts";
+import MainFooter from "@/components/layout/MainFooter";
+import { lato } from "@/components/fonts";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   description: "Gabinet terapii manualnej ciała i twarzy.",
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -19,11 +18,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={`${lato.className} antialiased  overflow-y-scroll overflow-x-hidden bg-primary max-w-[1920px]  xl:mx-[5%] 2xl:mx-[5%]  my-1  `}>
+      <body
+        className={`${lato.className} antialiased  overflow-y-scroll overflow-x-hidden bg-primary max-w-[1920px]  xl:mx-[5%] 2xl:mx-[5%]  my-1  `}
+      >
         <MainHeader />
-        <main className="overflow-hidden flex flex-col bg-secondary shadow-lg shadow-white    mx-auto "> {children}</main>
-       
-        <MainFooter/>
+        <main className="overflow-hidden flex flex-col bg-secondary shadow-lg shadow-white    mx-auto ">
+          {" "}
+          {children}
+        </main>
+
+        <MainFooter />
       </body>
     </html>
   );

@@ -38,7 +38,7 @@ const Contact = () => {
             />
             <AdressCard
               title={"Gabient Stan Relaksu"}
-              href={"https://booksy.com/"}
+              href={"https://booksy.com/pl-pl/257898_stan-relaksu-holistyczny-gabinet-terapii-i-masazu_masaz_3_warszawa#ba_s=dl_1"}
               linkTitle={"Zarezerwuj wizytę"}
               instaHref={"https://www.instagram.com/stan_relaksu/"}
               fbHref={"https://www.facebook.com/profile.php?id=61560021160720"}

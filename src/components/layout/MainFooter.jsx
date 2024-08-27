@@ -23,7 +23,7 @@ const MainFooter = () => {
                     href="mailto:kontakt@stanrelaksu.pl"
                     className="text-white text-sm   hover:text-red-800 transition duration-300  font-semibold "
                   >
-                   kontakt@stanrelaksu.pl
+                    kontakt@stanrelaksu.pl
                   </Link>
                 </address>
               </div>
@@ -43,6 +43,7 @@ const MainFooter = () => {
                 Regulamin
               </Link>
             </div>
+          
           </div>
         </footer>
       </div>

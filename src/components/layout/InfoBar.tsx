@@ -14,14 +14,15 @@ const InfoBar = () => {
           <ul className="">
             <li>
               <Link
-                href="https://booksy.com/"
+                href="https://booksy.com/pl-pl/257898_stan-relaksu-holistyczny-gabinet-terapii-i-masazu_masaz_3_warszawa#ba_s=dl_1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" fixed z-20 flex flex-row px-3  gap-2 bg-white hover:opacity-70 underline "
+                className=" fixed z-40 flex flex-row px-3  gap-2  hover:opacity-70 bg-primary border-2 border-white  py-2 rounded-xl"
               >
-                <span className="pt-1   "><p className="text-sm">Zarezerwuj Wizyte</p> </span>
-                <span className=" p-2">
-                  <BsArrowUpRightSquare className="w-3 h-3 " />
+                
+                <span className="   "><p className="text-sm text-white tracking-wider">Zarezerwuj Wizyte</p> </span>
+                <span className="">
+                  <BsArrowUpRightSquare className="w-3 h-3 bg-white border-white mt-1" />
                 </span>
               </Link>
             </li>
@@ -35,7 +36,7 @@ const InfoBar = () => {
                 href={"mailto:kontakt@stanrelaksu.pl"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" flex flex-row px-3  gap-2 hover:opacity-70 "
+                className=" flex flex-row px-3  gap-2 hover:opacity-70  "
               >
                 <span className="bg-white rounded-full p-2">
                   <MdEmail className="w-3 h-3" />

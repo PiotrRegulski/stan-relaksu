@@ -34,10 +34,9 @@ const WelcomCard = () => {
               Relaksu.
             </h2>
           </div>
-
           <div className="flex justify-center md:my-3  py-3 sm:mt-6 lg:mt-2 ">
             <Link
-              href="https://booksy.com/"
+              href="https://booksy.com/pl-pl/257898_stan-relaksu-holistyczny-gabinet-terapii-i-masazu_masaz_3_warszawa#ba_s=dl_1"
               target="_blank"
               rel="noopener noreferrer"
               className=" hover:shadow-xl shadow-lg shadow-gray-400/75 text-xl lg:text-2xl text-white   rounded  hover:border-white bg-primary hover:bg-primary/75 px-6 py-2 font-bold xl:mt-2  hover:text-gray-300   focus:outline-none focus:shadow-outline hover:underline "
