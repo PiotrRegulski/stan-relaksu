@@ -47,7 +47,7 @@ const WelcomeAboutMe = () => {
                 </div>
               </div>
               <div className="hidden lg:flex justify-center items-center ">
-                <div className=" relative   md:max-w-[26rem] w-[30rem] h-[20rem] md:h-[40rem] lg:w-[20rem] lg:h-[25rem] shadow-gray-400 shadow-lg     mx-1 rounded-xl bg-white">
+                <div className=" relative   md:max-w-[26rem] w-[30rem] h-[20rem] md:h-[40rem] lg:w-[20rem] lg:h-[25rem] 2xl:w-[21rem] 2xl:h-[28rem] shadow-gray-400 shadow-lg     mx-1 rounded-xl bg-white">
                   <AboutImageCard />
                 </div>
               </div>

@@ -16,11 +16,11 @@ const imageURLs = [
 ];
 const ImagesToAboutMeLast = () => {
   return (
-    <div className="flex overflow-x-auto w-full py-12  ">
+    <div className="flex overflow-x-auto w-full py-12 2xl:ml-4  ">
       {imageURLs.map((imgUrl) => (
         <div
           key={imgUrl.label}
-          className="relative  flex-shrink-0 w-96 md:w-[30rem] h-72 md:h-96 lg:w-[32rem] mx-2 items-center shadow-xl shadow-black"
+          className="relative  flex-shrink-0 w-96 md:w-[30rem] h-72 md:h-96 lg:w-[32rem] 2xl:w-[34rem] mx-2 items-center shadow-xl shadow-black"
         >
          
           <ImageCard key={imgUrl.label} src={imgUrl.src} alt={imgUrl.label} />
