@@ -6,7 +6,7 @@ import ButtonOffers from "./ButtonOffers";
 
 const AboutMeMainCard = () => {
   return (
-    <div className={`flex flex-col  items-center  shadow-xl   rounded mt-1`}>
+    <div className={`flex flex-col  items-center  shadow-xl   mt-1 animate-fadeIn rounded  transition-transform duration-200 ease-in-out `}>
       <div className="flex flex-col md:flex-row  bg-white shadow-md border-4  ">
         <div className=" mx-auto  h-full   lg:mx-4 my-2 ">
           <div className="relative w-[22rem] h-96 md:w-[17rem]  lg:w-[21rem] lg:h-[35rem]  md:my-6 shadow-md shadow-gray-400 ">

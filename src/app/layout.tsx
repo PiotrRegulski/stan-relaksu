@@ -7,8 +7,8 @@ import { lato } from "@/components/fonts";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Stan Relaksu",
-  description: "Gabinet terapii manualnej ciała i twarzy.",
+  title: "Stan Relaksu - Gabinet terapii manualnej ciała i twarzy.",
+  description: " Gabinet Stan Relaksu to terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie która chce o zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
 };
 
 export default function RootLayout({

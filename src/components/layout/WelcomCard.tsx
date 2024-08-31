@@ -8,7 +8,7 @@ const WelcomCard = () => {
   return (
     <div
       id="welcome-card"
-      className=" relative flex h-[35rem] md:h-[32rem] xl:h-[40rem]  bg-white overflow-hidden rounded  "
+      className=" relative flex h-[35rem] md:h-[32rem] xl:h-[40rem]  bg-white overflow-hidden animate-fadeIn rounded  transition-transform duration-200 ease-in-out  "
     >
       <div className=" flex justify-end w-full ">
         <div className=" relative flex h-[70vh] sm:h-[70vh] md:h-[31rem] xl:h-[40rem] w-full  sm:w-screen shadow-xl shadow-white md:py-3 ">

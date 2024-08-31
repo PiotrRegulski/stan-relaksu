@@ -5,7 +5,9 @@ import WelcomCard from "@/components/layout/WelcomCard";
 import OffersCardFace from "@/components/offers/OffersCardFace";
 import WelcomeAboutMe from "@/components/homepage/WelcomeAboutMe";
 import OffersHeader from "@/components/offers/OffersHeader";
-
+export const metadata={
+  
+}
 export default function Home() {
   return (
     <>

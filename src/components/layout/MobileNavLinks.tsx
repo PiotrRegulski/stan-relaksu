@@ -2,6 +2,10 @@ import React from "react";
 
 
 import Link from "next/link";
+
+interface MobileNavLinksProps {
+  toggleMenu: () => void;
+}
 const links = [
   { href: "/#welcome-card", label: "Strona główna" },
   { href: "/about#about", label: "O mnie" },
@@ -10,15 +14,15 @@ const links = [
   { href: "/contact#contact", label: "Kontakt" },
 ];
 
-const MobileNavLinks = () => {
+const MobileNavLinks: React.FC<MobileNavLinksProps>  = ({toggleMenu}) => {
   
   return (
     <>
       {links.map((link) => (
         <li className="" key={link.href}>
           <Link
-            href={link.href}
-            className=" flex justify-center px-1 py-1 text-xl  text-black w-full  hover:underline hover:underline-offset-8"
+            href={link.href} 
+            className=" flex justify-center px-1 py-1 text-xl  text-black w-full  hover:underline hover:underline-offset-8" onClick={toggleMenu}
           >
             {link.label}
           </Link>

@@ -2,7 +2,7 @@ import React from "react";
 
 const HamburgerIcon = () => {
   return (
-    <div className="mt-2">
+    <div className="">
       <div className="block hamburger xl:hidden focus:outline-none" >
         {/* Ikona hamburgera */}
         <div className="space-y-2">

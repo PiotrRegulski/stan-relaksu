@@ -3,8 +3,8 @@ import ImagesToAboutMeLast from "./ImagesToAboutMeLast";
 import ButtonOffers from "./ButtonOffers";
 const AboutMeLastCard = () => {
   return (
-    <div className="flex flex-col  mx:auto   md:mb-12 my-8   bg-secondary  rounded-md ">
-      <h3 className=" text-lg  md:text-2xl font-bold  mx-auto py-3 md:py-4 lg:px-[25%]  animate-fadeIn    transition-transform duration-1000 ease-in-out">
+    <div className="flex flex-col  mx:auto   md:mb-12 my-8   bg-secondary  rounded-md animate-fadeIn   transition-transform duration-200 ease-in-out  ">
+      <h3 className=" text-lg  md:text-2xl font-bold  mx-auto py-3 md:py-4 lg:px-[25%]  ">
         Moją pasją jest terapia manualna twarzy.
       </h3>
       <div className="flex items-center">

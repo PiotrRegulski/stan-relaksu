@@ -12,7 +12,11 @@ import MobileNavLinks from "./MobileNavLinks";
 import Logo from "./Logo";
 const NavbarMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
+  const toggleMenuAndScroll = useCallback(() => {
+    setIsOpen(!isOpen);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [isOpen]);
+
   return (
     <>
       <div className=" flex  justify-end  md:hidden ">
@@ -23,7 +27,7 @@ const NavbarMobile = () => {
           </Link>
         </div> */}
       
-        <button onClick={toggleMenu} className="w-12 h-12  ml-3">
+        <button onClick={toggleMenuAndScroll} className="fixed z-40 w-12 h-12    rounded-full flex justify-center items-center ml-2">
           <HamburgerIcon />
         </button>
       </div>
@@ -99,7 +103,7 @@ const NavbarMobile = () => {
               isOpen ? "" : "hidden"
             }`}
           >
-            <MobileNavLinks />
+            <MobileNavLinks  toggleMenu={toggleMenuAndScroll}/>
           </ul>
         </nav>
       </div>

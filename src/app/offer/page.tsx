@@ -7,7 +7,11 @@ import ButtonReservation from "@/components/about/ButtonReservation";
 interface OfferProps {
   // Tutaj możesz dodać właściwości, jeśli są potrzebne
 }
-
+export const metadata = {
+  title: "O mnie",
+  description:
+    "Sprawdź naszą ofertę i wybierz najlepsze rozwiązania dla siebie. Zarezerwuj wizytę już dziś!",
+};
 const OfferPage: React.FC<OfferProps> = () => {
   return (
     <>
