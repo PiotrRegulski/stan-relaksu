@@ -41,7 +41,7 @@ const WelcomeAboutMe = () => {
 
             <div className="  flex flex-col lg:flex-row  bg-white mx-auto my-4 px-4 md:px-12 md:mx-4 md:mt-12 shadow-primary shadow-lg 2xl:mx-24 rounded-xl">
               <div className="flex lg:hidden mx-auto w-full  ">
-                <div className=" relative mx-auto h-48 w-48 sm:w-72 sm:h-72 my-2">
+                <div className=" relative mx-auto h-48 w-48 sm:w-48 sm:h-48 my-2">
                   <ImageCard
                     src={"/hero-circle.png"}
                     alt={"Twórca gabientu Stan Relaksu Kinga Wołoszka"}

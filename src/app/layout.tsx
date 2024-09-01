@@ -22,7 +22,7 @@ export default function RootLayout({
         className={`${lato.className} antialiased  overflow-y-scroll overflow-x-hidden bg-primary max-w-[1920px]  xl:mx-[5%] 2xl:mx-[8%]  my-1  `}
       >
         <MainHeader />
-        <main className="overflow-hidden flex flex-col bg-secondary shadow-lg shadow-white    mx-auto ">
+        <main className="overflow-hidden flex flex-col bg-secondary shadow-lg shadow-white mx-auto ">
           {" "}
           {children}
         </main>

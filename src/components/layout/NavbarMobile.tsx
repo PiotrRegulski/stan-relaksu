@@ -39,6 +39,7 @@ const NavbarMobile = () => {
           alt="Logo stan relaksu"
           width={200}
           height={200}
+          priority
           className="px-2  mt-4"
         />
       </div>
