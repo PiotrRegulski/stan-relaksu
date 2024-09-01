@@ -6,7 +6,7 @@ const WelcomeCardImage = () => {
       src="/firstMainPage.jpg"
       alt="zdjęcie pacjenta podczas masażu szyji"
       fill
-      className=" object-cover lg:object-cover "
+      className="  object-cover lg:object-cover "
       priority={true}
     />
   );

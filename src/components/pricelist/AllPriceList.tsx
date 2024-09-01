@@ -9,7 +9,7 @@ const AllPriceList = () => {
       {OfferItem.map((item) => (
         <div key={item.id} >
           <Link href={`/offer/${item.slug} `} className="hover:opacity-80">
-            <h2 className="bg-primary text-black text-center   text-sm lg:text-xl border rounded-full mx-auto px-8 py-2 font-bold mt-4">
+            <h2 className="bg-primary text-black text-center   text-sm lg:text-xl border rounded-full mx-auto px-8 py-2 font-bold lg:mt-4">
               {item.title}
             </h2>
           </Link>

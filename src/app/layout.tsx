@@ -7,7 +7,7 @@ import { lato } from "@/components/fonts";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Stan Relaksu - Gabinet terapii manualnej ciała i twarzy.",
+  title: "Gabinet terapii manualnej ciała i twarzy - Stan Relaksu",
   description: " Gabinet Stan Relaksu to terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie która chce o zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
 };
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={`${lato.className} antialiased  overflow-y-scroll overflow-x-hidden bg-primary max-w-[1920px]  xl:mx-[5%] 2xl:mx-[5%]  my-1  `}
+        className={`${lato.className} antialiased  overflow-y-scroll overflow-x-hidden bg-primary max-w-[1920px]  xl:mx-[5%] 2xl:mx-[8%]  my-1  `}
       >
         <MainHeader />
         <main className="overflow-hidden flex flex-col bg-secondary shadow-lg shadow-white    mx-auto ">

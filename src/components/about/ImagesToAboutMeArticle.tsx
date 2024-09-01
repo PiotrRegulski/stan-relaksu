@@ -2,18 +2,22 @@ const imgURLs = [
   {
     src: "/terapia-manualna-kolano.jpg",
     label: "terapia manualna kolano",
+    caption:"Terapia manualna kolana"
   },
   {
     src: "/terapia-manualna.jpg",
     label: "terapia manualna",
+    caption:"Terapia manualna"
   },
   {
     src: "/terapia-wisceralna.jpg",
     label: "terapia wisceralna",
+    caption:"Terapia wisceralna"
   },
   {
     src: "/terapia-uro.jpg",
     label: "terapia uro",
+    caption:"Terapia uroginekologiczna"
   },
 ];
 
@@ -26,11 +30,11 @@ const ImagesToAboutMeArticle = () => {
       {imgURLs.map((imgUrl) => (
         <div
           key={imgUrl.label}
-          className="relative  flex-shrink-0 2xl:flex-shrink w-96 md:w-[22rem] h-[34rem] md:h-[34rem] lg:w-[23rem] xl:w-[20rem] xl:h-[30rem] 2xl:w-[35rem] 2xl:h-[40rem] md:ml-5 2xl:ml-0 items-center shadow-lg shadow-gray-400 border-white border-4 "
+          className="relative  flex-shrink-0 2xl:flex-shrink w-80 md:w-[22rem] h-[24rem] md:h-[24rem] lg:w-[23rem] xl:w-[20rem] xl:h-[30rem] 2xl:w-[35rem] 2xl:h-[40rem] md:ml-5 2xl:ml-0 items-center shadow-lg shadow-gray-400 border-white border-4 "
         >
           
             {" "}
-            <ImageCard key={imgUrl.label} src={imgUrl.src} alt={imgUrl.label} />
+            <ImageCard key={imgUrl.label} src={imgUrl.src} alt={imgUrl.label} caption={imgUrl.caption}/>
          
         </div>
       ))}

@@ -20,38 +20,40 @@ const NavbarMobile = () => {
   return (
     <>
       <div className=" flex  justify-end  md:hidden ">
-        
         {/* <div className="my-4 ml-3 flex flex-row ">
           <Link href={"/"}>
             <Logo />
           </Link>
         </div> */}
-      
-        <button onClick={toggleMenuAndScroll} className="fixed z-40 w-12 h-12    rounded-full flex justify-center items-center ml-2">
+
+        <button
+          onClick={toggleMenuAndScroll}
+          className="fixed z-40 w-12 h-12    rounded-full flex justify-center items-center sm:mr-6 sm:mt-2"
+        >
           <HamburgerIcon />
         </button>
       </div>
       <div className=" md:hidden relative w-full flex justify-center ">
-          <Image
-            src="/logo.png"
-            alt="Logo stan relaksu"
-            width={200}
-            height={200}
-            className="px-2"
-          />
-        </div>
-        <div
-          className={`${CormorantInfant.className} my-4  text-center flex justify-center w-full md:hidden`}
-        >
-          <p className="font-semibold sm:text-xl md:text-2xl">
-            Gabinet terapii manualnej ciała i twarzy.
-          </p>
-        </div>
+        <Image
+          src="/logo.png"
+          alt="Logo stan relaksu"
+          width={200}
+          height={200}
+          className="px-2  mt-4"
+        />
+      </div>
+      <div
+        className={`${CormorantInfant.className} my-4  text-center flex justify-center w-full md:hidden`}
+      >
+        <p className="font-semibold sm:text-xl md:text-2xl">
+          Gabinet terapii manualnej ciała i twarzy.
+        </p>
+      </div>
 
-      <div className="md:hidden fixed grid grid-cols-4 gap-1 bottom-[0] z-40 bg-primary w-screen h-[4rem]  ">
+      <div className="md:hidden fixed grid grid-cols-4 gap-1 bottom-0 z-40 bg-primary w-screen h-[4rem] border-t-2 border-white  ">
         <button className="animate-fadeIn   text-sm font-medium text-white shadow-lg shadow-gray-400/75 transition-transform duration-400  hover:scale-[1.02]">
           <Link
-            href="https://booksy.com/"
+            href="https://booksy.com/pl-pl/257898_stan-relaksu-holistyczny-gabinet-terapii-i-masazu_masaz_3_warszawa#ba_s=dl_1"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -103,7 +105,7 @@ const NavbarMobile = () => {
               isOpen ? "" : "hidden"
             }`}
           >
-            <MobileNavLinks  toggleMenu={toggleMenuAndScroll}/>
+            <MobileNavLinks toggleMenu={toggleMenuAndScroll} />
           </ul>
         </nav>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 
 import MapComponent from "./MapComponent";
-import { Resend } from "resend";
+
 import PageHeader from "../homepage/PageHeader";
 import AdressCard from "./AdressCard";
 import DetailedAddress from "./DetailedAddress";

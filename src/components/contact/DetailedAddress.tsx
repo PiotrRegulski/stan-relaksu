@@ -47,31 +47,7 @@ const DetailedAddress = () => {
         </strong>
       </DetailedAdressItem>
 
-      {/* <p className="text-lg font-extrabold  text-center my-2">Adres:</p>
-        </div>
-             <div className="flex flex-col items-center mt-2 mx-auto ">
-        <p className="text-lg font-extrabold  text-center my-2 ">Zadzwoń:</p>
-        <div className="bg-[#e6e6e6cf] h-5 w-5 rounded-full flex items-center justify-center shrink-0 my-2">
-          <PiPhoneDisconnectBold className="w-4 h-4" />
-        </div>
-
-        <div className="flex flex-col px-3">
-          <small className="block"> Numer telefonu:</small>{" "}
-          <strong>000-000-000</strong>
-        </div>
-      </div>
-
-      <div className="flex flex-col items-center mt-2 mx-auto">
-        <p className="text-lg font-extrabold  text-center my-2 ">Napisz:</p>
-        <div className="bg-[#e6e6e6cf] h-16 w-16 rounded-full flex items-center justify-center shrink-0 my-2">
-          <MdEmail className="w-12 h-12" />
-        </div>
-
-        <div className="flex flex-col px-3">
-          <small className="block"> Mail</small>
-          <strong className="font-xs">kontakt@stanrelaksu.pl</strong>
-        </div>
-      </div> */}
+     
     </div>
   );
 };

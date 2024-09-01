@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import ImageCard from "../about/ImageCard";
+import ImageBackground from "./ImageBackground";
 const MainFooter = () => {
   return (
     <>
       <div className="relative h-[9rem] md:h-[5rem] lg:h-[6rem]">
-        <ImageCard
+        <ImageBackground
           src={"/do-ozdoby-stopka.jpg"}
           alt={"wystrój gabinetu masażu "}
         />

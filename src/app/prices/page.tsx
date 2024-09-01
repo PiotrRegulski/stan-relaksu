@@ -4,7 +4,7 @@ import AllPriceList from "@/components/pricelist/AllPriceList";
 import PageHeader from "@/components/homepage/PageHeader";
 import BackLink from "@/components/layout/BackLink";
 export const metadata = {
-  title: "Cennik",
+  title: "Stan Relaksu - Cennik",
   description:"Sprawdź ceny moich usług i znajdź najlepszą ofertę dostosowaną do Twoich potrzeb.",
 };
 const page = () => {
