@@ -97,9 +97,9 @@ const NavbarMobile = () => {
       </div>
 
       <div
-        className={`${CormorantInfant.className} flex flex-wrap w-full justify-evenly md:hidden`}
+        className={`${CormorantInfant.className} flex flex-wrap w-full justify-evenly lg:hidden`}
       >
-        <nav id="mobile-nav" className="w-screen sm:hidden">
+        <nav id="mobile-nav" className="w-screen lg:hidden">
           <ul
             className={`flex flex-col  bg-secondary   h-full p-2 space-y-1  lg:flex-row sm:space-y-1 lg:space-x-4 divide-y-4 divide divide-solid ${
               isOpen ? "" : "hidden"
