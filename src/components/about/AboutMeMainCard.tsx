@@ -7,18 +7,18 @@ import ButtonOffers from "./ButtonOffers";
 const AboutMeMainCard = () => {
   return (
     <div className={`flex flex-col  items-center  shadow-xl   mt-1 animate-fadeIn rounded  transition-transform duration-200 ease-in-out  `}>
-      <div className="flex flex-col md:flex-row   shadow-md border-4 bg-my-bg-about bg-no-repeat bg-cover  ">
+      <div className="flex flex-col sm:flex-row   shadow-md border-4 bg-my-bg-about bg-no-repeat bg-cover  ">
         <div className=" mx-auto  h-full   lg:mx-4 my-2 bg-white ">
-          <div className="relative w-[22rem] h-96 md:w-[17rem]  lg:w-[21rem] lg:h-[35rem]   shadow-md shadow-gray-400 ">
+          <div className="relative w-[20rem] h-[26rem] md:w-[17rem]  lg:w-[21rem] lg:h-[35rem]   shadow-md shadow-gray-400 ">
             <ImageCard src={"/aboutme-image.jpg"} alt={"terapia manualna"} caption={""} />
           </div>
         </div>
-        <div className="flex flex-col bg-white justify-center items-center sm:mx-4 opacity-90 lg:my-4  2xl:my-24 ">
-          <h1 className=" text-xl text-left  md:pl-12 lg:text-2xl font-semibold w-full py-2 lg:py-6 bg-white ">
+        <div className="flex flex-col bg-white justify-center items-center sm:mx-4 opacity-90 sm:my-2 md:my-2 lg:my-4  2xl:my-24 ">
+          <h1 className=" text-xl text-left sm:pl-2  md:pl-12 lg:text-2xl font-semibold w-full py-2 md:py-4 lg:py-6 bg-white ">
             Cześć, jestem Kinga
           </h1>
           <div className="flex flex-col items-center justify-center  lg:mx-12  xl:mx-2 2xl:mx-36 px-4 py-4 lg:py-4   ">
-            <article className=" text-lg lg:text-xl   md:text-left  text-pretty ">
+            <article className=" text-lg lg:text-xl sm:px-2   md:text-left  text-pretty ">
               <p className="  text-pretty ">
                 Ukończyłam<strong> fizjoterapię </strong>na Warszawskim
                 Uniwersytecie Medycznym. Jestem
@@ -37,7 +37,7 @@ const AboutMeMainCard = () => {
                 <strong> komfortowym zaciszu</strong> gabinetu Stan Relaksu
               </p>
             </article>
-            <div className="w-full flex flex-col sm:flex-row mb-4 my-4 sm:my-4 md:mx-1  md:my-6">
+            <div className="w-full flex flex-col gap-2 sm:flex-row mb-4 my-4 sm:my-4 md:mx-1  md:my-6">
               <ButtonReservation />
               <ButtonOffers />
             </div>
