@@ -128,7 +128,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
 
       <section
         id="main-adventages"
-        className="flex flex-col min-h-max   xl:mx-36 my-4 md:my-4 md:mt-12 animate-fadeIn  transition-transform duration-200 ease-in-out"
+        className="flex flex-col min-h-max   2xl:mx-36 my-4 md:my-4 md:mt-12 animate-fadeIn  transition-transform duration-200 ease-in-out"
       >
         <div className="w-full py-[3rem] px-[2rem] shadow-md shadow-gray-400 bg-white ">
           <h1 className={`${lato.className} text-center text-xl font-bold`}>
@@ -137,9 +137,9 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
         </div>
 
         <div className="flex flex-col ">
-          <div className="flex flex-col-reverse lg:flex-row  bg-white sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 lg:mx-24  rounded-lg">
+          <div className="flex flex-col-reverse lg:flex-row  bg-white sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 2xl:mx-24  rounded-lg">
             <div className="flex flex-col lg:w-2/3 my-6 px-4 ">
-              <h3 className="font-bold text-2xl py-2 w-full">{title1}</h3>
+              <h3 className="font-bold text-2xl py-2 2xl:mb-4 w-full">{title1}</h3>
 
               <HighlightedParagraph
                 className="text-xl xl:ml-4 pl-2"
@@ -160,9 +160,9 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row    bg-primary  md:my-4 ">
+          <div className="flex flex-col md:flex-row-reverse 2xl:flex-row   bg-primary  md:my-4 ">
             <div className=" ">
-              <div className="relative h-[16rem] md:h-[22rem] sm:w-auto md:min-w-[21rem]  mx-auto my-2 md:my-2 md:mx-2  ">
+              <div className="relative h-[16rem] md:h-[28rem] sm:w-auto md:min-w-[21rem] 2xl:h-[30rem] 2xl:w-[30rem]  mx-auto my-2 md:my-2 md:mx-2  ">
                 <Image
                   src={`/${offerDetail.imagedetailfo}`}
                   alt={offerDetail.title}
@@ -174,7 +174,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             </div>
             <div className="flex flex-col w-full justify-center items-center my-4">
               <div className="flex flex-col px-4 md:px-8 text-amber-950 ">
-                <h3 className="font-bold text-2xl py-2 w-full ">
+                <h3 className="font-bold text-2xl py-2 w-full 2xl:mb-4 ">
                   {title2}
                 </h3>
                 <HighlightedParagraph
@@ -186,9 +186,9 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             </div>
           </div>
           
-          <div className="flex flex-col lg:flex-row  bg-white sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 lg:mx-24  rounded-lg">
-            <div className="flex flex-col lg:w-2/3 my-6 px-4 ">
-              <h3 className="font-bold text-2xl py-2 w-full">{title3}</h3>
+          <div className="flex flex-col lg:flex-row  bg-white sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 2xl:mx-24  rounded-lg">
+            <div className="flex flex-col lg:w-2/3 my-6 px-4 2xl:my-24 ">
+              <h3 className="font-bold text-2xl py-2 w-full ">{title3}</h3>
 
               <HighlightedParagraph
                 className="text-xl xl:ml-4 pl-2"

@@ -22,12 +22,12 @@ const DetailedAddress = () => {
       >
         <strong>
           <Link
-            href={"885987321"}
+            href={"535187126"}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-70 "
           >
-            000-000-000
+            535-187-126
           </Link>
         </strong>
       </DetailedAdressItem>

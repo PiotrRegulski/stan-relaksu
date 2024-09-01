@@ -8,7 +8,7 @@ import Link from "next/link";
 const WelcomeAboutMe = () => {
   return (
     <>
-      <div className=" relative flex w-full bg-secondary ">
+      <div className=" relative flex w-full bg-my-bg-image bg-center">
         <div className="flex flex-col  lg:w-full  ">
           <div className="flex-row   md:my-4">
             <div className=" flex flex-col md:flex-row md:h-[20rem] lg:h-[22rem]  justify-center bg-white  md:mx-4 rounded-xl  shadow-primary shadow-lg ">
@@ -17,7 +17,7 @@ const WelcomeAboutMe = () => {
                   Gabinet terapii manualnej ciała i twarzy Stan Relaksu
                 </h1>
                 <p
-                  className={`${lato.className} text-lg lg:font-semibold  sm:text-xl  text-center md:text-left  tracking-wide leading-10 animate-fadeIn transition-transform duration-1000 ease-in-out sm:pt-2 md:pt-8 px-3 md:px-1 lg:px-8 lg:pt-0 lg:my-6 2xl:mx-12 2xl:mt-4 `}
+                  className={`${lato.className} text-lg lg:font-semibold  sm:text-xl  text-center md:text-left  tracking-wide leading-10 animate-fadeIn transition-transform duration-1000 ease-in-out sm:pt-2 md:pt-4 px-3 md:px-1 lg:px-8 lg:pt-0 2xl:pt-4 lg:my-6 2xl:mx-12 2xl:mt-4 `}
                 >
                   to terapeutyczne miejsce dla ciała stworzone z myślą o Tobie,
                   osobie która chce o zadbać o swoje zdrowie, zwolnić i poczuć
@@ -32,8 +32,8 @@ const WelcomeAboutMe = () => {
                   </span>
                 </p>
               </div>
-              <div className="flex w-full md:w-1/3 lg:w-1/2  justify-center bg-white  shadow-lg md:shadow-[0px]  shadow-gray-400 md:shadow-0 ">
-                <div className="relative  h-56 w-80 sm:w-[30rem] sm:h-48 md:w-[25rem] md:h-auto lg:w-[32rem] lg:h-[19rem]  my-6 md:mx-2 sm:rounded-xl  shadow-black shadow-md ">
+              <div className="flex w-full md:w-1/3 xl:w-1/2  justify-center bg-white  shadow-lg md:shadow-[0px]  shadow-gray-400 md:shadow-0 ">
+                <div className="relative  h-56 w-80 sm:w-[30rem] sm:h-48 md:w-[25rem] md:h-auto lg:w-[29rem] lg:h-[19rem]  my-6 md:mx-2 sm:rounded-xl  shadow-black shadow-md ">
                   <FaceImage />
                 </div>
               </div>

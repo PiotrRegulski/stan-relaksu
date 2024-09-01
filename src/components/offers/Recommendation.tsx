@@ -8,7 +8,7 @@ const Recommendation = (props:any) => {
         <h3 className="text-black text-xl md:text-2xl xl:text-4xl font-bold text-center py-10 ">
         <span className=''>{props.title}</span><br></br>umów się jeżeli:
         </h3>
-        <div className="grid grid-rows-3  xl:h-48 xl:grid-cols-3   divide-gray-400 xl:px-36 text-md  md:text-2xl font-bold mx-2">
+        <div className="grid grid-rows-3  xl:h-48 xl:grid-cols-3   divide-gray-400 2xl:px-36 text-md  md:text-2xl font-bold mx-2">
           <div className="flex my-1 ">
             <div className='pr-2'><TbCircleNumber1 className='w-8 h-8 '/></div>
             <p className=" border-l-2 border-gray-400  text-center md:pl-4 pt-2 xl:pt-6 w-full h-[5em] ">{props.fRecommendation}</p>

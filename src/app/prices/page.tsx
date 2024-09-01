@@ -9,12 +9,13 @@ export const metadata = {
 };
 const page = () => {
   return (
-    <div className="flex flex-col bg-gradient-to-r from-white via-secondary to-white ">
+    <div className="flex flex-col bg-my-bg-price bg-no-repeat bg-cover ">
       <PageHeader id={"prices"}>Cennik</PageHeader>
-      <div className=" flex justify-center h-2/3 md:py-4 md:px-2  md:mx-36 md:my-8 animate-fadeIn rounded  transition-transform duration-200 ease-in-out  ">
+      <div className=" flex justify-center h-2/3 md:py-4 md:px-2  md:mx-36 md:my-8 my-4 animate-fadeIn rounded  transition-transform duration-200 ease-in-out  ">
         <AllPriceList />
       </div>
-      <BackLink>Zobacz szczegóły oferty</BackLink>
+      
+      <BackLink><p className=" bg-secondary rounded-md px-1 hover:opacity-70">Zobacz szczegóły oferty</p></BackLink>
     </div>
   );
 };

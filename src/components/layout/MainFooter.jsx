@@ -4,12 +4,12 @@ import ImageBackground from "./ImageBackground";
 const MainFooter = () => {
   return (
     <>
-      <div className="relative h-[9rem] md:h-[5rem] lg:h-[6rem]">
+      <div className="relative h-[9rem] md:h-[5rem] lg:h-[6rem] border-t-4 border-white">
         <ImageBackground
           src={"/do-ozdoby-stopka.jpg"}
           alt={"wystrój gabinetu masażu "}
         />
-        <footer className="absolute md:top-4 right-5 left-5 md:right-20 md:left-20 py-1 ">
+        <footer className="absolute md:top-4 right-5 left-5 md:right-20 md:left-20 py-1  ">
           <div className=" flex flex-col  justify-center items-center ">
             <div className="flex flex-col md:flex-row items-center ">
               <div className="w-full border-3 border-white">

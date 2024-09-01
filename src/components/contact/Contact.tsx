@@ -55,65 +55,7 @@ const Contact = () => {
           </div>
         </div>
         <ContactForm/>
-        {/* <div className="  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 bg-secondary sm:mx-2 lg:my-6 md:mx-0 ">
-          <h3 className="text-4xl font-bold mt-6 text-center">Napisz do nas</h3>
-          <p className="text-sm text-gray-400 mt-4 text-center">
-            Szybko odpowiemy na Twoje pytania.
-          </p>
-
-          <form action={send} className="flex flex-col mt-8 space-y-4 lg:mx-96">
-            <label htmlFor="name" className="text-xl font-bold ">
-              Wpisz swoje imie:
-            </label>
-            <input
-              type="text"
-              id="name"
-              required
-              placeholder="imię"
-              name="username"
-              className="w-full rounded-md py-3 px-4 bg-white text-sm outline-blue-500 shadow-inner focus:bg-white "
-            ></input>
-            <label htmlFor="email" className="text-xl font-bold ">
-              Wpisz E-mail do kontaktu:
-            </label>
-            <input
-              type="email"
-              id="email"
-              required
-              placeholder="E-mail"
-              name="userEmail"
-              className="w-full rounded-md py-3 px-4 bg-bg-white text-sm outline-blue-500 shadow-inner focus:bg-white "
-            ></input>
-            <label htmlFor="subject" className="text-xl font-bold ">
-              Temat:
-            </label>
-            <input
-              type="text"
-              id="subject"
-              required
-              placeholder="Temat"
-              name="subject"
-              className="w-full rounded-md py-3 px-4 bg-white text-sm outline-blue-500 shadow-inner focus:bg-white "
-            ></input>
-            <label htmlFor="message" className="text-xl font-bold ">
-              Wpisz swoją wiadomość:
-            </label>
-            <textarea
-              name="message"
-              id="message"
-              required
-              placeholder="Message"
-              rows={5}
-              className="w-full rounded-md px-4 bg-white text-sm pt-3 outline-blue-500 shadow-inner focus:bg-white "
-            ></textarea>
-            <button
-              type="submit"
-              className=" mx-auto lg:mx-1 hover:shadow-xl shadow-md shadow-gray-400 text-xl  border-2 rounded border-gray-200 bg-white hover:border-blue-500 px-6 py-4 mb-24 font-bold   hover:text-black focus:outline-none focus:shadow-outline"
-            >
-              Wyślij
-            </button>
-          </form>
-        </div> */}
+       
       </div>
     </div>
   );

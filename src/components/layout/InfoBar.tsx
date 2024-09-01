@@ -54,7 +54,7 @@ const InfoBar = () => {
                 <span className="bg-white rounded-full  p-2">
                   <BsFillTelephoneForwardFill className="  w-3 h-3" />
                 </span>
-                <span className="pt-1 text-sm">000-000-000</span>
+                <span className="pt-1 text-sm">535-187-126</span>
               </Link>
             </li>
             <li>
