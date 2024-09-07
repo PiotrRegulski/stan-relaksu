@@ -8,7 +8,7 @@ interface OfferProps {
   // Tutaj możesz dodać właściwości, jeśli są potrzebne
 }
 export const metadata = {
-  title: "Stan Relaksu - O mnie",
+  title: "Stan Relaksu - Oferta",
   description:
     "Sprawdź naszą ofertę i wybierz najlepsze rozwiązania dla siebie. Zarezerwuj wizytę już dziś!",
 };
