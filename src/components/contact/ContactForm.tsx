@@ -33,10 +33,10 @@ const ContactForm = () => {
 
     const name = formData.get("name")?.toString().trim();
     const nameRegex = /^[a-zA-ZÀ-ÿ\s'-]+$/;
-  if (!name || !nameRegex.test(name) || name.length < 2) {
-    alert("Proszę wpisać poprawne imię.");
-    return;
-  }
+    if (!name || !nameRegex.test(name) || name.length < 2) {
+      alert("Proszę wpisać poprawne imię.");
+      return;
+    }
     // Sprawdź, czy pole textarea nie jest puste
     const message = formData.get("message")?.toString().trim();
     const messageRegex = /^[a-zA-ZÀ-ÿ\s'-]+$/;
@@ -46,12 +46,12 @@ const ContactForm = () => {
     }
 
     // Sprawdź, czy email jest poprawny
-  const email = formData.get("email")?.toString().trim();
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!email || !emailRegex.test(email)) {
-    alert("Proszę wpisać poprawny adres email.");
-    return;
-  }
+    const email = formData.get("email")?.toString().trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !emailRegex.test(email)) {
+      alert("Proszę wpisać poprawny adres email.");
+      return;
+    }
     const formValues: FormValues = Object.fromEntries(
       formData.entries()
     ) as unknown as FormValues;
@@ -63,16 +63,15 @@ const ContactForm = () => {
     const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 sekund
 
     try {
-      console.log("Wysyłanie żądania do /api/contact z danymi:", formValues);
       const response = await fetch("/api/contact/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formValues),
         signal: controller.signal, // Dodaj signal do
       });
-      console.log(timeoutId);
+
       clearTimeout(timeoutId); // Wyczyść timeout po zakończeniu żądania
-      console.log("Otrzymano odpowiedź z /api/contact:", response);
+
       if (!response.ok) {
         throw new Error(`HTTP error! Status:${response.status} `);
       }
@@ -88,11 +87,11 @@ const ContactForm = () => {
         );
         alert("Żądanie zostało anulowane z powodu przekroczenia limitu czasu.");
       } else {
-        console.error("wystąpił bład",customError);
+        console.error("wystąpił bład", customError);
         console.error("Zmienne środowiskowe:", {
           user: process.env.HOMEPL_USER,
-          pass: process.env.HOMEPL_PASS ,
-          
+          pass: process.env.HOMEPL_PASS,
+
           // Dodaj inne zmienne środowiskowe, które mogą być istotne
         });
         alert("Wystąpił błąd w wysyłaniu wiadomości...");
@@ -109,14 +108,14 @@ const ContactForm = () => {
         Potrzebujesz więcej informacji.
       </h3>
       <p className="text-sm text-gray-800 mt-4 text-center">
-        Skontaktuj się ze mną w dogodny dla siebie sposób. Formularz kontkatowy lub media społecznościowe.
+        Skontaktuj się ze mną w dogodny dla siebie sposób. Formularz kontkatowy
+        lub media społecznościowe.
       </p>
 
       <form
         onSubmit={onSubmit}
         className="flex flex-col mt-8 space-y-4 mx-auto   "
       >
-        
         <input
           type="text"
           name="honeypot"
