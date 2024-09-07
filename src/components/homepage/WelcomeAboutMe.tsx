@@ -13,8 +13,8 @@ const WelcomeAboutMe = () => {
           <div className="flex-row   md:my-4">
             <div className=" flex flex-col md:flex-row md:h-[20rem] lg:h-[22rem]  justify-center bg-white  md:mx-4 rounded-xl  shadow-primary shadow-lg ">
               <div className=" md:w-full lg:w-1/2  xl:w-2/3 md:mt-12 mt-4 sm:mx-12 ">
-                <h1 className=" text-xl sm:text-2xl mx-auto xl:mx-4 font-bold px-4 py-2 text-center md:text-left">
-                  Gabinet terapii manualnej ciała i twarzy Stan Relaksu
+                <h1 className=" text-xl sm:text-2xl mx-auto xl:mx-4 font-bold px-2 py-2 text-center md:text-left">
+                  Gabinet terapii manualnej ciała i twarzy - Stan Relaksu
                 </h1>
                 <p
                   className={`${lato.className} text-lg lg:font-semibold  sm:text-xl  text-center md:text-left  tracking-wide leading-10 animate-fadeIn transition-transform duration-1000 ease-in-out sm:pt-2 md:pt-4 px-3 md:px-1 lg:px-8 lg:pt-0 2xl:pt-4 lg:my-6 2xl:mx-12 2xl:mt-4 `}
