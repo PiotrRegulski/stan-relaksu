@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
 
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
-    port: 25, // Ustaw port na 25
+    port: 587, // Ustaw port na 25
     secure: false, // Port 25 nie obsługuje TLS
     auth: { user: process.env.HOMEPL_USER, pass: process.env.HOMEPL_PASS },
     tls: {

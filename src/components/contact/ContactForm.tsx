@@ -109,7 +109,7 @@ const ContactForm = () => {
         Potrzebujesz więcej informacji.
       </h3>
       <p className="text-sm text-gray-800 mt-4 text-center">
-        Skontaktuj się ze mną w dogodny dla siebie sposób. Media społecznościowe, czy formularz kontaktowy.
+        Skontaktuj się ze mną w dogodny dla siebie sposób. Formularz kontkatowy lub media społecznościowe.
       </p>
 
       <form
