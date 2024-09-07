@@ -88,7 +88,13 @@ const ContactForm = () => {
         );
         alert("Żądanie zostało anulowane z powodu przekroczenia limitu czasu.");
       } else {
-        console.error(customError);
+        console.error("wystąpił bład",customError);
+        console.error("Zmienne środowiskowe:", {
+          user: process.env.HOMEPL_USER,
+          pass: process.env.HOMEPL_PASS ,
+          
+          // Dodaj inne zmienne środowiskowe, które mogą być istotne
+        });
         alert("Wystąpił błąd w wysyłaniu wiadomości...");
       }
       setLoading(false);
