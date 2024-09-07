@@ -105,11 +105,10 @@ const ContactForm = () => {
   return (
     <div className=" flex flex-col justify-center  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 bg-secondary sm:mx-2 lg:my-6 md:mx-0 ">
       <h3 className=" text-2xl lg:text-4xl font-bold mt-6 text-center text-black ">
-        Potrzebujesz więcej informacji.
+        Potrzebujesz więcej informacji lub porady ne temat zabiegów.
       </h3>
       <p className="text-sm text-gray-800 mt-4 text-center">
-        Skontaktuj się ze mną w dogodny dla siebie sposób. Formularz kontkatowy
-        lub media społecznościowe.
+      Chętnie pomogę! Skontaktuj się ze mną poprzez formularz kontaktowy lub media społecznościowe.
       </p>
 
       <form
