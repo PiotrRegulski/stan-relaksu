@@ -26,6 +26,7 @@ const WelcomCard = () => {
                 width={300}
                 height={300}
                 className="px-2"
+                priority={true}
               />
             </div>
 
