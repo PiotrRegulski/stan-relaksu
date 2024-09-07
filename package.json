@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
+    "start": "next start",
     "lint": "next lint",
-     "postbuild": "next-sitemap"
+     "postbuild": "next-sitemap",
+     "export": "next export"
+     
   },
   "cacheDirectories": [
     ".next/cache"

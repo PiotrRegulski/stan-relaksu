@@ -7,7 +7,7 @@ import AdressCard from "./AdressCard";
 import DetailedAddress from "./DetailedAddress";
 import ContactForm from "./ContactForm";
 const Contact = () => {
- 
+  console.log("NEXT_PUBLIC_URL:", process.env.NEXT_PUBLIC_URL);
   return (
     <div className="w-full">
       <PageHeader id={"kontakt"}>Skontaktuj się</PageHeader>
