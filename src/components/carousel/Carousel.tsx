@@ -121,13 +121,13 @@ const Carousel: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className="text-sm px-2">Zarezerwuj wizyte</span>
+                    <span className="text-sm px-2 font-bold bg-black text-white  py-2 rounded mr-4">Zarezerwuj wizyte</span>
                   </Link>
                   <button
                     className="text-white xl:text-2xl font-serif tracking-widest hover:opacity-70 hover:underline "
                     onClick={() => router.push(image.linkDetails)}
                   >
-                    <span className="text-sm px-2">Dowiedz się więcej</span>
+                    <span className="text-sm px-2 bg-black text-white py-2 font-bold rounded">Dowiedz się więcej</span>
                   </button>
                 </div>
               </div>
