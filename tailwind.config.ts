@@ -43,6 +43,8 @@ const config: Config = {
         triadgray:"rgb(237 228 246)",
         headercolor:"rgb(167 231 215)",
         mainthemelogo: "rgb(241 234 214)",
+        mainpeach: "rgb(244 201 180)",
+
       },
       keyframes: {
         fadeIn: {

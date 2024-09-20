@@ -112,22 +112,22 @@ const Carousel: React.FC = () => {
                   </p>
                 </div>
 
-                <div className=" my-4 ">
+                <div className=" my-6 ">
                   {" "}
                   <Link
                     key={index}
-                    className="text-white xl:text-2xl font-serif tracking-widest hover:opacity-70 hover:underline "
+                    className="text-white xl:text-2xl font-serif tracking-widest hover:opacity-70  "
                     href={image.linkBooksy}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className="text-sm px-2 font-bold bg-black text-white  py-2 rounded mr-4">Zarezerwuj wizyte</span>
+                    <span className="text-sm sm:px-2 font-bold bg-primary text-black shadow-md shadow-white  py-1 px-1   sm:py-3 rounded mr-1 sm:mr-4">Zarezerwuj wizyte</span>
                   </Link>
                   <button
-                    className="text-white xl:text-2xl font-serif tracking-widest hover:opacity-70 hover:underline "
+                    className="text-white xl:text-2xl font-serif tracking-widest hover:opacity-70  "
                     onClick={() => router.push(image.linkDetails)}
                   >
-                    <span className="text-sm px-2 bg-black text-white py-2 font-bold rounded">Dowiedz się więcej</span>
+                    <span className="text-sm sm:px-2 bg-primary text-black shadow-md shadow-white py-1 px-1 sm:py-3 font-bold rounded">Dowiedz się więcej</span>
                   </button>
                 </div>
               </div>
