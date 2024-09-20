@@ -30,6 +30,10 @@ const config: Config = {
         "my-ozdoba-image": "url('/do-ozdoby-stopka.jpg')",
         "my-bg-price": "url('/bg-price-list.jpg')",
         "my-bg-about": "url('/bg-about.jpg')",
+        "my-bg-voucher": "url('/bg-voucher.jpg')",
+        "my-bg-mainpage": "url('/firstMainPage.jpg')",
+        "my-bg-faceImage": "url('/mainpagemasaztwaz.jpg')"
+
       },
 
       colors: {

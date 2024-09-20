@@ -195,7 +195,7 @@ export const OfferItem = [
     contentFirst:
       "To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała. Uwolnienie powięziowe i zniesienie napięć w ciele pomaga w zmniejszeniu dolegliwości bólowych, uczucia stresu oraz ogólnej relaksacji. ",
     advantages: [
-      { title: "Zwiększa ogólą mobilność całego ciała" },
+      { title: "Zwiększa ogólną mobilność całego ciała" },
       {
         description:
           "Masaż powięziowy to idealny wybór dla osób, które zmagają się z bólami pleców, karku czy bólami w stawach obwodowych. Indywidualnie dobrana terapia pomoże w zniesieniu napięć w ciele i pozbyciu się dolegliwości bólowych. Praca na przywróceniu ślizgu tkanki powięziowej pozwala na zwiększenie prawidłowych zakresów ruchomości w stawach oraz ogólnej mobilności całego ciała. ",

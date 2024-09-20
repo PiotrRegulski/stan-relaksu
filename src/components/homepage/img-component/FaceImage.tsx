@@ -8,7 +8,7 @@ const FaceImage = () => {
           alt="Kinga Wołoszka- fizjoterapeutka"
           fill
           sizes="(max-width: 600px) 100vw, 50vw"
-          className=" object-cover  md:object-cover w-full h-full sm:rounded-xl "
+          className=" object-cover  md:object-cover w-full h-full  "
           priority={true}
         />
    

@@ -8,8 +8,8 @@ import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { BsArrowUpRightSquare } from "react-icons/bs";
 const InfoBar = () => {
   return (
-    <div className=" hidden md:flex    font-semibold text-md  px-4 min-w-max  bg-white  ">
-      <div className="flex justify-between w-full text-sm">
+    <div className="hidden lg:flex font-semibold text-md  px-4 min-w-max  bg-white  ">
+      <div className="  flex justify-between w-full text-sm">
         <div>
           <ul className="">
             <li>
@@ -17,10 +17,10 @@ const InfoBar = () => {
                 href="https://booksy.com/pl-pl/257898_stan-relaksu-holistyczny-gabinet-terapii-i-masazu_masaz_3_warszawa#ba_s=dl_1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" fixed z-40 flex flex-row px-3  gap-2  hover:opacity-70 bg-primary border-2 border-white  py-2 rounded-xl"
+                className="flex flex-row  gap-2 px-1 py-1  hover:opacity-70  rounded-xl"
               >
                 
-                <span className="   "><p className="text-sm text-white tracking-wider">Zarezerwuj Wizyte</p> </span>
+                <span className="   "><p className="text-sm text-black underline underline-offset-2 tracking-wider">Zarezerwuj Wizyte</p> </span>
                 <span className="">
                   <BsArrowUpRightSquare className="w-3 h-3 bg-white border-white mt-1" />
                 </span>

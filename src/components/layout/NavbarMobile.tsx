@@ -2,12 +2,11 @@
 import React from "react";
 import Image from "next/image";
 import { CormorantInfant } from "@/components/fonts";
-import Link from "next/link";
+
 import { useState, useCallback } from "react";
 import HamburgerIcon from "@/components/layout/HamburgerIcon";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { BsFillTelephoneForwardFill } from "react-icons/bs";
-import { FaFacebook } from "react-icons/fa";
+import Link from "next/link";
+import Logo from "./Logo";
 import MobileNavLinks from "./MobileNavLinks";
 import MobileInfoBar from "./MobileInfoBar";
 const NavbarMobile = () => {
@@ -19,21 +18,33 @@ const NavbarMobile = () => {
 
   return (
     <>
-      <div className=" flex  justify-end  md:hidden ">
-        {/* <div className="my-4 ml-3 flex flex-row ">
+      <div className=" flex items-center bg-white w-full  lg:hidden ">
+        <div className=" py-1  ">
           <Link href={"/"}>
-            <Logo />
+            <div className="ml-3 mr-1 my-1">
+              {" "}
+              <Image
+                src="/logo-stan-relaksu-kolo.png"
+                width={65}
+                height={65}
+                className="bg-mainthemelogo rounded-full "
+                alt="Screenshots of the dashboard project showing desktop version"
+                priority={true}
+              />
+            </div>
           </Link>
-        </div> */}
-
-        <button
-          onClick={toggleMenuAndScroll}
-          className="fixed z-40 w-12 h-12    rounded-full flex justify-center items-center sm:mr-6 sm:mt-2"
-        >
+        </div>
+        <div className="mt-1">
+          <p className="font-serif leading-4 text-sm ">
+            Gabinet terapii <br></br> manualnej i masażu
+          </p>
+        </div>
+        <div onClick={toggleMenuAndScroll} className="flex-grow flex justify-end mr-4 ">
           <HamburgerIcon />
-        </button>
+        </div>
       </div>
-      <div className=" md:hidden relative w-full flex justify-center ">
+
+      {/* <div className=" md:hidden relative w-full flex justify-center ">
         <Image
           src="/logo.png"
           alt="Logo stan relaksu"
@@ -42,23 +53,16 @@ const NavbarMobile = () => {
           priority
           className="px-2  mt-4"
         />
-      </div>
-      <div
-        className={`${CormorantInfant.className} my-4  text-center flex justify-center w-full md:hidden`}
-      >
-        <p className="font-semibold sm:text-xl md:text-2xl">
-          Gabinet terapii manualnej ciała i twarzy.
-        </p>
-      </div>
+      </div> */}
 
-     <MobileInfoBar/>
+      <MobileInfoBar />
 
       <div
         className={`${CormorantInfant.className} flex flex-wrap w-full justify-evenly lg:hidden`}
       >
         <nav id="mobile-nav" className="w-screen lg:hidden">
           <ul
-            className={`flex flex-col  bg-secondary   h-full p-2 space-y-1  lg:flex-row sm:space-y-1 lg:space-x-4 divide-y-4 divide divide-solid ${
+            className={`flex flex-col  bg-white   h-full p-2 space-y-1 divide-primary lg:flex-row sm:space-y-1 lg:space-x-4 divide-y-2 divide divide-solid ${
               isOpen ? "" : "hidden"
             }`}
           >

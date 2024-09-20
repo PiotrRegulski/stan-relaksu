@@ -122,14 +122,14 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     "rozluźnianie",
   ];
   return (
-    <>
-      <PageHeader id={"offerDetail"}>{offerDetail.title}</PageHeader>
+    <div className="mt-[5rem]">
+      <PageHeader id={"offerDetail"} >{offerDetail.title}</PageHeader>
 
       <section
         id="main-adventages"
         className="flex flex-col min-h-max   2xl:mx-36 my-4 md:my-4 md:mt-12 animate-fadeIn  transition-transform duration-200 ease-in-out"
       >
-        <div className="w-full py-[3rem] px-[2rem] shadow-md shadow-gray-400 bg-white ">
+        <div className="w-full py-[3rem] px-[2rem] bg-white ">
           <h1 className={`${lato.className} text-center text-xl font-bold`}>
             {firstAdventagesDescription}
           </h1>
@@ -252,7 +252,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
       />
 
       <BackLink>Zobacz pozostałe oferty</BackLink>
-    </>
+    </div>
   );
 };
 

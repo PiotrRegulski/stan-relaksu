@@ -10,7 +10,7 @@ const MobileInfoBar = () => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 600) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -23,7 +23,7 @@ const MobileInfoBar = () => {
   }, []);
   return (
     isVisible && (
-      <div className="md:hidden fixed grid grid-cols-4 gap-1 bottom-0 z-40 bg-primary w-screen h-[4rem] border-t-2 border-white  ">
+      <div className="sm:hidden fixed grid grid-cols-4 gap-1 bottom-0 z-40 bg-primary w-screen h-[4rem] border-t-2 border-white  ">
         <button className="animate-fadeIn   text-sm font-medium text-white shadow-lg shadow-gray-400/75 transition-transform duration-400  hover:scale-[1.02]">
           <Link
             href="https://booksy.com/pl-pl/257898_stan-relaksu-holistyczny-gabinet-terapii-i-masazu_masaz_3_warszawa#ba_s=dl_1"

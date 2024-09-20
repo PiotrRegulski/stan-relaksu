@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={`${lato.className} antialiased  overflow-y-scroll overflow-x-hidden bg-primary max-w-[1920px]  xl:mx-[5%] 2xl:mx-[8%]  my-1  `}
+        className={`${lato.className} relative antialiased  overflow-y-scroll overflow-x-hidden bg-white max-w-[1920px]    my-1  `}
       >
         <MainHeader />
-        <main className="overflow-hidden flex flex-col bg-secondary shadow-lg shadow-white mx-auto ">
+        <main className="overflow-hidden flex flex-col bg-white shadow-lg shadow-white mx-auto ">
           {" "}
           {children}
         </main>

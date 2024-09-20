@@ -41,15 +41,15 @@ const OffersCardBody = () => {
   return (
     <>
       <PageHeader id={"offer-title"}>Zabiegi na Ciało</PageHeader>
-      <div className="flex justify-center w-full my-12 ">
-        <section className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 sm:gap-2 lg:gap-1 w-full ">
+      <div className="flex justify-center w-full my-4 md:my-12 2xl:my-12  ">
+        <section className="grid  gap-5 grid-cols-1 sm:grid-cols-2   lg:grid-cols-3 2xl:grid-cols-3 md:justify-items-center  2xl:justify-items-center 2xl:gap-11 rounded">
           {categoryBody.map((offerItem) => (
             <div
               key={offerItem.id}
-              className=" mx-auto sm:mx-6 md:mx-10 lg:mx-6 my-6 lg:w-auto  bg-white shadow-lg shadow-gray-500 animate-fadeIn rounded border-4 border-white transition-transform duration-200 ease-in-out hover:scale-[1.02] h-max"
+              className=" h-[35rem] md:h-[35rem] md:px-2 bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded   transition-transform duration-200 ease-in-out hover:scale-[1.02]    2xl:w-[30rem] "
             >
               <Link className="" href={`/offer/${offerItem.slug} `}>
-                <div className="relative w-full h-96 mx-auto  ">
+                <div className="relative h-[15rem] w-full   ">
                   <Image
                     src={`/${offerItem.image}`}
                     alt={offerItem.title}
@@ -61,19 +61,19 @@ const OffersCardBody = () => {
                   />
                 </div>
 
-                <div className="animate-fadeIn rounded  px-4  w-full ">
-                  <p className="sm:text-xl text-center font-bold md:px-3 md:py-4 py-2  md:h-14 h-[6rem] lg:h-[5rem] mx-3">
+                <div className="animate-fadeIn rounded  px-1  w-full   ">
+                  <p className="sm:text-lg md:text-md text-center font-serif font-bold h-16 py-2 mb-1 ">
                     {offerItem.title}
                   </p>
                   <p
-                    className={`${lora.className} indent-4 min-h-36 lg:h-48 text-justify  sm:text-xl lg:px-3 px-2 `}
+                    className={` font-serif sm:text-md md:text-md xl:text-xl indent-4 h-[11rem] sm:h-[12rem] md:h-[10rem] lg:h-[11rem] px-2 `}
                   >
                     {offerItem.contentFirst}
                   </p>
                 </div>
 
-                <div className="flex justify-center   ">
-                  <button className=" flex underline decoration-solid underline-offset-8 font-semibold  text-center md:text-lg  my-4 md:my-14 lg:my-20  text-black hover:text-gray-400 hover:bg-opacity-40">
+                <div className="flex justify-center    ">
+                  <button className=" flex underline decoration-solid underline-offset-8 font-semibold  text-center md:text-lg  my-4  text-black hover:text-gray-400 hover:bg-opacity-40">
                     {" "}
                     Dowiedz się więcej
                   </button>
