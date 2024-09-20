@@ -46,7 +46,7 @@ const InfoBar = () => {
             </li>
             <li>
               <Link
-                href={"885987321"}
+                href={"791107102"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" flex flex-row px-3  gap-2 hover:opacity-70 "
@@ -54,7 +54,7 @@ const InfoBar = () => {
                 <span className="bg-white rounded-full  p-2">
                   <BsFillTelephoneForwardFill className="  w-3 h-3" />
                 </span>
-                <span className="pt-1 text-sm">535-187-126</span>
+                <span className="pt-1 text-sm">791-107-102</span>
               </Link>
             </li>
             <li>

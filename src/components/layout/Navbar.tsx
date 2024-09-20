@@ -12,9 +12,9 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="w-1/4 ml-2">
-        <p className=" font-serif leading-4 text-sm tracking-wide  ">
-          Gabinet terapii<br></br> manualnej ciała i twarzy.
+      <div className="w-1/4 ml-2 mt-12">
+        <p className=" font-serif leading-4 text-lg tracking-wide  ">
+          Gabinet terapii<br></br> manualnej ciała i masażu.
         </p>
       </div>
       <div className=" flex w-2/3   justify-end ">
