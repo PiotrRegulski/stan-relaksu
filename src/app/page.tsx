@@ -6,19 +6,18 @@ import OffersCardFace from "@/components/offers/OffersCardFace";
 import WelcomeAboutMe from "@/components/homepage/WelcomeAboutMe";
 import OffersHeader from "@/components/offers/OffersHeader";
 import Carousel from "@/components/carousel/Carousel";
-export const metadata={
-  
-}
+export const metadata = {};
 export default function Home() {
   return (
     <>
       <div className=" ">
-        <WelcomCard />
-       
+        <Carousel />
+        {/* <WelcomCard /> */}
+
         <WelcomeAboutMe />
-        <Carousel/>
-        <OffersHeader/>
-       
+
+        <OffersHeader />
+
         <OffersCardBody />
         <OffersCardFace />
         <Contact />
