@@ -8,7 +8,7 @@ const OffersHeader = () => {
     <div className="bg-white mt-[5rem]">
       <PageHeader id={"offer"}>Oferta</PageHeader>
       <div className=" relative flex flex-col md:flex-row  bg-secondary   lg:mx-[1rem] my-2 rounded">
-        <div className="absolute  flex flex-col  z-30 md:left-[0] md:right-[0] md:top-[0] lg:left-[0] lg:right-[0] lg:top-[0] bg-white bg-opacity-40 border-white border-4 rounded-xl h-full md:h-[16rem] lg:h-[16rem] 2xl:h-[21rem] justify-center">
+        <div className="absolute  flex flex-col  z-30 md:left-[0] md:right-[0] md:top-[0] lg:left-[0] lg:right-[0] lg:top-[0] bg-white bg-opacity-40 border-white border-4 rounded-xl h-[15rem] md:h-[16rem] lg:h-[16rem] 2xl:h-[21rem] justify-center">
           <p className="w-full md:px-16 lg:px-24  xl:px-48 tracking-wide text-center font-serif text-lg md:text-xl font-bold  lg:text-2xl   animate-fadeIn rounded-xl transition-transform duration-1000 ease-in-out  ">
             Czekam na Ciebie z terapią manualną, masażem powięziowym, masażem
             tkanek głębokich.
@@ -18,13 +18,13 @@ const OffersHeader = () => {
             relaksacyjnego, które pozwolą Ci osiągnąć<strong> Stan Relaksu</strong>.</p> 
         </div>
         <div className=" w-full flex justify-center bg-white ">
-          <div className="relative  md:w-[43rem] lg:w-[50rem] w-full h-[10rem] sm:h-[12rem] md:h-[15rem] 2xl:h-[20rem] my-2 md:mx-2 opacity-40 lg:opacity-40 ">
+          <div className="relative  md:w-[43rem] lg:w-[50rem] w-full h-[14rem] sm:h-[12rem] md:h-[15rem] 2xl:h-[20rem] my-2 md:mx-2 opacity-40 lg:opacity-40 ">
             <ImageCard src={"/offersheader1.jpg"} alt={"masaż powięziowy"} />
           </div>
-          <div className=" relative  md:w-[43rem] lg:w-[50rem] w-full h-[10rem] sm:h-[12rem] md:h-[15rem] 2xl:h-[20rem] my-2 mx-1 md:mx-2 opacity-40 lg:opacity-40">
+          <div className=" relative  md:w-[43rem] lg:w-[50rem] w-full h-[14rem] sm:h-[12rem] md:h-[15rem] 2xl:h-[20rem] my-2 mx-1 md:mx-2 opacity-40 lg:opacity-40">
             <ImageCard src={"/offersheader2.jpg"} alt={"zabieg na twarz"} />
           </div>
-          <div className="relative  md:w-[43rem] lg:w-[50rem] w-full h-[10rem] sm:h-[12rem] md:h-[15rem] 2xl:h-[20rem] my-2 md:mx-2 opacity-40 lg:opacity-40 ">
+          <div className="relative  md:w-[43rem] lg:w-[50rem] w-full h-[14rem] sm:h-[12rem] md:h-[15rem] 2xl:h-[20rem] my-2 md:mx-2 opacity-40 lg:opacity-40 ">
             <BackImage />
           </div>
         </div>

@@ -10,7 +10,7 @@ const Logo = () => {
         width={200}
         height={200}
         sizes="(max-width: 600px) 100vw, 50vw"
-        className="bg-mainthemelogo rounded-full shadow-xl"
+        className=" rounded-full shadow-xl "
         alt="Screenshots of the dashboard project showing desktop version"
         priority={true}
       />

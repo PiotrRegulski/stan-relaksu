@@ -122,7 +122,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     "rozluźnianie",
   ];
   return (
-    <div className="mt-[5rem]">
+    <div className="mt-[7rem]">
       <PageHeader id={"offerDetail"} >{offerDetail.title}</PageHeader>
 
       <section
