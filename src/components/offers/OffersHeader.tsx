@@ -5,7 +5,7 @@ import ImageCard from "../about/ImageCard";
 
 const OffersHeader = () => {
   return (
-    <div className="bg-white mt-[5rem]">
+    <div className="bg-white mt-[7rem]">
       <PageHeader id={"offer"}>Oferta</PageHeader>
       <div className=" relative flex flex-col md:flex-row  bg-secondary   lg:mx-[1rem] my-2 rounded">
         <div className="absolute  flex flex-col  z-30 md:left-[0] md:right-[0] md:top-[0] lg:left-[0] lg:right-[0] lg:top-[0] bg-white bg-opacity-40 border-white border-4 rounded-xl h-[15rem] md:h-[16rem] lg:h-[16rem] 2xl:h-[21rem] justify-center">
