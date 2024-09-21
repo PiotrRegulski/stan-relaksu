@@ -129,7 +129,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
         id="main-adventages"
         className="flex flex-col min-h-max   2xl:mx-36 my-4 md:my-4 md:mt-12 animate-fadeIn  transition-transform duration-200 ease-in-out"
       >
-        <div className="w-full py-[3rem] px-[2rem] bg-white ">
+        <div id="important-about" className="w-full py-[3rem] px-[2rem] bg-white ">
           <h1 className={`${lato.className} text-center text-xl font-bold`}>
             {firstAdventagesDescription}
           </h1>
