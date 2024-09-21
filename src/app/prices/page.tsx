@@ -9,7 +9,7 @@ export const metadata = {
 };
 const page = () => {
   return (
-    <div className="flex flex-col bg-my-bg-price bg-no-repeat bg-cover ">
+    <div className="flex flex-col bg-white bg-no-repeat bg-cover mt-[7rem] ">
       <PageHeader id={"prices"}>Cennik</PageHeader>
       <div className=" flex justify-center h-2/3 md:py-4 md:px-2  md:mx-36 md:my-8 my-4 animate-fadeIn rounded  transition-transform duration-200 ease-in-out  ">
         <AllPriceList />
