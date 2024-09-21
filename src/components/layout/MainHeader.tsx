@@ -16,7 +16,7 @@ const MainHeader = () => {
   useEffect(() => {
     const handleScroll = () => {
       const offerId =
-        document.getElementById("offer") ||
+        document.getElementById("offer-title") ||
         document.getElementById("kontakt-info")||
         document.getElementById("important-about");
       if (offerId) {

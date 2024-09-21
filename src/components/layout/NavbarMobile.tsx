@@ -6,9 +6,7 @@ import { CormorantInfant } from "@/components/fonts";
 import { useState, useCallback } from "react";
 import HamburgerIcon from "@/components/layout/HamburgerIcon";
 import Link from "next/link";
-import Logo from "./Logo";
 import MobileNavLinks from "./MobileNavLinks";
-import MobileInfoBar from "./MobileInfoBar";
 const NavbarMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenuAndScroll = useCallback(() => {
@@ -55,7 +53,7 @@ const NavbarMobile = () => {
         />
       </div> */}
 
-      <MobileInfoBar />
+      
 
       <div
         className={`${CormorantInfant.className} flex flex-wrap w-full justify-evenly lg:hidden`}

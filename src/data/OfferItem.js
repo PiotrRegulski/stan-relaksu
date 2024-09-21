@@ -4,13 +4,14 @@ export const OfferItem = [
     slug: "masaz-kobido",
     active: true,
     category: "face",
-    title: "Masaż twarzy Kobido z kinesiotapingiem estetycznym",
+    title: "Kobido z kinesiotapingiem estetycznym",
     image: "offers-photo/kobido-omnie.jpg",
     imagedetailf: "kobido/kobido-kinesiotaping.jpg",
     imagedetails: "kobido/kobido-procedure-buttom.jpg",
     imagedetailt: "kobido/kobido-procedure-top.jpg",
     imagedetailfo: "kobido/kobido-secondP.jpg",
     prices: [{ id: "cenaKobido", priceName: "90 minut", price: "300 zł" }],
+    contentMainOffer:"Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwa perłą w świecie pielęgnacji twarzy.",
     contentFirst:
       "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwa perłą w świecie pielęgnacji twarzy. Wywodzący się z Japoni niechirurgiczny lifting twarzy, który od wieków zachwyca swoją skutecznością..",
     advantages: [
@@ -111,6 +112,8 @@ export const OfferItem = [
     imagedetailt: "igłoterapia/igłoterapia-estetyczna-proceduref.jpg",
     imagedetailfo: "igłoterapia/igłoterapia-estetyczna-second.jpg",
     prices: [{ id: "cenaIgłoterapi", priceName: "90 minut", price: "350 zł" }],
+    contentMainOffer:"Igłoterapia estetyczna twarzy z pinezkowaniem to zaawansowany zabieg, który może odmienić bezinwazyjnie wygląd Twojej twarzy.",
+
     contentFirst:
       "Igłoterapia estetyczna twarzy z pinezkowaniem to zaawansowany zabieg, który może odmienić bezinwazyjnie wygląd Twojej twarzy. Zmniejszenie napięcia mięśni mimicznych, pobudzenie produkcji kolagenu i elastyny przynosi efekt odmłodzenia..  ",
     advantages: [
@@ -192,6 +195,8 @@ export const OfferItem = [
       { id: "maspow60", priceName: "60 minut", price: "200 zł" },
       { id: "maspow90", priceName: "90 minut", price: "250 zł" },
     ],
+    contentMainOffer:"To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała. Pomaga w zmniejszeniu dolegliwości bólowych.",
+
     contentFirst:
       "To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała. Uwolnienie powięziowe i zniesienie napięć w ciele pomaga w zmniejszeniu dolegliwości bólowych, uczucia stresu oraz ogólnej relaksacji. ",
     advantages: [
@@ -444,7 +449,7 @@ export const OfferItem = [
     slug: "masaz-sportowy",
     active: true,
     category: "body",
-    title: "Masaż tkanek głębokich/masaż sportowy",
+    title: "Masaż tkanek głębokich",
     image: "offers-photo/masaż-tkanek-głebokich-main.jpg",
     imagedetailf: "masaz-sportowy/masaż-tkanek-głebokich-last.jpg",
     imagedetails: "masaz-sportowy/masaż-tkanek-głebokich-procedureb.jpg",
@@ -456,8 +461,10 @@ export const OfferItem = [
       { id: "sport60", priceName: "60 minut", price: "200 zł" },
       { id: "sport90", priceName: "90 minut", price: "250 zł" },
     ],
+    contentMainOffer:"Niezwykle skuteczna technika pracy z ciałem koncentrująca się na rozluźnieniu głębokich warstwach mięśni i tkanki łącznej.",
+
     contentFirst:
-      "Niezwykle skuteczna technika pracy z ciałem koncentrująca się na rozluźnieniu głębokich warstwach mięśni i tkanki łącznej. Świetnie sprawdzi się u osób odczuwających napięcie i sztywność mięśniową, ale także u sportowców i osób rekreacyjnie trenujących. ",
+      "Niezwykle skuteczna technika pracy z ciałem koncentrująca się na rozluźnieniu głębokich warstwach mięśni i tkanki łącznej. ",
     advantages: [
       { title: "Łagodzenie bólu mięśniowego i stawowego" },
       {
@@ -545,6 +552,8 @@ export const OfferItem = [
       { id: "terapman60", priceName: "60 minut", price: "200 zł" },
       { id: "terapman90", priceName: "90 minut", price: "250 zł" },
     ],
+    contentMainOffer:"To specjalistyczne techniki pracy z ciałem i stawami, mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu.",
+
     contentFirst:
       "To specjalistyczne techniki pracy z ciałem i stawami  polegające na uciskach, mobilizacjach stawowych i tkankowych mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenia sztywności i ograniczeń w zakresie ruchomości oraz redukcji bólu. ",
     advantages: [

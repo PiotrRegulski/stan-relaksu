@@ -19,8 +19,11 @@ const InfoBar = () => {
                 rel="noopener noreferrer"
                 className="flex flex-row  gap-2 px-1 py-1  hover:opacity-70  rounded-xl"
               >
-                
-                <span className="   "><p className="text-sm text-black underline underline-offset-2 tracking-wider">Zarezerwuj Wizyte</p> </span>
+                <span className="   ">
+                  <p className="text-sm text-black underline underline-offset-2 tracking-wider">
+                    Zarezerwuj Wizyte
+                  </p>{" "}
+                </span>
                 <span className="">
                   <BsArrowUpRightSquare className="w-3 h-3 bg-white border-white mt-1" />
                 </span>
@@ -30,7 +33,6 @@ const InfoBar = () => {
         </div>
         <div>
           <ul className=" flex flex-row">
-            
             <li>
               <Link
                 href={"mailto:kontakt@stanrelaksu.pl"}
@@ -46,7 +48,7 @@ const InfoBar = () => {
             </li>
             <li>
               <Link
-                href={"791107102"}
+                href="tel:791107102"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" flex flex-row px-3  gap-2 hover:opacity-70 "
@@ -86,4 +88,3 @@ const InfoBar = () => {
 };
 
 export default InfoBar;
-

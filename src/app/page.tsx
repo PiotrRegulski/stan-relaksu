@@ -16,7 +16,7 @@ export default function Home() {
 
         <WelcomeAboutMe />
 
-        <OffersHeader />
+        {/* <OffersHeader /> */}
 
         <OffersCardBody />
         <OffersCardFace />

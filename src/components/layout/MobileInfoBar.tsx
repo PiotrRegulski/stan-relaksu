@@ -38,7 +38,7 @@ const MobileInfoBar = () => {
         <button className=" md:hidden   w-full  text-white shadow-xl  transition-transform duration-200 ease-in-out hover:scale-[1.09] ">
           <div className="flex justify-center">
             {" "}
-            <Link href="tel:885987321 ">
+            <Link href="tel:791107102 ">
               <BsFillTelephoneForwardFill className="text-center " />
             </Link>
           </div>

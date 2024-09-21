@@ -3,6 +3,7 @@ import "./globals.css";
 import MainHeader from "@/components/layout/MainHeader";
 import MainFooter from "@/components/layout/MainFooter";
 import { lato } from "@/components/fonts";
+import MobileInfoBar from "@/components/layout/MobileInfoBar";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         className={`${lato.className} relative antialiased  overflow-y-scroll overflow-x-hidden bg-white max-w-[1920px]    my-1  `}
       >
         <MainHeader />
+        <MobileInfoBar/>
         <main className="overflow-hidden flex flex-col bg-white shadow-lg shadow-white mx-auto ">
           {" "}
           {children}

@@ -12,7 +12,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ children,id }) => {
       className="grid grid-cols-1 gap-2 place-items-center md:h-24 bg-white shadow-md "
       // style={{ backgroundImage: "url('/ofertabg.png')" }}
     >
-      <header className="px-4 py-3 text-xl md:text-2xl xl:text-4xl font-thin  font-serif text-center   bg-opacity-75 rounded-xl  text-black ">
+      <header className="px-4 py-3 text-2xl md:text-2xl xl:text-4xl font-thin  font-serif text-center   bg-opacity-75 rounded-xl  text-black ">
         {children}
       </header>
     </header>

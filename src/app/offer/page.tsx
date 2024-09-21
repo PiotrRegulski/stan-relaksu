@@ -15,7 +15,7 @@ export const metadata = {
 const OfferPage: React.FC<OfferProps> = () => {
   return (
     <>
-      <OffersHeader/>
+      {/* <OffersHeader/> */}
       <OffersCardBody />
       <OffersCardFace/>
       <div className="mb-6" ><ButtonReservation/></div>

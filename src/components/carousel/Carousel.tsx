@@ -48,6 +48,17 @@ const images: ImageData[] = [
     clName:
       "text-white xl:text-2xl font-serif tracking-widest hover:opacity-70 hover:underline ",
   },
+  {
+    src: "/carousel/masaż-tkanek-głebokich.jpg",
+    alt: "Masaż tkanek głębokich",
+    description:
+      "Niezwykle skuteczna technika pracy z ciałem koncentrująca się na rozluźnieniu głębokich warstwach mięśni i tkanki powięziowej. ",
+    linkDetails: "offer/masaz-sportowy",
+    linkBooksy:
+      "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
+    clName:
+      "text-white xl:text-2xl font-serif tracking-widest hover:opacity-70 hover:underline ",
+  },
   // Dodaj więcej obrazów według potrzeb
 ];
 const Carousel: React.FC = () => {
@@ -100,10 +111,10 @@ const Carousel: React.FC = () => {
 
 
 
-              <div className="absolute bottom-0 xl:bottom-32 xl:left-14 right-0 bg-black bg-opacity-40 text-primary  p-2 w-full xl:w-1/2 text-center rounded">
-                <div className=" mx-auto sm:mx-12 md:mx-36 xl:mx-12 my-4">
+              <div className="absolute bottom-0 lg:bottom-32 lg:left-14 right-0 bg-black bg-opacity-40 text-primary  p-2 w-full lg:w-1/2 text-center rounded">
+                <div className=" mx-auto sm:mx-12 md:mx-12 xl:mx-12 my-4">
                   {" "}
-                  <p className="text-white xl:text-4xl font-serif tracking-wide md:text-left mb-2 xl:mb-4">
+                  <p className="text-white lg:text-2xl xl:text-4xl font-serif tracking-wide md:text-left mb-2 xl:mb-4">
                     {image.alt}
                   </p>
                   <p className="text-white xl:text-2xl font-serif tracking-wide">
@@ -121,13 +132,13 @@ const Carousel: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className="text-sm sm:px-2 font-bold bg-primary text-black shadow-md shadow-white  py-1 px-2   sm:py-3 rounded mr-2 sm:mr-4">Zarezerwuj wizyte</span>
+                    <span className="text-sm sm:px-2 sm:font-bold font-semibold tracking-tight bg-primary text-black shadow-md shadow-white mr-2 py-2 px-1   sm:py-3 rounded  sm:mr-4">Zarezerwuj wizyte</span>
                   </Link>
                   <button
                     className="text-white xl:text-2xl font-serif tracking-widest hover:opacity-70  "
                     onClick={() => router.push(image.linkDetails)}
                   >
-                    <span className="text-sm sm:px-2 bg-primary text-black shadow-md shadow-white py-1 px-2 sm:py-3 font-bold rounded">Dowiedz się więcej</span>
+                    <span className="text-sm sm:px-2 bg-primary text-black shadow-md shadow-white tracking-tight py-2 px-1  sm:py-3 sm:font-bold font-semibold rounded">Dowiedz się więcej</span>
                   </button>
                 </div>
               </div>
