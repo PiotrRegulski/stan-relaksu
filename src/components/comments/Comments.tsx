@@ -34,8 +34,8 @@ const commentsData = [
   },
 ];
 const Comments = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [prevIndex, setPrevIndex] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [prevIndex, setPrevIndex] = useState<number | null>(null);
   useEffect(() => {
     const interval = setInterval(() => {
       setPrevIndex(currentIndex);
@@ -58,12 +58,12 @@ const Comments = () => {
           <CommentsItem
             key={index}
             className={`absolute top-0 left-0  h-full transition-opacity duration-500 border-4 ${
-                index === currentIndex
-                  ? "animate-slideLeft"
-                  : index === prevIndex
-                  ? "animate-slideOutLeft"
-                  : "invisible opacity-0"
-              }`}
+              index === currentIndex
+                ? "animate-slideLeft"
+                : index === prevIndex
+                ? "animate-slideOutLeft"
+                : "invisible opacity-0"
+            }`}
             comment={comment.comment}
             author={comment.author}
             source={comment.source}
