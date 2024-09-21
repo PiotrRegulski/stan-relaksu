@@ -7,7 +7,7 @@ import AdressCard from "./AdressCard";
 import DetailedAddress from "./DetailedAddress";
 import ContactForm from "./ContactForm";
 const Contact = () => {
-  console.log("NEXT_PUBLIC_URL:", process.env.NEXT_PUBLIC_URL);
+ 
   return (
     <div className="w-full">
       <PageHeader id={"kontakt"}>Skontaktuj się</PageHeader>
@@ -15,7 +15,7 @@ const Contact = () => {
         className="grid md:grid-cols-1
         gap-4  items-center my-4 lg:my-4 mx-auto lg:mx-6 "
       >
-        <div className="px-2 shadow-xl rounded border-4 bg-white border-white  shadow-gray-400/75 w-full">
+        <div id="kontakt-info" className="px-2 shadow-xl rounded border-4 bg-white border-white  shadow-gray-400/75 w-full">
           <div className="text-xl font-bold md:mb-2 py-8 text-center ">
             <p className="text-2xl my-8">
               Gabinet mieści się przy <strong>studio jogi Jasna Asana. </strong>
