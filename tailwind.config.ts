@@ -51,9 +51,22 @@ const config: Config = {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        slideLeft: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        slideOutLeft: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+     
+       
       },
       animation: {
+        slideLeft: 'slideLeft 0.5s forwards',
+        slideOutLeft: 'slideOutLeft 0.5s forwards',
         fadeIn: "fadeIn 1s ease-in-out",
+       
       },
     },
   },

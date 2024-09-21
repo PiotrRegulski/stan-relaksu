@@ -113,12 +113,10 @@ const Carousel: React.FC = () => {
 
               <div className="absolute bottom-0 lg:bottom-32 lg:left-14 right-0 bg-black bg-opacity-40 text-primary  p-2 w-full lg:w-1/2 text-center rounded">
                 <div className=" mx-auto sm:mx-12 md:mx-12 xl:mx-12 my-4">
-                  {" "}
                   <p className="text-white lg:text-2xl xl:text-4xl font-serif tracking-wide md:text-left mb-2 xl:mb-4">
                     {image.alt}
                   </p>
                   <p className="text-white xl:text-2xl font-serif tracking-wide">
-                    {" "}
                     {image.description}
                   </p>
                 </div>

@@ -6,6 +6,7 @@ import OffersCardFace from "@/components/offers/OffersCardFace";
 import WelcomeAboutMe from "@/components/homepage/WelcomeAboutMe";
 import OffersHeader from "@/components/offers/OffersHeader";
 import Carousel from "@/components/carousel/Carousel";
+import Comments from "@/components/comments/Comments";
 export const metadata = {};
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
 
         <OffersCardBody />
         <OffersCardFace />
+        <Comments/>
         <Contact />
       </div>
     </>
