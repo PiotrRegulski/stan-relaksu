@@ -57,7 +57,7 @@ const Comments = () => {
         {commentsData.map((comment: any, index: number) => (
           <CommentsItem
             key={index}
-            className={`absolute top-0 left-0  h-full transition-opacity duration-500 border-4 ${
+            className={`absolute top-0 left-0  h-full transition-opacity duration-500  ${
               index === currentIndex
                 ? "animate-slideLeft"
                 : index === prevIndex
