@@ -19,8 +19,7 @@ const commentsData = [
     service: "Terapia manualna",
   },
   {
-    comment:
-      "Polecam każdemu, Pani Kinga ma ogromną  wiedzę. Zabiegi wykonane profesjonalnie w cudownej atmosferze. Korzystam regularnie i będę wracać :)",
+    comment:"Polecam każdemu, Pani Kinga ma ogromną  wiedzę. Zabiegi wykonane profesjonalnie w cudownej atmosferze. Korzystam regularnie i będę wracać :)",
     author: "Katarzyna",
     source: "stanrelaksu.booksy.com",
     service: "Terapia manualna",
@@ -32,6 +31,25 @@ const commentsData = [
     source: "stanrelaksu.booksy.com",
     service: "Masaż powięziowy",
   },
+  {
+    comment:
+      "Masaż Kobido wykonany przez przesympatyczną Panią Kingę był wyjątkowym doświadczeniem. Profesjonalne podejście i skuteczne techniki sprawiły, że poczułam się niesamowicie odprężona. Moja skóra jest teraz bardziej napięta i promienna. Gorąco polecam ten masaż każdemu, kto szuka naturalnego sposobu na poprawę wyglądu. Na pewno wrócę! Pani Kingo, jeszcze raz dziękuję.",
+    author: "Gosia",
+    source: "stanrelaksu.booksy.com",
+    service: "Masaż twarzy Kobido z kinesiotapingiem",
+  },
+  {
+    comment:"Pełen profesjonalizm , zdecydowanie polecam. Z przyjemnością będe tu wracać.",
+    author: "Marta",
+    source: "stanrelaksu.booksy.com",
+    service: "Masaż twarzy Kobido z kinesiotapingiem",
+  },
+  {
+    comment:"Daję 10 gwiazdek :) Polecam z całego serca. Czuję, że już po pierwszej wizycie zeszły moje napięcia. Kinga to wspaniała osoba z dużą wiedzą. Na pewno będę wracać zarówno w razie bólowej potrzeby czy po prostu w ramach relaksu. Myślę, że masaż w tym miejscu to też świetna opcja na prezent.Gabinet jest piękny, w spokojnej okolicy ze świetnym ogrodem i studiem jogi za ścianą. W łazience są wszystkie niezbędne kobiecie akcesoria. Poczułam się zrelaksowana i zaopiekowana na 200%",
+    author: "Aleksandra",
+    source: "stanrelaksu.booksy.com",
+    service: "Masaż relaksacyjny",
+  },
 ];
 const Comments = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -40,18 +58,28 @@ const Comments = () => {
     const interval = setInterval(() => {
       setPrevIndex(currentIndex);
       setCurrentIndex((prevIndex) => (prevIndex + 1) % commentsData.length);
-    }, 5000); // Zmiana obrazu co 5 sekund
+    }, 8000); // Zmiana obrazu co 8 sekund
     return () => clearInterval(interval);
   }, [currentIndex]);
 
+
+  
+
+  const handleNextImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % commentsData.length);
+  };
+  const handlePrevImage =()=>{
+    setCurrentIndex((nextIndex)=>(nextIndex-1+ commentsData.length)% commentsData.length);
+  }
+
   return (
-    <div className=" flex flex-col justify-center items-center bg-secondary w-full h-[30rem]">
+    <div className=" flex flex-col justify-center items-center bg-secondary w-full h-[42rem] sm:h-[30rem] md:h-[30rem] lg:h-[30rem] xl:h-[35rem]">
       <div className="mt-24 ">
-        <p className=" 2xl:text-4xl font-serif ">Opinie</p>
+        <p className=" text-2xl 2xl:text-4xl font-serif ">Opinie</p>
       </div>
-      <div className=" flex justify-between w-full text-4xl font-bold  px-48">
-        <span> {"<"} </span>
-        <span> {">"} </span>
+      <div className=" flex justify-between w-full text-4xl font-bold px-4 lg:px-48">
+        <button onClick={handlePrevImage} className="opacity-100 hover:opacity-40 hover:shadow-lg"> {"<"} </button>
+        <button onClick={handleNextImage} className="opacity-100 hover:opacity-40 hover:shadow-lg"> {">"} </button>
       </div>
       <div className=" relative w-full h-full">
         {commentsData.map((comment: any, index: number) => (

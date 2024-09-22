@@ -46,15 +46,15 @@ const OffersCardFace = () => {
   return (
     <>
       <PageHeader id={"offer"}>Zabiegi na Twarz</PageHeader>
-      <div className="flex justify-center w-full my-4 md:my-12 2xl:my-12  ">
-        <section className="grid  gap-5 md:gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3   lg:grid-cols-3 2xl:grid-cols-3 md:justify-items-center  2xl:justify-items-center 2xl:gap-11 rounded ">
+      <div className="flex justify-center  w-full my-4 md:my-12 2xl:my-12 sm:min-h-[33rem] md:min-h-[33rem] ">
+        <section className="grid  gap-5 md:gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3   lg:grid-cols-3 2xl:grid-cols-3 md:justify-items-center  2xl:justify-items-center 2xl:gap-11 rounded">
           {categoryFace.map((offerItem) => (
             <div
               key={offerItem.id}
-              className=" h-[33rem] sm:h-[30rem] md:h-[35rem] 2xl:h-[40rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform duration-200 ease-in-out hover:scale-[1.02]    2xl:w-[30rem] "
+              className=" h-[31rem] sm:h-[20rem] md:h-[30rem] 2xl:h-[40rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform duration-200 ease-in-out hover:scale-[1.02]    2xl:w-[30rem] "
             >
               <Link className="" href={`/offer/${offerItem.slug} `}>
-                <div className="relative h-[33rem] w-screen   sm:w-[22rem] md:w-[18rem] md:h-[35rem] lg:min-w-[21rem] xl:w-[25rem] 2xl:h-[40rem] 2xl:w-[30rem] ">
+                <div className="relative h-[31rem] w-screen   sm:w-[20rem] md:w-[17rem] md:h-[30rem] lg:min-w-[21rem] xl:w-[25rem] 2xl:h-[40rem] 2xl:w-[30rem] ">
                   <Image
                     src={`/${offerItem.image}`}
                     alt={offerItem.title}
@@ -62,15 +62,15 @@ const OffersCardFace = () => {
                     // width={auto}
                     // height={467}
                     sizes="(max-width: 600px) 100vw, 50vw"
-                    className=" object-cover object-center w-full h-full rounded-lg "
+                    className=" object-cover w-full h-full rounded-lg "
                   />
-                  <div className="absolute bottom-0 left-0 bg-mainpeach bg-opacity-90  ">
+                  <div className="absolute bottom-0 left-0 bg-mainpeach bg-opacity-90  border-2 border-mainpeach rounded ">
                     <div className=" animate-fadeIn rounded   px-1  w-full  ">
-                      <p className="sm:text-lg md:text-md 2xl:text-xl text-center font-serif font-semibold  py-2 mb-1 text-black ">
+                      <p className="sm:text-base md:text-base 2xl:text-xl text-center font-serif font-semibold sm:h-14 py-2 mb-1 text-black">
                         {offerItem.title}
                       </p>
                       <p
-                        className={` font-serif text-center sm:text-md md:text-md xl:text-md 2xl:text-xl indent-4 px-8 sm:px-2 h-24 sm:h-24 md:h-36 lg:h-24 2xl:h-24 text-black `}
+                        className={` font-serif text-center sm:text-sm md:text-base xl:text-md 2xl:text-xl indent-4 px-8 sm:px-2 h-28 sm:h-24 md:h-28 lg:h-24 2xl:h-24 text-black `}
                       >
                         {offerItem.contentMainOffer}
                       </p>

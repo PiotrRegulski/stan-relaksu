@@ -4,7 +4,7 @@ export const OfferItem = [
     slug: "masaz-kobido",
     active: true,
     category: "face",
-    title: "Kobido z kinesiotapingiem estetycznym",
+    title: "Kobido z kinesiotapingiem ",
     image: "offers-photo/kobido-omnie.jpg",
     imagedetailf: "kobido/kobido-kinesiotaping.jpg",
     imagedetails: "kobido/kobido-procedure-buttom.jpg",
