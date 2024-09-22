@@ -1,15 +1,14 @@
 "use client";
-import React, { useEffect, useState, useCallback,Suspense } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { CormorantInfant } from "@/components/fonts";
 import Navbar from "./Navbar";
 import NavbarMobile from "./NavbarMobile";
 import InfoBar from "./InfoBar";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const MainHeader = () => {
   const [isVisible, setIsVisible] = useState(true);
   const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   const handleScroll = useCallback(() => {
     const offerId =
@@ -28,19 +27,18 @@ const MainHeader = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Run on first render
+    handleScroll(); // Uruchomienie funkcji przy pierwszym renderowaniu
 
-    // Listen for route changes
+    // Nasłuchiwanie na zmiany trasy
     handleRouteChange();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [handleScroll, pathname, searchParams]);
+  }, [handleScroll, pathname]);
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-    {isVisible && (
+    isVisible && (
       <div className="fixed z-40 top-0 transition">
         <InfoBar />
         <header className={`${CormorantInfant.className} flex flex-col justify-center bg-white`}>
@@ -52,8 +50,7 @@ const MainHeader = () => {
           </div>
         </header>
       </div>
-    )}
-  </Suspense>
+    )
   );
 };
 
