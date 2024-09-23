@@ -73,7 +73,7 @@ const Comments = () => {
   }
 
   return (
-    <div className=" flex flex-col justify-center items-center bg-secondary w-full h-[42rem] sm:h-[30rem] md:h-[30rem] lg:h-[30rem] xl:h-[35rem]">
+    <div className=" flex flex-col justify-center items-center bg-secondary w-full h-[35rem] sm:h-[30rem] md:h-[30rem] lg:h-[30rem] xl:h-[35rem]">
       <div className="mt-24 ">
         <p className=" text-2xl 2xl:text-4xl font-serif ">Opinie</p>
       </div>
