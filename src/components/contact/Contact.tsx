@@ -12,34 +12,36 @@ const Contact = () => {
       <PageHeader id={"kontakt"}>Skontaktuj się</PageHeader>
       <div
         className="grid md:grid-cols-1
-        gap-4  items-center my-4 lg:my-4 mx-auto lg:mx-6 "
+        gap-4  items-center my-4 lg:my-4 mx-auto  "
       >
         <div
           id="kontakt-info"
-          className="px-2 shadow-xl rounded border-4 bg-secondary border-white  shadow-gray-400/75 w-full"
+          className="px-2 shadow-xl rounded  bg-secondary  shadow-gray-400/75 w-full "
         >
-          <div className="text-xl font-bold md:mb-2 py-8 text-center bg-">
-            <p className="text-2xl my-8">
-              Gabinet mieści się przy <strong>studio jogi Jasna Asana. </strong>
-            </p>{" "}
-            <p>
-              Tworzymy to miejsce aby holistycznie zadbać o Twoje ciało.
-              <br></br> Poprzez połączenie jogi i terapii manualnej.<br></br>{" "}
-              Możesz zatroszczyć się o siebie w sposób kompleksowy.
-            </p>
+          <div className=" flex flex-col md:flex-row  w-full  bg-mainpeach">
+            <div className=" md:text-xl lg:text-xl md:mt-12  md:w-2/3  lg:mt-16 px-2  py-12 lg:w-2/3 2xl:mt-28 ">
+              <p className="font-semibold font-serif   text-center ">
+                Gabinet mieści się przy{" "}
+                <strong>studio jogi Jasna Asana. </strong>
+              </p>
+              <p className="text-center">
+                Tworzymy to miejsce aby holistycznie zadbać o Twoje ciało.
+                <br></br> Poprzez połączenie jogi i terapii manualnej.<br></br>{" "}
+                Możesz zatroszczyć się o siebie w sposób kompleksowy.
+              </p>
+            </div>
+            <div className="relative w-full h-96 md:w-full lg:w-[48rem] lg:h-[30rem]  ">
+              <Image
+                src={"/contact/gabient.jpg"}
+                fill
+                className=" object-cover w-full h-full"
+                alt="Screenshots of the dashboard project showing desktop version"
+                priority={true}
+              />
+            </div>
           </div>
-          <div className="relative w-[30rem] h-[30rem] bg-white">
-            <Image
-              src={"/contact/gabient.jpg"}
-             
-              fill
-              className="shadow-gray-400 shadow-md bg-white object-fill w-[30rem] h-[30rem]"
-              alt="Screenshots of the dashboard project showing desktop version"
-              priority={true}
-             
-            />
-          </div>
-          <div className="flex md:flex-row flex-col justify-around my-8 py-2 w-full bg-white shadow-md shadow-primary ">
+
+          <div className="flex md:flex-row flex-col justify-around mb-8 py-2 w-full bg-white shadow-md shadow-primary ">
             <AdressCard
               title={"Jasna Asana Studio Jogi"}
               href={"https://www.jasnaasana.pl/grafik"}
