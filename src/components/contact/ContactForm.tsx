@@ -104,12 +104,13 @@ const ContactForm = () => {
 
   return (
     <div className=" flex flex-col justify-center  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 bg-secondary sm:mx-2 lg:my-6 md:mx-0 ">
-      <h3 className="lg:mx-64 text-2xl lg:text-2xl font-bold mt-6 text-center text-black ">
+      <h3 className="lg:mx-64 text-2xl lg:text-3xl font-serif font-bold mt-9 text-center text-black  ">
         Potrzebujesz więcej informacji lub porady na temat zabiegów.
       </h3>
-      <p className="text-sm lg:mx-48 lg:text-xl text-gray-800 mt-4 text-center">
-      Chętnie pomogę! Skontaktuj się ze mną poprzez formularz kontaktowy lub media społecznościowe.
+      <p className="text-lg lg:mx-48 lg:text-xl  text-gray-800 mt-4 text-center">
+       Skontaktuj się ze mną poprzez formularz kontaktowy lub media społecznościowe.
       </p>
+      <p className="text-center mt-4 text-xl lg:text-2xl font-semibold font-serif  tracking-wider">Chętnie pomogę!</p>
 
       <form
         onSubmit={onSubmit}
