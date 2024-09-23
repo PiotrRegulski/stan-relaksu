@@ -16,7 +16,7 @@ const AdressCard = (props: any) => {
             height={200}
             
             
-            className=" rounded-full shadow-gray-400 shadow-md bg-white "
+            className=" rounded-full shadow-gray-400 shadow-md bg-mainthemelogo"
             alt="Screenshots of the dashboard project showing desktop version"
             priority={true}
              style={{ width: 'auto', height: 'auto' }}
