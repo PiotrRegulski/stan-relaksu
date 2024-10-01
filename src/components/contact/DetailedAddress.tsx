@@ -6,7 +6,7 @@ import { IoIosPin } from "react-icons/io";
 import DetailedAdressItem from "./DetailedAdressItem";
 const DetailedAddress = () => {
   return (
-    <div className=" ">
+    <div className="lg:text-xl ">
       <p className="font-semibold">Dane Kontaktowe:</p>
       <DetailedAdressItem
         ico={<IoIosPin className="w-8 h-8" />}

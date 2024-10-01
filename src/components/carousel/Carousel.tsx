@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useState,useRef } from "react";
+import { motion, useInView,} from "framer-motion";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import PageHeader from "../homepage/PageHeader";
@@ -66,7 +67,7 @@ const Carousel: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 9000); // Zmiana obrazu co 9 sekund
+    }, 5000); // Zmiana obrazu co 5 sekund
     return () => clearInterval(interval);
   }, []);
 
@@ -77,10 +78,15 @@ const Carousel: React.FC = () => {
     setCurrentIndex((nextIndex)=>(nextIndex-1+ images.length)% images.length);
   }
   const router = useRouter();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
+    
     <>
       <PageHeader id={"Popularne zabiegi"}>Popularne zabiegi</PageHeader>
-      <div className="flex justify-center items-center xl:h-[45rem] bg-secondary my-1">
+      <motion.div className="flex justify-center items-center xl:h-[45rem] bg-secondary my-1"   ref={ref}  initial={{ y: 100, opacity: 0 }}
+        animate={isInView ? { y: 0, opacity: 1 } : {}}
+        transition={{ duration: 1, ease: "easeInOut"  }}>
         <div className="relative w-full h-[30rem] md:h-[35rem]  xl:h-[45rem] overflow-hidden ">
           {images.map((image, index) => (
             <div
@@ -143,7 +149,7 @@ const Carousel: React.FC = () => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

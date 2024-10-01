@@ -6,6 +6,7 @@ import PageHeader from "../homepage/PageHeader";
 import AdressCard from "./AdressCard";
 import DetailedAddress from "./DetailedAddress";
 import ContactForm from "./ContactForm";
+import OfficeAppearance from "./OfficeAppearance";
 const Contact = () => {
   return (
     <div className="w-full">
@@ -18,8 +19,8 @@ const Contact = () => {
           id="kontakt-info"
           className="px-2 shadow-xl rounded  bg-secondary  shadow-gray-400/75 w-full "
         >
-          <div className=" flex flex-col md:flex-row  w-full  bg-mainpeach">
-            <div className=" md:text-xl lg:text-xl md:mt-12  md:w-2/3  lg:mt-16 px-2  py-12 lg:w-2/3 2xl:mt-28 ">
+          <div className=" flex flex-col md:flex-row  w-full  bg-gradient-to-r from-transparent to-mainpeach">
+            <div className=" md:text-xl lg:text-xl xl:text-2xl md:mt-12  md:w-2/3  lg:mt-16 px-2  py-12 lg:w-2/3 2xl:mt-28 ">
               <p className="font-semibold font-serif   text-center ">
                 Gabinet mieści się przy{" "}
                 <strong>studio jogi Jasna Asana. </strong>
@@ -30,18 +31,18 @@ const Contact = () => {
                 Możesz zatroszczyć się o siebie w sposób kompleksowy.
               </p>
             </div>
-            <div className="relative w-full h-96 md:w-full lg:w-[48rem] lg:h-[30rem]  ">
+            <div className="relative w-full h-96 md:w-full lg:w-[48rem] lg:h-[25rem]  ">
               <Image
                 src={"/contact/gabient.jpg"}
                 fill
-                className=" object-cover w-full h-full"
+                className=" object-cover w-full h-full  opacity-70"
                 alt="Screenshots of the dashboard project showing desktop version"
                 priority={true}
               />
             </div>
           </div>
 
-          <div className="flex md:flex-row flex-col justify-around mb-8 py-2 w-full bg-white shadow-md shadow-primary ">
+          <div className="flex md:flex-row flex-col justify-around mb-8 py-2 w-full bg-white shadow-md shadow-gray-300 ">
             <AdressCard
               title={"Jasna Asana Studio Jogi"}
               href={"https://www.jasnaasana.pl/grafik"}
@@ -61,7 +62,8 @@ const Contact = () => {
               logoSrc={"/logo-stan-relaksu-kolo.png"}
             />
           </div>
-          <div className="flex flex-col-reverse sm:flex-row ">
+          <OfficeAppearance/>
+          <div className="flex flex-col-reverse sm:flex-row mt-4 ">
             <div className=" flex sm:basis 1/3 md:basis-1/2 justify-center items-center border-2 border-white shadow-lg shadow-gray-400 sm:my-4 md:mx-6 lg:my-6">
               <MapComponent />
             </div>

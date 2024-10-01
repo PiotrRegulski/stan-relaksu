@@ -107,7 +107,7 @@ const ContactForm = () => {
       <h3 className="lg:mx-64 text-2xl lg:text-3xl font-serif font-bold mt-9 text-center text-black  ">
         Potrzebujesz więcej informacji lub porady na temat zabiegów.
       </h3>
-      <p className="text-lg lg:mx-48 lg:text-xl  text-gray-800 mt-4 text-center">
+      <p className="text-lg lg:mx-48 lg:text-xl  text-gray-800 mt-4 text-center font-[Montessrat]">
        Skontaktuj się ze mną poprzez formularz kontaktowy lub media społecznościowe.
       </p>
       <p className="text-center mt-4 text-xl lg:text-2xl font-semibold font-serif  tracking-wider">Chętnie pomogę!</p>
