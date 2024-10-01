@@ -11,7 +11,7 @@ const WelcomeAboutMe = () => {
   return (
     <div className=" flex w-full flex-col   my-4 xl:my-6 2xl:my-6  ">
       <motion.div
-        className=" flex flex-col justify-center items-center  mx-auto md:mx-12 lg:mx-12 xl:mx-48 my-12 bg-white border-mainpeach border-8 rounded-lg"
+        className=" flex flex-col justify-center items-center  mx-auto md:mx-12 lg:mx-12 xl:mx-48 my-12 bg-white border-mainpeach border-x-8 rounded-lg"
         initial={{ y: -100, opacity: 0 }}
        
         animate={isInView ? { y: 0, opacity: 1 } : {}}

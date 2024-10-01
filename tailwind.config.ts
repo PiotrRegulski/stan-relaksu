@@ -59,6 +59,10 @@ const config: Config = {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
         },
+        drawBorder: {
+          '0%': { borderWidth: '0' },
+          '100%': { borderWidth: '8px' },
+        },
      
        
       },
@@ -66,6 +70,7 @@ const config: Config = {
         slideLeft: 'slideLeft 0.5s forwards',
         slideOutLeft: 'slideOutLeft 0.5s forwards',
         fadeIn: "fadeIn 1s ease-in-out",
+        drawBorder: 'drawBorder 2s forwards',
        
       },
     },

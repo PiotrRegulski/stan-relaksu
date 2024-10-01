@@ -21,8 +21,8 @@ const AboutMeShort = () => {
     [startY, startY + 300, startY + 400, startY + 500],
     [1, 0.5, 0.5, 0]
   );
-  const imageY = useTransform(scrollY, [startY, startY + 200], [0, 100]);
-  const imageYs =useTransform(scrollY, [startY, startY + 200], [0, -100]);
+  const imageY = useTransform(scrollY, [startY, startY + 400], [0, 80]);
+  const imageYs =useTransform(scrollY, [startY, startY + 400], [0, -80]);
   return (
     <div
       
@@ -39,7 +39,7 @@ const AboutMeShort = () => {
           id="troche-o-omnie"
           className="relative w-[12rem]  sm:w-[16rem] md:w-[15rem] xl:w-[20rem] h-[15rem] sm:h-[19rem] xl:h-[24rem] z-20"
           whileHover={{ scale: 0.9 }}
-          transition={{ type: "spring" }}
+          transition={{ type: "spring", duration:1 }}
           style={{ y: imageY }}
         >
           <Image
