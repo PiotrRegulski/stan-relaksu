@@ -1,5 +1,5 @@
-import React from "react";
-
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import MapComponent from "./MapComponent";
 import Image from "next/image";
 import PageHeader from "../homepage/PageHeader";
@@ -7,20 +7,40 @@ import AdressCard from "./AdressCard";
 import DetailedAddress from "./DetailedAddress";
 import ContactForm from "./ContactForm";
 import OfficeAppearance from "./OfficeAppearance";
+import { motion, useInView, useScroll, useTransform } from "framer-motion";
+
 const Contact = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  // useEffect(() => {
+  //   if (isInView) {
+  //     setStartY(window.scrollY);
+  //   }
+  // }, [isInView]);
   return (
     <div className="w-full">
       <PageHeader id={"kontakt"}>Skontaktuj się</PageHeader>
       <div
+        ref={ref}
         className="grid md:grid-cols-1
         gap-4  items-center my-4 lg:my-4 mx-auto  "
       >
         <div
           id="kontakt-info"
-          className="px-2 shadow-xl rounded  bg-secondary  shadow-gray-400/75 w-full "
+          className=" shadow-xl rounded  bg-secondary  shadow-gray-400/75 w-full "
         >
           <div className=" flex flex-col md:flex-row  w-full  bg-gradient-to-r from-transparent to-mainpeach">
-            <div className=" md:text-xl lg:text-xl xl:text-2xl md:mt-12  md:w-2/3  lg:mt-16 px-2  py-12 lg:w-2/3 2xl:mt-28 ">
+            <motion.div
+              initial={{ x: -400, opacity: 0 }}
+              animate={isInView ? { x: 0, opacity: 1 } : {}}
+              transition={{
+                duration: 1.5,
+                ease: "easeInOut",
+                type: "spring",
+                stiffness: 100,
+              }}
+              className=" md:text-xl lg:text-xl xl:text-2xl md:mt-12  md:w-2/3 lg:mx-12  lg:mt-16 px-2  py-12 lg:w-2/3 2xl:mt-28 "
+            >
               <p className="font-semibold font-serif   text-center ">
                 Gabinet mieści się przy{" "}
                 <strong>studio jogi Jasna Asana. </strong>
@@ -30,8 +50,18 @@ const Contact = () => {
                 <br></br> Poprzez połączenie jogi i terapii manualnej.<br></br>{" "}
                 Możesz zatroszczyć się o siebie w sposób kompleksowy.
               </p>
-            </div>
-            <div className="relative w-full h-96 md:w-full lg:w-[48rem] lg:h-[25rem]  ">
+            </motion.div>
+            <motion.div
+              initial={{ x: 800, opacity: 0 }}
+              animate={isInView ? { x: 0, opacity: 1 } : {}}
+              transition={{
+                duration: 1,
+                ease: "easeInOut",
+                type: "spring",
+                stiffness: 100,
+              }}
+              className="relative w-full h-80 md:w-full lg:w-[48rem] lg:h-[25rem]  xl:mr-24 opacity-90  "
+            >
               <Image
                 src={"/contact/gabient.jpg"}
                 fill
@@ -39,10 +69,14 @@ const Contact = () => {
                 alt="Screenshots of the dashboard project showing desktop version"
                 priority={true}
               />
-            </div>
+            </motion.div>
           </div>
-
-          <div className="flex md:flex-row flex-col justify-around mb-8 py-2 w-full bg-white shadow-md shadow-gray-300 ">
+          <motion.div
+            initial={{ y: -100, opacity: 0 }}
+            animate={isInView ? { y: 0, opacity: 1 } : {}}
+            transition={{ duration: 3, ease: "easeInOut", type:"spring" }}
+            className="flex md:flex-row flex-col justify-around mb-8 py-2 w-full bg-white shadow-md shadow-gray-300 "
+          >
             <AdressCard
               title={"Jasna Asana Studio Jogi"}
               href={"https://www.jasnaasana.pl/grafik"}
@@ -61,10 +95,10 @@ const Contact = () => {
               fbHref={"https://www.facebook.com/profile.php?id=61560021160720"}
               logoSrc={"/logo-stan-relaksu-kolo.png"}
             />
-          </div>
-          <OfficeAppearance/>
+          </motion.div>{" "}
+          <OfficeAppearance />
           <div className="flex flex-col-reverse sm:flex-row mt-4 ">
-            <div className=" flex sm:basis 1/3 md:basis-1/2 justify-center items-center border-2 border-white shadow-lg shadow-gray-400 sm:my-4 md:mx-6 lg:my-6">
+            <div className=" flex sm:basis 1/3 md:basis-1/2 justify-center items-center border-2 border-white shadow-lg shadow-gray-400 sm:my-4 md:mx-6 lg:my-6 2xl:mx-24">
               <MapComponent />
             </div>
             <div className="md:basis-1/2 ml-3 md:ml-0  lg:mx-12 my-6 md:my-2 py-6">
