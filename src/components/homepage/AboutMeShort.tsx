@@ -26,10 +26,10 @@ const AboutMeShort = () => {
   return (
     <div
       
-      className="flex flex-col md:flex-row justify-center items-center md:my-24 lg:my-24 mx-auto md:mx-4 lg:mx-4 2xl:mx-48 rounded bg-white"
+      className="flex flex-col md:flex-row justify-center items-center my-6 md:my-24 lg:my-24 mx-auto md:mx-4 lg:mx-4 2xl:mx-48 rounded bg-white"ref={ref}
     >
       <motion.div
-      ref={ref}
+      
         className="flex justify-end md:w-1/2"
         initial={{ x: -400, opacity: 0 }}
         animate={isInView ? { x: 0, opacity: 1 } : {}}
