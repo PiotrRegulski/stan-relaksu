@@ -13,7 +13,7 @@ const DetailedAddress = () => {
         location={"Lokalizacja:"}
       >
         <address>
-          <strong>ul. Naukowa 20 /lokal:1/ 02-463 Warszawa</strong>
+          <strong>ul. Naukowa 20 /lokal - 1/ 02-463 Warszawa</strong>
         </address>
       </DetailedAdressItem>
       <DetailedAdressItem

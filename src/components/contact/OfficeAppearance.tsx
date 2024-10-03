@@ -31,7 +31,7 @@ const imgURLs = [
 
 const OfficeAppearance = () => {
   return (
-    <div className="flex overflow-x-auto py-12 bg-secondary gap-2 mx-2 md:gap-4 w-screen  2xl:justify-center">
+    <div className="flex overflow-x-auto py-12 bg-secondary gap-2 pl-1 md:gap-4 w-screen  2xl:justify-center">
       {imgURLs.map((imgUrl) => (
         <div
           key={imgUrl.label}

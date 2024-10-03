@@ -23,7 +23,7 @@ const Contact = () => {
       <div
         ref={ref}
         className="grid md:grid-cols-1
-        gap-4  items-center my-4 lg:my-4 mx-auto  "
+        gap-4  items-center my-4 lg:my-4  "
       >
         <div
           id="kontakt-info"
@@ -39,7 +39,7 @@ const Contact = () => {
                 type: "spring",
                 stiffness: 100,
               }}
-              className=" md:text-xl lg:text-xl xl:text-2xl md:mt-12  md:w-2/3 lg:mx-12  lg:mt-16 px-2  py-12 lg:w-2/3 2xl:mt-28 "
+              className=" md:text-xl lg:text-xl xl:text-2xl md:mt-12  md:w-2/3 lg:mx-12  lg:mt-16 px-4  py-12 lg:w-2/3 2xl:mt-28 "
             >
               <p className="font-semibold font-serif   text-center ">
                 Gabinet mieści się przy{" "}
