@@ -4,6 +4,7 @@ import React from "react";
 
 import AboutMeMainCard from "@/components/about/AboutMeMainCard";
 import AboutMeLastCard from "@/components/about/AboutMeLastCard";
+import ImagesToAboutMeArticle from "@/components/about/ImagesToAboutMeArticle";
 export const metadata = {
   title: "Stan Relaksu O mnie",
   description:
@@ -15,6 +16,7 @@ const About = () => {
       <PageHeader id={"about"}>O mnie</PageHeader>
 
       <AboutMeMainCard />
+       <ImagesToAboutMeArticle />
       <AboutMeLastCard />
     </div>
   );

@@ -92,7 +92,7 @@ const springImageYs = useSpring(imageYs, { stiffness: 300, damping: 30 });
         <p className="text-4xl font-[Cormorant-Garamond]">
           CZEŚĆ, <br /> JESTEM KINGA!
         </p>
-        <p className="text-lg lg:text-2xl font-[Montessrat] my-12">
+        <p className="text-lg lg:text-2xl  my-12">
           Przyniosę Ci ulgę w bólu oraz napięciu. Czekam na Ciebie z terapią
           manualną, masażem powięziowym, masażem tkanek głębokich. Głęboko
           odprężającymi technikami masażu twarzy Kobido, masażu relaksacyjnego,
@@ -100,7 +100,7 @@ const springImageYs = useSpring(imageYs, { stiffness: 300, damping: 30 });
         </p>
         <Link
           href="/about"
-          className="px-2 py-2 md:px-4 my-4 md:py-2 rounded-xl hover:shadow-xl shadow-lg shadow-gray-400/75 text-sm lg:text-lg bg-primary hover:bg-opacity-70 font-bold hover:underline text-white hover:text-white focus:outline-none focus:shadow-outline"
+          className="hover:shadow-xl shadow-lg shadow-gray-400/75 text-lg text-center lg:text-lg text-white   rounded  hover:border-white  bg-primary hover:bg-teal-400/75 px-6 py-2 font-bold   hover:text-gray-700 duration-300  focus:outline-none focus:shadow-outline hover:underline "
         >
           Dowiedz się więcej
         </Link>

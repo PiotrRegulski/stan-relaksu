@@ -11,7 +11,7 @@ const WelcomeAboutMe = () => {
   return (
     <div className=" flex w-full flex-col   my-4 xl:my-6 2xl:my-6  ">
       <motion.div
-        className=" flex flex-col justify-center items-center  mx-auto md:mx-12 lg:mx-12 xl:mx-48 my-12 bg-white border-mainpeach border-x-8 rounded-lg"
+        className=" flex flex-col justify-center items-center  mx-auto md:mx-12 lg:mx-12 xl:mx-48 my-12 bg-white border-mainpeach  rounded-lg"
         initial={{ y: -100, opacity: 0 }}
        
         animate={isInView ? { y: 0, opacity: 1 } : {}}
@@ -21,7 +21,7 @@ const WelcomeAboutMe = () => {
           Gabinet terapii manualnej i masażu - Stan Relaksu
         </h1>
         <p
-          className={` text-lg   font-[Monsserat] sm:text-xl lg:text-2xl 2xl:text-2xl  text-justify  animate-fadeIn transition-transform duration-1000 ease-in-out py-8 sm:py-8 md:pt-4 px-3 sm:px-8 md:px-1 lg:px-8 lg:pt-0 2xl:pt-4 lg:my-6 2xl:mx-12 2xl:mt-4 `}
+          className={` text-lg    sm:text-xl lg:text-2xl 2xl:text-2xl  text-justify  animate-fadeIn transition-transform duration-1000 ease-in-out py-8 sm:py-8 md:pt-4 px-3 sm:px-8 md:px-1 lg:px-8 lg:pt-0 2xl:pt-4 lg:my-6 2xl:mx-12 2xl:mt-4 `}
         >
           to terapeutyczne miejsce dla ciała stworzone &nbsp;z myślą o Tobie.{" "}
           Osobie która chce o zadbać o swoje zdrowie, zwolnić i poczuć się
