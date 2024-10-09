@@ -8,23 +8,28 @@ const imageURLs = [
     src: "/banka-twarzy.jpg",
     label: "banka twarzy",
     caption: "Masaż twarzy bańką chińską",
+    href:"/offer"
   
   },
   {
     src: "/offers-photo/kobido-omnie.jpg",
     label: "masaz kobido",
     caption: "Masaż Kobido",
+    href:"/offer/masaz-kobido"
+
   },
   {
     src: "/kobido-kinesiotaping-omnie.jpg",
     label: "kobido kinesiotaping",
     caption: "Masaż Kobido z kinesiotapingiem",
+    href:"/offer/masaz-kobido"
+
   },
 ];
 
 const ImagesToAboutMeLast = () => {
   return (
-    <div className="flex flex-col items-center w-full xl:w-2/3 py-12 gap-2 ">
+    <div className="flex flex-col items-center justify-center w-full xl:w-2/3 py-12 gap-2 ">
       <div className="flex flex-col  md:flex-row gap-2 overflow-x-auto  ">
         {imageURLs.slice(0, 2).map((imgUrl) => (
           <div
@@ -39,6 +44,7 @@ const ImagesToAboutMeLast = () => {
               {" "}
               <ImageCard
                 key={imgUrl.label}
+                href={imgUrl.href}
                 src={imgUrl.src}
                 alt={imgUrl.label}
                 caption={imgUrl.caption}
@@ -57,6 +63,7 @@ const ImagesToAboutMeLast = () => {
             {" "}
             <ImageCard
               key={imageURLs[2].label}
+              href={imageURLs[2].href}
               src={imageURLs[2].src}
               alt={imageURLs[2].label}
               caption={imageURLs[2].caption}

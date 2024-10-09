@@ -14,7 +14,8 @@ const MainHeader = () => {
     const offerId =
       document.getElementById("offer-title") ||
       document.getElementById("kontakt-info") ||
-      document.getElementById("important-about");
+      document.getElementById("important-about")||
+      document.getElementById("zdjecia-z-oferty");
     if (offerId) {
       const offerPosition = offerId.getBoundingClientRect().top;
       setIsVisible(offerPosition > 0);

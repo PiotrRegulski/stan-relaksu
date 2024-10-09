@@ -1,7 +1,6 @@
 "use client"
 import { motion, useInView,} from "framer-motion";
 import React, {  useRef,  } from "react";
-import { lato } from "../fonts";
 import AboutMeShort from "./AboutMeShort";
 
 const WelcomeAboutMe = () => {

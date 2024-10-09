@@ -8,24 +8,28 @@ const imgURLs = [
     label: "Wygląd gabinetu",
     caption: "Terapia manualna kolana",
     marginTop: "20px",
+    href:"/"
   },
   {
     src: "/contact/wyglad-gabinet-meble.jpg",
     label: "Wygląd gabinetu",
     caption: "Terapia manualna",
     marginTop: "40px",
+    href:"/"
   },
   {
     src: "/contact/wygląd-gabinet-lozko.jpg",
     label: "Wygląd gabinetu",
     caption: "Terapia wisceralna",
     marginTop: "20px",
+    href:"/"
   },
   {
     src: "/contact/wygląd-cwieczenie-yogi.jpg",
     label: "ćwiczenie yogi",
     caption: "Terapia uroginekologiczna",
     marginTop: "40px",
+    href:"/"
   },
 ];
 
@@ -43,7 +47,7 @@ const OfficeAppearance = () => {
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", duration: 1 }}
           >
-            <ImageCard key={imgUrl.label} src={imgUrl.src} alt={imgUrl.label} />
+            <ImageCard key={imgUrl.label} href={imgUrl.href} src={imgUrl.src} alt={imgUrl.label} />
           </motion.div>
         </div>
       ))}
