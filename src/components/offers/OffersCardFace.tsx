@@ -70,7 +70,7 @@ const OffersCardFace = () => {
                         {offerItem.title}
                       </p>
                       <p
-                        className={` font-serif text-center sm:text-sm md:text-base xl:text-md 2xl:text-xl indent-4 px-8 sm:px-2 h-28 sm:h-24 md:h-28 lg:h-24 2xl:h-24 text-black `}
+                        className={`  text-center sm:text-sm md:text-base xl:text-md 2xl:text-xl indent-4 px-8 sm:px-2 h-28 sm:h-24 md:h-28 lg:h-24 2xl:h-24 text-black `}
                       >
                         {offerItem.contentMainOffer}
                       </p>

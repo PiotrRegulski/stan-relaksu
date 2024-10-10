@@ -5,21 +5,21 @@ import ImageCard from "../about/ImageCard";
 const imgURLs = [
   {
     src: "/contact/wygląd-gabinet-szafa.jpg",
-    label: "Wygląd gabinetu",
+    label: "Wygląd gabinetu szafa",
     caption: "Terapia manualna kolana",
     marginTop: "20px",
     href:"/"
   },
   {
     src: "/contact/wyglad-gabinet-meble.jpg",
-    label: "Wygląd gabinetu",
+    label: "Wygląd gabinetu meble",
     caption: "Terapia manualna",
     marginTop: "40px",
     href:"/"
   },
   {
     src: "/contact/wygląd-gabinet-lozko.jpg",
-    label: "Wygląd gabinetu",
+    label: "Wygląd gabinetu lozko",
     caption: "Terapia wisceralna",
     marginTop: "20px",
     href:"/"

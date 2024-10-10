@@ -41,6 +41,7 @@ type OfferItemType = {
   slug: string;
   title: string;
   contentFirst?: string;
+  imageHeader?: string;
   image: string;
   imagedetailf?: string;
   imagedetails?: string;
@@ -122,25 +123,33 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     "rozluźnianie",
   ];
   return (
-    <div className="mt-[7rem]">
-      <PageHeader id={"offerDetail"} >{offerDetail.title}</PageHeader>
+    <div className=" mt-[7rem]">
+      <div id={"offerDetail"} className="w-full">
+        <div className="relative  h-[40rem]">
+          <Image
+            src={`/${offerDetail.imageHeader}`}
+            alt={offerDetail.title}
+            fill
+            priority={true}
+            className="object-cover  w-full h-full"
+            sizes="(max-width: 600px) 100vw, 50vw"
+          />
+          <div className="absolute bottom-0 lg:bottom-32 lg:left-14 right-0 bg-black bg-opacity-40 text-white p-2 w-full lg:w-1/2  rounded">
+            <h1 className={" text-white xl:text-2xl font-serif tracking-wide"}>
+              {firstAdventagesDescription}
+            </h1>
+          </div>
+        </div>
+      </div>
 
       <section
         id="main-adventages"
-        className="flex flex-col min-h-max   2xl:mx-36 my-4 md:my-4 md:mt-12 animate-fadeIn  transition-transform duration-200 ease-in-out"
+        className="flex flex-col min-h-max    my-4 md:my-4 md:mt-12 animate-fadeIn  transition-transform duration-200 ease-in-out mb-6"
       >
-        <div id="important-about" className="w-full py-[3rem] px-[2rem] bg-white ">
-          <h1 className={`${lato.className} text-center text-xl font-bold`}>
-            {firstAdventagesDescription}
-          </h1>
-        </div>
-
         <div className="flex flex-col ">
-          <div className="flex flex-col-reverse lg:flex-row  bg-white sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 2xl:mx-24  rounded-lg">
-            <div className="flex flex-col lg:w-2/3 my-6 px-4 ">
-              <h3 className="font-bold text-2xl py-2 2xl:mb-4 w-full">
-                {title1}
-              </h3>
+          <div className={`flex flex-col-reverse lg:flex-row bg-white sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 2xl:mx-48 rounded-lg border-2 border-secondary ${!description1 ? 'hidden' : ''}`}>
+            <div className="flex flex-col lg:w-2/3 my-2 px-4 justify-center items-center ">
+              <h3 className="font-bold  text-2xl py-2  w-full">{title1}</h3>
 
               <HighlightedParagraph
                 className="text-xl xl:ml-4 pl-2"
@@ -150,7 +159,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             </div>
 
             <div className="flex justify-center w-full lg:w-1/2 items-center  ">
-              <div className="relative h-[20rem] w-full sm:h-[22rem] sm:w-[22rem] md:h-[18rem] md:w-[18rem] lg:w-[20rem] lg:h-[20rem] md:my-3">
+              <div className="relative h-[20rem] w-full sm:h-[22rem] sm:w-[22rem] md:h-[18rem] md:w-[18rem] lg:w-[25rem] lg:h-[25rem] md:my-3">
                 <Image
                   src={`/${offerDetail.image}`}
                   alt={offerDetail.title}
@@ -162,8 +171,8 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row-reverse 2xl:flex-row   bg-primary  md:my-4 ">
-            <div className=" ">
-              <div className="relative h-[16rem] md:h-[28rem] sm:w-auto md:min-w-[21rem] 2xl:h-[30rem] 2xl:w-[30rem]  mx-auto my-2 md:my-2 md:mx-2  ">
+            <div className="flex xl:flex-row xl:mx-48 ">
+              <div className="relative h-[16rem] md:h-[28rem] sm:w-auto md:min-w-[21rem] 2xl:h-[30rem] 2xl:w-[45rem]  mx-auto my-2 md:my-2 md:mx-2   ">
                 <Image
                   src={`/${offerDetail.imagedetailfo}`}
                   alt={offerDetail.title}
@@ -172,22 +181,22 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                   sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
-            </div>
-            <div className="flex flex-col w-full justify-center items-center my-4">
-              <div className="flex flex-col px-4 md:px-8 text-amber-950 ">
-                <h3 className="font-bold text-2xl py-2 w-full 2xl:mb-4 ">
-                  {title2}
-                </h3>
-                <HighlightedParagraph
-                  className="text-xl py-2 pl-2 mx-auto"
-                  text={description2}
-                  wordsToHighlight={wordsToHighlight}
-                />
+              <div className="flex flex-col w-full justify-center items-center  my-4">
+                <div className="flex flex-col px-4 md:px-12 text-amber-950  ">
+                  <h3 className="font-bold text-2xl py-2 w-full 2xl:mb-4 ">
+                    {title2}
+                  </h3>
+                  <HighlightedParagraph
+                    className="text-xl py-2 pl-2 mx-auto"
+                    text={description2}
+                    wordsToHighlight={wordsToHighlight}
+                  />
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row  bg-white sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 2xl:mx-24  rounded-lg">
+          <div className="flex flex-col lg:flex-row  bg-white sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 2xl:mx-48  rounded-lg">
             <div className="flex flex-col lg:w-2/3 my-6 px-4 2xl:my-24 ">
               <h3 className="font-bold text-2xl py-2 w-full ">{title3}</h3>
 
@@ -199,7 +208,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             </div>
 
             <div className="flex justify-center w-full lg:w-1/2 items-center  ">
-              <div className="relative h-[20rem] w-full sm:h-[22rem] sm:w-[22rem] md:h-[20rem] md:w-[30rem] lg:w-[20rem] lg:h-[20rem] md:my-3">
+              <div className="relative h-[20rem] w-full sm:h-[22rem] sm:w-[22rem] md:h-[20rem] md:w-[30rem] lg:w-[30rem] lg:h-[26rem] md:my-3">
                 <Image
                   src={`/${offerDetail.imagedetailf}`}
                   alt={offerDetail.title}
@@ -210,29 +219,6 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
               </div>
             </div>
           </div>
-
-          {/* <div className="  md:mt-4 ">
-            <div className="relative h-[20rem] md:w-[20rem]  mx-auto mb-12 ">
-              <Image
-                src={`/${offerDetail.imagedetailf}`}
-                alt={offerDetail.title}
-                fill
-                className="object-contain"
-                priority={true}
-                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-            <div className="relative h-[20rem] md:w-[30rem]  mx-auto  ">
-              <Image
-                src={`/${offerDetail.image}`}
-                alt={offerDetail.title}
-                fill
-                className="object-contain"
-                priority={true}
-                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-          </div> */}
         </div>
       </section>
       <ButtonReservation />

@@ -60,13 +60,13 @@ const OffersCardBody = () => {
                     sizes="(max-width: 600px) 100vw, 50vw"
                     className=" object-cover w-full h-full rounded-lg "
                   />
-                  <div className="absolute bottom-0 left-0 bg-mainpeach bg-opacity-90  border-2 border-mainpeach rounded ">
+                  <div className="absolute bottom-0 left-0 bg-mainpeach bg-opacity-90  border-2 border-mainpeach rounded w-full ">
                     <div className=" animate-fadeIn rounded   px-1  w-full  ">
                       <p className="sm:text-base md:text-base 2xl:text-xl text-center font-serif font-semibold sm:h-14 py-2 mb-1 text-black">
                         {offerItem.title}
                       </p>
                       <p
-                        className={` font-serif text-center sm:text-sm md:text-base xl:text-md 2xl:text-xl indent-4 px-8 sm:px-2 h-28 sm:h-24 md:h-28 lg:h-24 2xl:h-24 text-black `}
+                        className={` text-center sm:text-sm md:text-base xl:text-md 2xl:text-xl indent-4 px-8 sm:px-2 h-28 sm:h-24 md:h-28 lg:h-24 2xl:h-24 text-black `}
                       >
                         {offerItem.contentMainOffer}
                       </p>

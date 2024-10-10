@@ -62,7 +62,7 @@ const ImagesToAboutMeArticle = () => {
               whileHover={{ scale: 1.1 }}
               initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
               animate={isInView ? { x: 0, opacity: 1 } : {}}
-              transition={{ type: "spring", duration: 3, ease: "backInOut" }}
+              transition={{ type: "spring", duration: 2, }}
             >
               <ImageCard
                 
@@ -77,7 +77,7 @@ const ImagesToAboutMeArticle = () => {
               className="absolute bottom-0 w-full font-[Cormorant-Garamond] bg-opacity-50 bg-black text-white text-center py-2"
               initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
               animate={isInView ? { x: 0, opacity: 1 } : {}}
-              transition={{ type: "spring", duration: 2, ease: "backInOut" }}
+              transition={{ type: "spring", duration: 2,  }}
             >
               {imgUrl.caption}
             </motion.div>

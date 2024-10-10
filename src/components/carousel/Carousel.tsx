@@ -60,6 +60,17 @@ const images: ImageData[] = [
     clName:
       "text-white xl:text-2xl font-serif tracking-widest hover:opacity-70 hover:underline ",
   },
+  {
+    src: "/masaz-relaksacyjny/masaz-relaksacyjny-cover-top.jpg",
+    alt: "Masaż relaksacyjny Stanu Relaksu",
+    description:
+      "Przenieś się do pełnego stanu relaksu z masażem, który głęboko odpręży Twoje mięśnie, zdejmie napięcie z układu nerwowego zmniejszając uczucie stresu.  ",
+    linkDetails: "masaz-relaksacyjny-stanu-relaksu",
+    linkBooksy:
+      "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
+    clName:
+      "text-white xl:text-2xl font-serif tracking-widest hover:opacity-70 hover:underline ",
+  },
   // Dodaj więcej obrazów według potrzeb
 ];
 const Carousel: React.FC = () => {

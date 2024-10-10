@@ -1,17 +1,112 @@
 export const OfferItem = [
   {
+    id: "masaz-relaksacyjny-Stanu-Relaksu",
+    slug: "masaz-relaksacyjny-stanu-relaksu",
+    active: true,
+    category: "body",
+    title: "Masaz relaksacyjny Stanu Relaksu",
+    image: "masaz-relaksacyjny/masaz-relaksacyjny-cover.jpg",
+    imageHeader:"masaz-relaksacyjny/masaz-relaksacyjny-cover-top.jpg",
+    imagedetailf: "",
+    imagedetails: "",
+    imagedetailt: "",
+    imagedetailfo:
+      "",
+    prices: [
+      { id: "terapman30", priceName: "30 minut", price: "110 zł" },
+      { id: "terapman45", priceName: "45 minut", price: "160 zł" },
+      { id: "terapman60", priceName: "60 minut", price: "200 zł" },
+      { id: "terapman90", priceName: "90 minut", price: "250 zł" },
+    ],
+    contentMainOffer:
+      "Przenieś się do pełnego stanu relaksu.",
+
+    contentFirst:
+      "Przenieś się do pełnego stanu relaksu z masażem, który głęboko odpręży Twoje mięśnie, zdejmie napięcie z układu nerwowego zmniejszając uczucie stresu. Połączenie aromatycznych naturalnych olejków i kojącego dotyku  wprowadzi Cię wspaniały nastrój. ",
+    advantages: [
+      { title: "" },
+      {
+        description:
+          ".",
+      },
+
+      { title: "" },
+      {
+        description:
+          " ",
+      },
+      { title: "" },
+      {
+        description:
+          " ",
+      },
+    ],
+    contraindications: [
+      { id: "1", contraindication: "choroby nowotworowe" },
+      {
+        id: "2",
+        contraindication:
+          "Zakażenia skóry i otwarte rany w miejscu wykonywania zabiegu",
+      },
+      { id: "3", contraindication: "Zakrzepica żył głębokich" },
+      { id: "4", contraindication: "Niewyrównana niewydolność serca" },
+      { id: "5", contraindication: "Ciężka niewydolność nerek" },
+      { id: "6", contraindication: "Gorączka" },
+    ],
+    indications: [
+      { id: "1", indication: "wskazanie 1" },
+      { id: "2", indication: "wskazanie 2" },
+    ],
+    recommendations: [
+      {
+        id: "1",
+        recommendation:
+          "Zmagasz się z napięciem czy bólami pleców, karku lub stawów ",
+      },
+      {
+        id: "2",
+        recommendation: "Chcesz zwiększyć mobilność całego ciała",
+      },
+      {
+        id: "3",
+        recommendation:
+          "Chcesz zmniejszyć uczucie stresu i napięcia w ciele",
+      },
+    ],
+    procedures: [
+      { title: "" },
+      {
+        procedure:
+          " ",
+      },
+
+      { title: "" },
+      {
+        procedure:
+          "",
+      },
+      { title: "" },
+      {
+        procedure:
+          "",
+      },
+    ],
+  },
+  {
     id: "MasażKobido",
     slug: "masaz-kobido",
     active: true,
     category: "face",
     title: "Kobido z kinesiotapingiem ",
+    imageHeader:"carousel/kobido-kinesiotaping.jpg",
     image: "offers-photo/kobido-omnie.jpg",
     imagedetailf: "kobido/kobido-kinesiotaping.jpg",
     imagedetails: "kobido/kobido-procedure-buttom.jpg",
     imagedetailt: "kobido/kobido-procedure-top.jpg",
     imagedetailfo: "kobido/kobido-secondP.jpg",
     prices: [{ id: "cenaKobido", priceName: "90 minut", price: "300 zł" }],
-    contentMainOffer:"Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwa perłą w świecie pielęgnacji twarzy.",
+    contentMainOffer:
+      "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwa perłą w świecie pielęgnacji twarzy.",
     contentFirst:
       "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwa perłą w świecie pielęgnacji twarzy. Wywodzący się z Japoni niechirurgiczny lifting twarzy, który od wieków zachwyca swoją skutecznością..",
     advantages: [
@@ -107,12 +202,14 @@ export const OfferItem = [
     category: "face",
     title: "Igłoterapia estetyczna i pinezkowanie",
     image: "offers-photo/igłoterapia-estetyczna.jpg",
+    imageHeader:"carousel/DSC02809.jpg", 
     imagedetailf: "igłoterapia/igłoterapia-estetyczna-last.jpg",
     imagedetails: "igłoterapia/igłoterapia-estetyczna-procedureb.jpg",
     imagedetailt: "igłoterapia/igłoterapia-estetyczna-proceduref.jpg",
     imagedetailfo: "igłoterapia/igłoterapia-estetyczna-second.jpg",
     prices: [{ id: "cenaIgłoterapi", priceName: "90 minut", price: "350 zł" }],
-    contentMainOffer:"Igłoterapia estetyczna twarzy z pinezkowaniem to zaawansowany zabieg, który może odmienić bezinwazyjnie wygląd Twojej twarzy.",
+    contentMainOffer:
+      "Igłoterapia estetyczna twarzy z pinezkowaniem to zaawansowany zabieg, który może odmienić bezinwazyjnie wygląd Twojej twarzy.",
 
     contentFirst:
       "Igłoterapia estetyczna twarzy z pinezkowaniem to zaawansowany zabieg, który może odmienić bezinwazyjnie wygląd Twojej twarzy. Zmniejszenie napięcia mięśni mimicznych, pobudzenie produkcji kolagenu i elastyny przynosi efekt odmłodzenia..  ",
@@ -185,6 +282,7 @@ export const OfferItem = [
     category: "body",
     title: "Masaż Powięziowy ",
     image: "offers-photo/masaż-powięziowy-main.jpg",
+    imageHeader:"carousel/masaż-powięziowy.jpg",
     imagedetailf: "masaz-powieziowy/masaż-powięziowy-t.jpg",
     imagedetails: "masaz-powieziowy/masaz-powięziowy-terapia-manualna.jpg",
     imagedetailt: "masaz-powieziowy/masaz-powięziowy.-d.jpg",
@@ -195,7 +293,8 @@ export const OfferItem = [
       { id: "maspow60", priceName: "60 minut", price: "200 zł" },
       { id: "maspow90", priceName: "90 minut", price: "250 zł" },
     ],
-    contentMainOffer:"To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała. Pomaga w zmniejszeniu dolegliwości bólowych.",
+    contentMainOffer:
+      "To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała. Pomaga w zmniejszeniu dolegliwości bólowych.",
 
     contentFirst:
       "To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała. Uwolnienie powięziowe i zniesienie napięć w ciele pomaga w zmniejszeniu dolegliwości bólowych, uczucia stresu oraz ogólnej relaksacji. ",
@@ -451,6 +550,8 @@ export const OfferItem = [
     category: "body",
     title: "Masaż tkanek głębokich",
     image: "offers-photo/masaż-tkanek-głebokich-main.jpg",
+    imageHeader:"carousel/masaż-tkanek-głebokich.jpg",
+
     imagedetailf: "masaz-sportowy/masaż-tkanek-głebokich-last.jpg",
     imagedetails: "masaz-sportowy/masaż-tkanek-głebokich-procedureb.jpg",
     imagedetailt: "masaz-sportowy/masaż-tkanek-głebokich-proceduref.jpg",
@@ -461,7 +562,8 @@ export const OfferItem = [
       { id: "sport60", priceName: "60 minut", price: "200 zł" },
       { id: "sport90", priceName: "90 minut", price: "250 zł" },
     ],
-    contentMainOffer:"Niezwykle skuteczna technika pracy z ciałem koncentrująca się na rozluźnieniu głębokich warstwach mięśni i tkanki łącznej.",
+    contentMainOffer:
+      "Niezwykle skuteczna technika pracy z ciałem koncentrująca się na rozluźnieniu głębokich warstwach mięśni i tkanki łącznej.",
 
     contentFirst:
       "Niezwykle skuteczna technika pracy z ciałem koncentrująca się na rozluźnieniu głębokich warstwach mięśni i tkanki łącznej. ",
@@ -538,6 +640,7 @@ export const OfferItem = [
   {
     id: "terapia-manualna",
     slug: "terapia-manualna",
+    imageHeader:"carousel/terapia-manualna-kolano-klawiki.jpg",
     active: true,
     category: "body",
     title: "Terapia manualna",
@@ -545,14 +648,16 @@ export const OfferItem = [
     imagedetailf: "terapia-manualna/terapia-manualna-kolano-last.jpg",
     imagedetails: "terapia-manualna/terapia-manualna-kolano-procedureb.jpg",
     imagedetailt: "terapia-manualna/terapia-manualna-proceduref.jpg",
-    imagedetailfo: "terapia-manualna/terapia-manualna-kolano-klawiki-second.jpg",
+    imagedetailfo:
+      "terapia-manualna/terapia-manualna-kolano-klawiki-second.jpg",
     prices: [
       { id: "terapman30", priceName: "30 minut", price: "110 zł" },
       { id: "terapman45", priceName: "45 minut", price: "160 zł" },
       { id: "terapman60", priceName: "60 minut", price: "200 zł" },
       { id: "terapman90", priceName: "90 minut", price: "250 zł" },
     ],
-    contentMainOffer:"To specjalistyczne techniki pracy z ciałem i stawami, mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu.",
+    contentMainOffer:
+      "To specjalistyczne techniki pracy z ciałem i stawami, mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu.",
 
     contentFirst:
       "To specjalistyczne techniki pracy z ciałem i stawami  polegające na uciskach, mobilizacjach stawowych i tkankowych mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenia sztywności i ograniczeń w zakresie ruchomości oraz redukcji bólu. ",

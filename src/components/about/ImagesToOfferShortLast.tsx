@@ -27,12 +27,12 @@ const ImagesToOfferShortLast = () => {
   return (
     <div
       ref={ref}
-      className="flex overflow-x-auto py-2  gap-2  md:gap-4 w-screen md:justify-center md:items-center mr-4 md:mr-0 "
+      className="flex overflow-x-auto py-2    md:gap-4 w-screen md:justify-center md:items-center ml-4 mr-4 md:mr-0 "
     >
       {imgURLs.map((imgUrl, index) => (
         <div
           key={imgUrl.label}
-          className="relative flex shrink-0 w-[24rem] h-[15rem] md:w-[30rem] md:h-[20rem] overflow-hidden "
+          className="relative flex shrink-0 w-[23rem] h-[15rem] md:w-[30rem] md:h-[20rem] overflow-hidden "
           style={{ marginTop: imgUrl.marginTop }}
         >
           <motion.div
@@ -45,7 +45,7 @@ const ImagesToOfferShortLast = () => {
             <ImageCard key={imgUrl.label} href={imgUrl.href} src={imgUrl.src} alt={imgUrl.label} />
           </motion.div>
           <motion.div
-            className="absolute bottom-0 w-full font-[Cormorant-Garamond] bg-opacity-50 bg-black text-white text-center py-2"
+            className="absolute bottom-0 w-full font-[Cormorant-Garamond] bg-opacity-50 bg-black border-2 border-white text-white text-center py-2"
             initial={{ x: 100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ type: "spring", duration: 1 }}

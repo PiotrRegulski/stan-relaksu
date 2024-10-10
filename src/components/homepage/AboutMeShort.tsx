@@ -45,7 +45,7 @@ const springImageYs = useSpring(imageYs, { stiffness: 300, damping: 30 });
           style={{ y: springImageY }}
         >
           <motion.div
-            className="w-full h-full"
+            className="relative w-full h-full"
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", duration: 1 }}
           >
@@ -67,7 +67,7 @@ const springImageYs = useSpring(imageYs, { stiffness: 300, damping: 30 });
           style={{ y: springImageYs}}
         >
           <motion.div
-            className="w-full h-full"
+            className=" relative w-full h-full"
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", duration: 1 }}
           >

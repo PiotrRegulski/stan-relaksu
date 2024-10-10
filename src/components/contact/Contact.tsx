@@ -65,6 +65,7 @@ const Contact = () => {
               <Image
                 src={"/contact/gabient.jpg"}
                 fill
+                 sizes="(max-width: 600px) 100vw, 50vw"
                 className=" object-cover w-full h-full  opacity-70"
                 alt="Screenshots of the dashboard project showing desktop version"
                 priority={true}
