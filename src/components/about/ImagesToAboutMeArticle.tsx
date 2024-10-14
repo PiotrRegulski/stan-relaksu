@@ -49,7 +49,7 @@ const ImagesToAboutMeArticle = () => {
     >
       <div
         ref={ref}
-        className="flex overflow-x-auto py-8  gap-2 pl-1 md:gap-4 w-screen  2xl:justify-center bg-primary"
+        className="flex overflow-x-auto py-8  gap-2 pl-1 md:gap-4 w-screen  2xl:justify-center bg-secondary"
       >
         {imgURLs.map((imgUrl, index) => (
           <motion.div

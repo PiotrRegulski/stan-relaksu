@@ -147,7 +147,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
         className="flex flex-col min-h-max    my-4 md:my-4 md:mt-12 animate-fadeIn  transition-transform duration-200 ease-in-out mb-6"
       >
         <div className="flex flex-col ">
-          <div className={`flex flex-col-reverse lg:flex-row bg-white sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 2xl:mx-48 rounded-lg border-2 border-secondary ${!description1 ? 'hidden' : ''}`}>
+          <div className={`flex flex-col-reverse lg:flex-row bg-white sm:my-4  sm:mx-6 md:mx:2 2xl:mx-48 rounded-lg  border-secondary ${!description1 ? 'hidden' : ''}`}>
             <div className="flex flex-col lg:w-2/3 my-2 px-4 justify-center items-center ">
               <h3 className="font-bold  text-2xl py-2  w-full">{title1}</h3>
 
@@ -196,7 +196,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row  bg-white sm:my-4 shadow-lg shadow-gray-400 sm:mx-6 md:mx:2 2xl:mx-48  rounded-lg">
+          <div className="flex flex-col lg:flex-row  bg-white sm:my-4   sm:mx-6 md:mx:2 2xl:mx-48  rounded-lg">
             <div className="flex flex-col lg:w-2/3 my-6 px-4 2xl:my-24 ">
               <h3 className="font-bold text-2xl py-2 w-full ">{title3}</h3>
 

@@ -20,8 +20,8 @@ const imageURLs = [
   },
   {
     src: "/kobido-kinesiotaping-omnie.jpg",
-    label: "kobido kinesiotaping",
-    caption: "Masaż Kobido z kinesiotapingiem",
+    label: "Kinesiotaping limfatyczny",
+    caption: "Kinesiotaping limfatyczny ",
     href:"/offer/masaz-kobido"
 
   },

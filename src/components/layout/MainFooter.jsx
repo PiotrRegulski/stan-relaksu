@@ -14,11 +14,11 @@ const MainFooter = () => {
             <div className="flex flex-col md:flex-row items-center ">
               <div className="w-full border-3 border-white">
                 <p className="text-white text-sm text-center  font-semibold">
-                  © 2024 Stan Relaksu. Wszelkie prawa zastrzeżone.
+                  © 2024 Stan Relaksu. Wszelkie prawa zastrzeżone. 
                 </p>
               </div>
               <div className="">
-                <address className="text-white font-semibold ">
+                <address className="text-white font-semibold px-1 ">
                   <Link
                     href="mailto:kontakt@stanrelaksu.pl"
                     className="text-white text-sm   hover:text-red-800 transition duration-300  font-semibold "
