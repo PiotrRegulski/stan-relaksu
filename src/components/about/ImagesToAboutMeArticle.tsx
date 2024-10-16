@@ -106,8 +106,10 @@ const ImagesToAboutMeArticle = () => {
         <ImageToOffersShort />
       </div>
       <div className=" flex flex-col w-full justify-center items-center border-b-4 bg-secondary md:py-32 ">
+      <h3 className="text-3xl">Kompleksowa Terapia i Rehabilitacja: Od Problemów Jelitowych po Blizny i Bolesne Miesiączki</h3>
+
         <p className="text-center  md:w-1/2 text-lg md:text-xl xl:text-2xl mx-auto md:mx-4 my-2  px-3 py-8  lg:my-2 2xl:my-2    h-full">
-          W pracy zajmuje się też{" "}
+          W pracy zajmuje się{" "}
           <strong>problemami jelitow-trawiennymi</strong>,
           <strong> terapią uroginekologiczną</strong>, pracą z blizną po{" "}
           cesarskim cięciu, bliznach operacyjnych, bolesnymi miesiączkami czy
