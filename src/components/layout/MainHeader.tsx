@@ -42,10 +42,10 @@ const MainHeader = () => {
     isVisible && (
       <div className="fixed z-40 top-0 transition">
         <InfoBar />
-        <header className={`${CormorantInfant.className} flex flex-col justify-center bg-white`}>
+        <header className={`${CormorantInfant.className} font-[Cormorant_Infant] flex flex-col justify-center bg-white`}>
           <NavbarMobile />
           <div className="flex lg:gap-12">
-            <div className={`${CormorantInfant.className} hidden lg:flex w-screen`}>
+            <div className={`${CormorantInfant.className} font-[Cormorant_Infant] hidden lg:flex w-screen`}>
               <Navbar />
             </div>
           </div>

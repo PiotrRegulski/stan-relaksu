@@ -92,7 +92,7 @@ const springImageYs = useSpring(imageYs, { stiffness: 300, damping: 30 });
         <p className="text-4xl font-[Cormorant-Garamond]">
           CZEŚĆ, <br /> JESTEM KINGA!
         </p>
-        <p className="text-lg lg:text-2xl  my-12">
+        <p className="text-lg lg:text-2xl  my-12 font-[Lato]">
           Przyniosę Ci ulgę w bólu oraz napięciu. Czekam na Ciebie z terapią
           manualną, masażem powięziowym, masażem tkanek głębokich. Głęboko
           odprężającymi technikami masażu twarzy Kobido, masażu relaksacyjnego,

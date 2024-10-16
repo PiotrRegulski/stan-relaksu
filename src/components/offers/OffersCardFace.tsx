@@ -54,7 +54,7 @@ const OffersCardFace = () => {
               className=" h-[31rem] sm:h-[20rem] md:h-[30rem] 2xl:h-[40rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform duration-200 ease-in-out hover:scale-[1.02]    2xl:w-[30rem] "
             >
               <Link className="" href={`/offer/${offerItem.slug} `}>
-                <div className="relative h-[31rem] w-screen   sm:w-[20rem] md:w-[17rem] md:h-[30rem] lg:min-w-[21rem] xl:w-[25rem] 2xl:h-[40rem] 2xl:w-[30rem] ">
+                <div className="relative h-[31rem] w-screen   sm:w-[20rem] md:w-[17rem] md:h-[30rem] lg:min-w-[20rem] xl:w-[25rem] 2xl:h-[40rem] 2xl:w-[30rem] ">
                   <Image
                     src={`/${offerItem.image}`}
                     alt={offerItem.title}
@@ -64,20 +64,20 @@ const OffersCardFace = () => {
                     sizes="(max-width: 600px) 100vw, 50vw"
                     className=" object-cover w-full h-full rounded-lg "
                   />
-                  <div className="absolute bottom-0 left-0 bg-mainpeach bg-opacity-90  border-2 border-mainpeach rounded ">
+                  <div className="absolute bottom-0 left-0 bg-black bg-opacity-20 rounded ">
                     <div className=" animate-fadeIn rounded   px-1  w-full  ">
-                      <p className="sm:text-base md:text-base 2xl:text-xl text-center font-serif font-semibold sm:h-14 py-2 mb-1 text-black">
+                      <p className="sm:text-base md:text-base 2xl:text-xl text-center font-serif font-semibold sm:h-14 py-2 mb-1 text-white">
                         {offerItem.title}
                       </p>
                       <p
-                        className={`  text-center sm:text-sm md:text-base xl:text-md 2xl:text-xl indent-4 px-8 sm:px-2 h-28 sm:h-24 md:h-28 lg:h-24 2xl:h-24 text-black `}
+                        className="  text-center sm:text-sm md:text-base xl:text-md 2xl:text-xl indent-4 px-8 sm:px-2 h-28 sm:h-24 md:h-28 lg:h-24 2xl:h-24 text-white "
                       >
                         {offerItem.contentMainOffer}
                       </p>
                     </div>
 
                     <div className="flex justify-center    ">
-                      <button className=" flex underline decoration-solid underline-offset-8 font-semibold  text-center md:text-lg  my-4  text-black hover:text-gray-400 hover:bg-opacity-40">
+                      <button className=" flex underline decoration-solid underline-offset-8 font-semibold  text-center md:text-lg  my-4  text-white hover:text-gray-400 hover:bg-opacity-40">
                         {" "}
                         Dowiedz się więcej
                       </button>

@@ -37,23 +37,13 @@ const NavbarMobile = () => {
             Gabinet terapii <br></br> manualnej i masażu
           </p>
         </div>
-        <div onClick={toggleMenuAndScroll} className="flex-grow flex justify-end mr-4 ">
+        <div
+          onClick={toggleMenuAndScroll}
+          className="flex-grow flex justify-end mr-4 "
+        >
           <HamburgerIcon />
         </div>
       </div>
-
-      {/* <div className=" md:hidden relative w-full flex justify-center ">
-        <Image
-          src="/logo.png"
-          alt="Logo stan relaksu"
-          width={200}
-          height={200}
-          priority
-          className="px-2  mt-4"
-        />
-      </div> */}
-
-      
 
       <div
         className={`${CormorantInfant.className} flex flex-wrap w-full justify-evenly lg:hidden`}

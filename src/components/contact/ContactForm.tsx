@@ -104,13 +104,13 @@ const ContactForm = () => {
 
   return (
     <div className=" flex flex-col justify-center  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 bg-secondary sm:mx-2 lg:my-6 md:mx-0 ">
-      <h3 className="lg:mx-64 text-2xl lg:text-3xl font-serif font-bold mt-9 text-center text-black  ">
+      <h3 className="lg:mx-64 text-2xl lg:text-3xl  font-bold mt-9 text-center text-black font-[Cormorant-Garamond]  ">
         Potrzebujesz więcej informacji lub porady na temat zabiegów.
       </h3>
       <p className="text-lg lg:mx-48 lg:text-xl  text-gray-800 mt-4 text-center font-[Montessrat]">
        Skontaktuj się ze mną poprzez formularz kontaktowy lub media społecznościowe.
       </p>
-      <p className="text-center mt-4 text-xl lg:text-2xl font-semibold font-serif  tracking-wider">Chętnie pomogę!</p>
+      <p className="text-center mt-4 text-xl lg:text-2xl font-semibold  tracking-wider font-[Cormorant-Garamond] ">Chętnie pomogę!</p>
 
       <form
         onSubmit={onSubmit}
@@ -123,7 +123,7 @@ const ContactForm = () => {
           tabIndex={-1}
           autoComplete="off"
         />
-        <label htmlFor="name" className="lg:text-xl font-bold ">
+        <label htmlFor="name" className="lg:text-xl font-bold font-[Cormorant-Garamond] ">
           Wpisz swoje imie:
         </label>
         <input
@@ -134,7 +134,7 @@ const ContactForm = () => {
           name="name"
           className="w-[80vw] lg:w-[60vw] ml-2 rounded-md py-3 px-4 bg-white text-sm outline-primary shadow-inner focus:bg-white "
         ></input>
-        <label htmlFor="email" className="  lg:text-xl font-bold ">
+        <label htmlFor="email" className="  lg:text-xl font-bold font-[Cormorant-Garamond]  ">
           Wpisz E-mail do kontaktu:
         </label>
         <input
@@ -145,7 +145,7 @@ const ContactForm = () => {
           name="email"
           className="w-[80vw]  lg:w-full ml-2  rounded-md py-3 px-4 bg-bg-white text-sm outline-primary shadow-inner focus:bg-white "
         ></input>
-        <label htmlFor="subject" className="lg:text-xl font-bold ">
+        <label htmlFor="subject" className="lg:text-xl font-bold font-[Cormorant-Garamond]  ">
           Temat:
         </label>
         <input
@@ -156,7 +156,7 @@ const ContactForm = () => {
           name="subject"
           className="w-[80vw]  lg:w-full ml-2  rounded-md py-3 px-4 bg-white text-sm outline-primary shadow-inner focus:bg-white "
         ></input>
-        <label htmlFor="message" className="lg:text-xl font-bold ">
+        <label htmlFor="message" className="lg:text-xl font-bold font-[Cormorant-Garamond]  ">
           Treść wiadomości:
         </label>
         <textarea

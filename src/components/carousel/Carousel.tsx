@@ -123,7 +123,7 @@ const Carousel: React.FC = () => {
             />
             <motion.div
               
-              className="absolute bottom-0 lg:bottom-32 lg:left-14 right-0 bg-black bg-opacity-40 text-primary p-2 w-full lg:w-1/2 text-center rounded"
+              className="absolute bottom-0 lg:bottom-20 lg:left-[5rem] right-0 bg-black bg-opacity-40 text-primary p-2 w-full lg:w-1/2 text-center rounded"
             >
               <div className="mx-auto sm:mx-12 md:mx-12 xl:mx-12 my-4">
                 <p className="text-white lg:text-2xl xl:text-4xl font-serif tracking-wide md:text-left mb-2 xl:mb-4">
@@ -160,20 +160,20 @@ const Carousel: React.FC = () => {
       ))}
     </AnimatePresence>
     <button
-      className="absolute top-52 xl:top-80 bottom-1/2 left-1 md:left-4 text-4xl text-white hover:opacity-40"
+      className="absolute top-52 xl:top-[23rem] bottom-1/2 left-1 md:left-4 "
       onClick={handlePrevImage}
     >
-      <span className="w-8 h-8 px-3 bg-black rounded-full bg-opacity-20">
+      <div className="text-4xl flex items-center justify-center w-12 h-12 bg-black bg-opacity-15 rounded-full text-white pb-2 hover:bg-opacity-50">
         {"<"}
-      </span>
+      </div>
     </button>
     <button
-      className="absolute top-52 xl:top-80 bottom-1/2 right-1 md:right-4 text-4xl text-white hover:opacity-40"
+      className="absolute top-52 xl:top-[23rem] bottom-1/2 right-1 md:right-4   "
       onClick={handleNextImage}
     >
-      <span className="w-8 h-8 px-3 bg-black rounded-full bg-opacity-20">
+      <div className=" text-4xl flex items-center justify-center w-12 h-12 bg-black bg-opacity-15 rounded-full text-white pb-2 hover:bg-opacity-50">
         {">"}
-      </span>
+      </div>
     </button>
   </div>
 </motion.div>

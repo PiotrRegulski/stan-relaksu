@@ -34,7 +34,7 @@ const Contact = () => {
               initial={{ x: -400, opacity: 0 }}
               animate={isInView ? { x: 0, opacity: 1 } : {}}
               transition={{
-                duration: 1.5,
+                duration: 2,
                 ease: "easeInOut",
                 type: "spring",
                 stiffness: 100,
@@ -55,7 +55,7 @@ const Contact = () => {
               initial={{ x: 800, opacity: 0 }}
               animate={isInView ? { x: 0, opacity: 1 } : {}}
               transition={{
-                duration: 1,
+                duration: 2.5,
                 ease: "easeInOut",
                 type: "spring",
                 stiffness: 100,

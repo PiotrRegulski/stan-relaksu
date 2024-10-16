@@ -6,39 +6,34 @@ export const OfferItem = [
     category: "body",
     title: "Masaz relaksacyjny Stanu Relaksu",
     image: "masaz-relaksacyjny/masaz-relaksacyjny-cover.jpg",
-    imageHeader:"masaz-relaksacyjny/masaz-relaksacyjny-cover-top.jpg",
+    imageHeader: "masaz-relaksacyjny/masaz-relaksacyjny-cover-top.jpg",
     imagedetailf: "",
     imagedetails: "",
     imagedetailt: "",
-    imagedetailfo:
-      "",
+    imagedetailfo: "",
     prices: [
       { id: "terapman30", priceName: "30 minut", price: "110 zł" },
       { id: "terapman45", priceName: "45 minut", price: "160 zł" },
       { id: "terapman60", priceName: "60 minut", price: "200 zł" },
       { id: "terapman90", priceName: "90 minut", price: "250 zł" },
     ],
-    contentMainOffer:
-      "Przenieś się do pełnego stanu relaksu.",
+    contentMainOffer: "Przenieś się do pełnego stanu relaksu.",
 
     contentFirst:
       "Przenieś się do pełnego stanu relaksu z masażem, który głęboko odpręży Twoje mięśnie, zdejmie napięcie z układu nerwowego zmniejszając uczucie stresu. Połączenie aromatycznych naturalnych olejków i kojącego dotyku  wprowadzi Cię wspaniały nastrój. ",
     advantages: [
       { title: "" },
       {
-        description:
-          ".",
+        description: "",
       },
 
       { title: "" },
       {
-        description:
-          " ",
+        description: " ",
       },
       { title: "" },
       {
-        description:
-          " ",
+        description: " ",
       },
     ],
     contraindications: [
@@ -69,26 +64,22 @@ export const OfferItem = [
       },
       {
         id: "3",
-        recommendation:
-          "Chcesz zmniejszyć uczucie stresu i napięcia w ciele",
+        recommendation: "Chcesz zmniejszyć uczucie stresu i napięcia w ciele",
       },
     ],
     procedures: [
       { title: "" },
       {
-        procedure:
-          " ",
+        procedure: "",
       },
 
       { title: "" },
       {
-        procedure:
-          "",
+        procedure: "",
       },
       { title: "" },
       {
-        procedure:
-          "",
+        procedure: "",
       },
     ],
   },
@@ -98,7 +89,7 @@ export const OfferItem = [
     active: true,
     category: "face",
     title: "Kobido z kinesiotapingiem ",
-    imageHeader:"carousel/kobido-kinesiotaping.jpg",
+    imageHeader: "carousel/kobido-kinesiotaping.jpg",
     image: "offers-photo/kobido-omnie.jpg",
     imagedetailf: "kobido/kobido-kinesiotaping.jpg",
     imagedetails: "kobido/kobido-procedure-buttom.jpg",
@@ -202,7 +193,7 @@ export const OfferItem = [
     category: "face",
     title: "Igłoterapia estetyczna i pinezkowanie",
     image: "offers-photo/igłoterapia-estetyczna.jpg",
-    imageHeader:"carousel/DSC02809.jpg", 
+    imageHeader: "carousel/DSC02809.jpg",
     imagedetailf: "igłoterapia/igłoterapia-estetyczna-last.jpg",
     imagedetails: "igłoterapia/igłoterapia-estetyczna-procedureb.jpg",
     imagedetailt: "igłoterapia/igłoterapia-estetyczna-proceduref.jpg",
@@ -282,7 +273,7 @@ export const OfferItem = [
     category: "body",
     title: "Masaż Powięziowy ",
     image: "offers-photo/masaż-powięziowy-main.jpg",
-    imageHeader:"carousel/masaż-powięziowy.jpg",
+    imageHeader: "carousel/masaż-powięziowy.jpg",
     imagedetailf: "masaz-powieziowy/masaż-powięziowy-t.jpg",
     imagedetails: "masaz-powieziowy/masaz-powięziowy-terapia-manualna.jpg",
     imagedetailt: "masaz-powieziowy/masaz-powięziowy.-d.jpg",
@@ -550,7 +541,7 @@ export const OfferItem = [
     category: "body",
     title: "Masaż tkanek głębokich",
     image: "offers-photo/masaż-tkanek-głebokich-main.jpg",
-    imageHeader:"carousel/masaż-tkanek-głebokich.jpg",
+    imageHeader: "carousel/masaż-tkanek-głebokich.jpg",
 
     imagedetailf: "masaz-sportowy/masaż-tkanek-głebokich-last.jpg",
     imagedetails: "masaz-sportowy/masaż-tkanek-głebokich-procedureb.jpg",
@@ -640,7 +631,7 @@ export const OfferItem = [
   {
     id: "terapia-manualna",
     slug: "terapia-manualna",
-    imageHeader:"carousel/terapia-manualna-kolano-klawiki.jpg",
+    imageHeader: "carousel/terapia-manualna-kolano-klawiki.jpg",
     active: true,
     category: "body",
     title: "Terapia manualna",
