@@ -65,7 +65,7 @@ const images: ImageData[] = [
     alt: "Masaż relaksacyjny Stanu Relaksu",
     description:
       "Przenieś się do pełnego stanu relaksu z masażem, który głęboko odpręży Twoje mięśnie, zdejmie napięcie z układu nerwowego zmniejszając uczucie stresu.  ",
-    linkDetails: "masaz-relaksacyjny-stanu-relaksu",
+    linkDetails: "offer/masaz-relaksacyjny-stanu-relaksu",
     linkBooksy:
       "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
     clName:

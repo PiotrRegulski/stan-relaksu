@@ -2,7 +2,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, useInView, useScroll, useTransform,useSpring } from "framer-motion";
+import {
+  motion,
+  useInView,
+  useScroll,
+  useTransform,
+  useSpring,
+} from "framer-motion";
 
 const AboutMeShort = () => {
   const ref = useRef(null);
@@ -21,10 +27,10 @@ const AboutMeShort = () => {
     [startY, startY + 300, startY + 400, startY + 500],
     [1, 0.5, 0.5, 0]
   );
-  const imageY = useTransform(scrollY, [startY-300, startY + 800], [0, 80]);
-  const imageYs = useTransform(scrollY, [startY -300, startY + 800], [0, -80]);
+  const imageY = useTransform(scrollY, [startY - 300, startY + 800], [0, 80]);
+  const imageYs = useTransform(scrollY, [startY - 300, startY + 800], [0, -80]);
   const springImageY = useSpring(imageY, { stiffness: 300, damping: 30 });
-const springImageYs = useSpring(imageYs, { stiffness: 300, damping: 30 });
+  const springImageYs = useSpring(imageYs, { stiffness: 300, damping: 30 });
 
   return (
     <div
@@ -40,7 +46,6 @@ const springImageYs = useSpring(imageYs, { stiffness: 300, damping: 30 });
         <motion.div
           id="troche-o-omnie"
           className="relative w-[12rem] sm:w-[16rem] md:w-[15rem] xl:w-[20rem] h-[15rem] sm:h-[19rem] xl:h-[27rem] z-20 overflow-hidden"
-          
           transition={{ type: "spring", duration: 1 }}
           style={{ y: springImageY }}
         >
@@ -62,9 +67,8 @@ const springImageYs = useSpring(imageYs, { stiffness: 300, damping: 30 });
         </motion.div>
         <motion.div
           className="relative w-[12rem] sm:w-[16rem] xl:w-[21rem] h-[17rem] sm:h-[21rem] xl:h-[29rem] -ml-10 mt-20 overflow-hidden"
-        
           transition={{ type: "spring" }}
-          style={{ y: springImageYs}}
+          style={{ y: springImageYs }}
         >
           <motion.div
             className=" relative w-full h-full"
@@ -93,10 +97,10 @@ const springImageYs = useSpring(imageYs, { stiffness: 300, damping: 30 });
           CZEŚĆ, <br /> JESTEM KINGA!
         </p>
         <p className="text-lg lg:text-2xl  my-12 font-[Lato]">
-          Przyniosę Ci ulgę w bólu oraz napięciu. Czekam na Ciebie z terapią
-          manualną, masażem powięziowym, masażem tkanek głębokich. Głęboko
-          odprężającymi technikami masażu twarzy Kobido, masażu relaksacyjnego,
-          które pozwolą Ci osiągnąć Stan Relaksu.
+          Cześć Jestem Kinga Wołoszka! Przyniosę Ci ulgę w bólu oraz napięciu
+          stosując techniki masażu powięziowego i terapii manualnej, podpowiem
+          Ci jak możesz pracować ze swoim ciałem poprzez dobrane ćwiczenia czy
+          oddech dla poprawy Twojego zdrowia i samopoczucia
         </p>
         <Link
           href="/about"
