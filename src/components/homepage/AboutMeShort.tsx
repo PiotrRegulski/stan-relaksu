@@ -97,7 +97,7 @@ const AboutMeShort = () => {
           CZEŚĆ, <br /> JESTEM KINGA!
         </p>
         <p className="text-lg lg:text-2xl  my-12 font-[Lato]">
-          Cześć Jestem Kinga Wołoszka! Przyniosę Ci ulgę w bólu oraz napięciu
+          Przyniosę Ci ulgę w bólu oraz napięciu
           stosując techniki masażu powięziowego i terapii manualnej, podpowiem
           Ci jak możesz pracować ze swoim ciałem poprzez dobrane ćwiczenia czy
           oddech dla poprawy Twojego zdrowia i samopoczucia

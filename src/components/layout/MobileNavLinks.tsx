@@ -9,7 +9,7 @@ interface MobileNavLinksProps {
 const links = [
   { href: "/#welcome-card", label: "Strona główna" },
   { href: "/about#about", label: "O mnie" },
-  { href: "/offer#offer", label: "Oferta" },
+  { href: "/offer", label: "Oferta" },
   { href: "/prices#prices", label: "Cennik" },
   { href: "/contact#contact", label: "Kontakt" },
 ];
