@@ -265,6 +265,98 @@ export const OfferItem = [
       },
     ],
   },
+  {
+    id: "terapia-wisceralna-w-problemach-jelitowo-trawiennych",
+    slug: "terapia-wisceralna-w-problemach-jelitowo-trawiennych",
+    active: true,
+    category: "body",
+    title: "Terapia wisceralna w problemach jelitowo-trawiennych",
+    image: "terapia-wisceralna/terapia-wisceralna.jpg",
+    imageHeader: "terapia-wisceralna/terapia-wisceralna-first.jpg",
+    imagedetailf: "terapia-wisceralna/terapia-wisceralna-last.jpg",
+    imagedetails: "terapia-wisceralna/terapia-wisceralna-procedureb.jpg", 
+    imagedetailt: "terapia-wisceralna/terapia-wisceralna-proceduref.jpg",
+    imagedetailfo: "terapia-wisceralna/terapia-wisceralna-second.jpg",
+    prices: [
+      { id: "cenaterapiWisceralnej75", priceName: "75 minut", price: "220 zł" },
+      { id: "cenaterapiWisceralnej90", priceName: "90 minut", price: "250 zł" },
+    ],
+    contentMainOffer:
+      "Jelita to nasz drugi mózg więc ich  prawidłowe funkcjonowanie jest niezbędne dla zdrowia naszego organizmu.",
+
+    contentFirst:
+      "Jelita to nasz drugi mózg więc ich  prawidłowe funkcjonowanie jest niezbędne dla zdrowia naszego organizmu. Masaż brzucha w terapii wisceralnej pomaga regulować pracę narządów wewnętrznych za czym idzie przywrócenie homeostazy w innych układach ciała.",
+    advantages: [
+      { title: "Skuteczność Masażu Brzucha" },
+      {
+        description:
+          "Manualne techniki masażu brzucha skutecznie odwracają przebieg mechanizmów prowadzących do problemów jelitowo-trawiennych takich jak zgagi, problemy trawienne, alergie, zaparcia, wzdęcia IBS, SIBO, zaburzenia pracy wątroby czy nerek.",
+      },
+      { title: "Uczucie Lekkości i Poprawa Krążenia" },
+      {
+        description:
+          "Odblokowanie zaburzeń mikrokrążenia, niedotlenienia tkanek, przywrócenie prawidłowej pracy układu limfatycznego okolicy brzucha oraz pracy wisceroreceptorów przynosi uczucie lekkości w całym organizmie. Regulacja pracy narządów trawiennych może przynieść ulgę w problemach bólowych w obrębie całego ciała, np. w plecach, biodrach i innych nawet odległych okolicach. ",
+      },
+      { title: "Redukcja Stresu i Napięcia" },
+      {
+        description:
+          "Praca z okolicą brzucha przywraca prawidłową pracę układu nerwowego trzewnego oraz nerwu błędnego, co zmniejsza uczucie stresu i napięcia w całym organizmie. ",
+      },
+    ],
+    contraindications: [
+      { id: "1", contraindication: "przeciwskazania" },
+      {
+        id: "2",
+        contraindication:
+          "Zakażenia skóry i otwarte rany w miejscu wykonywania zabiegu",
+      },
+      { id: "3", contraindication: "przeciwskazania" },
+      { id: "4", contraindication: "przeciwskazania" },
+      { id: "5", contraindication: "przeciwskazania" },
+      { id: "6", contraindication: "przeciwskazania" },
+    ],
+    indications: [
+      { id: "1", indication: "wskazanie 1" },
+      { id: "2", indication: "wskazanie 2" },
+    ],
+    recommendations: [
+      {
+        id: "1",
+        recommendation:
+          "Zmagasz się z problemami jelitowo-trawiennymi ( IBS, SIBO, zaparcia, zgagi)",
+      },
+      {
+        id: "2",
+        recommendation:
+          "Masz ciągle spuszony brzuch, bolesne miesiączki, zaburzenia hormonalne",
+      },
+      {
+        id: "3",
+        recommendation: "Chcesz zmniejszyć uczucie stresu i napięcia w ciele",
+      },
+    ],
+    procedures: [
+      { title: "Przygotowanie:" },
+      {
+        procedure:
+          "Każdy zabieg zaczynamy od wywiadu który pozwoli nam na podstawie zebranych informacji na dobranie indywidualnie dostosowanej terapii. ",
+      },
+      { title: "Jak się przygotować" },
+      {
+        procedure:
+          "Przed zabiegiem najlepiej jest być 3 godziny bez jedzenia lub na czczo (można spożywać niewielką ilość płynów przed zabiegiem, ale nie zaleca się żucia gumy czy picia kawy z powodu aktywacji enzymów trawiennych przez te produkty). Do zabiegu odkryta jest tylko okolica brzucha, warto więc założyć wygodne spodnie umożliwiające odsłonięcie okolicy podbrzusza.",
+      },
+      { title: "Czas trwania:" },
+      {
+        procedure: "Zabieg trwa zazwyczaj do 90 minut",
+      },
+      { title: "Efekty:" },
+      {
+        procedure:
+          "Po masażu brzucha odczuwalne jest zmniejszenie napięcia i spuszenia w obrębie brzucha. W długofalowym stosowaniu terapii wisceralnej zauważalna jest regulacja pracy narządów trawiennych, zmniejszenie dolegliwości ze strony jelit co przekłada się też na zmniejszenie podrażnienia na układzie nerwowym i układzie immunologicznym za czym mogą iść  pozytywne ogólnoustrojowe zmiany (zmniejszenie AZS, trądziku, dolegliwości bólowych w obrębie stawów i tkanek, uogólnionego stanu zapalnego).",
+      },
+    ],
+  },
 
   {
     id: "MasazPowieziowy ",

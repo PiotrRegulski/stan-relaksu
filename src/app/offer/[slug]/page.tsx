@@ -132,6 +132,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     "stanu",
     "relaksu",
     "masaż",
+    "masażu",
     "igłoterapia",
     "estetyczna",
     "odmłodzenia",
@@ -154,6 +155,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
           />
           <div className="absolute bottom-0 lg:bottom-32 lg:left-14 right-0 bg-black bg-opacity-40 text-white p-2 w-full lg:w-1/2  rounded">
             <h1 className={" text-white xl:text-2xl font-serif tracking-wide"}>
+             <span className="text-xl lg:text-3xl ">{offerDetail.title}<br></br></span> <br></br>
               {firstAdventagesDescription}
             </h1>
           </div>
@@ -192,8 +194,8 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
               </div>
             </div>
             <div className="flex flex-col md:flex-row-reverse 2xl:flex-row   bg-secondary  md:my-4 ">
-              <div className="flex xl:flex-row xl:mx-48 ">
-                <div className="relative h-[16rem] md:h-[28rem] sm:w-auto md:min-w-[21rem] 2xl:h-[30rem] 2xl:w-[45rem]  mx-auto my-2 md:my-2 md:mx-2   ">
+              <div className="flex flex-col xl:flex-row xl:mx-48 ">
+                <div className="relative h-[16rem] md:h-[28rem] w-full md:min-w-[21rem] 2xl:h-[30rem] 2xl:w-[45rem]  mx-auto my-2 md:my-2 md:mx-2   ">
                   <Image
                     src={`/${offerDetail.imagedetailfo}`}
                     alt={offerDetail.title}
