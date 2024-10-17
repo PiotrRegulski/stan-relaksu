@@ -813,4 +813,97 @@ export const OfferItem = [
       },
     ],
   },
+  {
+    id: "masaż-ujędrniający-bańką-chińską",
+    slug: "masaz-ujedrniajacy-banka-chinska",
+    imageHeader: "banka-chinska/masaż-banka-chinska.jpg",
+    active: true,
+    category: "body",
+    title: "Masaż ujędrniający Bańką Chińską",
+    image: "banka-chinska/masaz-banka-chinska-cover.jpg",
+    imagedetailf: "terapia-manualna/terapia-manualna-kolano-last.jpg",
+    imagedetails: "terapia-manualna/terapia-manualna-kolano-procedureb.jpg",
+    imagedetailt: "terapia-manualna/terapia-manualna-proceduref.jpg",
+    imagedetailfo:
+      "terapia-manualna/terapia-manualna-kolano-klawiki-second.jpg",
+    prices: [
+      { id: "terapman30", priceName: "30 minut", price: "110 zł" },
+      { id: "terapman45", priceName: "45 minut", price: "160 zł" },
+      { id: "terapman60", priceName: "60 minut", price: "200 zł" },
+      { id: "terapman90", priceName: "90 minut", price: "250 zł" },
+    ],
+    contentMainOffer:
+      "Pobudzający masaż, który pomoże w zmniejszeniu obrzęku wodno-tluszczowego, wygładzeniu i ujędrnieniu skóry.",
+
+    contentFirst:
+      "Pobudzający masaż, który pomoże w zmniejszeniu obrzęku wodno-tluszczowego, wygładzeniu i ujędrnieniu skóry, zniwelowaniu widoczności cellulitu poprzez pracę na rozbijaniu mikrozrostów i zwłóknień w tkance tłuszczowej. ",
+    advantages: [
+      { title: "" },
+      {
+        description:
+          "Ogromnymi zaletami terapii manualnej jest indywidualne podejście do Twojego problemu oraz możliwość wyboru odpowiedniej terapii z szerokiego zakresu technik takich jak mobilizacje stawowe, terapia tkanek miękkich, terapia neuro-mięśniowa, terapie płynowe z  jamami ciała.",
+      },
+
+      { title: "Sprawdzi się na problem drętwienia dłoni" },
+      {
+        description:
+          "Sprawdza się ona również u osób z problemami ortopedycznymi, urazami w obrębie stóp, kolan, bioder, barków, łokci czy nadgarstków. Znajduje także zastosowanie w pracy z problemami drętwienia dłoni czy nóg, bólami ostrymi i tymi przewlekłymi.  ",
+      },
+      { title: "Pomaga w schorzenich kęgosłupa" },
+      {
+        description:
+          "Możliwość i duże bezpieczeństwo terapii manualnej  pomagają w uśmierzaniu bólu i schorzeń kręgosłupa takie jak zwyrodnienia, dyskopatia, przepuklina, rwa kulszowa czy rwa udowa. ",
+      },
+    ],
+    contraindications: [
+      { id: "1", contraindication: "choroby nowotworowe" },
+      {
+        id: "2",
+        contraindication:
+          "Zakażenia skóry i otwarte rany w miejscu wykonywania zabiegu",
+      },
+      { id: "3", contraindication: "Zakrzepica żył głębokich" },
+      { id: "4", contraindication: "Niewyrównana niewydolność serca" },
+      { id: "5", contraindication: "Ciężka niewydolność nerek" },
+      { id: "6", contraindication: "Gorączka" },
+    ],
+    indications: [
+      { id: "1", indication: "wskazanie 1" },
+      { id: "2", indication: "wskazanie 2" },
+    ],
+    recommendations: [
+      {
+        id: "1",
+        recommendation:
+          "Zmagasz się z napięciem czy bólami pleców, karku lub stawów ",
+      },
+      {
+        id: "2",
+        recommendation: "Chcesz poprawić krążenie krwi i limfy",
+      },
+      {
+        id: "3",
+        recommendation:
+          " Chcesz zredukować celulit i poprawić wygląd skóry",
+      },
+    ],
+    procedures: [
+      { title: "" },
+      {
+        procedure:
+          "Każdy zabieg zaczynamy od wnikliwego wywiadu, badania funkcjonalnego, oceny postawy, zakresu ruchomości stawów i napięcia mięśniowego. Wszystkie te informacje pozwolą na dobranie indywidualnej terapii manualnej dostosowanej do Twojego problemu. Najlepiej ubrać wygodny strój tak aby obszary poddawane terapii były łatwo dostępne. ",
+      },
+
+      { title: "Czas trwania:" },
+      {
+        procedure:
+          "Zabieg trwa zazwyczaj 60 minut, co pozwala na zebranie wywiadu oraz przeprowadzenie terapii danego problemu związanego z większą okolicą jak plecy i kręgosłup. Jeśli borykasz się z kilkoma problemami możesz zastanowić się nad dłuższymi sesjami  do 90 minut. Wybór 30 minutowej lub 45 minutowej wizyty będzie także dobrym rozwiązaniem dla pracy z problemami stawów obwodowych czy mniejszymi okolicami jak odcinek szyjny, kark.",
+      },
+      { title: "Efekty:" },
+      {
+        procedure:
+          "Po terapii manualnej możesz zauważyć redukcje bólu, lepszą ruchomość i elastyczność w tkankach oraz zdjęcie napięcia z okolic poddanych zabiegowych. Zmniejsza się sztywność stawowa co umożliwia swobodniejsze poruszanie się.",
+      },
+    ],
+  },
 ];

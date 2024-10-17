@@ -24,7 +24,7 @@ const imgURLs = [
   {
     src: "/terapia-uro.jpg",
     label: "terapia wisceralna",
-    caption: "Terapia urokinelogiczna",
+    caption: "Terapia uroginekologiczna",
     marginTop: "20px",
     href:"/offer"
 
