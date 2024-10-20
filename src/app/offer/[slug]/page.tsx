@@ -144,7 +144,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
   return (
     <div className=" mt-[7rem]">
       <div id={"offerDetail"} className="w-full">
-        <div className="relative  h-[45rem]">
+        <div className="relative  h-[35rem]">
           <Image
             src={`/${offerDetail.imageHeader}`}
             alt={offerDetail.title}
@@ -187,7 +187,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                     src={`/${offerDetail.image}`}
                     alt={offerDetail.title}
                     fill
-                    className="object-fill sm:object-fill md:object-fill sm:rounded-full  sm:px-2 md:px-0 "
+                    className="object-cover sm:object-cover md:object-fill sm:rounded-full  sm:px-2 md:px-0 "
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>

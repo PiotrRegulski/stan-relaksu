@@ -103,7 +103,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className=" flex flex-col justify-center  px-2 pb-10 shadow-xl rounded border-4 border-white  shadow-gray-400/75 bg-secondary sm:mx-2 lg:my-6 md:mx-0 ">
+    <div className=" flex flex-col justify-center  px-2 pb-10 shadow-lg rounded border-4 border-white  shadow-gray-400/75 bg-secondary sm:mx-2 lg:my-2 md:mx-0 ">
       <h3 className="lg:mx-64 text-2xl lg:text-3xl  font-bold mt-9 text-center text-black font-[Cormorant-Garamond]  ">
         Potrzebujesz więcej informacji lub porady na temat zabiegów.
       </h3>

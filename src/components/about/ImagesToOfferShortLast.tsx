@@ -40,7 +40,7 @@ const ImagesToOfferShortLast = () => {
             whileHover={{ scale: 1.1 }}
             initial={{ x: 100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ type: "spring", duration: 1 }}
+            transition={{ type: "spring", duration: 2, stiffness: 50 }}
           >
             <ImageCard key={imgUrl.label} href={imgUrl.href} src={imgUrl.src} alt={imgUrl.label} />
           </motion.div>

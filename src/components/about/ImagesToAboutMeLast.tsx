@@ -58,7 +58,7 @@ const ImagesToAboutMeLast = () => {
           <motion.div
             className="w-full h-full"
             whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", duration: 1 }}
+            transition={{ type: "spring", duration: 2, stiffness: 50 }}
           >
             {" "}
             <ImageCard

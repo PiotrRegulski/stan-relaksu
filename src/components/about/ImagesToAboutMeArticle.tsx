@@ -62,7 +62,7 @@ const ImagesToAboutMeArticle = () => {
               whileHover={{ scale: 1.1 }}
               initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
               animate={isInView ? { x: 0, opacity: 1 } : {}}
-              transition={{ type: "spring", duration: 2, }}
+              transition={{ type: "spring", duration: 2,stiffness: 50 }}
             >
               <ImageCard
                 
@@ -106,7 +106,7 @@ const ImagesToAboutMeArticle = () => {
         <ImageToOffersShort />
       </div>
       <div className=" flex flex-col w-full justify-center items-center border-b-4 bg-secondary md:py-32 ">
-      <h3 className=" text-xl px-3 py-2 md:text-3xl font-semibold">Kompleksowa Terapia i Rehabilitacja: Od Problemów Jelitowych Po<span className="whitespace-nowrap"> Blizny i Bolesne Miesiączki</span></h3>
+      <h3 className=" text-xl px-3 py-2 md:text-3xl text-center font-semibold">Kompleksowa Terapia i Rehabilitacja: Od Problemów Jelitowych Po<span className="whitespace-nowrap"> Blizny i Bolesne Miesiączki</span></h3>
 
         <p className="text-center  md:w-1/2 text-lg md:text-xl xl:text-2xl mx-auto md:mx-4 my-2  px-3 py-8  lg:my-2 2xl:my-2    h-full">
           W pracy zajmuje się{" "}

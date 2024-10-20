@@ -13,7 +13,7 @@ const DetailedAddress = () => {
         location={"Lokalizacja:"}
       >
         <address>
-          <strong>ul. Naukowa 20 /lokal - 1/ 02-463 Warszawa</strong>
+          <strong>ul. Naukowa 20 /lokal-1/ 02-463 Warszawa</strong>
         </address>
       </DetailedAdressItem>
       <DetailedAdressItem
@@ -42,7 +42,7 @@ const DetailedAddress = () => {
             rel="noopener noreferrer"
             className="hover:opacity-70 "
           >
-            kontat@stanrelaksu.pl
+            kontakt@stanrelaksu.pl
           </Link>
         </strong>
       </DetailedAdressItem>

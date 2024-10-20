@@ -23,29 +23,29 @@ const Contact = () => {
       <div
         ref={ref}
         className="grid md:grid-cols-1
-        gap-4  items-center my-4 lg:my-4  "
+        gap-4  items-center my-4 lg:my-2  "
       >
         <div
           id="kontakt-info"
-          className=" shadow-xl rounded  bg-secondary  shadow-gray-400/75 w-full "
+          className=" shadow-xl rounded  bg-white  shadow-gray-400/75 w-full "
         >
-          <div className=" flex flex-col md:flex-row  w-full  bg-gradient-to-r from-transparent to-mainpeach">
+          <div className=" flex flex-col md:flex-row  w-full">
             <motion.div
               initial={{ x: -400, opacity: 0 }}
               animate={isInView ? { x: 0, opacity: 1 } : {}}
               transition={{
-                duration: 2,
-                ease: "easeInOut",
+                duration: 8,
+                ease: "easeOut",
                 type: "spring",
-                stiffness: 100,
+                stiffness: 50,
               }}
-              className=" md:text-xl lg:text-xl xl:text-2xl md:mt-12  md:w-2/3 lg:mx-12  lg:mt-16 px-4  py-12 lg:w-2/3 2xl:mt-28 "
+              className=" md:text-xl lg:text-xl xl:text-2xl md:mt-12  md:w-2/3 lg:mx-12  lg:mt-2 px-4  py-12  h-full bg-gradient-to-r from-mainpeach to-transparent rounded-xl "
             >
-              <p className="font-semibold font-serif   text-center ">
+              <p className="font-semibold font-[Cormorant-Garamond] text-2xl xl:text-3xl   text-center ">
                 Gabinet mieści się przy{" "}
                 <strong>studio jogi Jasna Asana. </strong>
               </p>
-              <p className="text-center">
+              <p className="text-center my-4">
                 Tworzymy to miejsce aby holistycznie zadbać o Twoje ciało.
                 <br></br> Poprzez połączenie jogi i terapii manualnej.<br></br>{" "}
                 Możesz zatroszczyć się o siebie w sposób kompleksowy.
@@ -60,13 +60,13 @@ const Contact = () => {
                 type: "spring",
                 stiffness: 100,
               }}
-              className="relative w-full h-80 md:w-full lg:w-[48rem] lg:h-[25rem]  xl:mr-24 opacity-90  "
+              className="relative w-full h-80 md:w-full lg:w-[48rem] lg:h-[22rem] lg:mr-4   xl:mr-24 opacity-90   "
             >
               <Image
                 src={"/contact/gabient.jpg"}
                 fill
                  sizes="(max-width: 600px) 100vw, 50vw"
-                className=" object-cover w-full h-full  opacity-70"
+                className=" object-cover w-full h-full  opacity-70 rounded-xl"
                 alt="Screenshots of the dashboard project showing desktop version"
                 priority={true}
               />

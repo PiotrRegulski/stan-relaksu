@@ -163,7 +163,7 @@ const Carousel: React.FC = () => {
       className="absolute top-52 xl:top-[23rem] bottom-1/2 left-1 md:left-4 "
       onClick={handlePrevImage}
     >
-      <div className="text-4xl flex items-center justify-center w-12 h-12 bg-black bg-opacity-15 rounded-full text-white pb-2 hover:bg-opacity-50">
+      <div className="text-4xl flex items-center justify-center w-12 h-12  rounded-full text-white pb-2 hover:opacity-50">
         {"<"}
       </div>
     </button>
@@ -171,7 +171,7 @@ const Carousel: React.FC = () => {
       className="absolute top-52 xl:top-[23rem] bottom-1/2 right-1 md:right-4   "
       onClick={handleNextImage}
     >
-      <div className=" text-4xl flex items-center justify-center w-12 h-12 bg-black bg-opacity-15 rounded-full text-white pb-2 hover:bg-opacity-50">
+      <div className=" text-4xl flex items-center justify-center w-12 h-12  rounded-full text-white pb-2 hover:opacity-50 ">
         {">"}
       </div>
     </button>

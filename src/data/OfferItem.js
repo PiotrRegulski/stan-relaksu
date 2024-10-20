@@ -200,7 +200,7 @@ export const OfferItem = [
     imagedetailfo: "igłoterapia/igłoterapia-estetyczna-second.jpg",
     prices: [{ id: "cenaIgłoterapi", priceName: "90 minut", price: "350 zł" }],
     contentMainOffer:
-      "Igłoterapia estetyczna twarzy z pinezkowaniem to zaawansowany zabieg, który może odmienić bezinwazyjnie wygląd Twojej twarzy.",
+      "Zaawansowany zabieg, który może odmienić bezinwazyjnie wygląd Twojej twarzy.",
 
     contentFirst:
       "Igłoterapia estetyczna twarzy z pinezkowaniem to zaawansowany zabieg, który może odmienić bezinwazyjnie wygląd Twojej twarzy. Zmniejszenie napięcia mięśni mimicznych, pobudzenie produkcji kolagenu i elastyny przynosi efekt odmłodzenia..  ",
@@ -377,7 +377,7 @@ export const OfferItem = [
       { id: "maspow90", priceName: "90 minut", price: "250 zł" },
     ],
     contentMainOffer:
-      "To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała. Pomaga w zmniejszeniu dolegliwości bólowych.",
+      "To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała.",
 
     contentFirst:
       "To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała. Uwolnienie powięziowe i zniesienie napięć w ciele pomaga w zmniejszeniu dolegliwości bólowych, uczucia stresu oraz ogólnej relaksacji. ",
