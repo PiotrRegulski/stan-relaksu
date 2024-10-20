@@ -12,8 +12,9 @@ import { BsArrowUpRightSquare } from "react-icons/bs";
 const FooterInfo = (props: any) => {
   return (
     <div className="flex flex-col  w-full justify-center items-center ">
-      <div className=" flex flex-col-reverse sm:flex-row w-full lg:w-2/3  gap-2  items-center justify-center ">
-        <div className="flex flex-col">
+      <div className=" flex flex-col sm:flex-row w-full lg:w-2/3  gap-4 lg:gap-20  items-center justify-center   ">
+      <FooterLinks />
+        <div className="flex flex-col ">
           {" "}
           <div className="relative w-auto h-auto  flex items-center justify-center ">
             <Image
@@ -26,7 +27,7 @@ const FooterInfo = (props: any) => {
               style={{ width: "auto", height: "auto" }}
             />
           </div>
-          <div className=" hidden sm:block mx-auto my-2  ">
+          <div className=" hidden sm:block mx-auto my-2   ">
             <div className=" flex gap-2 ">
               <div className="bg-[#e6e6e6cf] h-6 w-6 rounded-full flex items-center justify-center shrink-0 my-2 ">
                 <Link
@@ -53,7 +54,7 @@ const FooterInfo = (props: any) => {
         </div>
         <div className="flex lg:w-1/3 flex-col text-sm ">
           <p className="my-2 text-sm font-bold">
-            Gabinet terapii manualnej i masażu - Stan Relaksu
+            Gabinet terapii manualnej i masażu <span className="whitespace-nowrap">- Stan Relaksu</span>
           </p>
           <div className="flex flex-row w-full ">
             <IoIosPin className="w-3 h-3 mt-2 mx-2" />
@@ -89,7 +90,7 @@ const FooterInfo = (props: any) => {
           </div>
         </div>
 
-        <FooterLinks />
+       
       </div>
     </div>
   );
