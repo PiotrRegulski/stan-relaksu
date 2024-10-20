@@ -8,7 +8,7 @@ const imageURLs = [
     src: "/banka-twarzy.jpg",
     label: "banka twarzy",
     caption: "Masaż twarzy bańką chińską",
-    href:"/offer"
+    href:"/offer/masaz-ujedrniajacy-banka-chinska"
   
   },
   {

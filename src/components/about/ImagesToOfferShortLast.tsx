@@ -17,7 +17,7 @@ const imgURLs = [
     label: "Terapia wisceralna",
     caption: "Terapia wisceralna",
     marginTop: "40px",
-    href:"/offer"
+    href:"/offer/terapia-wisceralna-w-problemach-jelitowo-trawiennych"
 
   },
 ];
