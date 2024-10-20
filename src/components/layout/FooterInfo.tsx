@@ -12,9 +12,9 @@ import { BsArrowUpRightSquare } from "react-icons/bs";
 const FooterInfo = (props: any) => {
   return (
     <div className="flex flex-col  w-full justify-center items-center ">
-      <div className=" flex flex-col sm:flex-row w-full lg:w-2/3  gap-4 lg:gap-20  items-center justify-center   ">
+      <div className=" flex flex-col sm:flex-row w-full   gap-4 lg:gap-20   items-center justify-center  ">
       <FooterLinks />
-        <div className="flex flex-col ">
+        <div className="flex flex-col  ">
           {" "}
           <div className="relative w-auto h-auto  flex items-center justify-center ">
             <Image
@@ -52,12 +52,12 @@ const FooterInfo = (props: any) => {
             </div>
           </div>
         </div>
-        <div className="flex lg:w-1/3 flex-col text-sm ">
+        <div className="flex lg:w-1/3 flex-col text-sm  ">
           <p className="my-2 text-sm font-bold">
             Gabinet terapii manualnej i masażu <span className="whitespace-nowrap">- Stan Relaksu</span>
           </p>
           <div className="flex flex-row w-full ">
-            <IoIosPin className="w-3 h-3 mt-2 mx-2" />
+            <IoIosPin className="w-4 h-4 mt-2 mx-2" />
             <address className="text-sm w-full whitespace-nowrap not-italic">
               Naukowa 20 /lokal-1/<br></br> 02-463 Warszawa
             </address>

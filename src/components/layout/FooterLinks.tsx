@@ -14,8 +14,8 @@ const links = [
 const FooterLinks = () => {
   const pathname = usePathname();
   return (
-    <div className="flex flex-col  ">
-      <div className="flex flex-row my-2 w-full justify-center items-center px-2">
+    <div className="flex flex-col lg:w-1/3  ">
+      <div className="flex flex-row my-2 w-full justify-end items-end px-2">
         {links.map((link) => (
           <Link
             href={link.href}
@@ -30,7 +30,7 @@ const FooterLinks = () => {
           </Link>
         ))}
       </div>
-      <div className="hidden sm:flex justify-center items-center w-full mt-4">
+      <div className="hidden sm:flex justify-end items-end w-full mt-4 lg:pr-12">
         <Link
           href="https://booksy.com/pl-pl/257898_stan-relaksu-holistyczny-gabinet-terapii-i-masazu_masaz_3_warszawa#ba_s=dl_1"
           target="_blank"
