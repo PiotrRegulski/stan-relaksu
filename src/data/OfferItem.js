@@ -274,7 +274,7 @@ export const OfferItem = [
     image: "terapia-wisceralna/terapia-wisceralna.jpg",
     imageHeader: "terapia-wisceralna/terapia-wisceralna-first.jpg",
     imagedetailf: "terapia-wisceralna/terapia-wisceralna-last.jpg",
-    imagedetails: "terapia-wisceralna/terapia-wisceralna-procedureb.jpg", 
+    imagedetails: "terapia-wisceralna/terapia-wisceralna-procedureb.jpg",
     imagedetailt: "terapia-wisceralna/terapia-wisceralna-proceduref.jpg",
     imagedetailfo: "terapia-wisceralna/terapia-wisceralna-second.jpg",
     prices: [
@@ -814,8 +814,8 @@ export const OfferItem = [
     ],
   },
   {
-    id: "masaż-ujędrniający-bańką-chińską",
-    slug: "masaz-ujedrniajacy-banka-chinska",
+    id: "masaz-relaksacyjny-kobiet-w-ciazy",
+    slug: "masaz-relaksacyjny-kobiet-w-ciazy",
     imageHeader: "banka-chinska/masaż-banka-chinska.jpg",
     active: true,
     category: "body",
@@ -830,7 +830,6 @@ export const OfferItem = [
       { id: "bankachinska30", priceName: "30 minut", price: "110 zł" },
       { id: "bankachinska45", priceName: "45 minut", price: "160 zł" },
       { id: "bankachinska60", priceName: "60 minut", price: "200 zł" },
-      
     ],
     contentMainOffer:
       "Pobudzający masaż, który pomoże w zmniejszeniu obrzęku wodno-tluszczowego, wygładzeniu i ujędrnieniu skóry.",
@@ -883,8 +882,7 @@ export const OfferItem = [
       },
       {
         id: "3",
-        recommendation:
-          " Chcesz zredukować celulit i poprawić wygląd skóry",
+        recommendation: " Chcesz zredukować celulit i poprawić wygląd skóry",
       },
     ],
     procedures: [
@@ -907,13 +905,13 @@ export const OfferItem = [
     ],
   },
   {
-    id: "masaz-relaksacyjny-kobiet-w-ciazy",
-    slug: "masaz-relaksacyjny-kobiet-w-ciazy",
-    imageHeader: "banka-chinska/masaż-banka-chinska.jpg",
+    id: "terapia-manualna-w-bolach-zatok",
+    slug: "terapia-manualna-w-bolach-zatok",
+    imageHeader: "terapia-manualna-zatok/terapia-zatok-cover.jpg",
     active: true,
-    category: "body",
-    title: "Masaż ujędrniający Bańką Chińską",
-    image: "banka-chinska/masaz-banka-chinska-cover.jpg",
+    category: "face",
+    title: "Terapia manualna w bólach zatok",
+    image: "terapia-manualna-zatok/terapia-manualna-zatok.jpg",
     imagedetailf: "terapia-manualna/terapia-manualna-kolano-last.jpg",
     imagedetails: "terapia-manualna/terapia-manualna-kolano-procedureb.jpg",
     imagedetailt: "terapia-manualna/terapia-manualna-proceduref.jpg",
@@ -923,13 +921,12 @@ export const OfferItem = [
       { id: "bankachinska30", priceName: "30 minut", price: "110 zł" },
       { id: "bankachinska45", priceName: "45 minut", price: "160 zł" },
       { id: "bankachinska60", priceName: "60 minut", price: "200 zł" },
-      
     ],
     contentMainOffer:
-      "Pobudzający masaż, który pomoże w zmniejszeniu obrzęku wodno-tluszczowego, wygładzeniu i ujędrnieniu skóry.",
+      "Terapia manualna w bólach zatok to naturalna metoda łagodzenia dolegliwości związanych z zatokami.",
 
     contentFirst:
-      "Pobudzający masaż, który pomoże w zmniejszeniu obrzęku wodno-tluszczowego, wygładzeniu i ujędrnieniu skóry, zniwelowaniu widoczności cellulitu poprzez pracę na rozbijaniu mikrozrostów i zwłóknień w tkance tłuszczowej. ",
+      "Techniki manualne stosowane podczas terapii pomagają w odblokowaniu dróg oddechowych, poprawie krążenia krwi oraz zmniejszeniu napięcia mięśniowego w okolicy twarzy i głowy. Dzięki temu pacjenci mogą odczuć ulgę, lepsze oddychanie i redukcję bólu. To holistyczne podejście, które wspiera zdrowie całego organizmu, przynosząc naturalną ulgę w objawach zatokowych. ",
     advantages: [
       { title: "" },
       {
@@ -967,17 +964,17 @@ export const OfferItem = [
     recommendations: [
       {
         id: "1",
-        recommendation:
-          "Zmagasz się z napięciem czy bólami pleców, karku lub stawów ",
+        recommendation: "Potrzebujesz złagodzić ból i poprawić samopoczucie",
       },
       {
         id: "2",
-        recommendation: "Chcesz poprawić krążenie krwi i limfy",
+        recommendation:
+          "Chcesz łatwiej oddychać dzięki odblokowaniu dróg oddechowych.",
       },
       {
         id: "3",
         recommendation:
-          " Chcesz zredukować celulit i poprawić wygląd skóry",
+          "Zależy Ci na zmniejszeniu zapalenia i ulgi w przewlekłych problemach zatokowych.",
       },
     ],
     procedures: [

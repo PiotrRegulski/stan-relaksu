@@ -32,7 +32,7 @@ const images: ImageData[] = [
     alt: "Terapia manualna w bólach zatok ",
     description:
       "Techniki manualne stosowane podczas terapii pomagają w odblokowaniu dróg oddechowych, poprawie krążenia krwi oraz zmniejszeniu napięcia mięśniowego w okolicy twarzy i głowy.",
-    linkDetails: "offer/masaz-kobido",
+    linkDetails: "offer/terapia-manualna-w-bolach-zatok",
     linkBooksy:
       "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
     clName:

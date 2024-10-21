@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 
 const imageURLs = [
   {
-    src: "/banka-twarzy.jpg",
-    label: "banka twarzy",
-    caption: "Masaż twarzy bańką chińską",
-    href:"/offer/masaz-ujedrniajacy-banka-chinska"
+    src: "/terapia-manualna-zatok/terapia-zatok-cover.jpg",
+    label: "Terapia manualna w bólach zatok",
+    caption: "Terapia manualna w bólach zatok",
+    href:"offer/terapia-manualna-w-bolach-zatok"
   
   },
   {
