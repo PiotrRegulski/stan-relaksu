@@ -20,7 +20,7 @@ const WelcomeAboutMe = () => {
         >
           Gabinet terapii manualnej i masażu - Stan Relaksu<br></br>
           <span className="text-lg sm:text-xl lg:text-2xl 2xl:text-2xl mt-2">
-            terapeutyczne miejsce dla ciała stworzone &nbsp;z myślą o Tobie
+            Terapeutyczne miejsce dla ciała stworzone &nbsp;z myślą o Tobie
           </span>
         </h1>
         <p className=" font-[Cormorant-Garamond] text-lg sm:text-xl lg:text-2xl 2xl:text-2xl mx-4 text-center">

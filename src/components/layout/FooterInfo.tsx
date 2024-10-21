@@ -12,7 +12,7 @@ import { BsArrowUpRightSquare } from "react-icons/bs";
 const FooterInfo = (props: any) => {
   return (
     <div className="flex flex-col  w-full justify-center items-center ">
-      <div className=" flex flex-col sm:flex-row w-full   gap-4 lg:gap-20   items-center justify-center  ">
+      <div className=" flex flex-col sm:flex-row w-full   gap-4 lg:gap-24   items-center justify-center  ">
       <FooterLinks />
         <div className="flex flex-col  ">
           {" "}
@@ -52,17 +52,17 @@ const FooterInfo = (props: any) => {
             </div>
           </div>
         </div>
-        <div className="flex lg:w-1/3 flex-col text-sm  ">
+        <div className="flex lg:w-1/3  flex-col text-sm  ">
           <p className="my-2 text-sm font-bold">
             Gabinet terapii manualnej i masażu <span className="whitespace-nowrap">- Stan Relaksu</span>
           </p>
-          <div className="flex flex-row w-full ">
-            <IoIosPin className="w-4 h-4 mt-2 mx-2" />
-            <address className="text-sm w-full whitespace-nowrap not-italic">
+          <div className="flex flex-row  ">
+            <IoIosPin className="w-5 h-5 mt-2 mr-1" />
+            <address className="text-sm w-full whitespace-nowrap not-italic px-1 ">
               Naukowa 20 /lokal-1/<br></br> 02-463 Warszawa
             </address>
           </div>
-          <div className="mt-2 ">
+          <div className="mt-2  ">
             <address className="text-black not-italic ">
               <Link
                 href={"mailto:kontakt@stanrelaksu.pl"}
@@ -73,7 +73,7 @@ const FooterInfo = (props: any) => {
                 <span className=" ">
                   <MdEmail className="w-3 h-3 mt-2 mx-2" />
                 </span>
-                <span className="pt-1 text-sm">kontakt@stanrelaksu.pl</span>
+                <span className="pt-1 pl-1 text-sm">kontakt@stanrelaksu.pl</span>
               </Link>
             </address>
             <Link
@@ -85,7 +85,7 @@ const FooterInfo = (props: any) => {
               <span className="  ">
                 <BsFillTelephoneForwardFill className="w-3 h-3 mt-2 mx-2 " />
               </span>
-              <span className="pt-1 text-sm">791-107-102</span>
+              <span className="pt-1 pl-1 text-sm">791-107-102</span>
             </Link>
           </div>
         </div>

@@ -5,7 +5,7 @@ export const metadata = {
 };
 const page = () => {
   return (
-    <div className="">
+    <div className="mt-28">
       <Contact />
     </div>
   );

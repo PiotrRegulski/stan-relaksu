@@ -39,7 +39,7 @@ const Contact = () => {
                 type: "spring",
                 stiffness: 50,
               }}
-              className=" md:text-xl lg:text-xl xl:text-2xl md:mt-12  md:w-2/3 lg:mx-12  lg:mt-2 px-4  py-12  h-full bg-gradient-to-r from-mainpeach to-transparent rounded-xl "
+              className=" md:text-xl lg:text-xl xl:text-2xl  md:w-2/3 lg:mx-12  lg:mt-2 px-4  py-12  h-full bg-gradient-to-r from-mainpeach to-transparent rounded-xl "
             >
               <p className="font-semibold font-[Cormorant-Garamond] text-2xl xl:text-3xl   text-center ">
                 Gabinet mieści się przy{" "}
