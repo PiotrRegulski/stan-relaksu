@@ -37,9 +37,9 @@ const OfficeAppearance = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <div className="flex overflow-x-auto py-12 bg-secondary gap-2 pl-1 md:gap-4 w-screen  2xl:justify-center">
+    <div ref={ref} className="flex overflow-x-auto py-12 bg-secondary gap-2 pl-1 md:gap-4 w-screen  2xl:justify-center">
       {imgURLs.map((imgUrl,index) => (
-        <div ref={ref}
+        <div 
           key={imgUrl.label}
           className="relative flex shrink-0 w-80 h-[29rem] 2xl:w-[25rem] 2xl:h-[35rem] overflow-hidden"
           style={{ marginTop: imgUrl.marginTop }}
