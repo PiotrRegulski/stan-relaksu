@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useEffect, useState, useRef } from "react";
-import { motion, useInView,AnimatePresence } from "framer-motion";
+import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import PageHeader from "../homepage/PageHeader";
@@ -18,9 +18,20 @@ interface ImageData {
 const images: ImageData[] = [
   {
     src: "/carousel/kobido-kinesiotaping.jpg",
-    alt: "Masaż twarzy Kobido z kinesiotapingiem",
+    alt: " Kobido z kinesiotapingiem limfatycznym",
     description:
       "Zdrowszy i promienny wygląd twarzy, spłycenie zmarszczek i bruzd mimicznych to jedne z wielu korzyści płynących z rytuału Kobido",
+    linkDetails: "offer/masaz-kobido",
+    linkBooksy:
+      "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
+    clName:
+      "text-white xl:text-2xl font-serif tracking-widest hover:opacity-70 hover:underline ",
+  },
+  {
+    src: "/terapia-manualna-zatok/terapia-zatok-cover.jpg",
+    alt: "Terapia manualna w bólach zatok ",
+    description:
+      "Techniki manualne stosowane podczas terapii pomagają w odblokowaniu dróg oddechowych, poprawie krążenia krwi oraz zmniejszeniu napięcia mięśniowego w okolicy twarzy i głowy.",
     linkDetails: "offer/masaz-kobido",
     linkBooksy:
       "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
@@ -97,87 +108,84 @@ const Carousel: React.FC = () => {
     <>
       <PageHeader id={"Popularne zabiegi"}>Popularne zabiegi</PageHeader>
       <motion.div
-  className="flex justify-center items-center xl:h-[45rem] bg-secondary my-1"
-  ref={ref}
-  initial={{ y: 100, opacity: 0 }}
-  animate={isInView ? { y: 0, opacity: 1 } : {}}
-  transition={{ duration: 1, ease: "easeInOut" }}
->
-  <div className="relative w-full h-[30rem] md:h-[35rem] xl:h-[45rem] overflow-hidden">
-    <AnimatePresence>
-      {images.map((image, index) => (
-        index === currentIndex && (
-          <motion.div
-            key={index}
-            className="carousel-item absolute top-0 left-0 right-0 w-full h-full"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
+        className="flex justify-center items-center xl:h-[45rem] bg-secondary my-1"
+        ref={ref}
+        initial={{ y: 100, opacity: 0 }}
+        animate={isInView ? { y: 0, opacity: 1 } : {}}
+        transition={{ duration: 1, ease: "easeInOut" }}
+      >
+        <div className="relative w-full h-[30rem] md:h-[35rem] xl:h-[45rem] overflow-hidden">
+          <AnimatePresence>
+            {images.map(
+              (image, index) =>
+                index === currentIndex && (
+                  <motion.div
+                    key={index}
+                    className="carousel-item absolute top-0 left-0 right-0 w-full h-full"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 1 }}
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="mx-auto my-auto object-cover"
+                    />
+                    <motion.div className="absolute bottom-0 lg:bottom-10 lg:left-[5rem] right-0 bg-black bg-opacity-40 text-primary p-2 w-full lg:w-2/3 xl:w-1/2 text-center rounded">
+                      <div className="mx-auto sm:mx-12 md:mx-12 xl:mx-12 my-4">
+                        <p className="text-white lg:text-2xl xl:text-4xl font-serif tracking-wide md:text-left mb-2 xl:mb-4">
+                          {image.alt}
+                        </p>
+                        <p className="text-white xl:text-2xl font-serif tracking-wide">
+                          {image.description}
+                        </p>
+                      </div>
+                      <div className="my-6">
+                        <Link
+                          key={index}
+                          className="text-white xl:text-2xl font-serif tracking-widest hover:opacity-70"
+                          href={image.linkBooksy}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <span className="text-sm sm:px-2 sm:font-bold font-semibold tracking-tight bg-primary text-black shadow-md shadow-white mr-2 py-2 px-1 sm:py-3 rounded sm:mr-4">
+                            Zarezerwuj wizyte
+                          </span>
+                        </Link>
+                        <button
+                          className="text-white xl:text-2xl font-serif tracking-widest hover:opacity-70"
+                          onClick={() => router.push(image.linkDetails)}
+                        >
+                          <span className="text-sm sm:px-2 bg-primary text-black shadow-md shadow-white tracking-tight py-2 px-1 sm:py-3 sm:font-bold font-semibold rounded">
+                            Dowiedz się więcej
+                          </span>
+                        </button>
+                      </div>
+                    </motion.div>
+                  </motion.div>
+                )
+            )}
+          </AnimatePresence>
+          <button
+            className="absolute top-52 xl:top-[23rem] bottom-1/2 left-1 md:left-4 "
+            onClick={handlePrevImage}
           >
-            <Image
-              src={image.src}
-              alt={image.alt}
-              fill
-              className="mx-auto my-auto object-cover"
-            />
-            <motion.div
-              
-              className="absolute bottom-0 lg:bottom-20 lg:left-[5rem] right-0 bg-black bg-opacity-40 text-primary p-2 w-full lg:w-1/2 text-center rounded"
-            >
-              <div className="mx-auto sm:mx-12 md:mx-12 xl:mx-12 my-4">
-                <p className="text-white lg:text-2xl xl:text-4xl font-serif tracking-wide md:text-left mb-2 xl:mb-4">
-                  {image.alt}
-                </p>
-                <p className="text-white xl:text-2xl font-serif tracking-wide">
-                  {image.description}
-                </p>
-              </div>
-              <div className="my-6">
-                <Link
-                  key={index}
-                  className="text-white xl:text-2xl font-serif tracking-widest hover:opacity-70"
-                  href={image.linkBooksy}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="text-sm sm:px-2 sm:font-bold font-semibold tracking-tight bg-primary text-black shadow-md shadow-white mr-2 py-2 px-1 sm:py-3 rounded sm:mr-4">
-                    Zarezerwuj wizyte
-                  </span>
-                </Link>
-                <button
-                  className="text-white xl:text-2xl font-serif tracking-widest hover:opacity-70"
-                  onClick={() => router.push(image.linkDetails)}
-                >
-                  <span className="text-sm sm:px-2 bg-primary text-black shadow-md shadow-white tracking-tight py-2 px-1 sm:py-3 sm:font-bold font-semibold rounded">
-                    Dowiedz się więcej
-                  </span>
-                </button>
-              </div>
-            </motion.div>
-          </motion.div>
-        )
-      ))}
-    </AnimatePresence>
-    <button
-      className="absolute top-52 xl:top-[23rem] bottom-1/2 left-1 md:left-4 "
-      onClick={handlePrevImage}
-    >
-      <div className="text-4xl flex items-center justify-center w-12 h-12  rounded-full text-white pb-2 hover:opacity-50">
-        {"<"}
-      </div>
-    </button>
-    <button
-      className="absolute top-52 xl:top-[23rem] bottom-1/2 right-1 md:right-4   "
-      onClick={handleNextImage}
-    >
-      <div className=" text-4xl flex items-center justify-center w-12 h-12  rounded-full text-white pb-2 hover:opacity-50 ">
-        {">"}
-      </div>
-    </button>
-  </div>
-</motion.div>
-
+            <div className="text-4xl flex items-center justify-center w-12 h-12  rounded-full text-white pb-2 hover:opacity-50">
+              {"<"}
+            </div>
+          </button>
+          <button
+            className="absolute top-52 xl:top-[23rem] bottom-1/2 right-1 md:right-4   "
+            onClick={handleNextImage}
+          >
+            <div className=" text-4xl flex items-center justify-center w-12 h-12  rounded-full text-white pb-2 hover:opacity-50 ">
+              {">"}
+            </div>
+          </button>
+        </div>
+      </motion.div>
     </>
   );
 };
