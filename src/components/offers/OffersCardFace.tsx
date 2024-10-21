@@ -51,7 +51,7 @@ const OffersCardFace = () => {
           {categoryFace.map((offerItem) => (
             <div
               key={offerItem.id}
-              className=" h-[31rem] sm:h-[30rem] md:h-[30rem]  2xl:h-[40rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform duration-200 ease-in-out hover:scale-[1.02]    2xl:w-[30rem] "
+              className=" h-[30rem] sm:h-[30rem] md:h-[30rem]  2xl:h-[40rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform duration-200 ease-in-out hover:scale-[1.02]    2xl:w-[30rem] "
             >
               <Link className="" href={`/offer/${offerItem.slug} `}>
                 <div className="relative h-[30rem] w-screen   sm:w-[20rem] md:w-[17rem] md:h-[30rem] lg:min-w-[20rem] xl:w-[25rem] 2xl:h-[40rem] 2xl:w-[30rem] ">
