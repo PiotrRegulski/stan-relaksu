@@ -50,7 +50,7 @@ const NavbarMobile = () => {
       >
         <nav id="mobile-nav" className="w-screen lg:hidden">
           <ul
-            className={`flex flex-col  bg-white   h-full p-2 space-y-1 divide-primary lg:flex-row sm:space-y-1 lg:space-x-4 divide-y-2 divide divide-solid ${
+            className={`flex flex-col  bg-white    h-full p-2 space-y-1 divide-mainpeach lg:flex-row sm:space-y-1 lg:space-x-4 divide-y-2 divide divide-solid ${
               isOpen ? "" : "hidden"
             }`}
           >
