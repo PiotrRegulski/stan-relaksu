@@ -55,10 +55,10 @@ const Contact = () => {
               initial={{ x: 800, opacity: 0 }}
               animate={isInView ? { x: 0, opacity: 1 } : {}}
               transition={{
-                duration: 2.5,
-                ease: "easeInOut",
+                duration: 4,
+                ease: "easeOut",
                 type: "spring",
-                stiffness: 100,
+                stiffness: 50,
               }}
               className="relative w-full h-80 md:w-full lg:w-[48rem] lg:h-[22rem] lg:mr-4   xl:mr-24 opacity-90   "
             >
