@@ -392,7 +392,7 @@ export const OfferItem = [
         description:
           "Ta holistyczna metoda pracy poprzez znoszenie napięcia z tkanki mięśniowej i powięziowej prowadzi do zmniejszenia uczucia stresu, uwolnienia emocji co prowadzi do głębokiego Stanu Relaksu. Korzyści jakie niesie terapia mięśniowo-powięziowa są wielopłaszczyznowe. Uwalniając napięcie z ciała wpływamy na wcześniej zamrożone i zatrzymane emocje w nim. Uczucie ulgi jakie przenoszą techniki powięziowe wynika z rozluźnienia mięśni, powięzi oraz uwolnienia emocji zawieszonych w  ciele i tkankach. ",
       },
-      { title: "Zarezerwuj wizytę:" },
+      { title: "Łagodzenie bólu" },
       {
         description:
           "Jeśli szukasz ulgi w bólu, zmniejszeniu uczucia stresu i napięcia w ciele to masaż powięziowy będzie dla Ciebie świetnym wyborem.",
