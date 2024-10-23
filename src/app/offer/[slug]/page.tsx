@@ -1,12 +1,21 @@
 import { OfferItem } from "@/data/OfferItem";
 import React from "react";
 import Image from "next/image";
-
+import type { Metadata, ResolvingMetadata } from "next";
 import BackLink from "@/components/layout/BackLink";
 import Recommendation from "@/components/offers/Recommendation";
 import OfferProcedure from "@/components/offers/OfferProcedure";
-import ButtonReservation from "@/components/about/ButtonReservation";
 import HighlightedParagraph from "@/components/layout/HighlightedParagraph";
+interface OfferDetailsPageProps {
+  params: {
+    id: string;
+    slug: string;
+  };
+}
+type MetaProps = {
+  params: Promise<{ id: string; slug: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+};
 
 type AdvantageType = {
   title?: string;
@@ -32,10 +41,9 @@ type RecommendationsType = {
 type ProceduresType = {
   title?: string;
   procedure?: string;
-  procedurefirst?:string;
-  proceduresec?:string;
-  procedurethi?:string;
-
+  procedurefirst?: string;
+  proceduresec?: string;
+  procedurethi?: string;
 };
 // Definicja typu dla pojedynczego elementu oferty
 type OfferItemType = {
@@ -58,11 +66,31 @@ type OfferItemType = {
   // Dodaj pozostałe pola zgodnie z definicją OfferItem
 };
 
-// Rozszerzenie interfejsu propsów o typy dla parametrów
-interface OfferDetailsPageProps {
-  params: {
-    id: string;
-    slug: string;
+export async function generateMetadata(
+  { params }: MetaProps,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+  const resolvedParams = await params ;
+  const product = OfferItem.find((product) => product.slug === resolvedParams.slug);
+  const previousImages = (await parent).openGraph?.images || []
+  return {
+    title: product?.title,
+    openGraph: {
+      title: product?.title,
+      description: product?.contentFirst,
+      url: `https://stanrelaksu/offer/${product?.slug}`,
+      type: 'website',
+      images: [
+        {
+          url: `/masaz-relaksacyjny/masaz-relaksacyjny-cover-top.jpg`,
+          width: 800,
+          height: 600,
+          alt: product?.title,
+        },
+        ...previousImages
+      ],
+    },
   };
 }
 
@@ -96,24 +124,22 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     ...recommendationsContent
   );
 
-  const proceduresTable = offerDetail?.procedures ||[];
-  
-  // Sprawdzamy, czy wszystkie tytuły i procedury są poprawne (niepuste i nie undefined).
-  const containsOnlyNonEmptyStrings = proceduresTable.every(procedure => {
-    const hasValidTitle = procedure.title !== undefined && procedure.title.trim() !== '';
-    const hasValidProcedure = procedure.procedure !== undefined && procedure.procedure.trim() !== '';
-    const hasValidProcedureStage= procedure.procedurefirst !== undefined && procedure.procedurefirst.trim() !=='';
-    
-    
-    return hasValidTitle || hasValidProcedure|| hasValidProcedureStage;
-  });
-  
-  
-  
+  const proceduresTable = offerDetail?.procedures || [];
 
-   
+  // Sprawdzamy, czy wszystkie tytuły i procedury są poprawne (niepuste i nie undefined).
+  const containsOnlyNonEmptyStrings = proceduresTable.every((procedure) => {
+    const hasValidTitle =
+      procedure.title !== undefined && procedure.title.trim() !== "";
+    const hasValidProcedure =
+      procedure.procedure !== undefined && procedure.procedure.trim() !== "";
+    const hasValidProcedureStage =
+      procedure.procedurefirst !== undefined &&
+      procedure.procedurefirst.trim() !== "";
+
+    return hasValidTitle || hasValidProcedure || hasValidProcedureStage;
+  });
+
   const descriptionTable = offerDetail?.advantages;
-  
 
   const [title1, description1, title2, description2, title3, description3] =
     descriptionTable?.map(
@@ -150,12 +176,20 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             alt={offerDetail.title}
             fill
             priority={true}
-            className="object-cover  w-full h-full"
+            className=" object-cover  w-full h-full"
             sizes="(max-width: 600px) 100vw, 50vw"
           />
           <div className="absolute bottom-0 lg:bottom-20 lg:left-14 right-0 bg-black bg-opacity-40 text-white p-2 w-full lg:w-2/3 xl:w-1/2  rounded">
-            <h1 className={" text-white md:text-xl lg:text-xl xl:text-2xl font-serif tracking-wide"}>
-             <span className="text-xl md:text-2xl lg:text-3xl ">{offerDetail.title}<br></br></span> <br></br>
+            <h1
+              className={
+                " text-white md:text-xl lg:text-xl xl:text-2xl font-serif tracking-wide"
+              }
+            >
+              <span className="text-xl md:text-2xl lg:text-3xl ">
+                {offerDetail.title}
+                <br></br>
+              </span>{" "}
+              <br></br>
               {firstAdventagesDescription}
             </h1>
           </div>
@@ -175,7 +209,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                 <h3 className="font-bold  text-2xl py-2  w-full">{title1}</h3>
 
                 <HighlightedParagraph
-                  className="text-xl xl:ml-4 pl-2"
+                  className="text-xl my-4 xl:ml-4 pl-2"
                   text={description1}
                   wordsToHighlight={wordsToHighlight}
                 />
@@ -210,7 +244,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                       {title2}
                     </h3>
                     <HighlightedParagraph
-                      className="text-xl py-2 pl-2 mx-auto"
+                      className="text-xl my-4 py-2 pl-2 mx-auto"
                       text={description2}
                       wordsToHighlight={wordsToHighlight}
                     />
@@ -224,7 +258,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                 <h3 className="font-bold text-2xl py-2 w-full ">{title3}</h3>
 
                 <HighlightedParagraph
-                  className="text-xl xl:ml-4 pl-2"
+                  className="text-xl my-4 xl:ml-4 pl-2"
                   text={description3}
                   wordsToHighlight={wordsToHighlight}
                 />
@@ -236,7 +270,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                     src={`/${offerDetail.imagedetailf}`}
                     alt={offerDetail.title}
                     fill
-                    className="object-fill sm:object-fill md:object-cover  sm:px-2 md:px-0 "
+                    className="object-fill sm:object-fill md:object-cover  sm:px-2 md:px-0  rounded-lg"
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
@@ -261,7 +295,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
         />
       )}
 
-      <ButtonReservation />
+      {/* <ButtonReservation /> */}
       <BackLink>Zobacz pozostałe oferty</BackLink>
     </div>
   );
