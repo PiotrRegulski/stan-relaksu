@@ -27,19 +27,7 @@ const WelcomeAboutMe = () => {
           Osobie która chce o zadbać o swoje zdrowie, zwolnić i poczuć się
           lepiej
         </p>
-        {/* <p
-          className={` text-lg    sm:text-xl lg:text-2xl 2xl:text-2xl  text-justify  animate-fadeIn transition-transform duration-1000 ease-in-out py-8 sm:py-8 md:pt-4 px-3 sm:px-8 md:px-1 lg:px-8 lg:pt-0 2xl:pt-4 lg:my-6 2xl:mx-12 2xl:mt-4 `}
-        >
-         
-           Czekam na Ciebie z{" "}<br></br>
-          <strong>
-            terapią manualną, masażem powięziowym, masażem tkanek głębokich
-          </strong>
-          . Głęboko odprężającymi technikami
-          <strong> masażu twarzy Kobido</strong>{" "}
-          <strong>, masażu relaksacyjnego,</strong> które pozwolą Ci osiągnąć
-          Stan Relaksu.
-        </p> */}
+      
       </motion.div>
       <AboutMeShort />
 
