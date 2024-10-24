@@ -7,7 +7,7 @@ const AboutMeLastCard = () => {
       <div className="flex flex-col xl:flex-row w-full ">
         <div className="flex flex-col xl:flex-row xl:w-1/2 justify-end ">
           {" "}
-          <div className="flex flex-col justify-end   md:mx-24 md:my-2 px-4 py-3 md:py-12 lg:my-12    ">
+          <div className="flex flex-col justify-end   md:mx-24 md:my-2 px-4 py-3 md:py-6 lg:my-6    ">
             <h3 className="font-[Cormorant-Garamond] text-left  text-3xl  md:text-4xl lg:text-5xl   py-8 md:py-4   ">
               Moją pasją jest terapia manualna twarzy.
             </h3>
@@ -28,7 +28,7 @@ const AboutMeLastCard = () => {
             </article>
             <div className=" flex justify-end items-end w-full ">
         {" "}
-        <ButtonOffers />
+       
       </div>
           </div>
           
@@ -36,7 +36,7 @@ const AboutMeLastCard = () => {
 
         <ImagesToAboutMeLast />
       </div>
-
+      <ButtonOffers />
    
     </div>
   );

@@ -32,7 +32,7 @@ const ImagesToOfferShortLast = () => {
       {imgURLs.map((imgUrl, index) => (
         <div
           key={imgUrl.label}
-          className="relative flex shrink-0 w-[23rem] h-[15rem] md:w-[30rem] md:h-[20rem] overflow-hidden "
+          className="relative flex shrink-0 w-[23rem] h-[15rem] md:w-[21rem] md:h-[15rem] overflow-hidden "
           style={{ marginTop: imgUrl.marginTop }}
         >
           <motion.div

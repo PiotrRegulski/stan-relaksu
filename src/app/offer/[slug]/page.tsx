@@ -270,7 +270,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                     src={`/${offerDetail.imagedetailf}`}
                     alt={offerDetail.title}
                     fill
-                    className="object-fill sm:object-fill md:object-cover  sm:px-2 md:px-0  rounded-lg"
+                    className="object-cover sm:object-cover md:object-cover  sm:px-2 md:px-0  rounded-lg"
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>

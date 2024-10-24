@@ -5,7 +5,7 @@ import React from "react";
 
 const pages = () => {
   return (
-    <div className="flex justify-center items-center mx-auto my-auto flex-col mt-28 md:py-24 px-6">
+    <div className="flex justify-center items-center mx-auto my-auto flex-col mt-28 md:py-24 px-12">
       <PageHeader id={"privacy-policy"}>Polityka prywatności</PageHeader>
 
       <div className="flex flex-col w-full justify-center items-center ">

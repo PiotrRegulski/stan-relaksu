@@ -4,7 +4,7 @@ import { TbCircleNumber2 } from "react-icons/tb";
 import { TbCircleNumber3 } from "react-icons/tb";
 const Recommendation = (props: any) => {
   return (
-    <section className="my-12 bg-triadgray font-[Cormorant-Garamond] ">
+    <section className="my-12 bg-mainpeach font-[Cormorant-Garamond] ">
       <h3 className="text-black text-xl md:text-3xl xl:text-4xl  text-center py-10 font-[Cormorant-Garamond] ">
         <span className="">{props.title}</span>
         <br></br>zarezerwuj wizytę jeśli:
