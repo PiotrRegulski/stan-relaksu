@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import PageHeader from "../homepage/PageHeader";
 import Link from "next/link";
+import { lato, Noto } from "../fonts";
 
 interface ImageData {
   src: string;
@@ -135,32 +136,34 @@ const Carousel: React.FC = () => {
                     />
                     <motion.div className="absolute bottom-0 lg:bottom-10 lg:left-[5rem] right-0 bg-black bg-opacity-40 text-primary p-2 w-full lg:w-2/3 xl:w-1/2 text-center rounded">
                       <div className="mx-auto sm:mx-12 md:mx-12 xl:mx-12 my-4">
-                        <p className="text-white lg:text-2xl xl:text-4xl font-serif tracking-wide md:text-left mb-2 xl:mb-4">
+                        <p
+                          className={`${Noto.className} text-white lg:text-2xl xl:text-4xl font-serif tracking-wide md:text-left mb-2 xl:mb-4`}
+                        >
                           {image.alt}
                         </p>
-                        <p className="text-white xl:text-2xl font-serif tracking-wide">
+                        <p
+                          className={`${lato.className} text-white xl:text-2xl  tracking-wide`}
+                        >
                           {image.description}
                         </p>
                       </div>
-                      <div className="my-6">
+                      <div className={`${Noto.className} my-6`}>
                         <Link
                           key={index}
-                          className="text-white xl:text-2xl font-serif tracking-widest hover:opacity-70"
+                          className=" "
                           href={image.linkBooksy}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <span className="text-sm sm:px-2 sm:font-bold font-semibold tracking-tight bg-primary text-black shadow-md shadow-white mr-2 py-2 px-1 sm:py-3 rounded sm:mr-4">
+                          <button className="  font-bold text-lg  tracking-widest border-2 border-primary  hover:border-2  hover:border-white hover:bg-transparent  bg-primary text-black hover:text-white shadow-md hover:shadow-none shadow-white mr-2   rounded sm:mr-4 py-2 px-3">
                             Zarezerwuj wizyte
-                          </span>
+                          </button>
                         </Link>
                         <button
-                          className="text-white xl:text-2xl font-serif tracking-widest hover:opacity-70"
+                          className="  font-bold text-lg  tracking-widest border-2 border-primary hover:border-2  hover:border-white hover:bg-transparent  bg-primary text-black hover:text-white shadow-md hover:shadow-none shadow-white mr-2   rounded sm:mr-4 py-2 px-3 "
                           onClick={() => router.push(image.linkDetails)}
                         >
-                          <span className="text-sm sm:px-2 bg-primary text-black shadow-md shadow-white tracking-tight py-2 px-1 sm:py-3 sm:font-bold font-semibold rounded">
-                            Dowiedz się więcej
-                          </span>
+                          Dowiedz się więcej
                         </button>
                       </div>
                     </motion.div>

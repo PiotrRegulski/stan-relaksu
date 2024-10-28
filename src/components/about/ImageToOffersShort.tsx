@@ -38,7 +38,7 @@ const ImageToOffersShort = () => {
             whileHover={{ scale: 1.1 }}
             initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ type: "spring", duration: 3, ease: "backInOut" }}
+            transition={{ type: "spring", duration: 2, ease: "backInOut" }}
           >
             <ImageCard
               key={imgUrl.label}

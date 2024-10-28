@@ -201,7 +201,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
           id="main-adventages"
           className="flex flex-col min-h-max    my-4 md:my-4 md:mt-12 animate-fadeIn  transition-transform duration-200 ease-in-out mb-6"
         >
-          <div className="flex flex-col ">
+          <div id={'oferta-detale'} className="flex flex-col ">
             <div
               className={`flex flex-col-reverse lg:flex-row bg-white sm:my-4  sm:mx-6 md:mx:2 2xl:mx-48 rounded-lg  border-secondary`}
             >

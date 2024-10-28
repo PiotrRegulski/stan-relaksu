@@ -11,7 +11,7 @@ const AboutMeLastCard = () => {
             <h3 className="font-[Cormorant-Garamond] text-left  text-3xl  md:text-4xl lg:text-5xl   py-8 md:py-4   ">
               Moją pasją jest terapia manualna twarzy.
             </h3>
-            <article className="text-left  text-lg md:text-xl lg:text-xl mx-auto xl:mt-24  text-black">
+            <article className="text-left  text-lg md:text-xl lg:text-xl mx-auto lg:mt-12 xl:mt-24  text-black">
               <p className="text-pretty">
                 Dzięki pracy w obrębie<strong> twarzy, głowy i szyi</strong>{" "}
                 możesz uzyskać ulgę w bólach stawów skroniowo-żuchwowych, bólach

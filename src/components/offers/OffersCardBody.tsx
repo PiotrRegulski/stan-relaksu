@@ -47,10 +47,10 @@ const OffersCardBody = () => {
           {categoryBody.map((offerItem) => (
             <div
               key={offerItem.id}
-              className=" h-[30rem] my-6 mx-auto md:mx-2 sm:h-[30rem] md:h-[32rem] 2xl:h-[40rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform duration-200 ease-in-out hover:scale-[1.02]    2xl:w-[30rem] "
+              className=" h-[30rem]  my-6  md:mx-2 sm:h-[30rem] md:h-[32rem] 2xl:h-[40rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform duration-200 ease-in-out hover:scale-[1.02]    2xl:w-[30rem]  "
             >
               <Link className="" href={`/offer/${offerItem.slug} `}>
-                <div className="relative h-[30rem] w-screen   sm:w-[20rem] md:w-[17rem] md:h-[32rem] lg:min-w-[20rem] xl:w-[25rem] 2xl:h-[40rem] 2xl:w-[30rem] ">
+                <div className="relative h-[30rem] w-[20rem]   sm:w-[20rem] md:w-[17rem] md:h-[32rem] lg:min-w-[20rem] xl:w-[25rem] 2xl:h-[40rem] 2xl:w-[30rem] ">
                   <Image
                     src={`/${offerItem.image}`}
                     alt={offerItem.title}

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { CormorantInfant } from "@/components/fonts";
+import { CormorantInfant,Noto } from "@/components/fonts";
 
 import { useState, useCallback } from "react";
 import HamburgerIcon from "@/components/layout/HamburgerIcon";
@@ -15,16 +15,16 @@ const NavbarMobile = () => {
   }, [isOpen]);
 
   return (
-    <>
-      <div className=" flex items-center bg-white w-full  lg:hidden ">
-        <div className=" py-1  ">
+    <header className="bg-gradient-to-b from-white from-70%  to-transparent to-30%">
+      <div className=" flex    w-full  lg:hidden ">
+        <div className=" py-1">
           <Link href={"/"}>
-            <div className="ml-3 mr-1 my-1">
+            <div className="ml-3 mr-1 my-1  ">
               {" "}
               <Image
                 src="/logo-stan-relaksu-kolo.png"
-                width={65}
-                height={65}
+                width={110}
+                height={110}
                 className="bg-mainthemelogo rounded-full "
                 alt="Screenshots of the dashboard project showing desktop version"
                 priority={true}
@@ -32,21 +32,17 @@ const NavbarMobile = () => {
             </div>
           </Link>
         </div>
-        <div className="mt-1">
-          <p className="font-serif leading-4 text-sm ">
-            Gabinet terapii <br></br> manualnej i masażu
-          </p>
-        </div>
+        
         <div
           onClick={toggleMenuAndScroll}
-          className="flex-grow flex justify-end mr-4 "
+          className="flex-grow flex justify-end mr-4 mt-8 "
         >
           <HamburgerIcon />
         </div>
       </div>
 
       <div
-        className={`${CormorantInfant.className} flex flex-wrap w-full justify-evenly lg:hidden`}
+        className={`${Noto.className} flex flex-wrap w-full justify-evenly lg:hidden`}
       >
         <nav id="mobile-nav" className="w-screen lg:hidden">
           <ul
@@ -58,7 +54,7 @@ const NavbarMobile = () => {
           </ul>
         </nav>
       </div>
-    </>
+    </header>
   );
 };
 

@@ -1,4 +1,4 @@
-import {Cormorant_Infant,Lato} from "next/font/google";
+import {Cormorant_Infant,Lato,Noto_Serif,Noto_Sans} from "next/font/google";
   import { Lora } from "next/font/google";
 
   export const CormorantInfant = Cormorant_Infant({
@@ -14,6 +14,11 @@ import {Cormorant_Infant,Lato} from "next/font/google";
   });
 
   export const lora = Lora({
+    weight: ["400","500","600", "700"],
+    subsets: ["latin"],
+    display: 'swap',
+  });
+  export const Noto = Noto_Serif({
     weight: ["400","500","600", "700"],
     subsets: ["latin"],
     display: 'swap',

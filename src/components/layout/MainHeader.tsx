@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState, useCallback } from "react";
-import { CormorantInfant } from "@/components/fonts";
+import { CormorantInfant,Noto } from "@/components/fonts";
 import Navbar from "./Navbar";
 import NavbarMobile from "./NavbarMobile";
 import InfoBar from "./InfoBar";
@@ -14,8 +14,9 @@ const MainHeader = () => {
     const offerId =
       document.getElementById("offer-title") ||
       document.getElementById("kontakt-info") ||
-      document.getElementById("important-about")||
-      document.getElementById("zdjecia-z-oferty");
+      document.getElementById("important-about") ||
+      document.getElementById("zdjecia-z-oferty") ||
+      document.getElementById("oferta-detale");
     if (offerId) {
       const offerPosition = offerId.getBoundingClientRect().top;
       setIsVisible(offerPosition > 0);
@@ -42,10 +43,14 @@ const MainHeader = () => {
     isVisible && (
       <div className="fixed z-40 top-0 transition">
         <InfoBar />
-        <header className={`${CormorantInfant.className} font-[Cormorant_Infant] flex flex-col justify-center bg-white`}>
+        <header
+          className={`${Noto.className}  flex flex-col justify-center `}
+        >
           <NavbarMobile />
-          <div className="flex lg:gap-12">
-            <div className={`${CormorantInfant.className} font-[Cormorant_Infant] hidden lg:flex w-screen`}>
+          <div className="flex lg:gap-12 bg-white">
+            <div
+              className={`${Noto.className}  hidden lg:flex w-screen`}
+            >
               <Navbar />
             </div>
           </div>

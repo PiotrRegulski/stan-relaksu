@@ -48,11 +48,11 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={`${lato.className} relative antialiased  overflow-y-scroll overflow-x-hidden bg-white max-w-[1920px]    my-1  `}
+        className={`${lato.className} relative antialiased  overflow-y-scroll overflow-x-hidden    my-1  `}
       >
         <MainHeader />
         <MobileInfoBar />
-        <main className="overflow-hidden flex flex-col bg-white shadow-lg shadow-white mx-auto ">
+        <main className="overflow-hidden flex flex-col bg-white ">
           {" "}
           {children}
         </main>
