@@ -76,7 +76,7 @@ const Comments = () => {
   }
 
   return (
-    <div className=" flex flex-col justify-center items-center bg-secondary w-full h-[27rem] sm:h-[30rem] md:h-[30rem] lg:h-[30rem] xl:h-[26rem]">
+    <div className=" flex flex-col justify-center items-center bg-secondary w-full h-[26rem] sm:h-[26rem] md:h-[26rem] lg:h-[27rem] xl:h-[26rem]">
       <div className="mt-12 ">
         <p className= {`${Noto.className} text-2xl 2xl:text-4xl `}>Opinie</p>
       </div>

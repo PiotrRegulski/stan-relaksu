@@ -117,7 +117,7 @@ const Carousel: React.FC = () => {
         animate={isInView ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        <div className="relative w-full h-[30rem] sm:h-[20rem] md:h-[30rem] xl:h-[38rem] 2xl:h-[40rem] overflow-hidden">
+        <div className="relative w-full h-[30rem] sm:h-[30rem] md:h-[30rem] xl:h-[35rem] 2xl:h-[45rem] overflow-hidden lg:mt-[7rem]">
           <AnimatePresence>
             {images.map(
               (image, index) =>
@@ -136,7 +136,7 @@ const Carousel: React.FC = () => {
                       fill
                       className="mx-auto my-auto object-cover"
                     />
-                    <motion.div className="absolute bottom-0 lg:bottom-10 lg:left-[5rem] right-0 bg-black bg-opacity-40 text-primary p-2 w-full lg:w-2/3 xl:w-2/3 text-center rounded lg:border-triadbrown lg:border-2 lg:shadow-black lg:shadow-md">
+                    <motion.div className="absolute bottom-0 lg:bottom-10 lg:left-[5rem] right-0 bg-black bg-opacity-40 text-primary p-2 w-full lg:w-2/3 xl:w-2/3 text-center rounded lg:border-black/40 lg:border-2 lg:shadow-black lg:shadow-md">
                       <div className="mx-auto sm:mx-12 md:mx-12 xl:mx-12 my-4">
                         <p
                           className={`${Noto.className} text-white md:text-xl lg:text-2xl xl:text-4xl  tracking-wide md:text-left mb-2 xl:mb-4 whitespace-nowrap`}

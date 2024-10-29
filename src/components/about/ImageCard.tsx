@@ -22,7 +22,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ src, alt, caption,href }) => {
           alt={alt}
           fill
           priority={true}
-          className="object-cover object-top w-full h-full"
+          className="object-cover  w-full h-full"
           sizes="(max-width: 600px) 100vw, 50vw"
         />
         {caption && (

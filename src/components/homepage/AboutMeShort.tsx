@@ -18,16 +18,12 @@ const AboutMeShort = () => {
   const [startY, setStartY] = useState(600);
 
   useEffect(() => {
-    if (isInView) {
+    if (isInView && startY===null) {
       setStartY(window.scrollY);
     }
-  }, [isInView]);
+  }, [isInView,startY]);
 
-  const imageOpacity = useTransform(
-    scrollY,
-    [startY, startY + 300, startY + 400, startY + 500],
-    [1, 0.5, 0.5, 0]
-  );
+ 
   const imageY = useTransform(scrollY, [startY - 300, startY + 800], [0, 80]);
   const imageYs = useTransform(scrollY, [startY - 300, startY + 800], [0, -80]);
   const springImageY = useSpring(imageY, { stiffness: 300, damping: 30 });

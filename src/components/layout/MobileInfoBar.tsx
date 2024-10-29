@@ -23,8 +23,8 @@ const MobileInfoBar = () => {
   }, []);
   return (
     isVisible && (
-      <div className="sm:hidden fixed grid grid-cols-4 gap-1 bottom-0 z-40 bg-primary w-screen h-[4rem] border-t-2 border-white  ">
-        <button className="animate-fadeIn   text-sm font-medium text-triadbrown shadow-lg shadow-gray-400/75 transition-transform duration-400  hover:scale-[1.02]">
+      <div className="sm:hidden fixed grid grid-cols-4 gap-1 bottom-0 z-40 bg-primary w-screen h-[4rem] border-t-1 border-white  ">
+        <button className="animate-fadeIn   text-sm font-medium text-white shadow-lg shadow-gray-400/75 transition-transform duration-400  hover:scale-[1.02]">
           <Link
             href="https://booksy.com/pl-pl/257898_stan-relaksu-holistyczny-gabinet-terapii-i-masazu_masaz_3_warszawa#ba_s=dl_1"
             target="_blank"
@@ -35,7 +35,7 @@ const MobileInfoBar = () => {
             </div>
           </Link>
         </button>
-        <button className=" md:hidden   w-full  text-triadbrown shadow-xl  transition-transform duration-200 ease-in-out hover:scale-[1.09] ">
+        <button className=" md:hidden   w-full  text-white shadow-xl  transition-transform duration-200 ease-in-out hover:scale-[1.09] ">
           <div className="flex justify-center">
             {" "}
             <Link href="tel:791107102 ">
@@ -43,7 +43,7 @@ const MobileInfoBar = () => {
             </Link>
           </div>
         </button>
-        <button className="  text-triadbrown shadow-xl  transition-transform duration-200 ease-in-out hover:scale-[1.09] w-full">
+        <button className="  text-white shadow-xl  transition-transform duration-200 ease-in-out hover:scale-[1.09] w-full">
           <div className="flex justify-center">
             {" "}
             <Link
@@ -55,7 +55,7 @@ const MobileInfoBar = () => {
             </Link>
           </div>
         </button>
-        <button className="    text-triadbrown shadow-xl  transition-transform duration-200 ease-in-out hover:scale-[1.09] w-full">
+        <button className="    text-white shadow-xl  transition-transform duration-200 ease-in-out hover:scale-[1.09] w-full">
           <div className="flex justify-center">
             {" "}
             <Link
