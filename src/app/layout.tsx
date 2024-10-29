@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={`${lato.className} relative antialiased  overflow-y-scroll overflow-x-hidden    my-1  `}
+        className={`${lato.className} relative antialiased  overflow-y-scroll overflow-x-hidden      `}
       >
         <MainHeader />
         <MobileInfoBar />

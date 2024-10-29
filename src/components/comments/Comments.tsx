@@ -2,6 +2,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import CommentsItem from "./CommentsItem";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+import { Noto } from "../fonts";
 const commentsData = [
   {
     comment:
@@ -73,19 +76,19 @@ const Comments = () => {
   }
 
   return (
-    <div className=" flex flex-col justify-center items-center bg-secondary w-full h-[35rem] sm:h-[30rem] md:h-[30rem] lg:h-[30rem] xl:h-[35rem]">
-      <div className="mt-24 ">
-        <p className=" text-2xl 2xl:text-4xl font-serif ">Opinie</p>
+    <div className=" flex flex-col justify-center items-center bg-secondary w-full h-[27rem] sm:h-[30rem] md:h-[30rem] lg:h-[30rem] xl:h-[26rem]">
+      <div className="mt-12 ">
+        <p className= {`${Noto.className} text-2xl 2xl:text-4xl `}>Opinie</p>
       </div>
-      <div className=" flex justify-between w-full text-4xl font-bold px-4 lg:px-48">
-        <button onClick={handlePrevImage} className="opacity-100 hover:opacity-40 hover:shadow-lg"> {"<"} </button>
-        <button onClick={handleNextImage} className="opacity-100 hover:opacity-40 hover:shadow-lg"> {">"} </button>
+      <div className=" flex justify-between w-full text-4xl font-bold px-4 lg:px-48 ">
+        <button onClick={handlePrevImage} className="opacity-100 hover:opacity-40 hover:shadow-lg">  <IoIosArrowBack /> </button>
+        <button onClick={handleNextImage} className="opacity-100 hover:opacity-40 hover:shadow-lg"> <IoIosArrowForward /> </button>
       </div>
       <div className=" relative w-full h-full">
         {commentsData.map((comment: any, index: number) => (
           <CommentsItem
             key={index}
-            className={`absolute top-0 left-0  h-full transition-opacity duration-500  ${
+            className={`absolute top-0 left-0  h-full w-full  transition-opacity duration-500  ${
               index === currentIndex
                 ? "animate-slideLeft"
                 : index === prevIndex

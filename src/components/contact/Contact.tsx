@@ -29,7 +29,7 @@ const Contact = () => {
           id="kontakt-info"
           className=" shadow-xl rounded  bg-white  shadow-gray-400/75 w-full "
         >
-          <div className=" flex flex-col md:flex-row  w-full">
+          {/* <div className=" flex flex-col md:flex-row  w-full">
             <motion.div
               initial={{ x: -400, opacity: 0 }}
               animate={isInView ? { x: 0, opacity: 1 } : {}}
@@ -71,8 +71,20 @@ const Contact = () => {
                 priority={true}
               />
             </motion.div>
+          </div> */}
+         
+          
+          <div className="flex flex-col-reverse sm:flex-row mt-4 ">
+            <div className=" flex sm:basis 1/3 md:basis-1/2 justify-center items-center border-2 border-white shadow-lg shadow-gray-400 sm:my-4 md:mx-6 lg:my-6 2xl:mx-24">
+              <MapComponent />
+            </div>
+            <div className="md:basis-1/2 ml-3 md:ml-0  lg:mx-12 my-6 md:my-2 py-6">
+              <DetailedAddress />
+            </div>
           </div>
-          <motion.div
+        </div>
+        <ContactForm />
+        <motion.div
             initial={{ y: -100, opacity: 0 }}
             animate={isInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 3, ease: "easeInOut", type:"spring" }}
@@ -97,17 +109,7 @@ const Contact = () => {
               logoSrc={"/logo-stan-relaksu-kolo.png"}
             />
           </motion.div>{" "}
-          <OfficeAppearance />
-          <div className="flex flex-col-reverse sm:flex-row mt-4 ">
-            <div className=" flex sm:basis 1/3 md:basis-1/2 justify-center items-center border-2 border-white shadow-lg shadow-gray-400 sm:my-4 md:mx-6 lg:my-6 2xl:mx-24">
-              <MapComponent />
-            </div>
-            <div className="md:basis-1/2 ml-3 md:ml-0  lg:mx-12 my-6 md:my-2 py-6">
-              <DetailedAddress />
-            </div>
-          </div>
-        </div>
-        <ContactForm />
+        <OfficeAppearance />
       </div>
     </div>
   );

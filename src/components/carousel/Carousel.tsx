@@ -7,6 +7,8 @@ import Image from "next/image";
 import PageHeader from "../homepage/PageHeader";
 import Link from "next/link";
 import { lato, Noto } from "../fonts";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 interface ImageData {
   src: string;
@@ -107,15 +109,15 @@ const Carousel: React.FC = () => {
   const isInView = useInView(ref, { once: true });
   return (
     <>
-      <PageHeader id={"Popularne zabiegi"}>Popularne zabiegi</PageHeader>
+     
       <motion.div
-        className="flex justify-center items-center xl:h-[45rem] bg-secondary my-1"
+        className="flex justify-center items-center  bg-secondary my-1"
         ref={ref}
         initial={{ y: 100, opacity: 0 }}
         animate={isInView ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        <div className="relative w-full h-[30rem] md:h-[35rem] xl:h-[45rem] overflow-hidden">
+        <div className="relative w-full h-[30rem] sm:h-[20rem] md:h-[30rem] xl:h-[38rem] 2xl:h-[40rem] overflow-hidden">
           <AnimatePresence>
             {images.map(
               (image, index) =>
@@ -134,20 +136,20 @@ const Carousel: React.FC = () => {
                       fill
                       className="mx-auto my-auto object-cover"
                     />
-                    <motion.div className="absolute bottom-0 lg:bottom-10 lg:left-[5rem] right-0 bg-black bg-opacity-40 text-primary p-2 w-full lg:w-2/3 xl:w-1/2 text-center rounded">
+                    <motion.div className="absolute bottom-0 lg:bottom-10 lg:left-[5rem] right-0 bg-black bg-opacity-40 text-primary p-2 w-full lg:w-2/3 xl:w-2/3 text-center rounded lg:border-triadbrown lg:border-2 lg:shadow-black lg:shadow-md">
                       <div className="mx-auto sm:mx-12 md:mx-12 xl:mx-12 my-4">
                         <p
-                          className={`${Noto.className} text-white lg:text-2xl xl:text-4xl font-serif tracking-wide md:text-left mb-2 xl:mb-4`}
+                          className={`${Noto.className} text-white md:text-xl lg:text-2xl xl:text-4xl  tracking-wide md:text-left mb-2 xl:mb-4 whitespace-nowrap`}
                         >
                           {image.alt}
                         </p>
                         <p
-                          className={`${lato.className} text-white xl:text-2xl  tracking-wide`}
+                          className={`${lato.className} text-neutral-200 md:text-lg lg:text-xl xl:text-2xl  `}
                         >
                           {image.description}
                         </p>
                       </div>
-                      <div className={`${Noto.className} my-6`}>
+                      <div className={`${Noto.className} my-6 flex justify-center gap-4 md:justify-center md:gap-4 `}>
                         <Link
                           key={index}
                           className=" "
@@ -155,12 +157,12 @@ const Carousel: React.FC = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <button className="  font-bold text-lg  tracking-widest border-2 border-primary  hover:border-2  hover:border-white hover:bg-transparent  bg-primary text-black hover:text-white shadow-md hover:shadow-none shadow-white mr-2   rounded sm:mr-4 py-2 px-3">
+                          <button className=" my-2 font-bold text-sm lg:text-md  xl:tracking-widest border-2 border-primary  hover:border-2  hover:border-white hover:bg-transparent  bg-primary text-white hover:text-white shadow-md shadow-primary/40 hover:shadow-none   rounded  py-1 px-2 xl:py-3">
                             Zarezerwuj wizyte
                           </button>
                         </Link>
                         <button
-                          className="  font-bold text-lg  tracking-widest border-2 border-primary hover:border-2  hover:border-white hover:bg-transparent  bg-primary text-black hover:text-white shadow-md hover:shadow-none shadow-white mr-2   rounded sm:mr-4 py-2 px-3 "
+                          className=" my-2 font-bold text-sm lg:text-md  xl:tracking-widest border-2 border-primary hover:border-2  hover:border-white hover:bg-transparent  bg-primary text-white hover:text-white shadow-md hover:shadow-none shadow-primary/40   rounded  py-1 px-2 "
                           onClick={() => router.push(image.linkDetails)}
                         >
                           Dowiedz się więcej
@@ -172,19 +174,19 @@ const Carousel: React.FC = () => {
             )}
           </AnimatePresence>
           <button
-            className="absolute top-52 xl:top-[23rem] bottom-1/2 left-1 md:left-4 "
+            className="absolute top-52  xl:top-[45%] bottom-1/2 left-1 md:left-4 "
             onClick={handlePrevImage}
           >
-            <div className="text-4xl flex items-center justify-center w-12 h-12  rounded-full text-white pb-2 hover:opacity-50">
-              {"<"}
+            <div className="text-4xl flex items-center justify-center  h-12  rounded-full text-white pb-2 ">
+            <IoIosArrowBack />
             </div>
           </button>
           <button
-            className="absolute top-52 xl:top-[23rem] bottom-1/2 right-1 md:right-4   "
+            className="absolute top-52 xl:top-[45%] bottom-1/2 right-1 md:right-4   "
             onClick={handleNextImage}
           >
-            <div className=" text-4xl flex items-center justify-center w-12 h-12  rounded-full text-white pb-2 hover:opacity-50 ">
-              {">"}
+            <div className=" text-4xl flex items-center justify-center  h-12  rounded-full text-white pb-2  ">
+            <IoIosArrowForward />
             </div>
           </button>
         </div>

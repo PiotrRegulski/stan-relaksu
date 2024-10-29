@@ -22,25 +22,24 @@ const FooterLinks = () => {
             key={link.href}
             className={` text-black text-sm sm:text-xs md:text-sm lg:text-sm  px-1   bg-teal-950 bg-transparent lg:mt-1  ${
               pathname === link.href
-                ? "px-2   text-black  underline "
-                : "  hover:border-black hover:opacity-40 hover:shadow-sm hover:underline"
+                ? "  text-black  underline "
+                : "  hover:border-black hover:opacity-40 hover:shadow-sm hover:underline underline-offset-2"
             }`}
           >
             <span className="whitespace-nowrap">{link.label}</span>
           </Link>
         ))}
       </div>
-      <div className="hidden sm:flex justify-end items-end w-full mt-4 lg:pr-12">
+      <div className="hidden sm:flex justify-end items-end w-full mt-4 lg:pr-16">
         <Link
           href="https://booksy.com/pl-pl/257898_stan-relaksu-holistyczny-gabinet-terapii-i-masazu_masaz_3_warszawa#ba_s=dl_1"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center hover:shadow-xl shadow-lg shadow-gray-400/75 text-lg text-center lg:text-lg text-white rounded bg-primary hover:bg-teal-400/75 px-6 py-2 font-bold hover:text-gray-700 duration-300 focus:outline-none focus:shadow-outline whitespace-nowrap"
         >
-          <span className=" text-xs lg:text-sm text-black  tracking-wider">
-            Zarezerwuj Wizyte
-          </span>
-          <BsArrowUpRightSquare className="w-3 h-3 ml-2 text-black border-white" />
+          <button className=" flex  my-2 font-bold text-sm lg:text-md  xl:tracking-widest border-2 border-primary  hover:border-2  hover:border-black hover:bg-transparent  bg-primary text-white hover:text-black shadow-md shadow-primary/40 hover:shadow-none   rounded  py-1 px-2 xl:py-3 transition-colors duration-300">
+            Zarezerwuj wizyte{" "}
+            <BsArrowUpRightSquare className="w-3 h-3 ml-2 mt-1" />
+          </button>
         </Link>
       </div>
     </div>

@@ -9,6 +9,7 @@ import {
   useTransform,
   useSpring,
 } from "framer-motion";
+import { Noto } from "../fonts";
 
 const AboutMeShort = () => {
   const ref = useRef(null);
@@ -34,7 +35,7 @@ const AboutMeShort = () => {
 
   return (
     <div
-      className="flex flex-col md:flex-row justify-center items-center my-6 md:my-24 lg:my-24 mx-auto md:mx-4 lg:mx-4 2xl:mx-48 rounded bg-white"
+      className="flex flex-col lg:gap-4 xl:gap-24  lg:flex-row justify-around items-center  my-6 md:my-2 lg:my-2 2xl:my-4 mx-auto md:mx-4 lg:mx-4 2xl:mx-48 rounded bg-secondary"
       ref={ref}
     >
       <motion.div
@@ -45,7 +46,7 @@ const AboutMeShort = () => {
       >
         <motion.div
           id="troche-o-omnie"
-          className="relative w-[12rem] sm:w-[16rem] md:w-[15rem] xl:w-[20rem] h-[15rem] sm:h-[19rem] xl:h-[27rem] z-20 overflow-hidden"
+          className="relative w-[12rem] sm:w-[16rem] md:w-[15rem] xl:w-[20rem] h-[16rem] sm:h-[19rem] xl:h-[27rem] z-20 overflow-hidden"
           transition={{ type: "spring", duration: 1 }}
           style={{ y: springImageY }}
         >
@@ -93,21 +94,29 @@ const AboutMeShort = () => {
         animate={isInView ? { x: 0, opacity: 1 } : {}}
         transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
       >
-        <p className="text-4xl font-[Cormorant-Garamond]">
-          CZEŚĆ, <br /> JESTEM KINGA!
+        <h2 className={`${Noto.className} text-2xl `}>
+          Cześć, jestem Kinga Wołoszka
+        </h2>
+        <p className="text-base md:text-xl  my-6">
+          Przyniosę Ci ulgę w bólu oraz napięciu stosując techniki masażu
+          powięziowego i terapii manualnej, podpowiem Ci jak możesz pracować ze
+          swoim ciałem poprzez dobrane ćwiczenia czy oddech dla poprawy Twojego
+          zdrowia i samopoczucia
         </p>
-        <p className="text-lg lg:text-2xl  my-12 font-[Lato]">
-          Przyniosę Ci ulgę w bólu oraz napięciu
-          stosując techniki masażu powięziowego i terapii manualnej, podpowiem
-          Ci jak możesz pracować ze swoim ciałem poprzez dobrane ćwiczenia czy
-          oddech dla poprawy Twojego zdrowia i samopoczucia
+        <p className="text-base md:text-xl  my-6">
+          Czekam na Ciebie z terapią manualną, masażem powięziowym, masażem
+          tkanek głębokich. Głęboko odprężającymi technikami masażu twarzy
+          Kobido, masażu relaksacyjnego, które pozwolą Ci osiągnąć
+          <span className="whitespace-nowrap font-bold"> Stan Relaksu.</span>
         </p>
-        <Link
-          href="/about"
-          className="hover:shadow-xl shadow-lg shadow-gray-400/75 text-lg text-center lg:text-lg text-white   rounded  hover:border-white  bg-primary hover:bg-teal-400/75 px-6 py-2 font-bold   hover:text-gray-700 duration-300  focus:outline-none focus:shadow-outline hover:underline "
-        >
-          Dowiedz się więcej
-        </Link>
+        <div className="flex justify-center w-full lg:justify-start">
+          <Link
+            href="/about"
+            className="my-2 font-bold text-lg lg:text-md  md:tracking-widest border-2 border-primary hover:border-2  hover:border-black hover:bg-transparent  bg-primary text-white hover:text-black shadow-md hover:shadow-none shadow-primary/40   rounded  py-3 px-2"
+          >
+            Dowiedz się więcej
+          </Link>
+        </div>
       </motion.div>
     </div>
   );

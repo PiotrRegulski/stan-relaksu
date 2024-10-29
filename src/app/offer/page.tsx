@@ -11,11 +11,11 @@ export const metadata = {
 };
 const OfferPage: React.FC<OfferProps> = () => {
   return (
-    <>
+    <div className="mt-[7rem]">
       <OffersCardBody />
       <OffersCardFace />
       
-    </>
+    </div>
   );
 };
 

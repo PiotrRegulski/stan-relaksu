@@ -3,7 +3,7 @@ import React from "react";
 const CommentsItem = (props: any) => {
   return (
     <div className={props.className}>
-      <div className=" mx-auto lg:mx-24 xl:mx-12 2xl:mx-48 ">
+      <div className=" flex flex-col w-full justify-center items-center ">
         <p className="text-center text-sm md:text-lg italic px-3 lg:px-24 xl:px-72 2xl:px-[25rem] py-2 sm:px-24  ">{props.comment}</p>
         <p className="text-center font-bold "> ~ {props.author}</p>
       </div>

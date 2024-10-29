@@ -15,9 +15,9 @@ const NavbarMobile = () => {
   }, [isOpen]);
 
   return (
-    <header className="bg-gradient-to-b from-white from-70%  to-transparent to-30%">
-      <div className=" flex    w-full  lg:hidden ">
-        <div className=" py-1">
+    <header className="bg-gradient-to-b from-white from-70%  to-transparent to-30% h-[6rem]  lg:hidden">
+      <div className=" flex    w-full  ">
+        <div className=" mx-2 py-1">
           <Link href={"/"}>
             <div className="ml-3 mr-1 my-1  ">
               {" "}
@@ -35,7 +35,7 @@ const NavbarMobile = () => {
         
         <div
           onClick={toggleMenuAndScroll}
-          className="flex-grow flex justify-end mr-4 mt-8 "
+          className="flex-grow flex justify-end mr-4 mt-6 "
         >
           <HamburgerIcon />
         </div>
