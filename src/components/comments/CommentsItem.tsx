@@ -8,15 +8,13 @@ const CommentsItem = (props: any) => {
         <p className="text-center font-bold "> ~ {props.author}</p>
       </div>
       <div className="flex lg:justify-end w-full px-2 lg:px-72 mt-8">
-        <p className=" ">
-          Usługa: 
-          <span className="text-sm "> {props.service}</span>
+        <p className="text-base ">
+          Usługa: {props.service}
         </p>
       </div>
       <div className="flex lg:justify-end w-full px-2  lg:px-72 mt-1">
-        <p className="text-sm">
-          Źródło: 
-          <span className=""> {props.source}</span>
+        <p className="text-base">
+          Źródło: {props.source}
         </p>
       </div>
     </div>

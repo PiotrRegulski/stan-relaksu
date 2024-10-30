@@ -45,7 +45,7 @@ const OffersCardFace = () => {
   
   return (
     <>
-      <PageHeader id={"offer"}>Zabiegi na Twarz</PageHeader>
+      <PageHeader id={"offer"}>Zabiegi na twarz</PageHeader>
       <div className="flex justify-center  w-full my-4 md:my-2 2xl:my-12 sm:h-full md:min-h-[33rem] ">
         <section className="grid  gap-5 md:gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3   lg:grid-cols-3 2xl:grid-cols-3 md:justify-items-center  2xl:justify-items-center 2xl:gap-11 rounded">
           {categoryFace.map((offerItem) => (

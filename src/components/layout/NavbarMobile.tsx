@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { CormorantInfant,Noto } from "@/components/fonts";
+import { CormorantInfant, Noto } from "@/components/fonts";
 
 import { useState, useCallback } from "react";
 import HamburgerIcon from "@/components/layout/HamburgerIcon";
@@ -15,38 +15,41 @@ const NavbarMobile = () => {
   }, [isOpen]);
 
   return (
-    <header className="bg-gradient-to-b from-white from-70%  to-transparent to-30% h-[6rem]  lg:hidden">
-      <div className=" flex    w-full  ">
-        <div className=" mx-2 py-1">
-          <Link href={"/"}>
-            <div className="ml-3 mr-1 my-1  ">
-              {" "}
+    <header className="relative bg-gradient-to-b from-white from-70% to-transparent to-30% h-[6rem] lg:hidden w-screen">
+      <div className="flex w-full">
+        <div className="mx-2 py-1 z-20">
+          <Link href="/">
+            <div className="ml-3 mr-1 my-1">
               <Image
                 src="/logo-stan-relaksu-kolo.png"
                 width={110}
                 height={110}
-                className="bg-mainthemelogo rounded-full "
-                alt="Screenshots of the dashboard project showing desktop version"
+                className="bg-mainthemelogo rounded-full"
+                alt="Logo gabientu Stan Relaksu"
                 priority={true}
               />
             </div>
           </Link>
         </div>
-        
         <div
           onClick={toggleMenuAndScroll}
-          className="flex-grow flex justify-end mr-4 mt-6 "
+          className="flex-grow flex justify-end mr-4 mt-6"
         >
           <HamburgerIcon />
         </div>
       </div>
-
       <div
         className={`${Noto.className} flex flex-wrap w-full justify-evenly lg:hidden`}
       >
-        <nav id="mobile-nav" className="w-screen lg:hidden">
+        <nav
+          id="mobile-nav"
+          className={`absolute top-[4rem] left-0 w-full lg:hidden z-10 transition-transform duration-200
+             ease-in-out ${
+            isOpen ? "transform translate-y-0" : "transform -translate-y-full"
+          }`}
+        >
           <ul
-            className={`flex flex-col  bg-white    h-full p-2 space-y-1 divide-mainpeach lg:flex-row sm:space-y-1 lg:space-x-4 divide-y-2 divide divide-solid ${
+            className={`w-full flex flex-col bg-white p-2 space-y-1 divide-mainpeach lg:flex-row sm:space-y-1 lg:space-x-4 divide-y-2 divide-solid border-b-2 border-mainpeach shadow-lg shadow-mainpeach ${
               isOpen ? "" : "hidden"
             }`}
           >

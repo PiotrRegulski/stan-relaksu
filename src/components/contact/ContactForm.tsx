@@ -3,6 +3,7 @@
 import React, { useState, FormEvent } from "react";
 import SuccessModal from "./SuccessModal";
 import { Noto } from "../fonts";
+import ButtonMain from "../layout/ButtonMain";
 interface CustomError extends Error {
   message: string;
 }
@@ -178,15 +179,11 @@ const ContactForm = () => {
           </div>
         </div>
 
-        <div className=" flex w-full justify-end">
-          {" "}
-          <button
-            type="submit"
-            disabled={loading}
-            className={`${Noto.className} mx-auto   w-48 text-white shadow-md shadow-gray-400 lg:text-lg  border-2 rounded border-primary bg-primary hover:bg-white hover:border-black px-4 py-2 lg:px-4 lg:py-2 font-bold   hover:text-black focus:outline-none focus:shadow-outline mb-4`}
-          >
+        <div className=" flex w-full justify-center">
+          <ButtonMain type="submit" disabled={loading} >
             Wyślij
-          </button>
+          </ButtonMain>
+          
         </div>
 
         <SuccessModal

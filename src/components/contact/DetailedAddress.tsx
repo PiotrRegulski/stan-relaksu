@@ -6,7 +6,7 @@ import { IoIosPin } from "react-icons/io";
 import DetailedAdressItem from "./DetailedAdressItem";
 const DetailedAddress = () => {
   return (
-    <div className="flex flex-col sm:flex-row   lg:mt-16  ">
+    <div className="flex flex-col sm:flex-row  justify-around w-full my-6 ">
       <DetailedAdressItem
         ico={<IoIosPin className="w-8 h-8" />}
         location={"Lokalizacja:"}

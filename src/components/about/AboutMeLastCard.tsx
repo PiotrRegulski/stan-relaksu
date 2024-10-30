@@ -3,7 +3,7 @@ import ImagesToAboutMeLast from "./ImagesToAboutMeLast";
 import ButtonOffers from "./ButtonOffers";
 const AboutMeLastCard = () => {
   return (
-    <div className="flex flex-col  mx:auto   md:mb-12 my-8     rounded-md animate-fadeIn   transition-transform duration-200 ease-in-out bg-gradient-to-t from-secondary to-transparent   ">
+    <div className="flex flex-col  mx:auto   md:mb-12      rounded-md animate-fadeIn   transition-transform duration-200 ease-in-out bg-gradient-to-b from-secondary to-transparent   ">
       <div className="flex flex-col xl:flex-row w-full ">
         <div className="flex flex-col xl:flex-row xl:w-1/2 justify-end ">
           {" "}

@@ -13,7 +13,7 @@ const MainHeader = () => {
   const handleScroll = useCallback(() => {
     const offerId =
     document.getElementById("o-gabinecie")||
-      document.getElementById("kontakt-info") ||
+      document.getElementById("kontakt") ||
       document.getElementById("important-about") ||
       document.getElementById("zdjecia-z-oferty") ||
       document.getElementById("oferta-detale")

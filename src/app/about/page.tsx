@@ -13,7 +13,7 @@ export const metadata = {
 const About = () => {
   return (
     <div className="mt-[7rem]">
-      <PageHeader id={"about"}>O mnie</PageHeader>
+      
 
       <AboutMeMainCard />
        <ImagesToAboutMeArticle />

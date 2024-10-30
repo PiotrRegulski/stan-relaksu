@@ -22,7 +22,8 @@ const commentsData = [
     service: "Terapia manualna",
   },
   {
-    comment:"Polecam każdemu, Pani Kinga ma ogromną  wiedzę. Zabiegi wykonane profesjonalnie w cudownej atmosferze. Korzystam regularnie i będę wracać :)",
+    comment:
+      "Polecam każdemu, Pani Kinga ma ogromną  wiedzę. Zabiegi wykonane profesjonalnie w cudownej atmosferze. Korzystam regularnie i będę wracać :)",
     author: "Katarzyna",
     source: "stanrelaksu.booksy.com",
     service: "Terapia manualna",
@@ -42,13 +43,15 @@ const commentsData = [
     service: "Masaż twarzy Kobido z kinesiotapingiem",
   },
   {
-    comment:"Pełen profesjonalizm , zdecydowanie polecam. Z przyjemnością będe tu wracać.",
+    comment:
+      "Pełen profesjonalizm , zdecydowanie polecam. Z przyjemnością będe tu wracać.",
     author: "Marta",
     source: "stanrelaksu.booksy.com",
     service: "Masaż twarzy Kobido z kinesiotapingiem",
   },
   {
-    comment:"Daję 10 gwiazdek :) Polecam z całego serca. Czuję, że już po pierwszej wizycie zeszły moje napięcia. Kinga to wspaniała osoba z dużą wiedzą. Na pewno będę wracać zarówno w razie bólowej potrzeby czy po prostu w ramach relaksu. Myślę, że masaż w tym miejscu to też świetna opcja na prezent.Gabinet jest piękny, w spokojnej okolicy ze świetnym ogrodem i studiem jogi za ścianą. W łazience są wszystkie niezbędne kobiecie akcesoria. Poczułam się zrelaksowana i zaopiekowana na 200%",
+    comment:
+      "Daję 10 gwiazdek :) Polecam z całego serca. Czuję, że już po pierwszej wizycie zeszły moje napięcia. Kinga to wspaniała osoba z dużą wiedzą. Na pewno będę wracać zarówno w razie bólowej potrzeby czy po prostu w ramach relaksu. Myślę, że masaż w tym miejscu to też świetna opcja na prezent.Gabinet jest piękny, w spokojnej okolicy ze świetnym ogrodem i studiem jogi za ścianą. W łazience są wszystkie niezbędne kobiecie akcesoria. Poczułam się zrelaksowana i zaopiekowana na 200%",
     author: "Aleksandra",
     source: "stanrelaksu.booksy.com",
     service: "Masaż relaksacyjny",
@@ -65,42 +68,51 @@ const Comments = () => {
     return () => clearInterval(interval);
   }, [currentIndex]);
 
-
-  
-
   const handleNextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % commentsData.length);
   };
-  const handlePrevImage =()=>{
-    setCurrentIndex((nextIndex)=>(nextIndex-1+ commentsData.length)% commentsData.length);
-  }
+  const handlePrevImage = () => {
+    setCurrentIndex(
+      (nextIndex) => (nextIndex - 1 + commentsData.length) % commentsData.length
+    );
+  };
 
   return (
-    <div className=" flex flex-col justify-center items-center bg-secondary w-full h-[26rem] sm:h-[26rem] md:h-[26rem] lg:h-[27rem] xl:h-[26rem]">
-      <div className="mt-12 ">
-        <p className= {`${Noto.className} text-2xl 2xl:text-4xl `}>Opinie</p>
+    <div className="relative flex flex-col justify-center items-center bg-secondary w-full h-[26rem] sm:h-[26rem] md:h-[26rem] lg:h-[27rem] xl:h-[26rem] ">
+      <button
+        onClick={handlePrevImage}
+        className="absolute top-[48%] left-0 lg:left-20 transform -translate-y-1/2 opacity-30 lg:opacity-90 hover:opacity-40 text-gray-300 p-2 z-10 rounded-full"
+      >
+        <IoIosArrowBack className="w-12 h-12" />
+      </button>
+      <button
+        onClick={handleNextImage}
+        className="absolute top-[48%] right-0 lg:right-20 transform -translate-y-1/2 opacity-30 lg:opacity-90 hover:opacity-40 text-gray-300 p-2 z-10 rounded-full"
+      >
+        <IoIosArrowForward className="w-12 h-12" />
+      </button>
+      <div className={`${Noto.className} font-medium text-2xl 2xl:text-4xl mt-12`}>
+        Opinie
       </div>
-      <div className=" flex justify-between w-full text-4xl font-bold px-4 lg:px-48 ">
-        <button onClick={handlePrevImage} className="opacity-100 hover:opacity-40 hover:shadow-lg">  <IoIosArrowBack /> </button>
-        <button onClick={handleNextImage} className="opacity-100 hover:opacity-40 hover:shadow-lg"> <IoIosArrowForward /> </button>
-      </div>
-      <div className=" relative w-full h-full">
-        {commentsData.map((comment: any, index: number) => (
-          <CommentsItem
-            key={index}
-            className={`absolute top-0 left-0  h-full w-full  transition-opacity duration-500  ${
-              index === currentIndex
-                ? "animate-slideLeft"
-                : index === prevIndex
-                ? "animate-slideOutLeft"
-                : "invisible opacity-0"
-            }`}
-            comment={comment.comment}
-            author={comment.author}
-            source={comment.source}
-            service={comment.service}
-          />
-        ))}
+      <div className="relative w-full h-full mt-2 flex flex-col justify-center items-center">
+        <div>
+          {commentsData.map((comment: any, index: number) => (
+            <CommentsItem
+              key={index}
+              className={`absolute top-8 left-0 h-full w-full transition-opacity duration-500 ${
+                index === currentIndex
+                  ? "animate-slideLeft"
+                  : index === prevIndex
+                  ? "animate-slideOutLeft"
+                  : "invisible opacity-0"
+              }`}
+              comment={comment.comment}
+              author={comment.author}
+              source={comment.source}
+              service={comment.service}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -24,7 +24,7 @@ import {Cormorant_Infant,Lato,Noto_Serif,Noto_Sans} from "next/font/google";
   //   display: 'swap',
   // });
 
-  export const Noto = Noto_Sans({
+  export const Noto = Noto_Serif({
     weight: ["400","500","600", "700"],
     subsets: ["latin"],
     display: 'swap',

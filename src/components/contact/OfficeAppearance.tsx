@@ -42,12 +42,16 @@ const OfficeAppearance = () => {
       ref={ref}
       className="flex flex-col  bg-gradient-to-r from-secondary via-transparent to-secondary"
     >
-      <div className="  bg-gradient-to-r from-secondary via-transparent to-secondary rounded-xl my-4 ">
-        <div className="flex w-full justify-center items-center ">
-          <p className={`${Noto.className} text-center my-4 lg:text-xl`}>
+      <div className="   bg-gradient-to-r from-secondary via-transparent to-secondary rounded-xl my-4 ">
+        <div className="flex flex-col w-full justify-center items-center my-6 ">
+          <h3 className={`${Noto.className} text-center lg:text-xl`}>
             Tworzymy to miejsce, aby holistycznie zadbać o Twoje ciało.
-            <br></br> Poprzez połączenie{" "}
-            <strong>jogi i terapii manualnej</strong> .<br></br>{" "}
+          </h3>
+          <p className={`${Noto.className} lg:text-lg `}>
+            Poprzez połączenie <strong>jogi i terapii manualnej</strong>.
+          </p>
+          <p className={`${Noto.className} text-center  lg:text-xl`}>
+            Możesz zatroszczyć się o siebie w sposób kompleksowy.
           </p>
         </div>
       </div>
@@ -56,7 +60,7 @@ const OfficeAppearance = () => {
         {imgURLs.map((imgUrl, index) => (
           <div
             key={imgUrl.label}
-            className="relative flex shrink-0 w-72 h-[21rem] 2xl:h-[28rem] overflow-hidden my-4"
+            className="relative flex shrink-0 w-72 h-[21rem] xl:h-[24rem] 2xl:h-[28rem] overflow-hidden my-4"
             style={{ marginTop: imgUrl.marginTop }}
           >
             <motion.div
@@ -75,13 +79,6 @@ const OfficeAppearance = () => {
             </motion.div>
           </div>
         ))}
-      </div>
-      <div className="  bg-gradient-to-r from-secondary via-transparent to-secondary rounded-xl ">
-        <div className="flex w-full justify-center items-center my-4 ">
-          <p className={`${Noto.className} text-center my-4 lg:text-xl`}>
-            Możesz zatroszczyć się o siebie w sposób kompleksowy.
-          </p>
-        </div>
       </div>
     </div>
   );

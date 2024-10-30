@@ -4,11 +4,11 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import PageHeader from "../homepage/PageHeader";
 import Link from "next/link";
 import { lato, Noto } from "../fonts";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import ButtonMain from "../layout/ButtonMain";
 
 interface ImageData {
   src: string;
@@ -109,7 +109,6 @@ const Carousel: React.FC = () => {
   const isInView = useInView(ref, { once: true });
   return (
     <>
-     
       <motion.div
         className="flex justify-center items-center  bg-secondary my-1"
         ref={ref}
@@ -136,7 +135,7 @@ const Carousel: React.FC = () => {
                       fill
                       className="mx-auto my-auto object-cover"
                     />
-                    <motion.div className="absolute bottom-0 lg:bottom-10 lg:left-[5rem] right-0 bg-black bg-opacity-40 text-primary p-2 w-full lg:w-2/3 xl:w-2/3 text-center rounded lg:border-black/40 lg:border-2 lg:shadow-black lg:shadow-md">
+                    <motion.div className="absolute bottom-0 lg:bottom-10 lg:left-[5rem] right-0 bg-black bg-opacity-20 text-primary p-2 w-full lg:w-2/3 xl:w-2/3 text-center rounded ">
                       <div className="mx-auto sm:mx-12 md:mx-12 xl:mx-12 my-4">
                         <p
                           className={`${Noto.className} text-white md:text-xl lg:text-2xl xl:text-4xl  tracking-wide md:text-left mb-2 xl:mb-4 whitespace-nowrap`}
@@ -149,7 +148,9 @@ const Carousel: React.FC = () => {
                           {image.description}
                         </p>
                       </div>
-                      <div className={`${Noto.className} my-6 flex justify-center gap-4 md:justify-center md:gap-4 `}>
+                      <div
+                        className={` my-6 flex justify-center gap-4 md:justify-center md:gap-4 `}
+                      >
                         <Link
                           key={index}
                           className=" "
@@ -157,16 +158,10 @@ const Carousel: React.FC = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <button className=" my-2 font-bold text-sm lg:text-md  xl:tracking-widest border-2 border-primary  hover:border-2  hover:border-white hover:bg-transparent  bg-primary text-white hover:text-white shadow-md shadow-primary/40 hover:shadow-none   rounded  py-1 px-2 xl:py-3">
-                            Zarezerwuj wizyte
-                          </button>
+                          <ButtonMain>Zarezerwuj wizyte</ButtonMain>
                         </Link>
-                        <button
-                          className=" my-2 font-bold text-sm lg:text-md  xl:tracking-widest border-2 border-primary hover:border-2  hover:border-white hover:bg-transparent  bg-primary text-white hover:text-white shadow-md hover:shadow-none shadow-primary/40   rounded  py-1 px-2 "
-                          onClick={() => router.push(image.linkDetails)}
-                        >
-                          Dowiedz się więcej
-                        </button>
+                        <ButtonMain  onClick={() => router.push(image.linkDetails)}> Dowiedz się więcej</ButtonMain>
+                       
                       </div>
                     </motion.div>
                   </motion.div>
@@ -178,7 +173,7 @@ const Carousel: React.FC = () => {
             onClick={handlePrevImage}
           >
             <div className="text-4xl flex items-center justify-center  h-12  rounded-full text-white pb-2 ">
-            <IoIosArrowBack />
+              <IoIosArrowBack />
             </div>
           </button>
           <button
@@ -186,7 +181,7 @@ const Carousel: React.FC = () => {
             onClick={handleNextImage}
           >
             <div className=" text-4xl flex items-center justify-center  h-12  rounded-full text-white pb-2  ">
-            <IoIosArrowForward />
+              <IoIosArrowForward />
             </div>
           </button>
         </div>

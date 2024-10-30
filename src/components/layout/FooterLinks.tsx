@@ -4,6 +4,7 @@ import React from "react";
 import { BsArrowUpRightSquare } from "react-icons/bs";
 
 import { usePathname } from "next/navigation";
+import ButtonMain from "./ButtonMain";
 const links = [
   { href: "/", label: "Strona główna" },
   { href: "/about", label: "O mnie" },
@@ -30,16 +31,15 @@ const FooterLinks = () => {
           </Link>
         ))}
       </div>
-      <div className="hidden sm:flex justify-end items-end w-full mt-4 lg:pr-16">
+      <div className="hidden sm:flex justify-end items-end w-full mt-4 lg:pr-16 ">
         <Link
           href="https://booksy.com/pl-pl/257898_stan-relaksu-holistyczny-gabinet-terapii-i-masazu_masaz_3_warszawa#ba_s=dl_1"
           target="_blank"
           rel="noopener noreferrer"
+          className=""
         >
-          <button className=" flex  my-2 font-bold text-sm lg:text-md  xl:tracking-widest border-2 border-primary  hover:border-2  hover:border-black hover:bg-transparent  bg-primary text-white hover:text-black shadow-md shadow-primary/40 hover:shadow-none   rounded  py-1 px-2 xl:py-3 transition-colors duration-300">
-            Zarezerwuj wizyte{" "}
-            <BsArrowUpRightSquare className="w-3 h-3 ml-2 mt-1" />
-          </button>
+          <ButtonMain> Zarezerwuj wizyte</ButtonMain>
+       
         </Link>
       </div>
     </div>

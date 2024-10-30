@@ -10,6 +10,7 @@ import {
   useSpring,
 } from "framer-motion";
 import { Noto } from "../fonts";
+import ButtonMain from "../layout/ButtonMain";
 
 const AboutMeShort = () => {
   const ref = useRef(null);
@@ -18,12 +19,11 @@ const AboutMeShort = () => {
   const [startY, setStartY] = useState(600);
 
   useEffect(() => {
-    if (isInView && startY===null) {
+    if (isInView && startY === null) {
       setStartY(window.scrollY);
     }
-  }, [isInView,startY]);
+  }, [isInView, startY]);
 
- 
   const imageY = useTransform(scrollY, [startY - 300, startY + 800], [0, 80]);
   const imageYs = useTransform(scrollY, [startY - 300, startY + 800], [0, -80]);
   const springImageY = useSpring(imageY, { stiffness: 300, damping: 30 });
@@ -31,7 +31,7 @@ const AboutMeShort = () => {
 
   return (
     <div
-      className="flex flex-col lg:gap-4 xl:gap-24  lg:flex-row justify-around items-center  my-6 md:my-2 lg:my-2 2xl:my-4 mx-auto md:mx-4 lg:mx-4 2xl:mx-48 rounded bg-secondary"
+      className="flex flex-col lg:gap-4 xl:gap-20  lg:flex-row justify-around items-center  my-6 md:my-2 lg:my-32 2xl:my-20 mx-auto md:mx-4 lg:mx-4 xl:mx-12 2xl:mx-48  bg-white"
       ref={ref}
     >
       <motion.div
@@ -93,24 +93,21 @@ const AboutMeShort = () => {
         <h2 className={`${Noto.className} text-2xl `}>
           Cześć, jestem Kinga Wołoszka
         </h2>
-        <p className="text-base md:text-xl  my-6">
+        <p className="text-base md:text-xl  my-6 text-justify">
           Przyniosę Ci ulgę w bólu oraz napięciu stosując techniki masażu
           powięziowego i terapii manualnej, podpowiem Ci jak możesz pracować ze
-          swoim ciałem poprzez dobrane ćwiczenia czy oddech dla poprawy Twojego
-          zdrowia i samopoczucia
+          swoim ciałem poprzez indywidualnie dobrane ćwiczenia czy trening
+          oddechowy dla poprawy Twojego zdrowia i samopoczucia.
         </p>
-        <p className="text-base md:text-xl  my-6">
+        <p className="text-base md:text-xl  my-6 text-justify">
           Czekam na Ciebie z terapią manualną, masażem powięziowym, masażem
           tkanek głębokich. Głęboko odprężającymi technikami masażu twarzy
           Kobido, masażu relaksacyjnego, które pozwolą Ci osiągnąć
           <span className="whitespace-nowrap font-bold"> Stan Relaksu.</span>
         </p>
         <div className="flex justify-center w-full lg:justify-start">
-          <Link
-            href="/about"
-            className="my-2 font-bold text-lg lg:text-md  md:tracking-widest border-2 border-primary hover:border-2  hover:border-black hover:bg-transparent  bg-primary text-white hover:text-black shadow-md hover:shadow-none shadow-primary/40   rounded  py-3 px-2"
-          >
-            Dowiedz się więcej
+          <Link href="/about">
+            <ButtonMain>Dowiedz się więcej</ButtonMain>
           </Link>
         </div>
       </motion.div>
