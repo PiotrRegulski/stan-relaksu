@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import CommentsItem from "./CommentsItem";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { Noto } from "../fonts";
+import { motion, useInView } from "framer-motion";
+
 const commentsData = [
   {
     comment:
@@ -58,6 +60,8 @@ const commentsData = [
   },
 ];
 const Comments = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [prevIndex, setPrevIndex] = useState<number | null>(null);
   useEffect(() => {
@@ -78,7 +82,12 @@ const Comments = () => {
   };
 
   return (
-    <div className="relative flex flex-col justify-center items-center bg-secondary w-full h-[26rem] sm:h-[26rem] md:h-[26rem] lg:h-[27rem] xl:h-[26rem] ">
+    <motion.div
+      className="relative flex flex-col justify-center items-center bg-secondary w-full h-[26rem] sm:h-[26rem] md:h-[26rem] lg:h-[27rem] xl:h-[26rem] "
+      initial={{ x: 2, opacity: 0 }}
+      animate={isInView ? { y: 0, opacity: 1 } : {}}
+      transition={{ duration: 5, ease: "easeInOut", type: "spring" }}
+    >
       <button
         onClick={handlePrevImage}
         className="absolute top-[48%] left-0 lg:left-20 transform -translate-y-1/2 opacity-30 lg:opacity-90 hover:opacity-40 text-gray-300 p-2 z-10 rounded-full"
@@ -91,7 +100,10 @@ const Comments = () => {
       >
         <IoIosArrowForward className="w-12 h-12" />
       </button>
-      <div className={`${Noto.className} font-medium text-2xl 2xl:text-4xl mt-12`}>
+      <div
+        ref={ref}
+        className={`${Noto.className} font-medium text-2xl 2xl:text-4xl mt-12`}
+      >
         Opinie
       </div>
       <div className="relative w-full h-full mt-2 flex flex-col justify-center items-center">
@@ -114,7 +126,7 @@ const Comments = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

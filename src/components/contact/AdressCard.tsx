@@ -17,6 +17,7 @@ const AdressCard = (props: any) => {
             className=" rounded-full shadow-gray-400 shadow-md bg-mainthemelogo"
             alt="Logo firmy"
             priority={true}
+            sizes="(max-width: 600px) 100vw, 50vw"
             
           />
         </div>

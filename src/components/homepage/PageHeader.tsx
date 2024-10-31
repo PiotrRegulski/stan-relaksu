@@ -13,7 +13,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ children, id }) => {
       // style={{ backgroundImage: "url('/ofertabg.png')" }}
     >
       <div
-        className={`${Noto.className}px-4 py-3 text-3xl md:text-2xl xl:text-2xl text-center   bg-opacity-75 rounded-xl font-bold  text-black`}
+        className={`${Noto.className}px-4 py-3 text-2xl md:text-2xl xl:text-2xl text-center   bg-opacity-75 rounded-xl font-bold  text-black`}
       >
         <p className={`${Noto.className}`}>{children}</p>
       </div>

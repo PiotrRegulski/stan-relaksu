@@ -11,8 +11,10 @@ import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { Noto } from "../fonts";
 
 const Contact = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const refTop = useRef(null);
+  const isInViewTop = useInView(refTop, { once: true });
+  const refBottom = useRef(null);
+  const isInViewBottom = useInView(refBottom, { once: true });
   // useEffect(() => {
   //   if (isInView) {
   //     setStartY(window.scrollY);
@@ -21,12 +23,12 @@ const Contact = () => {
   return (
     <div id={"kontakt"} className="w-full">
       <PageHeader id={"kontttttakt-header"}>Skontaktuj się</PageHeader>
-      <div ref={ref} className="   ">
+      <div  className="   ">
         <div id="kontakt-info" className="  bg-white   w-full ">
           <div className="flex flex-col lg:flex-row w-full ">
             <motion.div
-              initial={{ x: -400, opacity: 0 }}
-              animate={isInView ? { x: 0, opacity: 1 } : {}}
+              initial={{ x: -200, opacity: 0 }}
+              animate={isInViewTop ? { x: 0, opacity: 1 } : {}}
               transition={{ duration: 1, ease: "easeInOut" }}
               className="flex flex-col w-full lg:w-1/2 xl:mx-12  "
             >
@@ -40,8 +42,8 @@ const Contact = () => {
                   <p className="text-justify ">
                     Skontaktuj się ze mną poprzez{" "}
                     <strong>formularz kontaktowy</strong> lub w dogodny dla
-                    siebię sposób. Z przyjemnością odpowiem na wszelkie pytania i
-                    pomogę wybrać odpowiedni zabieg dostosowany do Twoich
+                    siebię sposób. Z przyjemnością odpowiem na wszelkie pytania
+                    i pomogę wybrać odpowiedni zabieg dostosowany do Twoich
                     potrzeb. Czekam na Twój kontakt!
                   </p>
                 </div>
@@ -49,27 +51,32 @@ const Contact = () => {
               <ContactForm />
             </motion.div>
             <motion.div
-              initial={{ x: 800, opacity: 0 }}
-              animate={isInView ? { x: 0, opacity: 1 } : {}}
+              initial={{ x: 200, opacity: 0 }}
+              animate={isInViewTop ? { x: 0, opacity: 1 } : {}}
               transition={{ duration: 1, ease: "easeInOut" }}
               className=" flex flex-col w-full lg:w-1/2 justify-center items-center mx-auto lg:mx-12 gap-12 "
             >
               <DetailedAddress />
               <MapComponent />
             </motion.div>
+            <div ref={refTop}></div>
           </div>
         </div>
-        <div>
+        <motion.div  initial={{ x: 2, opacity: 0 }}
+            animate={isInViewBottom ? { y: 0, opacity: 1 } : {}}
+            transition={{ duration: 5, ease: "easeInOut", type: "spring" }}
+           >
           {" "}
           <div
+           
             className={`${Noto.className} flex flex-col  w-full justify-center items-center  `}
           >
-            <p className=" text-lg md:text-xl xl:text-2xl my-6 text-center">
+            <p className=" text-lg md:text-xl xl:text-2xl my-6 text-center font-bold">
               Gabinet mieści się przy <br></br>
               <strong>studio jogi Jasna Asana. </strong>
             </p>
           </div>
-          <div className="flex sm:flex-row flex-col justify-around py-2 w-full bg-white  ">
+          <div  className="flex sm:flex-row flex-col justify-around py-2 w-full bg-white  ">
             <AdressCard
               title={"Jasna Asana Studio Jogi"}
               href={"https://www.jasnaasana.pl/grafik"}
@@ -89,7 +96,8 @@ const Contact = () => {
               logoSrc={"/logo-stan-relaksu-kolo.png"}
             />
           </div>
-        </div>
+          <div ref={refBottom} ></div>
+        </motion.div>
         <OfficeAppearance />
       </div>
     </div>

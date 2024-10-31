@@ -35,14 +35,21 @@ const imgURLs = [
 ];
 
 const OfficeAppearance = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const refTop = useRef(null);
+  const isInViewTop = useInView(refTop, { once: true });
+  const refBottom = useRef(null);
+  const isInViewBottom = useInView(refBottom , { once: true });
   return (
     <div
-      ref={ref}
+     
       className="flex flex-col  bg-gradient-to-r from-secondary via-transparent to-secondary"
     >
-      <div className="   bg-gradient-to-r from-secondary via-transparent to-secondary rounded-xl my-4 ">
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        animate={isInViewTop ? { y: 0, opacity: 1 } : {}}
+        transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
+        className="bg-gradient-to-r from-secondary via-transparent to-secondary rounded-xl my-4  "
+      >
         <div className="flex flex-col w-full justify-center items-center my-6 ">
           <h3 className={`${Noto.className} text-center lg:text-xl`}>
             Tworzymy to miejsce, aby holistycznie zadbać o Twoje ciało.
@@ -54,21 +61,21 @@ const OfficeAppearance = () => {
             Możesz zatroszczyć się o siebie w sposób kompleksowy.
           </p>
         </div>
-      </div>
+      </motion.div>
       <div className="flex flex-row overflow-x-auto  gap-2 w-full lg:justify-center lg:items-center ">
         {" "}
         {imgURLs.map((imgUrl, index) => (
           <div
             key={imgUrl.label}
             className="relative flex shrink-0 w-72 h-[21rem] xl:h-[24rem] 2xl:h-[28rem] overflow-hidden my-4"
-            style={{ marginTop: imgUrl.marginTop }}
+            style={{ marginTop: imgUrl.marginTop }}ref={refBottom}
           >
             <motion.div
               className="w-full h-full"
               initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
               whileHover={{ scale: 1.1 }}
-              animate={isInView ? { x: 0, opacity: 1 } : {}}
-              transition={{ type: "spring", duration: 2 }}
+              animate={isInViewBottom ? { x: 0, opacity: 1 } : {}}
+              transition={{ type: "spring", duration:4 }}
             >
               <ImageCard
                 key={imgUrl.label}
@@ -78,9 +85,12 @@ const OfficeAppearance = () => {
               />
             </motion.div>
           </div>
+          
         ))}
       </div>
+      <div  ref={refTop}></div>
     </div>
+    
   );
 };
 

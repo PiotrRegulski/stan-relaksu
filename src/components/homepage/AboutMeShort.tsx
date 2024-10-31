@@ -36,9 +36,9 @@ const AboutMeShort = () => {
     >
       <motion.div
         className="flex justify-end md:w-1/2"
-        initial={{ x: -400, opacity: 0 }}
+        initial={{ x: -200, opacity: 0 }}
         animate={isInView ? { x: 0, opacity: 1 } : {}}
-        transition={{ duration: 3, ease: "easeInOut" }}
+        transition={{ duration: 2, type:"spring" }}
       >
         <motion.div
           id="troche-o-omnie"
@@ -88,7 +88,7 @@ const AboutMeShort = () => {
         className="lg:w-1/2 mx-4 my-4"
         initial={{ x: 800, opacity: 0 }}
         animate={isInView ? { x: 0, opacity: 1 } : {}}
-        transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
+        transition={{ duration: 3,  type: "spring" }}
       >
         <h2 className={`${Noto.className} text-2xl `}>
           Cześć, jestem Kinga Wołoszka
