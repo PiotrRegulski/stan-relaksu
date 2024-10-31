@@ -110,13 +110,13 @@ const Carousel: React.FC = () => {
   return (
     <>
       <motion.div
-        className="flex justify-center items-center  bg-secondary my-1 "
+        className="flex justify-center items-center  bg-secondary  "
         ref={ref}
         initial={{ y: -100, opacity: 0 }}
         animate={isInView ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        <div className="relative w-full h-[30rem] sm:h-[30rem] md:h-[30rem] xl:h-[37rem] 2xl:h-[40rem] overflow-hidden lg:mt-[7rem]">
+        <div className="relative w-full h-[32rem] sm:h-[30rem] md:h-[30rem] xl:h-[37rem] 2xl:h-[40rem] overflow-hidden lg:mt-[7rem]">
           <AnimatePresence>
             {images.map(
               (image, index) =>

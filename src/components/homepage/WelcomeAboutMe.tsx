@@ -10,16 +10,15 @@ const WelcomeAboutMe = () => {
   return (
     <div id="o-gabinecie" className=" flex w-full flex-col  bg-white  ">
       <motion.div
-        className={`${Noto.className} flex flex-col justify-center items-center  mx-2 md:mx-12 lg:mx-12 xl:mx-36 my-6 lg:my-10  rounded-lg text-lg font-medium lg:text-2xl`}
+        className={`${Noto.className} flex flex-col justify-center items-center  mx-6 md:mx-12 lg:mx-12 xl:mx-36 my-6 lg:my-10  rounded-lg text-lg font-medium lg:text-2xl`}
         initial={{ y: -100, opacity: 0 }}
         animate={isInView ? { y: 0, opacity: 1 } : {}}
-        transition={{ duration: 2, ease: "easeInOut" }}
+        transition={{ duration: 1, ease: "easeInOut" }}
         ref={ref}
       >
-        <h1 className="text-center">Stan Relaksu - Gabinet terapii manualnej i masażu</h1>
-        <p className="text-center">
-          Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie,<br></br> osobie
-          która chce zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.
+        <h1 className="text-center ">Stan Relaksu - Gabinet terapii manualnej i masażu</h1>
+        <p className=" text-justify md:text-center my-2 md:my-0">
+          Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie,<br></br> osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.
         </p>
       </motion.div>
       <AboutMeShort />
