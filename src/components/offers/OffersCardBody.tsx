@@ -12,8 +12,8 @@ const OffersCardBody = () => {
   return (
     <motion.div
      
-      initial={{ x: 2, opacity: 0 }}
-      animate={isInView ? { y: 0, opacity: 1 } : {}}
+      initial={{ x:-200, opacity: 0 }}
+      animate={isInView ? { x: 0, opacity: 1 } : {}}
       transition={{ duration: 5, ease: "easeInOut", type: "spring" }}
       className="mt-[2rem]"
     >
