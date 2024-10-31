@@ -49,7 +49,7 @@ const OfficeAppearance = () => {
         animate={isInViewTop ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
         className="bg-gradient-to-r from-secondary via-transparent to-secondary rounded-xl my-4  "
-      >
+         ref={refTop}>
         <div className="flex flex-col w-full justify-center items-center my-6 ">
           <h3 className={`${Noto.className} text-center lg:text-xl`}>
             Tworzymy to miejsce, aby holistycznie zadbać o Twoje ciało.
@@ -60,16 +60,16 @@ const OfficeAppearance = () => {
           <p className={`${Noto.className} text-center  lg:text-xl`}>
             Możesz zatroszczyć się o siebie w sposób kompleksowy.
           </p>
-          <div  ref={refTop}></div>
+         
         </div>
       </motion.div>
-      <div className="flex flex-row overflow-x-auto  gap-2 w-full lg:justify-center lg:items-center ">
+      <div className="flex flex-row overflow-x-auto  gap-2 w-full lg:justify-center lg:items-center "ref={refBottom}>
         {" "}
         {imgURLs.map((imgUrl, index) => (
           <div
             key={imgUrl.label}
             className="relative flex shrink-0 w-72 h-[21rem] lg:h-[25rem] xl:h-[28rem] 2xl:h-[28rem] overflow-hidden my-4"
-            style={{ marginTop: imgUrl.marginTop }}ref={refBottom}
+            style={{ marginTop: imgUrl.marginTop }}
           >
             <motion.div
               className="w-full h-full"

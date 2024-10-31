@@ -24,6 +24,7 @@ const Contact = () => {
     <div id={"kontakt"} className="w-full">
       <PageHeader id={"kontttttakt-header"}>Skontaktuj się</PageHeader>
       <div  className="   ">
+      <div ref={refTop}></div>
         <div id="kontakt-info" className="  bg-white   w-full ">
           <div className="flex flex-col lg:flex-row w-full ">
             <motion.div
@@ -59,7 +60,7 @@ const Contact = () => {
               <DetailedAddress />
               <MapComponent />
             </motion.div>
-            <div ref={refTop}></div>
+           
           </div>
         </div>
         <motion.div  initial={{ x: 2, opacity: 0 }}
@@ -76,7 +77,7 @@ const Contact = () => {
               <strong>studio jogi Jasna Asana. </strong>
             </p>
           </div>
-          <div  className="flex sm:flex-row flex-col justify-around py-2 w-full bg-white  ">
+          <div  className="flex sm:flex-row flex-col justify-around py-2 w-full bg-white  " ref={refBottom}>
             <AdressCard
               title={"Jasna Asana Studio Jogi"}
               href={"https://www.jasnaasana.pl/grafik"}
@@ -96,7 +97,7 @@ const Contact = () => {
               logoSrc={"/logo-stan-relaksu-kolo.png"}
             />
           </div>
-          <div ref={refBottom} ></div>
+         
         </motion.div>
         <OfficeAppearance />
       </div>

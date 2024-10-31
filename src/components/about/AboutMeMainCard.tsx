@@ -5,11 +5,13 @@ import Image from "next/image";
 import ButtonOffers from "./ButtonOffers";
 import { motion } from "framer-motion";
 import { Noto } from "../fonts";
+import PageHeader from "../homepage/PageHeader";
 
 const AboutMeMainCard = () => {
   return (
-    <div className={`flex  md:flex-row   `}>
-      <div className="flex flex-col md:flex-row  justify-center items-center   w-full xl:px-24  2xl:px-56 bg-gradient-to-t from-secondary to-transparent   bg-opacity-40   ">
+    <div className={`flex  md:flex-row mt-12   `}>
+     
+      <div className="flex flex-col md:flex-row  justify-center items-center   w-full xl:px-24  2xl:px-56 bg-gradient-to-t from-secondary from-50% to-transparent   bg-opacity-40   ">
         <div className="flex lg:w-1/2 justify-end py-8  ">
           <motion.div
             className="relative w-72 h-72 md:w-[18rem] md:h-[18rem] lg:w-[20rem] lg:h-[20rem] mx-2"
@@ -54,7 +56,7 @@ const AboutMeMainCard = () => {
               <strong> komfortowym zaciszu gabinetu Stan Relaksu.</strong>
             </p>
           </article>
-          <div className="w-full flex flex-row gap-2  mb-4 my-4 sm:my-4 md:mx-1  md:my-6">
+          <div className="flex justify-center items-center w-full gap-24">
             <ButtonReservation />
             <ButtonOffers />
           </div>

@@ -38,7 +38,7 @@ const AboutMeShort = () => {
         className="flex justify-end md:w-1/2"
         initial={{ x: -200, opacity: 0 }}
         animate={isInView ? { x: 0, opacity: 1 } : {}}
-        transition={{ duration: 2, type:"spring" }}
+        transition={{ duration: 3, type:"spring" }}
       >
         <motion.div
           id="troche-o-omnie"

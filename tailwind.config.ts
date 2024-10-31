@@ -40,7 +40,7 @@ const config: Config = {
         primary: "rgb(167 199 231)",
         secondary: "rgb(242 237 228)",
         triadblue:"rgb(228 246 237)",
-        triadbrown:"rgb(115 92 89)",
+        triadbrown:"rgb(138 0 44)",
         headercolor:"rgb(167 231 215)",
         mainthemelogo: "rgb(241 234 214)",
         mainpeach: "rgb(244 201 180)",
