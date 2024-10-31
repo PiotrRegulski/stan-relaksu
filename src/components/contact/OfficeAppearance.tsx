@@ -60,6 +60,7 @@ const OfficeAppearance = () => {
           <p className={`${Noto.className} text-center  lg:text-xl`}>
             Możesz zatroszczyć się o siebie w sposób kompleksowy.
           </p>
+          <div  ref={refTop}></div>
         </div>
       </motion.div>
       <div className="flex flex-row overflow-x-auto  gap-2 w-full lg:justify-center lg:items-center ">
@@ -88,7 +89,7 @@ const OfficeAppearance = () => {
           
         ))}
       </div>
-      <div  ref={refTop}></div>
+     
     </div>
     
   );
