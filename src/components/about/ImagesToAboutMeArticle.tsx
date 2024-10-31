@@ -38,15 +38,15 @@ const imgURLs = [
 ];
 
 const ImagesToAboutMeArticle = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  // const ref = useRef(null);
+  // const isInView = useInView(ref, { once: true });
   return (
     <div
       id="zdjecia-z-oferty"
       className="flex  flex-col  w-full justify-center bg-white   "
     >
       <div
-        ref={ref}
+        
         className="flex overflow-x-auto py-8  gap-2 pl-1 md:gap-4 w-screen justify-center bg-gradient-to-b from-secondary to-transparent"
       >
         {imgURLs.map((imgUrl, index) => (
@@ -59,8 +59,8 @@ const ImagesToAboutMeArticle = () => {
               className="w-full h-full"
               whileHover={{ scale: 1.1 }}
               initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
-              animate={isInView ? { x: 0, opacity: 1 } : {}}
-              transition={{ type: "spring", duration: 4, stiffness: 50 }}
+              animate={ { x: 0, opacity: 1 } }
+              transition={{ type: "spring", duration: 4,  }}
             >
               <ImageCard
                 key={imgUrl.label}
@@ -70,24 +70,24 @@ const ImagesToAboutMeArticle = () => {
               />
             </motion.div>
             <motion.div
-              ref={ref}
+              
               className="absolute bottom-0 w-full font-[Cormorant-Garamond] bg-opacity-50 bg-black text-white text-center py-2"
               initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
-              animate={isInView ? { x: 0, opacity: 1 } : {}}
-              transition={{ type: "spring", duration: 2 }}
+              animate={ { x: 0, opacity: 1 }}
+              transition={{ type: "spring", duration:5}}
             >
               {imgUrl.caption}
             </motion.div>
           </motion.div>
         ))}
       </div>
-      <div className="flex flex-col justify-center     w-full py-4  " ref={ref}>
+      <div className="flex flex-col justify-center     w-full py-4" >
         {" "}
         <motion.div
           className=" flex w-full justify-center items-center bg-gradient-to-t from-secondary to-transparent"
           initial={{ y: -100, opacity: 0 }}
-          animate={isInView ? { y: 0, opacity: 1 } : {}}
-          transition={{ type: "spring", duration: 2, ease: "easeInOut" }}
+          animate={ { y: 0, opacity: 1 } }
+          transition={{ type: "spring", duration: 5, ease: "easeInOut" }}
         >
           <h2 className="text-center  md:w-1/2 text-lg md:text-xl xl:text-2xl  mx-auto md:mx-4  px-3 py-8      h-full bg-opacity-90  ">
             Przyniosę Ci ulgę w bólu oraz napięciu stosując techniki

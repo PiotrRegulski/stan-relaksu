@@ -54,7 +54,7 @@ const AboutMeMainCard = () => {
               <strong> komfortowym zaciszu gabinetu Stan Relaksu.</strong>
             </p>
           </article>
-          <div className="w-full flex flex-col sm:flex-row gap-2  mb-4 my-4 sm:my-4 md:mx-1  md:my-6">
+          <div className="w-full flex flex-row gap-2  mb-4 my-4 sm:my-4 md:mx-1  md:my-6">
             <ButtonReservation />
             <ButtonOffers />
           </div>

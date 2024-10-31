@@ -110,13 +110,13 @@ const Carousel: React.FC = () => {
   return (
     <>
       <motion.div
-        className="flex justify-center items-center  bg-secondary my-1"
+        className="flex justify-center items-center  bg-secondary my-1 "
         ref={ref}
-        initial={{ y: 100, opacity: 0 }}
+        initial={{ y: -100, opacity: 0 }}
         animate={isInView ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        <div className="relative w-full h-[30rem] sm:h-[30rem] md:h-[30rem] xl:h-[37rem] 2xl:h-[45rem] overflow-hidden lg:mt-[7rem]">
+        <div className="relative w-full h-[30rem] sm:h-[30rem] md:h-[30rem] xl:h-[37rem] 2xl:h-[40rem] overflow-hidden lg:mt-[7rem]">
           <AnimatePresence>
             {images.map(
               (image, index) =>
@@ -136,7 +136,7 @@ const Carousel: React.FC = () => {
                       priority={true}
                       className="mx-auto my-auto object-cover"
                     />
-                    <motion.div className="absolute bottom-0 lg:bottom-10 lg:left-[5rem] right-0 bg-black bg-opacity-20 text-primary p-2 w-full lg:w-2/3 xl:w-2/3 text-center rounded ">
+                    <motion.div className="absolute bottom-0 lg:bottom-10 lg:left-[5rem] xl:left-[3rem] xl:bottom-5 right-0 bg-black bg-opacity-20 text-primary p-2 w-full lg:w-2/3 xl:w-9/12 2xl:w-2/3 text-center rounded ">
                       <div className="mx-auto sm:mx-12 md:mx-12 xl:mx-12 my-4">
                         <p
                           className={`${Noto.className} text-white md:text-xl lg:text-2xl xl:text-4xl  tracking-wide md:text-left mb-2 xl:mb-4 whitespace-nowrap`}
@@ -144,7 +144,7 @@ const Carousel: React.FC = () => {
                           {image.alt}
                         </p>
                         <p
-                          className={`${lato.className} text-neutral-200 md:text-lg lg:text-xl xl:text-2xl  `}
+                          className={`${lato.className} text-neutral-200 md:text-lg lg:text-xl xl:text-2xl text-justify `}
                         >
                           {image.description}
                         </p>
