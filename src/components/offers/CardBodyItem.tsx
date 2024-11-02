@@ -42,10 +42,10 @@ const CardBodyItem = () => {
       {categoryBody.map((offerItem) => (
         <div
           key={offerItem.id}
-          className=" h-[30rem]  my-6  md:mx-2 sm:h-[30rem] md:h-[31rem] 2xl:h-[40rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform duration-200 ease-in-out hover:scale-[1.02]    2xl:w-[30rem]  "
+          className=" h-[34rem]  my-6  md:mx-2 sm:h-[34rem] md:h-[34rem] 2xl:h-[40rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform duration-200 ease-in-out hover:scale-[1.02]    2xl:w-[30rem]  "
         >
           <Link className="" href={`/offer/${offerItem.slug} `}>
-            <div className="relative h-[30rem] w-[20rem]   sm:w-[20rem] md:w-[17rem] md:h-[31rem] lg:min-w-[20rem] xl:w-[25rem] 2xl:h-[40rem] 2xl:w-[30rem] ">
+            <div className="relative h-[34rem] w-[20rem]   sm:w-[20rem] md:w-[17rem] md:h-[34rem] lg:min-w-[20rem] xl:w-[25rem] 2xl:h-[40rem] 2xl:w-[30rem] ">
               <Image
                 src={`/${offerItem.image}`}
                 alt={offerItem.title}
@@ -60,7 +60,7 @@ const CardBodyItem = () => {
                   >
                     {offerItem.title}
                   </p>
-                  <p className=" text-center sm:text-sm md:text-base xl:text-md 2xl:text-xl font-semibold indent-4 px-8 sm:px-2 h-28 sm:h-24 md:h-28 lg:h-24 2xl:h-24 text-neutral-200 py-2 ">
+                  <p className=" text-center sm:text-sm md:text-base xl:text-md 2xl:text-xl font-semibold indent-4 px-8  sm:px-2 h-32 sm:h-32 md:h-28 lg:h-24 2xl:h-24 text-neutral-200 py-2 ">
                     {offerItem.contentMainOffer}
                   </p>
                 </div>

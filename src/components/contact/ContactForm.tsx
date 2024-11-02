@@ -108,7 +108,7 @@ const ContactForm = () => {
     <div className=" flex flex-col w-full justify-center items-center">
       <form
         onSubmit={onSubmit}
-        className="flex flex-col mt-8 space-y-4 mx-auto w-full px-6 sm:px-12  md:px-24 lg:px-6"
+        className="flex flex-col mt-2 space-y-4 mx-auto w-full px-6 sm:px-12  md:px-24 lg:px-6 text-triadgray  "
       >
         <input
           type="text"
@@ -121,7 +121,7 @@ const ContactForm = () => {
           {" "}
           <div className="flex w-1/2 flex-col gap-2">
             {" "}
-            <label htmlFor="name" className=" ">
+            <label htmlFor="name" className="text-sm font-bold  ">
               Imie:
             </label>
             <input
@@ -130,12 +130,12 @@ const ContactForm = () => {
               required
               placeholder="wpisz imię"
               name="name"
-              className=" bg-white text-base outline-white  focus:bg-white  border-b-2 border-primary shadow-none px-2 py-1"
+              className=" bg-white text-sm outline-white  focus:bg-white  border-b-2 border-primary shadow-none px-2 py-1"
             ></input>
           </div>
           <div className="flex w-1/2 flex-col gap-2">
             {" "}
-            <label htmlFor="email" className="">
+            <label htmlFor="email" className="text-sm font-bold ">
               E-mail:
             </label>
             <input
@@ -144,7 +144,7 @@ const ContactForm = () => {
               required
               placeholder="wpisz email"
               name="email"
-              className="bg-white text-base outline-white  focus:bg-white  border-b-2 border-primary shadow-none px-2 py-1"
+              className="bg-white text-sm outline-white  focus:bg-white  border-b-2 border-primary shadow-none px-2 py-1"
             ></input>
           </div>
         </div>
@@ -152,7 +152,7 @@ const ContactForm = () => {
           {" "}
           <div className="flex flex-col gap-2">
             {" "}
-            <label htmlFor="subject" className="  ">
+            <label htmlFor="subject" className="text-sm font-bold ">
               Temat:
             </label>
             <input
@@ -161,11 +161,11 @@ const ContactForm = () => {
               required
               placeholder=" wpisz temat wiadomości"
               name="subject"
-              className=" bg-white text-base outline-white  focus:bg-white  border-b-2 border-primary shadow-none w-full  px-2 py-1 "
+              className=" bg-white text-sm outline-white  focus:bg-white  border-b-2 border-primary shadow-none w-full  px-2 py-1 "
             ></input>
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="message" className="  ">
+            <label htmlFor="message" className=" text-sm font-bold  ">
               Treść wiadomości:
             </label>
             <textarea
@@ -174,7 +174,7 @@ const ContactForm = () => {
               required
               placeholder="wpisz treść swojej wiadomości"
               rows={5}
-              className="border-2 border-primary px-2 py-2 outline-primary"
+              className=" text-sm border-2 border-primary px-2 py-2 outline-primary"
             ></textarea>
           </div>
         </div>

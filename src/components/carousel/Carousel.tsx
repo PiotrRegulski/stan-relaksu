@@ -144,7 +144,7 @@ const Carousel: React.FC = () => {
                           {image.alt}
                         </p>
                         <p
-                          className={`${lato.className} text-neutral-200 md:text-lg lg:text-xl xl:text-2xl text-justify `}
+                          className={`${lato.className} text-neutral-200 px-3 md:text-lg lg:text-xl xl:text-xl text-justify `}
                         >
                           {image.description}
                         </p>

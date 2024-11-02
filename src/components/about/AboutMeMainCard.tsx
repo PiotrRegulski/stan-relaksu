@@ -9,7 +9,7 @@ import PageHeader from "../homepage/PageHeader";
 
 const AboutMeMainCard = () => {
   return (
-    <div className={`flex  md:flex-row mt-12   `}>
+    <div className={`flex  md:flex-row mt-4   `}>
      
       <div className="flex flex-col md:flex-row  justify-center items-center   w-full xl:px-24  2xl:px-56 bg-gradient-to-t from-secondary from-50% to-transparent   bg-opacity-40   ">
         <div className="flex lg:w-1/2 justify-end py-8  ">
@@ -56,7 +56,7 @@ const AboutMeMainCard = () => {
               <strong> komfortowym zaciszu gabinetu Stan Relaksu.</strong>
             </p>
           </article>
-          <div className="flex justify-center items-center w-full gap-24">
+          <div className="flex justify-center items-center w-full gap-4 md:gap-24">
             <ButtonReservation />
             <ButtonOffers />
           </div>

@@ -15,7 +15,7 @@ const OffersCardFace = () => {
     <motion.div
       initial={{ x: -100, opacity: 0 }}
       animate={isInView ? { x: 0, opacity: 1 } : {}}
-      transition={{ duration: 5, ease: "easeInOut", type: "spring" }}
+      transition={{ duration: 1, ease: "easeInOut", type: "tween" }}
     >
       <PageHeader id={"offer"}>Zabiegi na twarz</PageHeader>
       <div ref={ref} className="flex justify-center  w-full my-4 md:my-2 2xl:my-12 sm:h-full md:min-h-[33rem] ">

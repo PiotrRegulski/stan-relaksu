@@ -12,9 +12,9 @@ const OffersCardBody = () => {
   return (
     <motion.div
      
-      initial={{ x:-200, opacity: 0 }}
+      initial={{ x:-100, opacity: 0 }}
       animate={isInView ? { x: 0, opacity: 1 } : {}}
-      transition={{ duration: 5, ease: "easeInOut", type: "spring" }}
+      transition={{ duration: 1, ease: "easeInOut", type: "tween" }}
       className="mt-[2rem]"
     >
       <PageHeader id={"offer-title"}>Zabiegi na ciało</PageHeader>

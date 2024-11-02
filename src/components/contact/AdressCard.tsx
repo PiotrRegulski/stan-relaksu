@@ -25,7 +25,7 @@ const AdressCard = (props: any) => {
 
       <div className="flex justify-center">
         <p
-          className={`${Noto.className} text-center text-base md:text-2xl lg:text-lg font-semibold`}
+          className={`${Noto.className} text-center text-base md:text-2xl lg:text-lg font-semibold text-triadgray `}
         >
           {props.title}
         </p>

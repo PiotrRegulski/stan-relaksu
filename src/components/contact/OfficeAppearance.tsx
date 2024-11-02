@@ -42,13 +42,13 @@ const OfficeAppearance = () => {
   return (
     <div
      
-      className="flex flex-col  bg-gradient-to-r from-secondary via-transparent to-secondary"
+      className="flex flex-col  "
     >
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={isInViewTop ? { y: 0, opacity: 1 } : {}}
-        transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
-        className="bg-gradient-to-r from-secondary via-transparent to-secondary rounded-xl my-4  "
+        transition={{ duration: 2, ease: "easeInOut", type: "tween" }}
+        className="bg-white rounded-xl my-4 text-triadgray  "
          ref={refTop}>
         <div className="flex flex-col w-full justify-center items-center my-6 ">
           <h3 className={`${Noto.className} text-center lg:text-xl`}>
@@ -63,12 +63,12 @@ const OfficeAppearance = () => {
          
         </div>
       </motion.div>
-      <div className="flex flex-row overflow-x-auto  gap-2 w-full lg:justify-center lg:items-center "ref={refBottom}>
+      <div className="flex flex-row overflow-x-auto  gap-2 w-full lg:justify-center lg:items-center bg-gradient-to-r from-secondary via-transparent to-secondary "ref={refBottom}>
         {" "}
         {imgURLs.map((imgUrl, index) => (
           <div
             key={imgUrl.label}
-            className="relative flex shrink-0 w-72 h-[21rem] lg:h-[25rem] xl:h-[28rem] 2xl:h-[28rem] overflow-hidden my-4"
+            className="relative flex shrink-0 w-72 h-[23rem] lg:h-[25rem] xl:h-[28rem] 2xl:h-[28rem] overflow-hidden my-4"
             style={{ marginTop: imgUrl.marginTop }}
           >
             <motion.div
@@ -76,7 +76,7 @@ const OfficeAppearance = () => {
               initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
               whileHover={{ scale: 1.1 }}
               animate={isInViewBottom ? { x: 0, opacity: 1 } : {}}
-              transition={{ type: "spring", duration:4 }}
+              transition={{ type: "tween", duration: 1 }}
             >
               <ImageCard
                 key={imgUrl.label}

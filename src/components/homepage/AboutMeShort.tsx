@@ -37,19 +37,19 @@ const AboutMeShort = () => {
       <motion.div
         className="flex justify-end md:w-1/2"
         initial={{ x: -200, opacity: 0 }}
-        animate={isInView ? { x: 0, opacity: 1 } : {}}
-        transition={{ duration: 3, type:"spring" }}
+        animate={isInView ? { x: 0, opacity: 2 } : {}}
+        transition={{ duration: 1, type:"tween" }}
       >
         <motion.div
           id="troche-o-omnie"
           className="relative w-[12rem] sm:w-[16rem] md:w-[15rem] xl:w-[20rem] h-[16rem] sm:h-[19rem] xl:h-[27rem] z-20 overflow-hidden"
-          transition={{ type: "spring", duration: 1 }}
+          transition={{ type: "spring", duration: 2 }}
           style={{ y: springImageY }}
         >
           <motion.div
             className="relative w-full h-full"
             whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", duration: 1 }}
+            transition={{ type: "spring", duration: 2 }}
           >
             <Image
               id="photo1"
@@ -70,7 +70,7 @@ const AboutMeShort = () => {
           <motion.div
             className=" relative w-full h-full"
             whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", duration: 1 }}
+            transition={{ type: "tween", duration: 2 }}
           >
             <Image
               id="photo2"
@@ -88,7 +88,7 @@ const AboutMeShort = () => {
         className="lg:w-1/2 mx-4 my-4"
         initial={{ x: 800, opacity: 0 }}
         animate={isInView ? { x: 0, opacity: 1 } : {}}
-        transition={{ duration: 3,  type: "spring" }}
+        transition={{ duration: 2,  type: "tween" }}
       >
         <h2 className={`${Noto.className} text-2xl `}>
           Cześć, jestem Kinga Wołoszka

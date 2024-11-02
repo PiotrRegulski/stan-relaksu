@@ -6,14 +6,9 @@
 @import "~slick-carousel/slick/slick-theme.css";
 strong {
     @apply font-bold;
-    @apply text-black;
+   
     
 
 }
 
-p {
-    @apply text-black
-}
-h1 {
-    @apply text-black
-}
+
