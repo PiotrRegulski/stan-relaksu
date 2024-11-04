@@ -6,7 +6,7 @@ import AdressCard from "./AdressCard";
 import DetailedAddress from "./DetailedAddress";
 import ContactForm from "./ContactForm";
 import OfficeAppearance from "./OfficeAppearance";
-import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import { motion, useInView,} from "framer-motion";
 import { Noto } from "../fonts";
 import { useMediaQuery } from "../utilis/useMediaQuery";
 
@@ -18,7 +18,7 @@ const Contact = () => {
   const refLogo = useRef(null);
   const isInViewLogo = useInView(refLogo, { once: true });
   const isSmallScreen = useMediaQuery("(max-width: 1023px)");
-  console.log(isSmallScreen);
+ 
   return (
     <div id={"kontakt"} className="w-full">
       <PageHeader id={"kontttttakt-header"}>Skontaktuj się</PageHeader>

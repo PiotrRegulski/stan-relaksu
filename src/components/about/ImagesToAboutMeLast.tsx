@@ -29,12 +29,12 @@ const imageURLs = [
 
 const ImagesToAboutMeLast = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full sm:px-8 xl:w-2/3 py-12 gap-2 ">
-      <div className="flex flex-col  sm:flex-row gap-2 overflow-x-auto   ">
-        {imageURLs.slice(0, 2).map((imgUrl) => (
+    <div className="flex flex-row items-center justify-center w-full sm:px-8  py-1 gap-2 ">
+      <div className="flex flex-col justify-center items-center  lg:flex-row gap-4 overflow-x-auto  w-full  ">
+        {imageURLs.map((imgUrl) => (
           <div
             key={imgUrl.label}
-            className="flex flex-col  w-80 h-72 lg:w-72 lg:h-64 shadow-md shadow-black overflow-hidden my-4"
+            className="flex  w-80 h-72 sm:w-[24rem] lg:w-96 lg:h-96 shadow-md shadow-black overflow-hidden my-4"
           >
             <motion.div
               className="w-full h-full"
@@ -53,7 +53,7 @@ const ImagesToAboutMeLast = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center w-full mt-2">
+      {/* <div className="flex justify-center w-full mt-2">
         <div className="flex flex-col w-80 h-72 lg:w-72 lg:h-64 shadow-xl shadow-black overflow-hidden">
           <motion.div
             className="w-full h-full"
@@ -70,7 +70,7 @@ const ImagesToAboutMeLast = () => {
             />
           </motion.div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

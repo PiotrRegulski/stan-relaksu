@@ -25,12 +25,12 @@ const ImageToOffersShort = () => {
   return (
     <div
       ref={ref}
-      className="flex overflow-x-auto py-12   pl-1 md:gap-4 w-screen sm:justify-center sm:items-center bg-gradient-to-b from-secondary to-transparent  "
+      className="flex overflow-x-auto py-3 gap-2   px-4 md:gap-4 w-screen sm:justify-center sm:items-center   "
     >
       {imgURLs.map((imgUrl, index) => (
         <div
           key={imgUrl.label}
-          className="relative flex shrink-0 w-[15rem] h-[24rem] md:w-[20rem] md:h-[25rem] overflow-hidden mr-2 md:mr-0"
+          className="relative flex shrink-0 w-[18rem] h-[26rem] md:w-[18rem] md:h-[26rem] overflow-hidden  md:mr-0 border-2 border-triadgray rounded-xl "
           style={{ marginTop: imgUrl.marginTop }}
         >
           <motion.div
@@ -47,7 +47,7 @@ const ImageToOffersShort = () => {
               alt={imgUrl.label}
             />
           </motion.div>
-          <div className="absolute bottom-0 w-full font-[Cormorant-Garamond] bg-opacity-50 bg-black text-white text-center py-2">
+          <div className="absolute bottom-0 w-full  bg-opacity-50 bg-black text-white text-center py-2 px-3">
             {imgUrl.caption}
           </div>
         </div>

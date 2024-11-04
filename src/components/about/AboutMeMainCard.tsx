@@ -14,7 +14,7 @@ const AboutMeMainCard = () => {
       <div className="flex flex-col md:flex-row  justify-center items-center   w-full xl:px-24  2xl:px-56 bg-gradient-to-t from-secondary from-50% to-transparent   bg-opacity-40   ">
         <div className="flex lg:w-1/2 justify-end py-8  ">
           <motion.div
-            className="relative w-72 h-72 md:w-[18rem] md:h-[18rem] lg:w-[20rem] lg:h-[20rem] mx-2"
+            className="relative w-72 h-72 md:w-[18rem] md:h-[18rem] lg:w-[18rem] lg:h-[18rem] mx-2"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeInOut" }}
