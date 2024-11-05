@@ -80,15 +80,15 @@ const ImagesToAboutMeArticle = () => {
       <div className="flex flex-col justify-center w-full py-4">
         {" "}
         <motion.div
-          className=" flex w-full flex-col justify-center items-center  bg-white py-4"
+          className=" flex w-full flex-col justify-center items-center  bg-white py-4 "
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "spring", duration: 5, ease: "easeInOut" }}
         >
-          <h2 className={`${Noto.className} text-left text-xl md:text-2xl xl:text-3xl px-3 w-2/3 `}>
+          <h2 className={`${Noto.className} text-left text-xl  md:text-2xl xl:text-3xl w-full px-3 lg:w-2/3 `}>
             Przyniosę Ci ulgę w bólu oraz napięciu.
           </h2>
-          <p className="text-justify  md:w-2/3 text-lg md:text-xl xl:text-xl mx-auto md:mx-4 my-2  px-3 py-2     h-full">
+          <p className="text-justify  md:w-2/3 text-lg md:text-xl xl:text-xl mx-auto md:mx-4 my-2  px-3 py-2  lg:w-2/3   h-full">
             Stosując techniki
             <strong> masażu powięziowego</strong> i{" "}
             <strong>terapii manualnej</strong>, podpowiem Ci jak możesz pracować
@@ -100,7 +100,7 @@ const ImagesToAboutMeArticle = () => {
       </div>
       <div className=" flex flex-col w-full justify-center items-center  md:py-8 ">
         <h2
-          className={`${Noto.className} text-xl px-2  md:text-3xl xl:text-3xl text-left w-2/3`}
+          className={`${Noto.className}  text-xl px-3   md:text-3xl xl:text-3xl text-left lg:w-2/3`}
         >
           Kompleksowa Terapia i Rehabilitacja:<br></br> Od Problemów Jelitowych
           Po
@@ -110,7 +110,7 @@ const ImagesToAboutMeArticle = () => {
           </span>
         </h2>
 
-        <p className="text-justify  text-lg md:text-xl xl:text-xl mx-auto md:mx-4 my-2  px-3 py-3  lg:my-2 2xl:my-2    h-full w-2/3">
+        <p className="text-justify  text-lg md:text-xl xl:text-xl mx-auto md:mx-4 my-2  px-3 py-3  lg:my-2 2xl:my-2    h-full lg:w-2/3">
           W pracy zajmuje się <strong>problemami jelitow-trawiennymi</strong>,
           <strong> terapią uroginekologiczną</strong>, pracą z blizną po{" "}
           cesarskim cięciu, bliznach operacyjnych, bolesnymi miesiączkami czy
