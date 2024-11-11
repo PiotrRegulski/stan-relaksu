@@ -23,7 +23,7 @@ const images: ImageData[] = [
     src: "/carousel/kobido-kinesiotaping.jpg",
     alt: " Kobido z kinesiotapingiem limfatycznym",
     description:
-      "Zdrowszy i promienny wygląd twarzy, spłycenie zmarszczek i bruzd mimicznych to jedne z wielu korzyści płynących z rytuału Kobido",
+      "Zdrowszy i promienny wygląd twarzy, spłycenie zmarszczek oraz bruzd mimicznych to jedne z wielu korzyści płynących z rytuału Kobido.",
     linkDetails: "offer/masaz-kobido",
     linkBooksy:
       "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
@@ -34,7 +34,7 @@ const images: ImageData[] = [
     src: "/terapia-manualna-zatok/terapia-zatok-cover.jpg",
     alt: "Terapia manualna w bólach zatok ",
     description:
-      "Techniki manualne stosowane podczas terapii pomagają w odblokowaniu dróg oddechowych, poprawie krążenia krwi oraz zmniejszeniu napięcia mięśniowego w okolicy twarzy i głowy.",
+      "Techniki manualne stosowane podczas terapii pomagają w odblokowaniu dróg oddechowych, poprawiają krążenie krwi oraz zmniejszają napięcie mięśniowe w okolicy twarzy i głowy.",
     linkDetails: "offer/terapia-manualna-w-bolach-zatok",
     linkBooksy:
       "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
@@ -56,7 +56,7 @@ const images: ImageData[] = [
     src: "/carousel/terapia-manualna-kolano-klawiki.jpg",
     alt: "Terapia manualna",
     description:
-      "To specjalistyczne techniki mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenia sztywności i ograniczeń w zakresie ruchomości ",
+      "To specjalistyczne techniki mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenie sztywności i ograniczeń w zakresie ruchomości. ",
     linkDetails: "offer/terapia-manualna",
     linkBooksy:
       "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
@@ -67,7 +67,7 @@ const images: ImageData[] = [
     src: "/carousel/masaż-tkanek-głebokich.jpg",
     alt: "Masaż tkanek głębokich",
     description:
-      "Niezwykle skuteczna technika pracy z ciałem koncentrująca się na rozluźnieniu głębokich warstwach mięśni i tkanki powięziowej. ",
+      "Niezwykle skuteczna technika pracy z ciałem, koncentrująca się na rozluźnieniu głębokich warstw mięśni i tkanki powięziowej. ",
     linkDetails: "offer/masaz-sportowy",
     linkBooksy:
       "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
@@ -78,7 +78,7 @@ const images: ImageData[] = [
     src: "/masaz-relaksacyjny/masaz-relaksacyjny-cover-top.jpg",
     alt: "Masaż relaksacyjny Stanu Relaksu",
     description:
-      "Przenieś się do pełnego stanu relaksu z masażem, który głęboko odpręży Twoje mięśnie, zdejmie napięcie z układu nerwowego zmniejszając uczucie stresu.  ",
+      "Przenieś się do pełnego stanu relaksu z masażem, który głęboko odpręży Twoje mięśnie i zdejmie napięcie z układu nerwowego, zmniejszając uczucie stresu. ",
     linkDetails: "offer/masaz-relaksacyjny-stanu-relaksu",
     linkBooksy:
       "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",

@@ -171,10 +171,10 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     "rozluźnianie",
   ];
   return (
-    <div className=" mt-[5rem] lg:mt-[9rem]">
+    <div className=" mt-[3rem] sm:mt-[2rem] lg:mt-[9rem]">
       <div
         id={"offerDetail"}
-        className="w-full  bg-gradient-to-r from-mainthemelogo from-50% to-mainthemelogo/40 h-[24rem] flex  items-center text-triadbrown "
+        className="w-full  bg-gradient-to-r from-mainthemelogo from-50% to-mainthemelogo/40 h-[20rem] flex  items-center text-triadbrown "
       >
         {/* <Image
             src={`/${offerDetail.imageHeader}`}
@@ -184,8 +184,8 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             className=" object-cover  w-full h-full"
             sizes="(max-width: 600px) 100vw, 50vw"
           /> */}
-        <div className="flex flex-col justify-center items-center w-full  lg:w-3/4 sm:border-2 border-l-0 sm:rounded-r-full text-xl border-triadbrown bg-mainthemelogo ">
-          <div className=" md:w-1/2 my-8 w-full px-2">
+        <div className="flex flex-col justify-center items-center w-full  md:w-3/4 md:border-2 border-l-0 md:rounded-r-full text-xl border-triadbrown bg-mainthemelogo ">
+          <div className=" xl:w-1/2 my-8 w-full px-2">
             {" "}
             <h1 className={`${Noto.className} font-semibold text-xl md:text-2xl my-4`}>
               {offerDetail.title}
@@ -219,12 +219,12 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
               </div>
 
               <div className="flex justify-center w-full lg:w-1/2 items-center   ">
-                <div className="relative h-[15rem] w-full sm:h-[22rem] sm:w-full md:h-[22rem] md:w-full lg:w-[25rem] lg:h-[20rem] xl:h-[20rem] xl:w-[25rem]">
+                <div className="relative h-[15rem] w-full sm:h-[22rem] sm:w-full md:h-[22rem] md:w-2/3 lg:w-[25rem] lg:h-[20rem] xl:h-[20rem] xl:w-[25rem]">
                   <Image
                     src={`/${offerDetail.image}`}
                     alt={offerDetail.title}
                     fill
-                    className="object-top object-cover sm:object-cover md:object-cover rounded   sm:px-2 md:px-0 "
+                    className=" object-cover sm:object-cover md:object-cover object-center rounded   sm:px-2 md:px-0 "
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
@@ -237,7 +237,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                     src={`/${offerDetail.imagedetailfo}`}
                     alt={offerDetail.title}
                     fill
-                    className="object-cover sm:object-cover md:object-cover sm:rounded   md:px-0  "
+                    className="object-cover sm:object-cover md:object-cover object-center  sm:rounded   md:px-0  "
                     sizes="(max-width: 600px) 100vw,"
                   />
                 </div>
@@ -268,12 +268,12 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
               </div>
 
               <div className="flex justify-center w-full lg:w-1/2 items-center   ">
-                <div className="relative h-[15rem] w-full sm:h-[22rem] sm:w-full md:h-[22rem] md:w-full lg:w-[25rem] lg:h-[20rem] xl:h-[20rem] xl:w-[25rem]">
+                <div className="relative h-[15rem] w-full sm:h-[22rem] sm:w-full md:h-[22rem] md:w-2/3 lg:w-[25rem] lg:h-[20rem] xl:h-[20rem] xl:w-[25rem]">
                   <Image
                     src={`/${offerDetail.imagedetailf}`}
                     alt={offerDetail.title}
                     fill
-                    className="object-cover sm:object-cover md:object-cover rounded  sm:px-2 md:px-0  "
+                    className="object-cover sm:object-cover md:object-cover  rounded  sm:px-2 md:px-0  "
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>

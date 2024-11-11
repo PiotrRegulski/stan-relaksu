@@ -45,7 +45,7 @@ const Recommendation = (props: any) => {
           </div>
           <div className="flex justify-center items-center  border-l-2 border-gray-400  h-[5rem]">
             <div className="mx-2">
-              <p className="w-full  text-center font-semibold text-triadbrown text-lg mx-2 ">
+              <p className="w-full  text-center font-semibold text-triadbrown text-lg px-2 ">
                 {props.tRecommendation}
               </p>
             </div>

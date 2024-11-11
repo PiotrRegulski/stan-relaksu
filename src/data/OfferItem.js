@@ -925,7 +925,7 @@ export const OfferItem = [
       "Terapia manualna w bólach zatok to naturalna metoda łagodzenia dolegliwości związanych z zatokami.",
 
     contentFirst:
-      "Techniki manualne stosowane podczas terapii pomagają w odblokowaniu dróg oddechowych, poprawie krążenia krwi oraz zmniejszeniu napięcia mięśniowego w okolicy twarzy i głowy. Dzięki temu pacjenci mogą odczuć ulgę, lepsze oddychanie i redukcję bólu. To holistyczne podejście wspiera zdrowie całego organizmu, przynosząc naturalną ulgę w objawach zatokowych. ",
+      "Techniki manualne stosowane podczas terapii pomagają w odblokowaniu dróg oddechowych, poprawie krążenia krwi oraz zmniejszeniu napięcia mięśniowego w okolicy twarzy i głowy. Dzięki temu pacjenci mogą odczuć ulgę, lepsze oddychanie i redukcję bólu. ",
     advantages: [
       { title: "" },
       {
@@ -973,7 +973,7 @@ export const OfferItem = [
       {
         id: "3",
         recommendation:
-          "Zależy Ci na zmniejszeniu zapalenia i ulgi w przewlekłych problemach zatokowych.",
+          "Szukasz ulgi w przewlekłych problemach zatokowych",
       },
     ],
     procedures: [
