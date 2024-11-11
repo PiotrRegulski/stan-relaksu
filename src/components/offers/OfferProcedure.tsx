@@ -1,5 +1,5 @@
 import React from "react";
-import { lato } from "../fonts";
+import { lato, Noto } from "../fonts";
 import Image from "next/image";
 import ExpandableText from "./ExpandableText";
 import ProcedureItem from "./ProcedureItem";
@@ -26,10 +26,10 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
   return (
     <div
       id="main-adventages"
-      className="flex flex-col min-h-max  bg-white 2xl:mx-36 md:my-4 mt-12"
+      className="flex flex-col min-h-max  bg-white 2xl:mx-36 md:my-4  text-triadbrown"
     >
-      <div className="w-full py-[3em] px-[1em]">
-        <h1 className={` text-center text-xl md:text-4xl font-bold`}>
+      <div className="w-full py-3 px-[1em]">
+        <h1 className={`${Noto.className} text-center text-xl md:text-2xl font-bold`}>
           Jak przebiega zabieg?
         </h1>
       </div>

@@ -36,7 +36,7 @@ const ImagesToOfferShortLast = () => {
           style={{ marginTop: imgUrl.marginTop }}
         >
           <motion.div
-            className="w-full h-full border-white border-2"
+            className="w-full h-full "
             whileHover={{ scale: 1.1 }}
             initial={{ x: 100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
@@ -45,7 +45,7 @@ const ImagesToOfferShortLast = () => {
             <ImageCard key={imgUrl.label} href={imgUrl.href} src={imgUrl.src} alt={imgUrl.label} />
           </motion.div>
           <motion.div
-            className="absolute bottom-0 w-full bg-opacity-50 bg-black border-2 border-white text-white text-center py-2"
+            className="absolute bottom-0 w-full bg-opacity-20 bg-black text-white text-center py-2"
             initial={{ x: 100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ type: "spring", duration: 1 }}

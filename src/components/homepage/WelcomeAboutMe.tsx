@@ -16,9 +16,13 @@ const WelcomeAboutMe = () => {
         transition={{ duration: 1, ease: "easeInOut" }}
         ref={ref}
       >
-        <h1 className="text-center ">Stan Relaksu - Gabinet terapii manualnej i masażu</h1>
-        <p className=" text-center md:text-center  md:my-0">
-          Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie,<br></br> osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.
+        <h1 className="text-center text-triadgray ">
+          Stan Relaksu - Gabinet terapii manualnej i masażu
+        </h1>
+        <p className=" text-center md:text-center  md:my-0 text-triadgray">
+          Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie,<br></br>{" "}
+          osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się
+          lepiej.
         </p>
       </motion.div>
       <AboutMeShort />

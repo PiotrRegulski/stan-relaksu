@@ -49,7 +49,7 @@ const AboutMeShort = () => {
           <motion.div
             className="relative w-full h-full"
             whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", duration: 2 }}
+            transition={{ type: "spring", duration: 1 }}
           >
             <Image
               id="photo1"
@@ -70,7 +70,7 @@ const AboutMeShort = () => {
           <motion.div
             className=" relative w-full h-full"
             whileHover={{ scale: 1.1 }}
-            transition={{ type: "tween", duration: 2 }}
+            transition={{ type: "spring", duration: 1 }}
           >
             <Image
               id="photo2"
@@ -85,7 +85,7 @@ const AboutMeShort = () => {
         </motion.div>
       </motion.div>
       <motion.div
-        className="lg:w-1/2 mx-4 my-4"
+        className="lg:w-1/2 mx-4 my-4 text-triadgray"
         initial={{ x: 800, opacity: 0 }}
         animate={isInView ? { x: 0, opacity: 1 } : {}}
         transition={{ duration: 2,  type: "tween" }}

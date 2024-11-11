@@ -20,7 +20,7 @@ export const OfferItem = [
     contentMainOffer: "Przenieś się do pełnego stanu relaksu.",
 
     contentFirst:
-      "Przenieś się do pełnego stanu relaksu z masażem, który głęboko odpręży Twoje mięśnie, zdejmie napięcie z układu nerwowego zmniejszając uczucie stresu. Połączenie aromatycznych naturalnych olejków i kojącego dotyku  wprowadzi Cię wspaniały nastrój. ",
+      "Przenieś się do pełnego stanu relaksu z masażem, który głęboko odpręży Twoje mięśnie, zdejmie napięcie z układu nerwowego, zmniejszając uczucie stresu. Połączenie aromatycznych, naturalnych olejków i kojącego dotyku wprowadzi Cię w wspaniały nastrój.",
     advantages: [
       { title: "" },
       {
@@ -56,7 +56,7 @@ export const OfferItem = [
       {
         id: "1",
         recommendation:
-          "Zmagasz się z napięciem czy bólami pleców, karku lub stawów ",
+          "Masz napięcie lub bóle pleców, karku, albo stawów",
       },
       {
         id: "2",
@@ -97,9 +97,9 @@ export const OfferItem = [
     imagedetailfo: "kobido/kobido-secondP.jpg",
     prices: [{ id: "cenaKobido", priceName: "90 minut", price: "300 zł" }],
     contentMainOffer:
-      "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwa perłą w świecie pielęgnacji twarzy.",
+      "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwą perłą w świecie pielęgnacji twarzy.",
     contentFirst:
-      "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwa perłą w świecie pielęgnacji twarzy. Wywodzący się z Japoni niechirurgiczny lifting twarzy, który od wieków zachwyca swoją skutecznością.",
+      "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwą perłą w świecie pielęgnacji twarzy. Wywodzący się z Japonii niechirurgiczny lifting twarzy, który od wieków zachwyca swoją skutecznością.",
     advantages: [
       { title: "Efekt liftingu i wymodelowania rysów" },
       {
@@ -109,12 +109,12 @@ export const OfferItem = [
       { title: "Zmniejszenie napięcia i stresu w całym ciele" },
       {
         description:
-          "Zdrowszy i promienny wygląd twarzy, spłycenie zmarszczek i bruzd mimicznych to jedne z wielu korzyści płynących z rytuału Kobido. Dla przedłużenie efektów na koniec zabiegu zakładamy kinesiotaping estetyczny. Odprężenie płynące masażu twarzy Kobido przynosi zrelaksowanie, zmniejszenie napięcia i stresu w całym ciele.  ",
+          "Zdrowszy i promienny wygląd twarzy, spłycenie zmarszczek i bruzd mimicznych to jedne z wielu korzyści płynących z rytuału Kobido. Dla przedłużenia efektów na koniec zabiegu zakładamy kinesiotaping estetyczny. Odprężenie płynące z masażu twarzy Kobido przynosi zrelaksowanie, zmniejszenie napięcia i stresu w całym ciele.",
       },
       { title: "To doskonałe przygotowanie tkanek przed innymi zabiegami" },
       {
         description:
-          "Zabieg można powtarzać co 2 tygodnie na początku, a po kilku sesjach przejść do jednego zabiegu miesięcznie. To doskonałe przygotowanie tkanek przed innymi zabiegami medycyny estetycznej",
+          "Zabieg można powtarzać co 2 tygodnie na początku, a po kilku sesjach przejść do jednego zabiegu miesięcznie. To doskonałe przygotowanie tkanek przed innymi zabiegami medycyny estetycznej.",
       },
     ],
     contraindications: [
@@ -152,37 +152,37 @@ export const OfferItem = [
       { id: "6", indication: "Wdoczne zmarszczki mimiczne " },
     ],
     recommendations: [
-      { id: "1", recommendation: "Zmniejszyć napięcie i stres w całym ciele." },
+      { id: "1", recommendation: "Chcesz zmniejszyć napięcie i stres w całym ciele." },
       { id: "2", recommendation: "Uzyskać efekt liftingu twarzy." },
       {
         id: "3",
-        recommendation: "Przygotować się do zabiegu medycyny estetycznej",
+        recommendation: "Przygotować się do zabiegu medycyny estetycznej.",
       },
     ],
     procedures: [
       { title: "Przygotowanie:" },
       {
         procedure:
-          "Klient/ka kładzie się na stole do masażu, z odkrytym ciałem od linii dekoltu. Do masażu Kobido warto zdjąć całą biżuterie łacznie z kolczykami a włosy powinny być rozwiązane. Przed zabiegiem oczyścimy dokładnie twarz ale jeżeli jest taka możliwość warto na zabieg przyjść bez makijażu.",
+          "Klient/ka kładzie się na stole do masażu, z odkrytym ciałem od linii dekoltu. Do masażu Kobido warto zdjąć całą biżuterię, łącznie z kolczykami, a włosy powinny być rozwiązane. Przed zabiegiem dokładnie oczyszczamy twarz, ale jeśli jest taka możliwość, warto przyjść na zabieg bez makijażu.",
       },
       { title: "Techniki masażu:" },
       {
         procedurefirst:
-          " Masaż twarzy Kobido to rytuał złożony z kilku etapów. Pierwsza część to intensywny masaż tkanek głębokich w obrębie szyi i twarzy. Relaksacja mięśniowo-powięziowa twarzy, szyi i dekoltu pozwala na rozluźnienie napięć które mają bezpośredni wpływ na powstawanie ciężkiego wyrazu twarzy, zmarszczek, zastojów limfatycznych. Zbyt duże napięcie w mięśniach mimicznych przyczynia się do powstawania zmarszczek statycznych i dynamicznych zgodnie z mięśniową teorią starzenia się twarzy. Techniki pierwszego etapu masażu Kobido przywracają elastyczność mięśniom okolicy twarzy, dekoltu i szyi dzięki czemu uzyskujemy już na tym etapie efekt spłycenia zmarszczek.",
+          "Masaż twarzy Kobido to rytuał złożony z kilku etapów. Pierwsza część to intensywny masaż tkanek głębokich szyi i twarzy. Relaksacja mięśniowo-powięziowa twarzy, szyi i dekoltu rozluźnia napięcia wpływające na wyraz twarzy, zmarszczki i zastoiny limfatyczne. Nadmierne napięcie mięśni mimicznych przyczynia się do powstawania zmarszczek zgodnie z teorią starzenia się twarzy. Techniki pierwszego etapu masażu Kobido przywracają elastyczność mięśniom twarzy, dekoltu i szyi, spłycając zmarszczki już na tym etapie.",
         proceduresec:
-          "Następnym etapem jest głęboka relaksacja mięśni szyi, klatki piersiowej i karku. Uwolnienie napięć z tych okolic bezpośrednio wpływa na naszą postawę i wygląd twarzy. Napięcia skumulowane w odcinku szyjnym i karku przenoszą się na okolice twarzy poprzez połączenie taśm mięśniowo-powięziowych. Jest to niezwykle ważny etap dzięki któremu możemy uzyskać poprawę wyglądu naszej twarzy i postawy",
+          "Następnym etapem jest głęboka relaksacja mięśni szyi, klatki piersiowej i karku. Uwolnienie napięć z tych okolic wpływa na naszą postawę i wygląd twarzy. Napięcia skumulowane w odcinku szyjnym i karku przenoszą się na twarz poprzez połączenie taśm mięśniowo-powięziowych. To ważny etap, który poprawia wygląd twarzy i postawę.",
         procedurethi:
-          " Trzecim etapem jest drenaż limfatyczny który ma za zadanie pozbyć się zastojów limfy w obrębie twarzy szyi i dekoltu. Ta część poprawia wygląd twarzy, dodaje jej rozświetlenia, oczyszcza z toksyn i zastojów, zmniejsza obrzęk twarzy. Ostatnią częścią jest etap liftingująco-modelujący który poprzez szybkie i intensywne ruchy pobudza krążenie, stymuluje produkcję kolagenu i elastyny, modeluje owal twarzy dzięki czemu możemy zauważyć uniesienie policzków, kącików ust i poprawę w wyglądzie opadających powiek. Znikają oznaki zmęczenia a twarz nabiera blasku, witalności.",
+          "Trzecim etapem jest drenaż limfatyczny, który pozbywa się zastojów limfy w obrębie twarzy, szyi i dekoltu. Ta część poprawia wygląd twarzy, dodaje jej blasku, oczyszcza z toksyn i zmniejsza obrzęk. Ostatnim etapem jest liftingująco-modelujący masaż, który poprzez intensywne ruchy pobudza krążenie, stymuluje produkcję kolagenu i elastyny, modeluje owal twarzy, unosi policzki, kąciki ust i poprawia wygląd opadających powiek. Twarz staje się bardziej promienna i pełna witalności.",
       },
       { title: "Czas trwania:" },
       {
         procedure:
-          "Zabieg trwa zazwyczaj od 60 do 90 minut, w zależności od indywidualnych potrzeb pacjenta",
+          "Zabieg trwa zazwyczaj od 60 do 90 minut, w zależności od indywidualnych potrzeb pacjenta.",
       },
       { title: "Efekty:" },
       {
         procedure:
-          "Ujędrnienie, lifting, wymodelowanie, odmłodzenie, rozświetlenie pobudzenie produkcji kolagenu okolicy twarzy, szyi i dekoltu.",
+          "Ujędrnienie, lifting, wymodelowanie, odmłodzenie, rozświetlenie, pobudzenie produkcji kolagenu okolic twarzy, szyi i dekoltu.",
       },
     ],
   },
@@ -200,25 +200,25 @@ export const OfferItem = [
     imagedetailfo: "igłoterapia/igłoterapia-estetyczna-second.jpg",
     prices: [{ id: "cenaIgłoterapi", priceName: "90 minut", price: "350 zł" }],
     contentMainOffer:
-      "Zaawansowany zabieg, który może odmienić bezinwazyjnie wygląd Twojej twarzy.",
+      "Zaawansowany zabieg, który bezinwazyjnie może odmienić wygląd Twojej twarzy.",
 
     contentFirst:
-      "Igłoterapia estetyczna twarzy z pinezkowaniem to zaawansowany zabieg, który może odmienić bezinwazyjnie wygląd Twojej twarzy. Zmniejszenie napięcia mięśni mimicznych, pobudzenie produkcji kolagenu i elastyny przynosi efekt odmłodzenia..  ",
+      "Igłoterapia estetyczna twarzy z pinezkowaniem to zaawansowany zabieg, który bezinwazyjnie może odmienić wygląd Twojej twarzy. Zmniejszenie napięcia mięśni mimicznych, pobudzenie produkcji kolagenu i elastyny przynosi efekt odmłodzenia.",
     advantages: [
       { title: "Spłycenie zmarszczek" },
       {
         description:
-          "Igłoterapia estetyczna prowadzi do spłycenia zmarszczek i poprawy wyglądu twarzy poprzez stymulację komórek, produkcję kolagenu i elastyny. Głębokie rozluźnienie mięśni mimicznych pomaga w przywróceniu ich odpowiedniej elastyczności za czym idzie wygładzenie. Jest to zabieg, który poprawia wygląd uwydatniając unikalne cechy twarzy więc to idealne rozwiązanie dla osób, które cenią sobie naturalne podkreślenie urody.",
+          "Igłoterapia estetyczna prowadzi do spłycenia zmarszczek i poprawy wyglądu twarzy poprzez stymulację komórek oraz produkcję kolagenu i elastyny. Głębokie rozluźnienie mięśni mimicznych pomaga przywrócić ich odpowiednią elastyczność, co prowadzi do wygładzenia skóry. Jest to zabieg, który poprawia wygląd, uwydatniając unikalne cechy twarzy, więc to idealne rozwiązanie dla osób, które cenią sobie naturalne podkreślenie urody.",
       },
       { title: "Efekt odmłodzenia" },
       {
         description:
-          "Zabieg polega na zastosowaniu cieniutkich igieł akupunkturowych, które wprowadzane są w obrębie mięśni mimicznych dla przywrócenia ich elastyczności i jędrności dzięki czemu uzyskujemy efekt odmłodzenia twarzy. ",
+          "Zabieg polega na zastosowaniu cieniutkich igieł akupunkturowych, które wprowadzane są w obrębie mięśni mimicznych dla przywrócenia ich elastyczności i jędrności, dzięki czemu uzyskujemy efekt odmłodzenia twarzy.",
       },
-      { title: "Unikalne cechy twarzy" },
+      { title: "Korzyści regularnego stosowania Igłoterapii Estetycznej" },
       {
         description:
-          "Przy regularnym stosowaniu igłoterapii estetycznej zauważamy większe odżywienie tkanek, skóra staje się promienna a zmarszczki zostają spłycone. ",
+          "Przy regularnym stosowaniu igłoterapii estetycznej zauważamy większe odżywienie tkanek. Skóra staje się promienna, bardziej jędrna i elastyczna, a zmarszczki zostają wyraźnie spłycone. Dodatkowo, poprawia się ogólna kondycja skóry, co przyczynia się do jej zdrowego i młodszego wyglądu. Regularne zabiegi mogą również wspomóc produkcję kolagenu i elastyny, co dalej wzmacnia i uelastycznia skórę. ",
       },
     ],
     contraindications: [
@@ -239,29 +239,29 @@ export const OfferItem = [
     ],
     recommendations: [
       { id: "1", recommendation: "Chcesz spłycić zmarszczki " },
-      { id: "2", recommendation: "Uzuskać efekt odmłodzeni twarzy" },
+      { id: "2", recommendation: "Uzuskać efekt odmłodzenia twarzy" },
       { id: "3", recommendation: "Uwydatnić unikalne cechy twarzy" },
     ],
     procedures: [
       { title: "Przygotowanie:" },
       {
         procedure:
-          "Pacjent kładzie się na stole do zabiegów, często w luźnej odzieży, aby zapewnić łatwy dostęp do punktów akupunkturowych.",
+          "Klient/ka kładzie się na stole zabiegowym, często ubrany/a w luźną odzież, aby zapewnić łatwy dostęp do punktów akupunkturowych.",
       },
       { title: "Techniki igłoterapii:" },
       {
         procedure:
-          "Terapeuta wprowadza cienkie igły w wybrane punkty na ciele, zgodnie z diagnozą i potrzebami pacjenta.",
+          "Terapeuta wprowadza cienkie igły w wybrane punkty na ciele, zgodnie z diagnozą i indywidualnymi potrzebami klienta/ki.",
       },
       { title: "Czas trwania:" },
       {
         procedure:
-          "Zabieg trwa zazwyczaj od 20 do 40 minut, w zależności od indywidualnych potrzeb pacjenta.",
+          "Zabieg trwa zazwyczaj od 20 do 40 minut, w zależności od indywidualnych potrzeb klienta/ki.",
       },
       { title: "Efekty:" },
       {
         procedure:
-          "Po zabiegu pacjent może odczuwać ulgę w bólu, poprawę krążenia oraz ogólne wzmocnienie organizmu.",
+          "Po zabiegu klient/ka może odczuwać ulgę w bólu, poprawę krążenia oraz ogólne wzmocnienie organizmu.",
       },
     ],
   },
@@ -285,7 +285,7 @@ export const OfferItem = [
       "Jelita to nasz drugi mózg więc ich  prawidłowe funkcjonowanie jest niezbędne dla zdrowia naszego organizmu.",
 
     contentFirst:
-      "Jelita to nasz drugi mózg więc ich  prawidłowe funkcjonowanie jest niezbędne dla zdrowia naszego organizmu. Masaż brzucha w terapii wisceralnej pomaga regulować pracę narządów wewnętrznych za czym idzie przywrócenie homeostazy w innych układach ciała.",
+      "Jelita, często nazywane naszym drugim mózgiem, odgrywają kluczową rolę w utrzymaniu zdrowia całego organizmu. Ich prawidłowe funkcjonowanie jest absolutnie niezbędne dla naszego ogólnego dobrostanu.",
     advantages: [
       { title: "Skuteczność Masażu Brzucha" },
       {
@@ -323,12 +323,12 @@ export const OfferItem = [
       {
         id: "1",
         recommendation:
-          "Zmagasz się z problemami jelitowo-trawiennymi ( IBS, SIBO, zaparcia, zgagi)",
+          "Zmagasz się z problemami jelitowo-trawiennymi",
       },
       {
         id: "2",
         recommendation:
-          "Masz ciągle spuszony brzuch, bolesne miesiączki, zaburzenia hormonalne",
+          "Masz ciągle spuszony brzuch, bolesne miesiączki",
       },
       {
         id: "3",
@@ -339,12 +339,12 @@ export const OfferItem = [
       { title: "Przygotowanie:" },
       {
         procedure:
-          "Każdy zabieg zaczynamy od wywiadu który pozwoli nam na podstawie zebranych informacji na dobranie indywidualnie dostosowanej terapii. ",
+          "Każdy zabieg zaczynamy od wywiadu, który pozwala nam na podstawie zebranych informacji dobrać indywidualnie dostosowaną terapię. ",
       },
       { title: "Jak się przygotować" },
       {
         procedure:
-          "Przed zabiegiem najlepiej jest być 3 godziny bez jedzenia lub na czczo (można spożywać niewielką ilość płynów przed zabiegiem, ale nie zaleca się żucia gumy czy picia kawy z powodu aktywacji enzymów trawiennych przez te produkty). Do zabiegu odkryta jest tylko okolica brzucha, warto więc założyć wygodne spodnie umożliwiające odsłonięcie okolicy podbrzusza.",
+          "Przed zabiegiem najlepiej jest być 3 godziny bez jedzenia lub na czczo. Można spożywać niewielką ilość płynów, ale nie zaleca się żucia gumy ani picia kawy z powodu aktywacji enzymów trawiennych przez te produkty. Do zabiegu odkryta jest tylko okolica brzucha, warto więc założyć wygodne spodnie umożliwiające odsłonięcie okolicy podbrzusza.",
       },
       { title: "Czas trwania:" },
       {
@@ -353,7 +353,7 @@ export const OfferItem = [
       { title: "Efekty:" },
       {
         procedure:
-          "Po masażu brzucha odczuwalne jest zmniejszenie napięcia i spuszenia w obrębie brzucha. W długofalowym stosowaniu terapii wisceralnej zauważalna jest regulacja pracy narządów trawiennych, zmniejszenie dolegliwości ze strony jelit co przekłada się też na zmniejszenie podrażnienia na układzie nerwowym i układzie immunologicznym za czym mogą iść  pozytywne ogólnoustrojowe zmiany (zmniejszenie AZS, trądziku, dolegliwości bólowych w obrębie stawów i tkanek, uogólnionego stanu zapalnego).",
+          "Po masażu brzucha odczuwalne jest zmniejszenie napięcia i spuszenia w obrębie brzucha. Przy długofalowym stosowaniu terapii wisceralnej zauważalna jest regulacja pracy narządów trawiennych oraz zmniejszenie dolegliwości ze strony jelit, co przekłada się również na zmniejszenie podrażnienia układu nerwowego i immunologicznego. Te zmiany mogą prowadzić do pozytywnych ogólnoustrojowych efektów, takich jak zmniejszenie atopowego zapalenia skóry (AZS), trądziku, dolegliwości bólowych w stawach i tkankach, oraz uogólnionego stanu zapalnego.",
       },
     ],
   },
@@ -385,17 +385,17 @@ export const OfferItem = [
       { title: "Zwiększa ogólną mobilność całego ciała" },
       {
         description:
-          "Masaż powięziowy to idealny wybór dla osób, które zmagają się z bólami pleców, karku czy bólami w stawach obwodowych. Indywidualnie dobrana terapia pomoże w zniesieniu napięć w ciele i pozbyciu się dolegliwości bólowych. Praca na przywróceniu ślizgu tkanki powięziowej pozwala na zwiększenie prawidłowych zakresów ruchomości w stawach oraz ogólnej mobilności całego ciała. ",
+          "Indywidualnie dobrana terapia pomaga w zniesieniu napięć i pozbyciu się dolegliwości bólowych. Praca nad przywróceniem ślizgu tkanki powięziowej zwiększa prawidłowe zakresy ruchomości w stawach oraz ogólną mobilność całego ciała. ",
       },
       { title: "Techniki powięziowe zmniejszają uczucie stresu  " },
       {
         description:
-          "Ta holistyczna metoda pracy poprzez znoszenie napięcia z tkanki mięśniowej i powięziowej prowadzi do zmniejszenia uczucia stresu, uwolnienia emocji co prowadzi do głębokiego Stanu Relaksu. Korzyści jakie niesie terapia mięśniowo-powięziowa są wielopłaszczyznowe. Uwalniając napięcie z ciała wpływamy na wcześniej zamrożone i zatrzymane emocje w nim. Uczucie ulgi jakie przenoszą techniki powięziowe wynika z rozluźnienia mięśni, powięzi oraz uwolnienia emocji zawieszonych w  ciele i tkankach. ",
+          "Ta holistyczna metoda pracy poprzez znoszenie napięcia z tkanki mięśniowej i powięziowej prowadzi do zmniejszenia stresu, uwolnienia emocji oraz osiągnięcia głębokiego stanu relaksu. Korzyści terapii mięśniowo-powięziowej są wielopłaszczyznowe. Uwalniając napięcie z ciała, wpływamy na zamrożone i zatrzymane emocje. Uczucie ulgi, jakie przynoszą techniki powięziowe, wynika z rozluźnienia mięśni i powięzi oraz uwolnienia emocji zawieszonych w ciele i tkankach. ",
       },
       { title: "Łagodzenie bólu" },
       {
         description:
-          "Jeśli szukasz ulgi w bólu, zmniejszeniu uczucia stresu i napięcia w ciele to masaż powięziowy będzie dla Ciebie świetnym wyborem.",
+          "Jest to idealna terapia dla osób, które szukają naturalnych metod na poprawę zdrowia fizycznego i emocjonalnego, a także dla tych, którzy chcą zrelaksować się i poprawić jakość swojego życia. Jeśli szukasz ulgi w bólu, zmniejszeniu uczucia stresu i napięcia w ciele to masaż powięziowy będzie dla Ciebie świetnym wyborem.",
       },
     ],
     contraindications: [
@@ -416,10 +416,9 @@ export const OfferItem = [
     recommendations: [
       {
         id: "1",
-        recommendation:
-          "Zmagasz się z napięciem czy bólami pleców, karku lub stawów",
+        recommendation:"Chcesz zwiększyć mobilność całego ciała",
       },
-      { id: "2", recommendation: "Chcesz zwiększyć mobilność całego ciała" },
+      { id: "2", recommendation:"Cierpisz na napięcie lub bóle pleców, karku albo stawów."  },
       {
         id: "3",
         recommendation: "Chcesz zmniejszyć uczucię stresu i napięcia w ciele",
@@ -429,18 +428,18 @@ export const OfferItem = [
       { title: "Przygotowanie:" },
       {
         procedure:
-          "Każdy zabieg zaczynamy od wywiadu, który pozwoli nam na podstawie zebranych informacji na dobranie indywidualnie dostosowanej terapii powięziowej. Najlepiej ubrać wygodny strój tak aby obszary poddawane terapii były łatwo dostępne.",
+          "Każdy zabieg zaczynamy od wywiadu, który pozwala nam na podstawie zebranych informacji dobrać indywidualnie dostosowaną terapię powięziową. Najlepiej ubrać wygodny strój, tak aby obszary poddawane terapii były łatwo dostępne.",
       },
 
       { title: "Czas trwania:" },
       {
         procedure:
-          "Zabieg trwa zazwyczaj od 30 do 90 minut w zależności od indywidualnych potrzeb. Jeżeli chcesz skupić się na całym ciele najlepiej wybrać dłuższą 90 minutową sesję masażu powięziowego, 60 minutowa sesja sprawdzi się przy pracy z problemami bólowymi w obrębie pleców i karku lub 2-3 okolic. Na krótkiej 30 minutowej wizycie terapii powięziowej możemy skupić się na jednej okolicy takiej jak kark, odcinek lędźwiowy lub nogi.",
+          "Zabieg trwa zazwyczaj od 30 do 90 minut, w zależności od indywidualnych potrzeb. Jeżeli chcesz skupić się na całym ciele, najlepiej wybrać dłuższą, 90-minutową sesję masażu powięziowego. 60-minutowa sesja sprawdzi się przy pracy z problemami bólowymi w obrębie pleców, karku lub 2-3 innych okolic. Na krótkiej, 30-minutowej wizycie terapii powięziowej możemy skupić się na jednej okolicy, takiej jak kark, odcinek lędźwiowy lub nogi.",
       },
       { title: "Efekty:" },
       {
         procedure:
-          "Po masażu można zauważyć ulgę w bólu, lepszą ruchomość i elastyczność w tkankach oraz zdjęcie napięcia psychofizycznego z ciała.",
+          "Po masażu można zauważyć ulgę w bólu, lepszą ruchomość i elastyczność tkanek oraz redukcję napięcia psychofizycznego.",
       },
     ],
   },
@@ -646,27 +645,27 @@ export const OfferItem = [
       { id: "sport90", priceName: "90 minut", price: "250 zł" },
     ],
     contentMainOffer:
-      "Niezwykle skuteczna technika pracy z ciałem koncentrująca się na rozluźnieniu głębokich warstwach mięśni i tkanki łącznej.",
+      "Niezwykle skuteczna technika pracy z ciałem, koncentrująca się na rozluźnieniu głębokich warstw mięśni i tkanki łącznej.",
 
     contentFirst:
-      "Niezwykle skuteczna technika pracy z ciałem koncentrująca się na rozluźnieniu głębokich warstwach mięśni i tkanki łącznej. ",
+      "Niezwykle skuteczna technika pracy z ciałem, koncentrująca się na rozluźnieniu głębokich warstw mięśni i tkanki łącznej.",
     advantages: [
       { title: "Łagodzenie bólu mięśniowego i stawowego" },
       {
         description:
-          "Masaż tkanek głębokich (MTG) to precyzyjna i głęboka praca z mięśniami w celu przywrócenia ich elastyczności i prawidłowej pracy. Terapeuta pracując różnorodnymi chwytami manualnymi chce dotrzeć do głęboko położonych struktur tkanki mięśniowej i łącznej. Dzięki dokładnej pracy na napiętych strukturach w ciele uzyskujemy złagodzenie bólu mięśniowego i stawowego.",
+          "Masaż tkanek głębokich (MTG) to precyzyjna i głęboka praca z mięśniami, mająca na celu przywrócenie ich elastyczności i prawidłowej funkcji. Terapeuta, używając różnorodnych chwytów manualnych, dociera do głęboko położonych struktur tkanki mięśniowej i łącznej. Dzięki dokładnej pracy nad napiętymi strukturami w ciele, uzyskujemy złagodzenie bólu mięśniowego i stawowego.",
       },
-      { title: "Sprawdzi się w przewlekłych bólach pleców" },
+      { title: "Sprawdzi się w leczeniu przewlekłych bólów pleców." },
 
       {
         description:
-          "Masaż tkanek głębokich jest pomocy w przewlekłych bólach pleców, szyi, karku, ramion, barków czy innych obszarów ciała które są narażone na przeciążenia. Sprawdzi się u osób które mają siedzący tryb życia i zmagają się z napięciami z tego powodu jak i u osób trenujących rekreacyjnie czy wyczynowo.  ",
+          "Masaż tkanek głębokich jest pomocny w przewlekłych bólach pleców, szyi, karku, ramion, barków oraz innych obszarów ciała, które są narażone na przeciążenia. Sprawdzi się u osób prowadzących siedzący tryb życia, zmagających się z napięciami z tego powodu, jak również u osób trenujących rekreacyjnie lub wyczynowo. ",
       },
-      { title: "Rozlużnianie tkanet" },
+      { title: "Rozluźnienie i ulga podczas Masażu Tkanek Głębokich" },
 
       {
         description:
-          "W trakcie zabiegu odczuwalne jest przyjemne rozluźnianie tkanek i uwolnienie napięcia. ",
+          "W trakcie zabiegu odczuwalne jest przyjemne rozluźnianie tkanek oraz uwolnienie napięcia. Pacjenci często opisują ten proces jako głęboko relaksujący, przynoszący ulgę zarówno fizycznie, jak i psychicznie. Dzięki zastosowaniu technik masażu, napięte mięśnie i tkanki stopniowo się rozluźniają, co prowadzi do poprawy krążenia, zwiększenia elastyczności oraz ogólnego poczucia lekkości i odprężenia.",
       },
     ],
     contraindications: [
@@ -705,18 +704,18 @@ export const OfferItem = [
       { title: "Przygotowanie:" },
       {
         procedure:
-          "Każdy zabieg zaczynamy od wywiadu, oceny postawy i napięcia mięśniowego co pozwoli nam na podstawie zebranych informacji na dobranie indywidualnie dostosowanej terapii. Najlepiej ubrać wygodny strój tak aby obszary poddawane terapii były łatwo dostępne. ",
+          "Każdy zabieg zaczynamy od wywiadu, oceny postawy i napięcia mięśniowego, co pozwala na dobranie indywidualnie dostosowanej terapii. Najlepiej ubrać wygodny strój, aby obszary poddawane terapii były łatwo dostępne.",
       },
 
       { title: "Czas trwania:" },
       {
         procedure:
-          "Zabieg trwa zazwyczaj od 30 do 90 minut w zależności od indywidualnych potrzeb. Jeżeli chcesz skupić się na całym ciele najlepiej wybrać dłuższą 90 minutową sesję masażu sportowego/ tkanek głębokich, 60 minutowa sesja sprawdzi się przy pracy z problemami bólowymi w obrębie pleców i karku lub 2-3 okolic. Na krótkiej 30 minutowej wizycie możemy skupić się na jednej okolicy takiej jak kark, odcinek lędźwiowy lub nogi",
+          "Zabieg trwa zazwyczaj od 30 do 90 minut, w zależności od indywidualnych potrzeb. Jeżeli chcesz skupić się na całym ciele, najlepiej wybrać dłuższą, 90-minutową sesję masażu sportowego lub tkanek głębokich. 60-minutowa sesja sprawdzi się przy pracy z problemami bólowymi w obrębie pleców, karku lub 2-3 innych okolic. Na krótkiej, 30-minutowej wizycie możemy skupić się na jednej okolicy, takiej jak kark, odcinek lędźwiowy lub nogi.",
       },
       { title: "Efekty:" },
       {
         procedure:
-          "Po masażu możesz zauważyć redukcje bólu, lepszą ruchomość i elastyczność w tkankach oraz zdjęcie napięcia z okolic poddanych zabiegowych. Zauważalne jest także zmniejszenie uczucia ciężkości ciała poprzez pobudzenie krążenia krwi i limfy co pomaga także w regeneracji tkanek..",
+          "Po masażu możesz zauważyć redukcję bólu, lepszą ruchomość i elastyczność tkanek oraz usunięcie napięcia z obszarów poddanych zabiegowi. Zauważalne jest także zmniejszenie uczucia ciężkości ciała poprzez pobudzenie krążenia krwi i limfy, co pomaga również w regeneracji tkanek.",
       },
     ],
   },
@@ -743,23 +742,23 @@ export const OfferItem = [
       "To specjalistyczne techniki pracy z ciałem i stawami, mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu.",
 
     contentFirst:
-      "To specjalistyczne techniki pracy z ciałem i stawami  polegające na uciskach, mobilizacjach stawowych i tkankowych mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenia sztywności i ograniczeń w zakresie ruchomości oraz redukcji bólu. ",
+      "To specjalistyczne techniki pracy z ciałem i stawami, polegające na uciskach oraz mobilizacjach stawowych i tkankowych, mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenie sztywności i ograniczeń w zakresie ruchomości oraz redukcję bólu.",
     advantages: [
       { title: "Indywidualne podejście do Twojego problemu" },
       {
         description:
-          "Ogromnymi zaletami terapii manualnej jest indywidualne podejście do Twojego problemu oraz możliwość wyboru odpowiedniej terapii z szerokiego zakresu technik takich jak mobilizacje stawowe, terapia tkanek miękkich, terapia neuro-mięśniowa, terapie płynowe z  jamami ciała.",
+          "Ogromnymi zaletami terapii manualnej są indywidualne podejście do Twojego problemu oraz możliwość wyboru odpowiedniej terapii z szerokiego zakresu technik, takich jak mobilizacje stawowe, terapia tkanek miękkich, terapia neuro-mięśniowa czy terapie płynowe z jamami ciała.",
       },
 
-      { title: "Sprawdzi się na problem drętwienia dłoni" },
+      { title: "Sprawdzi się w przypadku problemu drętwienia dłoni." },
       {
         description:
-          "Sprawdza się ona również u osób z problemami ortopedycznymi, urazami w obrębie stóp, kolan, bioder, barków, łokci czy nadgarstków. Znajduje także zastosowanie w pracy z problemami drętwienia dłoni czy nóg, bólami ostrymi i tymi przewlekłymi.  ",
+          "Sprawdza się również u osób z problemami ortopedycznymi, urazami w obrębie stóp, kolan, bioder, barków, łokci czy nadgarstków. Znajduje także zastosowanie w pracy z problemami drętwienia dłoni lub nóg oraz bólami ostrymi i przewlekłymi.",
       },
-      { title: "Pomaga w schorzenich kęgosłupa" },
+      { title: "Pomaga w schorzenich kęgosłupa." },
       {
         description:
-          "Możliwość i duże bezpieczeństwo terapii manualnej  pomagają w uśmierzaniu bólu i schorzeń kręgosłupa takie jak zwyrodnienia, dyskopatia, przepuklina, rwa kulszowa czy rwa udowa. ",
+          "Możliwość i duże bezpieczeństwo terapii manualnej pomagają w uśmierzaniu bólu i schorzeń kręgosłupa, takich jak zwyrodnienia, dyskopatia, przepuklina, rwa kulszowa czy rwa udowa.",
       },
     ],
     contraindications: [
@@ -782,40 +781,40 @@ export const OfferItem = [
       {
         id: "1",
         recommendation:
-          "Chcesz pozbyć bólu i sztywności kręgosłupa, pleców, karku bądź szyi ",
+          "Chcesz pozbyć się bólu i sztywności kręgosłupa, pleców, karku lub szyi",
       },
       {
         id: "2",
-        recommendation: " Masz problemy z ograniczeniem ruchomości w ciele",
+        recommendation: "Masz problemy z ograniczeniem ruchomości w ciele",
       },
       {
         id: "3",
         recommendation:
-          "Jesteś po urazach takich jak skręcenie kostki, naderwanie czy przeciążenie ścięgien",
+          "Jesteś po skręcenie kostki, naderwaniu lub przeciążeniu ścięgien",
       },
     ],
     procedures: [
       { title: "Przygotowanie:" },
       {
         procedure:
-          "Każdy zabieg zaczynamy od wnikliwego wywiadu, badania funkcjonalnego, oceny postawy, zakresu ruchomości stawów i napięcia mięśniowego. Wszystkie te informacje pozwolą na dobranie indywidualnej terapii manualnej dostosowanej do Twojego problemu. Najlepiej ubrać wygodny strój tak aby obszary poddawane terapii były łatwo dostępne. ",
+          "Każdy zabieg zaczynamy od wnikliwego wywiadu, badania funkcjonalnego, oceny postawy, zakresu ruchomości stawów i napięcia mięśniowego. Wszystkie te informacje pozwalają na dobranie indywidualnej terapii manualnej dostosowanej do Twojego problemu. Najlepiej ubrać wygodny strój, aby obszary poddawane terapii były łatwo dostępne.",
       },
 
       { title: "Czas trwania:" },
       {
         procedure:
-          "Zabieg trwa zazwyczaj 60 minut, co pozwala na zebranie wywiadu oraz przeprowadzenie terapii danego problemu związanego z większą okolicą jak plecy i kręgosłup. Jeśli borykasz się z kilkoma problemami możesz zastanowić się nad dłuższymi sesjami  do 90 minut. Wybór 30 minutowej lub 45 minutowej wizyty będzie także dobrym rozwiązaniem dla pracy z problemami stawów obwodowych czy mniejszymi okolicami jak odcinek szyjny, kark.",
+          "Zabieg trwa zazwyczaj 60 minut, co pozwala na zebranie wywiadu oraz przeprowadzenie terapii danego problemu związanego z większą okolicą, taką jak plecy i kręgosłup. Jeśli borykasz się z kilkoma problemami, możesz zastanowić się nad dłuższymi sesjami do 90 minut. Wybór 30-minutowej lub 45-minutowej wizyty będzie także dobrym rozwiązaniem dla pracy z problemami stawów obwodowych czy mniejszymi okolicami, takimi jak odcinek szyjny i kark.",
       },
       { title: "Efekty:" },
       {
         procedure:
-          "Po terapii manualnej możesz zauważyć redukcje bólu, lepszą ruchomość i elastyczność w tkankach oraz zdjęcie napięcia z okolic poddanych zabiegowych. Zmniejsza się sztywność stawowa co umożliwia swobodniejsze poruszanie się.",
+          "Po terapii manualnej możesz zauważyć redukcję bólu, lepszą ruchomość i elastyczność tkanek oraz usunięcie napięcia z okolic poddanych zabiegowi. Zmniejsza się sztywność stawów, co umożliwia swobodniejsze poruszanie się.",
       },
     ],
   },
   {
-    id: "masaz-relaksacyjny-kobiet-w-ciazy",
-    slug: "masaz-relaksacyjny-kobiet-w-ciazy",
+    id: "masaz-ujedrniajacy-banka-chinska",
+    slug: "masaz-ujedrniajacy-banka-chinska",
     imageHeader: "banka-chinska/masaż-banka-chinska.jpg",
     active: true,
     category: "body",
@@ -835,7 +834,7 @@ export const OfferItem = [
       "Pobudzający masaż, który pomoże w zmniejszeniu obrzęku wodno-tluszczowego, wygładzeniu i ujędrnieniu skóry.",
 
     contentFirst:
-      "Pobudzający masaż, który pomoże w zmniejszeniu obrzęku wodno-tluszczowego, wygładzeniu i ujędrnieniu skóry, zniwelowaniu widoczności cellulitu poprzez pracę na rozbijaniu mikrozrostów i zwłóknień w tkance tłuszczowej. ",
+      "Pobudzający masaż, który pomoże w zmniejszeniu obrzęku wodno-tłuszczowego, wygładzeniu i ujędrnieniu skóry oraz zniwelowaniu widoczności cellulitu poprzez pracę na rozbijaniu mikrozrostów i zwłóknień w tkance tłuszczowej. ",
     advantages: [
       { title: "" },
       {
@@ -874,7 +873,7 @@ export const OfferItem = [
       {
         id: "1",
         recommendation:
-          "Zmagasz się z napięciem czy bólami pleców, karku lub stawów ",
+          "Masz napięcie lub bóle pleców, karku, albo stawów ",
       },
       {
         id: "2",
@@ -926,7 +925,7 @@ export const OfferItem = [
       "Terapia manualna w bólach zatok to naturalna metoda łagodzenia dolegliwości związanych z zatokami.",
 
     contentFirst:
-      "Techniki manualne stosowane podczas terapii pomagają w odblokowaniu dróg oddechowych, poprawie krążenia krwi oraz zmniejszeniu napięcia mięśniowego w okolicy twarzy i głowy. Dzięki temu pacjenci mogą odczuć ulgę, lepsze oddychanie i redukcję bólu. To holistyczne podejście, które wspiera zdrowie całego organizmu, przynosząc naturalną ulgę w objawach zatokowych. ",
+      "Techniki manualne stosowane podczas terapii pomagają w odblokowaniu dróg oddechowych, poprawie krążenia krwi oraz zmniejszeniu napięcia mięśniowego w okolicy twarzy i głowy. Dzięki temu pacjenci mogą odczuć ulgę, lepsze oddychanie i redukcję bólu. To holistyczne podejście wspiera zdrowie całego organizmu, przynosząc naturalną ulgę w objawach zatokowych. ",
     advantages: [
       { title: "" },
       {

@@ -9,7 +9,7 @@ import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { BsArrowUpRightSquare } from "react-icons/bs";
 const InfoBar = () => {
   return (
-    <div className={`${Noto.className} hidden lg:flex font-semibold text-md  px-4 min-w-max  bg-white `}>
+    <div className={`${Noto.className} hidden lg:flex font-semibold text-md  px-4 min-w-max  bg-white text-triadgray`}>
       <div className="  flex justify-between w-full text-sm">
         <div>
           <ul className="">
@@ -21,7 +21,7 @@ const InfoBar = () => {
                 className="flex flex-row  gap-2 px-1 py-1  hover:opacity-70  rounded-xl"
               >
                 <span className={`${Noto.className}`}>
-                  <p className="text-sm text-black underline underline-offset-2 tracking-wider">
+                  <p className="text-sm text-triadgray underline underline-offset-2 tracking-wider">
                     Zarezerwuj Wizyte
                   </p>{" "}
                 </span>
@@ -39,7 +39,7 @@ const InfoBar = () => {
                 href={"mailto:kontakt@stanrelaksu.pl"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" flex flex-row px-3  gap-2 hover:opacity-70  "
+                className=" flex flex-row px-1  gap-1 hover:opacity-70  "
               >
                 <span className="bg-white rounded-full p-2">
                   <MdEmail className="w-3 h-3" />
@@ -52,7 +52,7 @@ const InfoBar = () => {
                 href="tel:791107102"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" flex flex-row px-3  gap-2 hover:opacity-70 "
+                className=" flex flex-row px-3  gap-1 hover:opacity-70 "
               >
                 <span className="bg-white rounded-full  p-2">
                   <BsFillTelephoneForwardFill className="  w-3 h-3" />

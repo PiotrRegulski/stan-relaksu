@@ -44,6 +44,7 @@ const config: Config = {
         headercolor:"rgb(167 231 215)",
         mainthemelogo: "rgb(241 234 214)",
         mainpeach: "rgb(244 201 180)",
+        triadbrown:"rgb(115 92 89)",
 
       },
       keyframes: {
