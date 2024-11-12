@@ -3,34 +3,40 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ImageCard from "./ImageCard";
 const imgURLs = [
-  {
-    src: "/masaz-relaksacyjny-ciaza/masaz-relaksacyjny-kobiet-wciazy.jpg",
-    label: "Masaz relaksacyjny kobiet w ciąży",
-    caption: "Masaz relaksacyjny kobiet w ciąży",
-    marginTop: "20px",
-    href:"/offer"
-
-  },
-
-  {
-    src: "/terapia-wisceralna/terapia-wisceralna-first.jpg",
-    label: "Terapia wisceralna",
-    caption: "Terapia wisceralna",
-    marginTop: "40px",
-    href:"/offer/terapia-wisceralna-w-problemach-jelitowo-trawiennych"
-
-  },
- 
-  {
-    src: "/karuzelaOmnie/terapia-uroginekologiczna.jpg",
-    label: "Terapia uroginekologiczna",
-    caption: "Terapia uroginekologiczna",
-    marginTop: "20px",
-    href:"/offer/"
-
-  },
+    {
+        src: "/terapia-manualna-zatok/terapia-zatok-cover.jpg",
+        label: "Terapia manualna w bólach zatok",
+        caption: "Terapia manualna w bólach zatok",
+        href:"offer/terapia-manualna-w-bolach-zatok",
+        marginTop: "20px",
+      
+      },
+      {
+        src: "/offers-photo/kobido-omnie.jpg",
+        label: "Terapia stawów skroniowo-żuchwowych",
+        caption: "Terapia stawów skroniowo-żuchwowych",
+        href:"/offer/",
+        marginTop: "20px",
+    
+      },
+      {
+        src: "/kobido-kinesiotaping-omnie.jpg",
+        label: "Kinesiotaping limfatyczny",
+        caption: "Kinesiotaping limfatyczny ",
+        href:"/offer/masaz-kobido",
+        marginTop: "20px",
+    
+      },
+      {
+        src: "/karuzelaOmnie/masaż-twarzy-kobido.jpg", 
+        label: "Masaż twarzy Kobido",
+        caption: "Masaż twarzy Kobido ",
+        href:"/offer/masaz-kobido",
+        marginTop: "20px",
+    
+      },
 ];
-const ImagesToOfferShortLast = () => {
+const ImagesToAboutExit = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
@@ -41,7 +47,7 @@ const ImagesToOfferShortLast = () => {
       {imgURLs.map((imgUrl, index) => (
         <div
           key={imgUrl.label}
-          className="relative flex shrink-0 w-[23rem] h-[18rem] md:w-[25rem] md:h-[18rem] overflow-hidden "
+          className="relative flex shrink-0 w-[20rem] h-[18rem] md:w-[20rem] md:h-[18rem] overflow-hidden "
           style={{ marginTop: imgUrl.marginTop }}
         >
           <motion.div
@@ -67,4 +73,4 @@ const ImagesToOfferShortLast = () => {
   );
 };
 
-export default ImagesToOfferShortLast;
+export default ImagesToAboutExit;

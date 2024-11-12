@@ -5,32 +5,55 @@ import ImageCard from "./ImageCard";
 const imgURLs = [
   {
     src: "/masaz-powieziowy/masaż-powięziowy-t.jpg",
-    label: "Masaż powięziowy",
-    caption: "Masaż powięziowy",
+    label: "Terapia w bólach głowy",
+    caption: "Terapia w bólach głowy",
     marginTop: "20px",
-    href: "/offer/masaz-powieziowy",
+    href: "/offer/",
   },
 
   {
     src: "/terapia-manualna/terapia-manualna-kolano-klawiki-second.jpg",
-    label: "terapia manualna",
-    caption: "Terapia manualna",
+    label: "Terapia manualna kolana",
+    caption: "Terapia manualna kolana",
     marginTop: "40px",
     href: "/offer/terapia-manualna",
   },
+  {
+    src: "/karuzelaOmnie/terapia-manulana-barku.jpg",
+    label: "Terapia manualna barku",
+    caption: "Terapia manualna barku",
+    marginTop: "40px",
+    href: "/offer/terapia-manualna",
+  },
+  {
+    src: "/karuzelaOmnie/bole-i-sztywnosci-karku.jpg",
+    label: "Bóle i sztywności karku",
+    caption: "Bóle i sztywności karku",
+    marginTop: "40px",
+    href: "/offer/terapia-manualna",
+  },
+  {
+    src: "/terapia-manualna/terapia-manualna-kolano-last.jpg", 
+    label: "Bóle kręgosłupa",
+    caption: "Bóle kręgosłupa",
+    marginTop: "20px",
+    href: "/offer/terapia-manualna",
+  },
 ];
+
+
 const ImageToOffersShort = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
     <div
       ref={ref}
-      className="flex overflow-x-auto py-3 gap-2   px-4 md:gap-4 w-screen sm:justify-center sm:items-center    "
+      className="flex overflow-x-auto py-3 gap-2 md:gap-2 w-screen xl:justify-center xl:items-center px-4    "
     >
       {imgURLs.map((imgUrl, index) => (
         <div
           key={imgUrl.label}
-          className="relative flex shrink-0 w-[18rem] h-[26rem] md:w-[18rem] md:h-[26rem] overflow-hidden  md:mr-0 "
+          className="relative flex shrink-0 w-[18rem] h-[26rem] md:w-[16rem] md:h-[26rem] overflow-hidden  "
           style={{ marginTop: imgUrl.marginTop }}
         >
           <motion.div
@@ -46,9 +69,14 @@ const ImageToOffersShort = () => {
               src={imgUrl.src}
               alt={imgUrl.label}
             />
-            <div className="absolute bottom-0 w-full  bg-opacity-50 bg-black text-white text-center py-2 px-3">
-              {imgUrl.caption}
-            </div>
+          </motion.div>
+          <motion.div
+            initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
+            animate={isInView ? { x: 0, opacity: 1 } : {}}
+            transition={{ type: "spring", duration: 2, ease: "backInOut" }}
+            className="absolute bottom-0 w-full  bg-opacity-50 bg-black text-white text-center py-2 px-3"
+          >
+            {imgUrl.caption}
           </motion.div>
         </div>
       ))}

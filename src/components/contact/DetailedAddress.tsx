@@ -12,7 +12,7 @@ const DetailedAddress = () => {
         location={"Lokalizacja:"}
       >
         <address className="text-center ">
-          <strong className="not-italic text-sm text-triadgray ">
+          <strong className="not-italic text-sm  ">
             <span className="whitespace-nowrap ">ul. Naukowa 20 /lokal-1</span>
             <br></br>02-463 Warszawa
           </strong>
@@ -29,9 +29,9 @@ const DetailedAddress = () => {
               href={"535187126"}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-70 text-sm "
+              className="hover:opacity-70 text-sm"
             >
-              <span className="whitespace-nowrap text-triadgray ">535-187-126</span>
+              <span className="whitespace-nowrap">791-107-102</span>
             </Link>
           </strong>
         </DetailedAdressItem>
@@ -44,7 +44,7 @@ const DetailedAddress = () => {
               href={"mailto:kontakt@stanrelaksu.com"}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-70 text-sm text-triadgray "
+              className="hover:opacity-70 text-sm "
             >
               kontakt@stanrelaksu.pl
             </Link>

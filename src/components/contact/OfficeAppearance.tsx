@@ -48,7 +48,7 @@ const OfficeAppearance = () => {
         initial={{ y: -100, opacity: 0 }}
         animate={isInViewTop ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 2, ease: "easeInOut", type: "tween" }}
-        className="bg-white rounded-xl my-4 text-triadgray  "
+        className="bg-white rounded-xl my-4  "
          ref={refTop}>
         <div className="flex flex-col w-full justify-center items-center my-6 ">
           <h3 className={`${Noto.className} text-center lg:text-xl`}>

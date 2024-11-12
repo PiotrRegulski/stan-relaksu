@@ -108,7 +108,7 @@ const ContactForm = () => {
     <div className=" flex flex-col w-full justify-center items-center">
       <form
         onSubmit={onSubmit}
-        className="flex flex-col mt-2 space-y-4 mx-auto w-full px-6 sm:px-12  md:px-24 lg:px-6 text-triadgray  "
+        className="flex flex-col mt-2 space-y-4 mx-auto w-full px-6 sm:px-12  md:px-24 lg:px-6  "
       >
         <input
           type="text"

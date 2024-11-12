@@ -12,7 +12,7 @@ export const metadata = {
 };
 const About = () => {
   return (
-    <div className="mt-[7rem]">
+    <div className="mt-[7rem] xl:mt-[10rem]">
       
 
       <AboutMeMainCard />

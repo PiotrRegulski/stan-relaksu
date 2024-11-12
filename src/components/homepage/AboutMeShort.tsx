@@ -85,7 +85,7 @@ const AboutMeShort = () => {
         </motion.div>
       </motion.div>
       <motion.div
-        className="lg:w-1/2 mx-4 my-4 text-triadgray"
+        className="lg:w-1/2 mx-4 my-4 "
         initial={{ x: 800, opacity: 0 }}
         animate={isInView ? { x: 0, opacity: 1 } : {}}
         transition={{ duration: 2,  type: "tween" }}

@@ -6,7 +6,7 @@ import AdressCard from "./AdressCard";
 import DetailedAddress from "./DetailedAddress";
 import ContactForm from "./ContactForm";
 import OfficeAppearance from "./OfficeAppearance";
-import { motion, useInView,} from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { Noto } from "../fonts";
 import { useMediaQuery } from "../utilis/useMediaQuery";
 
@@ -18,7 +18,7 @@ const Contact = () => {
   const refLogo = useRef(null);
   const isInViewLogo = useInView(refLogo, { once: true });
   const isSmallScreen = useMediaQuery("(max-width: 1023px)");
- 
+
   return (
     <div id={"kontakt"} className="w-full">
       <PageHeader id={"kontttttakt-header"}>Skontaktuj się</PageHeader>
@@ -35,16 +35,13 @@ const Contact = () => {
               <div
                 className={`${Noto.className} flex flex-col my-6 w-full justify-center items-center  `}
               >
-                <div className="pt-4 px-6 sm:px-12  md:px-24 lg:px-6  text-sm text-triadgray ">
-                  <h3 className="text-justify  ">
+                <div className="pt-4 px-6 sm:px-12  md:px-24 lg:px-6  text-sm xl:text-base ">
+                  <p className="text-justify ">
                     Potrzebujesz więcej informacji lub porady na temat zabiegów.
-                  </h3>
-                  <p className="text-justify text-triadgray">
                     Skontaktuj się ze mną poprzez formularz kontaktowy lub w
-                    dogodny dla siebię sposób. Z przyjemnością odpowiem na
-                    wszelkie pytania i pomogę wybrać odpowiedni zabieg
-                    dostosowany do Twoich potrzeb. Czekam na Twój kontakt!
+                    dogodny dla siebie sposób. 
                   </p>
+                  <p>Chętnie pomogę!</p>
                 </div>
               </div>
               <ContactForm />
@@ -67,7 +64,7 @@ const Contact = () => {
             initial={{ y: 0, opacity: 0 }}
             animate={isInViewBottom ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
-            className={`${Noto.className} flex flex-col  w-full justify-center items-center text-triadgray `}
+            className={`${Noto.className} flex flex-col  w-full justify-center items-center  `}
           >
             <p className=" text-base  xl:text-lg my-6 text-center font-bold ">
               Gabinet mieści się przy <br></br>

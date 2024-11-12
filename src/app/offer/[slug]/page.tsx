@@ -171,10 +171,10 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     "rozluźnianie",
   ];
   return (
-    <div className=" mt-[3rem] sm:mt-[2rem] lg:mt-[9rem]">
+    <div className=" mt-[4rem] sm:mt-[3rem] lg:mt-[15rem]">
       <div
         id={"offerDetail"}
-        className="w-full  bg-gradient-to-r from-mainthemelogo from-50% to-mainthemelogo/40 h-[20rem] flex  items-center text-triadbrown "
+        className=" w-3/4  bg-secondary h-[20rem] flex  items-center text-black md:border-2 border-l-0 md:rounded-r-full "
       >
         {/* <Image
             src={`/${offerDetail.imageHeader}`}
@@ -184,14 +184,14 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             className=" object-cover  w-full h-full"
             sizes="(max-width: 600px) 100vw, 50vw"
           /> */}
-        <div className="flex flex-col justify-center items-center w-full  md:w-3/4 md:border-2 border-l-0 md:rounded-r-full text-xl border-triadbrown bg-mainthemelogo ">
-          <div className=" xl:w-1/2 my-8 w-full px-2">
+        <div className="flex flex-col justify-center items-center  h-[90%]  md:w-full md:border-t-2 border-b-2 border-r-2 border-l-0 md:rounded-r-full text-xl mr-4 pr-9 border-triadbrown bg-secondary ">
+          <div className=" xl:w-3/4 my-8 w-full px-2">
             {" "}
-            <h1 className={`${Noto.className} font-semibold text-xl md:text-2xl my-4`}>
+            <h1 className={`${Noto.className} font-semibold text-center text-xl md:text-2xl my-4`}>
               {offerDetail.title}
             </h1>
             <div>
-              <p className="font-semibold text-lg text-balance ">
+              <p className="font-semibold text-lg text-center text-balance px-2 ">
                 {" "}
                 {firstAdventagesDescription}
               </p>
@@ -208,7 +208,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
           <div id={"oferta-detale"} className="flex flex-col ">
             <div className="flex flex-col-reverse lg:flex-row bg-white sm:my-4 xl:mx-48  2xl:mx-48 rounded-lg  border-secondary">
               <div className="flex flex-col lg:w-2/3 my-2 justify-center items-center ">
-                <div className="text-triadbrown my-4 px-4">
+                <div className=" my-4 px-4">
                   <h3 className="font-bold text-xl  md:text-2xl ">{title1}</h3>
                   <HighlightedParagraph
                     className="  text-lg md:text-xl my-4 text-justify"
@@ -242,7 +242,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                   />
                 </div>
                 <div className="flex flex-col  justify-center items-center  my-4 w-full lg:w-1/2">
-                  <div className="flex flex-col px-4 text-triadbrown   ">
+                  <div className="flex flex-col px-4   ">
                     <h3 className="font-bold text-xl md:text-2xl py-2 2xl:mb-4 ">
                       {title2}
                     </h3>
@@ -257,7 +257,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             </div>
             <div className="flex flex-col-reverse lg:flex-row bg-white sm:my-4 xl:mx-48  2xl:mx-48 rounded-lg  border-secondary">
               <div className="flex flex-col lg:w-2/3 my-2 justify-center items-center ">
-                <div className="text-triadbrown my-4 px-2">
+                <div className=" my-4 px-2">
                   <h3 className="font-bold text-xl  md:text-2xl ">{title3}</h3>
                   <HighlightedParagraph
                     className=" text-lg md:text-xl my-4 text-justify "

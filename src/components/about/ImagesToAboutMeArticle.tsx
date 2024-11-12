@@ -5,6 +5,7 @@ import ImageCard from "../about/ImageCard";
 import ImageToOffersShort from "./ImageToOffersShort";
 import ImagesToOfferShortLast from "./ImagesToOfferShortLast";
 import { Noto } from "../fonts";
+import ImagesToAboutExit from "./ImageToAboutExit";
 
 const imgURLs = [
   {
@@ -80,41 +81,45 @@ const ImagesToAboutMeArticle = () => {
       <div className="flex flex-col justify-center w-full py-4">
         {" "}
         <motion.div
-          className=" flex w-full flex-col justify-center items-center  bg-white py-4 text-triadgray "
+          className=" flex w-full flex-col justify-center items-center  bg-white py-4  "
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "spring", duration: 5, ease: "easeInOut" }}
         >
-          <h2
-            className={`${Noto.className} text-left text-xl  md:text-2xl xl:text-3xl w-full px-3 lg:w-2/3 `}
-          >
-            Przyniosę Ci ulgę w bólu oraz napięciu.
-          </h2>
-          <p className="text-justify  md:w-2/3 text-lg md:text-xl xl:text-xl mx-auto md:mx-4 my-2  px-3 py-2  lg:w-2/3   h-full">
-            Stosując techniki
+         
+          <p className=" text-center  md:w-2/3 text-lg md:text-xl xl:text-xl mx-auto md:mx-4 my-2  px-3 py-2  lg:w-2/3   h-full">
+            Przyniosę Ci ulgę w bólu oraz napięciu stosując techniki
             <strong> masażu powięziowego</strong> i{" "}
             <strong>terapii manualnej</strong>, <br></br> podpowiem Ci jak
-            możesz pracować ze swoim ciałem, poprzez ćwiczenia czy oddech dla
+            możesz pracować ze swoim ciałem, poprzez ćwiczenia czy oddech <br></br> dla
             poprawy Twojego dobrostanu.
           </p>
         </motion.div>
         <ImageToOffersShort />
       </div>
-      <div className=" flex flex-col w-full justify-center items-center  md:py-8 text-triadgray">
+      <div className=" flex flex-col w-full md:justify-center md:items-center py-8 bg-secondary ">
         <h2
-          className={`${Noto.className}  text-xl px-3   md:text-3xl xl:text-3xl text-left lg:w-2/3`}
+          className={`${Noto.className} text-center font-semibold text-xl md:text-2xl xl:text-2xl  lg:w-2/3 px-3 `}
         >
-          Kompleksowa Terapia i Rehabilitacja:<br></br>
+          Kompleksowa i holistyczna terapia dostosowana do Ciebie
         </h2>
 
-        <p className="text-justify  text-lg md:text-xl xl:text-xl mx-auto md:mx-4 my-2  px-3 py-3  lg:my-2 2xl:my-2    h-full lg:w-2/3">
-           W pracy zajmuje
-          się <strong>problemami jelitow-trawiennymi</strong>,
-          <strong> terapią uroginekologiczną</strong>, pracą z blizną po{" "}
-          cesarskim cięciu, bliznach operacyjnych, bolesnymi miesiączkami czy
-          współżyciem.
+        <p className="text-justify text-lg md:text-xl xl:text-xl mx-auto  my-2  px-6 py-3  lg:my-2 2xl:my-2 h-full lg:w-2/3">
+          W pracy zajmuje się kompleksową i holistyczną
+          <strong> terapią w problemach jelitowo-trawiennych</strong>, zgagach,
+          refluksie, IBS, SIBO (terapia wisceralna w problemach
+          jelitowo-trawiennych). Zajmę się indywidualnie dobraną do Twoich
+          potrzeb <strong>terapią uroginekologiczną:</strong> pracą z
+          <strong> blizną po cesarskim cięciu</strong>, rozejściem mięśni
+          prostych brzucha, problemem bolesnych miesiączek czy bolesnego
+          współżycia, nietrzymaniem moczu czy pęcherzem nadreaktywnym. W{" "}
+          <strong>terapii manualnej blizn</strong> łącząc specjalistyczne
+          techniki pomogę Ci poprawić wygląd blizn pooperacyjnych oraz
+          zninimalizować ich widoczność, bolesność czy zapobiec zrostom..
         </p>
+        <p></p>
         <ImagesToOfferShortLast />
+       
       </div>
     </div>
   );
