@@ -171,10 +171,10 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     "rozluźnianie",
   ];
   return (
-    <div className=" mt-[4rem] sm:mt-[3rem] lg:mt-[15rem]">
+    <div className=" mt-[7rem] sm:mt-[6rem] md:mt-[6rem] lg:mt-[14rem]">
       <div
         id={"offerDetail"}
-        className=" w-3/4  bg-secondary h-[20rem] flex  items-center text-black md:border-2 border-l-0 md:rounded-r-full "
+        className=" w-full sm:w-10/12 md:w-3/4  bg-secondary sm:h-[12rem] md:h-[20rem] flex justify-center  items-center text-black sm:border-2 sm:border-l-0 sm:rounded-r-full "
       >
         {/* <Image
             src={`/${offerDetail.imageHeader}`}
@@ -184,14 +184,14 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             className=" object-cover  w-full h-full"
             sizes="(max-width: 600px) 100vw, 50vw"
           /> */}
-        <div className="flex flex-col justify-center items-center  h-[90%]  md:w-full md:border-t-2 border-b-2 border-r-2 border-l-0 md:rounded-r-full text-xl mr-4 pr-9 border-triadbrown bg-secondary ">
-          <div className=" xl:w-3/4 my-8 w-full px-2">
+        <div className="flex flex-col justify-center items-center  md:h-[90%] border-2  sm:w-full sm:border-t-2 sm:border-b-2 sm:border-r-2 sm:border-l-0 sm:rounded-r-full text-xl sm:mr-4 sm:pr-9 border-triadbrown bg-secondary  ">
+          <div className=" xl:w-3/4 md:my-8 w-full px-2">
             {" "}
-            <h1 className={`${Noto.className} font-semibold text-center text-xl md:text-2xl my-4`}>
+            <h1 className={`${Noto.className} font-semibold text-center text-lg md:text-2xl my-2 md:my-4`}>
               {offerDetail.title}
             </h1>
             <div>
-              <p className="font-semibold text-lg text-center text-balance px-2 ">
+              <p className="font-semibold text-base text-center text-balance px-2 ">
                 {" "}
                 {firstAdventagesDescription}
               </p>
@@ -219,7 +219,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
               </div>
 
               <div className="flex justify-center w-full lg:w-1/2 items-center   ">
-                <div className="relative h-[15rem] w-full sm:h-[22rem] sm:w-full md:h-[22rem] md:w-2/3 lg:w-[25rem] lg:h-[20rem] xl:h-[20rem] xl:w-[25rem]">
+                <div className="relative h-[15rem] w-full sm:h-[18rem] sm:w-full md:h-[22rem] md:w-2/3 lg:w-[25rem] lg:h-[20rem] xl:h-[20rem] xl:w-[25rem]">
                   <Image
                     src={`/${offerDetail.image}`}
                     alt={offerDetail.title}
@@ -232,7 +232,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             </div>
             <div className="flex flex-col lg:flex-row-reverse 2xl:flex-row justify-center items-center  bg-secondary  ">
               <div className="flex flex-col lg:flex-row xl:w-9/12 justify-center items-center my-4 gap-4  ">
-                <div className="relative h-[15rem] w-full sm:h-[22rem] sm:w-full md:h-[22rem] md:w-full lg:w-[25rem] lg:h-[20rem] xl:h-[20rem] xl:w-[25rem]  ">
+                <div className="relative h-[15rem] w-full sm:h-[18rem] sm:w-full md:h-[22rem] md:w-full lg:w-[25rem] lg:h-[20rem] xl:h-[20rem] xl:w-[25rem]  ">
                   <Image
                     src={`/${offerDetail.imagedetailfo}`}
                     alt={offerDetail.title}
@@ -268,7 +268,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
               </div>
 
               <div className="flex justify-center w-full lg:w-1/2 items-center   ">
-                <div className="relative h-[15rem] w-full sm:h-[22rem] sm:w-full md:h-[22rem] md:w-2/3 lg:w-[25rem] lg:h-[20rem] xl:h-[20rem] xl:w-[25rem]">
+                <div className="relative h-[15rem] w-full sm:h-[18rem] sm:w-full md:h-[22rem] md:w-2/3 lg:w-[25rem] lg:h-[20rem] xl:h-[20rem] xl:w-[25rem]">
                   <Image
                     src={`/${offerDetail.imagedetailf}`}
                     alt={offerDetail.title}

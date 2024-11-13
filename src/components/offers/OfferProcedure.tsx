@@ -26,7 +26,7 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
   return (
     <div
       id="main-adventages"
-      className="flex flex-col min-h-max  bg-white 2xl:mx-36 md:my-4  text-triadbrown"
+      className="flex flex-col min-h-max  bg-white 2xl:mx-36 md:my-4  "
     >
       <div className="w-full py-3 px-[1em]">
         <h1 className={`${Noto.className} text-center text-xl md:text-2xl font-bold`}>

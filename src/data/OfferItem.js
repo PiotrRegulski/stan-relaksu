@@ -323,12 +323,12 @@ export const OfferItem = [
       {
         id: "1",
         recommendation:
-          "Zmagasz się z problemami jelitowo-trawiennymi",
+          "Zmagasz się z problemami jelitowo-trawiennymi ( IBS, SIBO, zaparcia, zgagi)",
       },
       {
         id: "2",
         recommendation:
-          "Masz ciągle spuszony brzuch, bolesne miesiączki",
+          "Masz ciągle spuszony brzuch, bolesne miesiączki, zaburzenia hormonalne",
       },
       {
         id: "3",

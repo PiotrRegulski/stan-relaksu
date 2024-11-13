@@ -15,7 +15,7 @@ const ProcedureItem: React.FC<ProcedureItemProps> = ({ procedure, index }) => {
   const targetIndex = 3; // Indeks elementu, dla którego chcesz użyć ExpandableText
   return (
     <li>
-      <article className="text-triadbrown">
+      <article className="">
         <p className="font-bold px-2">{procedure.title}</p>
         <p className="px-3">{procedure.procedure}</p>
 
