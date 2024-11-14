@@ -171,7 +171,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     "rozluźnianie",
   ];
   return (
-    <div className=" mt-[8rem] sm:mt-[8rem] md:mt-[8rem] lg:mt-[14rem]">
+    <div className=" mt-[8rem] sm:mt-[5rem] md:mt-[8rem] lg:mt-[14rem]">
       <div
         id={"offerDetail"}
         className=" w-full sm:w-10/12 md:w-10/12 xl:w-2/3 2xl:w-2/3  bg-mainpeach sm:h-[12rem] md:h-[16rem] 2xl:h-[20rem] flex justify-center  items-center text-black sm:border-2 sm:border-l-0 sm:rounded-r-full py-4 md:py-2 "
