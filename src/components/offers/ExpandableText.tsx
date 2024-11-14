@@ -19,12 +19,12 @@ const ExpandableText: React.FC<ExpandableTextProps> = ({ text, maxLength }) => {
 
   return (
     <div className="p-4">
-      <p className="text-triadbrown">
+      <p className="text-black md:text-lg">
         {isExpanded ? text  : text? `${text.substring(0, maxLength)}...`:''}
       </p>
       <button
         onClick={toggleExpansion}
-        className="mt-2 text-triadbrown  hover:underline"
+        className="mt-1 text-black  hover:underline italic text-sm"
       >
         {isExpanded ? 'Zwiń' : 'Rozwiń'}
       </button>
