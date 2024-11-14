@@ -31,7 +31,7 @@ const FooterLinks = () => {
           </Link>
         ))}
       </div>
-      <div className="hidden sm:flex justify-end items-end w-full mt-4 lg:pr-16 ">
+      <div className="hidden sm:flex justify-end items-end w-full mt-4 sm:pr-16 ">
         <Link
           href="https://booksy.com/pl-pl/257898_stan-relaksu-holistyczny-gabinet-terapii-i-masazu_masaz_3_warszawa#ba_s=dl_1"
           target="_blank"
