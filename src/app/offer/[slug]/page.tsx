@@ -7,6 +7,7 @@ import Recommendation from "@/components/offers/Recommendation";
 import OfferProcedure from "@/components/offers/OfferProcedure";
 import HighlightedParagraph from "@/components/layout/HighlightedParagraph";
 import { Noto } from "@/components/fonts";
+import MotionHeader from "@/components/offers/MotionHeader";
 interface OfferDetailsPageProps {
   params: {
     id: string;
@@ -160,7 +161,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     "powięziowy",
     "stanu",
     "relaksu",
-    "masaż",
+    
     "masażu",
     "igłoterapia",
     "estetyczna",
@@ -172,46 +173,23 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
   ];
   return (
     <div className=" mt-[8rem] sm:mt-[5rem] md:mt-[8rem] lg:mt-[14rem]">
-      <div
-        id={"offerDetail"}
-        className=" w-full sm:w-10/12 md:w-10/12 xl:w-2/3 2xl:w-2/3  bg-mainpeach sm:h-[12rem] md:h-[16rem] 2xl:h-[20rem] flex justify-center  items-center text-black sm:border-2 sm:border-l-0 sm:rounded-r-full py-4 md:py-2 "
-      >
-        {/* <Image
-            src={`/${offerDetail.imageHeader}`}
-            alt={offerDetail.title}
-            fill
-            priority={true}
-            className=" object-cover  w-full h-full"
-            sizes="(max-width: 600px) 100vw, 50vw"
-          /> */}
-        <div className="flex flex-col justify-center items-center  md:h-[90%] border-y-2  sm:w-full sm:border-t-2 sm:border-b-2 sm:border-r-2 sm:border-l-0 sm:rounded-r-full text-xl py-4 md:py-2 sm:mr-4 sm:pr-9 border-triadbrown bg-mainpeach  ">
-          <div className=" xl:w-3/4 md:my-8 w-full px-2">
-            {" "}
-            <h1 className={`${Noto.className} font-semibold text-center text-lg md:text-xl 2xl:text-2xl my-2 md:my-4`}>
-              {offerDetail.title}
-            </h1>
-            <div>
-              <p className="font-semibold text-base md:text-lg 2xl:text-xl text-center text-balance px-2 ">
-                {" "}
-                {firstAdventagesDescription}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <MotionHeader
+        title={offerDetail.title}
+        description={firstAdventagesDescription}
+      />
 
       {description1! && title1! && (
         <section
           id="main-adventages"
-          className="flex flex-col min-h-max    md:my-4  animate-fadeIn  transition-transform duration-200 ease-in-out "
+          className="flex flex-col min-h-max    md:my-4  animate-fadeIn  transition-transform duration-500 ease-in-out "
         >
           <div id={"oferta-detale"} className="flex flex-col ">
             <div className="flex flex-col-reverse sm:flex-row bg-white sm:my-4 xl:mx-48  2xl:mx-48 rounded-lg  border-secondary">
               <div className="flex flex-col sm:w-1/2 md:w-1/2 my-2  ">
                 <div className=" my-4 px-4">
-                  <h3 className="font-bold  text-lg  md:text-xl ">{title1}</h3>
+                  <h3 className="font-bold  text-lg  md:text-xl xl:text-2xl ">{title1}</h3>
                   <HighlightedParagraph
-                    className="  text-base md:text-lg my-4 text-justify"
+                    className="  text-base md:text-lg xl:text-xl my-4 text-justify"
                     text={description1}
                     wordsToHighlight={wordsToHighlight}
                   />
@@ -231,7 +209,6 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
               </div>
             </div>
 
-
             <div className="flex flex-col sm:flex-row-reverse 2xl:flex-row justify-center items-center  bg-secondary  ">
               <div className="flex flex-col sm:flex-row xl:w-9/12 justify-center items-center my-4 md:gap-4  ">
                 <div className="relative h-[13rem] w-full sm:h-[15rem] sm:w-1/2 md:h-[15rem] md:w-1/3 lg:w-[25rem] lg:h-[20rem] xl:h-[20rem] xl:w-[25rem] my-2 mx-2">
@@ -245,11 +222,11 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                 </div>
                 <div className="flex flex-col  justify-center items-center  my-4 w-full sm:w-1/2 md:w-2/3">
                   <div className="flex flex-col px-4   ">
-                    <h3 className="font-bold text-lg md:text-xl py-2 2xl:mb-4 ">
+                    <h3 className="font-bold text-lg md:text-xl py-2 2xl:mb-4 xl:text-2xl ">
                       {title2}
                     </h3>
                     <HighlightedParagraph
-                      className=" text-base md:text-lg my-4  mx-auto text-justify"
+                      className=" text-base md:text-lg  xl:text-xl my-4  mx-auto text-justify"
                       text={description2}
                       wordsToHighlight={wordsToHighlight}
                     />
@@ -260,9 +237,9 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             <div className="flex flex-col-reverse sm:flex-row bg-white sm:my-4 xl:mx-48  2xl:mx-48 rounded-lg  border-secondary">
               <div className="flex flex-col sm:w-1/2 md:w-1/2 my-2  ">
                 <div className=" my-4 px-2">
-                  <h3 className="font-bold text-lg  md:text-xl ">{title3}</h3>
+                  <h3 className="font-bold text-lg  md:text-xl xl:text-2xl ">{title3}</h3>
                   <HighlightedParagraph
-                    className=" text-base md:text-lg my-4 text-justify "
+                    className=" text-base md:text-lg  xl:text-xl my-4 text-justify "
                     text={description3}
                     wordsToHighlight={wordsToHighlight}
                   />
