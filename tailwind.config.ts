@@ -70,7 +70,7 @@ const config: Config = {
       animation: {
         slideLeft: 'slideLeft 0.5s forwards',
         slideOutLeft: 'slideOutLeft 0.5s forwards',
-        fadeIn: "fadeIn 1s ease-in-out",
+        fadeIn: "fadeIn 2s ease-in-out",
         drawBorder: 'drawBorder 2s forwards',
        
       },
