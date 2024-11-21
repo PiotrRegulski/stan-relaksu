@@ -4,17 +4,16 @@ import ButtonReservation from "./ButtonReservation";
 import Image from "next/image";
 import ButtonOffers from "./ButtonOffers";
 import { motion } from "framer-motion";
-import { Noto } from "../fonts";
-import PageHeader from "../homepage/PageHeader";
+import { lato, Noto } from "../fonts";
 
 const AboutMeMainCard = () => {
   return (
     <div className={`flex  md:flex-row mt-4   `}>
      
-      <div className="flex flex-col md:flex-row  justify-center items-center   w-full xl:px-24  2xl:px-56 bg-gradient-to-t from-secondary from-50% to-transparent   bg-opacity-40   ">
-        <div className="flex lg:w-1/2 justify-end py-8  ">
+      <div className="flex flex-col sm:flex-row  justify-center items-center   w-full xl:px-24  2xl:px-56 bg-gradient-to-t from-secondary from-50% to-transparent   bg-opacity-40   ">
+        <div className="flex lg:w-1/2 justify-start md:justify-end py-8 h-full  ">
           <motion.div
-            className="relative w-72 h-72 md:w-[18rem] md:h-[18rem] lg:w-[18rem] lg:h-[18rem] mx-2"
+            className="relative w-72 h-72 sm:h-48 sm:w-48 md:w-[18rem] md:h-[18rem] lg:w-[18rem] lg:h-[18rem] mx-2 xl:h-[24rem] xl:w-[24rem] 2xl:h-[24rem] 2xl:w-[24rem]"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeInOut" }}
@@ -31,13 +30,13 @@ const AboutMeMainCard = () => {
         </div>
 
         <motion.div
-          className="flex justify-center items-center flex-col md:mt-20   "
+          className="flex justify-center items-center flex-col md:mt-20 2xl:px-10  "
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
           <h1
-            className={`${Noto.className} text-left  w-full  text-4xl  md:text-3xl  mb-2 px-3 lg:px-10`}
+            className={`${lato.className} text-left font-semibold  w-full  text-xl  md:text-3xl  mb-2 px-3 lg:px-10`}
           >
             Cześć, jestem Kinga Wołoszka
           </h1>

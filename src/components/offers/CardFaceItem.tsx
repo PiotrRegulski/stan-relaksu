@@ -2,7 +2,7 @@ import React from "react";
 import { OfferItem } from "@/data/OfferItem";
 import Image from "next/image";
 import Link from "next/link";
-import { Noto } from "@/components/fonts";
+import { lato } from "@/components/fonts";
 
 type AdvantageType = {
   title?: string;
@@ -56,11 +56,11 @@ const CardFaceItem = () => {
               <div className="absolute bottom-0 left-0 bg-secondary bg-opacity-70  rounded ">
                 <div className=" flex flex-col justify-center items-center animate-fadeIn rounded   px-1  w-full h-full ">
                   <p
-                    className={`${Noto.className}  md:text-base lg:text-lg xl:text-xl 2xl:text-xl text-center font-serif font-semibold sm:h-16 py-1 mb-2 text-black`}
+                    className={`${lato.className}  md:text-base lg:text-lg xl:text-xl 2xl:text-xl text-center font-serif font-semibold sm:h-16 py-1 mb-2 text-black`}
                   >
                     {offerItem.title}
                   </p>
-                  <p className="  text-center text-base font-semibold xl:text-md 2xl:text-xl indent-4 px-8 sm:px-2 h-32 sm:h-32 md:h-28 lg:h-24 2xl:h-24 text-black ">
+                  <p className="text-center text-base font-semibold xl:text-md 2xl:text-xl indent-4 px-8 sm:px-2 h-32 sm:h-32 md:h-28 lg:h-24 2xl:h-24 text-black ">
                     {offerItem.contentMainOffer}
                   </p>
                 </div>

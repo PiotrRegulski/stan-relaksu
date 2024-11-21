@@ -60,7 +60,7 @@ const ImagesToAboutExit = () => {
             <ImageCard key={imgUrl.label} href={imgUrl.href} src={imgUrl.src} alt={imgUrl.label} />
           </motion.div>
           <motion.div
-            className="absolute bottom-0 w-full bg-opacity-20 bg-black text-white text-center py-2"
+            className="absolute bottom-0 w-full font-semibold  bg-secondary bg-opacity-70 text-black text-center py-2"
             initial={{ x: 100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ type: "spring", duration: 1 }}

@@ -139,7 +139,7 @@ const Carousel: React.FC = () => {
                     <motion.div className="absolute bottom-0 lg:bottom-10 lg:left-[5rem] xl:left-[3rem] xl:bottom-5 right-0 bg-black bg-opacity-20 text-primary p-2 w-full lg:w-2/3 xl:w-9/12 2xl:w-2/3 text-center rounded ">
                       <div className="mx-auto sm:mx-12 md:mx-12 xl:mx-12 my-4">
                         <p
-                          className={`${Noto.className} text-white md:text-xl lg:text-2xl xl:text-4xl  tracking-wide md:text-left mb-2 xl:mb-4 whitespace-nowrap`}
+                          className={`${Noto.className} text-neutral-200 md:text-xl lg:text-2xl xl:text-4xl  tracking-wide md:text-left mb-2 xl:mb-4 whitespace-nowrap`}
                         >
                           {image.alt}
                         </p>

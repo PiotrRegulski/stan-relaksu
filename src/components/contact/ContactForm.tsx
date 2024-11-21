@@ -129,6 +129,7 @@ const ContactForm = () => {
               id="name"
               required
               placeholder="wpisz imię"
+              autoComplete="off"
               name="name"
               className=" bg-white text-sm outline-white  focus:bg-white  border-b-2 border-primary shadow-none px-2 py-1"
             ></input>
@@ -144,6 +145,7 @@ const ContactForm = () => {
               required
               placeholder="wpisz email"
               name="email"
+              autoComplete="off"
               className="bg-white text-sm outline-white  focus:bg-white  border-b-2 border-primary shadow-none px-2 py-1"
             ></input>
           </div>
@@ -161,6 +163,7 @@ const ContactForm = () => {
               required
               placeholder=" wpisz temat wiadomości"
               name="subject"
+              autoComplete="off"
               className=" bg-white text-sm outline-white  focus:bg-white  border-b-2 border-primary shadow-none w-full  px-2 py-1 "
             ></input>
           </div>
@@ -173,6 +176,7 @@ const ContactForm = () => {
               id="message"
               required
               placeholder="wpisz treść swojej wiadomości"
+              autoComplete="off"
               rows={5}
               className=" text-sm border-2 border-primary px-2 py-2 outline-primary"
             ></textarea>

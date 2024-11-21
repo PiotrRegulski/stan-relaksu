@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import ImageCard from "../about/ImageCard";
 import ImageToOffersShort from "./ImageToOffersShort";
 import ImagesToOfferShortLast from "./ImagesToOfferShortLast";
-import { Noto } from "../fonts";
+import { lato, Noto } from "../fonts";
 import ImagesToAboutExit from "./ImageToAboutExit";
 
 const imgURLs = [
@@ -68,7 +68,7 @@ const ImagesToAboutMeArticle = () => {
               />
             </motion.div>
             <motion.div
-              className="absolute bottom-0 w-full  bg-opacity-50 bg-black text-white text-center py-2"
+              className="absolute bottom-0 w-full bg-secondary bg-opacity-70  text-black font-semibold text-center py-2"
               initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ type: "spring", duration: 5 }}
@@ -81,45 +81,64 @@ const ImagesToAboutMeArticle = () => {
       <div className="flex flex-col justify-center w-full py-4">
         {" "}
         <motion.div
-          className=" flex w-full flex-col justify-center items-center  bg-white py-4  "
+          className=" flex w-full flex-col justify-center items-center   py-8  bg-gradient-to-b from-white  to-secondary to-10% "
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "spring", duration: 5, ease: "easeInOut" }}
         >
-         
-          <p className=" text-center  md:w-2/3 text-lg md:text-xl xl:text-xl mx-auto md:mx-4 my-2  px-3 py-2  lg:w-2/3   h-full">
+          <p className=" text-center  text-pretty  md:w-2/3 text-lg md:text-xl xl:text-2xl mx-auto md:mx-4 my-2  px-2 py-2  lg:w-2/3 2xl:w-1/3  h-full">
             Przyniosę Ci ulgę w bólu oraz napięciu stosując techniki
             <strong> masażu powięziowego</strong> i{" "}
-            <strong>terapii manualnej</strong>, <br></br> podpowiem Ci jak
-            możesz pracować ze swoim ciałem, poprzez ćwiczenia czy oddech <br></br> dla
-            poprawy Twojego dobrostanu.
+            <strong>terapii manualnej.</strong>
+          </p>
+          <p className=" text-center  text-pretty  md:w-2/3 text-lg md:text-xl xl:text-2xl mx-auto md:mx-4 my-2  px-2 py-2  lg:w-2/3 2xl:w-1/3    h-full">
+            Podpowiem Ci jak możesz pracować ze swoim ciałem, poprzez ćwiczenia
+            czy oddech dla poprawy Twojego dobrostanu.
           </p>
         </motion.div>
         <ImageToOffersShort />
       </div>
-      <div className=" flex flex-col w-full md:justify-center md:items-center py-8 bg-secondary ">
+      <div className=" flex flex-col w-full md:justify-center md:items-center py-8 bg-secondary xl:px-28 2xl:px-48 ">
         <h2
-          className={`${Noto.className} text-center font-semibold text-xl md:text-2xl xl:text-2xl  lg:w-2/3 px-3 `}
+          className={`${lato.className} text-center font-semibold text-xl md:text-2xl xl:text-2xl lg:w-2/3  px-3 xl:py-6`}
         >
           Kompleksowa i holistyczna terapia dostosowana do Ciebie
         </h2>
 
-        <p className="text-justify text-lg md:text-xl xl:text-xl mx-auto  my-2  px-6 py-3  lg:my-2 2xl:my-2 h-full lg:w-2/3">
-          W pracy zajmuje się kompleksową i holistyczną
-          <strong> terapią w problemach jelitowo-trawiennych</strong>, zgagach,
-          refluksie, IBS, SIBO (terapia wisceralna w problemach
-          jelitowo-trawiennych). Zajmę się indywidualnie dobraną do Twoich
-          potrzeb <strong>terapią uroginekologiczną:</strong> pracą z
-          <strong> blizną po cesarskim cięciu</strong>, rozejściem mięśni
-          prostych brzucha, problemem bolesnych miesiączek czy bolesnego
-          współżycia, nietrzymaniem moczu czy pęcherzem nadreaktywnym. W{" "}
-          <strong>terapii manualnej blizn</strong> łącząc specjalistyczne
-          techniki pomogę Ci poprawić wygląd blizn pooperacyjnych oraz
-          zninimalizować ich widoczność, bolesność czy zapobiec zrostom..
+        <p className="text-justify antialiased text-pretty  text-lg md:text-xl xl:text-xl mx-auto my-2 px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
+          W pracy zajmuje się kompleksową i holistyczną{" "}
+          <strong>
+            terapią w problemach{" "}
+            <span className="whitespace-nowrap">jelitowo-trawiennych, </span>
+          </strong>
+          zgagach, refluksie, IBS, SIBO (terapia wisceralna w problemach
+          jelitowo-trawiennych).
         </p>
+
+        <h3 className="text-center font-semibold text-xl md:text-xl xl:text-xl lg:w-2/3 px-3 mt-4">
+          Terapia Uroginekologiczna
+        </h3>
+
+        <p className="text-justify text-pretty antialiased  text-lg md:text-xl xl:text-xl mx-auto my-2 px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
+          Zajmę się indywidualnie dobraną do Twoich potrzeb{" "}
+          <strong>terapią uroginekologiczną</strong>: pracą z{" "}
+          <strong>blizną po cesarskim cięciu</strong>, rozejściem mięśni
+          prostych brzucha, problemem bolesnych miesiączek czy bolesnego
+          współżycia, nietrzymaniem moczu czy pęcherzem nadreaktywnym.
+        </p>
+
+        <h3 className="text-center font-semibold text-xl md:text-xl xl:text-xl lg:w-2/3 px-3 mt-4">
+          Terapia Manualna Blizn
+        </h3>
+
+        <p className=" antialiased text-justify  text-lg md:text-xl xl:text-xl mx-auto my-2 px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
+          W <strong>terapii manualnej blizn</strong>, łącząc specjalistyczne
+          techniki, pomogę Ci poprawić wygląd blizn pooperacyjnych oraz
+          zminimalizować ich widoczność, bolesność czy zapobiec zrostom.
+        </p>
+
         <p></p>
         <ImagesToOfferShortLast />
-       
       </div>
     </div>
   );

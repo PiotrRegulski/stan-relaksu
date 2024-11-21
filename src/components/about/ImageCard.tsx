@@ -26,7 +26,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ src, alt, caption,href }) => {
           sizes="(max-width: 600px) 100vw, 50vw"
         />
         {caption && (
-          <div className="absolute bottom-0 left-0 w-full z-20 bg-black bg-opacity-50 text-white text-center p-2">
+          <div className="absolute bottom-0 left-0 w-full z-20 bg-secondary bg-opacity-70  text-black text-center p-2">
             {caption}
           </div>
         )}

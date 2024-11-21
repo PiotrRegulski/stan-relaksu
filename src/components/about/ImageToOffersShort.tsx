@@ -74,7 +74,7 @@ const ImageToOffersShort = () => {
             initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ type: "spring", duration: 2, ease: "backInOut" }}
-            className="absolute bottom-0 w-full  bg-opacity-50 bg-black text-white text-center py-2 px-3"
+            className="absolute bottom-0 w-full font-semibold  bg-secondary bg-opacity-70  text-black text-center py-2 px-3"
           >
             {imgUrl.caption}
           </motion.div>
