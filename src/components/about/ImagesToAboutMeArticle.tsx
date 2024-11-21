@@ -107,11 +107,8 @@ const ImagesToAboutMeArticle = () => {
 
         <p className="text-justify antialiased text-pretty  text-lg md:text-xl xl:text-xl mx-auto my-2 px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
           W pracy zajmuje się kompleksową i holistyczną{" "}
-          <strong>
-            terapią w problemach{" "}
-            <span className="whitespace-nowrap">jelitowo-trawiennych, </span>
-          </strong>
-          zgagach, refluksie, IBS, SIBO (terapia wisceralna w problemach
+          <strong>terapią w problemach jelitowo-trawiennych</strong>, zgagach,
+          refluksie, IBS, SIBO (terapia wisceralna w problemach
           jelitowo-trawiennych).
         </p>
 
@@ -121,7 +118,7 @@ const ImagesToAboutMeArticle = () => {
 
         <p className="text-justify text-pretty antialiased  text-lg md:text-xl xl:text-xl mx-auto my-2 px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
           Zajmę się indywidualnie dobraną do Twoich potrzeb{" "}
-          <strong>terapią uroginekologiczną</strong>: pracą z{" "}
+          <strong>terapią uroginekologiczną</strong>. Pracą z{" "}
           <strong>blizną po cesarskim cięciu</strong>, rozejściem mięśni
           prostych brzucha, problemem bolesnych miesiączek czy bolesnego
           współżycia, nietrzymaniem moczu czy pęcherzem nadreaktywnym.
@@ -131,13 +128,12 @@ const ImagesToAboutMeArticle = () => {
           Terapia Manualna Blizn
         </h3>
 
-        <p className=" antialiased text-justify  text-lg md:text-xl xl:text-xl mx-auto my-2 px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
+        <p className=" antialiased text-justify  text-lg md:text-xl xl:text-xl mx-auto px-4 my-2 md:px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
           W <strong>terapii manualnej blizn</strong>, łącząc specjalistyczne
           techniki, pomogę Ci poprawić wygląd blizn pooperacyjnych oraz
           zminimalizować ich widoczność, bolesność czy zapobiec zrostom.
         </p>
 
-        <p></p>
         <ImagesToOfferShortLast />
       </div>
     </div>
