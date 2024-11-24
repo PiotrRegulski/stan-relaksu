@@ -50,7 +50,7 @@ const ImagesToAboutMeArticle = () => {
         {imgURLs.map((imgUrl, index) => (
           <motion.div
             key={imgUrl.label}
-            className="relative flex shrink-0 w-[18rem] h-[26rem] md:w-[20rem] md:h-[30rem] lg:w-[15rem] lg:h-[24rem] overflow-hidden mr-2 rounded-lg"
+            className="relative flex shrink-0 w-[18rem] h-[26rem] sm:w-[14rem] sm:h-[20rem] md:w-[14rem] md:h-[20rem] lg:w-[15rem] lg:h-[24rem] overflow-hidden mr-2 rounded-lg"
             style={{ marginTop: imgUrl.marginTop }}
           >
             <motion.div
@@ -86,26 +86,26 @@ const ImagesToAboutMeArticle = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "spring", duration: 5, ease: "easeInOut" }}
         >
-          <p className=" text-center  text-pretty  md:w-2/3 text-lg md:text-xl xl:text-2xl mx-auto md:mx-4 my-2  px-2 py-2  lg:w-2/3 2xl:w-1/3  h-full">
+          <p className=" text-center  text-pretty  md:w-2/3 text-lg md:text-xl xl:text-2xl mx-auto md:mx-4 xl:px-24 2xl:px-8 my-2  px-2 py-2  lg:w-2/3 2xl:w-1/3  h-full">
             Przyniosę Ci ulgę w bólu oraz napięciu stosując techniki
             <strong> masażu powięziowego</strong> i{" "}
             <strong>terapii manualnej.</strong>
           </p>
-          <p className=" text-center  text-pretty  md:w-2/3 text-lg md:text-xl xl:text-2xl mx-auto md:mx-4 my-2  px-2 py-2  lg:w-2/3 2xl:w-1/3    h-full">
+          <p className=" text-center  text-pretty  md:w-2/3 text-lg md:text-xl xl:text-2xl mx-auto md:mx-4 xl:px-24 2xl:px-8 my-2  px-2 py-2  lg:w-2/3 2xl:w-1/3    h-full">
             Podpowiem Ci jak możesz pracować ze swoim ciałem, poprzez ćwiczenia
             czy oddech dla poprawy Twojego dobrostanu.
           </p>
         </motion.div>
         <ImageToOffersShort />
       </div>
-      <div className=" flex flex-col w-full md:justify-center md:items-center py-8 bg-secondary xl:px-28 2xl:px-48 ">
+      <div className=" flex flex-col w-full md:justify-center md:items-center py-8 bg-mainpeach sm:px-16 md:px-16 xl:px-32 2xl:px-48 xl:rounded-3xl ">
         <h2
-          className={`${lato.className} text-center font-semibold text-xl md:text-2xl xl:text-2xl lg:w-2/3  px-3 xl:py-6`}
+          className={`${lato.className} text-center font-semibold text-xl md:text-xl xl:text-2xl lg:w-2/3  px-3 xl:py-6`}
         >
           Kompleksowa i holistyczna terapia dostosowana do Ciebie
         </h2>
 
-        <p className="text-justify antialiased text-pretty  text-lg md:text-xl xl:text-xl mx-auto my-2 px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
+        <p className="text-justify antialiased text-pretty  text-lg md:text-lg xl:text-xl mx-auto my-2 px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
           W pracy zajmuje się kompleksową i holistyczną{" "}
           <strong>terapią w problemach jelitowo-trawiennych</strong>, zgagach,
           refluksie, IBS, SIBO (terapia wisceralna w problemach
@@ -116,7 +116,7 @@ const ImagesToAboutMeArticle = () => {
           Terapia Uroginekologiczna
         </h3>
 
-        <p className="text-justify text-pretty antialiased  text-lg md:text-xl xl:text-xl mx-auto my-2 px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
+        <p className="text-justify text-pretty antialiased  text-lg md:text-lg xl:text-xl mx-auto my-2 px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
           Zajmę się indywidualnie dobraną do Twoich potrzeb{" "}
           <strong>terapią uroginekologiczną</strong>. Pracą z{" "}
           <strong>blizną po cesarskim cięciu</strong>, rozejściem mięśni
@@ -128,7 +128,7 @@ const ImagesToAboutMeArticle = () => {
           Terapia Manualna Blizn
         </h3>
 
-        <p className=" antialiased text-justify  text-lg md:text-xl xl:text-xl mx-auto px-4 my-2 md:px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
+        <p className=" antialiased text-justify  text-lg md:text-lg xl:text-xl mx-auto px-4 my-2 md:px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
           W <strong>terapii manualnej blizn</strong>, łącząc specjalistyczne
           techniki, pomogę Ci poprawić wygląd blizn pooperacyjnych oraz
           zminimalizować ich widoczność, bolesność czy zapobiec zrostom.

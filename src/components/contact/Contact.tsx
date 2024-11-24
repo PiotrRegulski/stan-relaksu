@@ -21,13 +21,13 @@ const Contact = () => {
 
   return (
     <div id={"kontakt"} className="w-full">
-      <PageHeader id={"kontttttakt-header"}>Skontaktuj się</PageHeader>
+      <PageHeader id={"kontakt-header"}>Skontaktuj się</PageHeader>
       <div className="   ">
         <div ref={refTop}></div>
         <div id="kontakt-info" className="  bg-white   w-full ">
           <div className="flex flex-col lg:flex-row w-full ">
             <motion.div
-              initial={{ x: -200, opacity: 0 }}
+              initial={{ x: -60, opacity: 0 }}
               animate={isInViewTop ? { x: 0, opacity: 1 } : {}}
               transition={{ duration: 1, ease: "easeInOut" }}
               className="flex flex-col w-full lg:w-1/2 xl:mx-12 2xl:mx-24  "
@@ -47,7 +47,7 @@ const Contact = () => {
               <ContactForm />
             </motion.div>
             <motion.div
-              initial={{ x: 200, opacity: 0 }}
+              initial={{ x: 60, opacity: 0 }}
               animate={isInViewTop ? { x: 0, opacity: 1 } : {}}
               transition={{ duration: 1, ease: "easeInOut" }}
               className=" flex flex-col w-full lg:w-1/2 justify-center items-center mx-auto lg:mx-12 gap-12 2xl:mx-24 "

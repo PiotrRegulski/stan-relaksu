@@ -4,7 +4,7 @@ import { Noto } from "../fonts";
 import Image from "next/image";
 const Recommendation = (props: any) => {
   return (
-    <section className="py-6 bg-mainpeach">
+    <section className="py-6 bg-mainpeach my-6">
       <h3
         className={`${Noto.className} text-lg md:text-2xl xl:text-2xl  text-center  font-semibold `}
       >

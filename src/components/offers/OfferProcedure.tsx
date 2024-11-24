@@ -36,7 +36,7 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
 
       <div className="flex flex-col sm:flex-row justify-center items-stretch mx-auto xl:mx-36 my-4">
         <div className="flex flex-row sm:flex-col   sm:justify-around">
-          <div className="  relative  mx-auto w-72 h-96  md:mx-6 my-2 md:my-6 md:flex items-center">
+          <div className="  relative  mx-auto w-72 h-96 sm:w-60 sm:h-72  md:mx-6 my-2 md:my-6 md:flex items-center">
             <Image
               src={src}
               alt={alt}
@@ -46,7 +46,7 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
 
             />
           </div>
-          <div className=" hidden relative  mx-auto w-72 h-96 sm:mx-2  md:mx-6 md:my-6 sm:flex items-center">
+          <div className=" hidden relative  mx-auto w-72 h-96 sm:w-60 sm:h-72 sm:mx-2  md:mx-6 md:my-6 sm:flex items-center">
             <Image
               src={srcdetails}
               alt={alt}
