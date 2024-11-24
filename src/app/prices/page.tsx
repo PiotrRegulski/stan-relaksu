@@ -15,7 +15,7 @@ const page = () => {
         <AllPriceList />
       </div>
       
-      <BackLink><p className=" bg-secondary rounded-md px-1 hover:opacity-70">Zobacz szczegóły oferty</p></BackLink>
+      <BackLink><p className="  rounded-md px-1 hover:opacity-70">Zobacz szczegóły oferty</p></BackLink>
     </div>
   );
 };
