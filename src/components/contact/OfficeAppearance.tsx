@@ -51,13 +51,13 @@ const OfficeAppearance = () => {
         className="bg-white rounded-xl my-4  "
          ref={refTop}>
         <div className="flex flex-col w-full justify-center items-center my-6 ">
-          <h3 className={`${Noto.className} text-center lg:text-xl`}>
+          <h3 className={`${Noto.className} text-center lg:text-xl font-medium`}>
             Tworzymy to miejsce, aby holistycznie zadbać o Twoje ciało.
           </h3>
-          <p className={`${Noto.className} lg:text-lg `}>
+          <p className={`${Noto.className} lg:text-lg font-medium `}>
             Poprzez połączenie <strong>jogi i terapii manualnej</strong>.
           </p>
-          <p className={`${Noto.className} text-center  lg:text-xl`}>
+          <p className={`${Noto.className} text-center  lg:text-xl font-medium`}>
             Możesz zatroszczyć się o siebie w sposób kompleksowy.
           </p>
          

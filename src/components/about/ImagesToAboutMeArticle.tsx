@@ -1,11 +1,10 @@
 "use client";
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import ImageCard from "../about/ImageCard";
 import ImageToOffersShort from "./ImageToOffersShort";
 import ImagesToOfferShortLast from "./ImagesToOfferShortLast";
-import { lato, Noto } from "../fonts";
-import ImagesToAboutExit from "./ImageToAboutExit";
+import { lato } from "../fonts";
 
 const imgURLs = [
   {

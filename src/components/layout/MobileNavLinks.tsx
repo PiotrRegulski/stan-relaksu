@@ -11,7 +11,7 @@ const links = [
   { href: "/about", label: "O mnie" },
   { href: "/offer", label: "Oferta" },
   { href: "/prices", label: "Cennik" },
-  { href: "/contact#contact", label: "Kontakt" },
+  { href: "/contact", label: "Kontakt" },
 ];
 
 const MobileNavLinks: React.FC<MobileNavLinksProps>  = ({toggleMenu}) => {

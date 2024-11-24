@@ -2,7 +2,6 @@
 
 import React, { useState, FormEvent } from "react";
 import SuccessModal from "./SuccessModal";
-import { Noto } from "../fonts";
 import ButtonMain from "../layout/ButtonMain";
 interface CustomError extends Error {
   message: string;
@@ -118,9 +117,7 @@ const ContactForm = () => {
           autoComplete="off"
         />
         <div className="flex gap-1  md:gap-4 ">
-          {" "}
           <div className="flex w-1/2 flex-col gap-2">
-            {" "}
             <label htmlFor="name" className="text-sm font-bold  ">
               Imie:
             </label>
@@ -184,10 +181,9 @@ const ContactForm = () => {
         </div>
 
         <div className=" flex w-full justify-center">
-          <ButtonMain type="submit" disabled={loading} >
+          <ButtonMain type="submit" disabled={loading}>
             Wyślij
           </ButtonMain>
-          
         </div>
 
         <SuccessModal

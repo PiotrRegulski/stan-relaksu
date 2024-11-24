@@ -46,14 +46,14 @@ const commentsData = [
   },
   {
     comment:
-      "Pełen profesjonalizm , zdecydowanie polecam. Z przyjemnością będe tu wracać.",
+      "Pełen profesjonalizm, zdecydowanie polecam. Z przyjemnością będe tu wracać.",
     author: "Marta",
     source: "stanrelaksu.booksy.com",
     service: "Masaż twarzy Kobido z kinesiotapingiem",
   },
   {
     comment:
-      "Daję 10 gwiazdek :) Polecam z całego serca. Czuję, że już po pierwszej wizycie zeszły moje napięcia. Kinga to wspaniała osoba z dużą wiedzą. Na pewno będę wracać zarówno w razie bólowej potrzeby czy po prostu w ramach relaksu. Myślę, że masaż w tym miejscu to też świetna opcja na prezent.Gabinet jest piękny, w spokojnej okolicy ze świetnym ogrodem i studiem jogi za ścianą. W łazience są wszystkie niezbędne kobiecie akcesoria. Poczułam się zrelaksowana i zaopiekowana na 200%",
+      "Daję 10 gwiazdek :) Polecam z całego serca. Czuję, że już po pierwszej wizycie zeszły moje napięcia. Kinga to wspaniała osoba z dużą wiedzą. Na pewno będę wracać zarówno w razie bólowej potrzeby, czy po prostu w ramach relaksu. Myślę, że masaż w tym miejscu to też świetna opcja na prezent. Gabinet jest piękny, w spokojnej okolicy ze świetnym ogrodem i studiem jogi za ścianą. W łazience są wszystkie niezbędne kobiecie akcesoria. Poczułam się zrelaksowana i zaopiekowana na 200%",
     author: "Aleksandra",
     source: "stanrelaksu.booksy.com",
     service: "Masaż relaksacyjny",

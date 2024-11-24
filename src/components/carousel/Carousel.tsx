@@ -132,6 +132,7 @@ const Carousel: React.FC = () => {
                     <Image
                       src={image.src}
                       alt={image.alt}
+                      sizes="(max-width: 600px) 100vw, 50vw"
                       fill
                       priority={true}
                       className="mx-auto my-auto object-cover"

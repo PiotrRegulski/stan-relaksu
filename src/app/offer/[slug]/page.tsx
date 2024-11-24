@@ -6,7 +6,6 @@ import BackLink from "@/components/layout/BackLink";
 import Recommendation from "@/components/offers/Recommendation";
 import OfferProcedure from "@/components/offers/OfferProcedure";
 import HighlightedParagraph from "@/components/layout/HighlightedParagraph";
-import { Noto } from "@/components/fonts";
 import MotionHeader from "@/components/offers/MotionHeader";
 interface OfferDetailsPageProps {
   params: {

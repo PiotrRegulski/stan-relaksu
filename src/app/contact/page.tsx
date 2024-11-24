@@ -1,11 +1,12 @@
 import Contact from "@/components/contact/Contact";
 export const metadata = {
   title: "Stan Relaksu - Kontakt",
-  description:"Skontaktuj się ze mną, aby uzyskać więcej informacji o usługach ",
+  description:
+    "Potrzebujesz więcej informacji lub porady na temat zabiegów.Skontaktuj się ze mną poprzez formularz kontaktowy lub w dogodny dla siebie sposób. ",
 };
 const page = () => {
   return (
-    <div className="mt-28">
+    <div className="mt-[10rem]">
       <Contact />
     </div>
   );

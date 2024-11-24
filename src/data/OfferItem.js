@@ -87,7 +87,7 @@ export const OfferItem = [
   {
     id: "MasażKobido",
     slug: "masaz-kobido",
-    order:1,
+    order:7,
     active: true,
     category: "face",
     title: "Kobido z kinesiotapingiem ",
@@ -191,7 +191,7 @@ export const OfferItem = [
   {
     id: "Igłoterapia",
     slug: "igloterapia",
-    order:3,
+    order:8,
     active: true,
     category: "face",
     title: "Igłoterapia estetyczna i pinezkowanie",
@@ -915,7 +915,7 @@ export const OfferItem = [
     id: "terapia-manualna-w-bolach-zatok",
     slug: "terapia-manualna-w-bolach-zatok",
     imageHeader: "terapia-manualna-zatok/terapia-zatok-cover.jpg",
-    order:2,
+    order:9,
     active: true,
     category: "face",
     title: "Terapia manualna w bólach zatok",

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import ImageCard from "./ImageCard";
 import { motion } from "framer-motion";
@@ -8,22 +8,19 @@ const imageURLs = [
     src: "/terapia-manualna-zatok/terapia-zatok-cover.jpg",
     label: "Terapia manualna w bólach zatok",
     caption: "Terapia manualna w bólach zatok",
-    href:"offer/terapia-manualna-w-bolach-zatok"
-  
+    href: "offer/terapia-manualna-w-bolach-zatok",
   },
   {
     src: "/offers-photo/kobido-omnie.jpg",
     label: "masaz kobido",
     caption: "Masaż Kobido",
-    href:"/offer/masaz-kobido"
-
+    href: "/offer/masaz-kobido",
   },
   {
     src: "/kobido-kinesiotaping-omnie.jpg",
     label: "Kinesiotaping limfatyczny",
     caption: "Kinesiotaping limfatyczny ",
-    href:"/offer/masaz-kobido"
-
+    href: "/offer/masaz-kobido",
   },
 ];
 
@@ -53,24 +50,6 @@ const ImagesToAboutMeLast = () => {
           </div>
         ))}
       </div>
-      {/* <div className="flex justify-center w-full mt-2">
-        <div className="flex flex-col w-80 h-72 lg:w-72 lg:h-64 shadow-xl shadow-black overflow-hidden">
-          <motion.div
-            className="w-full h-full"
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", duration: 2, stiffness: 50 }}
-          >
-            {" "}
-            <ImageCard
-              key={imageURLs[2].label}
-              href={imageURLs[2].href}
-              src={imageURLs[2].src}
-              alt={imageURLs[2].label}
-              caption={imageURLs[2].caption}
-            />
-          </motion.div>
-        </div>
-      </div> */}
     </div>
   );
 };

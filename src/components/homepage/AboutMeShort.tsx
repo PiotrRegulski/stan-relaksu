@@ -31,11 +31,11 @@ const AboutMeShort = () => {
 
   return (
     <div
-      className="flex flex-col lg:gap-4 xl:gap-20  lg:flex-row justify-around items-center  my-6 md:my-2 lg:my-32 2xl:my-20 mx-auto md:mx-4 lg:mx-4 xl:mx-12 2xl:mx-48  bg-white"
+      className="flex flex-col lg:gap-4 xl:gap-4  2xl:gap-4  lg:flex-row justify-around items-center  my-6 md:my-2 lg:my-32 2xl:my-20 mx-auto md:mx-4 lg:mx-4 xl:mx-12 2xl:mx-48  bg-white"
       ref={ref}
     >
       <motion.div
-        className="flex justify-end md:w-1/2"
+        className="flex justify-end md:w-1/2 2xl:w-1/3"
         initial={{ x: -80, opacity: 0 }}
         animate={isInView ? { x: 0, opacity: 2 } : {}}
         transition={{ duration: 1, type:"tween" }}
@@ -85,10 +85,10 @@ const AboutMeShort = () => {
         </motion.div>
       </motion.div>
       <motion.div
-        className="lg:w-1/2 mx-4 my-4 "
-        initial={{ x: 80, opacity: 0 }}
+        className="lg:w-1/2 mx-4 my-4  "
+        initial={{ x: 20, opacity: 0 }}
         animate={isInView ? { x: 0, opacity: 1 } : {}}
-        transition={{ duration: 2,  type: "tween" }}
+        transition={{ duration: 1,  type: "tween" }}
       >
         <h2 className={`${Noto.className} text-2xl `}>
           Cześć, jestem Kinga Wołoszka

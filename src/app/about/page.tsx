@@ -1,5 +1,3 @@
-import PageHeader from "@/components/homepage/PageHeader";
-
 import React from "react";
 
 import AboutMeMainCard from "@/components/about/AboutMeMainCard";
@@ -13,10 +11,8 @@ export const metadata = {
 const About = () => {
   return (
     <div className="mt-[7rem] xl:mt-[10rem]">
-      
-
       <AboutMeMainCard />
-       <ImagesToAboutMeArticle />
+      <ImagesToAboutMeArticle />
       <AboutMeLastCard />
     </div>
   );

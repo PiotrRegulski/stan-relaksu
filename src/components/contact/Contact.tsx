@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import MapComponent from "./MapComponent";
 import PageHeader from "../homepage/PageHeader";
 import AdressCard from "./AdressCard";
@@ -27,7 +27,7 @@ const Contact = () => {
         <div id="kontakt-info" className="  bg-white   w-full ">
           <div className="flex flex-col lg:flex-row w-full ">
             <motion.div
-              initial={{ x: -60, opacity: 0 }}
+              initial={{ x: -40, opacity: 0 }}
               animate={isInViewTop ? { x: 0, opacity: 1 } : {}}
               transition={{ duration: 1, ease: "easeInOut" }}
               className="flex flex-col w-full lg:w-1/2 xl:mx-12 2xl:mx-24  "
@@ -47,7 +47,7 @@ const Contact = () => {
               <ContactForm />
             </motion.div>
             <motion.div
-              initial={{ x: 60, opacity: 0 }}
+              initial={{ x: 40, opacity: 0 }}
               animate={isInViewTop ? { x: 0, opacity: 1 } : {}}
               transition={{ duration: 1, ease: "easeInOut" }}
               className=" flex flex-col w-full lg:w-1/2 justify-center items-center mx-auto lg:mx-12 gap-12 2xl:mx-24 "
@@ -89,7 +89,7 @@ const Contact = () => {
                       : { x: -300, y: 0, opacity: 1 }
                     : { y: 0, opacity: 0 }
                 }
-                transition={{ duration: 2, ease: "easeInOut", type: "tween" }}
+                transition={{ duration: 1, ease: "easeInOut", type: "tween" }}
                 className="absolute  "
               >
                 <AdressCard
@@ -114,7 +114,7 @@ const Contact = () => {
                       : { x: 300, y: 0, opacity: 1 }
                     : { y: 0, opacity: 0 }
                 }
-                transition={{ duration: 2, ease: "easeInOut", type: "tween" }}
+                transition={{ duration: 1, ease: "easeInOut", type: "tween" }}
                 className="absolute "
               >
                 <AdressCard

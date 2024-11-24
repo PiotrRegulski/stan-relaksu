@@ -14,8 +14,8 @@ const MainHeader = () => {
     const offerId =
     document.getElementById("o-gabinecie")||
       document.getElementById("kontakt") ||
-      document.getElementById("important-about") ||
-      document.getElementById("zdjecia-z-oferty") ||
+      document.getElementById("o-mnie") ||
+      document.getElementById("offer-title") ||
       document.getElementById("oferta-detale")
      ;
     if (offerId) {
@@ -42,7 +42,7 @@ const MainHeader = () => {
 
   return (
     isVisible && (
-      <div className="fixed z-40 top-o transition">
+      <div className="fixed z-40 top-0 transition max-w-[3000px] ">
         <InfoBar />
         <header
           className={`${Noto.className}  flex flex-col justify-center `}

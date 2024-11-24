@@ -9,7 +9,7 @@ import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { BsArrowUpRightSquare } from "react-icons/bs";
 const InfoBar = () => {
   return (
-    <div className={`${Noto.className} hidden lg:flex font-semibold text-md  px-4 min-w-max  bg-white `}>
+    <div className={`${Noto.className} hidden lg:flex font-semibold text-md  px-4 max-w-[3000px] bg-white `}>
       <div className="  flex justify-between w-full text-sm">
         <div>
           <ul className="">

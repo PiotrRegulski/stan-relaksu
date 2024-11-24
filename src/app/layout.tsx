@@ -25,13 +25,13 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Stan Relaksu - Gabinet terapii manualnej ciała i twarzy.",
+    title: "Stan Relaksu - Gabinet terapii manualnej i masażu.",
     description: "Gabinet Stan Relaksu to terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie która chce o zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
-    url: "https://www.stanrelaksu.com",
+    url: "https://www.stanrelaksu.pl",
     type: 'website',
     images: [
       {
-        url: "https://www.stanrelaksu.com/masaz-relaksacyjny/masaz-relaksacyjny-cover-top.jpg",
+        url: "https://www.stanrelaksu.pl/masaz-relaksacyjny/masaz-relaksacyjny-cover-top.jpg",
         width: 800,
         height: 600,
         alt: "Stan Relaksu - Gabinet terapii manualnej ciała i twarzy",
@@ -48,11 +48,12 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={`${lato.className} relative antialiased  overflow-y-scroll overflow-x-hidden      `}
+        className={`${lato.className} relative antialiased  overflow-y-scroll overflow-x-hidden  max-w-[3000px] mx-auto    `}
       >
+        
+        <main className="overflow-hidden flex flex-col bg-white ">
         <MainHeader />
         <MobileInfoBar />
-        <main className="overflow-hidden flex flex-col bg-white ">
           {" "}
           {children}
         </main>

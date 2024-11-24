@@ -4,12 +4,12 @@ import ButtonReservation from "./ButtonReservation";
 import Image from "next/image";
 import ButtonOffers from "./ButtonOffers";
 import { motion } from "framer-motion";
-import { lato, Noto } from "../fonts";
+import { lato } from "../fonts";
 import PageHeader from "../homepage/PageHeader";
 
 const AboutMeMainCard = () => {
   return (
-    <div className={`flex flex-col mt-4 xl:mt-24   `}>
+    <div className={`flex flex-col mt-4 xl:mt-[4rem]   `}>
      <PageHeader id={'o-mnie'}>O mnie</PageHeader>
       <div className="flex flex-col sm:flex-row  justify-center items-center   w-full xl:px-24  2xl:px-56 bg-gradient-to-t from-secondary from-50% to-transparent   bg-opacity-40   ">
         <div className="flex sm:w-1/2 lg:w-1/2 justify-center items-center md:justify-end  h-full    ">
@@ -45,7 +45,7 @@ const AboutMeMainCard = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
         >
           <h1
-            className={`${lato.className} text-left font-semibold  w-full  text-xl  md:text-3xl  mt-4 px-3 lg:px-10`}
+            className={`${lato.className} text-left font-medium w-full  text-xl  md:text-3xl  mt-4 px-3 lg:px-10`}
           >
             Cześć, jestem Kinga Wołoszka
           </h1>
@@ -67,7 +67,7 @@ const AboutMeMainCard = () => {
           
         </motion.div>
       </div>
-      <div className="flex justify-center items-center w-full gap-4 md:gap-24 py-4 bg-secondary border-b-8 border-white">
+      <div className="flex justify-center items-center w-full gap-4 md:gap-24 py-4 bg-white border-b-8 border-white">
             <ButtonReservation />
             <ButtonOffers />
           </div>
