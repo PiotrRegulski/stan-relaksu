@@ -1,9 +1,9 @@
 module.exports = {
   env: {
-    HOMEPL_USER: "xxxx",
-    HOMEPL_PASS: "xxxx",
-    CONTACT_FORM_TO_EMAIL: "xxxx",
-    SMTP_HOST: "xxxxx",
-    SMTP_PORT: "xxx",
+    HOMEPL_USER: "kontakt+stanrelaksu_pl.serwer2422207",
+    HOMEPL_PASS: "Kin900%StanRelaksu",
+    CONTACT_FORM_TO_EMAIL: "kontakt@stanrelaksu.pl",
+    SMTP_HOST: "serwer2422207.home.pl",
+    SMTP_PORT: "25",
   },
 };
