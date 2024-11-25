@@ -112,7 +112,7 @@ const Carousel: React.FC = () => {
       <motion.div
         className="flex justify-center items-center  bg-secondary  "
         ref={ref}
-        initial={{ y: -100, opacity: 0 }}
+        initial={{ y: -20, opacity: 0 }}
         animate={isInView ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
@@ -135,7 +135,7 @@ const Carousel: React.FC = () => {
                       sizes="(max-width: 600px) 100vw, 50vw"
                       fill
                       priority={true}
-                      className="mx-auto my-auto object-cover"
+                      className="mx-auto my-auto object-cover sm:object-cover"
                     />
                     <motion.div className="absolute bottom-0 lg:bottom-0 lg:left-[4rem] xl:left-[3rem] xl:bottom-5 right-0 bg-black bg-opacity-20 text-primary p-2 w-full lg:w-4/6 xl:w-9/12 2xl:w-2/3 text-center rounded ">
                       <div className="mx-auto sm:mx-12 md:mx-12 xl:mx-12 my-4">
@@ -145,7 +145,7 @@ const Carousel: React.FC = () => {
                           {image.alt}
                         </p>
                         <p
-                          className={`${lato.className} text-neutral-200 px-3 md:text-lg lg:text-xl xl:text-xl text-justify `}
+                          className={`${lato.className} text-neutral-200 px-3 md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-justify `}
                         >
                           {image.description}
                         </p>

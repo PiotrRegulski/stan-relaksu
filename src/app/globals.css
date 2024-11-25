@@ -13,4 +13,8 @@ strong {
 
 
 
-
+.avoid-orphans
+ { word-spacing: 0.25em; } 
+ .avoid-orphans::before, 
+ .avoid-orphans::after 
+ { content: ''; display: inline-block; width: 0.25em;}
