@@ -43,6 +43,8 @@ const AdressCard = (props: any) => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-70"
+              aria-label="Otwórz profil na Instagramie"
+              
             >
               <FaSquareInstagram className="text-right w-8 h-8 lg:h-8 lg:w-8" />
             </Link>
@@ -53,6 +55,7 @@ const AdressCard = (props: any) => {
               target="_blank"
               rel="noopener noreferrer  "
               className="hover:opacity-70"
+              aria-label="Otwórz profil na Facebooku"
             >
               <FaFacebook className="text-right w-8 h-8 lg:h-8 lg:w-8" />
             </Link>
