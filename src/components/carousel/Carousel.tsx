@@ -173,6 +173,7 @@ const Carousel: React.FC = () => {
           <button
             className="absolute top-52  xl:top-[45%] bottom-1/2 left-1 md:left-4 "
             onClick={handlePrevImage}
+            aria-label="Poprzednii obraz" // Dodany atrybut aria-label
           >
             <div className="text-4xl flex items-center justify-center  h-12  rounded-full text-white pb-2 ">
               <IoIosArrowBack />
@@ -181,6 +182,7 @@ const Carousel: React.FC = () => {
           <button
             className="absolute top-52 xl:top-[45%] bottom-1/2 right-1 md:right-4   "
             onClick={handleNextImage}
+            aria-label="Następny obraz" // Dodany atrybut aria-label
           >
             <div className=" text-4xl flex items-center justify-center  h-12  rounded-full text-white pb-2  ">
               <IoIosArrowForward />
