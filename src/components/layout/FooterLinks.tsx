@@ -31,15 +31,17 @@ const FooterLinks = () => {
           </Link>
         ))}
       </div>
-      <div className="hidden sm:flex justify-end items-end w-full mt-4 sm:pr-16 ">
+      <div className="hidden sm:flex justify-end items-end w-full mt-4 sm:pr-16 min-h-[24px]">
         <Link
           href="https://booksy.com/pl-pl/257898_stan-relaksu-holistyczny-gabinet-terapii-i-masazu_masaz_3_warszawa#ba_s=dl_1"
           target="_blank"
           rel="noopener noreferrer"
-          className=""
+          className="flex items-center justify-center p-2 min-h-[24px] min-w-[24px] hover:opacity-70 rounded-xl"
         >
-          <ButtonMain> Zarezerwuj wizyte</ButtonMain>
-       
+          <ButtonMain >
+            Zarezerwuj wizytę
+          </ButtonMain>
+        
         </Link>
       </div>
     </div>
