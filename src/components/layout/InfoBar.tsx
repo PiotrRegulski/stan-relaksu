@@ -19,6 +19,7 @@ const InfoBar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-row  gap-2 px-1 py-1  hover:opacity-70  rounded-xl"
+                aria-label="Zarezerwuj wizytę gabinecie terapii manualnej i masażu - Stan Relaksu "
               >
                 <span className={`${Noto.className}`}>
                   <p className="text-sm underline underline-offset-2 tracking-wider">
@@ -40,6 +41,7 @@ const InfoBar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" flex flex-row px-1  gap-1 hover:opacity-70  "
+                aria-label="Napisz wiadomość e-mail do gabientu terapii manualnej i masażu - Stan Relaksu"
               >
                 <span className="bg-white rounded-full p-2">
                   <MdEmail className="w-3 h-3" />
@@ -53,6 +55,7 @@ const InfoBar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" flex flex-row px-3  gap-1 hover:opacity-70 "
+               aria-label="Zadzwoń do gabientu terapii manualnej i masażu - Stan Relaksu"
               >
                 <span className="bg-white rounded-full  p-2">
                   <BsFillTelephoneForwardFill className="  w-3 h-3" />
@@ -66,6 +69,9 @@ const InfoBar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-row px-1 py-1 hover:opacity-70   "
+                aria-label="Otwórz profil na Instagramie gabinetu terapii manualnej i masażu - Stan Relaksu"
+
+
               >
                 <FaSquareInstagram className="text-right w-5 h-5 lg:w-5 lg:h-5" />
               </Link>
@@ -77,6 +83,7 @@ const InfoBar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-row px-1 py-1 hover:opacity-70 "
+                 aria-label="Otwórz profil na Facebook gabinetu terapii manualnej i masażu - Stan Relaksu"
               >
                 <FaFacebook className="text-right w-5 h-5 lg:w-5 lg:h-5 " />
               </Link>

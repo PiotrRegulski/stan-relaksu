@@ -91,12 +91,14 @@ const Comments = () => {
       <button
         onClick={handlePrevImage}
         className="absolute top-[48%] left-0 lg:left-20 transform -translate-y-1/2 opacity-30 lg:opacity-90 hover:opacity-40 text-gray-300 p-2 z-10 rounded-full"
+         aria-label="Wróć do poprzedniej opinii"
       >
         <IoIosArrowBack className="w-12 h-12" />
       </button>
       <button
         onClick={handleNextImage}
         className="absolute top-[48%] right-0 lg:right-20 transform -translate-y-1/2 opacity-30 lg:opacity-90 hover:opacity-40 text-gray-300 p-2 z-10 rounded-full"
+         aria-label="Przejdź do następnej  opinii"
       >
         <IoIosArrowForward className="w-12 h-12" />
       </button>
