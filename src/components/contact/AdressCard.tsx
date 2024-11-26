@@ -44,7 +44,7 @@ const AdressCard = (props: any) => {
               rel="noopener noreferrer"
               className="hover:opacity-70"
             >
-              <FaSquareInstagram className="text-right w-8 h-8 lg:h-6 lg:w-6" />
+              <FaSquareInstagram className="text-right w-8 h-8 lg:h-8 lg:w-8" />
             </Link>
           </div>
           <div className=" h-8 w-8 rounded-full flex items-center justify-center shrink-0 my-2">
@@ -54,7 +54,7 @@ const AdressCard = (props: any) => {
               rel="noopener noreferrer  "
               className="hover:opacity-70"
             >
-              <FaFacebook className="text-right w-8 h-8 lg:h-6 lg:w-6" />
+              <FaFacebook className="text-right w-8 h-8 lg:h-8 lg:w-8" />
             </Link>
           </div>
         </div>
