@@ -15,7 +15,7 @@ const FooterInfo = (props: any) => {
       <div className=" flex flex-col sm:flex-row w-full   gap-4 lg:gap-24   items-center justify-center  ">
       <FooterLinks />
         <div className="flex flex-col  ">
-          {" "}
+         
           <div className="relative w-auto h-auto  flex items-center justify-center ">
             <Image
               src={props.logoSrc}
@@ -35,6 +35,7 @@ const FooterInfo = (props: any) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:opacity-70"
+                  aria-label="Otwórz profil na Instagramie"
                 >
                   <FaSquareInstagram className="text-right w-6 h-6" />
                 </Link>
@@ -45,6 +46,7 @@ const FooterInfo = (props: any) => {
                   target="_blank"
                   rel="noopener noreferrer  "
                   className="hover:opacity-70"
+                  aria-label="Otwórz profil na Facebooku"
                 >
                   <FaFacebook className="text-right w-6 h-6" />
                 </Link>
@@ -69,6 +71,7 @@ const FooterInfo = (props: any) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" flex flex-row   hover:opacity-70  "
+                aria-label="Napisz wiadomość"
               >
                 <span className=" ">
                   <MdEmail className="w-3 h-3 mt-2 mx-2" />
@@ -81,6 +84,7 @@ const FooterInfo = (props: any) => {
               target="_blank"
               rel="noopener noreferrer"
               className=" flex flex-row    hover:opacity-70 "
+              aria-label="Zadzwoń"
             >
               <span className="  ">
                 <BsFillTelephoneForwardFill className="w-3 h-3 mt-2 mx-2 " />
