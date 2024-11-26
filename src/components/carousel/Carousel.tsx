@@ -20,6 +20,17 @@ interface ImageData {
 }
 const images: ImageData[] = [
   {
+    src: "/carousel/masaż-powięziowy.jpg",
+    alt: "Masaż powięziowy",
+    description:
+      "To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała",
+    linkDetails: "offer/masaz-powieziowy",
+    linkBooksy:
+      "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
+    clName:
+      "text-white xl:text-2xl font-serif tracking-widest hover:opacity-70 hover:underline ",
+  },
+  {
     src: "/carousel/kobido-kinesiotaping.jpg",
     alt: " Kobido z kinesiotapingiem limfatycznym",
     description:
@@ -41,17 +52,7 @@ const images: ImageData[] = [
     clName:
       "text-white xl:text-2xl font-serif tracking-widest hover:opacity-70 hover:underline ",
   },
-  {
-    src: "/carousel/masaż-powięziowy.jpg",
-    alt: "Masaż powięziowy",
-    description:
-      "To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała",
-    linkDetails: "offer/masaz-powieziowy",
-    linkBooksy:
-      "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
-    clName:
-      "text-white xl:text-2xl font-serif tracking-widest hover:opacity-70 hover:underline ",
-  },
+
   {
     src: "/carousel/terapia-manualna-kolano-klawiki.jpg",
     alt: "Terapia manualna",
@@ -162,8 +163,12 @@ const Carousel: React.FC = () => {
                         >
                           <ButtonMain>Zarezerwuj wizyte</ButtonMain>
                         </Link>
-                        <ButtonMain  onClick={() => router.push(image.linkDetails)}> Dowiedz się więcej</ButtonMain>
-                       
+                        <ButtonMain
+                          onClick={() => router.push(image.linkDetails)}
+                        >
+                          {" "}
+                          Dowiedz się więcej
+                        </ButtonMain>
                       </div>
                     </motion.div>
                   </motion.div>
