@@ -8,7 +8,7 @@ const MapComponent: React.FC = () => {
       allowFullScreen
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
-      name="Mapa pokazującą lokalizacje gabientu."
+      title="Mapa pokazującą lokalizacje gabientu."
     />
   );
 };
