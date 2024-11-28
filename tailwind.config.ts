@@ -34,7 +34,7 @@ const config: Config = {
         "my-bg-about": "url('/bg-about.jpg')",
         "my-bg-voucher": "url('/bg-voucher.jpg')",
         "my-bg-mainpage": "url('/firstMainPage.jpg')",
-        "my-bg-faceImage": "url('/mainpagemasaztwaz.jpg')"
+        "my-bg-faceImage": "url('/mainpagemasaztwarz-bg.jpg')"
 
       },
 

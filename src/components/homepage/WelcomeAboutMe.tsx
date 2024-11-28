@@ -8,9 +8,9 @@ const WelcomeAboutMe = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <div id="o-gabinecie" className=" flex w-full flex-col  bg-white  ">
+    <div id="o-gabinecie" className=" flex w-full flex-col   ">
       <motion.div
-        className={` flex flex-col justify-center items-center  mx-6 md:mx-12 lg:mx-12 xl:mx-36 my-6 lg:my-10  rounded-lg text-base font-medium lg:text-2xl`}
+        className={` flex flex-col justify-center items-center  mx-6 md:mx-12 lg:mx-12 xl:mx-36 my-6 lg:my-10  rounded-lg text-base font-medium lg:text-2xl `}
         initial={{ y: -100, opacity: 0 }}
         animate={isInView ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 1, ease: "easeInOut" }}
@@ -27,11 +27,7 @@ const WelcomeAboutMe = () => {
       </motion.div>
       <AboutMeShort />
 
-      <div className="flex w-full justify-center bg-my-bg-faceImage bg-cover bg-no-repeat bg-center bg-fixed md:bg-cover  ">
-        <div className="relative h-[15rem] sm:h-[20rem] md:h-[15rem] xl:h-[20rem] w-full flex justify-center items-center ">
-          {/* <FaceImage /> */}
-        </div>
-      </div>
+  
     </div>
   );
 };

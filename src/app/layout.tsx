@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={`${lato.className} relative antialiased  overflow-y-scroll overflow-x-hidden  max-w-[3000px] mx-auto    `}
+        className={`${lato.className} relative antialiased  overflow-y-scroll overflow-x-hidden  max-w-[3000px] mx-auto bg-primary 2xl:border-x-4 2xl:border-primary   `}
       >
         
         <main className="overflow-hidden flex flex-col bg-white ">

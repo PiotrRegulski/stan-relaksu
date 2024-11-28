@@ -9,7 +9,7 @@ import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { BsArrowUpRightSquare } from "react-icons/bs";
 const InfoBar = () => {
   return (
-    <div className={`${Noto.className} hidden lg:flex font-semibold text-md  px-4 max-w-[3000px] bg-white `}>
+    <div className={`${Noto.className} hidden lg:flex font-semibold text-md  px-4 max-w-[3000px] bg-white bg-opacity-65 `}>
       <div className="  flex justify-between w-full text-sm">
         <div>
           <ul className="">
@@ -27,7 +27,7 @@ const InfoBar = () => {
                   </p>{" "}
                 </span>
                 <span className="">
-                  <BsArrowUpRightSquare className="w-3 h-3 bg-white border-white mt-1" />
+                  <BsArrowUpRightSquare className="w-3 h-3  mt-1" />
                 </span>
               </Link>
             </li>
@@ -43,7 +43,7 @@ const InfoBar = () => {
                 className=" flex flex-row px-1  gap-1 hover:opacity-70  "
                 aria-label="Napisz wiadomość e-mail do gabientu terapii manualnej i masażu - Stan Relaksu"
               >
-                <span className="bg-white rounded-full p-2">
+                <span className=" rounded-full p-2">
                   <MdEmail className="w-3 h-3" />
                 </span>
                 <span className={`${Noto.className} mt-1 text-sm`}>kontakt@stanrelaksu.pl</span>
@@ -57,7 +57,7 @@ const InfoBar = () => {
                 className=" flex flex-row px-3  gap-1 hover:opacity-70 "
                aria-label="Zadzwoń do gabientu terapii manualnej i masażu - Stan Relaksu"
               >
-                <span className="bg-white rounded-full  p-2">
+                <span className=" rounded-full  p-2">
                   <BsFillTelephoneForwardFill className="  w-3 h-3" />
                 </span>
                 <span className={`${Noto.className} mt-1 text-sm`}>791-107-102</span>

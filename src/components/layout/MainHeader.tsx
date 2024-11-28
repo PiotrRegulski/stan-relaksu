@@ -48,7 +48,7 @@ const MainHeader = () => {
           className={`${Noto.className}  flex flex-col justify-center `}
         >
           <NavbarMobile />
-          <div className="flex lg:gap-12 bg-white">
+          <div className="flex lg:gap-12 bg-white  bg-opacity-0">
             <div
               className={`${Noto.className}  hidden lg:flex w-screen`}
             >

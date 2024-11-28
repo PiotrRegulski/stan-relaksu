@@ -5,15 +5,15 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className=" flex items-center   w-full mx-24    h-24 xl:mx-24 ">
-      <div className="">
+    <nav className=" flex     w-full    h-20  bg-white bg-opacity-60 ">
+      <div className=" ">
         <Link href={"/"} className="mx-1 my-1 ml-6">
           <Logo />
         </Link>
       </div>
 
      
-      <div className=" flex w-2/3   justify-end ">
+      <div className=" flex w-full  justify-end mx-4 items-center mr-48 ">
         <NavLinks />
       </div>
     </nav>

@@ -15,7 +15,7 @@ const NavbarMobile = () => {
   }, [isOpen]);
 
   return (
-    <header className="relative bg-gradient-to-b from-white from-70% to-transparent to-30% h-[6rem] lg:hidden w-screen">
+    <header className="relative bg-white h-[4rem] lg:hidden w-screen bg-opacity-20">
       <div className="flex w-full">
         <div className="mx-2 py-1 z-20">
           <Link href="/">
@@ -33,7 +33,7 @@ const NavbarMobile = () => {
         </div>
         <div
           onClick={toggleMenuAndScroll}
-          className="flex-grow flex justify-end mr-4 mt-6"
+          className="flex-grow flex justify-end mr-4 mt-2 z-40"
         >
           <HamburgerIcon />
         </div>
@@ -43,13 +43,13 @@ const NavbarMobile = () => {
       >
         <nav
           id="mobile-nav"
-          className={`absolute top-[4rem] left-0 w-full lg:hidden z-10 transition-transform duration-200
-             ease-in-out ${
+          className={`absolute top-0 left-0 w-full lg:hidden z-30 transition-transform duration-200 bg-black
+             ease-in-out  ${
             isOpen ? "transform translate-y-0" : "transform -translate-y-full"
           }`}
         >
           <ul
-            className={`w-full flex flex-col bg-white p-2 space-y-1 divide-mainpeach lg:flex-row sm:space-y-1 lg:space-x-4 divide-y-2 divide-solid border-b-2 border-mainpeach shadow-lg shadow-mainpeach ${
+            className={`w-full h-screen flex flex-col bg-white p-2 space-y-1 divide-mainpeach lg:flex-row sm:space-y-1 lg:space-x-4 divide-y-2 divide-solid border-b-2 border-mainpeach shadow-lg shadow-mainpeach ${
               isOpen ? "" : "hidden"
             }`}
           >
