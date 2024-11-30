@@ -28,7 +28,7 @@ const config: Config = {
 
     extend: {
       backgroundImage: {
-        "my-bg-image": "url('/flower.jpg')",
+        "my-bg-image": "url('/wyglad/tlo')", 
         "my-ozdoba-image": "url('/do-ozdoby-stopka.jpg')",
         "my-bg-price": "url('/bg-price-list.jpg')",
         "my-bg-about": "url('/bg-about.jpg')",

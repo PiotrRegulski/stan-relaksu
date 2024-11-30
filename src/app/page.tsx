@@ -8,8 +8,8 @@ import Comments from "@/components/comments/Comments";
 export const metadata = {};
 export default function Home() {
   return (
-    <>
-      <div className=" ">
+    <div className="container mx-auto">
+     
         <Carousel />
         {/* <WelcomCard /> */}
 
@@ -21,7 +21,7 @@ export default function Home() {
         <OffersCardFace />
         <Comments/>
         <Contact />
-      </div>
-    </>
+    
+    </div>
   );
 }

@@ -42,15 +42,15 @@ const MainHeader = () => {
 
   return (
     isVisible && (
-      <div className="fixed z-40 top-0 transition max-w-[3000px] ">
+      <div className="fixed z-40 top-0 right-0 left-0   ">
         <InfoBar />
         <header
           className={`${Noto.className}  flex flex-col justify-center `}
         >
           <NavbarMobile />
-          <div className="flex lg:gap-12 bg-white  bg-opacity-0">
+          <div className="flex   w-full">
             <div
-              className={`${Noto.className}  hidden lg:flex w-screen`}
+              className={`${Noto.className}  hidden lg:flex w-full`}
             >
               <Navbar />
             </div>

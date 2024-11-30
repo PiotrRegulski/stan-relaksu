@@ -17,10 +17,10 @@ const NavLinks = () => {
         <Link
           href={link.href}
           key={link.href}
-          className={`border-b-2 border-primary/20   mx-2  h-[3rem] flex justify-center bg-mainthemelogo rounded-e-md rounded-s-md items-center text-black sm:text-sm md:text-md lg:text-lg 2xl:text-xl  md:px-2 font-medium    lg:mt-1  ${
+          className={`border-b-2 border-primary/20   mx-2  h-[3rem] flex justify-center  bg-mainthemelogo rounded-e-md rounded-s-md items-center text-black sm:text-sm md:text-md lg:text-lg 2xl:text-lg  md:px-2 font-medium    lg:mt-1  ${
             pathname === link.href
-              ? "px-2  border-b-2  text-black border-mainpeach shadow-xl "
-              : "  hover:border-primary/40 hover:opacity-40 hover:shadow-sm hover:underline  "
+              ? "px-2  border-b-2  text-black border-mainpeach shadow-xl  "
+              : "  hover:border-primary/40 hover:opacity-40 hover:shadow-sm hover:underline shadow  "
           }`}
         >
           {link.label}

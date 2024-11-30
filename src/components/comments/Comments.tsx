@@ -83,7 +83,7 @@ const Comments = () => {
 
   return (
     <motion.div
-      className="relative flex flex-col justify-center items-center bg-secondary w-full h-[27rem] sm:h-[27rem] md:h-[26rem] lg:h-[27rem] xl:h-[26rem] "
+      className="relative flex flex-col justify-center items-center bg-secondary w-full h-[27rem] sm:h-[27rem] md:h-[27rem] lg:h-[27rem] xl:h-[26rem] "
       initial={{ x: 2, opacity: 0 }}
       animate={isInView ? { y: 0, opacity: 1 } : {}}
       transition={{ duration: 5, ease: "easeInOut", type: "spring" }}

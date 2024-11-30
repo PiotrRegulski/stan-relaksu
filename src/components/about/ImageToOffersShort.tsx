@@ -48,7 +48,7 @@ const ImageToOffersShort = () => {
   return (
     <div
       ref={ref}
-      className="flex overflow-x-auto py-3 gap-2 md:gap-2 w-screen xl:justify-center xl:items-center px-4    "
+      className="flex overflow-x-auto py-3 gap-2 md:gap-2 w-full xl:justify-center xl:items-center px-4    "
     >
       {imgURLs.map((imgUrl, index) => (
         <div

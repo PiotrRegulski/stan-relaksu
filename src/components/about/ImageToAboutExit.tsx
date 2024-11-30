@@ -42,7 +42,7 @@ const ImagesToAboutExit = () => {
   return (
     <div
       ref={ref}
-      className="flex overflow-x-auto py-2 gap-2   md:gap-4 w-screen md:justify-center md:items-center px-2 mr-4 md:mr-0 "
+      className="flex overflow-x-auto py-2 gap-2 md:gap-4 w-full md:justify-center md:items-center px-2 mr-4 md:mr-0 "
     >
       {imgURLs.map((imgUrl, index) => (
         <div

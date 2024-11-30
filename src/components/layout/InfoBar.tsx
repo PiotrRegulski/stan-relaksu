@@ -9,16 +9,16 @@ import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { BsArrowUpRightSquare } from "react-icons/bs";
 const InfoBar = () => {
   return (
-    <div className={`${Noto.className} hidden lg:flex font-semibold text-md  px-4 max-w-[3000px] bg-white bg-opacity-65 `}>
-      <div className="  flex justify-between w-full text-sm">
+    <div className={`${Noto.className} container mx-auto hidden lg:flex font-semibold text-md   max-w-[3000px] bg-white  w-full  `}>
+      <div className="flex justify-between w-full text-sm">
         <div>
-          <ul className="">
+          <ul>
             <li>
               <Link
                 href="https://booksy.com/pl-pl/257898_stan-relaksu-holistyczny-gabinet-terapii-i-masazu_masaz_3_warszawa#ba_s=dl_1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-row  gap-2 px-1 py-1  hover:opacity-70  rounded-xl"
+                className="flex flex-row  gap-2 px-1 py-1  hover:opacity-70   bg-white"
                 aria-label="Zarezerwuj wizytę gabinecie terapii manualnej i masażu - Stan Relaksu "
               >
                 <span className={`${Noto.className}`}>
@@ -40,7 +40,7 @@ const InfoBar = () => {
                 href={"mailto:kontakt@stanrelaksu.pl"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" flex flex-row px-1  gap-1 hover:opacity-70  "
+                className=" flex flex-row px-1  gap-1 hover:opacity-70 bg-white "
                 aria-label="Napisz wiadomość e-mail do gabientu terapii manualnej i masażu - Stan Relaksu"
               >
                 <span className=" rounded-full p-2">
@@ -54,7 +54,7 @@ const InfoBar = () => {
                 href="tel:791107102"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" flex flex-row px-3  gap-1 hover:opacity-70 "
+                className=" flex flex-row px-3  gap-1 hover:opacity-70 bg-white "
                aria-label="Zadzwoń do gabientu terapii manualnej i masażu - Stan Relaksu"
               >
                 <span className=" rounded-full  p-2">
@@ -68,7 +68,7 @@ const InfoBar = () => {
                 href="https://www.instagram.com/stan_relaksu/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-row px-1 py-1 hover:opacity-70   "
+                className="flex flex-row px-1 py-1 hover:opacity-70 bg-white   "
                 aria-label="Otwórz profil na Instagramie gabinetu terapii manualnej i masażu - Stan Relaksu"
 
 
@@ -82,7 +82,7 @@ const InfoBar = () => {
                 href="https://www.facebook.com/profile.php?id=61560021160720"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-row px-1 py-1 hover:opacity-70 "
+                className="flex flex-row px-1 py-1 hover:opacity-70 bg-white"
                  aria-label="Otwórz profil na Facebook gabinetu terapii manualnej i masażu - Stan Relaksu"
               >
                 <FaFacebook className="text-right w-5 h-5 lg:w-5 lg:h-5 " />

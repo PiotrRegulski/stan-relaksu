@@ -111,13 +111,13 @@ const Carousel: React.FC = () => {
   return (
     <>
       <motion.div
-        className="flex justify-center items-center  bg-secondary  "
+        className="flex justify-center items-center m-0 p-0    lg:mt-[7rem]   "
         ref={ref}
         initial={{ y: -20, opacity: 0 }}
         animate={isInView ? { y: 1, opacity: 1 } : {}}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        <div className="relative w-full h-[32rem] sm:h-[20rem] md:h-[15rem] lg:h-[20rem] xl:h-[40rem] 2xl:h-[50rem] overflow-hidden ">
+        <div className="relative w-full h-[32rem] sm:h-screen md:h-screen lg:h-[30rem] xl:h-[34rem] 2xl:h-[40rem] 2xl:w-full overflow-hidden ">
           <AnimatePresence>
             {images.map(
               (image, index) =>
@@ -136,28 +136,17 @@ const Carousel: React.FC = () => {
                       sizes="(max-width: 600px) 100vw, 50vw"
                       fill
                       priority={true}
-                      className="mx-auto my-auto 2xl:object-cover "
+                      className="mx-auto  object-cover  "
                     />
-                    <motion.div className="absolute bottom-20 md:bottom-44 lg:bottom-20 lg:left-5 xl:left-[1rem] xl:bottom-20 right-0  text-primary p-2 w-full text-center rounded ">
-                      <div className="mx-auto sm:mx-12 md:mx-12  my-4 xl:w-2/3 2xl:w-1/2 ">
-                        <div className=" text-left">
-                        
-                          <p
-                            className={`${lato.className}  bg-black bg-opacity-25 text-white md:text-xl lg:text-2xl xl:text-3xl   md:text-left mb-2 xl:mb-4 text-left whitespace-nowrap inline-block`}
-                          >
-                            {image.alt}
-                          </p>
-                        </div>
-
-                        <p
-                          className={`${lato.className} bg-black bg-opacity-25 text-white text-left text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-3xl    xl:mx-24 inline-block `}
-                        >
+                    <motion.div className="absolute bottom-0 sm:bottom-0 md:bottom-2 lg:bottom-5 lg:left-5 xl:left-0 xl:bottom-5 right-0 2xl:bottom-10 2xl:left-0  p-2 w-full text-center rounded ">
+                      <div className=" flex flex-col justify-center items-center xl:w-full 2xl:w-full bg-black bg-opacity-10 ">
+                        <div className=" flex flex-col text-center text-white">
+                          <p className={`${lato.className} text-lg xl:text-2xl 2xl:text-2xl font-bold `}>{image.alt}</p>
+                          <p className={`${lato.className} text-base  xl:text-xl 2xl:text-xl font-medium sm:px-[5rem] md:px-[7rem] lg:px-[14rem] xl:px-[15rem] 2xl:px-[20rem]  `}>
                           {image.description}
                         </p>
-                      </div>
-                    </motion.div>
-                    <div
-                      className={`absolute bottom-0 left-0 right-0 my-6 flex justify-center gap-4 md:justify-center md:gap-4 `}
+                        <div
+                      className={` my-2 flex justify-center gap-4 md:justify-center md:gap-4 `}
                     >
                       <Link
                         key={index}
@@ -177,12 +166,19 @@ const Carousel: React.FC = () => {
                         Informacje o zabiegu
                       </ButtonMain>
                     </div>
+                        </div>
+                      
+
+                    
+                      </div>
+                    </motion.div>
+                 
                   </motion.div>
                 )
             )}
           </AnimatePresence>
           <button
-            className="absolute top-52  xl:top-[45%] bottom-1/2 left-1 md:left-4 "
+            className="absolute top-52 sm:top-[45%]  xl:top-[45%] bottom-1/2 left-1 md:left-4 "
             onClick={handlePrevImage}
             aria-label="Poprzednii obraz" // Dodany atrybut aria-label
           >
@@ -191,7 +187,7 @@ const Carousel: React.FC = () => {
             </div>
           </button>
           <button
-            className="absolute top-52 xl:top-[45%] bottom-1/2 right-1 md:right-4   "
+            className="absolute top-52 sm:top-[45%] xl:top-[45%] bottom-1/2 right-1 md:right-4   "
             onClick={handleNextImage}
             aria-label="Następny obraz" // Dodany atrybut aria-label
           >

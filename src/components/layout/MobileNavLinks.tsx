@@ -19,10 +19,10 @@ const MobileNavLinks: React.FC<MobileNavLinksProps>  = ({toggleMenu}) => {
   return (
     <>
       {links.map((link) => (
-        <li className="mt-2" key={link.href}>
+        <li className="mt-[6rem]" key={link.href} >
           <Link
             href={link.href} 
-            className=" flex justify-center px-1 py-1 text-xl font-serif  text-black w-full  hover:underline hover:underline-offset-8" onClick={toggleMenu}
+            className=" flex justify-center px-1 py-1 text-xl font-serif min-h-[24px]  text-black w-full  hover:underline hover:underline-offset-8" onClick={toggleMenu}
           >
             {link.label}
           </Link>

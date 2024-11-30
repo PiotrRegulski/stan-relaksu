@@ -31,7 +31,7 @@ const AboutMeShort = () => {
 
   return (
     <div
-      className="flex flex-col lg:gap-4 xl:gap-4  2xl:gap-4  lg:flex-row justify-around items-center  my-6 md:my-2 lg:my-32 2xl:my-20 mx-auto md:mx-4 lg:mx-4 xl:mx-12 2xl:mx-48  bg-white"
+      className="flex flex-col lg:gap-4 xl:gap-4  2xl:gap-4  lg:flex-row justify-around items-center  my-6 md:my-2 lg:my-32 2xl:my-20 mx-auto md:mx-4 lg:mx-4 xl:mx-12 2xl:mx-2  bg-white"
       ref={ref}
     >
       <motion.div
@@ -42,7 +42,7 @@ const AboutMeShort = () => {
       >
         <motion.div
           id="troche-o-omnie"
-          className="relative w-[12rem] sm:w-[16rem] md:w-[15rem] xl:w-[20rem] h-[16rem] sm:h-[19rem] xl:h-[27rem] z-20 overflow-hidden"
+          className="relative w-[12rem] sm:w-[16rem] md:w-[15rem] xl:w-[20rem] h-[16rem] sm:h-[19rem] xl:h-[27rem] 2xl:w-[20rem] 2xl:h-[25rem] z-20 overflow-hidden"
           transition={{ type: "spring", duration: 2 }}
           style={{ y: springImageY }}
         >
@@ -63,7 +63,7 @@ const AboutMeShort = () => {
           </motion.div>
         </motion.div>
         <motion.div
-          className="relative w-[12rem] sm:w-[16rem] xl:w-[21rem] h-[17rem] sm:h-[21rem] xl:h-[29rem] -ml-10 mt-20 overflow-hidden"
+          className="relative w-[12rem] sm:w-[16rem] xl:w-[21rem] h-[17rem] sm:h-[21rem] xl:h-[29rem] 2xl:w-[23rem] 2xl:h-[30rem] -ml-10 mt-20 overflow-hidden"
           transition={{ type: "spring" }}
           style={{ y: springImageYs }}
         >
@@ -85,7 +85,7 @@ const AboutMeShort = () => {
         </motion.div>
       </motion.div>
       <motion.div
-        className="lg:w-1/2 mx-4 my-4  "
+        className=" md:w-3/4 lg:w-1/2 mx-4 my-4  "
         initial={{ x: 20, opacity: 0 }}
         animate={isInView ? { x: 0, opacity: 1 } : {}}
         transition={{ duration: 1,  type: "tween" }}
@@ -93,13 +93,13 @@ const AboutMeShort = () => {
         <h2 className={`${Noto.className} text-2xl `}>
           Cześć, jestem Kinga Wołoszka
         </h2>
-        <p className="text-base md:text-xl  my-6 text-justify">
+        <p className="text-base lg:text-xl  my-6 text-justify">
           Przyniosę Ci ulgę w bólu oraz napięciu stosując techniki masażu
           powięziowego i terapii manualnej, podpowiem Ci jak możesz pracować ze
           swoim ciałem poprzez indywidualnie dobrane ćwiczenia czy trening
           oddechowy dla poprawy Twojego zdrowia i samopoczucia.
         </p>
-        <p className="text-base md:text-xl  my-6 text-justify">
+        <p className="text-base lg:text-xl  my-6 text-justify">
           Czekam na Ciebie z terapią manualną, masażem powięziowym, masażem
           tkanek głębokich. Głęboko odprężającymi technikami masażu twarzy
           Kobido, masażu relaksacyjnego, które pozwolą Ci osiągnąć

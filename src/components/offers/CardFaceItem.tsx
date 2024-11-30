@@ -40,10 +40,10 @@ const CardFaceItem = () => {
     {categoryFace.map((offerItem) => (
       <div
         key={offerItem.id}
-        className=" h-[29rem]  my-6  md:mx-2 sm:h-[28rem] md:h-[32rem] 2xl:h-[42rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform duration-200 ease-in-out hover:scale-[1.02]    2xl:w-[30rem]  "
+        className=" h-[29rem]  my-6  md:mx-2 sm:h-[28rem] md:h-screen 2xl:h-[42rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform duration-200 ease-in-out hover:scale-[1.02]    2xl:w-[30rem]  "
       >
         <Link className="" href={`/offer/${offerItem.slug} `}>
-          <div className="relative h-[29rem] w-[20rem]   sm:w-[20rem] md:w-[17rem] md:h-[32rem] lg:min-w-[20rem] xl:w-[25rem] 2xl:h-[42rem] 2xl:w-[30rem] ">
+          <div className="relative h-[29rem] w-[20rem]   sm:w-[20rem] md:w-[24rem] md:h-screen lg:min-w-[20rem] xl:w-[25rem] 2xl:h-[42rem] 2xl:w-[30rem] ">
             <Image
               src={`/${offerItem.image}`}
               alt={offerItem.title}
@@ -51,7 +51,7 @@ const CardFaceItem = () => {
               sizes="(max-width: 600px) 100vw, 50vw"
               className=" object-cover w-full h-full rounded-lg "
             />
-            <div className="absolute bottom-0 left-0 bg-secondary bg-opacity-70   rounded w-full h-2/5  ">
+            <div className="absolute bottom-0 left-0 bg-secondary bg-opacity-70   rounded w-full h-2/5 md:h-[48%]  ">
               <div className=" flex flex-col justify-center items-center animate-fadeIn rounded   px-1  w-full  h-3/4 ">
                 <div className="h-1/4 flex mt-2 ">
                   <p
