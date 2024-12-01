@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ImageResponse } from "next/og";
 import MainHeader from "@/components/layout/MainHeader";
 import MainFooter from "@/components/layout/MainFooter";
 import { lato } from "@/components/fonts";
@@ -30,14 +31,6 @@ export const metadata: Metadata = {
       "Gabinet Stan Relaksu to terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie która chce o zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
     url: "https://www.stanrelaksu.pl",
     type: "website",
-    images: [
-      {
-        url: "https://www.stanrelaksu.pl/masaz-relaksacyjny/masaz-relaksacyjny-cover-top.jpg",
-        width: 800,
-        height: 600,
-        alt: "Stan Relaksu - Gabinet terapii manualnej ciała i twarzy",
-      },
-    ],
   },
 };
 
