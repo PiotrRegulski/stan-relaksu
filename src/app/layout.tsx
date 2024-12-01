@@ -11,7 +11,7 @@ import MobileInfoBar from "@/components/layout/MobileInfoBar";
 export const metadata: Metadata = {
   title: "Stan Relaksu - Gabinet terapii manualnej ciała i twarzy.",
   description:
-    " Gabinet Stan Relaksu to terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie która chce o zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
+    "To terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
   robots: {
     index: true, // Zmieniono z false na true
     follow: true,
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Stan Relaksu - Gabinet terapii manualnej i masażu.",
     description:
-      "Gabinet Stan Relaksu to terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie która chce o zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
+      "To terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
     url: "https://www.stanrelaksu.pl",
     type: "website",
   },
