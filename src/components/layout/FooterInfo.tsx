@@ -71,7 +71,7 @@ const FooterInfo = (props: any) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" flex flex-row   hover:opacity-70  "
-                aria-label="Napisz wiadomość"
+                aria-label="kontakt@stanrelaksu.pl"
               >
                 <span className=" ">
                   <MdEmail className="w-3 h-3 mt-2 mx-2" />
@@ -84,7 +84,7 @@ const FooterInfo = (props: any) => {
               target="_blank"
               rel="noopener noreferrer"
               className=" flex flex-row    hover:opacity-70 "
-              aria-label="Zadzwoń"
+              aria-label="791-107-102"
             >
               <span className="  ">
                 <BsFillTelephoneForwardFill className="w-3 h-3 mt-2 mx-2 " />
