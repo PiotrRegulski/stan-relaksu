@@ -113,9 +113,9 @@ const Carousel: React.FC = () => {
       <motion.div
         className="flex justify-center items-center m-0 p-0    lg:mt-[7rem]   "
         ref={ref}
-        initial={{ y: -20, opacity: 0 }}
-        animate={isInView ? { y: 1, opacity: 1 } : {}}
-        transition={{ duration: 1, ease: "easeInOut" }}
+        initial={{ y: 0, opacity: 0 }}
+        animate={isInView ? { y: 0, opacity: 1 } : {}}
+        transition={{ duration: 1, }}
       >
         <div className="relative w-full h-[32rem] sm:h-screen md:h-[50vh] lg:h-[30rem] xl:h-[34rem] 2xl:h-[40rem] 2xl:w-full overflow-hidden ">
           <AnimatePresence>
