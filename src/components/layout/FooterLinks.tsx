@@ -7,10 +7,10 @@ import { usePathname } from "next/navigation";
 import ButtonMain from "./ButtonMain";
 const links = [
   { href: "/", label: "Strona główna" },
-  { href: "/about", label: "O mnie" },
-  { href: "/offer", label: "Oferta" },
-  { href: "/prices", label: "Cennik" },
-  { href: "/contact", label: "Kontakt" },
+  { href: "/omnie", label: "O mnie" },
+  { href: "/oferta", label: "Oferta" },
+  { href: "/cennik", label: "Cennik" },
+  { href: "/kontakt", label: "Kontakt" },
 ];
 const FooterLinks = () => {
   const pathname = usePathname();

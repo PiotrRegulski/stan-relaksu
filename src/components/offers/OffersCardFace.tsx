@@ -20,7 +20,7 @@ const OffersCardFace = () => {
     >
       <PageHeader id={"offer-face"}>Zabiegi na twarz</PageHeader>
       <div ref={ref} className="flex justify-center  w-full my-4 md:my-2 2xl:my-2 sm:h-full md:min-h-[33rem] ">
-        <section className="grid  gap-1 sm:gap-2 md:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-2   lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 md:justify-items-center  2xl:justify-items-center 2xl:gap-11 rounded">
+        <section className="grid  gap-1 sm:gap-4 md:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-2   lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 md:justify-items-center  2xl:justify-items-center 2xl:gap-11 rounded">
           <CardFaceItem />
         </section>
       </div>

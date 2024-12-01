@@ -4,10 +4,10 @@ import React from "react";
 import { usePathname } from "next/navigation";
 const links = [
   { href: "/", label: "Strona główna" },
-  { href: "/about", label: "O mnie" },
-  { href: "/offer", label: "Oferta" },
-  { href: "/prices", label: "Cennik" },
-  { href: "/contact", label: "Kontakt" },
+  { href: "/omnie", label: "O mnie" },
+  { href: "/oferta", label: "Oferta" },
+  { href: "/cennik", label: "Cennik" },
+  { href: "/kontakt", label: "Kontakt" },
 ];
 const NavLinks = () => {
   const pathname = usePathname();

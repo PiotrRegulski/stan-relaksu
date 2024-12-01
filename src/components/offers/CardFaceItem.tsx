@@ -40,10 +40,10 @@ const CardFaceItem = () => {
     {categoryFace.map((offerItem) => (
       <div
         key={offerItem.id}
-        className=" h-[29rem]  my-6  md:mx-2 sm:h-[28rem] md:h-scree lg:h-[30rem] xl:h-[30rem] 2xl:h-[42rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform xl:hover:z-30 duration-500 ease-in-out xl:hover:scale-105 xl:hover:opacity-75   2xl:w-[30rem]  "
+        className=" h-[29rem]  my-6  md:mx-2 sm:h-[28rem] md:h-[30rem] lg:h-[30rem] xl:h-[30rem] 2xl:h-[42rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform xl:hover:z-30 duration-500 ease-in-out xl:hover:scale-105 xl:hover:opacity-75   2xl:w-[30rem]  "
       >
-        <Link className="" href={`/offer/${offerItem.slug} `}>
-          <div className="relative h-[29rem] w-[20rem]   sm:w-[19rem] md:w-[24rem] md:h-screen lg:h-[30rem] lg:min-w-[20rem] xl:h-[30rem] xl:w-[25rem] 2xl:h-[42rem] 2xl:w-[30rem]  ">
+        <Link className="" href={`/oferta/${offerItem.slug} `}>
+          <div className="relative h-[29rem] w-[20rem]   sm:w-[19rem] md:w-[24rem] md:h-[30rem] lg:h-[30rem] lg:min-w-[20rem] xl:h-[30rem] xl:w-[25rem] 2xl:h-[42rem] 2xl:w-[30rem]  ">
             <Image
               src={`/${offerItem.image}`}
               alt={offerItem.title}

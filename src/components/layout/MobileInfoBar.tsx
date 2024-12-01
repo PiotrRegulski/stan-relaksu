@@ -29,6 +29,7 @@ const MobileInfoBar = () => {
             href="https://booksy.com/pl-pl/257898_stan-relaksu-holistyczny-gabinet-terapii-i-masazu_masaz_3_warszawa#ba_s=dl_1"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="link do rezerwacji wizyty"
           >
             <div className="font-semibold">
               Zarezerwuj<br></br> Wizytę
@@ -38,7 +39,7 @@ const MobileInfoBar = () => {
         <button className=" md:hidden   w-full  text-white shadow-xl  transition-transform duration-200 ease-in-out hover:scale-[1.09] ">
           <div className="flex justify-center">
             {" "}
-            <Link href="tel:791107102 ">
+            <Link href="tel:791107102 " aria-label="zadzwoń">
               <BsFillTelephoneForwardFill className="text-center " />
             </Link>
           </div>
@@ -50,6 +51,7 @@ const MobileInfoBar = () => {
               href="https://www.instagram.com/stan_relaksu/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="link do Instagrama"
             >
               <FaSquareInstagram className="text-right" />
             </Link>
@@ -62,6 +64,7 @@ const MobileInfoBar = () => {
               href="https://www.facebook.com/profile.php?id=61560021160720"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="link do facebooka"
             >
               <FaFacebook className="text-right" />
             </Link>

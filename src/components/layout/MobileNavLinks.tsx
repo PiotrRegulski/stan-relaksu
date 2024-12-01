@@ -7,11 +7,11 @@ interface MobileNavLinksProps {
   toggleMenu: () => void;
 }
 const links = [
-  { href: "/#welcome-card", label: "Strona główna" },
-  { href: "/about", label: "O mnie" },
-  { href: "/offer", label: "Oferta" },
-  { href: "/prices", label: "Cennik" },
-  { href: "/contact", label: "Kontakt" },
+  { href: "/", label: "Strona główna" },
+  { href: "/omnie", label: "O mnie" },
+  { href: "/oferta", label: "Oferta" },
+  { href: "/cennik", label: "Cennik" },
+  { href: "/kontakt", label: "Kontakt" },
 ];
 
 const MobileNavLinks: React.FC<MobileNavLinksProps>  = ({toggleMenu}) => {

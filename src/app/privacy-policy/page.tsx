@@ -9,10 +9,10 @@ const pages = () => {
       <PageHeader id={"privacy-policy"}>Polityka prywatności</PageHeader>
 
       <div className="flex flex-col w-full justify-center items-center ">
-        <p className="text-left xl:w-2/3 text-3xl my-4">
+        <p className="text-left xl:w-2/3 text-xl my-4">
           I. Postanowienia ogólne{" "}
         </p>
-        <ol className="list-decimal xl:w-1/2 text-xl">
+        <ol className="list-decimal xl:w-1/2 text-base">
           <li>
             Polityka prywatności określa, jak zbierane, przetwarzane i
             przechowywane są dane osobowe Użytkowników niezbędne do świadczenia
@@ -35,10 +35,10 @@ const pages = () => {
         </ol>
       </div>
       <div className="flex flex-col w-full justify-center items-center">
-        <p className="text-left xl:w-2/3 text-4xl my-4">
+        <p className="text-left xl:w-2/3 text-xl my-4">
           II. Administrator danych
         </p>
-        <p className="text-xl xl:w-1/2">
+        <p className="text-base xl:w-1/2">
           Administratorem danych osobowych zbieranych przez Serwis jest Stan
           Relaksu Kinga Wołoszka, adres: ul. Naukowa 20/22/1, 02-463 Warszawa,
           NIP: 7011219823, REGON: 529475624, adres poczty elektronicznej:
@@ -46,10 +46,10 @@ const pages = () => {
         </p>
       </div>
       <div className="flex flex-col w-full justify-center items-center ">
-        <p className="text-left xl:w-2/3 text-4xl my-4">
+        <p className="text-left xl:w-2/3 text-xl my-4">
           III. Cel zbierania danych osobowych{" "}
         </p>
-        <ol className="list-decimal xl:w-1/2 text-xl">
+        <ol className="list-decimal xl:w-1/2 text-base">
           <li>
             Dane osobowe wykorzystywane są w celu:
             <ul className="list-disc ml-8">
@@ -81,20 +81,20 @@ const pages = () => {
         </ol>
       </div>
       <div className="flex flex-col w-full justify-center items-center">
-        <p className="text-left xl:w-2/3 text-4xl my-4">
+        <p className="text-left xl:w-2/3 text-xl my-4">
           IV. Rodzaj przetwarzanych danych osobowych
         </p>
-        <p className="text-xl xl:w-1/2">
+        <p className="text-base xl:w-1/2">
           Administrator może przetwarzać dane osobowe Użytkownika: imię i
           nazwisko, data urodzenia, adres zamieszkania, adres e-mail, numer
           telefonu, NIP.
         </p>
       </div>
       <div className="flex flex-col w-full justify-center items-center ">
-        <p className="text-left xl:w-2/3 text-4xl my-4">
+        <p className="text-left xl:w-2/3 text-xl my-4">
           V. Okres przetwarzania danych osobowych{" "}
         </p>
-        <ol className="list-decimal xl:w-1/2 text-xl">
+        <ol className="list-decimal xl:w-1/2 text-base">
           <li>
             Dane osobowe Użytkowników będą przetwarzane przez okres:
             <ul className="list-disc ml-8">
@@ -109,17 +109,17 @@ const pages = () => {
             </ul>
           </li>
         </ol>
-        <p className="text-xl xl:w-1/2">
+        <p className="text-base xl:w-1/2">
           W obu przypadkach termin przedawnienia wynosi 6 lat, a dla roszczeń o
           świadczenia okresowe i roszczeń dotyczących prowadzenia działalności
           gospodarczej – 3 lata (jeśli przepis szczególny nie stanowi inaczej).
         </p>
       </div>
       <div className="flex flex-col w-full justify-center items-center ">
-        <p className="text-left xl:w-2/3 text-4xl my-4">
+        <p className="text-left xl:w-2/3 text-xl my-4">
           VI. Udostępnianie danych osobowych{" "}
         </p>
-        <ol className="list-decimal xl:w-1/2 text-xl">
+        <ol className="list-decimal xl:w-1/2 text-base">
           <li>
             Dane osobowe Użytkowników mogą być przekazywane: podmiotom
             powiązanym z Administratorem, jego podwykonawcom, podmiotom
@@ -134,10 +134,10 @@ const pages = () => {
         </ol>
       </div>
       <div className="flex flex-col w-full justify-center items-center ">
-        <p className="text-left xl:w-2/3 text-4xl my-4">
+        <p className="text-left xl:w-2/3 text-xl my-4">
           VII. Prawa Użytkowników{" "}
         </p>
-        <ol className="list-decimal xl:w-1/2 text-xl">
+        <ol className="list-decimal xl:w-1/2 text-base">
           <li>
             Użytkownik Serwisu ma prawo do: dostępu do treści swoich danych
             osobowych, ich sprostowania, usunięcia, ograniczenia przetwarzania,
@@ -162,8 +162,8 @@ const pages = () => {
         </ol>
       </div>
       <div className="flex flex-col w-full justify-center items-center ">
-        <p className="text-left xl:w-2/3 text-4xl my-4">VIII. Pliki cookies </p>
-        <ol className="list-decimal xl:w-1/2 text-xl">
+        <p className="text-left xl:w-2/3 text-xl my-4">VIII. Pliki cookies </p>
+        <ol className="list-decimal xl:w-1/2 text-base">
           <li>
             Serwis zbiera informacje za pomocą plików cookies – sesyjnych,
             stałych i podmiotów zewnętrznych.
@@ -179,8 +179,8 @@ const pages = () => {
         </ol>
       </div>
       <div className="flex flex-col w-full justify-center items-center ">
-        <p className="text-left xl:w-2/3 text-4xl my-4">IX. Zautomatyzowane podejmowanie decyzji i profilowanie</p>
-        <ol className="list-decimal xl:w-1/2 text-xl">
+        <p className="text-left xl:w-2/3 text-xl my-4">IX. Zautomatyzowane podejmowanie decyzji i profilowanie</p>
+        <ol className="list-decimal xl:w-1/2 text-base">
           <li>
             Dane Użytkowników nie mogą być przetwarzane w zautomatyzowany sposób
             tak, że na skutek tego mogłyby zapaść wobec nich jakiekolwiek
@@ -193,10 +193,10 @@ const pages = () => {
         </ol>
       </div>
       <div className="flex flex-col w-full justify-center items-center ">
-        <p className="text-left xl:w-2/3 text-4xl my-4">
+        <p className="text-left xl:w-2/3 text-xl my-4">
           X. Postanowienia końcowe
         </p>
-        <ol className="list-decimal xl:w-1/2 text-xl">
+        <ol className="list-decimal xl:w-1/2 text-base">
           <li>
             Administrator ma prawo do wprowadzenia zmian w Polityce prywatności,
             przy czym prawa Użytkowników nie zostaną ograniczone.
@@ -218,6 +218,7 @@ const pages = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-400"
+            aria-label="link do strony www.wygranaonline.com"
           >
             WygranaOnline.
           </Link>{" "}

@@ -24,7 +24,7 @@ const images: ImageData[] = [
     alt: "Terapia manualna",
     description:
       "To specjalistyczne techniki mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenie sztywności i ograniczeń w zakresie ruchomości. ",
-    linkDetails: "offer/terapia-manualna",
+    linkDetails: "oferta/terapia-manualna",
     linkBooksy:
       "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
     clName:
@@ -35,7 +35,7 @@ const images: ImageData[] = [
     alt: "Masaż powięziowy",
     description:
       "To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała",
-    linkDetails: "offer/masaz-powieziowy",
+    linkDetails: "oferta/masaz-powieziowy",
     linkBooksy:
       "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
     clName:
@@ -46,7 +46,7 @@ const images: ImageData[] = [
     alt: " Kobido z kinesiotapingiem limfatycznym",
     description:
       "Zdrowszy i promienny wygląd twarzy, spłycenie zmarszczek oraz bruzd mimicznych to jedne z wielu korzyści płynących z rytuału Kobido.",
-    linkDetails: "offer/masaz-kobido",
+    linkDetails: "oferta/masaz-kobido",
     linkBooksy:
       "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
     clName:
@@ -57,7 +57,7 @@ const images: ImageData[] = [
     alt: "Terapia manualna w bólach zatok ",
     description:
       "Techniki manualne stosowane podczas terapii pomagają w odblokowaniu dróg oddechowych, poprawiają krążenie krwi oraz zmniejszają napięcie mięśniowe w okolicy twarzy i głowy.",
-    linkDetails: "offer/terapia-manualna-w-bolach-zatok",
+    linkDetails: "oferta/terapia-manualna-w-bolach-zatok",
     linkBooksy:
       "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
     clName:
@@ -69,7 +69,7 @@ const images: ImageData[] = [
     alt: "Masaż tkanek głębokich",
     description:
       "Niezwykle skuteczna technika pracy z ciałem, koncentrująca się na rozluźnieniu głębokich warstw mięśni i tkanki powięziowej. ",
-    linkDetails: "offer/masaz-sportowy",
+    linkDetails: "oferta/masaz-tkanek-głebokich",
     linkBooksy:
       "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
     clName:
@@ -80,7 +80,7 @@ const images: ImageData[] = [
     alt: "Masaż relaksacyjny Stanu Relaksu",
     description:
       "Przenieś się do pełnego stanu relaksu z masażem, który głęboko odpręży Twoje mięśnie i zdejmie napięcie z układu nerwowego, zmniejszając uczucie stresu. ",
-    linkDetails: "offer/masaz-relaksacyjny-stanu-relaksu",
+    linkDetails: "oferta/masaz-relaksacyjny-stanu-relaksu",
     linkBooksy:
       "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
     clName:
@@ -117,7 +117,7 @@ const Carousel: React.FC = () => {
         animate={isInView ? { y: 1, opacity: 1 } : {}}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        <div className="relative w-full h-[32rem] sm:h-screen md:h-screen lg:h-[30rem] xl:h-[34rem] 2xl:h-[40rem] 2xl:w-full overflow-hidden ">
+        <div className="relative w-full h-[32rem] sm:h-screen md:h-[50vh] lg:h-[30rem] xl:h-[34rem] 2xl:h-[40rem] 2xl:w-full overflow-hidden ">
           <AnimatePresence>
             {images.map(
               (image, index) =>

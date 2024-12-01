@@ -106,7 +106,7 @@ const AboutMeShort = () => {
           <span className="whitespace-nowrap font-bold"> Stan Relaksu.</span>
         </p>
         <div className="flex justify-center w-full lg:justify-start">
-          <Link href="/about">
+          <Link href="/omnie" aria-label="Link do strony o mnie">
             <ButtonMain>Dowiedz się więcej</ButtonMain>
           </Link>
         </div>

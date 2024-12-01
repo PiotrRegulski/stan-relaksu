@@ -82,7 +82,7 @@ export async function generateMetadata(
     openGraph: {
       title: product?.title,
       description: product?.contentFirst,
-      url: `https://stanrelaksu/offer/${product?.slug}`,
+      url: `https://stanrelaksu/oferta/${product?.slug}`,
       type: "website",
       images: [
         {
