@@ -171,7 +171,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     "rozluźnianie",
   ];
   return (
-    <div className=" mt-[8rem] sm:mt-[5rem] md:mt-[8rem] lg:mt-[14rem]">
+    <div className=" mt-[8rem] sm:mt-[5rem] md:mt-[8rem] lg:mt-[14rem]  ">
       <MotionHeader
         title={offerDetail.title}
         description={firstAdventagesDescription}

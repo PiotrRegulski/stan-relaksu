@@ -45,7 +45,7 @@ const OfficeAppearance = () => {
       className="flex flex-col  "
     >
       <motion.div
-        initial={{ y: -100, opacity: 0 }}
+        initial={{ y: -20, opacity: 0 }}
         animate={isInViewTop ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 2, ease: "easeInOut", type: "tween" }}
         className="bg-white rounded-xl my-4  "
@@ -63,7 +63,7 @@ const OfficeAppearance = () => {
          
         </div>
       </motion.div>
-      <div className="flex flex-row overflow-x-auto  gap-2 w-full lg:justify-center lg:items-center bg-gradient-to-r from-secondary via-transparent to-secondary "ref={refBottom}>
+      <div className="flex flex-row overflow-x-auto  gap-2 w-full xl:justify-center xl:items-center bg-gradient-to-r from-secondary via-transparent to-secondary "ref={refBottom}>
         {" "}
         {imgURLs.map((imgUrl, index) => (
           <div
