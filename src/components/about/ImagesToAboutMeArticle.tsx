@@ -98,14 +98,14 @@ const ImagesToAboutMeArticle = () => {
         </motion.div>
         <ImageToOffersShort />
       </div>
-      <div className=" flex flex-col w-full md:justify-center md:items-center py-8 bg-mainpeach  sm:px-16 md:px-16 xl:px-32 2xl:px-48 xl:rounded-3xl ">
+      <div className=" flex flex-col w-full md:justify-center md:items-center py-8 bg-mainpeach px-2  sm:px-16 md:px-16 xl:px-32 2xl:px-48 xl:rounded-3xl ">
         <h2
           className={`${lato.className} text-center font-semibold text-lg md:text-xl xl:text-2xl lg:w-2/3  px-3 xl:py-6`}
         >
           Kompleksowa i holistyczna terapia dostosowana do Ciebie
         </h2>
 
-        <p className="text-justify antialiased text-pretty  text-base md:text-lg xl:text-xl mx-auto my-2 px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
+        <p className="text-justify antialiased text-pretty  text-base md:text-lg xl:text-xl mx-auto my-2  py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
           W pracy zajmuje się kompleksową i holistyczną{" "}
           <strong>terapią w problemach jelitowo-trawiennych</strong>, zgagach,
           refluksie, IBS, SIBO (terapia wisceralna w problemach
@@ -116,7 +116,7 @@ const ImagesToAboutMeArticle = () => {
           Terapia Uroginekologiczna
         </h3>
 
-        <p className="text-justify avoid-orphans text-pretty antialiased  text-base md:text-lg xl:text-xl mx-auto my-2 px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
+        <p className="text-justify avoid-orphans text-pretty antialiased  text-base md:text-lg xl:text-xl mx-auto my-2   lg:my-2 2xl:my-2 h-full lg:w-2/3">
           Zajmę się indywidualnie dobraną do Twoich potrzeb{" "}
           <strong>terapią uroginekologiczną</strong>. Pracą z{" "}
           <strong>blizną po cesarskim cięciu</strong>, rozejściem mięśni
@@ -129,7 +129,7 @@ const ImagesToAboutMeArticle = () => {
           Terapia Manualna Blizn
         </h3>
 
-        <p className=" antialiased text-justify  text-base md:text-lg xl:text-xl mx-auto px-2 my-2 md:px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
+        <p className=" antialiased text-justify  text-base md:text-lg xl:text-xl mx-auto  my-2 md:px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
           W <strong>terapii manualnej blizn</strong>, łącząc specjalistyczne
           techniki. Pomogę Ci poprawić wygląd blizn pooperacyjnych oraz
           zminimalizować ich widoczność, bolesność czy zapobiec zrostom.
