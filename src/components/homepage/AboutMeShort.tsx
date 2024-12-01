@@ -36,14 +36,14 @@ const AboutMeShort = () => {
     >
       <motion.div
         className="flex justify-end md:w-1/2 2xl:w-1/3"
-        initial={{ x: -80, opacity: 0 }}
+        initial={{ x: -10, opacity: 0 }}
         animate={isInView ? { x: 0, opacity: 2 } : {}}
         transition={{ duration: 1, type:"tween" }}
       >
         <motion.div
           id="troche-o-omnie"
           className="relative w-[12rem] sm:w-[16rem] md:w-[15rem] xl:w-[20rem] h-[16rem] sm:h-[19rem] xl:h-[27rem] 2xl:w-[20rem] 2xl:h-[25rem] z-20 overflow-hidden"
-          transition={{ type: "spring", duration: 2 }}
+          transition={{ type: "spring", duration: 1 }}
           style={{ y: springImageY }}
         >
           <motion.div
@@ -86,7 +86,7 @@ const AboutMeShort = () => {
       </motion.div>
       <motion.div
         className=" md:w-3/4 lg:w-1/2 mx-4 my-4  "
-        initial={{ x: 20, opacity: 0 }}
+        initial={{ x: 10, opacity: 0 }}
         animate={isInView ? { x: 0, opacity: 1 } : {}}
         transition={{ duration: 1,  type: "tween" }}
       >
