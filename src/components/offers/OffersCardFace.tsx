@@ -13,7 +13,7 @@ const OffersCardFace = () => {
 
   return (
     <motion.div
-      initial={{ x: -50, opacity: 0 }}
+      initial={{ x: -10, opacity: 0 }}
       animate={isInView ? { x: 0, opacity: 1 } : {}}
       transition={{ duration: 1, ease: "easeInOut", type: "tween" }}
       className="my-4"

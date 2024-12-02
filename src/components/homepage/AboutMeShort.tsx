@@ -26,7 +26,7 @@ const AboutMeShort = () => {
 
   const imageY = useTransform(scrollY, [startY - 300, startY + 800], [0, 80]);
   const imageYs = useTransform(scrollY, [startY - 300, startY + 800], [0, -80]);
-  const springImageY = useSpring(imageY, { stiffness: 300, damping: 30 });
+  const springImageY = useSpring(imageY, { stiffness: 500, damping: 30 });
   const springImageYs = useSpring(imageYs, { stiffness: 300, damping: 30 });
 
   return (
@@ -37,7 +37,7 @@ const AboutMeShort = () => {
       <motion.div
         className="flex justify-end md:w-1/2 2xl:w-1/3"
         initial={{ x: -10, opacity: 0 }}
-        animate={isInView ? { x: 0, opacity: 2 } : {}}
+        animate={isInView ? { x: 0, opacity: 1 } : {}}
         transition={{ duration: 1, type:"tween" }}
       >
         <motion.div
