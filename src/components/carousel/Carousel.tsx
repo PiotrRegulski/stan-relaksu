@@ -104,6 +104,7 @@ const Carousel: React.FC = () => {
   };
 
   useEffect(() => {
+    const node = carouselRef.current;
     //monitoruje widocznosc elementu
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -115,12 +116,12 @@ const Carousel: React.FC = () => {
       },
       { threshold: 0.1 } // 0.1 oznacza, że 10% elementu musi być widoczne
     );
-    if (carouselRef.current) {
-      observer.observe(carouselRef.current);
+    if (node) {
+      observer.observe(node);
     }
     return () => {
-      if (carouselRef.current) {
-        observer.unobserve(carouselRef.current);
+      if (node) {
+        observer.unobserve(node);
       }
       clearExistingInterval();
     };
@@ -141,6 +142,7 @@ const Carousel: React.FC = () => {
   const router = useRouter();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  
   return (
     <div
       className="flex justify-center items-center m-0 p-0 lg:mt-[7rem]"
