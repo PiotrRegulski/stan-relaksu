@@ -9,7 +9,7 @@ const Recommendation = (props: any) => {
         className={`${Noto.className} text-lg md:text-2xl xl:text-2xl  text-center  font-semibold `}
       >
         {props.title}
-        <br></br>zarezerwuj wizytę jeśli:
+        <br></br>zarezerwuj wizytę, jeśli:
       </h3>
       <div className="flex flex-col sm:flex-row w-full justify-center items-center my-4 2xl:px-24 ">
         <div className="flex my-1 sm:w-1/3 ">

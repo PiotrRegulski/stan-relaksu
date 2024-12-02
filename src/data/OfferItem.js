@@ -18,7 +18,7 @@ export const OfferItem = [
       { id: "terapman60", priceName: "60 minut", price: "200 zł" },
       { id: "terapman90", priceName: "90 minut", price: "250 zł" },
     ],
-    contentMainOffer: "Przenieś się do pełnego stanu relaksu.",
+    contentMainOffer: "Przenieś się do pełnego stanu relaksu. Połączenie aromatycznych, naturalnych olejków i kojącego dotyku wprowadzi Cię w wspaniały nastrój.",
 
     contentFirst:
       "Przenieś się do pełnego stanu relaksu z masażem, który głęboko odpręży Twoje mięśnie, zdejmie napięcie z układu nerwowego, zmniejszając uczucie stresu. Połączenie aromatycznych, naturalnych olejków i kojącego dotyku wprowadzi Cię w wspaniały nastrój.",
@@ -99,9 +99,9 @@ export const OfferItem = [
     imagedetailfo: "kobido/kobido-secondP.jpg",
     prices: [{ id: "cenaKobido", priceName: "90 minut", price: "300 zł" }],
     contentMainOffer:
-      "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwą perłą w świecie pielęgnacji twarzy.",
+      "Masaż twarzy Kobido z kinesiotapingiem estetycznym jest prawdziwą perłą w świecie pielęgnacji twarzy.",
     contentFirst:
-      "Masaż Kobido z kinesiotapingiem estetycznym jest prawdziwą perłą w świecie pielęgnacji twarzy. Wywodzący się z Japonii niechirurgiczny lifting twarzy, który od wieków zachwyca swoją skutecznością.",
+      "Masaż twarzy Kobido z kinesiotapingiem estetycznym jest prawdziwą perłą w świecie pielęgnacji twarzy. Wywodzący się z Japonii niechirurgiczny lifting twarzy, który od wieków zachwyca swoją skutecznością.",
     advantages: [
       { title: "Efekt liftingu i wymodelowania rysów" },
       {
@@ -155,10 +155,10 @@ export const OfferItem = [
     ],
     recommendations: [
       { id: "1", recommendation: "Chcesz zmniejszyć napięcie i stres w całym ciele." },
-      { id: "2", recommendation: "Uzyskać efekt liftingu twarzy." },
+      { id: "2", recommendation: "Oczekujesz efektu liftingu twarzy." },
       {
         id: "3",
-        recommendation: "Przygotować się do zabiegu medycyny estetycznej.",
+        recommendation: "Przygotowujesz się do zabiegu medycyny estetycznej.",
       },
     ],
     procedures: [
@@ -242,8 +242,8 @@ export const OfferItem = [
     ],
     recommendations: [
       { id: "1", recommendation: "Chcesz spłycić zmarszczki " },
-      { id: "2", recommendation: "Uzuskać efekt odmłodzenia twarzy" },
-      { id: "3", recommendation: "Uwydatnić unikalne cechy twarzy" },
+      { id: "2", recommendation: "Pragniesz uzyskać efekt odmłodzenia twarzy." },
+      { id: "3", recommendation: "Chcesz uwydatnić unikalne cechy twarzy" },
     ],
     procedures: [
       { title: "Przygotowanie:" },
@@ -286,7 +286,7 @@ export const OfferItem = [
       { id: "cenaterapiWisceralnej90", priceName: "90 minut", price: "250 zł" },
     ],
     contentMainOffer:
-      "Jelita to nasz drugi mózg więc ich  prawidłowe funkcjonowanie jest niezbędne dla zdrowia naszego organizmu.",
+      "Jelita to nasz drugi mózg, więc ich  prawidłowe funkcjonowanie jest niezbędne dla zdrowia naszego organizmu.",
 
     contentFirst:
       "Jelita, często nazywane naszym drugim mózgiem, odgrywają kluczową rolę w utrzymaniu zdrowia całego organizmu. Ich prawidłowe funkcjonowanie jest absolutnie niezbędne dla naszego ogólnego dobrostanu.",
@@ -826,7 +826,7 @@ export const OfferItem = [
     order:5,
     active: true,
     category: "body",
-    title: "Masaż ujędrniający Bańką Chińską",
+    title: "Masaż ujędrniający bańką chińską",
     image: "banka-chinska/masaz-banka-chinska-cover.jpg",
     imagedetailf: "terapia-manualna/terapia-manualna-kolano-last.jpg",
     imagedetails: "terapia-manualna/terapia-manualna-kolano-procedureb.jpg",
@@ -881,7 +881,7 @@ export const OfferItem = [
       {
         id: "1",
         recommendation:
-          "Masz napięcie lub bóle pleców, karku, albo stawów ",
+          "Masz napięcie lub bóle pleców, karku albo stawów ",
       },
       {
         id: "2",
@@ -889,7 +889,7 @@ export const OfferItem = [
       },
       {
         id: "3",
-        recommendation: " Chcesz zredukować celulit i poprawić wygląd skóry",
+        recommendation: "Chcesz zredukować cellulit i poprawić wygląd skóry",
       },
     ],
     procedures: [
@@ -977,7 +977,7 @@ export const OfferItem = [
       {
         id: "2",
         recommendation:
-          "Chcesz łatwiej oddychać dzięki odblokowaniu dróg oddechowych.",
+          "Chcesz łatwiej oddychać dzięki odblokowaniu dróg oddechowych",
       },
       {
         id: "3",
