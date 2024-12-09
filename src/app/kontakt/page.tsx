@@ -6,7 +6,7 @@ export const metadata = {
 };
 const page = () => {
   return (
-    <div className="mt-[10rem]">
+    <div className="mt-[6rem] lg:mt-[14rem] 2xl:mt-[17rem]">
       <Contact />
     </div>
   );

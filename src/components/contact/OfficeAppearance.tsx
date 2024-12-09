@@ -50,7 +50,7 @@ const OfficeAppearance = () => {
         transition={{ duration: 2, ease: "easeInOut", type: "tween" }}
         className="bg-white rounded-xl my-4  "
          ref={refTop}>
-        <div className="flex flex-col w-full justify-center items-center my-6 ">
+        <div className="flex flex-col w-full justify-center items-center my-6 px-2 ">
           <h3 className={`${Noto.className} text-center lg:text-xl font-medium`}>
             Tworzymy to miejsce, aby holistycznie zadbać o Twoje ciało.
           </h3>
