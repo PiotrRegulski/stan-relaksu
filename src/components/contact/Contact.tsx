@@ -64,9 +64,9 @@ const Contact = () => {
             initial={{ y: 0, opacity: 0 }}
             animate={isInViewBottom ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
-            className={`${Noto.className} flex flex-col  w-full justify-center items-center  `}
+            className={`${Noto.className} flex flex-col  w-full justify-center items-center my-4 `}
           >
-            <p className=" text-base  xl:text-lg my-6 text-center font-bold ">
+            <p className=" text-base  xl:text-lg text-center font-bold ">
               Gabinet mieści się przy <br></br>
               <strong>studio jogi Jasna Asana. </strong>
             </p>
@@ -75,7 +75,7 @@ const Contact = () => {
             ref={refLogo}
             className="flex sm:flex-row  justify-around py-2 w-full bg-white  "
           >
-            <div className="relative flex flex-row justify-center items-center   w-full h-[60rem] sm:h-[60rem] md:h-[60rem] xl:h-[40rem]">
+            <div className="relative flex flex-row justify-center items-center   w-full h-[60rem] sm:h-[60rem] md:h-[60rem] xl:h-[30rem]">
               <motion.div
                 initial={{
                   x: 0,

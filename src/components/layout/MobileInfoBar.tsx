@@ -31,7 +31,7 @@ const MobileInfoBar = () => {
             rel="noopener noreferrer"
             aria-label="link do rezerwacji wizyty"
           >
-            <div className="font-semibold">
+            <div className="font-semibold animate-pulse text-white">
               Zarezerwuj<br></br> Wizytę
             </div>
           </Link>

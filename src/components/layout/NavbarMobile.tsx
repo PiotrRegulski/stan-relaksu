@@ -15,14 +15,14 @@ const NavbarMobile = () => {
   }, [isOpen]);
 
   return (
-    <header className="relative bg-white h-[4rem] lg:hidden w-screen bg-opacity-10 container mx-auto">
+    <header className="relative bg-white h-[4rem] lg:hidden w-screen bg-opacity-10 container mx-auto ">
       <div className="flex w-full">
         <div className=" py-1 z-20">
           <Link href="/">
             <div className="ml-3 mr-1 my-1">
               <Image
                 src="/logo-stan-relaksu-kolo.png"
-                width={110}
+                width={100}
                 height={110}
                 className="bg-mainthemelogo rounded-full"
                 alt="Logo gabientu Stan Relaksu"

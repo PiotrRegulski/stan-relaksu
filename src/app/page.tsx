@@ -5,23 +5,20 @@ import OffersCardFace from "@/components/offers/OffersCardFace";
 import WelcomeAboutMe from "@/components/homepage/WelcomeAboutMe";
 import Carousel from "@/components/carousel/Carousel";
 import Comments from "@/components/comments/Comments";
+import NewCarousel from "@/components/carousel/NewCarousel";
 export const metadata = {};
 export default function Home() {
   return (
-    <div className="container mx-auto">
-     
-        <Carousel />
-        {/* <WelcomCard /> */}
-
+    <>
+      <div className="container mx-auto">
+        <NewCarousel />
         <WelcomeAboutMe />
-
-        {/* <OffersHeader /> */}
 
         <OffersCardBody />
         <OffersCardFace />
-        <Comments/>
+        <Comments />
         <Contact />
-    
-    </div>
+      </div>
+    </>
   );
 }

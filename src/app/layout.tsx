@@ -42,11 +42,11 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={`${lato.className} relative antialiased  overflow-y-scroll overflow-x-hidden  max-w-[3000px] mx-auto  m-0 p-0 container`}
+        className={`${lato.className} relative antialiased  overflow-y-scroll overflow-x-hidden  max-w-[3000px] mx-auto  m-0 p-0  `}
       >
         <MainHeader />
         <MobileInfoBar />
-        <main className="overflow-hidden  container mx-auto -mt-1 bg-white ">
+        <main className="overflow-hidden  lg:container mx-auto -mt-1 bg-white  ">
           {children}
         </main>
 

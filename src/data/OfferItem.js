@@ -631,8 +631,8 @@ export const OfferItem = [
   //   ],
   // },
   {
-    id: "masaz-sportowy",
-    slug: "masaz-sportowy",
+    id: "masaz-tkanek-glebokich",
+    slug: "masaz-tkanek-glebokich",
     active: true,
     order:2,
     category: "body",
