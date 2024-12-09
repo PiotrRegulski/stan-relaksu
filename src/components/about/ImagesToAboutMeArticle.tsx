@@ -45,11 +45,11 @@ const ImagesToAboutMeArticle = () => {
       id="zdjecia-z-oferty"
       className="flex  flex-col  w-full justify-center bg-white   "
     >
-      <div className="flex overflow-x-auto py-8  gap-2  md:gap-4 w-full bg-gradient-to-b from-secondary from-50% to-transparent px-4 lg:justify-center lg:items-center">
+      <div className="flex overflow-x-auto py-8  gap-2  xl:gap-4 w-full bg-gradient-to-b from-secondary from-50% to-transparent px-4 lg:justify-center lg:items-center">
         {imgURLs.map((imgUrl, index) => (
           <motion.div
             key={imgUrl.label}
-            className="relative flex shrink-0 w-[18rem] h-[26rem] sm:w-[14rem] sm:h-[20rem] md:w-[14rem] md:h-[20rem] lg:w-[15rem] lg:h-[24rem] overflow-hidden mr-2 rounded-lg"
+            className="relative flex shrink-0 w-[18rem] h-[26rem] sm:w-[14rem] sm:h-[20rem] md:w-[14rem] md:h-[20rem] lg:w-[14rem] lg:h-[24rem] overflow-hidden mr-2 rounded-lg"
             style={{ marginTop: imgUrl.marginTop }}
           >
             <motion.div
