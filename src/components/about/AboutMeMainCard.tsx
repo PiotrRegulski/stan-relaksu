@@ -10,10 +10,10 @@ const AboutMeMainCard = () => {
   return (
     <div id={"o-mnie"} className={`flex flex-col     `}>
       
-      <div className="flex flex-col   justify-center items-center   w-full xl:px-24  2xl:px-56 bg-gradient-to-t from-secondary from-50% to-transparent   bg-opacity-40   ">
+      <div className="flex flex-col   justify-center items-center   w-full xl:px-24  2xl:px-56 bg-gradient-to-t from-secondary from-50% to-transparent   bg-opacity-40 rounded-b-3xl  ">
         <div className="flex  justify-center items-center   ">
           <motion.div
-            className="relative w-52 h-52  lg:w-[18rem] lg:h-[18rem] mx-2 xl:h-[18rem] xl:w-[18rem] 2xl:h-[24rem] 2xl:w-[24rem]"
+            className="relative w-52 h-52  lg:w-[18rem] lg:h-[18rem] mx-2 xl:h-[16rem] xl:w-[16rem] 2xl:h-[20rem] 2xl:w-[20rem]"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeInOut" }}
@@ -37,12 +37,12 @@ const AboutMeMainCard = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
         >
           <h1
-            className={`${lato.className} text-center font-semibold w-full  text-xl  md:text-3xl  mt-4 px-3  lg:px-11`}
+            className={`${lato.className} text-center font-semibold w-full  text-xl  md:text-2xl  mt-4 px-3  lg:px-11`}
           >
             Cześć, nazywam się Kinga Wołoszka
           </h1>
           <p className=" text-lg xl:text-xl font-medium">Jestem naturoterapeutką. </p>
-          <article className=" text-base lg:text-lg xl:text-xl    md:text-left  text-pretty  py-2  px-3  lg:w-[40rem] ">
+          <article className=" text-base lg:text-lg xl:text-lg 2xl:text-xl   md:text-left  text-pretty  py-2  px-3  lg:w-[40rem] ">
             <p className=" text-center ">
               Ukończyłam fizjoterapię na Warszawskim Uniwersytecie Medycznym.
             </p>

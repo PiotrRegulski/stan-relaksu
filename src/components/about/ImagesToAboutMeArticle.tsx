@@ -57,7 +57,7 @@ const ImagesToAboutMeArticle = () => {
               whileHover={{ scale: 1.1 }}
               initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ type: "spring", duration: 4 }}
+              transition={{ type: "spring", duration: 2 }}
             >
               <ImageCard
                 key={imgUrl.label}
@@ -70,7 +70,7 @@ const ImagesToAboutMeArticle = () => {
               className="absolute bottom-0 w-full bg-secondary bg-opacity-70  text-black font-semibold text-center py-2"
               initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ type: "spring", duration: 5 }}
+              transition={{ type: "spring", duration: 2 }}
             >
               {imgUrl.caption}
             </motion.div>
@@ -98,7 +98,7 @@ const ImagesToAboutMeArticle = () => {
         </motion.div>
         <ImageToOffersShort />
       </div>
-      <div className=" flex flex-col w-full md:justify-center md:items-center py-8 bg-mainpeach px-2  sm:px-16 md:px-16 xl:px-32 2xl:px-48 xl:rounded-3xl ">
+      <div className=" flex flex-col w-full md:justify-center md:items-center py-8 bg-secondary px-2  sm:px-16 md:px-16 xl:px-32 2xl:px-48 xl:rounded-3xl ">
         <h2
           className={`${lato.className} text-center font-semibold text-lg md:text-xl xl:text-2xl lg:w-2/3  px-3 xl:py-6`}
         >
