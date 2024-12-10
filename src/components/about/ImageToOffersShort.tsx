@@ -8,7 +8,7 @@ const imgURLs = [
     label: "Terapia w bólach głowy",
     caption: "Terapia w bólach głowy",
     marginTop: "20px",
-    href: "/offer/",
+    href: "/oferta",
   },
 
   {
@@ -16,28 +16,28 @@ const imgURLs = [
     label: "Terapia manualna kolana",
     caption: "Terapia manualna kolana",
     marginTop: "40px",
-    href: "/offer/terapia-manualna",
+    href: "/oferta/terapia-manualna",
   },
   {
     src: "/karuzelaOmnie/terapia-manulana-barku.jpg",
     label: "Terapia manualna barku",
     caption: "Terapia manualna barku",
     marginTop: "40px",
-    href: "/offer/terapia-manualna",
+    href: "/oferta/terapia-manualna",
   },
   {
     src: "/karuzelaOmnie/bole-i-sztywnosci-karku.jpg",
     label: "Bóle i sztywności karku",
     caption: "Bóle i sztywności karku",
     marginTop: "40px",
-    href: "/offer/terapia-manualna",
+    href: "/oferta/terapia-manualna",
   },
   {
     src: "/terapia-manualna/terapia-manualna-kolano-last.jpg", 
     label: "Bóle kręgosłupa",
     caption: "Bóle kręgosłupa",
     marginTop: "20px",
-    href: "/offer/terapia-manualna",
+    href: "/oferta/terapia-manualna",
   },
 ];
 

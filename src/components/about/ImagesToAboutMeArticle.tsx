@@ -12,28 +12,28 @@ const imgURLs = [
     label: "terapia manualna",
     caption: "Terapia manualna",
     marginTop: "20px",
-    href: "/offer/terapia-manualna",
+    href: "/oferta/terapia-manualna",
   },
   {
     src: "/terapia-wisceralna.jpg",
     label: "terapia wisceralna",
     caption: "Terapia wisceralna",
     marginTop: "40px",
-    href: "/offer/terapia-wisceralna-w-problemach-jelitowo-trawiennych",
+    href: "/oferta/terapia-wisceralna-w-problemach-jelitowo-trawiennych",
   },
   {
     src: "/terapia-uro.jpg",
     label: "Terapia uroginekologiczna",
     caption: "Terapia uroginekologiczna",
     marginTop: "20px",
-    href: "/offer",
+    href: "/oferta",
   },
   {
     src: "/terapia-manualna-kolano.jpg",
     label: "Terapia manualna kolana",
     caption: "Terapia manualna kolana",
     marginTop: "40px",
-    href: "/offer/terapia-manualna",
+    href: "/oferta/terapia-manualna",
   },
 ];
 

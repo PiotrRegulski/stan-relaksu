@@ -7,7 +7,7 @@ const imgURLs = [
         src: "/terapia-manualna-zatok/terapia-zatok-cover.jpg",
         label: "Terapia manualna w bólach zatok",
         caption: "Terapia manualna w bólach zatok",
-        href:"offer/terapia-manualna-w-bolach-zatok",
+        href:"oferta/terapia-manualna-w-bolach-zatok",
         marginTop: "20px",
       
       },
@@ -15,7 +15,7 @@ const imgURLs = [
         src: "/offers-photo/kobido-omnie.jpg",
         label: "Terapia stawów skroniowo-żuchwowych",
         caption: "Terapia stawów skroniowo-żuchwowych",
-        href:"/offer/",
+        href:"oferta",
         marginTop: "20px",
     
       },
@@ -23,7 +23,7 @@ const imgURLs = [
         src: "/kobido-kinesiotaping-omnie.jpg",
         label: "Kinesiotaping limfatyczny",
         caption: "Kinesiotaping limfatyczny ",
-        href:"/offer/masaz-kobido",
+        href:"/oferta/masaz-kobido",
         marginTop: "20px",
     
       },
@@ -31,7 +31,7 @@ const imgURLs = [
         src: "/karuzelaOmnie/masaż-twarzy-kobido.jpg", 
         label: "Masaż twarzy Kobido",
         caption: "Masaż twarzy Kobido ",
-        href:"/offer/masaz-kobido",
+        href:"/oferta/masaz-kobido",
         marginTop: "20px",
     
       },

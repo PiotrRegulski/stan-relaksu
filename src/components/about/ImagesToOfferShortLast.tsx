@@ -8,7 +8,7 @@ const imgURLs = [
     label: "Masaz relaksacyjny kobiet w ciąży",
     caption: "Masaz relaksacyjny kobiet w ciąży",
     marginTop: "20px",
-    href:"/offer"
+    href:"/oferta"
 
   },
 
@@ -17,7 +17,7 @@ const imgURLs = [
     label: "Terapia wisceralna",
     caption: "Terapia wisceralna",
     marginTop: "40px",
-    href:"/offer/terapia-wisceralna-w-problemach-jelitowo-trawiennych"
+    href:"/oferta/terapia-wisceralna-w-problemach-jelitowo-trawiennych"
 
   },
  
@@ -26,7 +26,7 @@ const imgURLs = [
     label: "Terapia uroginekologiczna",
     caption: "Terapia uroginekologiczna",
     marginTop: "20px",
-    href:"/offer/"
+    href:"/oferta/"
 
   },
 ];
