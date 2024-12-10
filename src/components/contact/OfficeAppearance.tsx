@@ -9,28 +9,28 @@ const imgURLs = [
     label: "Wygląd gabinetu szafa",
     caption: "Terapia manualna kolana",
     marginTop: "20px",
-    href: "/",
+    href: "#",
   },
   {
     src: "/contact/wyglad-gabinet-meble.jpg",
     label: "Wygląd gabinetu meble",
     caption: "Terapia manualna",
     marginTop: "40px",
-    href: "/",
+    href: "#",
   },
   {
     src: "/contact/wygląd-gabinet-lozko.jpg",
     label: "Wygląd gabinetu lozko",
     caption: "Terapia wisceralna",
     marginTop: "20px",
-    href: "/",
+    href: "#",
   },
   {
     src: "/contact/wygląd-cwieczenie-yogi.jpg",
     label: "ćwiczenie yogi",
     caption: "Terapia uroginekologiczna",
     marginTop: "40px",
-    href: "/",
+    href: "#",
   },
 ];
 
@@ -64,7 +64,6 @@ const OfficeAppearance = () => {
         </div>
       </motion.div>
       <div className="flex flex-row overflow-x-auto  gap-2 w-full xl:justify-center xl:items-center bg-gradient-to-r from-secondary via-transparent to-secondary "ref={refBottom}>
-        {" "}
         {imgURLs.map((imgUrl, index) => (
           <div
             key={imgUrl.label}
