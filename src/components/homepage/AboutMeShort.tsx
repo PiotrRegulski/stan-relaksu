@@ -43,7 +43,7 @@ const AboutMeShort = () => {
         <motion.div
           id="troche-o-omnie"
           className="relative w-[8rem] sm:w-[10rem] md:w-[10rem] md:h-[14rem] xl:w-[15rem] h-[12rem] sm:h-[14rem] xl:h-[23rem] 2xl:w-[20rem] 2xl:h-[25rem] z-20 overflow-hidden"
-          transition={{ type: "spring", duration: 1 }}
+          transition={{ type: "tween", duration: 1 }}
           style={{ y: springImageY }}
         >
           <motion.div
@@ -64,7 +64,7 @@ const AboutMeShort = () => {
         </motion.div>
         <motion.div
           className="relative w-[10rem] h-[15rem]  sm:w-[11rem] sm:h-[15rem] md:h-[16rem] md:w-[12rem] xl:w-[17rem]  xl:h-[27rem] 2xl:w-[23rem] 2xl:h-[30rem] -ml-5 mt-20 overflow-hidden"
-          transition={{ type: "spring" }}
+          transition={{ type: "tween" }}
           style={{ y: springImageYs }}
         >
           <motion.div
