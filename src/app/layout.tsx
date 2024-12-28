@@ -9,9 +9,9 @@ import MobileInfoBar from "@/components/layout/MobileInfoBar";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Stan Relaksu - Gabinet terapii manualnej ciała i twarzy.",
+  title: "Stan Relaksu - Gabinet terapii manualnej i masażu",
   description:
-    "To terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
+    "Stan Relaksu - Gabinet terapii manualnej i masażu. Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
   robots: {
     index: true, // Zmieniono z false na true
     follow: true,
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Stan Relaksu - Gabinet terapii manualnej i masażu.",
     description:
-      "To terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
+      "Stan Relaksu - Gabinet terapii manualnej i masażu. Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
     url: "https://www.stanrelaksu.pl",
     type: "website",
   },
