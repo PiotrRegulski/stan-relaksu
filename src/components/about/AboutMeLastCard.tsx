@@ -13,7 +13,7 @@ const AboutMeLastCard = () => {
             Moją pasją jest terapia manualna twarzy.
           </h2>
 
-          <p className="text-justify text-pretty  text-base md:text-lg xl:text-xl mx-auto my-2  py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
+          <p className="text-justify text-pretty  text-base md:text-base xl:text-xl mx-auto my-2 px-2 py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
             Dzięki pracy w obrębie <strong>twarzy, głowy i szyi</strong> możesz
             uzyskać ulgę w bólach stawów skroniowo-żuchwowych, bólach głowy,
             migrenach, problemach z zatokami oraz uczuciem napięcia i zmęczenia.
@@ -23,7 +23,7 @@ const AboutMeLastCard = () => {
             Techniki Wykorzystywane w Terapii
           </h3>
 
-          <p className="text-justify text-base md:text-lg xl:text-xl mx-auto my-2  py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
+          <p className="text-justify text-base md:text-base xl:text-xl mx-auto my-2 px-2  py-3 lg:my-2 2xl:my-2 h-full lg:w-2/3">
             Zajmę się zdrowiem i pięknym wyglądem Twojej twarzy poprzez{" "}
             <strong>masaż Kobido</strong> czy{" "}
             <strong>igłoterapię estetyczną</strong> oraz techniki manualne z

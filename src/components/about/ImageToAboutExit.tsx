@@ -42,12 +42,12 @@ const ImagesToAboutExit = () => {
   return (
     <div
       ref={ref}
-      className="flex overflow-x-auto py-2 gap-2 md:gap-4 w-full md:justify-center md:items-center px-2 mr-4 md:mr-0 "
+      className="flex overflow-x-auto py-2 gap-2 md:gap-4 w-full xl:justify-center xl:items-center px-2 mr-4 md:mr-0 "
     >
       {imgURLs.map((imgUrl, index) => (
         <div
           key={imgUrl.label}
-          className="relative flex shrink-0 w-[20rem] h-[18rem] sm:w-[19rem] sm:h-[17rem]  md:w-[19rem] md:h-[17rem] overflow-hidden "
+          className="relative flex shrink-0 w-[20rem] h-[18rem] m:w-[15rem] sm:h-[12rem] md:w-[19rem] md:h-[17rem] overflow-hidden "
           style={{ marginTop: imgUrl.marginTop }}
         >
           <motion.div

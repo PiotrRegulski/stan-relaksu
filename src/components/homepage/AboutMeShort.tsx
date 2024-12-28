@@ -42,7 +42,7 @@ const AboutMeShort = () => {
       >
         <motion.div
           id="troche-o-omnie"
-          className="relative w-[8rem] sm:w-[10rem] md:w-[10rem] md:h-[14rem] xl:w-[15rem] h-[12rem] sm:h-[14rem] xl:h-[23rem] 2xl:w-[20rem] 2xl:h-[25rem] z-20 overflow-hidden"
+          className="relative w-[8rem] sm:w-[10rem] md:w-[10rem] md:h-[14rem] xl:w-[15rem] h-[12rem] sm:h-[14rem] lg:h-[18rem] lg:w-[13rem] xl:h-[23rem] 2xl:w-[20rem] 2xl:h-[25rem] z-20 overflow-hidden"
           transition={{ type: "tween", duration: 1 }}
           style={{ y: springImageY }}
         >
@@ -63,7 +63,7 @@ const AboutMeShort = () => {
           </motion.div>
         </motion.div>
         <motion.div
-          className="relative w-[10rem] h-[15rem]  sm:w-[11rem] sm:h-[15rem] md:h-[16rem] md:w-[12rem] xl:w-[17rem]  xl:h-[27rem] 2xl:w-[23rem] 2xl:h-[30rem] -ml-5 mt-20 overflow-hidden"
+          className="relative w-[10rem] h-[15rem]  sm:w-[11rem] sm:h-[15rem] md:h-[16rem] md:w-[12rem] lg:h-[25rem] lg:w-[15rem] xl:w-[17rem]  xl:h-[27rem] 2xl:w-[23rem] 2xl:h-[30rem] -ml-5 mt-20 overflow-hidden"
           transition={{ type: "tween" }}
           style={{ y: springImageYs }}
         >
@@ -75,7 +75,7 @@ const AboutMeShort = () => {
             <Image
               id="photo2"
               src="/hero.jpg"
-              alt="Kinga Wołoszka- fizjoterapeutka"
+              alt="Kinga Wołoszka - naturoterapeutką"
               fill
               sizes="(max-width: 600px) 100vw, 50vw"
               className="object-cover h-full w-full"
@@ -93,13 +93,13 @@ const AboutMeShort = () => {
         <h2 className={`${Noto.className} text-2xl `}>
           Cześć, jestem Kinga Wołoszka
         </h2>
-        <p className="text-base lg:text-xl  my-6 text-justify">
+        <p className="text-base lg:text-lg xl:text-xl  my-6 text-justify">
           Przyniosę Ci ulgę w bólu oraz napięciu, stosując techniki masażu
           powięziowego i terapii manualnej. Podpowiem Ci, jak możesz pracować ze
           swoim ciałem poprzez indywidualnie dobrane ćwiczenia czy trening
           oddechowy, aby poprawić Twoje zdrowie i samopoczucie.
         </p>
-        <p className="text-base lg:text-xl  my-6 text-justify">
+        <p className="text-base lg:text-lg xl:text-xl  my-6 text-justify">
           Czekam na Ciebie z terapią manualną, masażem powięziowym oraz masażem
           tkanek głębokich. Głęboko odprężające techniki masażu twarzy Kobido
           oraz masażu relaksacyjnego pozwolą Ci osiągnąć

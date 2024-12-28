@@ -9,7 +9,6 @@ import { lato } from "../fonts";
 const AboutMeMainCard = () => {
   return (
     <div id={"o-mnie"} className={`flex flex-col     `}>
-      
       <div className="flex flex-col   justify-center items-center   w-full xl:px-24  2xl:px-56 bg-gradient-to-t from-secondary from-50% to-transparent   bg-opacity-40 rounded-b-3xl  ">
         <div className="flex  justify-center items-center   ">
           <motion.div
@@ -18,7 +17,6 @@ const AboutMeMainCard = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
-          
             <Image
               src="/hero-circle.png"
               alt="Kinga Wołoszka- fizjoterapeutka"
@@ -41,31 +39,46 @@ const AboutMeMainCard = () => {
           >
             Cześć, nazywam się Kinga Wołoszka
           </h1>
-          <p className=" text-lg xl:text-xl font-medium">Jestem naturoterapeutką. </p>
-          <article className=" text-base lg:text-lg xl:text-lg 2xl:text-xl   md:text-left  text-pretty  py-2  px-3  lg:w-[40rem] ">
-            <p className=" text-center ">
-              Ukończyłam fizjoterapię na Warszawskim Uniwersytecie Medycznym.
-            </p>
-            <p className=" text-center ">
-              W
-              pracy wykorzystuje różnorodne techniki terapeutyczne zdobyte na
-              licznych szkoleniach i kursach specjalistycznych.
-            </p>
-            <p className=" text-center ">
-              Dzięki swojej szerokiej wiedzy i doświadczeniu pomogę Ci w
-              procesie dbania o swoje zdrowie.
-             
-            </p>
-            <p className=" text-center ">
-            
+          <p className=" text-lg xl:text-xl font-medium">
+            Jestem naturoterapeutką.{" "}
+          </p>
+          <div className="flex flex-col  md:flex-row  border-white justify-between my-4 sm:mx-20 lg:mx-0 ">
+            <div className="flex-1 m-2 p-6 bg-mainpeach border border-gray-300 shadow-lg text-center">
+              {" "}
+              <p className=" text-center  rounded-full font-medium ">
+                Ukończyłam fizjoterapię na Warszawskim Uniwersytecie Medycznym.
+              </p>
+            </div>
+            <div className="flex-1 m-2 p-4 bg-mainpeach border border-gray-300 shadow-lg text-center">
+              {" "}
+              <p className="text-center  rounded-full px-4 font-medium">
+                W pracy wykorzystuje różnorodne techniki terapeutyczne zdobyte
+                na licznych szkoleniach i kursach specjalistycznych.
+              </p>
+            </div>
+            <div className="flex-1 m-2 p-6 bg-mainpeach border border-gray-300 shadow-lg text-center ">
+              {" "}
+              <p className=" text-center  rounded-full font-medium">
+                Dzięki swojej szerokiej wiedzy i doświadczeniu pomogę Ci w
+                procesie dbania o swoje zdrowie.
+              </p>
+            </div>
+          </div>
+          <div className="bg-gray-100 p-4 rounded-xl shadow-md my-4 mx-2 ">
+            <p className=" text-lg font-semibold mb-4 text-center">
               <strong> Czekam na Ciebie</strong>, aby przynieść Ci ulgę w bólu i
               napięciu.
             </p>
-            <p className="text-center my-2 px-4">
-              Zarezerwuj wizytę i daj się sobą zaopiekować w <br></br> 
-              <strong> komfortowym zaciszu gabinetu Stan Relaksu.</strong>
+            <p className="text-base  text-center text-pretty ">
+              Zarezerwuj wizytę i daj się sobą zaopiekować <br></br>
             </p>
-          </article>
+            <p className="text-center">
+             w komfortowym zaciszu 
+            </p>
+            <p className="text-center">
+              <strong>gabinetu Stan Relaksu.</strong>
+            </p>
+          </div>
         </motion.div>
       </div>
       <div className="flex justify-center items-center w-full gap-4 md:gap-24 py-4 bg-white ">
