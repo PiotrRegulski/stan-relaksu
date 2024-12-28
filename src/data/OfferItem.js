@@ -113,7 +113,7 @@ export const OfferItem = [
         description:
           "Zdrowszy i promienny wygląd twarzy, spłycenie zmarszczek i bruzd mimicznych to jedne z wielu korzyści płynących z rytuału Kobido. Dla przedłużenia efektów na koniec zabiegu zakładamy kinesiotaping estetyczny. Odprężenie płynące z masażu twarzy Kobido przynosi zrelaksowanie, zmniejszenie napięcia i stresu w całym ciele.",
       },
-      { title: "To doskonałe przygotowanie tkanek przed innymi zabiegami" },
+      { title: "Doskonałe przygotowanie tkanek przed innymi zabiegami" },
       {
         description:
           "Zabieg można powtarzać co 2 tygodnie na początku, a po kilku sesjach przejść do jednego zabiegu miesięcznie. To doskonałe przygotowanie tkanek przed innymi zabiegami medycyny estetycznej.",
@@ -382,10 +382,10 @@ export const OfferItem = [
       { id: "maspow90", priceName: "90 minut", price: "250 zł" },
     ],
     contentMainOffer:
-      "To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała.",
+      "Idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała.",
 
     contentFirst:
-      "To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała. Uwolnienie powięziowe i zniesienie napięć w ciele pomaga w zmniejszeniu dolegliwości bólowych, uczucia stresu oraz ogólnej relaksacji. ",
+      "Idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała. Uwolnienie powięziowe i zniesienie napięć w ciele pomaga w zmniejszeniu dolegliwości bólowych, uczucia stresu oraz ogólnej relaksacji. ",
     advantages: [
       { title: "Zwiększa ogólną mobilność całego ciała" },
       {
@@ -746,10 +746,10 @@ export const OfferItem = [
       { id: "terapman90", priceName: "90 minut", price: "250 zł" },
     ],
     contentMainOffer:
-      "To specjalistyczne techniki pracy z ciałem i stawami, mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu.",
+      "Specjalistyczne techniki pracy z ciałem i stawami, mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu.",
 
     contentFirst:
-      "To specjalistyczne techniki pracy z ciałem i stawami, polegające na uciskach oraz mobilizacjach stawowych i tkankowych, mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenie sztywności i ograniczeń w zakresie ruchomości oraz redukcję bólu.",
+      "Specjalistyczne techniki pracy z ciałem i stawami, polegające na uciskach oraz mobilizacjach stawowych i tkankowych, mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenie sztywności i ograniczeń w zakresie ruchomości oraz redukcję bólu.",
     advantages: [
       { title: "Indywidualne podejście do Twojego problemu" },
       {
