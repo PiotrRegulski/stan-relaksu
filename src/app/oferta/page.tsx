@@ -2,6 +2,7 @@ import React from "react";
 
 import OffersCardBody from "@/components/offers/OffersCardBody";
 import OffersCardFace from "@/components/offers/OffersCardFace";
+import ImageHeader from "@/components/layout/ImageHeader";
 interface OfferProps {
   // Tutaj możesz dodać właściwości, jeśli są potrzebne
 }
@@ -12,8 +13,8 @@ export const metadata = {
 };
 const OfferPage: React.FC<OfferProps> = () => {
   return (
-    <div className="mt-[7rem] sm:mt-[2rem] lg:mt-[10rem] xl:mx-6 2xl:mx-4">
-      {" "}
+    <div className="mt-[0rem] sm:mt-[0rem] lg:mt-[7rem] xl:mx-6 2xl:mx-4">
+      <ImageHeader BgImage={'bg-my-bg-image'}>Oferta</ImageHeader>
       <OffersCardBody />
       <OffersCardFace />
     </div>

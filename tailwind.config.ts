@@ -28,13 +28,15 @@ const config: Config = {
 
     extend: {
       backgroundImage: {
-        "my-bg-image": "url('/tlo-stan-relaksu.png')",
-        "my-ozdoba-image": "url('/do-ozdoby-stopka.jpg')",
+        "my-bg-image": "url('/contact/wyglad-gabinet-header.png')",
+        "my-header-image": "url('/firstMainPage.jpg')",
         "my-bg-price": "url('/bg-price-list.jpg')",
         "my-bg-about": "url('/bg-about.jpg')",
         "my-bg-voucher": "url('/bg-voucher.jpg')",
         "my-bg-mainpage": "url('/firstMainPage.jpg')",
         "my-bg-faceImage": "url('/mainpagemasaztwarz-bg.jpg')",
+        "my-bg-gabinet": "url('/contact/gabient.jpg')",
+        "my-bg-perfumy": "url('/contact/perfumy-header.png')",
       },
       // container: {
       //   center: true, // Domyślnie centruje kontener
