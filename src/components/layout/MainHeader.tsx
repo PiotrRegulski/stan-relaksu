@@ -45,7 +45,7 @@ const MainHeader = () => {
       <div className="fixed z-40 top-0 right-0 left-0   ">
         <InfoBar />
         <header
-          className={`${Noto.className}  flex flex-col justify-center `}
+          className={`${Noto.className}  flex flex-col justify-center bg-white bg-opacity-20 `}
         >
           <NavbarMobile />
           <div className="flex   w-full">
