@@ -37,7 +37,7 @@ const NewCarousel = () => {
       src: "/carousel/masaż-powięziowy.jpg",
       alt: "Masaż powięziowy",
       description:
-        "To idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała",
+        "Idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała",
       linkDetails: "oferta/masaz-powieziowy",
       linkBooksy:
         "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
@@ -48,7 +48,7 @@ const NewCarousel = () => {
       src: "/carousel/terapia-manualna-kolano-klawiki.jpg",
       alt: "Terapia manualna",
       description:
-        "To specjalistyczne techniki mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenie sztywności i ograniczeń w zakresie ruchomości. ",
+        "Specjalistyczne techniki mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenie sztywności i ograniczeń w zakresie ruchomości. ",
       linkDetails: "oferta/terapia-manualna",
       linkBooksy:
         "https://booksy.com/pl-pl/257898_stan-relaksu-gabinet-terapii-manualnej-i-masazu_masaz_3_warszawa#ba_s=dl_1",
@@ -58,7 +58,7 @@ const NewCarousel = () => {
 
     {
       src: "/carousel/kobido-kinesiotaping.jpg",
-      alt: " Kobido z kinesiotapingiem limfatycznym",
+      alt: "Kobido z kinesiotapingiem limfatycznym",
       description:
         "Zdrowszy i promienny wygląd twarzy, spłycenie zmarszczek oraz bruzd mimicznych to jedne z wielu korzyści płynących z rytuału Kobido.",
       linkDetails: "oferta/masaz-kobido",
