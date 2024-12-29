@@ -54,11 +54,11 @@ const CardFaceItem = () => {
             <div className="absolute bottom-0 left-0 bg-secondary bg-opacity-70   rounded w-full h-1/2 sm:h-[55%] md:h-[48%]">
               <div className=" flex flex-col justify-center items-center animate-fadeIn rounded   px-1  w-full  h-3/4 ">
                 <div className="h-1/4 flex mt-2 ">
-                  <p
+                  <h3
                     className={`${lato.className}  md:text-base lg:text-lg xl:text-xl 2xl:text-xl text-center  font-semibold  py-1  text-black`}
                   >
                     {offerItem.title}
-                  </p>
+                  </h3>
                 </div>
                 <div className="h-3/4 mt-2">
                   <p className=" text-center text-base  xl:text-lg 2xl:text-xl font-medium indent-4 px-8  sm:px-2  text-black py-2 ">

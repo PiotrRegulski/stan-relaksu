@@ -21,7 +21,9 @@ const Contact = () => {
 
   return (
     <div id={"kontakt"} className="w-full">
-      <PageHeader id={"kontakt-header"}>Skontaktuj się</PageHeader>
+      <PageHeader id={"kontakt-header"}>
+        <h2>Skontaktuj się</h2>
+      </PageHeader>
       <div className="   ">
         <div ref={refTop}></div>
         <div id="kontakt-info" className="  bg-white   w-full ">
@@ -36,10 +38,12 @@ const Contact = () => {
                 className={`${Noto.className} flex flex-col my-6 w-full justify-center items-center  `}
               >
                 <div className="pt-4 px-6 sm:px-12  md:px-24 lg:px-6  text-sm xl:text-base ">
-                  <p className="text-justify ">
+                  <h3 className="font-medium">
                     Potrzebujesz więcej informacji lub porady na temat zabiegów.
+                  </h3>
+                  <p className="text-justify ">
                     Skontaktuj się ze mną poprzez formularz kontaktowy lub w
-                    dogodny dla siebie sposób. 
+                    dogodny dla siebie sposób.
                   </p>
                   <p>Chętnie pomogę!</p>
                 </div>
@@ -66,10 +70,10 @@ const Contact = () => {
             transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
             className={`${Noto.className} flex flex-col  w-full justify-center items-center my-4 lg:my-6 `}
           >
-            <p className=" text-base  xl:text-lg text-center font-bold ">
+            <h3 className=" text-base  xl:text-lg text-center font-bold ">
               Gabinet mieści się przy <br></br>
               <strong>studio jogi Jasna Asana. </strong>
-            </p>
+            </h3>
           </motion.div>
           <div
             ref={refLogo}

@@ -186,7 +186,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             <div className="flex flex-col-reverse sm:flex-row bg-white sm:my-4 xl:mx-48  2xl:mx-48 rounded-lg  border-secondary">
               <div className="flex flex-col sm:w-1/2 md:w-1/2 my-2  ">
                 <div className=" my-4 px-4">
-                  <h3 className="font-bold  text-lg  md:text-xl xl:text-2xl ">{title1}</h3>
+                  <h2 className="font-bold  text-lg  md:text-xl xl:text-2xl ">{title1}</h2>
                   <HighlightedParagraph
                     className="  text-base md:text-lg xl:text-xl my-4 text-justify"
                     text={description1}
@@ -221,9 +221,9 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                 </div>
                 <div className="flex flex-col  justify-center items-center  my-4 w-full sm:w-1/2 md:w-2/3">
                   <div className="flex flex-col px-4   ">
-                    <h3 className="font-bold text-lg md:text-xl py-2 2xl:mb-4 xl:text-2xl ">
+                    <h2 className="font-bold text-lg md:text-xl py-2 2xl:mb-4 xl:text-2xl ">
                       {title2}
-                    </h3>
+                    </h2>
                     <HighlightedParagraph
                       className=" text-base md:text-lg  xl:text-xl my-4  mx-auto text-justify"
                       text={description2}
@@ -236,7 +236,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             <div className="flex flex-col-reverse sm:flex-row bg-white sm:my-4 xl:mx-48  2xl:mx-48 rounded-lg  border-secondary">
               <div className="flex flex-col sm:w-1/2 md:w-1/2 my-2  ">
                 <div className=" my-4 px-2">
-                  <h3 className="font-bold text-lg  md:text-xl xl:text-2xl ">{title3}</h3>
+                  <h2 className="font-bold text-lg  md:text-xl xl:text-2xl ">{title3}</h2>
                   <HighlightedParagraph
                     className=" text-base md:text-lg  xl:text-xl my-4 text-justify "
                     text={description3}

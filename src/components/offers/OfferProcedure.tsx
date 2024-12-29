@@ -29,9 +29,9 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
       className="flex flex-col min-h-max  bg-white 2xl:mx-36 my-4 md:my-6  "
     >
       <div className="w-full  px-[1em] 2xl:mb-12">
-        <h1 className={`${Noto.className} text-center text-xl md:text-2xl font-bold`}>
+        <h2 className={`${Noto.className} text-center text-xl md:text-2xl font-bold`}>
           Jak przebiega zabieg?
-        </h1>
+        </h2>
       </div>
 
       <div className="flex flex-col sm:flex-row justify-center items-stretch mx-auto xl:mx-36 my-4">

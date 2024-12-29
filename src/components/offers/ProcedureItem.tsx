@@ -16,7 +16,7 @@ const ProcedureItem: React.FC<ProcedureItemProps> = ({ procedure, index }) => {
   return (
     <li>
       <article className="">
-        <p className="font-bold px-2 text-lg md:text-xl">{procedure.title}</p>
+        <h3 className="font-bold px-2 text-lg md:text-xl">{procedure.title}</h3>
         <p className="px-3 text-base md:text-lg">{procedure.procedure}</p>
 
         {index === targetIndex ? (
