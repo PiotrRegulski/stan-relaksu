@@ -104,11 +104,11 @@ const NewCarousel = () => {
   ];
 
   return (
-    <div className="relative w-full  h-[69vh] sm:h-[91vh] md:h-[51vh] lg:h-[31vh] 2xl:h-[62vh]  lg:mt-[7rem] 2xl:mt-[7rem] animate-fadeIn mb-2 ">
+    <div className="relative w-full  h-[69vh] sm:h-[91vh] md:h-[71vh] lg:h-[68vh] 2xl:h-[62vh]  lg:mt-[1rem] 2xl:mt-[7rem] animate-fadeIn mb-2 ">
       {" "}
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index} className=" relative h-[69vh] sm:h-[90vh] md:h-[50vh] lg:h-[30vh] 2xl:h-[60vh]  w-full ">
+          <div key={index} className=" relative h-[69vh] sm:h-[90vh] md:h-[70vh] lg:h-[67vh] 2xl:h-[60vh]  w-full ">
             <Image
               src={image.src}
               alt={image.alt}
@@ -117,7 +117,7 @@ const NewCarousel = () => {
               priority={true}
               className="mx-auto object-cover z--10"
             />
-            <div className="absolute bottom-0 sm:bottom-0 md:bottom-2 lg:bottom-5 lg:left-0 xl:left-0 xl:bottom-5 right-0 2xl:bottom-5 2xl:left-0 p-2 w-full text-center rounded ">
+            <div className="absolute bottom-0 sm:bottom-0 md:bottom-2 lg:bottom-1 lg:left-0 xl:left-0 xl:bottom-5 right-0 2xl:bottom-5 2xl:left-0 p-2 w-full text-center rounded ">
               <div className="flex flex-col justify-center items-center xl:w-full 2xl:w-full bg-black bg-opacity-15">
                 <div className="flex flex-col text-center text-white">
                   <p
