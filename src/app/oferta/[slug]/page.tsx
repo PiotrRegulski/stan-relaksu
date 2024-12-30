@@ -78,9 +78,10 @@ export async function generateMetadata(
   );
   const previousImages = (await parent).openGraph?.images || [];
   return {
-    title: product?.title,
+    title: product?.title +'-'+' '+'Stan Relaksu',
+    description:product?.contentFirst,
     openGraph: {
-      title: product?.title,
+      title: product?.title + '-'+'Stan Relaksu',
       description: product?.contentFirst,
       url: `https://stanrelaksu/oferta/${product?.slug}`,
       type: "website",
