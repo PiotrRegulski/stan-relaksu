@@ -20,7 +20,7 @@ const Contact = () => {
   const isSmallScreen = useMediaQuery("(max-width: 1023px)");
 
   return (
-    <div id={"kontakt"} className="w-full">
+    <div id={"kontakt"} className="w-full container mx-auto">
       <PageHeader id={"kontakt-header"}>
         <h2>Skontaktuj się</h2>
       </PageHeader>
