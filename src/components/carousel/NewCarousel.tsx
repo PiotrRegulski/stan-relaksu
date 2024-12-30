@@ -104,11 +104,11 @@ const NewCarousel = () => {
   ];
 
   return (
-    <div className="relative w-full  h-[69vh] sm:h-[91vh] md:h-[71vh] lg:h-[68vh] 2xl:h-[62vh]  lg:mt-[1rem] 2xl:mt-[7rem] animate-fadeIn mb-2 ">
+    <div className="relative w-full  h-[69vh] sm:h-[23rem] md:h-[23rem] lg:h-[36rem] 2xl:h-[62vh]  lg:mt-[1rem] 2xl:mt-[7rem] animate-fadeIn mb-2 ">
       {" "}
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index} className=" relative h-[69vh] sm:h-[90vh] md:h-[70vh] lg:h-[67vh] 2xl:h-[60vh]  w-full ">
+          <div key={index} className=" relative h-[69vh] sm:h-[22rem] md:h-[22rem] lg:h-[35rem] 2xl:h-[60vh]  w-full ">
             <Image
               src={image.src}
               alt={image.alt}
@@ -126,7 +126,7 @@ const NewCarousel = () => {
                     {image.alt}
                   </p>
                   <p
-                    className={`${lato.className}  text-xs sm:text-base lg:text-base xl:text-xl 2xl:text-xl font-medium sm:px-[5rem] md:px-[7rem] lg:px-[14rem] xl:px-[15rem] 2xl:px-[20rem]`}
+                    className={`${lato.className}  text-base sm:text-base lg:text-base xl:text-xl 2xl:text-xl font-medium sm:px-[5rem] md:px-[7rem] lg:px-[14rem] xl:px-[15rem] 2xl:px-[20rem]`}
                   >
                     {image.description}
                   </p>
