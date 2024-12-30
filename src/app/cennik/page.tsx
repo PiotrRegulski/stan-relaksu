@@ -10,10 +10,10 @@ export const metadata = {
 };
 const page = () => {
   return (
-    <div className="flex flex-col bg-white  xl:mt-[7rem] ">
+    <div className="flex flex-col bg-white  lg:mt-[7rem] ">
       <ImageHeader BgImage={"bg-my-bg-perfumy bg-center"}>Cennik</ImageHeader>
 
-      <div className=" flex justify-center h-2/3 md:py-4 md:px-2  md:mx-36 md:my-8 my-4 animate-fadeIn rounded  transition-transform duration-200 ease-in-out  ">
+      <div id="offer-title" className=" flex justify-center h-2/3 md:py-4 md:px-2  md:mx-36 md:my-8 my-4 animate-fadeIn rounded  transition-transform duration-200 ease-in-out  ">
         <AllPriceList />
       </div>
 
