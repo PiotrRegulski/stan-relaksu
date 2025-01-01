@@ -6,13 +6,17 @@ import WelcomeAboutMe from "@/components/homepage/WelcomeAboutMe";
 import Carousel from "@/components/carousel/Carousel";
 import Comments from "@/components/comments/Comments";
 import NewCarousel from "@/components/carousel/NewCarousel";
+import AboutMeShort from "@/components/homepage/AboutMeShort";
+import HomePageShort from "@/components/homepage/HomePageShort";
 export const metadata = {};
 export default function Home() {
   return (
     <>
       <div className="container mx-auto">
-        <NewCarousel />
         <WelcomeAboutMe />
+        <NewCarousel />
+        <HomePageShort/>
+        <AboutMeShort />
 
         <OffersCardBody />
         <OffersCardFace />
