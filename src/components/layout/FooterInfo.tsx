@@ -61,7 +61,7 @@ const FooterInfo = (props: any) => {
           <div className="flex flex-row  ">
             <IoIosPin className="w-5 h-5 mt-2 mr-1" />
             <address className="text-sm w-full whitespace-nowrap not-italic px-1 ">
-              Naukowa 20 /lokal-1/<br></br> 02-463 Warszawa
+            Willa Modrzewie <br></br> Naukowa 20, lokal 1<br></br> 02-463 Warszawa
             </address>
           </div>
           <div className="mt-2  ">

@@ -42,7 +42,7 @@ const OfficeAppearance = () => {
   return (
     <div
      
-      className="flex flex-col  "
+      className="flex flex-col mt-24 "
     >
       <motion.div
         initial={{ y: -20, opacity: 0 }}

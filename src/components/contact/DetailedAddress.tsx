@@ -13,7 +13,7 @@ const DetailedAddress = () => {
       >
         <address className="text-center ">
           <strong className="not-italic text-sm  ">
-            <span className="whitespace-nowrap ">ul. Naukowa 20 /lokal-1</span>
+            <span className="whitespace-nowrap ">Willa Modrzewie <br></br>ul. Naukowa 20 /lokal-1</span>
             <br></br>02-463 Warszawa
           </strong>
         </address>

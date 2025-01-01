@@ -14,12 +14,13 @@ const MainHeader = () => {
     const offerId =
     document.getElementById("o-gabinecie")||
       document.getElementById("kontakt") ||
+      document.getElementById("cennik") ||
       document.getElementById("o-mnie") ||
       document.getElementById("offer-title") ||
       document.getElementById("oferta-detale")
      ;
     if (offerId) {
-      const offerPosition = offerId.getBoundingClientRect().top;
+      const offerPosition = offerId.getBoundingClientRect().bottom;
       setIsVisible(offerPosition > 0);
     }
   }, []);

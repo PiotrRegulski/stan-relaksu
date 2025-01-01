@@ -8,7 +8,7 @@ export const metadata = {
 const page = () => {
   return (
     <div className="mt-[0rem] lg:mt-[7rem] 2xl:mt-[7rem]">
-      <ImageHeader BgImage={"bg-my-bg-gabinet"}>Kontakt</ImageHeader>
+      <ImageHeader id="kontakt" BgImage={"bg-my-bg-gabinet"}>Kontakt</ImageHeader>
       <Contact />
     </div>
   );

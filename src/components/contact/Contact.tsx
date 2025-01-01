@@ -20,7 +20,7 @@ const Contact = () => {
   const isSmallScreen = useMediaQuery("(max-width: 1023px)");
 
   return (
-    <div id={"kontakt"} className="w-full container mx-auto">
+    <div  className="w-full container mx-auto mt-24">
       <PageHeader id={"kontakt-header"}>
         <h2>Skontaktuj się</h2>
       </PageHeader>
@@ -62,13 +62,13 @@ const Contact = () => {
           </div>
         </div>
         <div ref={refBottom}></div>
-        <div>
+        <div className="mt-24">
           {" "}
           <motion.div
             initial={{ y: 0, opacity: 0 }}
             animate={isInViewBottom ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
-            className={`${Noto.className} flex flex-col  w-full justify-center items-center my-4 lg:my-6 `}
+            className={`${Noto.className} flex flex-col  w-full justify-center items-center my-4 lg:my-6  `}
           >
             <h3 className=" text-base  xl:text-lg text-center font-bold ">
               Gabinet mieści się przy <br></br>

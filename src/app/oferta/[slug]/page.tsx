@@ -187,7 +187,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
             <div className="flex flex-col-reverse sm:flex-row bg-white sm:my-4 xl:mx-48  2xl:mx-48 rounded-lg  border-secondary">
               <div className="flex flex-col sm:w-1/2 md:w-1/2 my-2  ">
                 <div className=" my-4 px-4">
-                  <h2 className="font-bold  text-lg  md:text-xl xl:text-2xl ">{title1}</h2>
+                  <h1 className="font-bold  text-lg  md:text-xl xl:text-2xl ">{title1}</h1>
                   <HighlightedParagraph
                     className="  text-base md:text-lg xl:text-xl my-4 text-justify"
                     text={description1}
@@ -202,7 +202,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                     src={`/${offerDetail.image}`}
                     alt={offerDetail.title}
                     fill
-                    className=" object-cover sm:object-cover md:object-cover object-center rounded   sm:px-2 md:px-0 "
+                    className=" object-cover object-center sm:object-cover md:object-cover  rounded   sm:px-2 md:px-0 "
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
@@ -216,7 +216,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
                     src={`/${offerDetail.imagedetailfo}`}
                     alt={offerDetail.title}
                     fill
-                    className="object-cover sm:object-cover md:object-cover object-center  sm:rounded   md:px-0  "
+                    className="object-cover sm:object-cover md:object-cover object-top sm:rounded   md:px-0  "
                     sizes="(max-width: 600px) 100vw,"
                   />
                 </div>

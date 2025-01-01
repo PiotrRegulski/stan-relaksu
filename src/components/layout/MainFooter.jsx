@@ -1,7 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import ImageBackground from "./ImageBackground";
-import FooterLinks from "./FooterLinks";
 import FooterInfo from "./FooterInfo";
 const MainFooter = () => {
   return (
