@@ -9,7 +9,7 @@ interface OfferProps {
 export const metadata = {
   title: "Stan Relaksu - Oferta",
   description:
-    "Sprawdź naszą ofertę i wybierz najlepsze rozwiązania dla siebie.  Czekam na Ciebie z terapiąterapią manualną, masażem powięziowym, masażem tkanek głębokich. Głęboko odprężającymi technikami masażu twarzy Kobido, masażu relaksacyjnego, które pozwolą zadbać o swoje zdrowie, zwolnić i poczuć się lepiej - osiągnąć Stan Relaksu.",
+    "Poznaj ofertę terapii manualnych i masażu. Terapia manualna, masaż powięziowy, masaż tkanek głębokich oraz głęboko odprężające techniki masażu twarzy Kobido i masażu relaksacyjnego. Zadbaj o swoje zdrowie, zwolnij i poczuj się lepiej - osiągnij Stan Relaksu.",
 };
 const OfferPage: React.FC<OfferProps> = () => {
   return (
@@ -20,5 +20,7 @@ const OfferPage: React.FC<OfferProps> = () => {
     </div>
   );
 };
+
+
 
 export default OfferPage;

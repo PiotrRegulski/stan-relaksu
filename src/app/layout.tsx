@@ -11,7 +11,11 @@ import MobileInfoBar from "@/components/layout/MobileInfoBar";
 export const metadata: Metadata = {
   title: "Stan Relaksu - Gabinet terapii manualnej i masażu",
   description:
-    "Stan Relaksu - Gabinet terapii manualnej i masażu. Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
+    "Stan Relaksu - Gabinet terapii manualnej i masażu.Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
+  metadataBase: new URL("https://www.stanrelaksu.pl"),
+  alternates: {
+    canonical: "/",
+  },
   robots: {
     index: true, // Zmieniono z false na true
     follow: true,
