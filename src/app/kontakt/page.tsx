@@ -3,7 +3,7 @@ import ImageHeader from "@/components/layout/ImageHeader";
 export const metadata = {
   title: "Stan Relaksu - Kontakt",
   description:
-    "Potrzebujesz więcej informacji lub porady na temat zabiegów. Skontaktuj się ze mną poprzez formularz kontaktowy lub w dogodny dla siebie sposób. ",
+    "Potrzebujesz więcej informacji lub porady na temat wybranego masażu i terapii manualnej? Skontaktuj się ze mną poprzez formularz kontaktowy lub w dogodny dla siebie sposób. ",
 };
 const page = () => {
   return (
