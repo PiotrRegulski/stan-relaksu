@@ -123,7 +123,7 @@ const NewCarousel = () => {
             <div className="absolute top-0 left-0 right-0">
               {" "}
               <h2 className=" text-white text-center text-lg xl:text-xl my-2 bg-black rounded-xl font-bold bg-opacity-20">
-                Najpopularniejsze masaże i terapie manualne{" "}
+              Najpopularniejsze terapie manualne i masaże{" "}
               </h2>
             </div>
             <div className="absolute bottom-0 sm:bottom-0 md:bottom-2 lg:bottom-1 lg:left-0 xl:left-0 xl:bottom-5 right-0 2xl:bottom-5 2xl:left-0 p-2 w-full text-center rounded ">
