@@ -7,11 +7,12 @@ import { lato } from "@/components/fonts";
 import MobileInfoBar from "@/components/layout/MobileInfoBar";
 
 // const inter = Inter({ subsets: ["latin"] });
+<meta name="description" content="" />
 
 export const metadata: Metadata = {
   title: "Stan Relaksu - Gabinet terapii manualnej i masażu",
   description:
-    "Stan Relaksu - Gabinet terapii manualnej i masażu.Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
+    "Terapeutyczne miejsce dla ciała, stworzone z myślą o osobach dbających o zdrowie. Oferuje terapię manualną, masaże relaksacyjne, masaż twarzy Kobido, aby zwolnić, zadbać o zdrowie i poczuć się lepiej.",
   metadataBase: new URL("https://www.stanrelaksu.pl"),
   alternates: {
     canonical: "/",
