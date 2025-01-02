@@ -18,9 +18,19 @@ const AllPriceList = () => {
           </Link>
           
           <ul className="divide-y divide-blue-200 my-3 ">
+          <li  className="text-lg lg:text-xl 2xl:text-2xl mx-12">
+                <div className="flex justify-between font-semibold bg-white bg-opacity-50 px-1 rounded my-2">
+                  <div className="w-full"><p className="">Czas</p></div>
+                  <div className="w-1/6"><p className="text-left">Cena</p></div>
+                  
+                </div>
+                
+              </li>
             {item.prices?.map((price) => (
+              
+              
               <li key={price.id} className="text-lg lg:text-xl 2xl:text-2xl mx-12 ">
-                <div className="flex justify-between font-semibold bg-white bg-opacity-50 px-1 rounded">
+                <div className="flex justify-between font-medium bg-white bg-opacity-50 px-1 rounded">
                   <div className=""><p className="">{price.priceName}</p></div>
                   <div className=""><p className="">{price.price}</p></div>
                   
