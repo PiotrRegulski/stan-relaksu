@@ -6,31 +6,31 @@ import { Noto } from "../fonts";
 const imgURLs = [
   {
     src: "/contact/wygląd-gabinet-szafa.jpg",
-    label: "Wygląd gabinetu szafa",
+    label: "Naturoterapeutka Kinga Wołoszka w gabinecie terapii manualnej i masażu - Stan Relaksu",
     caption: "Terapia manualna kolana",
     marginTop: "20px",
-    href: "#",
+    
   },
   {
     src: "/contact/wyglad-gabinet-meble.jpg",
-    label: "Wygląd gabinetu meble",
+    label: "Odkryj gabinet terapii manualnej i masażu - Stan relaksu, gdzie oferowane są profesjonalne zabiegi terapii manualnej i masażu",
     caption: "Terapia manualna",
     marginTop: "40px",
-    href: "#",
+   
   },
   {
     src: "/contact/wygląd-gabinet-lozko.jpg",
-    label: "Wygląd gabinetu lozko",
+    label: "Łóżko do masażu w przytulnym gabinecie relaksacyjnym",
     caption: "Terapia wisceralna",
     marginTop: "20px",
-    href: "#",
+    
   },
   {
     src: "/contact/wygląd-cwieczenie-yogi.jpg",
-    label: "ćwiczenie yogi",
+    label: "Osoby ćwiczące jogę w jasnej, przestronnej sali",
     caption: "Terapia uroginekologiczna",
     marginTop: "40px",
-    href: "#",
+   
   },
 ];
 
@@ -79,7 +79,7 @@ const OfficeAppearance = () => {
             >
               <ImageCard
                 key={imgUrl.label}
-                href={imgUrl.href}
+                
                 src={imgUrl.src}
                 alt={imgUrl.label}
               />

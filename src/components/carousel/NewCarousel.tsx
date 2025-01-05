@@ -117,7 +117,7 @@ const NewCarousel = () => {
               alt={image.alt}
               sizes="(max-width: 600px) 100vw, 50vw"
               fill
-              priority={true}
+             
               className="mx-auto object-cover z--10"
             />
             <div className="absolute top-0 left-0 right-0">
