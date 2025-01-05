@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className=" flex     w-full    h-20   ">
       <div className=" ">
-        <Link href={"/"} className="mx-1 my-1 ">
+        <Link href={"/"} className="mx-1 my-1"   aria-label="Przejdź na strone główną">
           <Logo />
         </Link>
       </div>

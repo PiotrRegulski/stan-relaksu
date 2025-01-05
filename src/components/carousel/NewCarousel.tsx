@@ -104,13 +104,13 @@ const NewCarousel = () => {
   ];
 
   return (
-    <div className="relative w-full  h-[38rem] sm:h-[23rem] md:h-[23rem] lg:h-[36rem] 2xl:h-[62vh]  lg:mt-[1rem]  animate-fadeIn mb-2 ">
+    <div className="relative w-full  h-[29rem] sm:h-[23rem] md:h-[23rem] lg:h-[36rem] 2xl:h-[62vh]  lg:mt-[1rem]  animate-fadeIn mb-2 ">
       {" "}
       <Slider {...settings}>
         {images.map((image, index) => (
           <div
             key={index}
-            className=" relative h-[37rem] sm:h-[22rem] md:h-[22rem] lg:h-[35rem] 2xl:h-[60vh]  w-full "
+            className=" relative h-[28rem] sm:h-[22rem] md:h-[22rem] lg:h-[35rem] 2xl:h-[60vh]  w-full "
           >
             <Image
               src={image.src}
