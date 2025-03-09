@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ImageResponse } from "next/og";
 import MainHeader from "@/components/layout/MainHeader";
 import MainFooter from "@/components/layout/MainFooter";
 import { lato } from "@/components/fonts";
 import MobileInfoBar from "@/components/layout/MobileInfoBar";
-
 // const inter = Inter({ subsets: ["latin"] });
-<meta name="description" content="" />
+<meta name="description" content=""  />
 
 export const metadata: Metadata = {
   title: "Stan Relaksu - Gabinet terapii manualnej i masażu",
@@ -51,7 +49,7 @@ export default function RootLayout({
       >
         <MainHeader />
         <MobileInfoBar />
-        <main className="overflow-hidden  lg:container mx-auto -mt-1 bg-white  ">
+        <main className="overflow-hidden bg-white  ">
           {children}
         </main>
 

@@ -20,10 +20,10 @@ const NavLinks = () => {
           href={link.href}
           key={link.href}
           aria-label={link["aria-label"]}
-          className={`border-b-2 border-primary/20 mx-2 h-[3rem] flex justify-center bg-mainthemelogo rounded-e-md rounded-s-md items-center text-black sm:text-sm md:text-md lg:text-lg 2xl:text-lg md:px-2 font-medium lg:mt-1 ${
+          className={` mx-2 h-[3rem] flex justify-center  items-center text-black  rounded-3xl sm:text-sm md:text-md lg:text-lg 2xl:text-lg md:px-2 font-medium lg:mt-1 ${
             pathname === link.href
-              ? "px-2 border-b-2 text-black border-mainpeach shadow-xl"
-              : "hover:border-primary/40 hover:opacity-40 hover:shadow-sm hover:underline shadow"
+              ? "px-2 text-red-400  "
+              : "hover:border-primary/40 hover:opacity-40 hover:shadow-sm hover:underline"
           }`}
         >
           {link.label}

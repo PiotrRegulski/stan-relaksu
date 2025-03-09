@@ -3,7 +3,6 @@ import OffersCardBody from "@/components/offers/OffersCardBody";
 import Contact from "@/components/contact/Contact";
 import OffersCardFace from "@/components/offers/OffersCardFace";
 import WelcomeAboutMe from "@/components/homepage/WelcomeAboutMe";
-import Carousel from "@/components/carousel/Carousel";
 import Comments from "@/components/comments/Comments";
 import NewCarousel from "@/components/carousel/NewCarousel";
 import AboutMeShort from "@/components/homepage/AboutMeShort";
@@ -12,10 +11,10 @@ export const metadata = {};
 export default function Home() {
   return (
     <>
-      <div className="container mx-auto">
+      <div className="3xl:container mx-auto ">
         <WelcomeAboutMe />
         <NewCarousel />
-        <HomePageShort/>
+        <HomePageShort />
         <AboutMeShort />
 
         <OffersCardBody />

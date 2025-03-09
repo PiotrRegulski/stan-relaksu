@@ -16,24 +16,14 @@ const ProcedureItem: React.FC<ProcedureItemProps> = ({ procedure, index }) => {
   return (
     <li>
       <article className="">
-        <h3 className="font-bold px-2 text-lg md:text-xl">{procedure.title}</h3>
-        <p className="px-3 text-base md:text-lg">{procedure.procedure}</p>
+        <h3 className="font-bold px-2 text-lg md:text-lg">{procedure.title}</h3>
+        <p className="px-3 text-base ">{procedure.procedure}</p>
 
-        {index === targetIndex ? (
-          <ExpandableText text={procedure.procedurefirst} maxLength={100} />
-        ) : (
-          <p className="px-3 md:text-lg">{procedure.procedurefirst}</p>
-        )}
-        {index === targetIndex ? (
-          <ExpandableText text={procedure.proceduresec} maxLength={100} />
-        ) : (
-          <p className="px-3 md:text-lg">{procedure.proceduresec}</p>
-        )}
-        {index === targetIndex ? (
-          <ExpandableText text={procedure.procedurethi} maxLength={100} />
-        ) : (
-          <p className="px-3 md:text-lg pb-2">{procedure.procedurethi}</p>
-        )}
+        <p className="px-3 md:text-base">{procedure.procedurefirst}</p>
+
+        <p className="px-3 md:text-base">{procedure.proceduresec}</p>
+
+        <p className="px-3 md:text-base pb-2">{procedure.procedurethi}</p>
       </article>
     </li>
   );

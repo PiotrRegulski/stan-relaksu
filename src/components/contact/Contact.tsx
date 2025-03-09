@@ -26,7 +26,7 @@ const Contact = () => {
       </PageHeader>
       <div className="   ">
         <div ref={refTop}></div>
-        <div id="kontakt-info" className="  bg-white   w-full ">
+        <div id="kontakt-info" className="  bg-transparent   w-full ">
           <div className="flex flex-col lg:flex-row w-full ">
             <motion.div
               initial={{ x: -40, opacity: 0 }}
@@ -70,14 +70,14 @@ const Contact = () => {
             transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
             className={`${Noto.className} flex flex-col  w-full justify-center items-center my-4 lg:my-6  `}
           >
-            <h3 className=" text-base  xl:text-lg text-center font-bold ">
-              Gabinet mieści się przy <br></br>
-              <strong>studio jogi Jasna Asana. </strong>
+            <h3 className=" text-base  xl:text-2xl text-center font-normal ">
+            <span className="text-3xl">Gabinet mieści się przy</span>   <br></br>
+              <strong> studio jogi Jasna Asana. </strong>
             </h3>
           </motion.div>
           <div
             ref={refLogo}
-            className="flex sm:flex-row  justify-around py-2 w-full bg-white  "
+            className="flex sm:flex-row  justify-around py-2 w-full bg-transparent  "
           >
             <div className="relative flex flex-row justify-center items-center   w-full h-[60rem] sm:h-[60rem] md:h-[60rem] lg:h-[30rem] xl:h-[30rem]">
               <motion.div

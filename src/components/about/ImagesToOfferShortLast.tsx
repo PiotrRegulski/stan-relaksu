@@ -13,7 +13,7 @@ const imgURLs = [
   },
 
   {
-    src: "/terapia-wisceralna/terapia-wisceralna-first.jpg",
+    src: "/terapia-wisceralna/terapia-wisceralna.jpg",
     label: "Terapia wisceralna",
     caption: "Terapia wisceralna",
     marginTop: "40px",
@@ -34,14 +34,16 @@ const ImagesToOfferShortLast = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
+    <>
+    
     <div
       ref={ref}
-      className="flex overflow-x-auto py-2 gap-2   md:gap-4 w-full lg:justify-center lg:items-center px-2 mr-4 md:mr-0  "
+      className="flex overflow-x-auto py-2 gap-2   md:gap-4 w-full lg:justify-center lg:items-center px-2 mr-4 md:mr-0 outline-none scrollbar-thin scrollbar-webkit "
     >
       {imgURLs.map((imgUrl, index) => (
         <div
           key={imgUrl.label}
-          className="relative flex shrink-0 w-[20rem] h-[15rem] sm:w-[15rem] sm:h-[10rem] md:w-[17rem] md:h-[14rem] xl:w-[20rem] xl:h-[15rem] 2xl:w-[22rem]  overflow-hidden "
+          className="relative flex shrink-0 w-[20rem] h-[15rem] sm:w-[20rem] sm:h-[15rem] md:w-[17rem] md:h-[14rem] xl:w-[20rem] xl:h-[15rem] 2xl:w-[22rem]  overflow-hidden outline-none scrollbar-thin scrollbar-webkit border-4 border-white rounded "
           style={{ marginTop: imgUrl.marginTop }}
         >
           <motion.div
@@ -63,7 +65,7 @@ const ImagesToOfferShortLast = () => {
           </motion.div>
         </div>
       ))}
-    </div>
+    </div></>
   );
 };
 

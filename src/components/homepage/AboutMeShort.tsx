@@ -31,23 +31,23 @@ const AboutMeShort = () => {
 
   return (
     <div
-      className="flex flex-col lg:gap-4 xl:gap-4  2xl:gap-4  lg:flex-row justify-around items-center  my-6 md:my-2 lg:my-12 2xl:my-20 mx-auto md:mx-4 lg:mx-4 xl:mx-12 2xl:mx-2  bg-white"
+      className="container mx-auto flex flex-col xl:h-screen lg:gap-4 xl:gap-4  2xl:gap-4  xl:flex-row justify-around items-center  my-6 md:my-2 lg:my-12 2xl:my-20   bg-white"
       ref={ref}
     >
       <motion.div
-        className="flex justify-end lg:w-1/2 2xl:w-1/3"
+        className="flex xl:justify-end xl:w-1/2 2xl:w-1/3  h-1/3"
         initial={{ x: -10, opacity: 0 }}
         animate={isInView ? { x: 0, opacity: 1 } : {}}
         transition={{ duration: 1, type: "tween" }}
       >
         <motion.div
           id="troche-o-omnie"
-          className="relative w-[8rem] sm:w-[10rem] md:w-[10rem] md:h-[14rem] xl:w-[15rem] h-[12rem] sm:h-[14rem] lg:h-[18rem] lg:w-[13rem] xl:h-[23rem] 2xl:w-[20rem] 2xl:h-[25rem] z-20 overflow-hidden"
+          className="relative w-[8rem] sm:w-[10rem] md:w-[10rem] md:h-[14rem] xl:w-[15rem] h-[12rem] sm:h-[14rem] lg:h-[18rem] lg:w-[13rem] xl:h-[23rem] 2xl:w-[20rem] 2xl:h-[25rem] z-20 overflow-hidden border-4 border-white"
           transition={{ type: "tween", duration: 1 }}
           style={{ y: springImageY }}
         >
           <motion.div
-            className="relative w-full h-full"
+            className="relative w-full h-full "
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", duration: 1 }}
           >
@@ -63,7 +63,7 @@ const AboutMeShort = () => {
           </motion.div>
         </motion.div>
         <motion.div
-          className="relative w-[10rem] h-[15rem]  sm:w-[11rem] sm:h-[15rem] md:h-[16rem] md:w-[12rem] lg:h-[25rem] lg:w-[15rem] xl:w-[17rem]  xl:h-[27rem] 2xl:w-[23rem] 2xl:h-[30rem] -ml-5 mt-20 overflow-hidden"
+          className="relative w-[10rem] h-[15rem]  sm:w-[11rem] sm:h-[15rem] md:h-[16rem] md:w-[12rem] lg:h-[25rem] lg:w-[15rem] xl:w-[17rem]  xl:h-[27rem] 2xl:w-[23rem] 2xl:h-[30rem] -ml-5 mt-20 overflow-hidden "
           transition={{ type: "tween" }}
           style={{ y: springImageYs }}
         >
@@ -85,7 +85,7 @@ const AboutMeShort = () => {
         </motion.div>
       </motion.div>
       <motion.div
-        className=" md:w-3/4 lg:w-1/2 mx-4 my-4  "
+        className=" md:w-3/4 xl:w-1/2 mx-4 my-4 border-l-8 border-mainpeach  rounded-xl px-4 "
         initial={{ x: 10, opacity: 0 }}
         animate={isInView ? { x: 0, opacity: 1 } : {}}
         transition={{ duration: 1, type: "tween" }}

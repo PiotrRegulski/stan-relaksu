@@ -4,8 +4,8 @@ const NextArrow = (props: any) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} absolute top-1/2 right-1 z-40 `}
-      style={{ ...style, display: "block",  }}
+      className={`${className} absolute top-1/2 right-1 z-40  `}
+      style={{ ...style, display: "block"  }}
       onClick={onClick}
     >
       {/* <IoIosArrowForward className="text-black text-4xl hover:text-gray-400 cursor-pointer" /> */}
@@ -18,7 +18,7 @@ const PrevArrow = (props: any) => {
   return (
     <div
       className={`${className} absolute top-1/2  left-1 z-40  `}
-      style={{ ...style, display: "block", }}
+      style={{ ...style, display: "block"  }}
       onClick={onClick}
     >
       {/* <IoIosArrowBack className="text-black text-4xl hover:text-gray-400 cursor-pointer" /> */}

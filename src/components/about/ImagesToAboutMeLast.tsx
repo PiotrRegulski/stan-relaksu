@@ -31,7 +31,7 @@ const ImagesToAboutMeLast = () => {
         {imageURLs.map((imgUrl) => (
           <div
             key={imgUrl.label}
-            className="flex  w-80 h-72 sm:w-[24rem] lg:w-96 lg:h-96 shadow-md shadow-black overflow-hidden my-4"
+            className="flex  w-80 h-72 sm:w-[24rem] sm:h-[18rem] lg:w-96 lg:h-96 shadow-md shadow-black overflow-hidden my-4"
           >
             <motion.div
               className="w-full h-full"

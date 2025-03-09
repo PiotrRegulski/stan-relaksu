@@ -6,14 +6,16 @@ import { Noto } from "../fonts";
 const imgURLs = [
   {
     src: "/contact/wygląd-gabinet-szafa.jpg",
-    label: "Naturoterapeutka Kinga Wołoszka w gabinecie terapii manualnej i masażu - Stan Relaksu",
+    label:
+      "Naturoterapeutka Kinga Wołoszka w gabinecie terapii manualnej i masażu - Stan Relaksu",
     caption: "Terapia manualna kolana",
     marginTop: "20px",
     href: "#",
   },
   {
     src: "/contact/wyglad-gabinet-meble.jpg",
-    label: "Odkryj gabinet terapii manualnej i masażu - Stan relaksu, gdzie oferowane są profesjonalne zabiegi terapii manualnej i masażu",
+    label:
+      "Odkryj gabinet terapii manualnej i masażu - Stan relaksu, gdzie oferowane są profesjonalne zabiegi terapii manualnej i masażu",
     caption: "Terapia manualna",
     marginTop: "40px",
     href: "#",
@@ -38,32 +40,26 @@ const OfficeAppearance = () => {
   const refTop = useRef(null);
   const isInViewTop = useInView(refTop, { once: true });
   const refBottom = useRef(null);
-  const isInViewBottom = useInView(refBottom , { once: true });
+  const isInViewBottom = useInView(refBottom, { once: true });
   return (
-    <div
-     
-      className="flex flex-col mt-24 "
-    >
+    <div className="flex flex-col mt-24 bg-gradient-to-r from-secondary via-transparent to-secondary my-4 rounded ">
       <motion.div
         initial={{ y: -20, opacity: 0 }}
         animate={isInViewTop ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 2, ease: "easeInOut", type: "tween" }}
-        className="bg-white rounded-xl my-4  "
-         ref={refTop}>
+        className="bg-transparent rounded-xl my-4  "
+        ref={refTop}
+      >
         <div className="flex flex-col w-full justify-center items-center my-6 px-2 ">
-          <h3 className={`${Noto.className} text-center lg:text-xl font-medium`}>
+          <h3 className={`${Noto.className} text-center lg:text-3xl font-light`}>
             Tworzymy to miejsce, aby holistycznie zadbać o Twoje ciało.
           </h3>
-          <p className={`${Noto.className} lg:text-lg font-medium `}>
-            Poprzez połączenie <strong>jogi i terapii manualnej</strong>.
-          </p>
-          <p className={`${Noto.className} text-center  lg:text-xl font-medium`}>
-            Możesz zatroszczyć się o siebie w sposób kompleksowy.
-          </p>
-         
         </div>
       </motion.div>
-      <div className="flex flex-row overflow-x-auto  gap-2 w-full sm:justify-center sm:items-center bg-gradient-to-r from-secondary via-transparent to-secondary "ref={refBottom}>
+      <div
+        className="flex flex-row overflow-x-auto  gap-2 w-full sm:justify-center sm:items-center bg-gradient-to-r from-secondary via-transparent to-secondary "
+        ref={refBottom}
+      >
         {imgURLs.map((imgUrl, index) => (
           <div
             key={imgUrl.label}
@@ -85,12 +81,28 @@ const OfficeAppearance = () => {
               />
             </motion.div>
           </div>
-          
         ))}
       </div>
-     
+      <motion.div
+        initial={{ y: -20, opacity: 0 }}
+        animate={isInViewTop ? { y: 0, opacity: 1 } : {}}
+        transition={{ duration: 2, ease: "easeInOut", type: "tween" }}
+        className="bg-transparent rounded-xl my-4  "
+        ref={refTop}
+      >
+        <div className="flex flex-col w-full justify-center items-center my-6 px-2 font-bold ">
+         
+          <p className={`${Noto.className} lg:text-2xl  py-2  `}>
+            Poprzez połączenie <strong>jogi i terapii manualnej</strong>.
+          </p>
+          <p
+            className={`${Noto.className} text-center lg:text-2xl `}
+          >
+            Możesz zatroszczyć się o siebie w sposób kompleksowy.
+          </p>
+        </div>
+      </motion.div>
     </div>
-    
   );
 };
 

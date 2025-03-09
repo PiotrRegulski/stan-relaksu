@@ -56,7 +56,7 @@ const FooterInfo = (props: any) => {
         </div>
         <div className="flex lg:w-1/3  flex-col text-sm  ">
           <p className="my-2 text-sm font-bold">
-            Gabinet terapii manualnej i masażu <span className="whitespace-nowrap">- Stan Relaksu</span>
+            Gabinet terapi manualnej i masażu <span className="whitespace-nowrap">- Stan Relaksu</span>
           </p>
           <div className="flex flex-row  ">
             <IoIosPin className="w-5 h-5 mt-2 mr-1" />

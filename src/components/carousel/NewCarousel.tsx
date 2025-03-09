@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import ButtonMain from "../layout/ButtonMain";
 import { lato } from "../fonts";
 import { NextArrow, PrevArrow } from "@/components/carousel/Arrows";
+
 interface ImageData {
   src: string;
   alt: string;
@@ -33,8 +34,9 @@ const NewCarousel = () => {
   };
 
   const images: ImageData[] = [
+  
     {
-      src: "/carousel/masaż-powięziowy.jpg",
+      src: "/carousel/masaz-powieziowy-top.webp",
       alt: "Masaż powięziowy",
       description:
         "Idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała",
@@ -45,7 +47,7 @@ const NewCarousel = () => {
         "text-white xl:text-2xl font-serif tracking-widest hover:opacity-70 hover:underline ",
     },
     {
-      src: "/carousel/terapia-manualna-kolano-klawiki.jpg",
+      src: "/carousel/terapia-manualna-top.webp",
       alt: "Terapia manualna",
       description:
         "Specjalistyczne techniki mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenie sztywności i ograniczeń w zakresie ruchomości. ",
@@ -57,7 +59,7 @@ const NewCarousel = () => {
     },
 
     {
-      src: "/carousel/kobido-kinesiotaping.jpg",
+      src: "/carousel/masaz-kobido-top.webp",
       alt: "Kobido z kinesiotapingiem limfatycznym",
       description:
         "Zdrowszy i promienny wygląd twarzy, spłycenie zmarszczek oraz bruzd mimicznych to jedne z wielu korzyści płynących z rytuału Kobido.",
@@ -68,7 +70,7 @@ const NewCarousel = () => {
         "text-white xl:text-2xl font-serif tracking-widest hover:opacity-70 hover:underline ",
     },
     {
-      src: "/terapia-manualna-zatok/terapia-zatok-cover.jpg",
+      src: "/carousel/terapia-manualna-zatok-top.webp",
       alt: "Terapia manualna w bólach zatok ",
       description:
         "Techniki manualne stosowane podczas terapii pomagają w odblokowaniu dróg oddechowych, poprawiają krążenie krwi oraz zmniejszają napięcie mięśniowe w okolicy twarzy i głowy.",
@@ -80,7 +82,7 @@ const NewCarousel = () => {
     },
 
     {
-      src: "/carousel/masaż-tkanek-głebokich.jpg",
+      src: "/carousel/masaz-tkanek-glebokich-top.webp",
       alt: "Masaż tkanek głębokich",
       description:
         "Niezwykle skuteczna technika pracy z ciałem, koncentrująca się na rozluźnieniu głębokich warstw mięśni i tkanki powięziowej. ",
@@ -91,7 +93,7 @@ const NewCarousel = () => {
         "text-white xl:text-2xl font-serif tracking-widest hover:opacity-70 hover:underline ",
     },
     {
-      src: "/masaz-relaksacyjny/masaz-relaksacyjny-cover-top.jpg",
+      src: "/carousel/masaz-relaksacyjny-top.webp",
       alt: "Masaż relaksacyjny Stanu Relaksu",
       description:
         "Przenieś się do pełnego stanu relaksu z masażem, który głęboko odpręży Twoje mięśnie i zdejmie napięcie z układu nerwowego, zmniejszając uczucie stresu. ",
@@ -104,38 +106,38 @@ const NewCarousel = () => {
   ];
 
   return (
-    <div className="relative w-full  h-[29rem] sm:h-[23rem] md:h-[23rem] lg:h-[36rem] 2xl:h-[62vh]  lg:mt-[1rem]  animate-fadeIn mb-2 ">
+    <div className="relative h-[540px] lg:h-[540px] xl:h-[610px] short-height:h-[340px]  animate-fadeIn   bg-gradient-to-r from-secondary from-10% via-white via-30% to-secondary to-90% ">
+      
       {" "}
       <Slider {...settings}>
         {images.map((image, index) => (
+         
           <div
             key={index}
-            className=" relative h-[28rem] sm:h-[22rem] md:h-[22rem] lg:h-[35rem] 2xl:h-[60vh]  w-full "
+            className=" relative h-[500px]  lg:h-[500px] xl:h-[600px]  short-height:h-[300px]  "
           >
             <Image
               src={image.src}
               alt={image.alt}
-              sizes="(max-width: 600px) 100vw, 50vw"
+              sizes="100vw"
               fill
+              className="object-cover"
              
-              className="mx-auto object-cover z--10"
+             
             />
-            <div className="absolute top-0 left-0 right-0">
-              {" "}
-              <h2 className=" text-white text-center text-lg xl:text-xl my-2 bg-black rounded-xl font-bold bg-opacity-20">
-              Popularne terapie i masaże {" "}
-              </h2>
-            </div>
-            <div className="absolute bottom-0 sm:bottom-0 md:bottom-2 lg:bottom-1 lg:left-0 xl:left-0 xl:bottom-5 right-0 2xl:bottom-5 2xl:left-0 p-2 w-full text-center rounded ">
-              <div className="flex flex-col justify-center items-center xl:w-full 2xl:w-full bg-black bg-opacity-20">
-                <div className="flex flex-col text-center text-white md:w-1/2 xl:w-1/2 ">
+           
+            <div className="absolute bottom-0  w-full h-full text-center rounded  bg-black bg-opacity-20 z-20 ">
+            
+              <div className="flex flex-col justify-end items-center xl:w-full 2xl:w-full h-full">
+                <div className="flex flex-col text-center text-white sm:w-2/3 md:w-1/2 xl:w-1/2 ">
+                <p className="">Popularne zabiegi</p>
                   <h3
-                    className={`${lato.className} text-lg xl:text-2xl 2xl:text-2xl font-bold bg-black bg-opacity-20 rounded-xl `}
+                    className={`${lato.className} text-lg sm:text-xl xl:text-2xl 2xl:text-4xl font-semibold rounded-xl mb-2`}
                   >
                     {image.alt}
                   </h3>
                   <p
-                    className={`${lato.className} my-2  text-base sm:text-base lg:text-base xl:text-xl 2xl:text-xl font-medium   bg-black bg-opacity-20 rounded-xl`}
+                    className={`${lato.className} my-2  text-base sm:text-base lg:text-base xl:text-xl 2xl:text-2xl font-normal rounded-xl`}
                   >
                     {image.description}
                   </p>

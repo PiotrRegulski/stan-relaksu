@@ -7,6 +7,8 @@ import Recommendation from "@/components/offers/Recommendation";
 import OfferProcedure from "@/components/offers/OfferProcedure";
 import HighlightedParagraph from "@/components/layout/HighlightedParagraph";
 import MotionHeader from "@/components/offers/MotionHeader";
+import KeyList from "@/components/offers/KeyList";
+import RandomOffers from "@/components/offers/RandomOffers";
 interface OfferDetailsPageProps {
   params: {
     id: string;
@@ -17,11 +19,30 @@ type MetaProps = {
   params: Promise<{ id: string; slug: string }>;
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
-
-type AdvantageType = {
+type AdvantageEntryType = {
   title?: string;
   description?: string;
+  titleH2_1?: string;
+  description_1?: string;
+  titleH2_2?: string;
+  titleH3_2_1?: string;
+  descriptionS_2_1?: string;
+  titleH3_2_2?: string;
+  descriptionS_2_2?: string;
+  titleH3_2_3?: string;
+  descriptionS_2_3?: string;
+  titleH3_2_4?: string;
+  descriptionS_2_4?: string;
+  titleH2_3?: string;
+  descriptionS_3_1?: string;
+  descriptionS_3_2?: string;
+  benefits_list_1?: string;
+  benefits_list_2?: string;
+  benefits_list_3?: string;
+  benefits_list_title?: string;
 };
+type AdvantageType = AdvantageEntryType[];
+
 type PricesType = {
   id: string;
   priceName: string;
@@ -51,15 +72,21 @@ type OfferItemType = {
   id: string;
   slug: string;
   title: string;
+  cardTitle?: string;
+  description?: string;
   contentFirst?: string;
   imageHeader?: string;
   image: string;
-  imagedetailf?: string;
-  imagedetails?: string;
-  imagedetailt?: string;
-  imagedetailfo?: string;
+  imagedetail_1?: string;
+  imagedetail_2?: string;
+  imagedetail_3?: string;
+  imagedetail_4?: string;
+  imagedetail_5?: string;
+  imagedetail_6?: string;
+  imagedetailt_p1?: string;
+  imagedetailt_p2?: string;
   prices: PricesType[];
-  advantages?: AdvantageType[];
+  advantages: AdvantageType;
   contraindications: ContraindicationsType[];
   indications: IndicationsType[];
   recommendations: RecommendationsType[];
@@ -78,10 +105,15 @@ export async function generateMetadata(
   );
   const previousImages = (await parent).openGraph?.images || [];
   return {
-    title: product?.title +'-'+' '+'Stan Relaksu',
-    description:product?.contentFirst,
+    title:
+      product?.title +
+      " " +
+      "-" +
+      " " +
+      "Gabinet terapii manualnej i masażu - Stan Relaksu",
+    description: product?.contentFirst,
     openGraph: {
-      title: product?.title + '-'+'Stan Relaksu',
+      title: product?.title + "-" + "Stan Relaksu",
       description: product?.contentFirst,
       url: `https://stanrelaksu/oferta/${product?.slug}`,
       type: "website",
@@ -104,6 +136,7 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
   const offerDetail: OfferItemType | undefined = OfferItem.find(
     (offerDetail) => offerDetail.slug === offerSlug
   );
+
   if (!offerDetail) {
     return (
       <div className="flex flex-col justify-center w-[100vw] h-96">
@@ -115,8 +148,6 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     );
   }
   //
-
-  const firstAdventagesDescription = offerDetail.contentFirst;
 
   //
   const recommendationsTable = offerDetail?.recommendations;
@@ -143,15 +174,33 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     return hasValidTitle || hasValidProcedure || hasValidProcedureStage;
   });
 
-  const descriptionTable = offerDetail?.advantages;
+  // Tablica obiektów zawierająca zalety oferty
+  const descriptionArray = offerDetail?.advantages;
 
-  const [title1, description1, title2, description2, title3, description3] =
-    descriptionTable?.map(
-      (item: { title?: string; description?: string }, index: number) => {
-        if (item.title) return item.title;
-        if (item.description) return item.description;
-      }
-    ) as [string, string, string, string, string, string];
+  // Funkcja tworząca zmienne z tablicy obiektów
+  function createVariables(
+    array: { [key: string]: string }[]
+  ): AdvantageEntryType {
+    // Tworzenie pustego obiektu typu AdvantageEntryType
+    const variables: AdvantageEntryType = {};
+
+    // Iteracja przez każdy obiekt w tablicy
+    array.forEach((obj) => {
+      // Uzyskiwanie pierwszego klucza z obiektu
+      const key = Object.keys(obj)[0];
+      // Przypisywanie wartości do klucza w obiekcie variables
+      variables[key as keyof AdvantageEntryType] = obj[key] || "";
+    });
+
+    // Zwracanie wypełnionego obiektu variables
+    return variables;
+  }
+
+  // Wywołanie funkcji createVariables i przypisanie wyniku do zmiennej articles
+  const articles = createVariables(descriptionArray);
+
+  // Jeśli chcesz upewnić się, że masz dokładnie 7 elementów:
+
   const wordsToHighlight = [
     "kobido",
     "kinesiotapingiem",
@@ -161,7 +210,6 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     "powięziowy",
     "stanu",
     "relaksu",
-    
     "masażu",
     "igłoterapia",
     "estetyczna",
@@ -170,113 +218,218 @@ const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
     "głębokich",
     "złagodzenie",
     "rozluźnianie",
+    "terapia",
+    "manualna",
+    "zatok",
+    "zatokami",
   ];
   return (
-    <div className=" mt-[8rem] sm:mt-[5rem] md:mt-[8rem] lg:mt-[14rem]  ">
+    <div
+      id="nazwa-zabiegu"
+      className=" container mt-[7rem] lg:mt-[8rem] mx-auto animate-fadeIn  transition-transform duration-500 ease-in-out "
+    >
       <MotionHeader
         title={offerDetail.title}
-        description={firstAdventagesDescription}
+        description={offerDetail.description || ""}
       />
 
-      {description1! && title1! && (
+      {
         <section
           id="main-adventages"
-          className="flex flex-col min-h-max    md:my-4  animate-fadeIn  transition-transform duration-500 ease-in-out "
+          className="flex flex-col   animate-fadeIn  transition-transform duration-500 ease-in-out bg-gradient-to-br from-white to-secondary"
         >
           <div id={"oferta-detale"} className="flex flex-col ">
-            <div className="flex flex-col-reverse sm:flex-row bg-white sm:my-4 xl:mx-48  2xl:mx-48 rounded-lg  border-secondary">
-              <div className="flex flex-col sm:w-1/2 md:w-1/2 my-2  ">
-                <div className=" my-4 px-4">
-                  <h1 className="font-bold  text-lg  md:text-xl xl:text-2xl ">{title1}</h1>
-                  <HighlightedParagraph
-                    className="  text-base md:text-lg xl:text-xl my-4 text-justify"
-                    text={description1}
-                    wordsToHighlight={wordsToHighlight}
-                  />
+            <div className="flex flex-row-reverse w-full h-full     ">
+              <div className="lg:flex flex-col items-center justify-center h-full lg:w-1/3 mt-8 hidden ">
+                <h3 className="font-semibold text-lg">Polecane Zabiegi</h3>
+                <RandomOffers urlTitle={offerSlug} />
+                <div className="hidden lg:flex w-full h-full lg:justify-center items-center xl:justify-start  xl:items-center lg:mt-[15rem] xl:mt-[2rem] ">
+                  <div className="relative h-[13rem] w-full sm:h-[18rem] sm:w-1/2 md:h-[15rem] md:w-2/3 lg:w-[13rem] lg:h-[20rem] xl:w-[25rem] xl:h-[30rem]">
+                    <Image
+                      src={`/${offerDetail.imagedetail_6}`}
+                      alt={offerDetail.title}
+                      fill
+                      className=" object-cover  shadow-gray-700 shadow-lg rounded"
+                      sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
                 </div>
               </div>
 
-              <div className="flex justify-center w-full sm:w-1/2   ">
-                <div className="relative h-[13rem] w-full sm:h-[15rem] sm:w-full md:h-[15rem] md:w-2/3 lg:w-[25rem] lg:h-[20rem] xl:h-[20rem] xl:w-[25rem] my-2 ">
-                  <Image
-                    src={`/${offerDetail.image}`}
-                    alt={offerDetail.title}
-                    fill
-                    className=" object-cover object-center sm:object-cover md:object-cover  rounded   sm:px-2 md:px-0 "
-                    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row-reverse 2xl:flex-row justify-center items-center  bg-secondary  ">
-              <div className="flex flex-col sm:flex-row xl:w-9/12 justify-center items-center my-4 md:gap-4  ">
-                <div className="relative h-[13rem] w-full sm:h-[15rem] sm:w-1/2 md:h-[15rem] md:w-1/3 lg:w-[25rem] lg:h-[20rem] xl:h-[20rem] xl:w-[25rem] my-2 mx-2">
-                  <Image
-                    src={`/${offerDetail.imagedetailfo}`}
-                    alt={offerDetail.title}
-                    fill
-                    className="object-cover sm:object-cover md:object-cover object-top sm:rounded   md:px-0  "
-                    sizes="(max-width: 600px) 100vw,"
-                  />
-                </div>
-                <div className="flex flex-col  justify-center items-center  my-4 w-full sm:w-1/2 md:w-2/3">
-                  <div className="flex flex-col px-4   ">
-                    <h2 className="font-bold text-lg md:text-xl py-2 2xl:mb-4 xl:text-2xl ">
-                      {title2}
+              <div className="flex flex-col  justify-start items-start  my-4 lg:w-2/3  ">
+                <div className="flex flex-col   ">
+                  <div className=" my-4 px-4 lg:mx-2 2xl:mx-24 ">
+                    <h2 className="font-bold  text-xl xl:text-2xl  ">
+                      {articles.titleH2_1}
                     </h2>
+
                     <HighlightedParagraph
-                      className=" text-base md:text-lg  xl:text-xl my-4  mx-auto text-justify"
-                      text={description2}
+                      className="  text-base xl:text-lg  my-4 text-justify"
+                      text={articles.description_1 || ""}
+                      wordsToHighlight={wordsToHighlight}
+                    />
+                  </div>
+                </div>
+                <div className="flex w-full  xl:w-full justify-center items-center gap-5 sm:px-4  ">
+                  <div className="relative flex items-end justify-end h-[15rem] w-full sm:h-[15rem] sm:w-full md:h-[15rem] md:w-2/3 lg:w-[20rem] lg:h-[13rem]  ">
+                    <Image
+                      src={`/${offerDetail.imagedetail_1}`}
+                      alt={offerDetail.title}
+                      fill
+                      className="rounded object-cover shadow-gray-700 shadow-lg  "
+                      sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="hidden sm:block relative  h-[13rem] w-full sm:h-[15rem] sm:w-full md:h-[15rem] md:w-2/3 lg:w-[20rem] lg:h-[13rem]">
+                    <Image
+                      src={`/${offerDetail.imagedetail_2}`}
+                      alt={offerDetail.title}
+                      fill
+                      className="object-cover rounded  shadow-gray-700 shadow-lg "
+                      sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw "
+                    />
+                  </div>
+                </div>
+                <div className="flex justify-center items-center my-4 ">
+                  <div className="flex flex-col px-4   ">
+                    <div className="flex flex-col 2xl:justify-end 2xl:items-end w-full my-4  ">
+                      {" "}
+                      <div className=" mx-2 2xl:w-2/3">
+                        {" "}
+                        <h2 className="font-bold text-xl  my-4 ">
+                          {articles.titleH2_2}
+                        </h2>
+                        <h3 className="font-semibold text-lg my-2">
+                          {articles.titleH3_2_1}
+                        </h3>
+                        <HighlightedParagraph
+                          className=" text-base  mx-auto text-justify "
+                          text={articles.descriptionS_2_1 || ""}
+                          wordsToHighlight={wordsToHighlight}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="flex w-full flex-col lg:flex-row justify-center items-center   ">
+                      <div className="flex w-full lg:w-1/2 my-8 lg:mr-4 justify-center items-center  xl:justify-center xl:items-center  ">
+                        <div className=" relative h-[13rem] w-full  sm:h-[18rem] sm:w-[20rem] md:w-96 md:h-[15rem] lg:w-[13rem] lg:h-[20rem] 2xl:w-[13rem] 2xl:h-96 ">
+                          <Image
+                            src={`/${offerDetail.imagedetail_3}`}
+                            alt={offerDetail.title}
+                            fill
+                            className=" object-cover rounded shadow-gray-700 shadow-lg "
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="w-full">
+                        <h3 className="font-semibold text-lg my-2">
+                          {articles.titleH3_2_2}
+                        </h3>
+                        <HighlightedParagraph
+                          className=" text-base  my-2  mx-auto text-justify"
+                          text={articles.descriptionS_2_2 || ""}
+                          wordsToHighlight={wordsToHighlight}
+                        />
+                        <h3 className="font-semibold text-lg my-2 ">
+                          {articles.titleH3_2_3}
+                        </h3>
+                        <HighlightedParagraph
+                          className=" text-base my-2 text-justify "
+                          text={articles.descriptionS_2_3 || ""}
+                          wordsToHighlight={wordsToHighlight}
+                        />
+                        <h3 className="font-semibold text-lg my-2">
+                          {articles.titleH3_2_4}
+                        </h3>
+                        <HighlightedParagraph
+                          className=" text-base my-2 text-justify"
+                          text={articles.descriptionS_2_4 || ""}
+                          wordsToHighlight={wordsToHighlight}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex  flex-row-reverse xl:mx-12">
+                  {" "}
+                  <div className=" my-4 px-4 ml-4">
+                    <h2 className="font-bold text-xl">{articles.titleH2_3}</h2>
+                    <HighlightedParagraph
+                      className="text-base my-2 text-justify"
+                      text={articles.descriptionS_3_1 || ""}
+                      wordsToHighlight={wordsToHighlight}
+                    />
+
+                    <div className="flex w-full md:w-full items-center justify-center gap-2 my-4  lg:ml-4">
+                      <div className=" hidden relative md:flex items-end justify-end h-[13rem] w-full sm:h-[15rem] sm:w-full md:h-[15rem] md:w-2/3 lg:w-[20rem] lg:h-[13rem] 2xl:w-60 2xl:h-48  ">
+                        <Image
+                          src={`/${offerDetail.imagedetail_4}`}
+                          alt={offerDetail.title}
+                          fill
+                          className="rounded object-cover shadow-gray-700 shadow-lg  "
+                          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                      </div>
+                      <div className="relative h-[13rem] w-full sm:h-[18rem] sm:w-1/2 md:h-[15rem] md:w-2/3 lg:w-[20rem] lg:h-[13rem] 2xl:w-60 2xl:h-48">
+                        <Image
+                          src={`/${offerDetail.imagedetail_5}`}
+                          alt={offerDetail.title}
+                          fill
+                          className=" rounded   object-cover shadow-md shadow-gray-700 "
+                          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                      </div>
+                    </div>
+                    <KeyList
+                      benefits_list_1={articles.benefits_list_1}
+                      benefits_list_2={articles.benefits_list_2}
+                      benefits_list_3={articles.benefits_list_3}
+                      benefits_list_title={articles.benefits_list_title}
+                    />
+                    <div className="md:hidden block relative h-[13rem] w-full sm:h-[18rem] sm:w-full md:h-[15rem] md:w-2/3 lg:w-[25rem] lg:h-[20rem] 2xl:w-60 2xl:h-48 my-2">
+                      <Image
+                        src={`/${offerDetail.imagedetail_2}`}
+                        alt={offerDetail.title}
+                        fill
+                        className=" rounded  object-cover shadow-gray-700 shadow-lg "
+                        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      />
+                    </div>
+
+                    <HighlightedParagraph
+                      className=" text-base my-8 text-justify"
+                      text={articles.descriptionS_3_2 || ""}
                       wordsToHighlight={wordsToHighlight}
                     />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col-reverse sm:flex-row bg-white sm:my-4 xl:mx-48  2xl:mx-48 rounded-lg  border-secondary">
-              <div className="flex flex-col sm:w-1/2 md:w-1/2 my-2  ">
-                <div className=" my-4 px-2">
-                  <h2 className="font-bold text-lg  md:text-xl xl:text-2xl ">{title3}</h2>
-                  <HighlightedParagraph
-                    className=" text-base md:text-lg  xl:text-xl my-4 text-justify "
-                    text={description3}
-                    wordsToHighlight={wordsToHighlight}
-                  />
-                </div>
-              </div>
-
-              <div className="flex justify-center w-full sm:w-1/2 items-center   ">
-                <div className="relative h-[13rem] w-full sm:h-[15rem] sm:w-full md:h-[15rem] md:w-2/3 lg:w-[25rem] lg:h-[20rem] xl:h-[20rem] xl:w-[25rem] my-2">
-                  <Image
-                    src={`/${offerDetail.imagedetailf}`}
-                    alt={offerDetail.title}
-                    fill
-                    className="object-cover sm:object-cover md:object-cover  rounded  sm:px-2 md:px-0  "
-                    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            </div>
           </div>
         </section>
-      )}
+      }
 
       <Recommendation
-        title={offerDetail.title}
+        title={offerDetail.cardTitle}
         fRecommendation={recommendation1}
         sRecommendation={recommendation2}
         tRecommendation={recommendation3}
       />
       {containsOnlyNonEmptyStrings && (
         <OfferProcedure
-          src={`/${offerDetail.imagedetailt}`}
-          srcdetails={`/${offerDetail.imagedetails}`}
+          src={`/${offerDetail.imagedetailt_p1}`}
+          srcdetails={`/${offerDetail.imagedetailt_p2}`}
           alt={offerDetail.title}
           procedures={proceduresTable}
         />
       )}
-
+      <div className="container mx-auto flex flex-col items-center justify-center h-full w-full mt-8 md:hidden">
+        <h3 className="font-semibold text-lg">Polecane zabiegi</h3>
+        <RandomOffers urlTitle={offerSlug} />
+      </div>
       {/* <ButtonReservation /> */}
       <BackLink>Zobacz pozostałe oferty</BackLink>
     </div>

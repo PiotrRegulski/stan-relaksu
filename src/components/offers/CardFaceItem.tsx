@@ -9,6 +9,24 @@ import ButtonMain from "../layout/ButtonMain";
 type AdvantageType = {
   title?: string;
   description?: string;
+  titleH2_1?: string;
+  description_1?: string;
+  titleH2_2?: string;
+  titleH3_2_1?: string;
+  descriptionS_2_1?: string;
+  titleH3_2_2?: string;
+  descriptionS_2_2?: string;
+  titleH3_2_3?: string;
+  descriptionS_2_3?: string;
+  titleH3_2_4?: string;
+  descriptionS_2_4?: string;
+  titleH2_3?: string;
+  descriptionS_3_1?: string;
+  descriptionS_3_2?: string;
+  benefits_list_1?: string;
+  benefits_list_2?: string;
+  benefits_list_3?: string;
+  benefits_list_title?: string;
 };
 type PricesType = {
   id: string;
@@ -25,6 +43,7 @@ type OfferItemType = {
   slug: string;
   active: boolean;
   category: string;
+  cardTitle?:string;
   title: string;
   contentMainOffer?: string;
   contentFirst?: string;
@@ -42,10 +61,10 @@ const CardFaceItem = () => {
     {categoryFace.map((offerItem) => (
         <div
         key={offerItem.id}
-        className=" h-[32rem]  my-6  md:mx-2 sm:h-[26rem] md:h-[30rem] lg:h-[30rem] xl:h-[30rem] 2xl:h-[42rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform xl:hover:z-30 duration-500 ease-in-out xl:hover:scale-[1.03]    2xl:w-[30rem]  "
+        className=" h-[32rem]  my-6  md:mx-2 sm:h-[30rem] md:h-[30rem] lg:h-[30rem] xl:h-[35rem] 2xl:h-[40rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform xl:hover:z-30 duration-500 ease-in-out xl:hover:scale-[1.03]     "
       >
         <Link className="" href={`/oferta/${offerItem.slug} `}>
-          <div className="relative h-[32rem] w-[20rem] sm:h-[26rem]    sm:w-[19rem] md:w-[24rem] md:h-[30rem] lg:h-[30rem] lg:min-w-[20rem] xl:h-[30rem] xl:w-[25rem] 2xl:h-[42rem] 2xl:w-[30rem] ">
+          <div className="relative h-[32rem] w-[20rem] sm:h-[30rem]    sm:w-[19rem] md:w-[24rem] md:h-[30rem] lg:h-[30rem] lg:min-w-[20rem] xl:h-[35rem] xl:w-[25rem] 2xl:h-[40rem] 2xl:w-[25rem] ">
             <Image
               src={`/${offerItem.image}`}
               alt={offerItem.title}
@@ -59,7 +78,7 @@ const CardFaceItem = () => {
                   <h3
                     className={`${lato.className}  md:text-base lg:text-lg xl:text-xl 2xl:text-xl text-center  font-bold  py-1  text-black`}
                   >
-                    {offerItem.title}
+                    {offerItem.cardTitle}
                   </h3>
                 </div>
                 <div className=" mt-2 flex flex-col justify-center items-center h-full ">

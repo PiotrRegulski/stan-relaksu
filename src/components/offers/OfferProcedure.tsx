@@ -26,17 +26,17 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
   return (
     <div
       id="main-adventages"
-      className="flex flex-col min-h-max  bg-white 2xl:mx-36 my-4 md:my-6  "
+      className="flex flex-col justify-center w-full items-center  bg-gradient-to-r from-secondary to-white   "
     >
-      <div className="w-full  px-[1em] 2xl:mb-12">
+      <div className="w-full  px-[1em] 2xl:mb-12 my-4">
         <h2 className={`${Noto.className} text-center text-xl md:text-2xl font-bold`}>
           Jak przebiega zabieg?
         </h2>
       </div>
 
-      <div className="flex flex-col sm:flex-row justify-center items-stretch mx-auto xl:mx-36 my-4">
-        <div className="flex flex-row sm:flex-col   sm:justify-around">
-          <div className="  relative  mx-auto w-72 h-96 sm:w-60 sm:h-72  md:mx-6 my-2 md:my-6 md:flex items-center">
+      <div className="flex flex-col-reverse justify-center items-center lg:w-3/4 mx-auto my-4 ">
+        <div className="flex flex-row  gap-4  sm:justify-around w-full">
+          <div className="  relative  mx-auto w-72 h-96 sm:w-full sm:h-72  md:flex items-center">
             <Image
               src={src}
               alt={alt}
@@ -46,7 +46,7 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
 
             />
           </div>
-          <div className=" hidden relative  mx-auto w-72 h-96 sm:w-60 sm:h-72 sm:mx-2  md:mx-6 md:my-6 sm:flex items-center">
+          <div className=" hidden relative  mx-auto w-72 h-96 sm:w-full sm:h-72  sm:flex items-center">
             <Image
               src={srcdetails}
               alt={alt}
@@ -58,8 +58,8 @@ const OfferProcedure: React.FC<OfferProcedureProps> = ({
           </div>
         </div>
 
-        <div className=" flex flex-col  justify-center items-center">
-          <ul className={` ${lato.className} text-xl space-y-2   `}>
+        <div className=" flex flex-col w-full  ">
+          <ul className={` ${lato.className} text-xl space-y-2 my-4  `}>
             {procedures.map((procedure, index) => (
               <ProcedureItem key={index} procedure={procedure} index={index} />
             ))}

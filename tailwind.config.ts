@@ -1,6 +1,30 @@
 import type { Config } from "tailwindcss";
+import { PluginCreator } from 'tailwindcss/types/config';
 
-const config: Config = {
+const plugin: PluginCreator = ({ addUtilities }) => {
+  const newUtilities = {
+    ".scrollbar-thin": {
+      scrollbarWidth: "thin",
+      scrollbarColor: " rgb(167 199 231)  transparent ",
+    },
+    ".scrollbar-webkit": {
+      "&::-webkit-scrollbar": {
+        width: "8px",
+      },
+      "&::-webkit-scrollbar-track": {
+        background: "white",
+      },
+      "&::-webkit-scrollbar-thumb": {
+        backgroundColor: "rgb(167 199 231)",
+        borderRadius: "20px",
+        border: "1px doted white",
+      },
+    },
+  };
+  addUtilities(newUtilities,{ respectPrefix: false, respectImportant: true } );
+};
+
+export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,23 +33,13 @@ const config: Config = {
   theme: {
     screens: {
       sm: "640px",
-      // => @media (min-width: 640px) { ... }
-
       md: "824px",
-      // => @media (min-width: 824px) { ... }
-
       lg: "1024px",
-      // => @media (min-width: 1024px) { ... }
-
       xl: "1280px",
-      // => @media (min-width: 1280px) { ... }
-
       "2xl": "1536px",
-      // => @media (min-width: 1536px) { ... }
       "3xl": "2500px",
-      // => @media (min-width: 1536px) { ... }
+      "short-height": { raw: "(max-height: 430px)" },
     },
-
     extend: {
       backgroundImage: {
         "my-bg-image": "url('/contact/wyglad-gabinet-header.png')",
@@ -37,19 +51,10 @@ const config: Config = {
         "my-bg-faceImage": "url('/mainpagemasaztwarz-bg.jpg')",
         "my-bg-gabinet": "url('/contact/gabient.jpg')",
         "my-bg-perfumy": "url('/contact/perfumy-header.png')",
+        "my-bg-listek": "url('/jeden-listek.png')",
+        "custom-gradient":
+          "linear-gradient(to top, rgba(6, 10, 16, 0.3), rgba(6, 10, 16, 0.2))",
       },
-      // container: {
-      //   center: true, // Domyślnie centruje kontener
-      //   padding: "2rem", // Dodaje padding po bokach kontenera
-      //   screens: {
-      //     sm: "100%",
-      //     md: "768px",
-      //     lg: "1024px",
-      //     xl: "1280px",
-      //     "2xl": "1920px",
-      //   },
-      // },
-
       colors: {
         primary: "rgb(167 199 231)",
         secondary: "rgb(242 237 228)",
@@ -65,13 +70,17 @@ const config: Config = {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        fadeOn: {
+          "0%": { opacity: "1" },
+          "100%": { opacity: "0" },
+        },
         slideLeft: {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0)" },
         },
         slideOutLeft: {
           "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(-80%)" },
         },
         drawBorder: {
           "0%": { borderWidth: "0" },
@@ -80,12 +89,11 @@ const config: Config = {
       },
       animation: {
         slideLeft: "slideLeft 0.5s forwards",
-        slideOutLeft: "slideOutLeft 0.5s forwards",
-        fadeIn: "fadeIn 1s ease-in-out",
+        slideOutLeft: "slideOutLeft 0.5s forwards, fadeOn 0.4s forwards",
+        fadeIn: "fadeIn 2s ease-in-out",
         drawBorder: "drawBorder 2s forwards",
       },
     },
   },
-  plugins: [],
-};
-export default config;
+  plugins: [plugin],
+} satisfies Config;

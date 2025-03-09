@@ -5,14 +5,18 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className=" flex     w-full    h-20   ">
+    <nav className=" flex w-full ">
       <div className=" ">
-        <Link href={"/"} className="mx-1 my-1"   aria-label="Przejdź na strone główną">
+        <Link
+          href={"/"}
+          className="mx-1 "
+          aria-label="Przejdź na strone główną"
+        >
           <Logo />
         </Link>
       </div>
-
-      <div className=" flex w-full  justify-end mx-4 items-center mr-16 ">
+      
+      <div className=" flex w-full  justify-end items-start mx-4  mr-16 mt-4 ">
         <NavLinks />
       </div>
     </nav>

@@ -68,7 +68,7 @@ const Comments = () => {
     const interval = setInterval(() => {
       setPrevIndex(currentIndex);
       setCurrentIndex((prevIndex) => (prevIndex + 1) % commentsData.length);
-    }, 8000); // Zmiana obrazu co 8 sekund
+    }, 5000); // Zmiana obrazu co 8 sekund
     return () => clearInterval(interval);
   }, [currentIndex]);
 
@@ -83,7 +83,7 @@ const Comments = () => {
 
   return (
     <div
-      className="relative flex flex-col justify-center items-center bg-secondary w-full h-[27rem] sm:h-[27rem] md:h-[27rem] lg:h-[27rem] xl:h-[26rem] "
+      className=" container mx-auto relative flex flex-col justify-center items-center bg-secondary w-full h-[27rem] sm:h-[27rem] md:h-[27rem] lg:h-[27rem] xl:h-[26rem] my-40 shadow-xl"
       
     >
       <button
@@ -106,12 +106,12 @@ const Comments = () => {
       >
         Opinie
       </div>
-      <div className="relative w-full h-full mt-2 flex flex-col justify-center items-center">
+      <div className="relative w-full h-full mt-2 flex flex-col justify-center items-center overflow-hidden ">
         <div>
           {commentsData.map((comment: any, index: number) => (
             <CommentsItem
               key={index}
-              className={`absolute top-8 left-0 h-full w-full transition-opacity duration-500 ${
+              className={`absolute top-8 left-0 h-full w-full transition-opacity duration-500   ${
                 index === currentIndex
                   ? "animate-slideLeft"
                   : index === prevIndex
