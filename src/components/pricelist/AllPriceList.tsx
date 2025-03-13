@@ -20,8 +20,8 @@ const AllPriceList = () => {
           <ul className="divide-y divide-blue-200 my-3 ">
           <li  className="text-lg lg:text-xl 2xl:text-2xl ">
                 <div className="flex justify-between font-semibold bg-white bg-opacity-50 px-1 rounded my-2">
-                  <div className="w-full"><p className="">Czas zabiegu:</p></div>
-                  <div className="w-1/6"><p className="text-left">Cena:</p></div>
+                  <div className="w-full pl-2"><p className="">Czas zabiegu:</p></div>
+                  <div className="w-1/3 xl:w-1/4 2xl:w-1/5"><p className="text-left">Cena:</p></div>
                   
                 </div>
                 
