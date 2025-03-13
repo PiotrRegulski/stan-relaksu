@@ -87,7 +87,7 @@ const ImageToOffersShort = () => {
 
       <div
         ref={ref}
-        className="flex flex-col xl:justify-center xl:items-center py-20 px-4 bg-gradient-to-r from-gray-200 from-10% via-white via-30% to-gray-100 to-90%  overflow-x-auto scrollbar scrollbar-thumb-red-500 scrollbar-track-black outline-none scrollbar-thin scrollbar-webkit  "
+        className="flex flex-col xl:justify-center xl:items-center py-20 px-4 xl:px-0 bg-gradient-to-r from-gray-200 from-10% via-white via-30% to-gray-100 to-90%  overflow-x-auto scrollbar scrollbar-thumb-red-500 scrollbar-track-black outline-none scrollbar-thin scrollbar-webkit  "
       >
         <div className="flex gap-4">
           {" "}

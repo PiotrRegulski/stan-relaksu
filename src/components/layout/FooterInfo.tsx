@@ -56,12 +56,12 @@ const FooterInfo = (props: any) => {
         </div>
         <div className="flex lg:w-1/3  flex-col text-sm  ">
           <p className="my-2 text-sm font-bold">
-            Gabinet terapi manualnej i masażu <span className="whitespace-nowrap">- Stan Relaksu</span>
+            Gabinet terapii manualnej i masażu <span className="whitespace-nowrap">- Stan Relaksu</span>
           </p>
           <div className="flex flex-row  ">
             <IoIosPin className="w-5 h-5 mt-2 mr-1" />
             <address className="text-sm w-full whitespace-nowrap not-italic px-1 ">
-            Willa Modrzewie <br></br> Naukowa 20, lokal 1<br></br> 02-463 Warszawa
+            Willa Modrzewie <br></br> Naukowa 20, lokal 1<br></br> 02-463 Warszawa, Włochy
             </address>
           </div>
           <div className="mt-2  ">
@@ -83,7 +83,7 @@ const FooterInfo = (props: any) => {
               href="tel:791107102"
               target="_blank"
               rel="noopener noreferrer"
-              className=" flex flex-row    hover:opacity-70 "
+              className=" flex flex-row hover:opacity-70 "
               aria-label="791-107-102"
             >
               <span className="  ">

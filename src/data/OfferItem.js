@@ -183,13 +183,13 @@ export const OfferItem = [
 
       { benefits_list_title: "Główne zalety:" },
       {
-        benefits_list_1: "Wspomaga ogólne samopoczucie i redukuje stres",
+        benefits_list_1: "Naturalny lifting twarzy: Głęboka stymulacja mięśni poprawia owal twarzy, wygładza zmarszczki i daje odmładzający efekt bez inwazyjnych zabiegów.",
       },
       {
-        benefits_list_2: "Poprawia cyrkulację krwi i usuwanie toksyn ze skóry",
+        benefits_list_2: "Głęboki relaks: Rozluźnia napięcia w mięśniach twarzy, szyi i karku, redukując stres i przywracając harmonię ciała oraz umysłu.",
       },
       {
-        benefits_list_3: "Skóra staje się bardziej promienna, jędrna i zdrowa",
+        benefits_list_3: "Dotlenienie i poprawa kondycji skóry: Masaż pobudza mikrokrążenie, dzięki czemu skóra staje się elastyczna, jędrna i promienieje zdrowym blaskiem.",
       },
     ],
     contraindications: [

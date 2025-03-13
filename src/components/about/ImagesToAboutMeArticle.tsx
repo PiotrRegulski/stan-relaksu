@@ -157,7 +157,7 @@ const ImagesToAboutMeArticle = () => {
 
         <div className="bg-gray-100 flex flex-col w-full justify-center items-center  rounded-lg shadow-md my-10 py-4 xl:p-16">
           <h3 className=" text-lg lg:text-xl font-bold mb-4 text-center">
-            Indywidualnie Dobrana Terapia Uroginekologiczna
+            Indywidualnie Dobrane Terapie 
           </h3>{" "}
           <p className="text-base lg:text-lg mb-6 text-center ">
             Zajmę się indywidualnie dobraną do Twoich potrzeb terapią
@@ -171,7 +171,7 @@ const ImagesToAboutMeArticle = () => {
             <div className="p-4 bg-white border border-gray-300 shadow-lg rounded-lg text-center ">
               {" "}
               <p>
-                Problemem bolesnych miesiączek czy bolesnego współżycia.
+                Problemem bolesnych miesiączek, czy bolesnego współżycia.
               </p>{" "}
             </div>{" "}
             <div className="p-4 bg-white border border-gray-300 shadow-lg rounded-lg xl:text-lg text-center flex justify-center items-center">
@@ -182,7 +182,7 @@ const ImagesToAboutMeArticle = () => {
             </div>{" "}
             <div className="p-4 bg-white border border-gray-300 shadow-lg rounded-lg text-center ">
               {" "}
-              <p>Nietrzymaniem moczu czy pęcherzem nadreaktywnym.</p>{" "}
+              <p>Nietrzymaniem moczu, czy pęcherzem nadreaktywnym.</p>{" "}
             </div>{" "}
           </div>{" "}
         </div>
