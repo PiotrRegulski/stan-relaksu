@@ -127,7 +127,6 @@ const NewCarousel = () => {
               sizes="100vw"
               fill
               className="object-cover"
-              priority
               quality={65}
             />
 
