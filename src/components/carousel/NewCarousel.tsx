@@ -123,10 +123,8 @@ const NewCarousel = () => {
               fill
               className="object-cover"
               priority
-             
-             
-             
-            />
+              quality={65} 
+             />
            
             <div className="absolute bottom-0  w-full h-full text-center rounded  bg-black bg-opacity-20 z-20 ">
             
