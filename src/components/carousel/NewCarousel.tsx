@@ -119,7 +119,7 @@ const NewCarousel = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className=" relative h-[500px]  lg:h-[500px] xl:h-[600px]  short-height:h-[300px] animate-slideLeft  "
+            className=" relative h-[500px]  lg:h-[500px] xl:h-[600px]  short-height:h-[300px] animate-fadeIn  "
           >
             <Image
               src={image.src}
