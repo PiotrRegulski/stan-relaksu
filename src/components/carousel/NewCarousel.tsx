@@ -122,6 +122,8 @@ const NewCarousel = () => {
               sizes="100vw"
               fill
               className="object-cover"
+              priority
+             
              
              
             />
