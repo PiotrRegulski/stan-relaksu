@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <div className="3xl:container mx-auto ">
-        <WelcomeAboutMe />
+        {/* <WelcomeAboutMe /> */}
         <NewCarousel />
         <HomePageShort />
         <AboutMeShort />
