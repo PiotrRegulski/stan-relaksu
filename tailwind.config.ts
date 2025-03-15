@@ -66,6 +66,21 @@ export default {
         triadbrown: "rgb(115 92 89)",
       },
       keyframes: {
+        scaleFadeIn: {
+          "0%": {
+            opacity: "0", // Startowa niewidoczność
+            transform: "scale(0.5)", // Początkowy rozmiar
+          },
+          "100%": {
+            opacity: "1", // Widoczność
+            transform: "scale(1)", // Finalny rozmiar
+          },
+        },
+        
+        scaleIn: {
+          "0%": { opacity: "0", transform: "scale(0.5)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
         fadeIn: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
@@ -88,10 +103,12 @@ export default {
         },
       },
       animation: {
-        slideLeft: "slideLeft 0.5s forwards",
+        slideLeft: "slideLeft 0.8s forwards",
         slideOutLeft: "slideOutLeft 0.5s forwards, fadeOn 0.4s forwards",
-        fadeIn: "fadeIn 2s ease-in-out",
+        fadeIn: "fadeIn 1s ease-in-out",
         drawBorder: "drawBorder 2s forwards",
+        scaleIn: "scaleIn 0.8s ease-in-out forwards",
+        scaleFadeIn: "scaleFadeIn 0.8s ease-in-out forwards", // Definicja czasu trwania i stylu
       },
     },
   },
