@@ -124,8 +124,9 @@ const NewCarousel = () => {
             <Image
               src={image.src}
               alt={image.alt}
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
               fill
+              priority
               className="object-cover"
               quality={65}
             />
