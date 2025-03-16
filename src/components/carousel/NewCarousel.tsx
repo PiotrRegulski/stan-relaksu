@@ -13,6 +13,7 @@ import { useMemo } from "react";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 interface ImageData {
   src: string;
+  smallImage:string;
   alt: string;
   description: string;
   linkDetails: string;
@@ -42,6 +43,7 @@ const NewCarousel = () => {
     () => [
       {
         src: "/carousel/masaz-powieziowy-top.webp",
+        smallImage:"/carousel/masaz-powieziowy-top-small.webp",
         alt: "Masaż powięziowy",
         description:
           "Idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała",
@@ -53,6 +55,7 @@ const NewCarousel = () => {
       },
       {
         src: "/carousel/terapia-manualna-top.webp",
+        smallImage:"/carousel/masaz-powieziowy-top-small.webp",
         alt: "Terapia manualna",
         description:
           "Specjalistyczne techniki mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenie sztywności i ograniczeń w zakresie ruchomości. ",
@@ -65,6 +68,7 @@ const NewCarousel = () => {
 
       {
         src: "/carousel/masaz-kobido-top.webp",
+        smallImage:"/carousel/masaz-powieziowy-top-small.webp",
         alt: "Kobido z kinesiotapingiem limfatycznym",
         description:
           "Zdrowszy i promienny wygląd twarzy, spłycenie zmarszczek oraz bruzd mimicznych to jedne z wielu korzyści płynących z rytuału Kobido.",
@@ -76,6 +80,7 @@ const NewCarousel = () => {
       },
       {
         src: "/carousel/terapia-manualna-zatok-top.webp",
+        smallImage:"/carousel/masaz-powieziowy-top-small.webp",
         alt: "Terapia manualna w bólach zatok ",
         description:
           "Techniki manualne stosowane podczas terapii pomagają w odblokowaniu dróg oddechowych, poprawiają krążenie krwi oraz zmniejszają napięcie mięśniowe w okolicy twarzy i głowy.",
@@ -88,6 +93,7 @@ const NewCarousel = () => {
 
       {
         src: "/carousel/masaz-tkanek-glebokich-top.webp",
+        smallImage:"/carousel/masaz-powieziowy-top-small.webp",
         alt: "Masaż tkanek głębokich",
         description:
           "Niezwykle skuteczna technika pracy z ciałem, koncentrująca się na rozluźnieniu głębokich warstw mięśni i tkanki powięziowej. ",
@@ -99,6 +105,7 @@ const NewCarousel = () => {
       },
       {
         src: "/carousel/masaz-relaksacyjny-top.webp",
+        smallImage:"/carousel/masaz-powieziowy-top-small.webp",
         alt: "Masaż relaksacyjny Stanu Relaksu",
         description:
           "Przenieś się do pełnego stanu relaksu z masażem, który głęboko odpręży Twoje mięśnie i zdejmie napięcie z układu nerwowego, zmniejszając uczucie stresu. ",
@@ -113,7 +120,7 @@ const NewCarousel = () => {
   );
 
   return (
-    <div className="relative h-[540px] lg:h-[540px] xl:h-[610px] short-height:h-[340px]    bg-gradient-to-r from-secondary from-10% via-white via-30% to-secondary to-90% ">
+    <div className="relative h-[540px] lg:h-[540px] xl:h-[610px] short-height:h-[340px] ">
       {" "}
       <Slider {...settings}>
         {images.map((image, index) => (
@@ -125,6 +132,7 @@ const NewCarousel = () => {
               src={image.src}
               alt={image.alt}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
+            
               fill
               priority
               className="object-cover"
