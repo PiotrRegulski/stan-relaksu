@@ -58,7 +58,8 @@ const AboutMeShort = () => {
               fill
               sizes="(max-width: 600px) 100vw, 50vw"
               className="object-cover h-full w-full"
-              priority={true}
+              quality={60}
+            
             />
           </motion.div>
         </motion.div>
@@ -79,7 +80,7 @@ const AboutMeShort = () => {
               fill
               sizes="(max-width: 600px) 100vw, 50vw"
               className="object-cover h-full w-full"
-              priority={true}
+              quality={60}
             />
           </motion.div>
         </motion.div>

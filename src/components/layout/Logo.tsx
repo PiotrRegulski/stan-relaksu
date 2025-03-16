@@ -11,7 +11,7 @@ const Logo = () => {
         sizes="(max-width: 600px) 100vw, 50vw"
         className="bg-mainthemelogo rounded-full  z-20 shadow-gray-100 shadow-sm   "
         alt="Stan Relaksu Gabinet terapii manualnej i masażu"
-        priority={true}
+     
       />
     </div>
   );
