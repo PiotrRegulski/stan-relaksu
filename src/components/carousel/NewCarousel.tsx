@@ -25,7 +25,7 @@ const NewCarousel = () => {
   const router = useRouter();
   const settings = useMemo(
     () => ({
-      dots: true,
+     
       infinite: true,
       speed: 500,
       slidesToShow: 1,
@@ -120,13 +120,13 @@ const NewCarousel = () => {
   );
 
   return (
-    <div className="relative h-[300px] lg:h-[540px] xl:h-[610px] short-height:h-[340px] py-2 ">
+    <div className="relative h-full lg:h-[540px] xl:h-[610px] short-height:h-[340px] ">
       {" "}
       <Slider {...settings}>
         {images.map((image, index) => (
           <div
             key={index}
-            className=" relative h-[300px]  lg:h-[500px] xl:h-[600px]  short-height:h-[300px] animate-fadeIn  w-screen "
+            className=" relative h-[400px]  lg:h-[500px] xl:h-[600px]  short-height:h-[300px] lg:animate-fadeIn  w-screen "
           >
             <Image
               src={image.src}
@@ -135,7 +135,8 @@ const NewCarousel = () => {
             
               fill
               priority
-              className="lg:object-cover h-1/2"
+              className="object-cover"
+              
               quality={65}
             />
 
