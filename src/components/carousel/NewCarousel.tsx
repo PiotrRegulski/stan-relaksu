@@ -122,8 +122,8 @@ const NewCarousel = () => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
               fill
               className="object-cover"
-              priority
-              quality={65} 
+              priority={index === 0} // Tylko pierwszy obraz ma priorytet
+              quality={50} 
              />
            
             <div className="absolute bottom-0  w-full h-full text-center rounded  bg-black bg-opacity-20 z-20 ">
