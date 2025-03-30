@@ -8,9 +8,9 @@ import MobileInfoBar from "@/components/layout/MobileInfoBar";
 <meta name="description" content=""  />
 
 export const metadata: Metadata = {
-  title: "Stan Relaksu - Gabinet terapii manualnej i masażu",
+  title: "Stan Relaksu - Gabinet terapii manualnej i masażu w Warszawie",
   description:
-    "Terapeutyczne miejsce dla ciała, stworzone z myślą o osobach dbających o zdrowie. Oferuje terapię manualną, masaże relaksacyjne, masaż twarzy Kobido, aby zwolnić, zadbać o zdrowie i poczuć się lepiej.",
+    "Ulga w bólu i napięciu dzięki masażowi powięziowemu i terapii manualnej. Relaks z masażem Kobido oraz technikami głębokiego odprężenia. Umów wizytę w gabinecie Stan Relaksu.",
   metadataBase: new URL("https://www.stanrelaksu.pl"),
   alternates: {
     canonical: "/",
