@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { CormorantInfant, Noto } from "@/components/fonts";
+import {Noto } from "@/components/fonts";
 
 import { useState, useCallback } from "react";
 import HamburgerIcon from "@/components/layout/HamburgerIcon";
@@ -25,7 +25,7 @@ const NavbarMobile = () => {
               fill
               sizes="(max-width: 600px) 100vw, 50vw"
                 className="bg-mainthemelogo rounded-full object-fill"
-                alt="Logo gabientu Stan Relaksu"
+                alt="Stan Relaksu Gabinet terapii manualnej i masażu"
                 priority={true}
               />
             </div>
