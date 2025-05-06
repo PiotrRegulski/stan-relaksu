@@ -11,7 +11,8 @@ const imgURLs = [
     caption: "Terapia w bólach głowy",
     marginTop: "2px",
     href: "/oferta/terapia-manualna-w-bolach-zatok",
-    callToAction: "Zastosowanie odpowiednich technik pozwala na zmniejszenie napięcia mięśniowego w okolicach twarzy i głowy, co przekłada się na redukcję bólu",
+    callToAction:
+      "Zastosowanie odpowiednich technik pozwala na zmniejszenie napięcia mięśniowego w okolicach twarzy i głowy, co przekłada się na redukcję bólu",
   },
 
   {
@@ -20,7 +21,8 @@ const imgURLs = [
     caption: "Terapia manualna kolana",
     marginTop: "60px",
     href: "/oferta/terapia-manualna",
-    callToAction: "Głównym celem jest przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenie sztywności i ograniczeń w zakresie ruchomości",
+    callToAction:
+      "Głównym celem jest przywrócenie prawidłowego funkcjonowania układu ruchu, zmniejszenie sztywności i ograniczeń w zakresie ruchomości",
   },
   {
     src: "/karuzelaOmnie/terapia-manulana-barku.jpg",
@@ -28,7 +30,8 @@ const imgURLs = [
     caption: "Terapia manualna barku",
     marginTop: "40px",
     href: "/oferta/terapia-manualna",
-    callToAction: "Ogromną zaletą terapii manualnej jest indywidualne podejście do każdego problemu oraz możliwość wyboru odpowiedniej terapii z szerokiego zakresu technik.",
+    callToAction:
+      "Ogromną zaletą terapii manualnej jest indywidualne podejście do każdego problemu oraz możliwość wyboru odpowiedniej terapii z szerokiego zakresu technik.",
   },
   {
     src: "/karuzelaOmnie/bole-i-sztywnosci-karku.jpg",
@@ -36,8 +39,8 @@ const imgURLs = [
     caption: "Bóle i sztywności karku",
     marginTop: "60px",
     href: "/oferta/terapia-manualna",
-    callToAction: " Po terapii manualnej możesz zauważyć redukcję bólu, lepszą ruchomość i elastyczność tkanek",
-   
+    callToAction:
+      " Po terapii manualnej możesz zauważyć redukcję bólu, lepszą ruchomość i elastyczność tkanek",
   },
   {
     src: "/terapia-manualna/terapia-manualna-kolano-last.jpg",
@@ -45,7 +48,8 @@ const imgURLs = [
     caption: "Bóle kręgosłupa",
     marginTop: "2px",
     href: "/oferta/terapia-manualna",
-    callToAction: "Terapia manualna pomaga pozbyć się bólu i sztywności kręgosłupa, pleców, karku lub szyi.",
+    callToAction:
+      "Terapia manualna pomaga pozbyć się bólu i sztywności kręgosłupa, pleców, karku lub szyi.",
   },
 ];
 
@@ -54,37 +58,6 @@ const ImageToOffersShort = () => {
   const isInView = useInView(ref, { once: true });
   return (
     <>
-      <div className="flex lg:my-4 flex-col md:flex-row justify-around  bg-gradient-to-r from-secondary from-10% via-white via-30% to-secondary to-90% py-4 w-full  md:px-40">
-        <div className="relative w-full md:w-3/4 h-[40rem]  hidden md:flex justify-center">
-          {" "}
-          <Image
-            src="/Kinga.PNG"
-            alt="Kinga Wołoszka naturoterapeutka w Gabinecie terapi manualnej Stan Relaksu"
-            fill
-            priority={false}
-            className="object-contain w-full h-full "
-            sizes="(max-width: 600px) 100vw, 50vw"
-          />
-        </div>
-        <div className=" flex  w-full justify-center items-center py-20">
-          {" "}
-          <h2 className="text-center  text-pretty font-bold px-3  text-lg lg:text-xl  py-4 ">
-            <span className="text-xl  lg:text-2xl font-bold">
-              Podpowiem Ci jak możesz pracować ze swoim ciałem
-            </span>
-            <br></br>
-            <span className="text-lg lg:text-xl  ">
-              poprzez ćwiczenia czy oddech{" "}
-            </span>
-            <br></br>
-            <span className="text-xl lg:text-2xl font-bold">
-              {" "}
-              dla poprawy Twojego dobrostanu.
-            </span>
-          </h2>
-        </div>
-      </div>
-
       <div
         ref={ref}
         className="flex flex-col xl:justify-center xl:items-center py-20 px-4 xl:px-0 bg-gradient-to-r from-gray-200 from-10% via-white via-30% to-gray-100 to-90%  overflow-x-auto scrollbar scrollbar-thumb-red-500 scrollbar-track-black outline-none scrollbar-thin scrollbar-webkit  "
@@ -128,6 +101,36 @@ const ImageToOffersShort = () => {
               </motion.div>
             </div>
           ))}
+        </div>
+      </div>
+      <div className="flex lg:my-4 flex-col md:flex-row justify-around  bg-gradient-to-r from-secondary from-10% via-white via-30% to-secondary to-90% py-4 w-full  md:px-40">
+        <div className="relative w-full md:w-3/4 h-[40rem]  hidden md:flex justify-center">
+          {" "}
+          <Image
+            src="/Kinga.PNG"
+            alt="Kinga Wołoszka naturoterapeutka w Gabinecie terapi manualnej Stan Relaksu"
+            fill
+            priority={false}
+            className="object-contain w-full h-full "
+            sizes="(max-width: 600px) 100vw, 50vw"
+          />
+        </div>
+        <div className=" flex  w-full justify-center items-center py-20">
+          {" "}
+          <h2 className="text-center  text-pretty font-bold px-3  text-lg lg:text-xl  py-4 ">
+            <span className="text-xl  lg:text-2xl font-bold">
+              Podpowiem Ci jak możesz pracować ze swoim ciałem
+            </span>
+            <br></br>
+            <span className="text-lg lg:text-xl  ">
+              poprzez ćwiczenia czy oddech{" "}
+            </span>
+            <br></br>
+            <span className="text-xl lg:text-2xl font-bold">
+              {" "}
+              dla poprawy Twojego dobrostanu.
+            </span>
+          </h2>
         </div>
       </div>
     </>

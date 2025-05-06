@@ -64,10 +64,10 @@ const CardBodyItem = () => {
       {categoryBody.map((offerItem) => (
         <div
           key={offerItem.id}
-          className=" h-[32rem]  my-6   sm:h-[30rem] md:h-[30rem] lg:h-[30rem] xl:h-[35rem] 2xl:h-[40rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform xl:hover:z-30 duration-500 ease-in-out xl:hover:scale-[1.03]    "
+          className=" h-[32rem]  my-6   sm:h-[30rem] md:h-[30rem] lg:h-[33rem] xl:h-[35rem] 2xl:h-[40rem]  bg-white shadow-lg shadow-gray-400 animate-fadeIn rounded-xl   transition-transform xl:hover:z-30 duration-500 ease-in-out xl:hover:scale-[1.03]    "
         >
           <Link className="" href={`/oferta/${offerItem.slug} `}>
-            <div className="relative h-[32rem] w-[20rem] sm:h-[30rem] sm:w-[19rem] md:w-[24rem] md:h-[30rem] lg:h-[30rem] lg:min-w-[20rem] xl:h-[35rem] xl:w-[25rem] 2xl:h-[40rem] 2xl:w-[25rem] ">
+            <div className="relative h-[32rem] w-[20rem] sm:h-[30rem] sm:w-[19rem] md:w-[24rem] md:h-[30rem] lg:h-[33rem] lg:min-w-[20rem] xl:h-[35rem] xl:w-[25rem] 2xl:h-[40rem] 2xl:w-[25rem] ">
               <Image
                 src={`/${offerItem.image}`}
                 alt={offerItem.title}

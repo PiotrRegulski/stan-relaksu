@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { BsArrowUpRightSquare } from "react-icons/bs";
 
 import { usePathname } from "next/navigation";
 import ButtonMain from "./ButtonMain";

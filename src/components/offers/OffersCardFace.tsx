@@ -13,9 +13,9 @@ const OffersCardFace = () => {
 
   return (
     <motion.div
-      initial={{ x: -10, opacity: 0 }}
+      initial={{ x: -5, opacity: 0 }}
       animate={isInView ? { x: 0, opacity: 1 } : {}}
-      transition={{ duration: 0.5, ease: "easeInOut", type: "tween" }}
+      transition={{ duration: 0.5, ease: "linear" }}
       className="sm:mt-[2rem]"
     >
       <PageHeader id={"offer-face"}><h2>Zabiegi na twarz</h2></PageHeader>

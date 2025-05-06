@@ -1,12 +1,10 @@
 import React from "react";
 import ButtonOffers from "./ButtonOffers";
-import Image from "next/image";
-import { lato } from "../fonts";
-import ImagesToAboutExit from "./ImageToAboutExit";
+
 import FaceOfferImage from "./FaceOfferImage";
 const AboutMeLastCard = () => {
   return (
-    <div className=" lg:container mx-auto flex flex-col mx:auto md:mb-12 rounded-md animate-fadeIn   transition-transform duration-200 ease-in-out bg-gradient-to-r from-secondary from-10% via-white via-30% to-secondary to-90%  ">
+    <div className=" lg:container mx-auto flex flex-col mx:auto md:mb-4 rounded-md animate-fadeIn   transition-transform duration-200 ease-in-out bg-gradient-to-r from-secondary from-10% via-white via-30% to-secondary to-90%  ">
       <div className="flex flex-col  w-full  justify-center items-center ">
         <div className="flex flex-col w-full md:justify-center md:items-center px-2 sm:px-12 py-6 md:px-16 ">
           <h2 className="text-center font-semibold text-lg lg:text-2xl py-6 lg:w-2/3 px-3 xl:py-6 ">
@@ -14,16 +12,13 @@ const AboutMeLastCard = () => {
           </h2>
 
           <div className="flex flex-col-reverse md:flex-row xl:w-full justify-center items-center bg-white border-4  gap-4 border-mainpeach xl:mb-20 lg:py-20 px-5 rounded my-6 shadow-lg ">
-      
-              {" "}
-              <FaceOfferImage
-                href={"oferta/terapia-manualna-w-bolach-zatok"}
-                src={"/terapia-manualna-zatok/terapia-zatok-cover.jpg"}
-                label={"Terapia manualna w bólach zatok"}
-                caption={"Terapia manualna w bólach zatok"}
-              />
-        
-
+            {" "}
+            <FaceOfferImage
+              href={"oferta/terapia-manualna-w-bolach-zatok"}
+              src={"/terapia-manualna-zatok/terapia-zatok-cover.jpg"}
+              label={"Terapia manualna w bólach zatok"}
+              caption={"Terapia manualna w bólach zatok"}
+            />
             <div className="w-full lg:w-1/2  ">
               <h3 className="text-lg lg:text-xl font-semibold text-left my-2">
                 Ulga w bólach twarzy i głowy
@@ -72,7 +67,7 @@ const AboutMeLastCard = () => {
           </div>
         </div>
       </div>
-      <ImagesToAboutExit />
+
       <div className="flex w-full justify-center items-center  my-4">
         <ButtonOffers />
       </div>

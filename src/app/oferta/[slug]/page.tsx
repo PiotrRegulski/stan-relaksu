@@ -130,8 +130,9 @@ export async function generateMetadata(
   };
 }
 
-const OfferDetailsPage: React.FC<OfferDetailsPageProps> = ({ params }) => {
-  const offerSlug: string = params.slug;
+const  OfferDetailsPage: React.FC<OfferDetailsPageProps> = async({ params }) => {
+  const resolvedParams = await params;
+  const offerSlug: string = resolvedParams.slug;
 
   const offerDetail: OfferItemType | undefined = OfferItem.find(
     (offerDetail) => offerDetail.slug === offerSlug

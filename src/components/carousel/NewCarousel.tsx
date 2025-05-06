@@ -1,12 +1,11 @@
 "use client";
 import Slider from "react-slick";
 import Image from "next/image";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import ButtonMain from "../layout/ButtonMain";
-import { lato } from "../fonts";
 import { NextArrow, PrevArrow } from "@/components/carousel/Arrows";
 
 interface ImageData {
@@ -22,19 +21,19 @@ const NewCarousel = () => {
   const router = useRouter();
   const settings = {
     dots: true,
+    dotsClass: "slick-dots custom-dots",
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 6000,
-    arrows: true,
+    arrows: false,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
 
   const images: ImageData[] = [
-  
     {
       src: "/carousel/masaz-powieziowy-top.webp",
       alt: "Masaż powięziowy",
@@ -106,66 +105,60 @@ const NewCarousel = () => {
   ];
 
   return (
-    <div className="relative h-[540px] lg:h-[540px] xl:h-[610px] short-height:h-[340px]  animate-fadeIn">
-      
+    <div className="mx-auto w-full xl:container bg-white rounded-xl mb-1  ">
       {" "}
-      <Slider {...settings}>
-        {images.map((image, index) => (
-         
-          <div
-            key={index}
-            className=" relative h-[500px]  lg:h-[500px] xl:h-[600px]  short-height:h-[300px]  "
-          >
-            <Image
-              src={image.src}
-              alt={image.alt}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
-              fill
-              className="object-cover"
-              priority={index === 0} // Tylko pierwszy obraz ma priorytet
-              quality={50} 
-             />
-           
-            <div className="absolute bottom-0  w-full h-full text-center rounded  bg-black bg-opacity-20 z-20 ">
-            
-              <div className="flex flex-col justify-end items-center xl:w-full 2xl:w-full h-full">
-                <div className="flex flex-col text-center text-white sm:w-2/3 md:w-1/2 xl:w-1/2 ">
-                <p className="">Popularne zabiegi</p>
-                  <h3
-                    className="text-lg sm:text-xl xl:text-2xl 2xl:text-4xl font-semibold rounded-xl mb-2"
-                  >
-                    {image.alt}
-                  </h3>
-                  <p
-                    className=" my-2  text-base sm:text-base lg:text-base xl:text-xl 2xl:text-2xl font-normal rounded-xl`"
-                  >
-                    {image.description}
-                  </p>
-                  <div
-                    className="my-2 flex justify-center gap-4 md:justify-center md:gap-4"
-                  >
-                    <Link
-                      key={index}
-                      href={image.linkBooksy}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Zarezerwuj wizytę przez Booksy"
-                    >
-                      <ButtonMain>Zarezerwuj wizytę</ButtonMain>
-                    </Link>
-                    <ButtonMain
-                      onClick={() => router.push(image.linkDetails)}
-                      aria-label="Informacje o zabiegu"
-                    >
-                      Informacje o zabiegu
-                    </ButtonMain>
+      <div className="relative h-[540px] lg:h-[540px] xl:h-[41rem]  short-height:h-[340px]   animate-fadeIn   bg-white rounded-xl ">
+        {" "}
+        <Slider {...settings} className="">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className=" relative h-[500px]  lg:h-[500px] xl:h-[38rem]  short-height:h-[300px] rounded-xl border-4 border-white"
+            >
+              <Image
+                src={image.src}
+                alt={image.alt}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
+                fill
+                className="object-cover rounded-xl"
+                priority={index === 0} // Tylko pierwszy obraz ma priorytet
+                quality={100}
+              />
+
+              <div className="absolute bottom-0  w-full h-full text-center rounded  z-20 ">
+                <div className="flex flex-col justify-end items-center xl:w-full 2xl:w-full h-full">
+                  <div className="flex flex-col text-center text-white sm:w-2/3 md:w-1/2 xl:w-1/2 ">
+                    <p className="text-xl">Popularne zabiegi</p>
+                    <h3 className="text-lg sm:text-xl xl:text-2xl 2xl:text-4xl font-semibold rounded-xl mb-2">
+                      {image.alt}
+                    </h3>
+                    <p className=" my-2  text-base sm:text-base lg:text-base xl:text-xl 2xl:text-2xl font-normal rounded-xl`">
+                      {image.description}
+                    </p>
+                    <div className="my-2 flex justify-center gap-4 md:justify-center md:gap-4">
+                      <Link
+                        key={index}
+                        href={image.linkBooksy}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Zarezerwuj wizytę przez Booksy"
+                      >
+                        <ButtonMain>Zarezerwuj wizytę</ButtonMain>
+                      </Link>
+                      <ButtonMain
+                        onClick={() => router.push(image.linkDetails)}
+                        aria-label="Informacje o zabiegu"
+                      >
+                        Informacje o zabiegu
+                      </ButtonMain>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };

@@ -128,7 +128,7 @@ const ContactForm = () => {
               placeholder="wpisz imię"
               autoComplete="off"
               name="name"
-              className=" bg-white text-sm outline-white  focus:bg-white  border-b-2 border-primary shadow-none px-2 py-1"
+              className=" bg-white text-sm outline-white  focus:bg-white  border-b-2 border-primary  px-2 py-2 shadow-inner shadow-primary rounded-lg"
             ></input>
           </div>
           <div className="flex w-1/2 flex-col gap-2">
@@ -143,7 +143,7 @@ const ContactForm = () => {
               placeholder="wpisz email"
               name="email"
               autoComplete="off"
-              className="bg-white text-sm outline-white  focus:bg-white  border-b-2 border-primary shadow-none px-2 py-1"
+              className="bg-white text-sm outline-white  focus:bg-white  border-b-2 border-primary  px-2 py-2 shadow-inner shadow-primary rounded-lg"
             ></input>
           </div>
         </div>
@@ -161,7 +161,7 @@ const ContactForm = () => {
               placeholder=" wpisz temat wiadomości"
               name="subject"
               autoComplete="off"
-              className=" bg-white text-sm outline-white  focus:bg-white  border-b-2 border-primary shadow-none w-full  px-2 py-1 "
+              className=" bg-white text-sm outline-white  focus:bg-white  border-b-2 border-primary  w-full  px-2 py-2 shadow-inner shadow-primary rounded-lg"
             ></input>
           </div>
           <div className="flex flex-col gap-2">
@@ -175,7 +175,7 @@ const ContactForm = () => {
               placeholder="wpisz treść swojej wiadomości"
               autoComplete="off"
               rows={5}
-              className=" text-sm border-2 border-primary px-2 py-2 outline-primary"
+              className=" text-sm border-2 border-primary px-2 py-2 outline-primary shadow-inner shadow-primary rounded-lg"
             ></textarea>
           </div>
         </div>

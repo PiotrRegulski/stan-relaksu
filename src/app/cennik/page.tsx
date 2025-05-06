@@ -8,7 +8,7 @@ export const metadata = {
 };
 const page = () => {
   return (
-    <div className="flex flex-col bg-white  lg:mt-[7rem] ">
+    <div className="flex flex-col bg-gradient-to-r from-secondary via-white to-secondary  lg:mt-[7rem] ">
       <ImageHeader id="cennik" BgImage={"bg-my-bg-perfumy bg-center"}>
         Cennik
       </ImageHeader>

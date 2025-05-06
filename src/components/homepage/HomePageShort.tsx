@@ -1,23 +1,36 @@
-
-
+"use client";
 import React from "react";
-import { IoMdQuote } from "react-icons/io";
-const HomePageShort = () => {
-  
-
+import ButtonMain from "../layout/ButtonMain";
+import Link from "next/link"
+const TherapeuticPlace = () => {
   return (
-    <div id="o-gabinecie" className=" container mx-auto flex w-full flex-col mt-[1rem] bg-gradient-to-r from-secondary from-10% via-white via-30% to-secondary to-90% h-[20rem] lg:h-[20rem] lg:my-20 rounded-2xl shadow-lg">
+    <div className="relative lg:container mx-auto ">
+      {/* Efekt paralaksy */}
       <div
-        className={` animate-fadeIn flex flex-col justify-center items-center w-full h-full    `}
-      >
-        <p className="text-5xl"><IoMdQuote /></p>
-        <h2 className=" sm:w-2/3 xl:w-1/2 text-center md:text-center font-light  px-2 text-lg  lg:text-xl xl:text-4xl  my-2 lg:my-3  text-black ">
-          Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie,
-          która chce zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.
-        </h2>
+        className="absolute inset-0 bg-center bg-scroll rounded-lg"
+        style={{ backgroundImage: "url('/terapeuticPlace.jpg')" }} // Podmień na ścieżkę do swojego obrazu
+      ></div>
+
+      {/* Tekst nachodzący na obrazek */}
+      <div className="relative flex items-center justify-center min-h-[1/2 vh] bg-white bg-opacity-80 rounded-lg shadow-lg p-8 text-center mx-auto lg:container">
+        <div className="p-4">
+          <h1 className="text-4xl font-bold text-blue-700">
+            Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie,
+          </h1>
+          <p className="text-lg text-gray-700 mt-4">
+            Osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się
+            lepiej.
+          </p>
+          <div className="flex justify-center w-full lg:justify-center items-center">
+          <Link href="/omnie" aria-label="Link do strony o mnie">
+            <ButtonMain>Dowiedz się więcej</ButtonMain>
+          </Link>
+        </div>
+          
+        </div>
       </div>
     </div>
   );
 };
 
-export default HomePageShort;
+export default TherapeuticPlace;

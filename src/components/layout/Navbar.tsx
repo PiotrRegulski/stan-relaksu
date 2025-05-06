@@ -5,18 +5,20 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className=" flex w-full ">
-      <div className=" ">
+    <nav className="flex flex-col w-full relative">
+      {/* Logo - ustawione po lewej stronie ekranu */}
+      <div className="absolute top-16 2xl:top-8 left-4 z-10">
         <Link
           href={"/"}
-          className="mx-1 "
-          aria-label="Przejdź na strone główną"
+          className="mx-1 rounded-lg "
+          aria-label="Przejdź na stronę główną"
         >
           <Logo />
         </Link>
       </div>
-      
-      <div className=" flex w-full  justify-end items-start mx-4  mr-16 mt-4 ">
+
+      {/* Kontener nawigacyjny z linkami */}
+      <div className="flex flex-col justify-end items-end mx-4 mr-16">
         <NavLinks />
       </div>
     </nav>

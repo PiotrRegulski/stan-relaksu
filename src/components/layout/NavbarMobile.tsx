@@ -19,12 +19,12 @@ const NavbarMobile = () => {
       <div className="flex w-full">
         <div className=" py-1 z-20">
           <Link href="/">
-            <div className="ml-3 mr-1 my-1 relative h-[100px] w-[100px] sm:h-[150px] sm:w-[150px]">
+            <div className="ml-3 mr-1 my-1 relative h-[100px] w-[100px] sm:h-[100px] sm:w-[100px]">
               <Image
                 src="/logo-stan-relaksu-kolo.png"
               fill
               sizes="(max-width: 600px) 100vw, 50vw"
-                className="bg-mainthemelogo rounded-full object-fill"
+                className="bg-mainthemelogo rounded-full"
                 alt="Stan Relaksu Gabinet terapii manualnej i masażu"
                 priority={true}
               />

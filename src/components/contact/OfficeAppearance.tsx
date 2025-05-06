@@ -42,7 +42,7 @@ const OfficeAppearance = () => {
   const refBottom = useRef(null);
   const isInViewBottom = useInView(refBottom, { once: true });
   return (
-    <div className="flex flex-col mt-24 bg-gradient-to-r from-secondary via-transparent to-secondary my-4 rounded ">
+    <div className="flex flex-col mt-12 bg-gradient-to-r from-secondary via-transparent to-secondary my-4 rounded mx-auto ">
       <motion.div
         initial={{ y: -20, opacity: 0 }}
         animate={isInViewTop ? { y: 0, opacity: 1 } : {}}
@@ -50,10 +50,29 @@ const OfficeAppearance = () => {
         className="bg-transparent rounded-xl my-4  "
         ref={refTop}
       >
-        <div className="flex flex-col w-full justify-center items-center my-6 px-2 ">
-          <h3 className={`${Noto.className} text-center lg:text-3xl font-light`}>
+        <div className="flex flex-col w-full justify-center items-center my-2 px-2 ">
+          <h3 className="text-center lg:text-3xl font-semibold text-gray-800">
             Tworzymy to miejsce, aby holistycznie zadbać o Twoje ciało.
           </h3>
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ y: -20, opacity: 0 }}
+        animate={isInViewTop ? { y: 0, opacity: 1 } : {}}
+        transition={{ duration: 1, ease: "easeInOut", type: "tween" }}
+        className="bg-transparent rounded-xl my-4  "
+        ref={refTop}
+      >
+        <div className="flex flex-col w-full justify-center items-center  px-2 font-bold ">
+         
+          <p className="lg:text-2xl  py-2 ">
+            Poprzez połączenie <strong>jogi i terapii manualnej</strong>.
+          </p>
+          <p
+            className="text-center lg:text-2xl"
+          >
+            Możesz zatroszczyć się o siebie w sposób kompleksowy.
+          </p>
         </div>
       </motion.div>
       <div
@@ -63,7 +82,7 @@ const OfficeAppearance = () => {
         {imgURLs.map((imgUrl, index) => (
           <div
             key={imgUrl.label}
-            className="relative flex shrink-0 w-40 h-[15rem] sm:h-[15rem] sm:w-[9rem] lg:h-[25rem] lg:w-[15rem] xl:h-[28rem] 2xl:h-[28rem] 2xl:w-[20rem] overflow-hidden my-4"
+            className="relative flex shrink-0 w-40 h-[15rem] sm:h-[15rem] sm:w-[9rem] lg:h-[25rem] lg:w-[15rem] xl:h-[28rem] xl:w-[20rem] 2xl:h-[28rem] 2xl:w-[20rem] overflow-hidden my-4"
             style={{ marginTop: imgUrl.marginTop }}
           >
             <motion.div
@@ -71,7 +90,7 @@ const OfficeAppearance = () => {
               initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
               whileHover={{ scale: 1.1 }}
               animate={isInViewBottom ? { x: 0, opacity: 1 } : {}}
-              transition={{ type: "tween", duration: 1 }}
+              transition={{ ease: "linear", duration: 0.5 }}
             >
               <ImageCard
                 key={imgUrl.label}
@@ -83,25 +102,7 @@ const OfficeAppearance = () => {
           </div>
         ))}
       </div>
-      <motion.div
-        initial={{ y: -20, opacity: 0 }}
-        animate={isInViewTop ? { y: 0, opacity: 1 } : {}}
-        transition={{ duration: 2, ease: "easeInOut", type: "tween" }}
-        className="bg-transparent rounded-xl my-4  "
-        ref={refTop}
-      >
-        <div className="flex flex-col w-full justify-center items-center my-6 px-2 font-bold ">
-         
-          <p className={`${Noto.className} lg:text-2xl  py-2  `}>
-            Poprzez połączenie <strong>jogi i terapii manualnej</strong>.
-          </p>
-          <p
-            className={`${Noto.className} text-center lg:text-2xl `}
-          >
-            Możesz zatroszczyć się o siebie w sposób kompleksowy.
-          </p>
-        </div>
-      </motion.div>
+    
     </div>
   );
 };

@@ -20,7 +20,7 @@ const Contact = () => {
   const isSmallScreen = useMediaQuery("(max-width: 1023px)");
 
   return (
-    <div  className="w-full container mx-auto mt-24">
+    <div  className="w-full container mx-auto my-2 bg-gradient-to-r from-secondary via-white to-secondary">
       <PageHeader id={"kontakt-header"}>
         <h2>Skontaktuj się</h2>
       </PageHeader>
@@ -53,7 +53,7 @@ const Contact = () => {
             <motion.div
               initial={{ x: 40, opacity: 0 }}
               animate={isInViewTop ? { x: 0, opacity: 1 } : {}}
-              transition={{ duration: 1, ease: "easeInOut" }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
               className=" flex flex-col w-full lg:w-1/2 justify-center items-center mx-auto lg:mx-12 gap-12 2xl:mx-24 "
             >
               <DetailedAddress />
@@ -67,12 +67,12 @@ const Contact = () => {
           <motion.div
             initial={{ y: 0, opacity: 0 }}
             animate={isInViewBottom ? { y: 0, opacity: 1 } : {}}
-            transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
+            transition={{ duration: 0.5, ease: "easeInOut", type: "spring" }}
             className={`${Noto.className} flex flex-col  w-full justify-center items-center my-4 lg:my-6  `}
           >
-            <h3 className=" text-base  xl:text-2xl text-center font-normal ">
-            <span className="text-3xl">Gabinet mieści się przy</span>   <br></br>
-              <strong> studio jogi Jasna Asana. </strong>
+            <h3 className=" text-base  xl:text-3xl text-center font-semibold text-gray-800">
+            <span className="text-2xl">Gabinet mieści się przy</span><br></br>
+              studio jogi Jasna Asana.
             </h3>
           </motion.div>
           <div
@@ -93,7 +93,7 @@ const Contact = () => {
                       : { x: -300, y: 0, opacity: 1 }
                     : { y: 0, opacity: 0 }
                 }
-                transition={{ duration: 1, ease: "easeInOut", type: "tween" }}
+                transition={{ duration: 0.5, ease: "easeInOut", type: "tween" }}
                 className="absolute  "
               >
                 <AdressCard
@@ -118,7 +118,7 @@ const Contact = () => {
                       : { x: 300, y: 0, opacity: 1 }
                     : { y: 0, opacity: 0 }
                 }
-                transition={{ duration: 1, ease: "easeInOut", type: "tween" }}
+                transition={{ duration: 0.5, ease: "easeInOut", type: "tween" }}
                 className="absolute "
               >
                 <AdressCard

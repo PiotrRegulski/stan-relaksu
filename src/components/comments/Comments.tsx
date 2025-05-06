@@ -83,7 +83,7 @@ const Comments = () => {
 
   return (
     <div
-      className=" container mx-auto relative flex flex-col justify-center items-center bg-secondary w-full h-[27rem] sm:h-[27rem] md:h-[27rem] lg:h-[27rem] xl:h-[26rem] my-40 shadow-xl"
+      className=" container mx-auto relative flex flex-col justify-center items-center bg-gradient-to-r from-secondary via-white to-secondary w-full h-[27rem] sm:h-[27rem] md:h-[27rem] lg:h-[27rem] xl:h-[26rem] my-1 xl:my-12 shadow-xl"
       
     >
       <button

@@ -15,12 +15,12 @@ const NavLinks = () => {
   const pathname = usePathname();
   return (
     <>
-      {links.map((link) => (
+     <div className="flex flex-row bg-white shadow-neutral-200 shadow-md py-3 px-4 rounded-b-xl"> {links.map((link) => (
         <Link
           href={link.href}
           key={link.href}
           aria-label={link["aria-label"]}
-          className={` mx-2 h-[3rem] flex justify-center  items-center text-black  rounded-3xl sm:text-sm md:text-md lg:text-lg 2xl:text-lg md:px-2 font-medium lg:mt-1 ${
+          className={` mx-2 h-[1rem] flex justify-center  items-center text-black bg-white px-2  rounded-3xl sm:text-sm md:text-md lg:text-lg 2xl:text-lg md:px-2 font-medium lg:mt-1 ${
             pathname === link.href
               ? "px-2 text-red-400  "
               : "hover:border-primary/40 hover:opacity-40 hover:shadow-sm hover:underline"
@@ -28,7 +28,7 @@ const NavLinks = () => {
         >
           {link.label}
         </Link>
-      ))}
+      ))}</div>
     </>
   );
 };

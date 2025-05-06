@@ -4,11 +4,11 @@ const NextArrow = (props: any) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} absolute top-1/2 right-1 z-40  `}
+      className={`${className} z-30 `}
       style={{ ...style, display: "block"  }}
       onClick={onClick}
     >
-      {/* <IoIosArrowForward className="text-black text-4xl hover:text-gray-400 cursor-pointer" /> */}
+      <IoIosArrowForward className="hidden lg:block  bottom-0 text-triadbrown text-6xl hover:text-gray-400 cursor-pointer -ml-4 bg-mainthemelogo rounded-full p-2 " />
     </div>
   );
 };
@@ -17,11 +17,11 @@ const PrevArrow = (props: any) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} absolute top-1/2  left-1 z-40  `}
+      className={`${className} z-30 `}
       style={{ ...style, display: "block"  }}
       onClick={onClick}
     >
-      {/* <IoIosArrowBack className="text-black text-4xl hover:text-gray-400 cursor-pointer" /> */}
+      <IoIosArrowBack className="hidden lg:block border-triadgray text-triadbrown text-6xl hover:text-gray-400 cursor-pointer -ml-4 bg-mainthemelogo rounded-full p-2"  />
     </div>
   );
 };

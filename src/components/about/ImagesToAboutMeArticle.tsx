@@ -56,17 +56,7 @@ const ImagesToAboutMeArticle = () => {
       className=" lg:container mx-auto flex  flex-col   w-full justify-center  "
     >
   
-      <div className=" flex flex-col-reverse justify-center rounded-b-xl items-center shadow-lg gap-10 bg-gradient-to-r from-secondary from-10% via-white via-30% to-secondary to-90%  w-full  my-8 py-20 px-2">
-        <h2 className=" text-center">
-          <span className="text-xl  lg:text-2xl font-bold">
-            Przyniosę Ci ulgę w bólu oraz napięciu 
-          </span>
-          <br></br>
-          <span className="text-lg lg:text-xl">stosując techniki</span>
-          <br></br>
-          <span className="text-xl lg:text-2xl font-bold">masażu powięziowego i terapii manualnej.</span>
-        </h2>
-      </div>
+    
       <div
         className=" flex flex-col overflow-x-auto py-8 xl:items-center  bg-gradient-to-r from-gray-200 from-10% via-white via-30% to-gray-100 to-90% outline-none scrollbar-thin scrollbar-webkit"
         ref={ref}
@@ -110,6 +100,17 @@ const ImagesToAboutMeArticle = () => {
             </motion.div>
           ))}
         </div>
+      </div>
+      <div className=" flex flex-col-reverse justify-center rounded-b-xl items-center shadow-lg gap-10 bg-gradient-to-r from-secondary from-10% via-white via-30% to-secondary to-90%  w-full  my-8 py-20 px-2">
+        <h2 className=" text-center">
+          <span className="text-xl  lg:text-2xl font-bold">
+            Przyniosę Ci ulgę w bólu oraz napięciu 
+          </span>
+          <br></br>
+          <span className="text-lg lg:text-xl">stosując techniki</span>
+          <br></br>
+          <span className="text-xl lg:text-2xl font-bold">masażu powięziowego i terapii manualnej.</span>
+        </h2>
       </div>
       <div className="flex flex-col justify-center w-full">
         <ImageToOffersShort />

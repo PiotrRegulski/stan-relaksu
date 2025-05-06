@@ -18,3 +18,36 @@ strong {
  .avoid-orphans::before, 
  .avoid-orphans::after 
  { content: ''; display: inline-block; width: 0.25em;}
+
+ .custom-dots {
+    display: flex !important; /* Ustawienie flexboxa */
+    justify-content: center !important; /* Wyśrodkowanie kropek w poziomie */
+    align-items: center !important; /* Wyśrodkowanie kropek w pionie */
+    gap: 10px; /* Odstęp między kropkami */
+  }
+  
+  .custom-dots li {
+    display: flex !important; /* Ustawienie flexboxa dla każdego elementu listy */
+    justify-content: center; /* Wyśrodkowanie zawartości */
+    align-items: center; /* Wyśrodkowanie w pionie */
+  }
+  
+  .custom-dots li button {
+  display: flex; /* Ustawienie flexboxa */
+  justify-content: center; /* Wyśrodkowanie */
+  align-items: center; /* Wyśrodkowanie w pionie */
+  width: 30px ; /* Szerokość */
+  height: 30px ; /* Wysokość */
+  border-radius: 50%; /* Zaokrąglenie - zapewnia kształt koła */
+  background-color: rgb(244 201 180) !important; /* Kolor domyślny */
+  border: none !important; /* Usuń obramowanie */
+  overflow: hidden; /* Zapobiega wyciekaniu zawartości */
+  padding: 0; /* Zapobiega dodatkowym przestrzeniom */
+  box-sizing: border-box; /* Uwzględnia obramowania w szerokości i wysokości */
+}
+
+  
+  .custom-dots li.slick-active button {
+    background-color:  rgb(167 199 231) !important; /* Inny kolor dla aktywnej kropki */
+  }
+  

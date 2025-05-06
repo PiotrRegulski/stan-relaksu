@@ -14,7 +14,7 @@ const FaceOfferImage: React.FC<FaceOfferImageProps> = (props) => {
   const isInView = useInView(ref, { once: true });
   return (
     <div
-      className="relative flex shrink-0 w-[15rem] h-[13rem] sm:w-[20rem] sm:h-[16rem] md:w-[20rem] md:h-[18rem] xl:w-[30rem] xl:h-[20rem] overflow-hidden my-6 shadow-lg shadow-white"
+      className="relative flex shrink-0 w-[20rem] h-[13rem] sm:w-[20rem] sm:h-[16rem] md:w-[20rem] md:h-[18rem] xl:w-[30rem] xl:h-[20rem] overflow-hidden my-6 shadow-lg shadow-white"
       ref={ref}
     >
       <motion.div

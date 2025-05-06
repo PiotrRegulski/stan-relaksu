@@ -9,7 +9,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ children, id }) => {
   return (
     <div
       id={id}
-      className="grid grid-cols-1 gap-2 place-items-center  bg-white  "
+      className="grid grid-cols-1 gap-2 place-items-center  bg-transparent rounded-xl  "
       // style={{ backgroundImage: "url('/ofertabg.png')" }}
     >
       <div
