@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Stan Relaksu - Gabinet terapii manualnej i masażu.",
     description:
       "Stan Relaksu - Gabinet terapii manualnej i masażu. Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
-    url: "https://www.stanrelaksu.pl",
+    url: "https://stanrelaksu.pl",
     type: "website",
   },
 };
