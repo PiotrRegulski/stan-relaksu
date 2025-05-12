@@ -5,8 +5,6 @@ import MainFooter from "@/components/layout/MainFooter";
 import { lato } from "@/components/fonts";
 import MobileInfoBar from "@/components/layout/MobileInfoBar";
 // const inter = Inter({ subsets: ["latin"] });
-<meta name="description" content=""  />
-
 export const metadata: Metadata = {
   title: "Stan Relaksu - Gabinet terapii manualnej i masażu w Warszawie",
   description:
@@ -16,7 +14,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   robots: {
-    index: true, // Zmieniono z false na true
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {
@@ -34,8 +32,10 @@ export const metadata: Metadata = {
       "Stan Relaksu - Gabinet terapii manualnej i masażu. Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie, osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się lepiej.",
     url: "https://stanrelaksu.pl",
     type: "website",
+    siteName: "Stan Relaksu",
   },
 };
+
 
 export default function RootLayout({
   children,
@@ -44,7 +44,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      
       <body
         className={`${lato.className} relative antialiased  overflow-y-scroll overflow-x-hidden bg-secondary  max-w-[3000px] mx-auto  m-0 p-0  `}
       >
