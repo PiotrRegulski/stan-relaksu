@@ -28,22 +28,22 @@ strong {
   
   .custom-dots li {
     display: flex !important; /* Ustawienie flexboxa dla każdego elementu listy */
-    justify-content: center; /* Wyśrodkowanie zawartości */
-    align-items: center; /* Wyśrodkowanie w pionie */
+    justify-content: center !important; /* Wyśrodkowanie zawartości */
+    align-items: center !important; /* Wyśrodkowanie w pionie */
   }
   
   .custom-dots li button {
-  display: flex; /* Ustawienie flexboxa */
-  justify-content: center; /* Wyśrodkowanie */
-  align-items: center; /* Wyśrodkowanie w pionie */
-  width: 30px ; /* Szerokość */
-  height: 30px ; /* Wysokość */
-  border-radius: 50%; /* Zaokrąglenie - zapewnia kształt koła */
+  display: flex !important; /* Ustawienie flexboxa */
+  justify-content: center !important; /* Wyśrodkowanie */
+  align-items: center !important; /* Wyśrodkowanie w pionie */
+  width: 20px !important ; /* Szerokość */
+  height: 20px !important ; /* Wysokość */
+  border-radius: 50% !important; /* Zaokrąglenie - zapewnia kształt koła */
   background-color: rgb(244 201 180) !important; /* Kolor domyślny */
   border: none !important; /* Usuń obramowanie */
-  overflow: hidden; /* Zapobiega wyciekaniu zawartości */
-  padding: 0; /* Zapobiega dodatkowym przestrzeniom */
-  box-sizing: border-box; /* Uwzględnia obramowania w szerokości i wysokości */
+  overflow: hidden !important; /* Zapobiega wyciekaniu zawartości */
+  padding: 0 !important; /* Zapobiega dodatkowym przestrzeniom */
+  box-sizing: border-box !important; /* Uwzględnia obramowania w szerokości i wysokości */
 }
 
   

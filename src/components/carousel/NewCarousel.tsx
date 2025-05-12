@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import ButtonMain from "../layout/ButtonMain";
-import { NextArrow, PrevArrow } from "@/components/carousel/Arrows";
+// import { NextArrow, PrevArrow } from "@/components/carousel/Arrows";
 
 interface ImageData {
   src: string;
@@ -28,9 +28,8 @@ const NewCarousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 6000,
-    arrows: false,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    arrows:true,
+ 
   };
 
   const images: ImageData[] = [

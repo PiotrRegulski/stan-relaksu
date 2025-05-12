@@ -10,10 +10,7 @@ import MotionHeader from "@/components/offers/MotionHeader";
 import KeyList from "@/components/offers/KeyList";
 import RandomOffers from "@/components/offers/RandomOffers";
 interface OfferDetailsPageProps {
-  params: {
-    id: string;
-    slug: string;
-  };
+  params: Promise<{ id: string; slug: string; }>;
 }
 type MetaProps = {
   params: Promise<{ id: string; slug: string }>;
@@ -106,11 +103,7 @@ export async function generateMetadata(
   const previousImages = (await parent).openGraph?.images || [];
   return {
     title:
-      product?.title +
-      " " +
-      "-" +
-      " " +
-      "Gabinet terapii manualnej i masażu - Stan Relaksu",
+      product?.title,
     description: product?.contentFirst,
     openGraph: {
       title: product?.title + "-" + "Stan Relaksu",
