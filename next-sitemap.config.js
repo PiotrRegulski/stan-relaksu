@@ -1,18 +1,19 @@
+const slugs = require("./src/data/OffersSlugss");
+
 module.exports = {
   siteUrl: "https://stanrelaksu.pl",
-  generateRobotsTxt: true, // (Opcjonalne) generowanie pliku robots.txt
+  generateRobotsTxt: true,
   sitemapSize: 7000,
   changefreq: "daily",
   priority: 0.7,
   exclude: ["/admin/*", "/private/*", "/privacy-policy/*", "/terms/*"],
   additionalPaths: async (config) => {
     const lastmodDate = new Date().toISOString();
-    return [
-      {
-        loc: "https://stanrelaksu.pl/", // URL Twojej strony głównej
-        lastmod: lastmodDate,
-      },
-    ];
+
+    return slugs.map((slug) => ({
+      loc: `https://stanrelaksu.pl/oferta/${slug}`,
+      lastmod: lastmodDate,
+    }));
   },
   robotsTxtOptions: {
     policies: [
