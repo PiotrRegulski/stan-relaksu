@@ -15,7 +15,7 @@ const AdressCard = (props: any) => {
             src={props.logoSrc}
             fill
             className=" rounded-full shadow-gray-400 shadow-md bg-mainthemelogo"
-            alt="Logo firmy"
+            alt="Stan Relaksu Gabinet terapii manualnej i masażu"
             priority={true}
             sizes="(max-width: 600px) 100vw, 50vw"
             
