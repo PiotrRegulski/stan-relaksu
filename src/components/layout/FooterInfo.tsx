@@ -59,10 +59,23 @@ const FooterInfo = (props: any) => {
             <span className="whitespace-nowrap">- Stan Relaksu</span>
           </p>
           <div className="flex flex-row  ">
-            <IoIosPin className="w-5 h-5 mt-2 mr-1" />
-            <address className="text-sm w-full whitespace-nowrap not-italic px-1 ">
-              Willa Modrzewie <br></br> Naukowa 20, lokal 1<br></br> 02-463
-              Warszawa, Włochy
+            <address className="text-sm w-full whitespace-nowrap not-italic px-1 hover:opacity-70   ">
+              <Link
+                href="https://maps.app.goo.gl/paeUdp7VdFXvtwSA9"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Otwórz mapę z lokalizacją gabinetu terapii manualnej i masażu - Stan Relaksu"
+                className=" flex flex-row   hover:opacity-70  "
+
+              >
+                <span className=" ">
+                  <IoIosPin className="w-5 h-5 mt-2 mr-1" />
+                </span>
+                <span className="pt-1 pl-1 text-sm">
+                  Willa Modrzewie <br></br> Naukowa 20, lokal 1<br></br> 02-463
+                  Warszawa, Włochy
+                </span>
+              </Link>
             </address>
           </div>
           <div className="mt-2  ">
@@ -72,7 +85,7 @@ const FooterInfo = (props: any) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" flex flex-row   hover:opacity-70  "
-                aria-label="kontakt@stanrelaksu.pl"
+                aria-label="Napisz mail do gabinetu terapii manualnej i masażu - Stan Relaksu"
               >
                 <span className=" ">
                   <MdEmail className="w-3 h-3 mt-2 mx-2" />
@@ -87,7 +100,7 @@ const FooterInfo = (props: any) => {
               target="_blank"
               rel="noopener noreferrer"
               className=" flex flex-row hover:opacity-70 "
-              aria-label="791-107-102"
+              aria-label=" Zadzwoń do gabinetu terapii manualnej i masażu - Stan Relaksu numer 791-107-102"
             >
               <span className="  ">
                 <BsFillTelephoneForwardFill className="w-3 h-3 mt-2 mx-2 " />

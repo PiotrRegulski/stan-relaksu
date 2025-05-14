@@ -57,7 +57,7 @@ const MobileInfoBar = () => {
             </Link>
           </div>
         </button>
-        <button className="    text-white shadow-xl  transition-transform duration-200 ease-in-out hover:scale-[1.09] w-full">
+        <button className="text-white shadow-xl  transition-transform duration-200 ease-in-out hover:scale-[1.09] w-full">
           <div className="flex justify-center">
             {" "}
             <Link

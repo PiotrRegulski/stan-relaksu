@@ -12,10 +12,20 @@ const DetailedAddress = () => {
         location={"Lokalizacja:"}
       >
         <address className="text-center ">
-          <strong className="not-italic text-sm  ">
-            <span className="whitespace-nowrap ">Willa Modrzewie <br></br>ul. Naukowa 20 /lokal-1</span>
-            <br></br>02-463 Warszawa
-          </strong>
+          <Link
+            href="https://maps.app.goo.gl/paeUdp7VdFXvtwSA9"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Otwórz mapę z lokalizacją gabinetu terapii manualnej i masażu - Stan Relaksu"
+          >
+            {" "}
+            <strong className="not-italic text-sm  ">
+              <span className="whitespace-nowrap ">
+                Willa Modrzewie <br></br>ul. Naukowa 20 /lokal-1
+              </span>
+              <br></br>02-463 Warszawa
+            </strong>
+          </Link>
         </address>
       </DetailedAdressItem>
       <div className="flex sm:w-2/3  ">
@@ -26,10 +36,11 @@ const DetailedAddress = () => {
         >
           <strong>
             <Link
-              href={"535187126"}
+              href="tel:791107102"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-70 text-sm"
+              aria-label="Zadzwoń do gabinetu terapii manualnej i masażu - Stan Relaksu"
             >
               <span className="whitespace-nowrap">791-107-102</span>
             </Link>
@@ -45,6 +56,7 @@ const DetailedAddress = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-70 text-sm "
+              aria-label="Napisz mail do gabinetu terapii manualnej i masażu - Stan Relaksu"
             >
               kontakt@stanrelaksu.pl
             </Link>

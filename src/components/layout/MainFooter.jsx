@@ -29,7 +29,7 @@ const MainFooter = () => {
             </Link>
           </div>
 
-          <div className="w-full ">
+          <div className="w-full mb-14 sm:mb-1">
             <p className="text-black text-sm text-center  font-semibold ">
               © 2024 Stan Relaksu. Wszelkie prawa zastrzeżone.
             </p>
