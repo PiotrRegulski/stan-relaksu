@@ -13,16 +13,15 @@ const FooterInfo = (props: any) => {
   return (
     <div className="flex flex-col  w-full justify-center items-center ">
       <div className=" flex flex-col sm:flex-row w-full   gap-4 lg:gap-24   items-center justify-center  ">
-      <FooterLinks />
+        <FooterLinks />
         <div className="flex flex-col  ">
-         
           <div className="relative w-auto h-auto  flex items-center justify-center ">
             <Image
               src={props.logoSrc}
               width={100}
               height={100}
               className=" rounded-full shadow-gray-400 shadow-md bg-mainthemelogo "
-              alt="Logo firmy Stan Relaksu"
+              alt="Stan Relaksu Gabinet terapii manualnej i masażu"
               priority={true}
               style={{ width: "auto", height: "auto" }}
             />
@@ -56,12 +55,14 @@ const FooterInfo = (props: any) => {
         </div>
         <div className="flex lg:w-1/3  flex-col text-sm  ">
           <p className="my-2 text-sm font-bold">
-            Gabinet terapii manualnej i masażu <span className="whitespace-nowrap">- Stan Relaksu</span>
+            Gabinet terapii manualnej i masażu{" "}
+            <span className="whitespace-nowrap">- Stan Relaksu</span>
           </p>
           <div className="flex flex-row  ">
             <IoIosPin className="w-5 h-5 mt-2 mr-1" />
             <address className="text-sm w-full whitespace-nowrap not-italic px-1 ">
-            Willa Modrzewie <br></br> Naukowa 20, lokal 1<br></br> 02-463 Warszawa, Włochy
+              Willa Modrzewie <br></br> Naukowa 20, lokal 1<br></br> 02-463
+              Warszawa, Włochy
             </address>
           </div>
           <div className="mt-2  ">
@@ -76,7 +77,9 @@ const FooterInfo = (props: any) => {
                 <span className=" ">
                   <MdEmail className="w-3 h-3 mt-2 mx-2" />
                 </span>
-                <span className="pt-1 pl-1 text-sm">kontakt@stanrelaksu.pl</span>
+                <span className="pt-1 pl-1 text-sm">
+                  kontakt@stanrelaksu.pl
+                </span>
               </Link>
             </address>
             <Link
@@ -93,8 +96,6 @@ const FooterInfo = (props: any) => {
             </Link>
           </div>
         </div>
-
-       
       </div>
     </div>
   );
