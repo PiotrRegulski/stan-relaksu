@@ -9,7 +9,7 @@ import MobileInfoBar from "@/components/layout/MobileInfoBar";
 export const metadata: Metadata = {
   title: "Stan Relaksu - Gabinet terapii manualnej i masażu w Warszawie",
   description:
-    "Ulga w bólu i napięciu dzięki masażowi powięziowemu i terapii manualnej. Relaks z masażem Kobido oraz technikami głębokiego odprężenia. Umów wizytę w gabinecie Stan Relaksu.",
+    "Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie. Ulga w bólu i napięciu dzięki masażowi powięziowemu i terapii manualnej. Relaks z masażem Kobido oraz technikami głębokiego odprężenia. Umów wizytę w gabinecie Stan Relaksu.",
   metadataBase: new URL("https://stanrelaksu.pl"),
   alternates: {
     canonical: "/",
