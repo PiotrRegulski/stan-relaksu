@@ -78,7 +78,7 @@ const ImageToOffersShort = () => {
                 whileHover={{ scale: 1.1 }}
                 initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
                 animate={isInView ? { x: 0, opacity: 1 } : {}}
-                transition={{ type: "spring", duration: 2, ease: "backInOut" }}
+                transition={{ type: "spring", ease: "backInOut", duration:1}}
               >
                 <ImageCard
                   key={imgUrl.label}
@@ -94,7 +94,7 @@ const ImageToOffersShort = () => {
               <motion.div
                 initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
                 animate={isInView ? { x: 0, opacity: 1 } : {}}
-                transition={{ type: "spring", duration: 2, ease: "backInOut" }}
+                transition={{ type: "spring", ease: "backInOut",duration: 1 }}
                 className="absolute bottom-0 w-full font-semibold  bg-secondary bg-opacity-70  text-black text-center py-2 px-3"
               >
                 {imgUrl.caption}

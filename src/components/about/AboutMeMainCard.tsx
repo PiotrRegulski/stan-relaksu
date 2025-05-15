@@ -32,7 +32,7 @@ const AboutMeMainCard = () => {
           className="flex justify-center items-center flex-col sm:px-16  2xl:px-10  "
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           <h1
             className={`${lato.className} text-center font-semibold w-full text-xl  lg:text-3xl    mt-4 px-3  lg:px-11`}

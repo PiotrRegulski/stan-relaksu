@@ -51,7 +51,7 @@ const ImagesToOfferShortLast = () => {
             whileHover={{ scale: 1.1 }}
             initial={{ x: 100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ type: "spring", duration: 2, stiffness: 50 }}
+            transition={{ type: "spring", stiffness: 50, duration: 0.5 }}
           >
             <ImageCard key={imgUrl.label} href={imgUrl.href} src={imgUrl.src} alt={imgUrl.label} />
           </motion.div>
@@ -59,7 +59,7 @@ const ImagesToOfferShortLast = () => {
             className="absolute bottom-0 w-full font-semibold  bg-secondary bg-opacity-70 text-black text-center py-2"
             initial={{ x: 100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ type: "spring", duration: 1 }}
+            transition={{ type: "spring" ,duration: 0.5}}
           >
             {imgUrl.caption}
           </motion.div>

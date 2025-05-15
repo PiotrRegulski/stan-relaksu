@@ -74,7 +74,7 @@ const ImagesToAboutMeArticle = () => {
                 whileHover={{ scale: 1.1 }}
                 initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
                 animate={isInView ? { x: 0, opacity: 1 } : {}}
-                transition={{ type: "spring", duration: 2 }}
+                transition={{ type: "spring", duration: 1 }}
               >
                  <motion.div className="absolute top-0 right-0 z-10 text-white m-2 text-4xl"><IoIosInformationCircleOutline /></motion.div>
                 <ImageCard
@@ -92,7 +92,7 @@ const ImagesToAboutMeArticle = () => {
                 className="absolute bottom-0 w-full bg-secondary bg-opacity-70  text-black font-semibold text-center py-2"
                 initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ type: "spring", duration: 2 }}
+                transition={{ type: "spring" ,duration: 1 }}
               >
                 {imgUrl.caption}
               </motion.div>
