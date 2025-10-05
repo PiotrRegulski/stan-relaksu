@@ -17,15 +17,17 @@ export async function POST(req: NextRequest) {
   }
 
   const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: 587, // Ustaw port na 25
-    secure: false, // Port 25 nie obsługuje TLS
-    auth: { user: process.env.HOMEPL_USER, pass: process.env.HOMEPL_PASS },
-    tls: {
-      minVersion: 'TLSv1.2', // Wymuś użycie TLS 1.2 lub nowszego
-    },
-    connectionTimeout: 10000, // 10 sekund
-  });
+  host: process.env.SEOHOST_SMTP_HOST, // h50.seohost.pl
+  port: 465,                           // Port SSL/TLS
+  secure: true,                       // Bo port 465
+  auth: {
+    user: process.env.SEOHOST_USER,  // np. kontakt@stanrelaksu.pl
+    pass: process.env.SEOHOST_PASS,  // hasło do skrzynki
+  },
+  tls: {
+    rejectUnauthorized: false, // czasem wymagane na serwerach hostingowych
+  },
+});
 
   const mailOptions = {
     from: `kontakt@stanrelaksu.pl`, // Użyj autoryzowanego adresu e-mail
