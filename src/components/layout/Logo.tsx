@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Logo = () => {
   return (
-    <div className=" relative grid-element lg:h-52 lg:w-52  xl:h-[14rem] xl:w-[14rem] 2xl:h-[16rem] 2xl:w-[16rem] -mt-20 -mr-20 " >
+    <div className=" relative grid-element lg:h-52 lg:w-52  xl:h-[12rem] xl:w-[12rem] -mt-20 -mr-20 " >
       {" "}
       <Image
         src="/logo-stan-relaksu-kolo.png"

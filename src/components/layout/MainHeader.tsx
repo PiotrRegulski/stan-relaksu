@@ -32,11 +32,11 @@ const MainHeader = () => {
 
   return (
     <div style={{ display: isVisible ? "block" : "none" }}>
-      <div className=" fixed z-40 top-0 right-0 left-0 ">
+      <div className=" fixed z-40 top-0 right-0 left-0 mx-auto  ">
         <InfoBar />
         <header className={`${Noto.className} flex flex-col justify-center `}>
           <NavbarMobile />
-          <div className="flex w-full">
+          <div className="flex w-full max-w-[90rem] mx-auto">
             <div className={`${Noto.className} container mx-auto hidden lg:flex w-full `}>
               <Navbar />
             </div>

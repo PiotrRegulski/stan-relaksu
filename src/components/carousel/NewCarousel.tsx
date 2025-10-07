@@ -102,55 +102,41 @@ const NewCarousel = () => {
         "text-white xl:text-2xl font-serif tracking-widest hover:opacity-70 hover:underline ",
     },
   ];
-
-  return (
-    <div className="mx-auto w-full xl:container bg-white rounded-xl mb-1  ">
-      {" "}
-      <div className="relative h-[540px] lg:h-[540px] xl:h-[41rem]  short-height:h-[340px]   animate-fadeIn   bg-white rounded-xl ">
-        {" "}
-        <Slider {...settings} className="">
+return (
+    <div className="mx-auto w-full max-w-7xl bg-white rounded-xl mb-1">
+      <div
+        className="relative h-[540px] xl:h-[41rem] short-height:h-[340px] animate-fadeIn rounded-xl"
+        role="region"
+        aria-roledescription="carousel"
+        aria-label="Popularne zabiegi"
+      >
+        <Slider {...settings}>
           {images.map((image, index) => (
             <div
               key={index}
-              className=" relative h-[500px]  lg:h-[500px] xl:h-[38rem]  short-height:h-[300px] rounded-xl border-4 border-white"
+              className="relative h-[500px] xl:h-[35rem] short-height:h-[300px] rounded-xl border-4 border-white"
             >
               <Image
                 src={image.src}
                 alt={image.alt}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
                 fill
                 className="object-cover rounded-xl"
-                priority={index === 0} // Tylko pierwszy obraz ma priorytet
+                priority={index === 0}
                 quality={100}
               />
 
-              <div className="absolute bottom-0  w-full h-full text-center rounded  z-20 ">
-                <div className="flex flex-col justify-end items-center xl:w-full 2xl:w-full h-full">
-                  <div className="flex flex-col text-center text-white sm:w-2/3 md:w-1/2 xl:w-1/2 ">
-                    <p className="text-xl">Popularne zabiegi</p>
-                    <h3 className="text-lg sm:text-xl xl:text-2xl 2xl:text-4xl font-semibold rounded-xl mb-2">
-                      {image.alt}
-                    </h3>
-                    <p className=" my-2  text-base sm:text-base lg:text-base xl:text-xl 2xl:text-2xl font-normal rounded-xl`">
-                      {image.description}
-                    </p>
-                    <div className="my-2 flex justify-center gap-4 md:justify-center md:gap-4">
-                      <Link
-                        key={index}
-                        href={image.linkBooksy}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Zarezerwuj wizytę przez Booksy"
-                      >
-                        <ButtonMain>Zarezerwuj wizytę</ButtonMain>
-                      </Link>
-                      <ButtonMain
-                        onClick={() => router.push(image.linkDetails)}
-                        aria-label="Informacje o zabiegu"
-                      >
-                        Informacje o zabiegu
-                      </ButtonMain>
-                    </div>
+              <div className="absolute inset-0 flex flex-col justify-end items-center text-center text-white z-20">
+                <div className="sm:w-2/3 md:w-1/2">
+                  <p className="text-lg font-light mb-2">Popularne zabiegi</p>
+                  <h3 className="text-2xl xl:text-3xl font-semibold mb-3">{image.alt}</h3>
+                  <p className="text-base xl:text-xl mb-4">{image.description}</p>
+                  <div className="flex justify-center gap-4">
+                    <Link href={image.linkBooksy} target="_blank" rel="noopener noreferrer">
+                      <ButtonMain>Zarezerwuj wizytę</ButtonMain>
+                    </Link>
+                    <ButtonMain onClick={() => router.push(image.linkDetails)}>
+                      Informacje o zabiegu
+                    </ButtonMain>
                   </div>
                 </div>
               </div>
