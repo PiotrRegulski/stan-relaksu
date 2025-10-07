@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import MainHeader from "@/components/layout/MainHeader";
@@ -14,10 +14,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  themeColor: "#f4c9b4", // dopasowany do Twojego mainpeach
   robots: {
     index: true,
-    follow: true, // poprawione — teraz Google śledzi linki
+    follow: true,
     nocache: true,
     googleBot: {
       index: true,
@@ -37,13 +36,19 @@ export const metadata: Metadata = {
     siteName: "Stan Relaksu",
     images: [
       {
-        url: "https://stanrelaksu.pl/opengraph-image.jpg", // dodaj miniaturkę 1200x630 w public/
+        url: "https://stanrelaksu.pl/opengraph-image.jpg",
         width: 1200,
         height: 630,
         alt: "Stan Relaksu - gabinet terapii manualnej i masażu w Warszawie",
       },
     ],
   },
+};
+
+// 👇 NOWY eksport (zamiast themeColor w metadata)
+export const viewport: Viewport = {
+  themeColor: "#f4c9b4",
+  colorScheme: "light dark",
 };
 
 export default function RootLayout({
@@ -54,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={`${nunito.className} relative antialiased overflow-y-auto overflow-x-hidden bg-secondary max-w-[2000px] mx-auto m-0 p-0`}
+        className={`${nunito.className} relative antialiased overflow-y-auto overflow-x-hidden bg-secondary max-w-[3000px] mx-auto m-0 p-0`}
       >
         <MainHeader />
         <MobileInfoBar />
