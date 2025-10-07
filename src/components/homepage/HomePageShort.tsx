@@ -15,7 +15,7 @@ const TherapeuticPlace = () => {
       <div className="relative flex items-center justify-center min-h-[1/2 vh] bg-white bg-opacity-80 rounded-lg shadow-lg p-8 text-center mx-auto lg:container">
         <div className="p-4">
           <h1 className="text-4xl font-bold text-blue-700">
-            Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie,
+            Terapeutyczne miejsce dla ciała stworzone z myślą o Tobie
           </h1>
           <p className="text-lg text-gray-700 mt-4">
             Osobie, która chce zadbać o swoje zdrowie, zwolnić i poczuć się

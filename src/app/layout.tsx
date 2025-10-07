@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 import MainHeader from "@/components/layout/MainHeader";
 import MainFooter from "@/components/layout/MainFooter";
-import { lato } from "@/components/fonts";
+import { nunito } from "@/components/fonts";
 import MobileInfoBar from "@/components/layout/MobileInfoBar";
 // const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={`${lato.className} relative antialiased  overflow-y-scroll overflow-x-hidden bg-secondary  max-w-[2000px] mx-auto  m-0 p-0  `}
+        className={`${nunito.className} relative antialiased  overflow-y-scroll overflow-x-hidden bg-secondary  max-w-[2000px] mx-auto  m-0 p-0`}
       >
         <MainHeader />
         <MobileInfoBar />
