@@ -64,7 +64,7 @@ export default function RootLayout({
         <MainHeader />
         <MobileInfoBar />
 
-        <main className="overflow-hidden mx-auto min-h-screen">{children}</main>
+        <main className="overflow-hidden mx-auto min-h-screen max-w-7xl">{children}</main>
 
         <MainFooter />
         <Analytics />

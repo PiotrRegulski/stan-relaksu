@@ -68,6 +68,9 @@ export default {
         navActive: "#5A8AAE",      // chłodny, stonowany niebieski
         navHover: "#6D9F89",       // delikatna zieleń – relaksująca
         navUnderline: "#4A6F8A",   // ciemniejszy niebieski – lepszy kontrast
+         textColor: {
+      DEFAULT: "rgb(115 92 89)", // triadbrown jako globalny kolor
+    },
       },
       keyframes: {
         scaleFadeIn: {

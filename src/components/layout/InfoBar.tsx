@@ -14,7 +14,7 @@ const InfoBar = () => {
 
   return (
     <div
-      className={`${Noto.className} hidden lg:flex items-center justify-between font-normal text-xs bg-primary w-full mx-auto py-1`}
+      className={`${Noto.className} hidden lg:flex items-center justify-between font-normal text-xs bg-primary w-full mx-auto py-1 max-w-[105rem] `}
       style={{ lineHeight: 1.4 }}
     >
       {/* Lewa sekcja - Booksy */}
@@ -26,7 +26,7 @@ const InfoBar = () => {
           className={`${linkBase} bg-opacity-20`}
           aria-label="Zarezerwuj wizytę w gabinecie terapii manualnej i masażu - Stan Relaksu"
         >
-          <span className="underline underline-offset-2">Zarezerwuj wizytę</span>
+          <span className="underline underline-offset-2 font-bold">Zarezerwuj wizytę</span>
           <BsArrowUpRightSquare className="w-3.5 h-3.5" aria-hidden="true" />
         </Link>
       </div>

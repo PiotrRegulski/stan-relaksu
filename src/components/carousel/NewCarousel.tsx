@@ -129,7 +129,7 @@ return (
                 <div className="sm:w-2/3 md:w-1/2">
                   <p className="text-lg font-light mb-2">Popularne zabiegi</p>
                   <h3 className="text-2xl xl:text-3xl font-semibold mb-3">{image.alt}</h3>
-                  <p className="text-base xl:text-xl mb-4">{image.description}</p>
+                  <p className="text-base xl:text-xl mb-4 p-2">{image.description}</p>
                   <div className="flex justify-center gap-4">
                     <Link href={image.linkBooksy} target="_blank" rel="noopener noreferrer">
                       <ButtonMain>Zarezerwuj wizytę</ButtonMain>
