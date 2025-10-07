@@ -1,5 +1,4 @@
 import OffersCardBody from "@/components/offers/OffersCardBody";
-
 import Contact from "@/components/contact/Contact";
 import OffersCardFace from "@/components/offers/OffersCardFace";
 import WelcomeAboutMe from "@/components/homepage/WelcomeAboutMe";
@@ -11,12 +10,11 @@ export const metadata = {};
 export default function Home() {
   return (
     <>
-      <div className="3xl:container mx-auto ">
+      <div className=" mx-auto ">
         <WelcomeAboutMe />
         <NewCarousel />
         <HomePageShort />
         <AboutMeShort />
-
         <OffersCardBody />
         <OffersCardFace />
         <Comments />

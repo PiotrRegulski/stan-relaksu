@@ -64,6 +64,10 @@ export default {
         mainthemelogo: "rgb(241 234 214)",
         mainpeach: "rgb(244 201 180)",
         triadbrown: "rgb(115 92 89)",
+         // 🌿 Nowe kolory do nawigacji
+        navActive: "#5A8AAE",      // chłodny, stonowany niebieski
+        navHover: "#6D9F89",       // delikatna zieleń – relaksująca
+        navUnderline: "#4A6F8A",   // ciemniejszy niebieski – lepszy kontrast
       },
       keyframes: {
         scaleFadeIn: {
@@ -109,6 +113,7 @@ export default {
         drawBorder: "drawBorder 2s forwards",
         scaleIn: "scaleIn 0.8s ease-in-out forwards",
         scaleFadeIn: "scaleFadeIn 0.8s ease-in-out forwards", // Definicja czasu trwania i stylu
+        hoverEffect:"hoverEffect transition-all duration-300 ease-in-out hover:scale-105",
       },
     },
   },
