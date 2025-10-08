@@ -175,7 +175,7 @@ const ContactForm = () => {
               placeholder="wpisz treść swojej wiadomości"
               autoComplete="off"
               rows={5}
-              className=" text-sm border-2 border-primary px-2 py-2 outline-primary shadow-inner shadow-primary rounded-lg"
+              className=" bg-white text-sm border-2 border-primary px-2 py-2 outline-primary shadow-inner shadow-primary rounded-lg"
             ></textarea>
           </div>
         </div>
