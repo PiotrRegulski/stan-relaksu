@@ -8,8 +8,8 @@ import { lato } from "../fonts";
 
 const AboutMeMainCard = () => {
   return (
-    <div id={"o-mnie"} className="flex flex-col lg:container mx-auto">
-      <div className="  flex flex-col   justify-center items-center   w-full xl:px-24  2xl:px-56 bg-gradient-to-t from-secondary from-50% to-transparent   bg-opacity-40 ">
+    <div id={"o-mnie"} className="flex flex-col max-w-7xl mx-auto bg-gray-100">
+      <div className="  flex flex-col   justify-center items-center   w-full xl:px-24  2xl:px-56 bg-gradient-to-t from-secondary from-50% to-transparent   bg-opacity-40 py-4">
         <div className="flex  justify-center items-center   ">
           <motion.div
             className="relative w-52 h-52  lg:w-[18rem] lg:h-[18rem] mx-2 xl:h-[16rem] xl:w-[16rem] 2xl:h-[20rem] 2xl:w-[20rem]"
@@ -29,7 +29,7 @@ const AboutMeMainCard = () => {
         </div>
 
         <motion.div
-          className="flex justify-center items-center flex-col sm:px-16  2xl:px-10  "
+          className="flex justify-center items-center flex-col sm:px-16  2xl:px-10 w-[75rem]  "
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -42,7 +42,7 @@ const AboutMeMainCard = () => {
           <p className=" text-lg xl:text-xl font-medium">
             Jestem naturoterapeutką.{" "}
           </p>
-          <div className="flex flex-col lg:flex-row border-white justify-between my-4 sm:mx-20 lg:mx-0">
+          <div className="flex flex-col lg:flex-row  justify-between my-4 sm:mx-20 lg:mx-0">
             <div className="flex-1 m-2 p-2 bg-mainpeach border border-gray-300 shadow-lg flex justify-center items-center text-center">
               <p className="text-base lg:text-lg font-medium xl:px-2">
                 Ukończyłam fizjoterapię na Warszawskim Uniwersytecie Medycznym.

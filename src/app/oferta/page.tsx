@@ -16,7 +16,7 @@ const OfferPage: React.FC<OfferProps> = () => {
     <div className="mt-[0rem] sm:mt-[0rem] lg:mt-[7rem] xl:mx-6 2xl:mx-4">
       <ImageHeader
         id="Oferta"
-        src="/contact/wyglad-gabinet-header.png"
+        src="/header-oferta.png"
         alt="Gabinet Stan Relaksu terapia manualna i masaż Warszawa"
       >
         Oferta

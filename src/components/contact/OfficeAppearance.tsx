@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import ImageCard from "../about/ImageCard";
-import { Noto } from "../fonts";
+import Image from "next/image";
+
 
 const imgURLs = [
   {
@@ -37,73 +37,63 @@ const imgURLs = [
 ];
 
 const OfficeAppearance = () => {
-  const refTop = useRef(null);
-  const isInViewTop = useInView(refTop, { once: true });
-  const refBottom = useRef(null);
-  const isInViewBottom = useInView(refBottom, { once: true });
+  const refHeading = useRef(null);
+  const refGallery = useRef(null);
+  const inViewHeading = useInView(refHeading, { once: true, margin: "-50px" });
+  const inViewGallery = useInView(refGallery, { once: true, margin: "-50px" });
+
   return (
-    <div className="flex flex-col mt-12 bg-gradient-to-r from-secondary via-transparent to-secondary my-4 rounded mx-auto ">
-      <motion.div
-        initial={{ y: -20, opacity: 0 }}
-        animate={isInViewTop ? { y: 0, opacity: 1 } : {}}
-        transition={{ duration: 2, ease: "easeInOut", type: "tween" }}
-        className="bg-transparent rounded-xl my-4  "
-        ref={refTop}
-      >
-        <div className="flex flex-col w-full justify-center items-center my-2 px-2 ">
-          <h3 className="text-center lg:text-3xl font-semibold text-gray-800">
+    <section className="w-full py-20 bg-gradient-to-r from-secondary via-transparent to-secondary overflow-hidden">
+      <div className="container mx-auto flex flex-col items-center justify-center text-center">
+        {/* --- Tekst --- */}
+        <motion.div
+          ref={refHeading}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inViewHeading ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+        >
+          <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold text-gray-800 mb-4">
             Tworzymy to miejsce, aby holistycznie zadbać o Twoje ciało.
-          </h3>
-        </div>
-      </motion.div>
-      <motion.div
-        initial={{ y: -20, opacity: 0 }}
-        animate={isInViewTop ? { y: 0, opacity: 1 } : {}}
-        transition={{ duration: 1, ease: "easeInOut", type: "tween" }}
-        className="bg-transparent rounded-xl my-4  "
-        ref={refTop}
-      >
-        <div className="flex flex-col w-full justify-center items-center  px-2 font-bold ">
-         
-          <p className="lg:text-2xl  py-2 ">
-            Poprzez połączenie <strong>jogi i terapii manualnej</strong>.
+          </h2>
+          <p className="text-2xl text-gray-600 max-w-2xl mx-auto">
+            Poprzez połączenie jogi i terapii manualnej.
           </p>
-          <p
-            className="text-center lg:text-2xl"
-          >
+          <p className="text-2xl text-gray-600 max-w-2xl mx-auto">
             Możesz zatroszczyć się o siebie w sposób kompleksowy.
           </p>
-        </div>
-      </motion.div>
-      <div
-        className="flex flex-row overflow-x-auto  gap-2 w-full sm:justify-center sm:items-center bg-gradient-to-r from-secondary via-transparent to-secondary "
-        ref={refBottom}
-      >
-        {imgURLs.map((imgUrl, index) => (
-          <div
-            key={imgUrl.label}
-            className="relative flex shrink-0 w-40 h-[15rem] sm:h-[15rem] sm:w-[9rem] lg:h-[25rem] lg:w-[15rem] xl:h-[26rem] xl:w-[15rem] overflow-hidden my-4"
-            style={{ marginTop: imgUrl.marginTop }}
-          >
+        </motion.div>
+
+        {/* --- Galeria --- */}
+        <motion.div
+          ref={refGallery}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inViewGallery ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="flex flex-row overflow-x-auto snap-x snap-mandatory gap-4 w-full px-4 py-10 sm:justify-center sm:items-center scrollbar-hide"
+        >
+          {imgURLs.map((imgUrl, index) => (
             <motion.div
-              className="w-full h-full"
-              initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
-              whileHover={{ scale: 1.1 }}
-              animate={isInViewBottom ? { x: 0, opacity: 1 } : {}}
-              transition={{ ease: "linear", duration: 0.5 }}
+              key={imgUrl.label}
+              className="snap-start relative flex shrink-0 w-40 h-[15rem] sm:h-[15rem] sm:w-[10rem] lg:h-[25rem] lg:w-[15rem] xl:h-[26rem] xl:w-[16rem] overflow-hidden rounded-2xl shadow-md"
+              style={{ marginTop: imgUrl.marginTop }}
+              initial={{ x: index % 2 === 0 ? -80 : 80, opacity: 0 }}
+              animate={inViewGallery ? { x: 0, opacity: 1 } : {}}
+              transition={{ ease: "easeOut", duration: 0.7, delay: 0.1 * index }}
+              whileHover={{ scale: 1.05 }}
             >
-              <ImageCard
-                key={imgUrl.label}
-                href={imgUrl.href}
+              <Image
                 src={imgUrl.src}
                 alt={imgUrl.label}
+                fill
+                sizes="(max-width: 768px) 150px, (max-width: 1200px) 250px, 300px"
+                className="object-cover"
+                priority={index === 0}
               />
             </motion.div>
-          </div>
-        ))}
+          ))}
+        </motion.div>
       </div>
-    
-    </div>
+    </section>
   );
 };
 

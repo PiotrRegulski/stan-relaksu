@@ -125,8 +125,8 @@ return (
                 quality={100}
               />
 
-              <div className="absolute inset-0 flex flex-col justify-end items-center text-center text-white z-20">
-                <div className="sm:w-2/3 md:w-1/2">
+              <div className="absolute inset-0 flex flex-col justify-end items-center text-center text-white z-20 bg-black/20">
+                <div className="sm:w-2/3 md:w-1/2 ">
                   <p className="text-lg font-light mb-2">Popularne zabiegi</p>
                   <h3 className="text-2xl xl:text-3xl font-semibold mb-3">{image.alt}</h3>
                   <p className="text-base xl:text-xl mb-4 p-2">{image.description}</p>
