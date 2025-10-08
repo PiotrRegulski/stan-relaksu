@@ -22,7 +22,7 @@ const ImageHeader: React.FC<ImageHeaderProps> = ({ children, src, alt = "", id }
         fill
         priority
         sizes="100vw"
-        className="object-cover"
+        className="object-cover object-top"
       />
 
       {/* Lekka nakładka */}

@@ -10,7 +10,7 @@ export const metadata = {
 };
 const About = () => {
   return (
-    <div className="mt-[7rem] sm:mt-[2rem] lg:mt-[9rem]">
+    <div className="mt-[2rem] sm:mt-[2rem] lg:mt-[2rem]">
       <AboutMeMainCard />
       <ImagesToAboutMeArticle />
       <AboutMeLastCard />

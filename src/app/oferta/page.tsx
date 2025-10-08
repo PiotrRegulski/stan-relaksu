@@ -13,10 +13,10 @@ export const metadata = {
 };
 const OfferPage: React.FC<OfferProps> = () => {
   return (
-    <div className="mt-[0rem] sm:mt-[0rem] lg:mt-[7rem] xl:mx-6 2xl:mx-4">
+    <div className="mt-[0rem] sm:mt-[0rem] lg:mt-[7rem] ">
       <ImageHeader
         id="Oferta"
-        src="/header-oferta.png"
+          src="/contact/perfumy-header.png"
         alt="Gabinet Stan Relaksu terapia manualna i masaż Warszawa"
       >
         Oferta

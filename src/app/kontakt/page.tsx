@@ -10,7 +10,7 @@ const page = () => {
     <div className="mt-[0rem] lg:mt-[7rem] 2xl:mt-[7rem]">
       <ImageHeader
         id="kontakt"
-        src="/contact/gabient.jpg"
+        src="/contact/perfumy-header.png"
         alt="Gabinet Stan Relaksu terapia manualna i masaż Warszawa"
       >
         Kontakt
