@@ -29,7 +29,7 @@ const AboutMeMainCard = () => {
         </div>
 
         <motion.div
-          className="flex justify-center items-center flex-col sm:px-16  2xl:px-10 w-[75rem]  "
+          className="flex justify-center items-center flex-col sm:px-16  2xl:px-10 lg:w-[75rem]  "
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
