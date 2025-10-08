@@ -14,7 +14,13 @@ export const metadata = {
 const OfferPage: React.FC<OfferProps> = () => {
   return (
     <div className="mt-[0rem] sm:mt-[0rem] lg:mt-[7rem] xl:mx-6 2xl:mx-4">
-      <ImageHeader BgImage={'bg-my-bg-image'}>Oferta</ImageHeader>
+      <ImageHeader
+        id="Oferta"
+        src="/contact/wyglad-gabinet-header.png"
+        alt="Gabinet Stan Relaksu terapia manualna i masaż Warszawa"
+      >
+        Oferta
+      </ImageHeader>
       <OffersCardBody />
       <OffersCardFace />
     </div>

@@ -82,7 +82,7 @@ const OfficeAppearance = () => {
         {imgURLs.map((imgUrl, index) => (
           <div
             key={imgUrl.label}
-            className="relative flex shrink-0 w-40 h-[15rem] sm:h-[15rem] sm:w-[9rem] lg:h-[25rem] lg:w-[15rem] xl:h-[28rem] xl:w-[20rem] 2xl:h-[28rem] 2xl:w-[20rem] overflow-hidden my-4"
+            className="relative flex shrink-0 w-40 h-[15rem] sm:h-[15rem] sm:w-[9rem] lg:h-[25rem] lg:w-[15rem] xl:h-[26rem] xl:w-[15rem] overflow-hidden my-4"
             style={{ marginTop: imgUrl.marginTop }}
           >
             <motion.div

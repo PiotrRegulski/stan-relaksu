@@ -26,7 +26,7 @@ const Contact = () => {
       </PageHeader>
       <div className="   ">
         <div ref={refTop}></div>
-        <div id="kontakt-info" className="  bg-transparent   w-full ">
+        <div id="kontakt-info" className="bg-transparent w-full ">
           <div className="flex flex-col lg:flex-row w-full ">
             <motion.div
               initial={{ x: -40, opacity: 0 }}
@@ -38,11 +38,11 @@ const Contact = () => {
                 className={`${Noto.className} flex flex-col my-6 w-full justify-center items-center  `}
               >
                 <div className="pt-4 px-6 sm:px-12  md:px-24 lg:px-6  text-sm xl:text-base ">
-                  <h3 className="font-medium">
+                  <h3 className="font-semibold">
                     Potrzebujesz więcej informacji lub porady na temat zabiegów.
                   </h3>
-                  <p className="text-justify ">
-                    Skontaktuj się ze mną poprzez formularz kontaktowy lub w
+                  <p className=" ">
+                    Skontaktuj się ze mną, poprzez formularz kontaktowy lub w
                     dogodny dla siebie sposób.
                   </p>
                   <p>Chętnie pomogę!</p>

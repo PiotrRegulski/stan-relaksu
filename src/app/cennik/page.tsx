@@ -9,7 +9,11 @@ export const metadata = {
 const page = () => {
   return (
     <div className="flex flex-col bg-gradient-to-r from-secondary via-white to-secondary  lg:mt-[7rem] ">
-      <ImageHeader id="cennik" BgImage={"bg-my-bg-perfumy bg-center"}>
+     <ImageHeader
+        id="cennik"
+        src="/contact/perfumy-header.png"
+        alt="Gabinet Stan Relaksu terapia manualna i masaż Warszawa"
+      >
         Cennik
       </ImageHeader>
 
