@@ -20,7 +20,7 @@
     "autoprefixer": "^10.4.20",
     "framer-motion": "^11.8.0",
     "intersection-observer": "^0.12.2",
-    "next": "^15.2.4",
+    "next": "15.2.8",
     "next-sitemap": "^4.2.3",
     "nodemailer": "^6.9.14",
     "postcss": "^8.5.2",
