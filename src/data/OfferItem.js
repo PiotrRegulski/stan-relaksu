@@ -403,8 +403,8 @@ export const OfferItem = [
     imagedetail_5: "terapia-wisceralna/terapia-wisceralna_5.jpg",
     imagedetail_6: "terapia-wisceralna/terapia-wisceralna_6.jpg", //pionowe
     prices: [
-      { id: "cenaterapiWisceralnej75", priceName: "75 minut", price: "220 zł" },
-      { id: "cenaterapiWisceralnej90", priceName: "90 minut", price: "250 zł" },
+      { id: "cenaterapiWisceralnej75", priceName: "75 minut", price: "230 zł" },
+      { id: "cenaterapiWisceralnej90", priceName: "90 minut", price: "270 zł" },
     ],
     contentMainOffer:
       "Jelita to nasz drugi mózg, więc ich  prawidłowe funkcjonowanie jest niezbędne dla zdrowia naszego organizmu.",
@@ -531,10 +531,10 @@ export const OfferItem = [
     imagedetail_5: "masaz-powieziowy/masaz-powieziowy_5.jpg",
     imagedetail_6: "masaz-powieziowy/masaz-powieziowy_6.jpg", //pionowe
     prices: [
-      { id: "maspow30", priceName: "30 minut", price: "110 zł" },
-      { id: "maspow45", priceName: "45 minut", price: "160 zł" },
-      { id: "maspow60", priceName: "60 minut", price: "200 zł" },
-      { id: "maspow90", priceName: "90 minut", price: "250 zł" },
+      { id: "maspow30", priceName: "30 minut", price: "120 zł" },
+      { id: "maspow45", priceName: "45 minut", price: "180 zł" },
+      { id: "maspow60", priceName: "60 minut", price: "220 zł" },
+      { id: "maspow90", priceName: "90 minut", price: "270 zł" },
     ],
     contentMainOffer:
       "Idealny wybór dla osób, które zmagają się z silnymi bólami i napięciami w obrębie ciała.",
@@ -839,10 +839,10 @@ export const OfferItem = [
     imagedetail_5: "masaz-sportowy/masaz-tkanek-glebokich_5.jpg",
     imagedetail_6: "masaz-sportowy/masaz-tkanek-glebokich_6.jpg", //pionowe
     prices: [
-      { id: "sport30", priceName: "30 minut", price: "110 zł" },
-      { id: "sport45", priceName: "45 minut", price: "160 zł" },
-      { id: "sport60", priceName: "60 minut", price: "200 zł" },
-      { id: "sport90", priceName: "90 minut", price: "250 zł" },
+      { id: "sport30", priceName: "30 minut", price: "120 zł" },
+      { id: "sport45", priceName: "45 minut", price: "180 zł" },
+      { id: "sport60", priceName: "60 minut", price: "220 zł" },
+      { id: "sport90", priceName: "90 minut", price: "270 zł" },
     ],
     contentMainOffer:
       "Niezwykle skuteczna technika pracy z ciałem, koncentrująca się na rozluźnieniu głębokich warstw mięśni i tkanki łącznej.",
@@ -1102,9 +1102,9 @@ export const OfferItem = [
     imagedetailt_p1: "terapia-manualna-zatok/terapia-manualna-zatok-s.jpg",
     imagedetailt_p2: "terapia-manualna-zatok/terapia-manualna-zatok-s.jpg",
     prices: [
-      { id: "bankachinska30", priceName: "30 minut", price: "110 zł" },
-      { id: "bankachinska45", priceName: "45 minut", price: "160 zł" },
-      { id: "bankachinska60", priceName: "60 minut", price: "200 zł" },
+      { id: "bankachinska30", priceName: "30 minut", price: "120 zł" },
+      { id: "bankachinska45", priceName: "45 minut", price: "180 zł" },
+      { id: "bankachinska60", priceName: "60 minut", price: "220 zł" },
     ],
     contentMainOffer:
       "Pobudzający masaż, który pomoże w zmniejszeniu obrzęku wodno-tluszczowego, wygładzeniu i ujędrnieniu skóry.",
@@ -1228,9 +1228,7 @@ export const OfferItem = [
     imagedetailt_p1: "terapia-manualna-zatok/terapia-manualna-zatok-s.jpg",
     imagedetailt_p2: "terapia-manualna-zatok/terapia-manualna-zatok-s.jpg",
     prices: [
-      { id: "bankachinska30", priceName: "30 minut", price: "110 zł" },
-      { id: "bankachinska45", priceName: "45 minut", price: "160 zł" },
-      { id: "bankachinska60", priceName: "60 minut", price: "200 zł" },
+        { id: "bankachinska60", priceName: "60 minut", price: "220 zł" },
     ],
     contentMainOffer:
       "Terapia manualna w bólach zatok to naturalna metoda łagodzenia dolegliwości związanych z zatokami.",
