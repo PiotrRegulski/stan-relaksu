@@ -17,10 +17,10 @@ export const OfferItem = [
     imagedetail_5: "masaz-relaksacyjny/masaz-relaksacyjny_5.jpg",
     imagedetail_6: "masaz-relaksacyjny/masaz-relaksacyjny_3.jpg", //pionowe
     prices: [
-      { id: "terapman30", priceName: "30 minut", price: "110 zł" },
-      { id: "terapman45", priceName: "45 minut", price: "160 zł" },
-      { id: "terapman60", priceName: "60 minut", price: "200 zł" },
-      { id: "terapman90", priceName: "90 minut", price: "250 zł" },
+      { id: "terapman30", priceName: "30 minut", price: "120 zł" },
+      { id: "terapman45", priceName: "45 minut", price: "180 zł" },
+      { id: "terapman60", priceName: "60 minut", price: "220 zł" },
+      { id: "terapman90", priceName: "90 minut", price: "270 zł" },
     ],
     contentMainOffer:
       "Przenieś się do pełnego stanu relaksu. Połączenie aromatycznych, naturalnych olejków i kojącego dotyku wprowadzi Cię w wspaniały nastrój.",
@@ -973,10 +973,10 @@ export const OfferItem = [
     imagedetail_5: "terapia-manualna/terapia-manualna_5.jpg",
     imagedetail_6: "terapia-manualna/terapia-manualna_6.jpg", //pionowe
     prices: [
-      { id: "terapman30", priceName: "30 minut", price: "110 zł" },
-      { id: "terapman45", priceName: "45 minut", price: "160 zł" },
-      { id: "terapman60", priceName: "60 minut", price: "200 zł" },
-      { id: "terapman90", priceName: "90 minut", price: "250 zł" },
+      { id: "terapman30", priceName: "30 minut", price: "120 zł" },
+      { id: "terapman45", priceName: "45 minut", price: "180 zł" },
+      { id: "terapman60", priceName: "60 minut", price: "220 zł" },
+      { id: "terapman90", priceName: "90 minut", price: "270 zł" },
     ],
     contentMainOffer:
       "Specjalistyczne techniki pracy z ciałem i stawami, mające na celu przywrócenie prawidłowego funkcjonowania układu ruchu.",
